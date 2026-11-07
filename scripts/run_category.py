@@ -424,8 +424,6 @@ def build_site():
     cat_table = f'<table><thead><tr><th>Category</th><th>Brands</th><th>Issue</th><th>Views month</th></tr></thead><tbody>{rows}</tbody></table>'
     w("index.html", shell("Brandtabulator", "Weekly rankings of brands by how well their public record on Wikipedia and Wikidata is kept.",
         f"""<h1>Brandtabulator</h1>
-<p>AI assistants and search engines describe brands using the public record: Wikipedia articles and the facts in Wikidata. This site shows, category by category, how complete and how current each brand's record is, and how often machines read it. It is updated every week.</p>
-<p>It does not rank brands as products. It shows whose record is kept up, whose is not, and where the facts and the descriptions disagree.</p>
 <div style="background:#fff;border:1px solid #cfcdc5;padding:18px 22px;margin:8px 0 4px"><p style="margin:0 0 8px;font-weight:600">Why this matters to a marketing team</p><p style="margin:0 0 8px">When a customer asks AI about a brand or category, the AI leans heavily on Wikipedia and the facts behind it in Wikidata. When a brand's pages are thin, out of date, or contradictory, AI can describe the brand incorrectly or mix it up with another company.</p><p style="margin:0">Your team can't see this from inside the company. Brandtabulator shows where your brand stands against everyone else in its category, week by week, and what is missing.</p></div>
 <h2>Categories</h2>{cat_table}
 <p><a href="/methods/">How this is measured</a> · <a href="/data/">Data files</a></p>"""))
