@@ -143,7 +143,7 @@ def rank(rows, key, reverse=True):
     for i, r in enumerate(s): r["rank_" + key] = i + 1
 
 # ---------- output ----------
-COLS = ["label", "qid", "in_set", "dissolved", "manual_addition", "enwiki_title", "wp_current_revid", "wd_lastrevid", "wp_last_substantive", "wp_last_substantive_revid", "wp_last_50byte", "wp_last_50byte_revid", "days_since_50byte", "rank_days_since_50byte", "wp_edits_90d", "wp_editors_90d", "wp_reverted_90d", "rank_wp_edits_90d", "wd_statements", "wd_referenced", "ballast_pct", "rank_ballast_pct", "key_props_present", "identity_links_out", "rank_identity_links_out", "n_inception", "wd_sitelinks", "wd_modified", "days_since_wd_edit", "wp_refs", "wp_words", "wp_refs_per_1000_words", "wp_newest_cite_year", "pv_user", "pv_spider", "pv_automated", "pv_all", "pv_bot_share", "rank_pv_user", "has_google_kg_id", "has_freebase_id", "has_official_name_history", "key_props_missing"]
+COLS = ["label", "qid", "in_set", "highlight", "dissolved", "manual_addition", "enwiki_title", "wp_current_revid", "wd_lastrevid", "wp_last_substantive", "wp_last_substantive_revid", "wp_last_50byte", "wp_last_50byte_revid", "days_since_50byte", "rank_days_since_50byte", "wp_edits_90d", "wp_editors_90d", "wp_reverted_90d", "rank_wp_edits_90d", "wd_statements", "wd_referenced", "ballast_pct", "rank_ballast_pct", "key_props_present", "identity_links_out", "rank_identity_links_out", "n_inception", "wd_sitelinks", "wd_modified", "days_since_wd_edit", "wp_refs", "wp_words", "wp_refs_per_1000_words", "wp_newest_cite_year", "pv_user", "pv_spider", "pv_automated", "pv_all", "pv_bot_share", "rank_pv_user", "has_google_kg_id", "has_freebase_id", "has_official_name_history", "key_props_missing"]
 
 def md_table(rows, cat):
     h = "| # stale | Brand | Last ≥50-byte edit | 90d edits/editors | Wikidata stmts (ref'd) | Ballast | Identity links out | Editions | Refs | Reader views | Bot share |\n|---|---|---|---|---|---|---|---|---|---|---|\n"
@@ -195,7 +195,7 @@ def html_page(cat, rows, date, pv_month):
             txt, val = cell(r, key)
             cls = ' class="mono"' if kind != "str" else ""
             tds += f'<td{cls} data-v="{H.escape(str(val))}">{txt}</td>'
-        cls = ("hl " if r.get("in_set") else "") + ("dis" if r.get("dissolved") else "")
+        cls = ("hl " if (r.get("in_set") or r.get("highlight")) else "") + ("dis" if r.get("dissolved") else "")
         trs += f'<tr class="{cls.strip()}" data-set="{1 if r.get("in_set") else 0}">{tds}</tr>'
     ths = "".join(f'<th data-kind="{k}"><span class="hd" tabindex="0" role="button" data-tip="{H.escape(d)}" aria-label="Sort by {H.escape(n)}">{H.escape(n)}<span class="arr" aria-hidden="true"></span></span><button type="button" class="i" data-def="def-{i}" aria-label="Definition of {H.escape(n)}">i</button></th>' for i, (n, _, k, d) in enumerate(COLDEFS))
     defs = "".join(f'<dt id="def-{i}">{H.escape(n)}</dt><dd>{H.escape(d)}</dd>' for i, (n, _, _, d) in enumerate(COLDEFS))
@@ -209,6 +209,13 @@ def html_page(cat, rows, date, pv_month):
     ex = cat.get("exclude", {}) or {}
     if isinstance(ex, list): ex = {q: "" for q in ex}
     removed = ("Removed by hand, with reasons: " + "; ".join(f"{H.escape(q)} ({H.escape(why)})" for q, why in ex.items()) + ".") if ex else "Nothing removed by hand."
+    if cs.get("members"):
+        seg_html = f'<div class="seg" role="group" aria-label="Which brands to show"><button type="button" class="on" data-view="all">Full category <span class="n">{n}</span></button><button type="button" data-view="set">{H.escape(cs.get("name","Competitive set"))} <span class="n">{n_set}</span></button></div>'
+        set_note = f'<span data-for="set" hidden><b>{H.escape(cs.get("name","Competitive set"))}:</b> {H.escape(cs.get("basis",""))} Chosen by {H.escape(cs.get("chosen_by","the author"))}; the list is in the <a href="https://github.com/MinorNobles/brandtabulator/blob/main/categories/{cat["slug"]}.json">category file</a>.</span>'
+    else:
+        seg_html = ""
+        hl = ", ".join(H.escape(r["label"]) for r in rows if r.get("highlight"))
+        set_note = (f'<span> {hl} is highlighted because this page was first built around it; highlighting changes nothing in the data.</span>' if hl else "") + ' <span>There is no competitive set yet. One will be added only when it rests on a stated, sourced rule.</span>'
     stale = max(rows, key=lambda r: r.get("days_since_50byte") or 0); fresh = min(rows, key=lambda r: r.get("days_since_50byte") if r.get("days_since_50byte") is not None else 9999)
     return f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{H.escape(cat['name'])} — Brandtabulator</title>
@@ -249,8 +256,8 @@ details summary{{cursor:pointer;font-size:14px;font-weight:500}}
 <div class="sub">{prov} <a href="/data/{cat['slug']}/{date}.json">JSON</a> · <a href="/methods/">How this is measured</a></div></div>
 <div class="card">
 <div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px"><h2>The regatta</h2><span class="sub">Same wind for every boat. Click a heading to sort; hover or tap ⓘ for its definition. Default order: longest unupdated first.</span></div>
-<div class="seg" role="group" aria-label="Which brands to show"><button type="button" class="on" data-view="all">Full category <span class="n">{n}</span></button><button type="button" data-view="set">{H.escape(cs.get("name","Competitive set"))} <span class="n">{n_set}</span></button></div>
-<div class="sub" id="viewnote"><span data-for="all"><b>Full category:</b> every Wikidata item that is classified as a watch company (industry horology or watchmaking, product watch, or instance of watch manufacturing company) and has an English Wikipedia article, as returned by <a href="/data/{cat['slug']}/candidates.json">this query</a>. {removed} {n_dis} of them carry a dissolution date in Wikidata and are shown greyed. Added by hand because Wikidata does not classify them as watch companies: {adds}.</span><span data-for="set" hidden><b>{H.escape(cs.get("name","Competitive set"))}:</b> {H.escape(cs.get("basis",""))} Chosen by {H.escape(cs.get("chosen_by","the author"))}; the list is in the <a href="https://github.com/MinorNobles/brandtabulator/blob/main/categories/{cat['slug']}.json">category file</a>.</span></div>
+{seg_html}
+<div class="sub" id="viewnote"><span data-for="all"><b>Full category:</b> every Wikidata item that is classified as a watch company (industry horology or watchmaking, product watch, or instance of watch manufacturing company) and has an English Wikipedia article, as returned by <a href="/data/{cat['slug']}/candidates.json">this query</a>. {removed} {n_dis} of them carry a dissolution date in Wikidata and are shown greyed. Added by hand because Wikidata does not classify them as watch companies: {adds}.</span>{set_note}</div>
 <div class="wrap"><table id="regatta"><thead><tr>{ths}</tr></thead><tbody>{trs}</tbody></table></div>
 <div class="sub">Edits: 90 days to {date}. Views: English Wikipedia, {pv_month}, by Wikimedia agent class. <a href="/data/{cat['slug']}/{date}.csv">CSV</a> · <a href="/data/{cat['slug']}/{date}.json">JSON</a> · <a href="/data/{cat['slug']}/candidates.json">Discovery candidates</a> · <a href="/methods/">Methods</a></div>
 <details><summary>Column definitions</summary><div style="padding-top:12px"><dl>{defs}</dl></div></details>
@@ -335,7 +342,7 @@ def methods_body(cats):
 <pre>{H.escape(c.get('discovery_sparql',''))}</pre>
 <p><b>Added by hand</b> (the query does not find them):</p><ul>{adds}</ul>
 <p><b>Removed by hand:</b></p><ul>{exs}</ul>
-<p><b>{H.escape(cs.get('name','Competitive set'))}.</b> {H.escape(cs.get('basis',''))} Chosen by: {H.escape(cs.get('chosen_by',''))}.</p>"""
+{(f"<p><b>{H.escape(cs.get('name','Competitive set'))}.</b> {H.escape(cs.get('basis',''))} Chosen by: {H.escape(cs.get('chosen_by',''))}.</p>" if cs.get('members') else "<p><b>Competitive set.</b> None yet. One will be added only when it rests on a stated, sourced rule.</p>")}"""
     return f"""<h1>Methods</h1>
 <div class="note"><b>Status.</b> Pre-launch draft, working title. Issues dated before the first public issue may be regenerated. From the first public issue on, each week's data files are kept unchanged under their date.</div>
 
@@ -398,7 +405,7 @@ def methods_md(cats):
     out += "\n\n## Identity links counted\n\n" + ", ".join(f"{IDENTITY_LABELS.get(k,k)} ({k})" for k in IDENTITY_PROPS) + "\n"
     for c in cats:
         cs = c.get("competitive_set") or {}
-        out += f"\n## {c['name']}\n\nFull category query:\n\n```sparql\n{c.get('discovery_sparql','')}\n```\n\nAdded by hand: " + (", ".join(f"{a.get('label')} ({a['qid']}): {a.get('reason','')}" for a in c.get('manual_additions', [])) or "none") + ".\n\nRemoved by hand: " + (", ".join(f"{q}: {w}" for q, w in (c.get('exclude') or {}).items()) or "none") + f".\n\n{cs.get('name','Competitive set')}: {cs.get('basis','')} Chosen by: {cs.get('chosen_by','')}.\n"
+        out += f"\n## {c['name']}\n\nFull category query:\n\n```sparql\n{c.get('discovery_sparql','')}\n```\n\nAdded by hand: " + (", ".join(f"{a.get('label')} ({a['qid']}): {a.get('reason','')}" for a in c.get('manual_additions', [])) or "none") + ".\n\nRemoved by hand: " + (", ".join(f"{q}: {w}" for q, w in (c.get('exclude') or {}).items()) or "none") + (f".\n\n{cs.get('name','Competitive set')}: {cs.get('basis','')} Chosen by: {cs.get('chosen_by','')}.\n" if cs.get('members') else ".\n\nCompetitive set: none yet. One will be added only when it rests on a stated, sourced rule.\n")
     return out
 
 def build_site():
@@ -480,6 +487,8 @@ def main():
 
     if a.render_only:
         meta = json.load(open(os.path.join(outdir, "latest.json"))); rows = meta["brands"]; date = meta["computed_at"]; pv_month = meta["pageview_month"]
+        set_q = set((cat.get("competitive_set") or {}).get("members", [])); hl_q = set((cat.get("highlight") or {}).get("members", []))
+        for r in rows: r["in_set"] = r["qid"] in set_q; r["highlight"] = r["qid"] in hl_q
         open(os.path.join(pagedir, "index.md"), "w").write(fix_links(f"# {cat['name']}\n\nIssue {date}. {len(rows)} brands. Ranked by staleness (longest unupdated first). Views: {pv_month}.\n\n" + md_table(rows, cat) + f"\nData: [CSV](/data/{a.slug}/{date}.csv) · [JSON](/data/{a.slug}/{date}.json) · [Methods](/methods/)\n"))
         open(os.path.join(pagedir, "index.html"), "w").write(fix_links(html_page(cat, rows, date, pv_month))); build_site(); print("rendered from latest.json"); return
 
@@ -512,6 +521,7 @@ def main():
         row.update(wd_metrics(e))
         row["dissolved"] = "P576" in e.get("claims", {})
         row["in_set"] = m["qid"] in set((cat.get("competitive_set") or {}).get("members", []))
+        row["highlight"] = m["qid"] in set((cat.get("highlight") or {}).get("members", []))
         row["manual_addition"] = m["qid"] in {x["qid"] for x in cat.get("manual_additions", [])}
         title = m.get("enwiki") or row.get("enwiki_title")
         if title:

@@ -37,7 +37,7 @@
    "wd_lastrevid": 2534561079,
    "ballast_pct": 59.2,
    "dissolved": false,
-   "in_set": true,
+   "in_set": false,
    "manual_addition": false,
    "wp_length": 32025,
    "wp_touched": "2026-11-07T20:11:08Z",
@@ -83,7 +83,8 @@
    "pct_wp_refs_per_1000_words": 55.6,
    "rank_wp_refs_per_1000_words": 65,
    "pct_pv_bot_share": 89.9,
-   "rank_pv_bot_share": 15
+   "rank_pv_bot_share": 15,
+   "highlight": true
   },
   {
    "qid": "Q322601",
@@ -105,7 +106,7 @@
    "wd_lastrevid": 2564778761,
    "ballast_pct": 48.5,
    "dissolved": false,
-   "in_set": true,
+   "in_set": false,
    "manual_addition": true,
    "wp_length": 118491,
    "wp_touched": "2026-11-07T20:07:00Z",
@@ -151,7 +152,8 @@
    "pct_wp_refs_per_1000_words": 62.2,
    "rank_wp_refs_per_1000_words": 55,
    "pct_pv_bot_share": 74.3,
-   "rank_pv_bot_share": 38
+   "rank_pv_bot_share": 38,
+   "highlight": false
   },
   {
    "qid": "Q217338",
@@ -177,7 +179,7 @@
    "wd_lastrevid": 2565692581,
    "ballast_pct": 39.4,
    "dissolved": false,
-   "in_set": true,
+   "in_set": false,
    "manual_addition": false,
    "wp_length": 20912,
    "wp_touched": "2026-11-07T20:05:01Z",
@@ -223,7 +225,8 @@
    "pct_wp_refs_per_1000_words": 66.0,
    "rank_wp_refs_per_1000_words": 50,
    "pct_pv_bot_share": 91.7,
-   "rank_pv_bot_share": 13
+   "rank_pv_bot_share": 13,
+   "highlight": false
   },
   {
    "qid": "Q1644618",
@@ -250,7 +253,7 @@
    "wd_lastrevid": 2534545832,
    "ballast_pct": 52.0,
    "dissolved": false,
-   "in_set": true,
+   "in_set": false,
    "manual_addition": false,
    "wp_length": 37790,
    "wp_touched": "2026-11-07T20:06:13Z",
@@ -296,7 +299,8 @@
    "pct_wp_refs_per_1000_words": 44.4,
    "rank_wp_refs_per_1000_words": 81,
    "pct_pv_bot_share": 88.2,
-   "rank_pv_bot_share": 18
+   "rank_pv_bot_share": 18,
+   "highlight": false
   },
   {
    "qid": "Q356212",
@@ -322,7 +326,7 @@
    "wd_lastrevid": 2564855088,
    "ballast_pct": 31.9,
    "dissolved": false,
-   "in_set": true,
+   "in_set": false,
    "manual_addition": false,
    "wp_length": 16081,
    "wp_touched": "2026-11-07T20:06:38Z",
@@ -368,7 +372,8 @@
    "pct_wp_refs_per_1000_words": 30.6,
    "rank_wp_refs_per_1000_words": 101,
    "pct_pv_bot_share": 71.9,
-   "rank_pv_bot_share": 41
+   "rank_pv_bot_share": 41,
+   "highlight": false
   },
   {
    "qid": "Q663300",
@@ -394,7 +399,7 @@
    "wd_lastrevid": 2483081848,
    "ballast_pct": 29.4,
    "dissolved": false,
-   "in_set": true,
+   "in_set": false,
    "manual_addition": false,
    "wp_length": 28513,
    "wp_touched": "2026-11-07T20:07:00Z",
@@ -440,7 +445,8 @@
    "pct_wp_refs_per_1000_words": 36.1,
    "rank_wp_refs_per_1000_words": 93,
    "pct_pv_bot_share": 88.9,
-   "rank_pv_bot_share": 17
+   "rank_pv_bot_share": 17,
+   "highlight": false
   },
   {
    "qid": "Q659530",
@@ -466,7 +472,7 @@
    "wd_lastrevid": 2565549603,
    "ballast_pct": 55.1,
    "dissolved": false,
-   "in_set": true,
+   "in_set": false,
    "manual_addition": false,
    "wp_length": 16191,
    "wp_touched": "2026-11-07T20:06:57Z",
@@ -512,7 +518,8 @@
    "pct_wp_refs_per_1000_words": 41.7,
    "rank_wp_refs_per_1000_words": 85,
    "pct_pv_bot_share": 75.7,
-   "rank_pv_bot_share": 36
+   "rank_pv_bot_share": 36,
+   "highlight": false
   },
   {
    "qid": "Q573422",
@@ -539,7 +546,7 @@
    "wd_lastrevid": 2565532035,
    "ballast_pct": 50.0,
    "dissolved": false,
-   "in_set": true,
+   "in_set": false,
    "manual_addition": true,
    "wp_length": 20091,
    "wp_touched": "2026-11-07T20:08:38Z",
@@ -585,7 +592,8 @@
    "pct_wp_refs_per_1000_words": 29.9,
    "rank_wp_refs_per_1000_words": 102,
    "pct_pv_bot_share": 70.8,
-   "rank_pv_bot_share": 43
+   "rank_pv_bot_share": 43,
+   "highlight": false
   },
   {
    "qid": "Q1771114",
@@ -611,7 +619,7 @@
    "wd_lastrevid": 2534553461,
    "ballast_pct": 60.0,
    "dissolved": false,
-   "in_set": true,
+   "in_set": false,
    "manual_addition": false,
    "wp_length": 12595,
    "wp_touched": "2026-11-07T20:05:41Z",
@@ -657,7 +665,8 @@
    "pct_wp_refs_per_1000_words": 52.1,
    "rank_wp_refs_per_1000_words": 70,
    "pct_pv_bot_share": 76.4,
-   "rank_pv_bot_share": 35
+   "rank_pv_bot_share": 35,
+   "highlight": false
   },
   {
    "qid": "Q1573565",
@@ -683,7 +692,7 @@
    "wd_lastrevid": 2545348692,
    "ballast_pct": 60.0,
    "dissolved": false,
-   "in_set": true,
+   "in_set": false,
    "manual_addition": false,
    "wp_length": 25080,
    "wp_touched": "2026-11-07T20:10:43Z",
@@ -729,7 +738,8 @@
    "pct_wp_refs_per_1000_words": 23.6,
    "rank_wp_refs_per_1000_words": 111,
    "pct_pv_bot_share": 95.8,
-   "rank_pv_bot_share": 7
+   "rank_pv_bot_share": 7,
+   "highlight": false
   },
   {
    "qid": "Q939816",
@@ -756,7 +766,7 @@
    "wd_lastrevid": 2565590525,
    "ballast_pct": 57.6,
    "dissolved": false,
-   "in_set": true,
+   "in_set": false,
    "manual_addition": false,
    "wp_length": 10125,
    "wp_touched": "2026-11-07T20:09:54Z",
@@ -802,7 +812,8 @@
    "pct_wp_refs_per_1000_words": 32.6,
    "rank_wp_refs_per_1000_words": 98,
    "pct_pv_bot_share": 51.4,
-   "rank_pv_bot_share": 71
+   "rank_pv_bot_share": 71,
+   "highlight": false
   },
   {
    "qid": "Q6060981",
@@ -829,7 +840,7 @@
    "wd_lastrevid": 2541708804,
    "ballast_pct": 50.0,
    "dissolved": false,
-   "in_set": true,
+   "in_set": false,
    "manual_addition": false,
    "wp_length": 16140,
    "wp_touched": "2026-11-07T20:20:33Z",
@@ -875,7 +886,8 @@
    "pct_wp_refs_per_1000_words": 63.2,
    "rank_wp_refs_per_1000_words": 54,
    "pct_pv_bot_share": 81.2,
-   "rank_pv_bot_share": 28
+   "rank_pv_bot_share": 28,
+   "highlight": false
   },
   {
    "qid": "Q603698",
@@ -901,7 +913,7 @@
    "wd_lastrevid": 2565536570,
    "ballast_pct": 45.5,
    "dissolved": false,
-   "in_set": true,
+   "in_set": false,
    "manual_addition": false,
    "wp_length": 29377,
    "wp_touched": "2026-11-07T20:12:01Z",
@@ -947,7 +959,8 @@
    "pct_wp_refs_per_1000_words": 90.3,
    "rank_wp_refs_per_1000_words": 15,
    "pct_pv_bot_share": 97.2,
-   "rank_pv_bot_share": 5
+   "rank_pv_bot_share": 5,
+   "highlight": false
   },
   {
    "qid": "Q180014",
@@ -973,7 +986,7 @@
    "wd_lastrevid": 2565612735,
    "ballast_pct": 62.5,
    "dissolved": false,
-   "in_set": true,
+   "in_set": false,
    "manual_addition": false,
    "wp_length": 9350,
    "wp_touched": "2026-11-07T21:25:04Z",
@@ -1019,7 +1032,8 @@
    "pct_wp_refs_per_1000_words": 79.2,
    "rank_wp_refs_per_1000_words": 31,
    "pct_pv_bot_share": 77.1,
-   "rank_pv_bot_share": 34
+   "rank_pv_bot_share": 34,
+   "highlight": false
   },
   {
    "qid": "Q62288",
@@ -1090,7 +1104,8 @@
    "pct_wp_refs_per_1000_words": 46.9,
    "rank_wp_refs_per_1000_words": 77,
    "pct_pv_bot_share": 73.3,
-   "rank_pv_bot_share": 39
+   "rank_pv_bot_share": 39,
+   "highlight": false
   },
   {
    "qid": "Q752515",
@@ -1162,7 +1177,8 @@
    "pct_wp_refs_per_1000_words": 50.0,
    "rank_wp_refs_per_1000_words": 73,
    "pct_pv_bot_share": 98.3,
-   "rank_pv_bot_share": 3
+   "rank_pv_bot_share": 3,
+   "highlight": false
   },
   {
    "qid": "Q635484",
@@ -1233,7 +1249,8 @@
    "pct_wp_refs_per_1000_words": 79.9,
    "rank_wp_refs_per_1000_words": 30,
    "pct_pv_bot_share": 77.8,
-   "rank_pv_bot_share": 33
+   "rank_pv_bot_share": 33,
+   "highlight": false
   },
   {
    "qid": "Q645984",
@@ -1305,7 +1322,8 @@
    "pct_wp_refs_per_1000_words": 22.9,
    "rank_wp_refs_per_1000_words": 112,
    "pct_pv_bot_share": 81.9,
-   "rank_pv_bot_share": 27
+   "rank_pv_bot_share": 27,
+   "highlight": false
   },
   {
    "qid": "Q659096",
@@ -1378,7 +1396,8 @@
    "pct_wp_refs_per_1000_words": 88.2,
    "rank_wp_refs_per_1000_words": 18,
    "pct_pv_bot_share": 99.3,
-   "rank_pv_bot_share": 2
+   "rank_pv_bot_share": 2,
+   "highlight": false
   },
   {
    "qid": "Q659224",
@@ -1449,7 +1468,8 @@
    "pct_wp_refs_per_1000_words": 42.4,
    "rank_wp_refs_per_1000_words": 84,
    "pct_pv_bot_share": 78.8,
-   "rank_pv_bot_share": 31
+   "rank_pv_bot_share": 31,
+   "highlight": false
   },
   {
    "qid": "Q665740",
@@ -1522,7 +1542,8 @@
    "pct_wp_refs_per_1000_words": 27.8,
    "rank_wp_refs_per_1000_words": 105,
    "pct_pv_bot_share": 69.8,
-   "rank_pv_bot_share": 44
+   "rank_pv_bot_share": 44,
+   "highlight": false
   },
   {
    "qid": "Q503405",
@@ -1592,7 +1613,8 @@
    "pct_wp_refs_per_1000_words": 17.0,
    "rank_wp_refs_per_1000_words": 120,
    "pct_pv_bot_share": 47.9,
-   "rank_pv_bot_share": 76
+   "rank_pv_bot_share": 76,
+   "highlight": false
   },
   {
    "qid": "Q136503",
@@ -1665,7 +1687,8 @@
    "pct_wp_refs_per_1000_words": 70.5,
    "rank_wp_refs_per_1000_words": 43,
    "pct_pv_bot_share": 49.3,
-   "rank_pv_bot_share": 74
+   "rank_pv_bot_share": 74,
+   "highlight": false
   },
   {
    "qid": "Q667425",
@@ -1738,7 +1761,8 @@
    "pct_wp_refs_per_1000_words": 93.8,
    "rank_wp_refs_per_1000_words": 10,
    "pct_pv_bot_share": 84.0,
-   "rank_pv_bot_share": 24
+   "rank_pv_bot_share": 24,
+   "highlight": false
   },
   {
    "qid": "Q659863",
@@ -1810,7 +1834,8 @@
    "pct_wp_refs_per_1000_words": 84.7,
    "rank_wp_refs_per_1000_words": 23,
    "pct_pv_bot_share": 57.6,
-   "rank_pv_bot_share": 62
+   "rank_pv_bot_share": 62,
+   "highlight": false
   },
   {
    "qid": "Q62341",
@@ -1882,7 +1907,8 @@
    "pct_wp_refs_per_1000_words": 86.1,
    "rank_wp_refs_per_1000_words": 21,
    "pct_pv_bot_share": 89.9,
-   "rank_pv_bot_share": 16
+   "rank_pv_bot_share": 16,
+   "highlight": false
   },
   {
    "qid": "Q658961",
@@ -1954,7 +1980,8 @@
    "pct_wp_refs_per_1000_words": 45.1,
    "rank_wp_refs_per_1000_words": 80,
    "pct_pv_bot_share": 56.2,
-   "rank_pv_bot_share": 64
+   "rank_pv_bot_share": 64,
+   "highlight": false
   },
   {
    "qid": "Q662902",
@@ -2026,7 +2053,8 @@
    "pct_wp_refs_per_1000_words": 34.0,
    "rank_wp_refs_per_1000_words": 95,
    "pct_pv_bot_share": 83.3,
-   "rank_pv_bot_share": 25
+   "rank_pv_bot_share": 25,
+   "highlight": false
   },
   {
    "qid": "Q694107",
@@ -2097,7 +2125,8 @@
    "pct_wp_refs_per_1000_words": 49.3,
    "rank_wp_refs_per_1000_words": 74,
    "pct_pv_bot_share": 46.9,
-   "rank_pv_bot_share": 77
+   "rank_pv_bot_share": 77,
+   "highlight": false
   },
   {
    "qid": "Q689240",
@@ -2169,7 +2198,8 @@
    "pct_wp_refs_per_1000_words": 54.2,
    "rank_wp_refs_per_1000_words": 67,
    "pct_pv_bot_share": 98.3,
-   "rank_pv_bot_share": 4
+   "rank_pv_bot_share": 4,
+   "highlight": false
   },
   {
    "qid": "Q804327",
@@ -2241,7 +2271,8 @@
    "pct_wp_refs_per_1000_words": 75.7,
    "rank_wp_refs_per_1000_words": 36,
    "pct_pv_bot_share": 96.5,
-   "rank_pv_bot_share": 6
+   "rank_pv_bot_share": 6,
+   "highlight": false
   },
   {
    "qid": "Q189601",
@@ -2313,7 +2344,8 @@
    "pct_wp_refs_per_1000_words": 77.1,
    "rank_wp_refs_per_1000_words": 34,
    "pct_pv_bot_share": 54.5,
-   "rank_pv_bot_share": 66
+   "rank_pv_bot_share": 66,
+   "highlight": false
   },
   {
    "qid": "Q378698",
@@ -2385,18 +2417,19 @@
    "pct_wp_refs_per_1000_words": 47.9,
    "rank_wp_refs_per_1000_words": 76,
    "pct_pv_bot_share": 86.5,
-   "rank_pv_bot_share": 20
+   "rank_pv_bot_share": 20,
+   "highlight": false
   },
   {
    "qid": "Q278880",
-   "label": "A. Lange & S\u00f6hne",
+   "label": "A. Lange & Söhne",
    "wd_statements": 46,
    "wd_referenced": 20,
    "wd_props": 38,
    "wd_sitelinks": 20,
    "wd_modified": "2026-11-04T11:11:16Z",
    "wd_desc": "German luxury watch manufacturer",
-   "enwiki_title": "A. Lange & S\u00f6hne",
+   "enwiki_title": "A. Lange & Söhne",
    "n_inception": 1,
    "key_props_present": 3,
    "key_props_missing": [
@@ -2457,7 +2490,8 @@
    "pct_wp_refs_per_1000_words": 68.1,
    "rank_wp_refs_per_1000_words": 47,
    "pct_pv_bot_share": 94.4,
-   "rank_pv_bot_share": 9
+   "rank_pv_bot_share": 9,
+   "highlight": false
   },
   {
    "qid": "Q690001",
@@ -2529,7 +2563,8 @@
    "pct_wp_refs_per_1000_words": 96.5,
    "rank_wp_refs_per_1000_words": 6,
    "pct_pv_bot_share": 34.7,
-   "rank_pv_bot_share": 95
+   "rank_pv_bot_share": 95,
+   "highlight": false
   },
   {
    "qid": "Q1408512",
@@ -2602,7 +2637,8 @@
    "pct_wp_refs_per_1000_words": 17.0,
    "rank_wp_refs_per_1000_words": 121,
    "pct_pv_bot_share": 45.8,
-   "rank_pv_bot_share": 79
+   "rank_pv_bot_share": 79,
+   "highlight": false
   },
   {
    "qid": "Q670112",
@@ -2675,7 +2711,8 @@
    "pct_wp_refs_per_1000_words": 81.2,
    "rank_wp_refs_per_1000_words": 28,
    "pct_pv_bot_share": 61.8,
-   "rank_pv_bot_share": 56
+   "rank_pv_bot_share": 56,
+   "highlight": false
   },
   {
    "qid": "Q579097",
@@ -2748,7 +2785,8 @@
    "pct_wp_refs_per_1000_words": 31.9,
    "rank_wp_refs_per_1000_words": 99,
    "pct_pv_bot_share": 84.7,
-   "rank_pv_bot_share": 23
+   "rank_pv_bot_share": 23,
+   "highlight": false
   },
   {
    "qid": "Q680237",
@@ -2821,7 +2859,8 @@
    "pct_wp_refs_per_1000_words": 11.1,
    "rank_wp_refs_per_1000_words": 129,
    "pct_pv_bot_share": 60.4,
-   "rank_pv_bot_share": 58
+   "rank_pv_bot_share": 58,
+   "highlight": false
   },
   {
    "qid": "Q689037",
@@ -2895,7 +2934,8 @@
    "pct_wp_refs_per_1000_words": 60.4,
    "rank_wp_refs_per_1000_words": 57,
    "pct_pv_bot_share": 53.5,
-   "rank_pv_bot_share": 68
+   "rank_pv_bot_share": 68,
+   "highlight": false
   },
   {
    "qid": "Q1475590",
@@ -2968,7 +3008,8 @@
    "pct_wp_refs_per_1000_words": 40.3,
    "rank_wp_refs_per_1000_words": 87,
    "pct_pv_bot_share": 69.8,
-   "rank_pv_bot_share": 45
+   "rank_pv_bot_share": 45,
+   "highlight": false
   },
   {
    "qid": "Q560976",
@@ -3040,7 +3081,8 @@
    "pct_wp_refs_per_1000_words": 27.1,
    "rank_wp_refs_per_1000_words": 106,
    "pct_pv_bot_share": 66.7,
-   "rank_pv_bot_share": 49
+   "rank_pv_bot_share": 49,
+   "highlight": false
   },
   {
    "qid": "Q138109",
@@ -3112,7 +3154,8 @@
    "pct_wp_refs_per_1000_words": 66.7,
    "rank_wp_refs_per_1000_words": 49,
    "pct_pv_bot_share": 82.6,
-   "rank_pv_bot_share": 26
+   "rank_pv_bot_share": 26,
+   "highlight": false
   },
   {
    "qid": "Q670160",
@@ -3184,7 +3227,8 @@
    "pct_wp_refs_per_1000_words": 92.4,
    "rank_wp_refs_per_1000_words": 12,
    "pct_pv_bot_share": 50.7,
-   "rank_pv_bot_share": 72
+   "rank_pv_bot_share": 72,
+   "highlight": false
   },
   {
    "qid": "Q676416",
@@ -3256,7 +3300,8 @@
    "pct_wp_refs_per_1000_words": 71.5,
    "rank_wp_refs_per_1000_words": 42,
    "pct_pv_bot_share": 55.6,
-   "rank_pv_bot_share": 65
+   "rank_pv_bot_share": 65,
+   "highlight": false
   },
   {
    "qid": "Q676990",
@@ -3329,7 +3374,8 @@
    "pct_wp_refs_per_1000_words": 56.2,
    "rank_wp_refs_per_1000_words": 64,
    "pct_pv_bot_share": 68.1,
-   "rank_pv_bot_share": 47
+   "rank_pv_bot_share": 47,
+   "highlight": false
   },
   {
    "qid": "Q2708181",
@@ -3401,7 +3447,8 @@
    "pct_wp_refs_per_1000_words": 39.6,
    "rank_wp_refs_per_1000_words": 88,
    "pct_pv_bot_share": 86.5,
-   "rank_pv_bot_share": 21
+   "rank_pv_bot_share": 21,
+   "highlight": false
   },
   {
    "qid": "Q1758680",
@@ -3475,7 +3522,8 @@
    "pct_wp_refs_per_1000_words": 3.5,
    "rank_wp_refs_per_1000_words": 140,
    "pct_pv_bot_share": 45.1,
-   "rank_pv_bot_share": 80
+   "rank_pv_bot_share": 80,
+   "highlight": false
   },
   {
    "qid": "Q3536932",
@@ -3549,7 +3597,8 @@
    "pct_wp_refs_per_1000_words": 83.3,
    "rank_wp_refs_per_1000_words": 25,
    "pct_pv_bot_share": 100.0,
-   "rank_pv_bot_share": 1
+   "rank_pv_bot_share": 1,
+   "highlight": false
   },
   {
    "qid": "Q628813",
@@ -3622,7 +3671,8 @@
    "pct_wp_refs_per_1000_words": 57.6,
    "rank_wp_refs_per_1000_words": 62,
    "pct_pv_bot_share": 29.2,
-   "rank_pv_bot_share": 103
+   "rank_pv_bot_share": 103,
+   "highlight": false
   },
   {
    "qid": "Q3431044",
@@ -3695,7 +3745,8 @@
    "pct_wp_refs_per_1000_words": 70.5,
    "rank_wp_refs_per_1000_words": 44,
    "pct_pv_bot_share": 87.5,
-   "rank_pv_bot_share": 19
+   "rank_pv_bot_share": 19,
+   "highlight": false
   },
   {
    "qid": "Q1316779",
@@ -3769,7 +3820,8 @@
    "pct_wp_refs_per_1000_words": 18.1,
    "rank_wp_refs_per_1000_words": 119,
    "pct_pv_bot_share": 36.1,
-   "rank_pv_bot_share": 93
+   "rank_pv_bot_share": 93,
+   "highlight": false
   },
   {
    "qid": "Q1725661",
@@ -3841,7 +3893,8 @@
    "pct_wp_refs_per_1000_words": 88.9,
    "rank_wp_refs_per_1000_words": 17,
    "pct_pv_bot_share": 78.8,
-   "rank_pv_bot_share": 32
+   "rank_pv_bot_share": 32,
+   "highlight": false
   },
   {
    "qid": "Q670962",
@@ -3914,11 +3967,12 @@
    "pct_wp_refs_per_1000_words": 46.9,
    "rank_wp_refs_per_1000_words": 78,
    "pct_pv_bot_share": 41.3,
-   "rank_pv_bot_share": 85
+   "rank_pv_bot_share": 85,
+   "highlight": false
   },
   {
    "qid": "Q1281935",
-   "label": "Eck\u014d Unltd.",
+   "label": "Eckō Unltd.",
    "wd_statements": 23,
    "wd_referenced": 7,
    "wd_props": 16,
@@ -3987,7 +4041,8 @@
    "pct_wp_refs_per_1000_words": 53.5,
    "rank_wp_refs_per_1000_words": 68,
    "pct_pv_bot_share": 93.1,
-   "rank_pv_bot_share": 11
+   "rank_pv_bot_share": 11,
+   "highlight": false
   },
   {
    "qid": "Q478294",
@@ -4060,7 +4115,8 @@
    "pct_wp_refs_per_1000_words": 21.2,
    "rank_wp_refs_per_1000_words": 114,
    "pct_pv_bot_share": 29.9,
-   "rank_pv_bot_share": 102
+   "rank_pv_bot_share": 102,
+   "highlight": false
   },
   {
    "qid": "Q540151",
@@ -4134,7 +4190,8 @@
    "pct_wp_refs_per_1000_words": 60.4,
    "rank_wp_refs_per_1000_words": 58,
    "pct_pv_bot_share": 19.1,
-   "rank_pv_bot_share": 117
+   "rank_pv_bot_share": 117,
+   "highlight": false
   },
   {
    "qid": "Q1651954",
@@ -4208,18 +4265,19 @@
    "pct_wp_refs_per_1000_words": 9.7,
    "rank_wp_refs_per_1000_words": 131,
    "pct_pv_bot_share": 38.5,
-   "rank_pv_bot_share": 89
+   "rank_pv_bot_share": 89,
+   "highlight": false
   },
   {
    "qid": "Q4039046",
-   "label": "Fr\u00e9d\u00e9rique Constant",
+   "label": "Frédérique Constant",
    "wd_statements": 17,
    "wd_referenced": 5,
    "wd_props": 16,
    "wd_sitelinks": 11,
    "wd_modified": "2026-09-27T11:53:47Z",
    "wd_desc": "Swiss luxury watch manufacturer",
-   "enwiki_title": "Fr\u00e9d\u00e9rique Constant",
+   "enwiki_title": "Frédérique Constant",
    "n_inception": 1,
    "key_props_present": 3,
    "key_props_missing": [
@@ -4280,7 +4338,8 @@
    "pct_wp_refs_per_1000_words": 68.8,
    "rank_wp_refs_per_1000_words": 46,
    "pct_pv_bot_share": 91.0,
-   "rank_pv_bot_share": 14
+   "rank_pv_bot_share": 14,
+   "highlight": false
   },
   {
    "qid": "Q22104639",
@@ -4352,7 +4411,8 @@
    "pct_wp_refs_per_1000_words": 60.4,
    "rank_wp_refs_per_1000_words": 59,
    "pct_pv_bot_share": 42.7,
-   "rank_pv_bot_share": 83
+   "rank_pv_bot_share": 83,
+   "highlight": false
   },
   {
    "qid": "Q185769",
@@ -4425,7 +4485,8 @@
    "pct_wp_refs_per_1000_words": 8.3,
    "rank_wp_refs_per_1000_words": 133,
    "pct_pv_bot_share": 14.6,
-   "rank_pv_bot_share": 124
+   "rank_pv_bot_share": 124,
+   "highlight": false
   },
   {
    "qid": "Q177591",
@@ -4497,7 +4558,8 @@
    "pct_wp_refs_per_1000_words": 37.8,
    "rank_wp_refs_per_1000_words": 90,
    "pct_pv_bot_share": 61.1,
-   "rank_pv_bot_share": 57
+   "rank_pv_bot_share": 57,
+   "highlight": false
   },
   {
    "qid": "Q360802",
@@ -4569,7 +4631,8 @@
    "pct_wp_refs_per_1000_words": 38.9,
    "rank_wp_refs_per_1000_words": 89,
    "pct_pv_bot_share": 59.7,
-   "rank_pv_bot_share": 59
+   "rank_pv_bot_share": 59,
+   "highlight": false
   },
   {
    "qid": "Q4039519",
@@ -4642,7 +4705,8 @@
    "pct_wp_refs_per_1000_words": 63.9,
    "rank_wp_refs_per_1000_words": 53,
    "pct_pv_bot_share": 71.9,
-   "rank_pv_bot_share": 42
+   "rank_pv_bot_share": 42,
+   "highlight": false
   },
   {
    "qid": "Q4950531",
@@ -4715,18 +4779,19 @@
    "pct_wp_refs_per_1000_words": 31.2,
    "rank_wp_refs_per_1000_words": 100,
    "pct_pv_bot_share": 25.7,
-   "rank_pv_bot_share": 108
+   "rank_pv_bot_share": 108,
+   "highlight": false
   },
   {
    "qid": "Q723456",
-   "label": "Universal Gen\u00e8ve",
+   "label": "Universal Genève",
    "wd_statements": 13,
    "wd_referenced": 11,
    "wd_props": 13,
    "wd_sitelinks": 9,
    "wd_modified": "2025-09-08T12:04:24Z",
    "wd_desc": "Swiss luxury watch company",
-   "enwiki_title": "Universal Gen\u00e8ve",
+   "enwiki_title": "Universal Genève",
    "n_inception": 1,
    "key_props_present": 2,
    "key_props_missing": [
@@ -4788,7 +4853,8 @@
    "pct_wp_refs_per_1000_words": 41.0,
    "rank_wp_refs_per_1000_words": 86,
    "pct_pv_bot_share": 63.9,
-   "rank_pv_bot_share": 53
+   "rank_pv_bot_share": 53,
+   "highlight": false
   },
   {
    "qid": "Q7444725",
@@ -4860,7 +4926,8 @@
    "pct_wp_refs_per_1000_words": 19.4,
    "rank_wp_refs_per_1000_words": 117,
    "pct_pv_bot_share": 24.7,
-   "rank_pv_bot_share": 109
+   "rank_pv_bot_share": 109,
+   "highlight": false
   },
   {
    "qid": "Q15733690",
@@ -4932,7 +4999,8 @@
    "pct_wp_refs_per_1000_words": 97.9,
    "rank_wp_refs_per_1000_words": 4,
    "pct_pv_bot_share": 20.1,
-   "rank_pv_bot_share": 116
+   "rank_pv_bot_share": 116,
+   "highlight": false
   },
   {
    "qid": "Q87043",
@@ -5006,7 +5074,8 @@
    "pct_wp_refs_per_1000_words": 18.8,
    "rank_wp_refs_per_1000_words": 118,
    "pct_pv_bot_share": 41.3,
-   "rank_pv_bot_share": 86
+   "rank_pv_bot_share": 86,
+   "highlight": false
   },
   {
    "qid": "Q1379518",
@@ -5079,7 +5148,8 @@
    "pct_wp_refs_per_1000_words": 58.7,
    "rank_wp_refs_per_1000_words": 60,
    "pct_pv_bot_share": 37.5,
-   "rank_pv_bot_share": 91
+   "rank_pv_bot_share": 91,
+   "highlight": false
   },
   {
    "qid": "Q870335",
@@ -5152,7 +5222,8 @@
    "pct_wp_refs_per_1000_words": 37.8,
    "rank_wp_refs_per_1000_words": 91,
    "pct_pv_bot_share": 27.1,
-   "rank_pv_bot_share": 106
+   "rank_pv_bot_share": 106,
+   "highlight": false
   },
   {
    "qid": "Q2761497",
@@ -5225,7 +5296,8 @@
    "pct_wp_refs_per_1000_words": 24.3,
    "rank_wp_refs_per_1000_words": 110,
    "pct_pv_bot_share": 46.9,
-   "rank_pv_bot_share": 78
+   "rank_pv_bot_share": 78,
+   "highlight": false
   },
   {
    "qid": "Q3567414",
@@ -5298,7 +5370,8 @@
    "pct_wp_refs_per_1000_words": 4.9,
    "rank_wp_refs_per_1000_words": 138,
    "pct_pv_bot_share": 80.2,
-   "rank_pv_bot_share": 29
+   "rank_pv_bot_share": 29,
+   "highlight": false
   },
   {
    "qid": "Q15994135",
@@ -5370,7 +5443,8 @@
    "pct_wp_refs_per_1000_words": 28.5,
    "rank_wp_refs_per_1000_words": 104,
    "pct_pv_bot_share": 22.9,
-   "rank_pv_bot_share": 112
+   "rank_pv_bot_share": 112,
+   "highlight": false
   },
   {
    "qid": "Q21820596",
@@ -5443,7 +5517,8 @@
    "pct_wp_refs_per_1000_words": 81.9,
    "rank_wp_refs_per_1000_words": 27,
    "pct_pv_bot_share": 95.1,
-   "rank_pv_bot_share": 8
+   "rank_pv_bot_share": 8,
+   "highlight": false
   },
   {
    "qid": "Q631221",
@@ -5516,7 +5591,8 @@
    "pct_wp_refs_per_1000_words": 25.0,
    "rank_wp_refs_per_1000_words": 109,
    "pct_pv_bot_share": 33.7,
-   "rank_pv_bot_share": 96
+   "rank_pv_bot_share": 96,
+   "highlight": false
   },
   {
    "qid": "Q688410",
@@ -5587,7 +5663,8 @@
    "pct_wp_refs_per_1000_words": 73.6,
    "rank_wp_refs_per_1000_words": 39,
    "pct_pv_bot_share": 24.7,
-   "rank_pv_bot_share": 110
+   "rank_pv_bot_share": 110,
+   "highlight": false
   },
   {
    "qid": "Q1037713",
@@ -5659,7 +5736,8 @@
    "pct_wp_refs_per_1000_words": 54.9,
    "rank_wp_refs_per_1000_words": 66,
    "pct_pv_bot_share": 56.9,
-   "rank_pv_bot_share": 63
+   "rank_pv_bot_share": 63,
+   "highlight": false
   },
   {
    "qid": "Q869734",
@@ -5731,7 +5809,8 @@
    "pct_wp_refs_per_1000_words": 6.2,
    "rank_wp_refs_per_1000_words": 136,
    "pct_pv_bot_share": 66.0,
-   "rank_pv_bot_share": 50
+   "rank_pv_bot_share": 50,
+   "highlight": false
   },
   {
    "qid": "Q1496822",
@@ -5805,7 +5884,8 @@
    "pct_wp_refs_per_1000_words": 2.8,
    "rank_wp_refs_per_1000_words": 141,
    "pct_pv_bot_share": 9.4,
-   "rank_pv_bot_share": 131
+   "rank_pv_bot_share": 131,
+   "highlight": false
   },
   {
    "qid": "Q7370254",
@@ -5879,7 +5959,8 @@
    "pct_wp_refs_per_1000_words": 13.5,
    "rank_wp_refs_per_1000_words": 125,
    "pct_pv_bot_share": 67.4,
-   "rank_pv_bot_share": 48
+   "rank_pv_bot_share": 48,
+   "highlight": false
   },
   {
    "qid": "Q747413",
@@ -5952,7 +6033,8 @@
    "pct_wp_refs_per_1000_words": 20.1,
    "rank_wp_refs_per_1000_words": 116,
    "pct_pv_bot_share": 43.8,
-   "rank_pv_bot_share": 82
+   "rank_pv_bot_share": 82,
+   "highlight": false
   },
   {
    "qid": "Q1660409",
@@ -6026,7 +6108,8 @@
    "pct_wp_refs_per_1000_words": 45.8,
    "rank_wp_refs_per_1000_words": 79,
    "pct_pv_bot_share": 31.2,
-   "rank_pv_bot_share": 99
+   "rank_pv_bot_share": 99,
+   "highlight": false
   },
   {
    "qid": "Q832811",
@@ -6100,7 +6183,8 @@
    "pct_wp_refs_per_1000_words": 29.2,
    "rank_wp_refs_per_1000_words": 103,
    "pct_pv_bot_share": 31.2,
-   "rank_pv_bot_share": 100
+   "rank_pv_bot_share": 100,
+   "highlight": false
   },
   {
    "qid": "Q3375046",
@@ -6173,7 +6257,8 @@
    "pct_wp_refs_per_1000_words": 15.3,
    "rank_wp_refs_per_1000_words": 122,
    "pct_pv_bot_share": 16.7,
-   "rank_pv_bot_share": 121
+   "rank_pv_bot_share": 121,
+   "highlight": false
   },
   {
    "qid": "Q7339732",
@@ -6247,7 +6332,8 @@
    "pct_wp_refs_per_1000_words": 97.2,
    "rank_wp_refs_per_1000_words": 5,
    "pct_pv_bot_share": 52.4,
-   "rank_pv_bot_share": 69
+   "rank_pv_bot_share": 69,
+   "highlight": false
   },
   {
    "qid": "Q3572153",
@@ -6320,7 +6406,8 @@
    "pct_wp_refs_per_1000_words": 5.6,
    "rank_wp_refs_per_1000_words": 137,
    "pct_pv_bot_share": 63.2,
-   "rank_pv_bot_share": 54
+   "rank_pv_bot_share": 54,
+   "highlight": false
   },
   {
    "qid": "Q17109402",
@@ -6394,7 +6481,8 @@
    "pct_wp_refs_per_1000_words": 9.0,
    "rank_wp_refs_per_1000_words": 132,
    "pct_pv_bot_share": 38.5,
-   "rank_pv_bot_share": 90
+   "rank_pv_bot_share": 90,
+   "highlight": false
   },
   {
    "qid": "Q1502844",
@@ -6466,7 +6554,8 @@
    "pct_wp_refs_per_1000_words": 74.3,
    "rank_wp_refs_per_1000_words": 38,
    "pct_pv_bot_share": 58.7,
-   "rank_pv_bot_share": 60
+   "rank_pv_bot_share": 60,
+   "highlight": false
   },
   {
    "qid": "Q3127942",
@@ -6538,7 +6627,8 @@
    "pct_wp_refs_per_1000_words": 87.5,
    "rank_wp_refs_per_1000_words": 19,
    "pct_pv_bot_share": 65.3,
-   "rank_pv_bot_share": 51
+   "rank_pv_bot_share": 51,
+   "highlight": false
   },
   {
    "qid": "Q4038165",
@@ -6612,7 +6702,8 @@
    "pct_wp_refs_per_1000_words": 10.4,
    "rank_wp_refs_per_1000_words": 130,
    "pct_pv_bot_share": 26.4,
-   "rank_pv_bot_share": 107
+   "rank_pv_bot_share": 107,
+   "highlight": false
   },
   {
    "qid": "Q4960600",
@@ -6685,7 +6776,8 @@
    "pct_wp_refs_per_1000_words": 58.7,
    "rank_wp_refs_per_1000_words": 61,
    "pct_pv_bot_share": 58.7,
-   "rank_pv_bot_share": 61
+   "rank_pv_bot_share": 61,
+   "highlight": false
   },
   {
    "qid": "Q14755374",
@@ -6759,7 +6851,8 @@
    "pct_wp_refs_per_1000_words": 80.6,
    "rank_wp_refs_per_1000_words": 29,
    "pct_pv_bot_share": 12.5,
-   "rank_pv_bot_share": 126
+   "rank_pv_bot_share": 126,
+   "highlight": false
   },
   {
    "qid": "Q376334",
@@ -6832,7 +6925,8 @@
    "pct_wp_refs_per_1000_words": 1.4,
    "rank_wp_refs_per_1000_words": 143,
    "pct_pv_bot_share": 20.8,
-   "rank_pv_bot_share": 115
+   "rank_pv_bot_share": 115,
+   "highlight": false
   },
   {
    "qid": "Q2648846",
@@ -6905,7 +6999,8 @@
    "pct_wp_refs_per_1000_words": 6.9,
    "rank_wp_refs_per_1000_words": 135,
    "pct_pv_bot_share": 75.0,
-   "rank_pv_bot_share": 37
+   "rank_pv_bot_share": 37,
+   "highlight": false
   },
   {
    "qid": "Q4913968",
@@ -6979,7 +7074,8 @@
    "pct_wp_refs_per_1000_words": 12.5,
    "rank_wp_refs_per_1000_words": 127,
    "pct_pv_bot_share": 16.0,
-   "rank_pv_bot_share": 122
+   "rank_pv_bot_share": 122,
+   "highlight": false
   },
   {
    "qid": "Q5218634",
@@ -7051,7 +7147,8 @@
    "pct_wp_refs_per_1000_words": 43.1,
    "rank_wp_refs_per_1000_words": 83,
    "pct_pv_bot_share": 2.8,
-   "rank_pv_bot_share": 141
+   "rank_pv_bot_share": 141,
+   "highlight": false
   },
   {
    "qid": "Q20966023",
@@ -7125,7 +7222,8 @@
    "pct_wp_refs_per_1000_words": 21.2,
    "rank_wp_refs_per_1000_words": 115,
    "pct_pv_bot_share": 5.6,
-   "rank_pv_bot_share": 137
+   "rank_pv_bot_share": 137,
+   "highlight": false
   },
   {
    "qid": "Q4890183",
@@ -7199,7 +7297,8 @@
    "pct_wp_refs_per_1000_words": 76.4,
    "rank_wp_refs_per_1000_words": 35,
    "pct_pv_bot_share": 50.0,
-   "rank_pv_bot_share": 73
+   "rank_pv_bot_share": 73,
+   "highlight": false
   },
   {
    "qid": "Q3365612",
@@ -7272,7 +7371,8 @@
    "pct_wp_refs_per_1000_words": 72.9,
    "rank_wp_refs_per_1000_words": 40,
    "pct_pv_bot_share": 68.8,
-   "rank_pv_bot_share": 46
+   "rank_pv_bot_share": 46,
+   "highlight": false
   },
   {
    "qid": "Q2929726",
@@ -7346,7 +7446,8 @@
    "pct_wp_refs_per_1000_words": 86.8,
    "rank_wp_refs_per_1000_words": 20,
    "pct_pv_bot_share": 44.4,
-   "rank_pv_bot_share": 81
+   "rank_pv_bot_share": 81,
+   "highlight": false
   },
   {
    "qid": "Q4770013",
@@ -7420,7 +7521,8 @@
    "pct_wp_refs_per_1000_words": 51.4,
    "rank_wp_refs_per_1000_words": 71,
    "pct_pv_bot_share": 12.5,
-   "rank_pv_bot_share": 127
+   "rank_pv_bot_share": 127,
+   "highlight": false
   },
   {
    "qid": "Q6485902",
@@ -7493,7 +7595,8 @@
    "pct_wp_refs_per_1000_words": 0.3,
    "rank_wp_refs_per_1000_words": 144,
    "pct_pv_bot_share": 19.1,
-   "rank_pv_bot_share": 118
+   "rank_pv_bot_share": 118,
+   "highlight": false
   },
   {
    "qid": "Q7497723",
@@ -7567,7 +7670,8 @@
    "pct_wp_refs_per_1000_words": 82.6,
    "rank_wp_refs_per_1000_words": 26,
    "pct_pv_bot_share": 64.6,
-   "rank_pv_bot_share": 52
+   "rank_pv_bot_share": 52,
+   "highlight": false
   },
   {
    "qid": "Q8028615",
@@ -7640,7 +7744,8 @@
    "pct_wp_refs_per_1000_words": 22.2,
    "rank_wp_refs_per_1000_words": 113,
    "pct_pv_bot_share": 62.5,
-   "rank_pv_bot_share": 55
+   "rank_pv_bot_share": 55,
+   "highlight": false
   },
   {
    "qid": "Q15634637",
@@ -7711,7 +7816,8 @@
    "pct_wp_refs_per_1000_words": 78.1,
    "rank_wp_refs_per_1000_words": 32,
    "pct_pv_bot_share": 23.6,
-   "rank_pv_bot_share": 111
+   "rank_pv_bot_share": 111,
+   "highlight": false
   },
   {
    "qid": "Q15790137",
@@ -7784,7 +7890,8 @@
    "pct_wp_refs_per_1000_words": 36.8,
    "rank_wp_refs_per_1000_words": 92,
    "pct_pv_bot_share": 80.2,
-   "rank_pv_bot_share": 30
+   "rank_pv_bot_share": 30,
+   "highlight": false
   },
   {
    "qid": "Q16937375",
@@ -7858,7 +7965,8 @@
    "pct_wp_refs_per_1000_words": 84.0,
    "rank_wp_refs_per_1000_words": 24,
    "pct_pv_bot_share": 36.8,
-   "rank_pv_bot_share": 92
+   "rank_pv_bot_share": 92,
+   "highlight": false
   },
   {
    "qid": "Q251481",
@@ -7932,18 +8040,19 @@
    "pct_wp_refs_per_1000_words": 13.5,
    "rank_wp_refs_per_1000_words": 126,
    "pct_pv_bot_share": 4.2,
-   "rank_pv_bot_share": 139
+   "rank_pv_bot_share": 139,
+   "highlight": false
   },
   {
    "qid": "Q3205398",
-   "label": "L\u2019Ep\u00e9e 1839",
+   "label": "L’Epée 1839",
    "wd_statements": 9,
    "wd_referenced": 5,
    "wd_props": 9,
    "wd_sitelinks": 3,
    "wd_modified": "2026-03-13T11:05:30Z",
    "wd_desc": "Swiss luxury brand manufacturing mechanical clocks",
-   "enwiki_title": "L'Ep\u00e9e Clocks",
+   "enwiki_title": "L'Epée Clocks",
    "n_inception": 1,
    "key_props_present": 1,
    "key_props_missing": [
@@ -8006,18 +8115,19 @@
    "pct_wp_refs_per_1000_words": 94.4,
    "rank_wp_refs_per_1000_words": 9,
    "pct_pv_bot_share": 0.7,
-   "rank_pv_bot_share": 144
+   "rank_pv_bot_share": 144,
+   "highlight": false
   },
   {
    "qid": "Q3488681",
-   "label": "Soci\u00e9t\u00e9 Suisse pour l'Industrie Horlog\u00e8re",
+   "label": "Société Suisse pour l'Industrie Horlogère",
    "wd_statements": 13,
    "wd_referenced": 7,
    "wd_props": 13,
    "wd_sitelinks": 3,
    "wd_modified": "2026-08-22T06:30:00Z",
    "wd_desc": "Swiss watchmaker",
-   "enwiki_title": "Soci\u00e9t\u00e9 Suisse pour l'Industrie Horlog\u00e8re",
+   "enwiki_title": "Société Suisse pour l'Industrie Horlogère",
    "n_inception": 1,
    "key_props_present": 3,
    "key_props_missing": [
@@ -8078,7 +8188,8 @@
    "pct_wp_refs_per_1000_words": 2.1,
    "rank_wp_refs_per_1000_words": 142,
    "pct_pv_bot_share": 52.4,
-   "rank_pv_bot_share": 70
+   "rank_pv_bot_share": 70,
+   "highlight": false
   },
   {
    "qid": "Q2943705",
@@ -8152,7 +8263,8 @@
    "pct_wp_refs_per_1000_words": 34.0,
    "rank_wp_refs_per_1000_words": 96,
    "pct_pv_bot_share": 7.6,
-   "rank_pv_bot_share": 134
+   "rank_pv_bot_share": 134,
+   "highlight": false
   },
   {
    "qid": "Q3622871",
@@ -8225,7 +8337,8 @@
    "pct_wp_refs_per_1000_words": 91.7,
    "rank_wp_refs_per_1000_words": 13,
    "pct_pv_bot_share": 54.5,
-   "rank_pv_bot_share": 67
+   "rank_pv_bot_share": 67,
+   "highlight": false
   },
   {
    "qid": "Q4035633",
@@ -8298,7 +8411,8 @@
    "pct_wp_refs_per_1000_words": 26.4,
    "rank_wp_refs_per_1000_words": 107,
    "pct_pv_bot_share": 6.2,
-   "rank_pv_bot_share": 136
+   "rank_pv_bot_share": 136,
+   "highlight": false
   },
   {
    "qid": "Q5306863",
@@ -8371,7 +8485,8 @@
    "pct_wp_refs_per_1000_words": 11.8,
    "rank_wp_refs_per_1000_words": 128,
    "pct_pv_bot_share": 13.9,
-   "rank_pv_bot_share": 125
+   "rank_pv_bot_share": 125,
+   "highlight": false
   },
   {
    "qid": "Q6318900",
@@ -8445,7 +8560,8 @@
    "pct_wp_refs_per_1000_words": 4.2,
    "rank_wp_refs_per_1000_words": 139,
    "pct_pv_bot_share": 11.1,
-   "rank_pv_bot_share": 129
+   "rank_pv_bot_share": 129,
+   "highlight": false
   },
   {
    "qid": "Q14523295",
@@ -8518,7 +8634,8 @@
    "pct_wp_refs_per_1000_words": 93.1,
    "rank_wp_refs_per_1000_words": 11,
    "pct_pv_bot_share": 48.6,
-   "rank_pv_bot_share": 75
+   "rank_pv_bot_share": 75,
+   "highlight": false
   },
   {
    "qid": "Q16937371",
@@ -8590,7 +8707,8 @@
    "pct_wp_refs_per_1000_words": 52.8,
    "rank_wp_refs_per_1000_words": 69,
    "pct_pv_bot_share": 39.6,
-   "rank_pv_bot_share": 88
+   "rank_pv_bot_share": 88,
+   "highlight": false
   },
   {
    "qid": "Q17018446",
@@ -8600,7 +8718,7 @@
    "wd_props": 4,
    "wd_sitelinks": 3,
    "wd_modified": "2026-05-22T17:36:17Z",
-   "wd_desc": "American pocket watch manufacturer (1888\u20131927)",
+   "wd_desc": "American pocket watch manufacturer (1888–1927)",
    "enwiki_title": "Dueber-Hampden Watch Company",
    "n_inception": 0,
    "key_props_present": 1,
@@ -8664,7 +8782,8 @@
    "pct_wp_refs_per_1000_words": 7.6,
    "rank_wp_refs_per_1000_words": 134,
    "pct_pv_bot_share": 33.7,
-   "rank_pv_bot_share": 97
+   "rank_pv_bot_share": 97,
+   "highlight": false
   },
   {
    "qid": "Q17461916",
@@ -8736,7 +8855,8 @@
    "pct_wp_refs_per_1000_words": 15.3,
    "rank_wp_refs_per_1000_words": 123,
    "pct_pv_bot_share": 28.5,
-   "rank_pv_bot_share": 104
+   "rank_pv_bot_share": 104,
+   "highlight": false
   },
   {
    "qid": "Q22101765",
@@ -8809,7 +8929,8 @@
    "pct_wp_refs_per_1000_words": 64.6,
    "rank_wp_refs_per_1000_words": 52,
    "pct_pv_bot_share": 31.2,
-   "rank_pv_bot_share": 101
+   "rank_pv_bot_share": 101,
+   "highlight": false
   },
   {
    "qid": "Q11300325",
@@ -8882,7 +9003,8 @@
    "pct_wp_refs_per_1000_words": 34.0,
    "rank_wp_refs_per_1000_words": 97,
    "pct_pv_bot_share": 85.4,
-   "rank_pv_bot_share": 22
+   "rank_pv_bot_share": 22,
+   "highlight": false
   },
   {
    "qid": "Q13415716",
@@ -8955,7 +9077,8 @@
    "pct_wp_refs_per_1000_words": 48.6,
    "rank_wp_refs_per_1000_words": 75,
    "pct_pv_bot_share": 35.4,
-   "rank_pv_bot_share": 94
+   "rank_pv_bot_share": 94,
+   "highlight": false
   },
   {
    "qid": "Q25043079",
@@ -9027,7 +9150,8 @@
    "pct_wp_refs_per_1000_words": 99.3,
    "rank_wp_refs_per_1000_words": 2,
    "pct_pv_bot_share": 73.3,
-   "rank_pv_bot_share": 40
+   "rank_pv_bot_share": 40,
+   "highlight": false
   },
   {
    "qid": "Q25112291",
@@ -9099,7 +9223,8 @@
    "pct_wp_refs_per_1000_words": 35.4,
    "rank_wp_refs_per_1000_words": 94,
    "pct_pv_bot_share": 32.6,
-   "rank_pv_bot_share": 98
+   "rank_pv_bot_share": 98,
+   "highlight": false
   },
   {
    "qid": "Q39055583",
@@ -9171,7 +9296,8 @@
    "pct_wp_refs_per_1000_words": 43.8,
    "rank_wp_refs_per_1000_words": 82,
    "pct_pv_bot_share": 18.1,
-   "rank_pv_bot_share": 119
+   "rank_pv_bot_share": 119,
+   "highlight": false
   },
   {
    "qid": "Q125984188",
@@ -9245,7 +9371,8 @@
    "pct_wp_refs_per_1000_words": 100.0,
    "rank_wp_refs_per_1000_words": 1,
    "pct_pv_bot_share": 9.4,
-   "rank_pv_bot_share": 132
+   "rank_pv_bot_share": 132,
+   "highlight": false
   },
   {
    "qid": "Q96372277",
@@ -9317,7 +9444,8 @@
    "pct_wp_refs_per_1000_words": 89.6,
    "rank_wp_refs_per_1000_words": 16,
    "pct_pv_bot_share": 22.2,
-   "rank_pv_bot_share": 113
+   "rank_pv_bot_share": 113,
+   "highlight": false
   },
   {
    "qid": "Q138307980",
@@ -9390,7 +9518,8 @@
    "pct_wp_refs_per_1000_words": 85.4,
    "rank_wp_refs_per_1000_words": 22,
    "pct_pv_bot_share": 21.5,
-   "rank_pv_bot_share": 114
+   "rank_pv_bot_share": 114,
+   "highlight": false
   },
   {
    "qid": "Q5953842",
@@ -9464,7 +9593,8 @@
    "pct_wp_refs_per_1000_words": 25.7,
    "rank_wp_refs_per_1000_words": 108,
    "pct_pv_bot_share": 92.4,
-   "rank_pv_bot_share": 12
+   "rank_pv_bot_share": 12,
+   "highlight": false
   },
   {
    "qid": "Q17153839",
@@ -9537,7 +9667,8 @@
    "pct_wp_refs_per_1000_words": 72.2,
    "rank_wp_refs_per_1000_words": 41,
    "pct_pv_bot_share": 12.5,
-   "rank_pv_bot_share": 128
+   "rank_pv_bot_share": 128,
+   "highlight": false
   },
   {
    "qid": "Q129939616",
@@ -9611,7 +9742,8 @@
    "pct_wp_refs_per_1000_words": 78.1,
    "rank_wp_refs_per_1000_words": 33,
    "pct_pv_bot_share": 93.8,
-   "rank_pv_bot_share": 10
+   "rank_pv_bot_share": 10,
+   "highlight": false
   },
   {
    "qid": "Q16832435",
@@ -9685,7 +9817,8 @@
    "pct_wp_refs_per_1000_words": 62.2,
    "rank_wp_refs_per_1000_words": 56,
    "pct_pv_bot_share": 15.3,
-   "rank_pv_bot_share": 123
+   "rank_pv_bot_share": 123,
+   "highlight": false
   },
   {
    "qid": "Q25054476",
@@ -9757,7 +9890,8 @@
    "pct_wp_refs_per_1000_words": 15.3,
    "rank_wp_refs_per_1000_words": 124,
    "pct_pv_bot_share": 27.8,
-   "rank_pv_bot_share": 105
+   "rank_pv_bot_share": 105,
+   "highlight": false
   },
   {
    "qid": "Q5321881",
@@ -9830,7 +9964,8 @@
    "pct_wp_refs_per_1000_words": 91.0,
    "rank_wp_refs_per_1000_words": 14,
    "pct_pv_bot_share": 8.3,
-   "rank_pv_bot_share": 133
+   "rank_pv_bot_share": 133,
+   "highlight": false
   },
   {
    "qid": "Q7923389",
@@ -9903,7 +10038,8 @@
    "pct_wp_refs_per_1000_words": 65.3,
    "rank_wp_refs_per_1000_words": 51,
    "pct_pv_bot_share": 6.9,
-   "rank_pv_bot_share": 135
+   "rank_pv_bot_share": 135,
+   "highlight": false
   },
   {
    "qid": "Q105070633",
@@ -9976,7 +10112,8 @@
    "pct_wp_refs_per_1000_words": 95.1,
    "rank_wp_refs_per_1000_words": 8,
    "pct_pv_bot_share": 17.4,
-   "rank_pv_bot_share": 120
+   "rank_pv_bot_share": 120,
+   "highlight": false
   },
   {
    "qid": "Q19520534",
@@ -10050,7 +10187,8 @@
    "pct_wp_refs_per_1000_words": 75.0,
    "rank_wp_refs_per_1000_words": 37,
    "pct_pv_bot_share": 1.4,
-   "rank_pv_bot_share": 143
+   "rank_pv_bot_share": 143,
+   "highlight": false
   },
   {
    "qid": "Q106592750",
@@ -10124,18 +10262,19 @@
    "pct_wp_refs_per_1000_words": 69.4,
    "rank_wp_refs_per_1000_words": 45,
    "pct_pv_bot_share": 3.5,
-   "rank_pv_bot_share": 140
+   "rank_pv_bot_share": 140,
+   "highlight": false
   },
   {
    "qid": "Q108281469",
-   "label": "Maximilian B\u00fcsser and Friends",
+   "label": "Maximilian Büsser and Friends",
    "wd_statements": 4,
    "wd_referenced": 3,
    "wd_props": 4,
    "wd_sitelinks": 1,
    "wd_modified": "2023-05-12T13:55:11Z",
    "wd_desc": "Swiss watch and clock manufacturer",
-   "enwiki_title": "Maximilian B\u00fcsser and Friends",
+   "enwiki_title": "Maximilian Büsser and Friends",
    "n_inception": 0,
    "key_props_present": 2,
    "key_props_missing": [
@@ -10196,7 +10335,8 @@
    "pct_wp_refs_per_1000_words": 0.3,
    "rank_wp_refs_per_1000_words": 145,
    "pct_pv_bot_share": 10.4,
-   "rank_pv_bot_share": 130
+   "rank_pv_bot_share": 130,
+   "highlight": false
   },
   {
    "qid": "Q20970640",
@@ -10269,7 +10409,8 @@
    "pct_wp_refs_per_1000_words": 56.9,
    "rank_wp_refs_per_1000_words": 63,
    "pct_pv_bot_share": 42.7,
-   "rank_pv_bot_share": 84
+   "rank_pv_bot_share": 84,
+   "highlight": false
   },
   {
    "qid": "Q24915364",
@@ -10341,7 +10482,8 @@
    "pct_wp_refs_per_1000_words": 50.7,
    "rank_wp_refs_per_1000_words": 72,
    "pct_pv_bot_share": 2.1,
-   "rank_pv_bot_share": 142
+   "rank_pv_bot_share": 142,
+   "highlight": false
   },
   {
    "qid": "Q29886239",
@@ -10413,7 +10555,8 @@
    "pct_wp_refs_per_1000_words": 95.8,
    "rank_wp_refs_per_1000_words": 7,
    "pct_pv_bot_share": 4.9,
-   "rank_pv_bot_share": 138
+   "rank_pv_bot_share": 138,
+   "highlight": false
   },
   {
    "qid": "Q33728221",
@@ -10485,7 +10628,8 @@
    "pct_wp_refs_per_1000_words": 98.6,
    "rank_wp_refs_per_1000_words": 3,
    "pct_pv_bot_share": 0.0,
-   "rank_pv_bot_share": 145
+   "rank_pv_bot_share": 145,
+   "highlight": false
   },
   {
    "qid": "Q141256416",
@@ -10559,7 +10703,8 @@
    "pct_wp_refs_per_1000_words": 67.4,
    "rank_wp_refs_per_1000_words": 48,
    "pct_pv_bot_share": 40.3,
-   "rank_pv_bot_share": 87
+   "rank_pv_bot_share": 87,
+   "highlight": false
   }
  ]
 }

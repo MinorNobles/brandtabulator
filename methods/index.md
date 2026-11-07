@@ -40,4 +40,4 @@ Added by hand: Seiko (Q322601): Not classified as a watch company in Wikidata (n
 
 Removed by hand: none.
 
-Competitive set (draft): Draft: US mass- and mid-market brands a Citizen buyer might compare against, plus Citizen's own Bulova. Not yet reviewed by the author. Chosen by: Claude, as a draft on 2026-11-07; pending Michael Quinn's review.
+Competitive set: none yet. One will be added only when it rests on a stated, sourced rule.

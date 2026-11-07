@@ -90,25 +90,10 @@
       "reason": "Same."
     }
   ],
-  "competitive_set": {
-    "name": "Competitive set (draft)",
-    "chosen_by": "Claude, as a draft on 2026-11-07; pending Michael Quinn's review",
-    "basis": "Draft: US mass- and mid-market brands a Citizen buyer might compare against, plus Citizen's own Bulova. Not yet reviewed by the author.",
+  "highlight": {
     "members": [
-      "Q1368019",
-      "Q322601",
-      "Q217338",
-      "Q1644618",
-      "Q356212",
-      "Q663300",
-      "Q659530",
-      "Q573422",
-      "Q1771114",
-      "Q1573565",
-      "Q939816",
-      "Q6060981",
-      "Q603698",
-      "Q180014"
-    ]
+      "Q1368019"
+    ],
+    "reason": "Citizen Watch is the brand this category page was first built around. Highlighting changes nothing in the data."
   }
 }
