@@ -1,7 +1,7 @@
 {
   "slug": "watch-manufacturers",
   "name": "Watch manufacturers",
-  "note": "Full category from the discovery query, minus exclusions below (not watch companies, or not companies), minus dissolved companies (Wikidata P576). Seiko and Swatch added by hand: not classified as watch companies in Wikidata. The 14-brand competitive set used for the first run is kept as highlights.",
+  "note": "Full category = every Wikidata item returned by discovery_sparql (industry horology or watchmaking, or product watch, or instance of watch manufacturing company) that has an English Wikipedia article. No hand exclusions. Items with a dissolution date in Wikidata are shown and flagged, not removed. Seiko and Swatch are added by hand because Wikidata does not classify them as watch companies; that addition is stated on the page.",
   "members": [
     {
       "qid": "Q1368019",
@@ -75,48 +75,40 @@
     }
   ],
   "discovery_sparql": "SELECT DISTINCT ?item ?itemLabel ?sitelinks WHERE { { ?item wdt:P452 wd:Q41767 . } UNION { ?item wdt:P452 wd:Q63346664 . } UNION { ?item wdt:P1056 wd:Q178794 . } UNION { ?item wdt:P31 wd:Q136094627 . } ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". } } ORDER BY DESC(?sitelinks) LIMIT 400",
-  "highlight": [
-    "Q1368019",
-    "Q322601",
-    "Q217338",
-    "Q1644618",
-    "Q356212",
-    "Q663300",
-    "Q659530",
-    "Q573422",
-    "Q1771114",
-    "Q1573565",
-    "Q939816",
-    "Q6060981",
-    "Q603698",
-    "Q180014"
-  ],
   "members_from_discovery": true,
-  "exclude_dissolved": true,
-  "exclude": {
-    "Q635484": "Giorgio Armani — fashion house with a watch licence",
-    "Q136503": "Mango — apparel retailer",
-    "Q659863": "Moschino — fashion house",
-    "Q1281935": "Eckō Unltd. — apparel",
-    "Q4035633": "ck Calvin Klein — fashion brand",
-    "Q13415716": "Thomas Sabo — jewellery",
-    "Q2708181": "Van Cleef & Arpels — jeweller",
-    "Q15994135": "Buccellati — jeweller",
-    "Q1316779": "S.T. Dupont — pens and lighters",
-    "Q689240": "Richemont — holding group, not a brand",
-    "Q694107": "The Swatch Group — holding group, not a brand",
-    "Q15634637": "Sowind Group — holding group",
-    "Q15790137": "Bucherer Group — retailer/holding",
-    "Q680237": "ETA SA — movement supplier, not a consumer brand",
-    "Q1379518": "Ronda — movement supplier",
-    "Q19520534": "Manufacture Modules Technologies — component supplier",
-    "Q1496822": "Geneva Seal — a certification, not a company",
-    "Q138307980": "The Geneva School of Watchmaking — school",
-    "Q33728221": "Watch Shop — retailer",
-    "Q20970640": "The Hour Glass — retailer",
-    "Q129939616": "The Kingsman Shop — retailer",
-    "Q29886239": "Eleven James — rental service",
-    "Q5321881": "E. Gluck Corporation — licensed watch importer (Armitron); borderline, excluded for now",
-    "Q251481": "Century Time Gems — borderline, excluded for now"
+  "manual_additions": [
+    {
+      "qid": "Q322601",
+      "label": "Seiko",
+      "enwiki": "Seiko",
+      "reason": "Not classified as a watch company in Wikidata (no industry/product statement); obviously belongs."
+    },
+    {
+      "qid": "Q573422",
+      "label": "Swatch",
+      "enwiki": "Swatch",
+      "reason": "Same."
+    }
+  ],
+  "competitive_set": {
+    "name": "Citizen competitive set",
+    "chosen_by": "Michael Quinn",
+    "basis": "US mass- and mid-market brands a Citizen buyer compares against, plus Citizen's own Bulova. Editorial; not derived from data.",
+    "members": [
+      "Q1368019",
+      "Q322601",
+      "Q217338",
+      "Q1644618",
+      "Q356212",
+      "Q663300",
+      "Q659530",
+      "Q573422",
+      "Q1771114",
+      "Q1573565",
+      "Q939816",
+      "Q6060981",
+      "Q603698",
+      "Q180014"
+    ]
   }
 }

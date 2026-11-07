@@ -73,7 +73,10 @@
    "pct_wp_refs_per_1000_words": 61.5,
    "rank_wp_refs_per_1000_words": 6,
    "pct_pv_bot_share": 76.9,
-   "rank_pv_bot_share": 4
+   "rank_pv_bot_share": 4,
+   "in_set": true,
+   "dissolved": false,
+   "manual_addition": false
   },
   {
    "qid": "Q322601",
@@ -131,7 +134,10 @@
    "pct_wp_refs_per_1000_words": 69.2,
    "rank_wp_refs_per_1000_words": 5,
    "pct_pv_bot_share": 23.1,
-   "rank_pv_bot_share": 11
+   "rank_pv_bot_share": 11,
+   "in_set": true,
+   "dissolved": false,
+   "manual_addition": true
   },
   {
    "qid": "Q217338",
@@ -193,7 +199,10 @@
    "pct_wp_refs_per_1000_words": 84.6,
    "rank_wp_refs_per_1000_words": 3,
    "pct_pv_bot_share": 84.6,
-   "rank_pv_bot_share": 3
+   "rank_pv_bot_share": 3,
+   "in_set": true,
+   "dissolved": false,
+   "manual_addition": false
   },
   {
    "qid": "Q1644618",
@@ -256,7 +265,10 @@
    "pct_wp_refs_per_1000_words": 46.2,
    "rank_wp_refs_per_1000_words": 8,
    "pct_pv_bot_share": 61.5,
-   "rank_pv_bot_share": 6
+   "rank_pv_bot_share": 6,
+   "in_set": true,
+   "dissolved": false,
+   "manual_addition": false
   },
   {
    "qid": "Q356212",
@@ -318,7 +330,10 @@
    "pct_wp_refs_per_1000_words": 15.4,
    "rank_wp_refs_per_1000_words": 12,
    "pct_pv_bot_share": 15.4,
-   "rank_pv_bot_share": 12
+   "rank_pv_bot_share": 12,
+   "in_set": true,
+   "dissolved": false,
+   "manual_addition": false
   },
   {
    "qid": "Q663300",
@@ -380,7 +395,10 @@
    "pct_wp_refs_per_1000_words": 30.8,
    "rank_wp_refs_per_1000_words": 10,
    "pct_pv_bot_share": 69.2,
-   "rank_pv_bot_share": 5
+   "rank_pv_bot_share": 5,
+   "in_set": true,
+   "dissolved": false,
+   "manual_addition": false
   },
   {
    "qid": "Q659530",
@@ -442,7 +460,10 @@
    "pct_wp_refs_per_1000_words": 38.5,
    "rank_wp_refs_per_1000_words": 9,
    "pct_pv_bot_share": 30.8,
-   "rank_pv_bot_share": 10
+   "rank_pv_bot_share": 10,
+   "in_set": true,
+   "dissolved": false,
+   "manual_addition": false
   },
   {
    "qid": "Q573422",
@@ -505,7 +526,10 @@
    "pct_wp_refs_per_1000_words": 7.7,
    "rank_wp_refs_per_1000_words": 13,
    "pct_pv_bot_share": 7.7,
-   "rank_pv_bot_share": 13
+   "rank_pv_bot_share": 13,
+   "in_set": true,
+   "dissolved": false,
+   "manual_addition": true
   },
   {
    "qid": "Q1771114",
@@ -567,7 +591,10 @@
    "pct_wp_refs_per_1000_words": 53.8,
    "rank_wp_refs_per_1000_words": 7,
    "pct_pv_bot_share": 38.5,
-   "rank_pv_bot_share": 9
+   "rank_pv_bot_share": 9,
+   "in_set": true,
+   "dissolved": false,
+   "manual_addition": false
   },
   {
    "qid": "Q1573565",
@@ -629,7 +656,10 @@
    "pct_wp_refs_per_1000_words": 0.0,
    "rank_wp_refs_per_1000_words": 14,
    "pct_pv_bot_share": 92.3,
-   "rank_pv_bot_share": 2
+   "rank_pv_bot_share": 2,
+   "in_set": true,
+   "dissolved": false,
+   "manual_addition": false
   },
   {
    "qid": "Q939816",
@@ -692,7 +722,10 @@
    "pct_wp_refs_per_1000_words": 23.1,
    "rank_wp_refs_per_1000_words": 11,
    "pct_pv_bot_share": 0.0,
-   "rank_pv_bot_share": 14
+   "rank_pv_bot_share": 14,
+   "in_set": true,
+   "dissolved": false,
+   "manual_addition": false
   },
   {
    "qid": "Q6060981",
@@ -755,7 +788,10 @@
    "pct_wp_refs_per_1000_words": 76.9,
    "rank_wp_refs_per_1000_words": 4,
    "pct_pv_bot_share": 53.8,
-   "rank_pv_bot_share": 7
+   "rank_pv_bot_share": 7,
+   "in_set": true,
+   "dissolved": false,
+   "manual_addition": false
   },
   {
    "qid": "Q603698",
@@ -817,7 +853,10 @@
    "pct_wp_refs_per_1000_words": 100.0,
    "rank_wp_refs_per_1000_words": 1,
    "pct_pv_bot_share": 100.0,
-   "rank_pv_bot_share": 1
+   "rank_pv_bot_share": 1,
+   "in_set": true,
+   "dissolved": false,
+   "manual_addition": false
   },
   {
    "qid": "Q180014",
@@ -879,7 +918,10 @@
    "pct_wp_refs_per_1000_words": 92.3,
    "rank_wp_refs_per_1000_words": 2,
    "pct_pv_bot_share": 46.2,
-   "rank_pv_bot_share": 8
+   "rank_pv_bot_share": 8,
+   "in_set": true,
+   "dissolved": false,
+   "manual_addition": false
   }
  ]
 }

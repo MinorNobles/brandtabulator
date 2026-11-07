@@ -129,11 +129,12 @@ def rank(rows, key, reverse=True):
     for i, r in enumerate(s): r["rank_" + key] = i + 1
 
 # ---------- output ----------
-COLS = ["label", "qid", "enwiki_title", "wp_last_substantive", "wp_last_50byte", "days_since_50byte", "rank_days_since_50byte", "wp_edits_90d", "wp_editors_90d", "wp_reverted_90d", "rank_wp_edits_90d", "wd_statements", "wd_referenced", "ballast_pct", "rank_ballast_pct", "key_props_present", "identity_links_out", "rank_identity_links_out", "n_inception", "wd_sitelinks", "wd_modified", "days_since_wd_edit", "wp_refs", "wp_words", "wp_refs_per_1000_words", "wp_newest_cite_year", "pv_user", "pv_spider", "pv_automated", "pv_all", "pv_bot_share", "rank_pv_user", "has_google_kg_id", "has_freebase_id", "has_official_name_history", "key_props_missing"]
+COLS = ["label", "qid", "in_set", "dissolved", "manual_addition", "enwiki_title", "wp_last_substantive", "wp_last_50byte", "days_since_50byte", "rank_days_since_50byte", "wp_edits_90d", "wp_editors_90d", "wp_reverted_90d", "rank_wp_edits_90d", "wd_statements", "wd_referenced", "ballast_pct", "rank_ballast_pct", "key_props_present", "identity_links_out", "rank_identity_links_out", "n_inception", "wd_sitelinks", "wd_modified", "days_since_wd_edit", "wp_refs", "wp_words", "wp_refs_per_1000_words", "wp_newest_cite_year", "pv_user", "pv_spider", "pv_automated", "pv_all", "pv_bot_share", "rank_pv_user", "has_google_kg_id", "has_freebase_id", "has_official_name_history", "key_props_missing"]
 
 def md_table(rows, cat):
     h = "| # stale | Brand | Last ≥50-byte edit | 90d edits/editors | Wikidata stmts (ref'd) | Ballast | Identity links out | Editions | Refs | Reader views | Bot share |\n|---|---|---|---|---|---|---|---|---|---|---|\n"
     for r in sorted(rows, key=lambda r: r.get("rank_days_since_50byte") or 999):
+        tag = (" · set" if r.get("in_set") else "") + (" · dissolved" if r.get("dissolved") else "")
         h += f"| {r.get('rank_days_since_50byte','')} | [{r['label']}](https://en.wikipedia.org/wiki/{urllib.parse.quote((r.get('enwiki_title') or '').replace(' ','_'))}) ([{r['qid']}](https://www.wikidata.org/wiki/{r['qid']})) | {(r.get('wp_last_50byte') or '')[:10]} | {r.get('wp_edits_90d','')} / {r.get('wp_editors_90d','')} | {r.get('wd_statements','')} ({r.get('wd_referenced','')}) | {r.get('ballast_pct','')}% | {r.get('identity_links_out','')} | {r.get('wd_sitelinks','')} | {r.get('wp_refs','')} | {r.get('pv_user','')} | {r.get('pv_bot_share','')}% |\n"
     return h
 
@@ -175,11 +176,13 @@ def html_page(cat, rows, date, pv_month):
             txt, val = cell(r, key)
             cls = ' class="mono"' if kind != "str" else ""
             tds += f'<td{cls} data-v="{H.escape(str(val))}">{txt}</td>'
-        hl = ' class="hl"' if r["qid"] in cat.get("highlight", []) else ""
-        trs += f"<tr{hl}>{tds}</tr>"
+        cls = ("hl " if r.get("in_set") else "") + ("dis" if r.get("dissolved") else "")
+        trs += f'<tr class="{cls.strip()}" data-set="{1 if r.get("in_set") else 0}">{tds}</tr>'
     ths = "".join(f'<th data-kind="{k}"><span class="hd" tabindex="0" role="button" data-tip="{H.escape(d)}" aria-label="Sort by {H.escape(n)}">{H.escape(n)}<span class="arr" aria-hidden="true"></span></span><button type="button" class="i" data-def="def-{i}" aria-label="Definition of {H.escape(n)}">i</button></th>' for i, (n, _, k, d) in enumerate(COLDEFS))
     defs = "".join(f'<dt id="def-{i}">{H.escape(n)}</dt><dd>{H.escape(d)}</dd>' for i, (n, _, _, d) in enumerate(COLDEFS))
     ld = json.dumps({"@context":"https://schema.org","@type":"Dataset","name":f"Brandtabulator — {cat['name']} — {date}","description":"Public-record activity metrics for brands in this category, computed from Wikipedia and Wikidata.","dateModified":date,"license":"https://creativecommons.org/licenses/by-sa/4.0/","creator":{"@type":"Person","name":"Michael Quinn","url":"https://michaelquinn.ai"},"distribution":[{"@type":"DataDownload","encodingFormat":"text/csv","contentUrl":f"/data/{cat['slug']}/{date}.csv"},{"@type":"DataDownload","encodingFormat":"application/json","contentUrl":f"/data/{cat['slug']}/{date}.json"}]})
+    cs = cat.get("competitive_set") or {}; n_set = sum(1 for r in rows if r.get("in_set")); n_dis = sum(1 for r in rows if r.get("dissolved"))
+    adds = ", ".join(H.escape(x.get("label", x["qid"])) for x in cat.get("manual_additions", []))
     n = len(rows); med_e = statistics.median([r.get("wp_edits_90d", 0) or 0 for r in rows]); med_b = statistics.median([r.get("ballast_pct", 0) for r in rows])
     stale = max(rows, key=lambda r: r.get("days_since_50byte") or 0); fresh = min(rows, key=lambda r: r.get("days_since_50byte") if r.get("days_since_50byte") is not None else 9999)
     return f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
@@ -204,7 +207,8 @@ th .hd{{cursor:pointer;display:inline-block;padding:4px 0}}th .hd:hover,th .hd:f
 th .i{{margin-left:6px;width:18px;height:18px;border:1px solid #cfcdc5;border-radius:50%;background:#fff;color:#555;font:inherit;font-size:11px;line-height:1;cursor:pointer;vertical-align:middle;padding:0}}th .i:hover,th .i:focus-visible{{border-color:#1b1b1b;color:#1b1b1b;outline:none}}
 @media (hover:hover){{th .hd:hover::after{{content:attr(data-tip);position:absolute;left:0;top:100%;z-index:5;width:260px;white-space:normal;background:#1b1b1b;color:#f4f3ef;font-size:12px;line-height:1.4;padding:8px 10px;font-weight:400;pointer-events:none}}}}
 dt.flash{{background:#fff8e6;outline:2px solid #e3d9b0}}
-td{{padding:11px 10px;border-bottom:1px solid #e3e1da;font-size:14px;vertical-align:top}}tr.hl td{{background:#fff8e6}}
+td{{padding:11px 10px;border-bottom:1px solid #e3e1da;font-size:14px;vertical-align:top}}tr.hl td{{background:#fff8e6}}tr.dis td{{color:#888}}tr.dis td a{{color:#6b7d8f}}tr.hidden{{display:none}}
+.seg{{display:inline-flex;border:1px solid #cfcdc5;border-radius:4px;overflow:hidden}}.seg button{{font:inherit;font-size:13px;padding:10px 14px;min-height:44px;border:0;background:#fff;color:#1b1b1b;cursor:pointer}}.seg button+button{{border-left:1px solid #cfcdc5}}.seg button.on{{background:#1b1b1b;color:#f4f3ef}}.seg .n{{opacity:.7;margin-left:6px;font-family:'IBM Plex Mono',monospace;font-size:12px}}
 .mono{{font-family:'IBM Plex Mono',ui-monospace,monospace}}.q{{font-size:12px;color:#555}}
 dl{{display:grid;grid-template-columns:200px 1fr;gap:6px 16px;font-size:13px;margin:0}}dt{{font-weight:600}}dd{{margin:0;color:#444;line-height:1.45}}
 .foot{{border-top:1px solid #cfcdc5;padding-top:20px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;font-size:13px;color:#444;line-height:1.5}}.foot b{{display:block;color:#1b1b1b;margin-bottom:4px;font-weight:600}}
@@ -219,7 +223,9 @@ details summary{{cursor:pointer;font-size:14px;font-weight:500}}
 <p>Longest without a substantive edit: {H.escape(stale['label'])}, {stale.get('days_since_50byte')} days. Most recently worked on: {H.escape(fresh['label'])}. Category median is {med_e:g} edits per 90 days and {med_b:g}% of Wikidata statements referenced.</p>
 <div class="sub">Every figure links to the Wikipedia article and Wikidata item it was computed from. Revision ids are in the <a href="/data/{cat['slug']}/{date}.json">JSON</a>.</div></div>
 <div class="card">
-<div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px"><h2>The regatta</h2><span class="sub">Same wind for every boat. Click a heading to sort; hover for its definition. Default order: longest unupdated first.</span></div>
+<div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px"><h2>The regatta</h2><span class="sub">Same wind for every boat. Click a heading to sort; hover or tap ⓘ for its definition. Default order: longest unupdated first.</span></div>
+<div class="seg" role="group" aria-label="Which brands to show"><button type="button" class="on" data-view="all">Full category <span class="n">{n}</span></button><button type="button" data-view="set">{H.escape(cs.get("name","Competitive set"))} <span class="n">{n_set}</span></button></div>
+<div class="sub" id="viewnote"><span data-for="all"><b>Full category:</b> every Wikidata item that is classified as a watch company (industry horology or watchmaking, product watch, or instance of watch manufacturing company) and has an English Wikipedia article, as returned by <a href="/data/{cat['slug']}/candidates.json">this query</a>. Nothing removed by hand. {n_dis} of them carry a dissolution date in Wikidata and are shown greyed. Added by hand because Wikidata does not classify them as watch companies: {adds}.</span><span data-for="set" hidden><b>{H.escape(cs.get("name","Competitive set"))}:</b> {H.escape(cs.get("basis",""))} Chosen by {H.escape(cs.get("chosen_by","the author"))}; the list is in the <a href="https://github.com/MinorNobles/brandtabulator/blob/main/categories/{cat['slug']}.json">category file</a>.</span></div>
 <div class="wrap"><table id="regatta"><thead><tr>{ths}</tr></thead><tbody>{trs}</tbody></table></div>
 <div class="sub">Edits: 90 days to {date}. Views: English Wikipedia, {pv_month}, by Wikimedia agent class. <a href="/data/{cat['slug']}/{date}.csv">CSV</a> · <a href="/data/{cat['slug']}/{date}.json">JSON</a> · <a href="/data/{cat['slug']}/candidates.json">Discovery candidates</a> · <a href="/methods/">Methods</a></div>
 <details><summary>Column definitions</summary><div style="padding-top:12px"><dl>{defs}</dl></div></details>
@@ -237,6 +243,10 @@ rows.sort(function(a,b){{var x=a.cells[i].getAttribute('data-v'),y=b.cells[i].ge
 if(k==='num'){{x=parseFloat(x)||0;y=parseFloat(y)||0;return dir*(x-y);}}return dir*String(x).localeCompare(String(y));}});
 rows.forEach(function(r){{tb.appendChild(r);}});
 for(var j=0;j<ths.length;j++)ths[j].classList.remove('asc','desc');ths[i].classList.add(dir>0?'asc':'desc');}}
+var seg=document.querySelector('.seg');if(seg){{seg.addEventListener('click',function(e){{var b=e.target.closest('button');if(!b)return;var v=b.getAttribute('data-view');
+Array.prototype.forEach.call(seg.querySelectorAll('button'),function(x){{x.classList.toggle('on',x===b);}});
+Array.prototype.forEach.call(tb.rows,function(r){{r.classList.toggle('hidden',v==='set'&&r.getAttribute('data-set')!=='1');}});
+Array.prototype.forEach.call(document.querySelectorAll('#viewnote [data-for]'),function(x){{x.hidden=x.getAttribute('data-for')!==v;}});}});}}
 Array.prototype.forEach.call(ths,function(th,i){{var hd=th.querySelector('.hd'),ib=th.querySelector('.i');
 function go(){{sortBy(i,th.classList.contains('asc')?-1:1);hd.blur();}}
 hd.addEventListener('click',go);hd.addEventListener('keydown',function(e){{if(e.key==='Enter'||e.key===' '){{e.preventDefault();go();}}}});
@@ -281,29 +291,27 @@ def main():
         except Exception as ex:
             print("  discovery failed:", ex, flush=True)
 
-    members = list(cat.get("members", []))
+    members = list(cat.get("members", [])) + list(cat.get("manual_additions", []))
     if cat.get("members_from_discovery"):
         cpath = os.path.join(outdir, "candidates.json")
         cands = json.load(open(cpath))["candidates"] if os.path.exists(cpath) else []
-        have = {m["qid"] for m in members}; ex = cat.get("exclude", []); excl = set(ex.keys() if isinstance(ex, dict) else ex)
+        have = {m["qid"] for m in members}
+        ex = cat.get("exclude", {}); excl = set(ex.keys() if isinstance(ex, dict) else ex)   # only if Michael lists them, with reasons
         for c in cands:
             if c["qid"] not in have and c["qid"] not in excl:
                 members.append({"qid": c["qid"], "label": c.get("label")}); have.add(c["qid"])
     ids = [m["qid"] for m in members]
     print(f"fetching {len(ids)} Wikidata items…", flush=True)
     ents = wd_entities(ids)
-    if cat.get("exclude_dissolved"):
-        keep = []
-        for m in members:
-            e = ents.get(m["qid"]) or {}
-            if "P576" in e.get("claims", {}): print(f"  skipping dissolved: {m.get('label') or m['qid']}", flush=True); continue
-            keep.append(m)
-        members = keep
     members = [m for m in members if ents.get(m["qid"])]
+    seen = set(); members = [m for m in members if not (m["qid"] in seen or seen.add(m["qid"]))]
     rows = []
     for m in members:
         e = ents.get(m["qid"]); row = {"qid": m["qid"], "label": m.get("label") or (e.get("labels", {}).get("en") or {}).get("value") or m["qid"]}
         row.update(wd_metrics(e))
+        row["dissolved"] = "P576" in e.get("claims", {})
+        row["in_set"] = m["qid"] in set((cat.get("competitive_set") or {}).get("members", []))
+        row["manual_addition"] = m["qid"] in {x["qid"] for x in cat.get("manual_additions", [])}
         title = m.get("enwiki") or row.get("enwiki_title")
         if title:
             print(f"  {row['label']}: Wikipedia…", flush=True)
