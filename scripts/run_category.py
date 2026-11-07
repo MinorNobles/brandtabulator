@@ -177,8 +177,8 @@ def html_page(cat, rows, date, pv_month):
             tds += f'<td{cls} data-v="{H.escape(str(val))}">{txt}</td>'
         hl = ' class="hl"' if r["qid"] in cat.get("highlight", []) else ""
         trs += f"<tr{hl}>{tds}</tr>"
-    ths = "".join(f'<th data-kind="{k}" title="{H.escape(d)}" tabindex="0" role="button" aria-label="{H.escape(n)}: {H.escape(d)}. Click to sort.">{H.escape(n)}<span class="arr" aria-hidden="true"></span></th>' for (n, _, k, d) in COLDEFS)
-    defs = "".join(f"<dt>{H.escape(n)}</dt><dd>{H.escape(d)}</dd>" for (n, _, _, d) in COLDEFS)
+    ths = "".join(f'<th data-kind="{k}"><span class="hd" tabindex="0" role="button" data-tip="{H.escape(d)}" aria-label="Sort by {H.escape(n)}">{H.escape(n)}<span class="arr" aria-hidden="true"></span></span><button type="button" class="i" data-def="def-{i}" aria-label="Definition of {H.escape(n)}">i</button></th>' for i, (n, _, k, d) in enumerate(COLDEFS))
+    defs = "".join(f'<dt id="def-{i}">{H.escape(n)}</dt><dd>{H.escape(d)}</dd>' for i, (n, _, _, d) in enumerate(COLDEFS))
     ld = json.dumps({"@context":"https://schema.org","@type":"Dataset","name":f"Brandtabulator — {cat['name']} — {date}","description":"Public-record activity metrics for brands in this category, computed from Wikipedia and Wikidata.","dateModified":date,"license":"https://creativecommons.org/licenses/by-sa/4.0/","creator":{"@type":"Person","name":"Michael Quinn","url":"https://michaelquinn.ai"},"distribution":[{"@type":"DataDownload","encodingFormat":"text/csv","contentUrl":f"/data/{cat['slug']}/{date}.csv"},{"@type":"DataDownload","encodingFormat":"application/json","contentUrl":f"/data/{cat['slug']}/{date}.json"}]})
     n = len(rows); med_e = statistics.median([r.get("wp_edits_90d", 0) or 0 for r in rows]); med_b = statistics.median([r.get("ballast_pct", 0) for r in rows])
     stale = max(rows, key=lambda r: r.get("days_since_50byte") or 0); fresh = min(rows, key=lambda r: r.get("days_since_50byte") if r.get("days_since_50byte") is not None else 9999)
@@ -199,15 +199,17 @@ h1{{margin:0;font-size:40px;line-height:1.1;font-weight:600;letter-spacing:-.02e
 .card{{background:#fff;border:1px solid #cfcdc5;padding:22px 26px;display:flex;flex-direction:column;gap:14px}}
 .card h2{{margin:0;font-size:18px;font-weight:600}}
 .wrap{{overflow-x:auto}}table{{border-collapse:collapse;width:100%}}
-th{{font-weight:500;color:#555;text-align:left;font-size:12px;padding:10px 10px;border-bottom:1px solid #cfcdc5;white-space:nowrap;cursor:pointer;user-select:none;position:relative}}
-th:hover,th:focus{{color:#1b1b1b;background:#f4f3ef;outline:none}}th .arr::after{{content:"";margin-left:6px;color:#999}}th.asc .arr::after{{content:"▲"}}th.desc .arr::after{{content:"▼"}}
-th[title]:hover::before,th[title]:focus::before{{content:attr(title);position:absolute;left:0;top:100%;z-index:5;width:260px;white-space:normal;background:#1b1b1b;color:#f4f3ef;font-size:12px;line-height:1.4;padding:8px 10px;font-weight:400;cursor:default}}
+th{{font-weight:500;color:#555;text-align:left;font-size:12px;padding:8px 10px;border-bottom:1px solid #cfcdc5;white-space:nowrap;user-select:none;position:relative}}
+th .hd{{cursor:pointer;display:inline-block;padding:4px 0}}th .hd:hover,th .hd:focus-visible{{color:#1b1b1b;outline:none}}th .arr::after{{content:"";margin-left:6px;color:#999}}th.asc .arr::after{{content:"▲"}}th.desc .arr::after{{content:"▼"}}
+th .i{{margin-left:6px;width:18px;height:18px;border:1px solid #cfcdc5;border-radius:50%;background:#fff;color:#555;font:inherit;font-size:11px;line-height:1;cursor:pointer;vertical-align:middle;padding:0}}th .i:hover,th .i:focus-visible{{border-color:#1b1b1b;color:#1b1b1b;outline:none}}
+@media (hover:hover){{th .hd:hover::after{{content:attr(data-tip);position:absolute;left:0;top:100%;z-index:5;width:260px;white-space:normal;background:#1b1b1b;color:#f4f3ef;font-size:12px;line-height:1.4;padding:8px 10px;font-weight:400;pointer-events:none}}}}
+dt.flash{{background:#fff8e6;outline:2px solid #e3d9b0}}
 td{{padding:11px 10px;border-bottom:1px solid #e3e1da;font-size:14px;vertical-align:top}}tr.hl td{{background:#fff8e6}}
 .mono{{font-family:'IBM Plex Mono',ui-monospace,monospace}}.q{{font-size:12px;color:#555}}
 dl{{display:grid;grid-template-columns:200px 1fr;gap:6px 16px;font-size:13px;margin:0}}dt{{font-weight:600}}dd{{margin:0;color:#444;line-height:1.45}}
 .foot{{border-top:1px solid #cfcdc5;padding-top:20px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;font-size:13px;color:#444;line-height:1.5}}.foot b{{display:block;color:#1b1b1b;margin-bottom:4px;font-weight:600}}
 details summary{{cursor:pointer;font-size:14px;font-weight:500}}
-@media (max-width:760px){{main{{padding:24px 20px 48px;gap:22px}}h1{{font-size:30px}}.lead p{{font-size:17px}}.foot{{grid-template-columns:1fr}}dl{{grid-template-columns:1fr}}th[title]:hover::before{{display:none}}}}
+@media (max-width:760px){{main{{padding:24px 20px 48px;gap:22px}}h1{{font-size:30px}}.lead p{{font-size:17px}}.foot{{grid-template-columns:1fr}}dl{{grid-template-columns:1fr}}}}
 </style></head>
 <body>
 <div class="mast"><div class="in"><div style="display:flex;gap:16px;align-items:baseline;flex-wrap:wrap"><a class="brand" href="/">Brandtabulator</a><span class="sub">working title · under the Brand AI Report</span></div><div class="sub" style="display:flex;gap:16px;flex-wrap:wrap"><a href="/categories/">Categories</a><a href="/methods/">Methods</a><a href="/data/">Data</a><span>Issue {date}</span></div></div></div>
@@ -235,8 +237,11 @@ rows.sort(function(a,b){{var x=a.cells[i].getAttribute('data-v'),y=b.cells[i].ge
 if(k==='num'){{x=parseFloat(x)||0;y=parseFloat(y)||0;return dir*(x-y);}}return dir*String(x).localeCompare(String(y));}});
 rows.forEach(function(r){{tb.appendChild(r);}});
 for(var j=0;j<ths.length;j++)ths[j].classList.remove('asc','desc');ths[i].classList.add(dir>0?'asc':'desc');}}
-Array.prototype.forEach.call(ths,function(th,i){{var dir=1;function go(){{dir=th.classList.contains('asc')?-1:1;sortBy(i,dir);}}
-th.addEventListener('click',go);th.addEventListener('keydown',function(e){{if(e.key==='Enter'||e.key===' '){{e.preventDefault();go();}}}});}});}})();
+Array.prototype.forEach.call(ths,function(th,i){{var hd=th.querySelector('.hd'),ib=th.querySelector('.i');
+function go(){{sortBy(i,th.classList.contains('asc')?-1:1);hd.blur();}}
+hd.addEventListener('click',go);hd.addEventListener('keydown',function(e){{if(e.key==='Enter'||e.key===' '){{e.preventDefault();go();}}}});
+ib.addEventListener('click',function(e){{e.stopPropagation();var d=document.getElementById(ib.getAttribute('data-def'));var det=d&&d.closest('details');if(det)det.open=true;
+if(d){{d.scrollIntoView({{behavior:'smooth',block:'center'}});d.classList.add('flash');setTimeout(function(){{d.classList.remove('flash');}},2500);}}}});}});}})();
 </script>
 </body></html>"""
 
@@ -276,12 +281,28 @@ def main():
         except Exception as ex:
             print("  discovery failed:", ex, flush=True)
 
-    members = cat["members"]; ids = [m["qid"] for m in members]
+    members = list(cat.get("members", []))
+    if cat.get("members_from_discovery"):
+        cpath = os.path.join(outdir, "candidates.json")
+        cands = json.load(open(cpath))["candidates"] if os.path.exists(cpath) else []
+        have = {m["qid"] for m in members}; ex = cat.get("exclude", []); excl = set(ex.keys() if isinstance(ex, dict) else ex)
+        for c in cands:
+            if c["qid"] not in have and c["qid"] not in excl:
+                members.append({"qid": c["qid"], "label": c.get("label")}); have.add(c["qid"])
+    ids = [m["qid"] for m in members]
     print(f"fetching {len(ids)} Wikidata items…", flush=True)
     ents = wd_entities(ids)
+    if cat.get("exclude_dissolved"):
+        keep = []
+        for m in members:
+            e = ents.get(m["qid"]) or {}
+            if "P576" in e.get("claims", {}): print(f"  skipping dissolved: {m.get('label') or m['qid']}", flush=True); continue
+            keep.append(m)
+        members = keep
+    members = [m for m in members if ents.get(m["qid"])]
     rows = []
     for m in members:
-        e = ents.get(m["qid"]); row = {"qid": m["qid"], "label": m.get("label") or e["labels"]["en"]["value"]}
+        e = ents.get(m["qid"]); row = {"qid": m["qid"], "label": m.get("label") or (e.get("labels", {}).get("en") or {}).get("value") or m["qid"]}
         row.update(wd_metrics(e))
         title = m.get("enwiki") or row.get("enwiki_title")
         if title:
