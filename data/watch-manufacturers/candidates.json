@@ -1,0 +1,721 @@
+{
+ "computed_at": "2026-11-07",
+ "query": "SELECT DISTINCT ?item ?itemLabel ?sitelinks WHERE { { ?item wdt:P452 wd:Q41767 . } UNION { ?item wdt:P452 wd:Q63346664 . } UNION { ?item wdt:P1056 wd:Q178794 . } UNION { ?item wdt:P31 wd:Q136094627 . } ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". } } ORDER BY DESC(?sitelinks) LIMIT 400",
+ "candidates": [
+  {
+   "qid": "Q62288",
+   "label": "Rolex",
+   "sitelinks": 66
+  },
+  {
+   "qid": "Q217338",
+   "label": "Casio",
+   "sitelinks": 56
+  },
+  {
+   "qid": "Q635484",
+   "label": "Giorgio Armani",
+   "sitelinks": 52
+  },
+  {
+   "qid": "Q752515",
+   "label": "Bulgari",
+   "sitelinks": 52
+  },
+  {
+   "qid": "Q645984",
+   "label": "TAG Heuer",
+   "sitelinks": 41
+  },
+  {
+   "qid": "Q659096",
+   "label": "Patek Philippe & Co.",
+   "sitelinks": 40
+  },
+  {
+   "qid": "Q659224",
+   "label": "Omega SA",
+   "sitelinks": 40
+  },
+  {
+   "qid": "Q659530",
+   "label": "Tissot",
+   "sitelinks": 38
+  },
+  {
+   "qid": "Q665740",
+   "label": "Breitling",
+   "sitelinks": 37
+  },
+  {
+   "qid": "Q503405",
+   "label": "Victorinox",
+   "sitelinks": 35
+  },
+  {
+   "qid": "Q136503",
+   "label": "Mango",
+   "sitelinks": 32
+  },
+  {
+   "qid": "Q603698",
+   "label": "Longines",
+   "sitelinks": 32
+  },
+  {
+   "qid": "Q1368019",
+   "label": "Citizen Watch",
+   "sitelinks": 32
+  },
+  {
+   "qid": "Q667425",
+   "label": "Audemars Piguet",
+   "sitelinks": 30
+  },
+  {
+   "qid": "Q659863",
+   "label": "Moschino",
+   "sitelinks": 29
+  },
+  {
+   "qid": "Q62341",
+   "label": "Vacheron Constantin",
+   "sitelinks": 28
+  },
+  {
+   "qid": "Q180014",
+   "label": "Rado",
+   "sitelinks": 28
+  },
+  {
+   "qid": "Q658961",
+   "label": "Piaget",
+   "sitelinks": 27
+  },
+  {
+   "qid": "Q662902",
+   "label": "International Watch Company",
+   "sitelinks": 26
+  },
+  {
+   "qid": "Q694107",
+   "label": "The Swatch Group",
+   "sitelinks": 26
+  },
+  {
+   "qid": "Q689240",
+   "label": "Richemont",
+   "sitelinks": 25
+  },
+  {
+   "qid": "Q804327",
+   "label": "Blancpain",
+   "sitelinks": 23
+  },
+  {
+   "qid": "Q663300",
+   "label": "Bulova Watch Company",
+   "sitelinks": 22
+  },
+  {
+   "qid": "Q189601",
+   "label": "Zenith",
+   "sitelinks": 22
+  },
+  {
+   "qid": "Q378698",
+   "label": "Jaeger-LeCoultre",
+   "sitelinks": 22
+  },
+  {
+   "qid": "Q1771114",
+   "label": "Orient Watch Company",
+   "sitelinks": 21
+  },
+  {
+   "qid": "Q278880",
+   "label": "A. Lange & S\u00f6hne",
+   "sitelinks": 20
+  },
+  {
+   "qid": "Q690001",
+   "label": "Ulysse Nardin",
+   "sitelinks": 20
+  },
+  {
+   "qid": "Q1408512",
+   "label": "Festina",
+   "sitelinks": 20
+  },
+  {
+   "qid": "Q579097",
+   "label": "Vostok watches",
+   "sitelinks": 19
+  },
+  {
+   "qid": "Q670112",
+   "label": "Chopard",
+   "sitelinks": 19
+  },
+  {
+   "qid": "Q680237",
+   "label": "ETA SA",
+   "sitelinks": 18
+  },
+  {
+   "qid": "Q689037",
+   "label": "Oris",
+   "sitelinks": 18
+  },
+  {
+   "qid": "Q1475590",
+   "label": "Panerai Watches",
+   "sitelinks": 17
+  },
+  {
+   "qid": "Q560976",
+   "label": "Junghans",
+   "sitelinks": 16
+  },
+  {
+   "qid": "Q1573565",
+   "label": "Hamilton Watch Company",
+   "sitelinks": 16
+  },
+  {
+   "qid": "Q1644618",
+   "label": "Timex Group USA",
+   "sitelinks": 16
+  },
+  {
+   "qid": "Q138109",
+   "label": "Baume et Mercier",
+   "sitelinks": 15
+  },
+  {
+   "qid": "Q670160",
+   "label": "Roger Dubuis",
+   "sitelinks": 15
+  },
+  {
+   "qid": "Q676416",
+   "label": "Girard-Perregaux",
+   "sitelinks": 15
+  },
+  {
+   "qid": "Q356212",
+   "label": "Fossil",
+   "sitelinks": 14
+  },
+  {
+   "qid": "Q676990",
+   "label": "Raymond Weil",
+   "sitelinks": 14
+  },
+  {
+   "qid": "Q2708181",
+   "label": "Van Cleef & Arpels",
+   "sitelinks": 14
+  },
+  {
+   "qid": "Q1758680",
+   "label": "Poljot",
+   "sitelinks": 14
+  },
+  {
+   "qid": "Q3536932",
+   "label": "Titan Industries",
+   "sitelinks": 14
+  },
+  {
+   "qid": "Q628813",
+   "label": "Eterna",
+   "sitelinks": 13
+  },
+  {
+   "qid": "Q1316779",
+   "label": "S.T. Dupont",
+   "sitelinks": 13
+  },
+  {
+   "qid": "Q3431044",
+   "label": "Richard Mille",
+   "sitelinks": 13
+  },
+  {
+   "qid": "Q670962",
+   "label": "Mondaine",
+   "sitelinks": 12
+  },
+  {
+   "qid": "Q1281935",
+   "label": "Eck\u014d Unltd.",
+   "sitelinks": 12
+  },
+  {
+   "qid": "Q939816",
+   "label": "Movado",
+   "sitelinks": 12
+  },
+  {
+   "qid": "Q1725661",
+   "label": "Mido",
+   "sitelinks": 12
+  },
+  {
+   "qid": "Q478294",
+   "label": "Fortis Uhren",
+   "sitelinks": 11
+  },
+  {
+   "qid": "Q540151",
+   "label": "Corum",
+   "sitelinks": 11
+  },
+  {
+   "qid": "Q1651954",
+   "label": "Slava watches",
+   "sitelinks": 11
+  },
+  {
+   "qid": "Q4039046",
+   "label": "Fr\u00e9d\u00e9rique Constant",
+   "sitelinks": 11
+  },
+  {
+   "qid": "Q6060981",
+   "label": "Invicta Watch Group",
+   "sitelinks": 11
+  },
+  {
+   "qid": "Q22104639",
+   "label": "Daniel Wellington",
+   "sitelinks": 11
+  },
+  {
+   "qid": "Q185769",
+   "label": "Zeno-Watch Basel",
+   "sitelinks": 10
+  },
+  {
+   "qid": "Q177591",
+   "label": "Maurice Lacroix",
+   "sitelinks": 10
+  },
+  {
+   "qid": "Q360802",
+   "label": "Waltham Watch Company",
+   "sitelinks": 10
+  },
+  {
+   "qid": "Q4039519",
+   "label": "Glycine Watch SA",
+   "sitelinks": 10
+  },
+  {
+   "qid": "Q723456",
+   "label": "Universal Gen\u00e8ve",
+   "sitelinks": 9
+  },
+  {
+   "qid": "Q4950531",
+   "label": "Bovet Fleurier",
+   "sitelinks": 9
+  },
+  {
+   "qid": "Q7444725",
+   "label": "Sector No Limits",
+   "sitelinks": 9
+  },
+  {
+   "qid": "Q15733690",
+   "label": "Vostok Europe",
+   "sitelinks": 8
+  },
+  {
+   "qid": "Q87043",
+   "label": "Stowa",
+   "sitelinks": 8
+  },
+  {
+   "qid": "Q870335",
+   "label": "Eberhard & Co.",
+   "sitelinks": 8
+  },
+  {
+   "qid": "Q1379518",
+   "label": "Ronda",
+   "sitelinks": 8
+  },
+  {
+   "qid": "Q2761497",
+   "label": "Solvil et Titus",
+   "sitelinks": 8
+  },
+  {
+   "qid": "Q3567414",
+   "label": "West End Watch Co",
+   "sitelinks": 8
+  },
+  {
+   "qid": "Q15994135",
+   "label": "Buccellati Holding Italia",
+   "sitelinks": 8
+  },
+  {
+   "qid": "Q21820596",
+   "label": "F. P. Journe",
+   "sitelinks": 8
+  },
+  {
+   "qid": "Q631221",
+   "label": "Cyma Watches",
+   "sitelinks": 7
+  },
+  {
+   "qid": "Q688410",
+   "label": "Lemania",
+   "sitelinks": 7
+  },
+  {
+   "qid": "Q747413",
+   "label": "LIP",
+   "sitelinks": 7
+  },
+  {
+   "qid": "Q1037713",
+   "label": "Carl F. Bucherer",
+   "sitelinks": 7
+  },
+  {
+   "qid": "Q832811",
+   "label": "Kienzle Uhren",
+   "sitelinks": 7
+  },
+  {
+   "qid": "Q869734",
+   "label": "Ebel",
+   "sitelinks": 7
+  },
+  {
+   "qid": "Q1660409",
+   "label": "Nixon",
+   "sitelinks": 7
+  },
+  {
+   "qid": "Q1496822",
+   "label": "Geneva seal",
+   "sitelinks": 7
+  },
+  {
+   "qid": "Q7370254",
+   "label": "Rotary Watches",
+   "sitelinks": 7
+  },
+  {
+   "qid": "Q3375046",
+   "label": "Pequignet",
+   "sitelinks": 7
+  },
+  {
+   "qid": "Q7339732",
+   "label": "Roamer",
+   "sitelinks": 7
+  },
+  {
+   "qid": "Q3572153",
+   "label": "Yema",
+   "sitelinks": 7
+  },
+  {
+   "qid": "Q17109402",
+   "label": "Luminox",
+   "sitelinks": 7
+  },
+  {
+   "qid": "Q1502844",
+   "label": "MeisterSinger GmbH & Co. KG",
+   "sitelinks": 6
+  },
+  {
+   "qid": "Q3127942",
+   "label": "Harry Winston, Inc.",
+   "sitelinks": 6
+  },
+  {
+   "qid": "Q4038165",
+   "label": "Epos",
+   "sitelinks": 6
+  },
+  {
+   "qid": "Q4960600",
+   "label": "Bremont Watch Company",
+   "sitelinks": 6
+  },
+  {
+   "qid": "Q14755374",
+   "label": "Breil",
+   "sitelinks": 6
+  },
+  {
+   "qid": "Q376334",
+   "label": "Adriatica",
+   "sitelinks": 5
+  },
+  {
+   "qid": "Q2648846",
+   "label": "Allgemeine Gesellschaft der Schweizerischen Uhrenindustrie",
+   "sitelinks": 5
+  },
+  {
+   "qid": "Q4913968",
+   "label": "Binda Italia",
+   "sitelinks": 5
+  },
+  {
+   "qid": "Q5218634",
+   "label": "Daniel Roth",
+   "sitelinks": 5
+  },
+  {
+   "qid": "Q20966023",
+   "label": "Reguladora",
+   "sitelinks": 5
+  },
+  {
+   "qid": "Q4890183",
+   "label": "Benrus",
+   "sitelinks": 4
+  },
+  {
+   "qid": "Q3365612",
+   "label": "Parmigiani Fleurier",
+   "sitelinks": 4
+  },
+  {
+   "qid": "Q2929726",
+   "label": "Bedat & Co",
+   "sitelinks": 4
+  },
+  {
+   "qid": "Q4770013",
+   "label": "Anonimo",
+   "sitelinks": 4
+  },
+  {
+   "qid": "Q6485902",
+   "label": "Langendorf Watch Company SA",
+   "sitelinks": 4
+  },
+  {
+   "qid": "Q7497723",
+   "label": "Shinola Detroit",
+   "sitelinks": 4
+  },
+  {
+   "qid": "Q8028615",
+   "label": "Wittnauer",
+   "sitelinks": 4
+  },
+  {
+   "qid": "Q15634637",
+   "label": "Sowind Group",
+   "sitelinks": 4
+  },
+  {
+   "qid": "Q15790137",
+   "label": "Bucherer Group",
+   "sitelinks": 4
+  },
+  {
+   "qid": "Q16937375",
+   "label": "Hanowa",
+   "sitelinks": 4
+  },
+  {
+   "qid": "Q251481",
+   "label": "Century Time Gems Ltd",
+   "sitelinks": 3
+  },
+  {
+   "qid": "Q3205398",
+   "label": "L\u2019Ep\u00e9e 1839",
+   "sitelinks": 3
+  },
+  {
+   "qid": "Q3488681",
+   "label": "Soci\u00e9t\u00e9 Suisse pour l'Industrie Horlog\u00e8re",
+   "sitelinks": 3
+  },
+  {
+   "qid": "Q2943705",
+   "label": "Cecil Purnell",
+   "sitelinks": 3
+  },
+  {
+   "qid": "Q3622871",
+   "label": "Armand Nicolet",
+   "sitelinks": 3
+  },
+  {
+   "qid": "Q4035633",
+   "label": "ck Calvin Klein",
+   "sitelinks": 3
+  },
+  {
+   "qid": "Q5306863",
+   "label": "Dreffa",
+   "sitelinks": 3
+  },
+  {
+   "qid": "Q6318900",
+   "label": "Juvenia",
+   "sitelinks": 3
+  },
+  {
+   "qid": "Q14523295",
+   "label": "88 RUE DU RHONE",
+   "sitelinks": 3
+  },
+  {
+   "qid": "Q16937371",
+   "label": "Grovana Watch",
+   "sitelinks": 3
+  },
+  {
+   "qid": "Q17018446",
+   "label": "Dueber-Hampden Watch Company",
+   "sitelinks": 3
+  },
+  {
+   "qid": "Q17461916",
+   "label": "Louis Erard",
+   "sitelinks": 3
+  },
+  {
+   "qid": "Q22101765",
+   "label": "Damasko",
+   "sitelinks": 3
+  },
+  {
+   "qid": "Q11300325",
+   "label": "Grand Seiko",
+   "sitelinks": 3
+  },
+  {
+   "qid": "Q13415716",
+   "label": "Thomas Sabo",
+   "sitelinks": 3
+  },
+  {
+   "qid": "Q25043079",
+   "label": "Czapek & Cie",
+   "sitelinks": 3
+  },
+  {
+   "qid": "Q25112291",
+   "label": "Manufacture Royale",
+   "sitelinks": 3
+  },
+  {
+   "qid": "Q39055583",
+   "label": "Schwarz Etienne",
+   "sitelinks": 3
+  },
+  {
+   "qid": "Q125984188",
+   "label": "Bianchet",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q96372277",
+   "label": "Aquastar",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q138307980",
+   "label": "The Geneva School of Watchmaking",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q5953842",
+   "label": "Hyderabad Allwyn Limited",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q17153839",
+   "label": "WeWOOD",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q129939616",
+   "label": "The Kingsman Shop (London)",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q16832435",
+   "label": "Romain Gauthier",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q25054476",
+   "label": "Jean Perret",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q5321881",
+   "label": "E. Gluck Corporation",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q7923389",
+   "label": "Vestal Watches",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q105070633",
+   "label": "Farer",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q19520534",
+   "label": "Manufacture Modules Technologies",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q106592750",
+   "label": "John Player clockmakers",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q108281469",
+   "label": "Maximilian B\u00fcsser and Friends",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q20970640",
+   "label": "The Hour Glass Limited",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q24915364",
+   "label": "Kyboe",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q29886239",
+   "label": "Eleven James",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q33728221",
+   "label": "Watch Shop",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q141256416",
+   "label": "Vertex Watches Limited",
+   "sitelinks": 1
+  }
+ ]
+}
