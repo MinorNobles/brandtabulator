@@ -91,9 +91,9 @@
     }
   ],
   "competitive_set": {
-    "name": "Citizen competitive set",
-    "chosen_by": "Michael Quinn",
-    "basis": "US mass- and mid-market brands a Citizen buyer compares against, plus Citizen's own Bulova. Editorial; not derived from data.",
+    "name": "Competitive set (draft)",
+    "chosen_by": "Claude, as a draft on 2026-11-07; pending Michael Quinn's review",
+    "basis": "Draft: US mass- and mid-market brands a Citizen buyer might compare against, plus Citizen's own Bulova. Not yet reviewed by the author.",
     "members": [
       "Q1368019",
       "Q322601",
