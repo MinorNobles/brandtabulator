@@ -13,13 +13,13 @@
    "sitelinks": 56
   },
   {
-   "qid": "Q635484",
-   "label": "Giorgio Armani",
+   "qid": "Q752515",
+   "label": "Bulgari",
    "sitelinks": 52
   },
   {
-   "qid": "Q752515",
-   "label": "Bulgari",
+   "qid": "Q635484",
+   "label": "Giorgio Armani",
    "sitelinks": 52
   },
   {
@@ -53,13 +53,13 @@
    "sitelinks": 35
   },
   {
-   "qid": "Q136503",
-   "label": "Mango",
+   "qid": "Q603698",
+   "label": "Longines",
    "sitelinks": 32
   },
   {
-   "qid": "Q603698",
-   "label": "Longines",
+   "qid": "Q136503",
+   "label": "Mango",
    "sitelinks": 32
   },
   {
@@ -148,13 +148,13 @@
    "sitelinks": 20
   },
   {
-   "qid": "Q579097",
-   "label": "Vostok watches",
+   "qid": "Q670112",
+   "label": "Chopard",
    "sitelinks": 19
   },
   {
-   "qid": "Q670112",
-   "label": "Chopard",
+   "qid": "Q579097",
+   "label": "Vostok watches",
    "sitelinks": 19
   },
   {
@@ -203,11 +203,6 @@
    "sitelinks": 15
   },
   {
-   "qid": "Q356212",
-   "label": "Fossil",
-   "sitelinks": 14
-  },
-  {
    "qid": "Q676990",
    "label": "Raymond Weil",
    "sitelinks": 14
@@ -215,6 +210,11 @@
   {
    "qid": "Q2708181",
    "label": "Van Cleef & Arpels",
+   "sitelinks": 14
+  },
+  {
+   "qid": "Q356212",
+   "label": "Fossil",
    "sitelinks": 14
   },
   {
@@ -233,14 +233,19 @@
    "sitelinks": 13
   },
   {
+   "qid": "Q3431044",
+   "label": "Richard Mille",
+   "sitelinks": 13
+  },
+  {
    "qid": "Q1316779",
    "label": "S.T. Dupont",
    "sitelinks": 13
   },
   {
-   "qid": "Q3431044",
-   "label": "Richard Mille",
-   "sitelinks": 13
+   "qid": "Q1725661",
+   "label": "Mido",
+   "sitelinks": 12
   },
   {
    "qid": "Q670962",
@@ -255,11 +260,6 @@
   {
    "qid": "Q939816",
    "label": "Movado",
-   "sitelinks": 12
-  },
-  {
-   "qid": "Q1725661",
-   "label": "Mido",
    "sitelinks": 12
   },
   {
@@ -313,13 +313,13 @@
    "sitelinks": 10
   },
   {
-   "qid": "Q723456",
-   "label": "Universal Gen\u00e8ve",
+   "qid": "Q4950531",
+   "label": "Bovet Fleurier",
    "sitelinks": 9
   },
   {
-   "qid": "Q4950531",
-   "label": "Bovet Fleurier",
+   "qid": "Q723456",
+   "label": "Universal Gen\u00e8ve",
    "sitelinks": 9
   },
   {
@@ -338,13 +338,13 @@
    "sitelinks": 8
   },
   {
-   "qid": "Q870335",
-   "label": "Eberhard & Co.",
+   "qid": "Q1379518",
+   "label": "Ronda",
    "sitelinks": 8
   },
   {
-   "qid": "Q1379518",
-   "label": "Ronda",
+   "qid": "Q870335",
+   "label": "Eberhard & Co.",
    "sitelinks": 8
   },
   {
@@ -378,28 +378,13 @@
    "sitelinks": 7
   },
   {
-   "qid": "Q747413",
-   "label": "LIP",
-   "sitelinks": 7
-  },
-  {
    "qid": "Q1037713",
    "label": "Carl F. Bucherer",
    "sitelinks": 7
   },
   {
-   "qid": "Q832811",
-   "label": "Kienzle Uhren",
-   "sitelinks": 7
-  },
-  {
    "qid": "Q869734",
    "label": "Ebel",
-   "sitelinks": 7
-  },
-  {
-   "qid": "Q1660409",
-   "label": "Nixon",
    "sitelinks": 7
   },
   {
@@ -410,6 +395,21 @@
   {
    "qid": "Q7370254",
    "label": "Rotary Watches",
+   "sitelinks": 7
+  },
+  {
+   "qid": "Q747413",
+   "label": "LIP",
+   "sitelinks": 7
+  },
+  {
+   "qid": "Q1660409",
+   "label": "Nixon",
+   "sitelinks": 7
+  },
+  {
+   "qid": "Q832811",
+   "label": "Kienzle Uhren",
    "sitelinks": 7
   },
   {
