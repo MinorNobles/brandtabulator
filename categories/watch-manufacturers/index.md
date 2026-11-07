@@ -19,4 +19,4 @@ Issue 2026-11-07. 14 brands. Ranked by staleness (longest unupdated first). View
 | 13 | [Hamilton](https://en.wikipedia.org/wiki/Hamilton_Watch_Company) ([Q1573565](https://www.wikidata.org/wiki/Q1573565)) | 2026-10-23 | 4 / 3 | 25 (15) | 60.0% | 1 | 16 | 35 | 8971 | 19.5% |
 | 14 | [Orient](https://en.wikipedia.org/wiki/Orient_Watch) ([Q1771114](https://www.wikidata.org/wiki/Q1771114)) | 2026-11-07 | 6 / 6 | 25 (15) | 60.0% | 1 | 21 | 27 | 6616 | 26.3% |
 
-Data: [CSV](/data/watch-manufacturers/2026-11-07.csv) · [JSON](/data/watch-manufacturers/2026-11-07.json) · [Methods](/methods/)
+Data: [CSV](/brandtabulator/data/watch-manufacturers/2026-11-07.csv) · [JSON](/brandtabulator/data/watch-manufacturers/2026-11-07.json) · [Methods](/brandtabulator/methods/)

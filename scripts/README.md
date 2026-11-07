@@ -2,6 +2,8 @@
 
 `run_category.py <slug>` reads `categories/<slug>.json`, pulls public Wikimedia data for each member brand, and writes the issue files (CSV, JSON, Markdown, HTML) plus a refreshed sitemap. It runs weekly on GitHub Actions (`.github/workflows/weekly.yml`), Mondays 06:17 UTC, and can be run by hand from the Actions tab.
 
+The site's public address is set once, in `SITE_URL` at the top of `run_category.py` (or the `BT_SITE_URL` variable). Every link, the sitemap, robots.txt and llms.txt are built from it, so moving to a custom domain is a one-line change.
+
 Requests carry a User-Agent of `Brandtabulator/0.1 (<contact>)`. Set a repository variable `BT_CONTACT` (Settings → Secrets and variables → Actions → Variables) to a URL or mailbox Wikimedia can reach you at; it defaults to this repository's URL. Calls are paced at 1.2 s and back off on 429.
 
 Metrics are defined on the methods page. Category membership is editorial: `members` is the ranked set; `discovery_sparql` only produces `candidates.json` for review.

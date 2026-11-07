@@ -5,7 +5,7 @@ Brandtabulator pipeline — one category per run.
 Reads   categories/<slug>.json
 Writes  data/<slug>/<YYYY-MM-DD>.csv, .json, latest.json, candidates.json
         categories/<slug>/index.md, index.html
-        sitemap.xml (lastmod refresh)
+        index.html, categories/, data/, methods/ pages, llms.txt, robots.txt, sitemap.xml
 
 All data is public Wikimedia data. Every request carries a contact-tagged
 User-Agent and is paced; 429s back off and retry.
@@ -20,6 +20,13 @@ CONTACT = os.environ.get("BT_CONTACT", "https://github.com/MinorNobles/brandtabu
 UA = f"Brandtabulator/0.1 ({CONTACT})"
 PACE = float(os.environ.get("BT_PACE_SECONDS", "1.2"))
 S = requests.Session(); S.headers["User-Agent"] = UA
+# The site's public address. Change this one value (or set BT_SITE_URL) when the site moves to its own domain.
+SITE_URL = os.environ.get("BT_SITE_URL", "https://minornobles.github.io/brandtabulator").rstrip("/")
+BASE = urllib.parse.urlparse(SITE_URL).path.rstrip("/")   # "/brandtabulator" today, "" on a custom domain
+
+def fix_links(text):
+    """Turn site-root links ("/methods/") into links that work under BASE."""
+    return text.replace('href="/', f'href="{BASE}/').replace('](/', f']({BASE}/')
 
 KEY_PROPS = {"P452": "industry", "P1056": "product", "P749": "parent", "P355": "subsidiary", "P1830": "owner of", "P2671": "Google KG id"}
 IDENTITY_PROPS = ["P1056", "P1716", "P355", "P1830", "P800", "P495", "P1451", "P166", "P793", "P112", "P169"]
@@ -77,6 +84,7 @@ def wd_metrics(e):
         "identity_links_out": sum(len(c[p]) for p in IDENTITY_PROPS if p in c),
         "has_freebase_id": "P646" in c, "has_google_kg_id": "P2671" in c,
         "has_official_name_history": "P1448" in c,
+        "wd_lastrevid": e.get("lastrevid"),
     }
     m["ballast_pct"] = round(100 * refd / total, 1) if total else 0.0
     return m
@@ -85,7 +93,7 @@ def is_bot(rev):
     return bool(re.search(r"bot\b", rev.get("user", ""), re.I)) or any("bot" in t.lower() for t in rev.get("tags", []))
 
 def wp_metrics(title, today):
-    j = wp_api({"prop": "revisions|info", "rvlimit": "200", "rvprop": "timestamp|user|tags|size|comment", "titles": title})
+    j = wp_api({"prop": "revisions|info", "rvlimit": "200", "rvprop": "ids|timestamp|user|tags|size|comment", "titles": title})
     page = j["query"]["pages"][0]
     if page.get("missing"): return {"wp_missing": True}
     revs = page.get("revisions", [])
@@ -101,6 +109,12 @@ def wp_metrics(title, today):
         "wp_last_any": revs[0]["timestamp"] if revs else None,
         "wp_last_substantive": sub["timestamp"] if sub else None,
         "wp_last_50byte": big["timestamp"] if big else None,
+        "wp_current_revid": revs[0]["revid"] if revs else None,
+        "wp_last_substantive_revid": sub["revid"] if sub else None,
+        "wp_last_substantive_parentid": sub.get("parentid") if sub else None,
+        "wp_last_50byte_revid": big["revid"] if big else None,
+        "wp_last_50byte_parentid": big.get("parentid") if big else None,
+        "wp_revisions_examined": len(revs),
     }
     w = wp_api({"prop": "revisions", "rvprop": "content", "rvslots": "main", "titles": title})
     txt = w["query"]["pages"][0]["revisions"][0]["slots"]["main"]["content"]
@@ -129,7 +143,7 @@ def rank(rows, key, reverse=True):
     for i, r in enumerate(s): r["rank_" + key] = i + 1
 
 # ---------- output ----------
-COLS = ["label", "qid", "in_set", "dissolved", "manual_addition", "enwiki_title", "wp_last_substantive", "wp_last_50byte", "days_since_50byte", "rank_days_since_50byte", "wp_edits_90d", "wp_editors_90d", "wp_reverted_90d", "rank_wp_edits_90d", "wd_statements", "wd_referenced", "ballast_pct", "rank_ballast_pct", "key_props_present", "identity_links_out", "rank_identity_links_out", "n_inception", "wd_sitelinks", "wd_modified", "days_since_wd_edit", "wp_refs", "wp_words", "wp_refs_per_1000_words", "wp_newest_cite_year", "pv_user", "pv_spider", "pv_automated", "pv_all", "pv_bot_share", "rank_pv_user", "has_google_kg_id", "has_freebase_id", "has_official_name_history", "key_props_missing"]
+COLS = ["label", "qid", "in_set", "dissolved", "manual_addition", "enwiki_title", "wp_current_revid", "wd_lastrevid", "wp_last_substantive", "wp_last_substantive_revid", "wp_last_50byte", "wp_last_50byte_revid", "days_since_50byte", "rank_days_since_50byte", "wp_edits_90d", "wp_editors_90d", "wp_reverted_90d", "rank_wp_edits_90d", "wd_statements", "wd_referenced", "ballast_pct", "rank_ballast_pct", "key_props_present", "identity_links_out", "rank_identity_links_out", "n_inception", "wd_sitelinks", "wd_modified", "days_since_wd_edit", "wp_refs", "wp_words", "wp_refs_per_1000_words", "wp_newest_cite_year", "pv_user", "pv_spider", "pv_automated", "pv_all", "pv_bot_share", "rank_pv_user", "has_google_kg_id", "has_freebase_id", "has_official_name_history", "key_props_missing"]
 
 def md_table(rows, cat):
     h = "| # stale | Brand | Last ≥50-byte edit | 90d edits/editors | Wikidata stmts (ref'd) | Ballast | Identity links out | Editions | Refs | Reader views | Bot share |\n|---|---|---|---|---|---|---|---|---|---|---|\n"
@@ -163,7 +177,12 @@ def html_page(cat, rows, date, pv_month):
         if key == "label":
             t = (r.get("enwiki_title") or "").replace(" ", "_")
             return f'<a href="https://en.wikipedia.org/wiki/{H.escape(urllib.parse.quote(t))}">{H.escape(r["label"])}</a> <span class="q"><a href="https://www.wikidata.org/wiki/{r["qid"]}">{r["qid"]}</a></span>', r["label"]
-        if key == "wp_last_50byte": return (v or "")[:10], (v or "")[:10]
+        if key == "wp_last_50byte":
+            d = (v or "")[:10]; rid = r.get("wp_last_50byte_revid")
+            if rid:
+                href = f"https://en.wikipedia.org/w/index.php?diff={rid}" + (f"&oldid={r['wp_last_50byte_parentid']}" if r.get("wp_last_50byte_parentid") else "")
+                return f'<a href="{href}" title="Open this edit on Wikipedia">{d}</a>', d
+            return d, d
         if key == "wp_edits_90d": return f'{r.get("wp_edits_90d","")} / {r.get("wp_editors_90d","")}', r.get("wp_edits_90d") or 0
         if key == "wd_statements": return f'{r.get("wd_statements","")} <span class="q">({r.get("wd_referenced","")})</span>', r.get("wd_statements") or 0
         if key == "ballast_pct": return f'{v}%', v or 0
@@ -180,10 +199,16 @@ def html_page(cat, rows, date, pv_month):
         trs += f'<tr class="{cls.strip()}" data-set="{1 if r.get("in_set") else 0}">{tds}</tr>'
     ths = "".join(f'<th data-kind="{k}"><span class="hd" tabindex="0" role="button" data-tip="{H.escape(d)}" aria-label="Sort by {H.escape(n)}">{H.escape(n)}<span class="arr" aria-hidden="true"></span></span><button type="button" class="i" data-def="def-{i}" aria-label="Definition of {H.escape(n)}">i</button></th>' for i, (n, _, k, d) in enumerate(COLDEFS))
     defs = "".join(f'<dt id="def-{i}">{H.escape(n)}</dt><dd>{H.escape(d)}</dd>' for i, (n, _, _, d) in enumerate(COLDEFS))
-    ld = json.dumps({"@context":"https://schema.org","@type":"Dataset","name":f"Brandtabulator — {cat['name']} — {date}","description":"Public-record activity metrics for brands in this category, computed from Wikipedia and Wikidata.","dateModified":date,"license":"https://creativecommons.org/licenses/by-sa/4.0/","creator":{"@type":"Person","name":"Michael Quinn","url":"https://michaelquinn.ai"},"distribution":[{"@type":"DataDownload","encodingFormat":"text/csv","contentUrl":f"/data/{cat['slug']}/{date}.csv"},{"@type":"DataDownload","encodingFormat":"application/json","contentUrl":f"/data/{cat['slug']}/{date}.json"}]})
+    ld = json.dumps({"@context":"https://schema.org","@type":"Dataset","name":f"Brandtabulator — {cat['name']} — {date}","description":"Public-record activity metrics for brands in this category, computed from Wikipedia and Wikidata.","dateModified":date,"license":"https://creativecommons.org/licenses/by-sa/4.0/","url":f"{SITE_URL}/categories/{cat['slug']}/","creator":{"@type":"Person","name":"Michael Quinn","url":"https://michaelquinn.ai"},"distribution":[{"@type":"DataDownload","encodingFormat":"text/csv","contentUrl":f"{SITE_URL}/data/{cat['slug']}/{date}.csv"},{"@type":"DataDownload","encodingFormat":"application/json","contentUrl":f"{SITE_URL}/data/{cat['slug']}/{date}.json"}]})
     cs = cat.get("competitive_set") or {}; n_set = sum(1 for r in rows if r.get("in_set")); n_dis = sum(1 for r in rows if r.get("dissolved"))
     adds = ", ".join(H.escape(x.get("label", x["qid"])) for x in cat.get("manual_additions", []))
     n = len(rows); med_e = statistics.median([r.get("wp_edits_90d", 0) or 0 for r in rows]); med_b = statistics.median([r.get("ballast_pct", 0) for r in rows])
+    has_rev = any(r.get("wp_current_revid") for r in rows)
+    prov = ("Edit dates link to the edit itself. The JSON records the exact Wikipedia and Wikidata revisions each figure was computed from."
+            if has_rev else "Each brand links to its Wikipedia article and Wikidata item.")
+    ex = cat.get("exclude", {}) or {}
+    if isinstance(ex, list): ex = {q: "" for q in ex}
+    removed = ("Removed by hand, with reasons: " + "; ".join(f"{H.escape(q)} ({H.escape(why)})" for q, why in ex.items()) + ".") if ex else "Nothing removed by hand."
     stale = max(rows, key=lambda r: r.get("days_since_50byte") or 0); fresh = min(rows, key=lambda r: r.get("days_since_50byte") if r.get("days_since_50byte") is not None else 9999)
     return f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{H.escape(cat['name'])} — Brandtabulator</title>
@@ -221,19 +246,19 @@ details summary{{cursor:pointer;font-size:14px;font-weight:500}}
 <div style="display:flex;flex-direction:column;gap:10px"><div class="sub"><a href="/categories/">Categories</a> · {n} brands</div><h1>{H.escape(cat['name'])}</h1></div>
 <div class="lead"><div class="sub" style="text-transform:uppercase;letter-spacing:.06em;font-size:12px;font-weight:500">This issue</div>
 <p>Longest without a substantive edit: {H.escape(stale['label'])}, {stale.get('days_since_50byte')} days. Most recently worked on: {H.escape(fresh['label'])}. Category median is {med_e:g} edits per 90 days and {med_b:g}% of Wikidata statements referenced.</p>
-<div class="sub">Every figure links to the Wikipedia article and Wikidata item it was computed from. Revision ids are in the <a href="/data/{cat['slug']}/{date}.json">JSON</a>.</div></div>
+<div class="sub">{prov} <a href="/data/{cat['slug']}/{date}.json">JSON</a> · <a href="/methods/">How this is measured</a></div></div>
 <div class="card">
 <div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px"><h2>The regatta</h2><span class="sub">Same wind for every boat. Click a heading to sort; hover or tap ⓘ for its definition. Default order: longest unupdated first.</span></div>
 <div class="seg" role="group" aria-label="Which brands to show"><button type="button" class="on" data-view="all">Full category <span class="n">{n}</span></button><button type="button" data-view="set">{H.escape(cs.get("name","Competitive set"))} <span class="n">{n_set}</span></button></div>
-<div class="sub" id="viewnote"><span data-for="all"><b>Full category:</b> every Wikidata item that is classified as a watch company (industry horology or watchmaking, product watch, or instance of watch manufacturing company) and has an English Wikipedia article, as returned by <a href="/data/{cat['slug']}/candidates.json">this query</a>. Nothing removed by hand. {n_dis} of them carry a dissolution date in Wikidata and are shown greyed. Added by hand because Wikidata does not classify them as watch companies: {adds}.</span><span data-for="set" hidden><b>{H.escape(cs.get("name","Competitive set"))}:</b> {H.escape(cs.get("basis",""))} Chosen by {H.escape(cs.get("chosen_by","the author"))}; the list is in the <a href="https://github.com/MinorNobles/brandtabulator/blob/main/categories/{cat['slug']}.json">category file</a>.</span></div>
+<div class="sub" id="viewnote"><span data-for="all"><b>Full category:</b> every Wikidata item that is classified as a watch company (industry horology or watchmaking, product watch, or instance of watch manufacturing company) and has an English Wikipedia article, as returned by <a href="/data/{cat['slug']}/candidates.json">this query</a>. {removed} {n_dis} of them carry a dissolution date in Wikidata and are shown greyed. Added by hand because Wikidata does not classify them as watch companies: {adds}.</span><span data-for="set" hidden><b>{H.escape(cs.get("name","Competitive set"))}:</b> {H.escape(cs.get("basis",""))} Chosen by {H.escape(cs.get("chosen_by","the author"))}; the list is in the <a href="https://github.com/MinorNobles/brandtabulator/blob/main/categories/{cat['slug']}.json">category file</a>.</span></div>
 <div class="wrap"><table id="regatta"><thead><tr>{ths}</tr></thead><tbody>{trs}</tbody></table></div>
 <div class="sub">Edits: 90 days to {date}. Views: English Wikipedia, {pv_month}, by Wikimedia agent class. <a href="/data/{cat['slug']}/{date}.csv">CSV</a> · <a href="/data/{cat['slug']}/{date}.json">JSON</a> · <a href="/data/{cat['slug']}/candidates.json">Discovery candidates</a> · <a href="/methods/">Methods</a></div>
 <details><summary>Column definitions</summary><div style="padding-top:12px"><dl>{defs}</dl></div></details>
 </div>
 <div class="foot">
-<div><b>How this page is made</b>Computed from public Wikimedia data: Wikipedia revision history and pageviews, Wikidata items and statements. Membership of the category is editorial and listed in the repository. <a href="/methods/">Definitions</a>.</div>
+<div><b>How this page is made</b>Computed from public Wikimedia data: Wikipedia revision history and pageviews, Wikidata items and statements. Which brands appear follows a published query, with any hand additions named on this page. <a href="/methods/">Methods</a>.</div>
 <div><b>Agent classes</b>Reader = Wikimedia's "user" class, traffic that presents as a browser. Spider = declared crawlers. Automated = undeclared traffic flagged as bot-like. None measure AI retrieval through dumps or Enterprise feeds.</div>
-<div><b>Author</b>Michael Quinn · <a href="https://michaelquinn.ai">michaelquinn.ai</a><br>Pages are regenerated weekly and never edited in place. Corrections are dated notes.</div>
+<div><b>Author</b>Michael Quinn · <a href="https://michaelquinn.ai">michaelquinn.ai</a><br>The page is regenerated each week; each week's data files are kept under their date. Corrections are dated notes. Pre-launch: issues before the first public one may be regenerated.</div>
 </div>
 </main>
 <script>
@@ -255,14 +280,190 @@ if(d){{d.scrollIntoView({{behavior:'smooth',block:'center'}});d.classList.add('f
 </script>
 </body></html>"""
 
-def update_sitemap(date, cat_slug):
-    p = os.path.join(ROOT, "sitemap.xml")
-    urls = {"/": date, "/methods/": date, "/categories/": date, "/data/": date, f"/categories/{cat_slug}/": date}
-    if os.path.exists(p):
-        for loc, lm in re.findall(r"<loc>([^<]+)</loc><lastmod>([^<]+)</lastmod>", open(p).read()):
-            urls.setdefault(loc, lm)
-    body = "".join(f"  <url><loc>{u}</loc><lastmod>{d}</lastmod></url>\n" for u, d in sorted(urls.items()))
-    open(p, "w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + body + "</urlset>\n")
+IDENTITY_LABELS = {"P1056": "product or material produced", "P1716": "brand", "P355": "subsidiary", "P1830": "owner of", "P800": "notable work",
+                   "P495": "country of origin", "P1451": "motto", "P166": "award received", "P793": "significant event", "P112": "founded by", "P169": "chief executive officer"}
+
+SHELL_CSS = """body{margin:0;background:#f4f3ef;color:#1b1b1b;font-family:'IBM Plex Sans',system-ui,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.5}
+a{color:#0b4f8a;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}a:hover{color:#063a66}
+.mast{border-bottom:1px solid #cfcdc5;background:#fbfaf7}.mast .in{max-width:900px;margin:0 auto;padding:18px 32px;display:flex;justify-content:space-between;align-items:baseline;gap:24px;flex-wrap:wrap}
+.brand{font-size:20px;font-weight:600;text-decoration:none;color:#1b1b1b}.sub{font-size:13px;color:#555}
+main{max-width:900px;margin:0 auto;padding:40px 32px 64px}
+h1{margin:0 0 16px;font-size:36px;line-height:1.15;font-weight:600;letter-spacing:-.02em}h2{font-size:20px;margin:36px 0 10px;font-weight:600}h3{font-size:16px;margin:22px 0 6px}
+p,li{font-size:16px}code,.mono{font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:13px}
+pre{background:#fff;border:1px solid #cfcdc5;padding:12px 14px;overflow-x:auto;font-size:12px;white-space:pre-wrap}
+dl{display:grid;grid-template-columns:220px 1fr;gap:8px 18px;margin:0}dt{font-weight:600}dd{margin:0;color:#333}
+table{border-collapse:collapse;width:100%}th,td{text-align:left;padding:9px 10px;border-bottom:1px solid #e3e1da;font-size:14px;vertical-align:top}th{font-weight:500;color:#555;font-size:12px}
+.note{background:#fff;border:1px solid #cfcdc5;padding:14px 18px;margin:16px 0}
+.foot{border-top:1px solid #cfcdc5;margin-top:48px;padding-top:16px;font-size:13px;color:#555}
+@media (max-width:760px){main{padding:24px 20px 48px}h1{font-size:28px}dl{grid-template-columns:1fr}}"""
+
+def shell(title, desc, body):
+    import html as H
+    return f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{H.escape(title)}</title><meta name="description" content="{H.escape(desc)}">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>{SHELL_CSS}</style></head><body>
+<div class="mast"><div class="in"><div style="display:flex;gap:16px;align-items:baseline;flex-wrap:wrap"><a class="brand" href="/">Brandtabulator</a><span class="sub">working title · under the Brand AI Report</span></div><div class="sub" style="display:flex;gap:16px;flex-wrap:wrap"><a href="/categories/">Categories</a><a href="/methods/">Methods</a><a href="/data/">Data</a></div></div></div>
+<main>{body}
+<div class="foot">Michael Quinn · <a href="https://michaelquinn.ai">michaelquinn.ai</a> · Pre-launch draft. Computed from public Wikimedia data. Code: <a href="https://github.com/MinorNobles/brandtabulator">github.com/MinorNobles/brandtabulator</a></div>
+</main></body></html>"""
+
+def load_categories():
+    cats = []
+    for fn in sorted(os.listdir(os.path.join(ROOT, "categories"))):
+        if not fn.endswith(".json"): continue
+        c = json.load(open(os.path.join(ROOT, "categories", fn)))
+        lp = os.path.join(ROOT, "data", c["slug"], "latest.json")
+        c["_latest"] = json.load(open(lp)) if os.path.exists(lp) else None
+        cats.append(c)
+    return cats
+
+def methods_body(cats):
+    import html as H
+    coldefs = "".join(f"<dt>{H.escape(n)}</dt><dd>{H.escape(d)}</dd>" for (n, _, _, d) in COLDEFS)
+    keyp = ", ".join(f"{H.escape(v)} ({k})" for k, v in KEY_PROPS.items())
+    idp = ", ".join(f"{H.escape(IDENTITY_LABELS.get(k, k))} ({k})" for k in IDENTITY_PROPS)
+    percat = ""
+    for c in cats:
+        cs = c.get("competitive_set") or {}
+        ex = c.get("exclude", {}) or {}
+        if isinstance(ex, list): ex = {q: "" for q in ex}
+        adds = "".join(f"<li>{H.escape(a.get('label', a['qid']))} ({a['qid']}): {H.escape(a.get('reason',''))}</li>" for a in c.get("manual_additions", [])) or "<li>None.</li>"
+        exs = "".join(f"<li>{H.escape(q)}: {H.escape(why)}</li>" for q, why in ex.items()) or "<li>None. If any brand is ever removed by hand, it will be listed here with the reason.</li>"
+        percat += f"""<h3>{H.escape(c['name'])}</h3>
+<p><b>Full category.</b> Every Wikidata item returned by the query below that has an English Wikipedia article. Companies that Wikidata records as dissolved are kept and shown greyed.</p>
+<pre>{H.escape(c.get('discovery_sparql',''))}</pre>
+<p><b>Added by hand</b> (the query does not find them):</p><ul>{adds}</ul>
+<p><b>Removed by hand:</b></p><ul>{exs}</ul>
+<p><b>{H.escape(cs.get('name','Competitive set'))}.</b> {H.escape(cs.get('basis',''))} Chosen by: {H.escape(cs.get('chosen_by',''))}.</p>"""
+    return f"""<h1>Methods</h1>
+<div class="note"><b>Status.</b> Pre-launch draft, working title. Issues dated before the first public issue may be regenerated. From the first public issue on, each week's data files are kept unchanged under their date.</div>
+
+<h2>What this measures</h2>
+<p>When people ask AI assistants about products, the answers lean on the public record. This site looks at two parts of that record for each brand, and compares brands within a category.</p>
+<p><b>The keel: facts.</b> The brand's entry in Wikidata, a free database of facts that search engines and other knowledge graphs reuse. How many of its facts carry a source, whether the basics are filled in, and whether it points to the brand's own products and companies.</p>
+<p><b>The sails: descriptions.</b> The brand's English Wikipedia article. How many references it has, how many languages it exists in, how often it is edited, and when someone last made a real change to it.</p>
+<p>It also counts how often machines load the article. It does not rank brands as products, and it does not say which brands are best.</p>
+
+<h2>Which brands are included</h2>
+<p>Each category has two lists. The <b>full category</b> comes from a published query, so anyone can reproduce it. A <b>competitive set</b> is a smaller list chosen by a person, and the page says who chose it and why.</p>
+{percat}
+
+<h2>Definitions</h2>
+<dl>{coldefs}</dl>
+<h3>Details behind the definitions</h3>
+<ul>
+<li><b>Bot edits</b> are edits by an account whose name ends in "bot", or edits tagged as bot edits. They are left out of "last substantive edit".</li>
+<li><b>Reverted edits</b> are edits Wikipedia itself tags as reverted. They are left out of "last substantive edit".</li>
+<li><b>Last substantive edit</b> looks at the article's most recent 200 revisions. If none of them qualifies, the field is blank.</li>
+<li><b>Statements</b> counts every statement on the Wikidata item, including identifiers such as stock tickers and database IDs.</li>
+<li><b>Key properties</b> checked: {keyp}.</li>
+<li><b>Identity links</b> counted: {idp}.</li>
+<li><b>Editions</b> counts every Wikimedia site linked to the item, including Wikimedia Commons, not only language Wikipedias.</li>
+<li><b>References</b> counts &lt;ref&gt; tags in the article's source, so a reference used twice counts twice. Word counts are approximate.</li>
+</ul>
+
+<h2>Views and machine visits</h2>
+<p>Views come from Wikimedia's public pageview service, for English Wikipedia, for the previous full calendar month. Wikimedia sorts traffic into three classes. <b>Reader</b> ("user"): traffic that looks like a person using a browser. Some automated traffic that disguises itself ends up here. <b>Spider</b>: crawlers that identify themselves, such as Googlebot. <b>Automated</b>: traffic Wikimedia's own checks flag as automated.</p>
+<p>These counts cannot see the bulk copies of Wikipedia that search and AI companies take directly, through downloads and Wikimedia's paid feed. No one outside those companies can see that. Machine visits here are a floor, the same floor for every brand.</p>
+
+<h2>Rankings</h2>
+<p>The default order is by staleness: the brand that has gone longest without a substantive edit comes first. Any column can be used to sort. There is no combined score yet.</p>
+
+<h2>How the numbers are checked</h2>
+<p>All figures are fetched from Wikimedia's public services by a published script, which runs every Monday on GitHub. Each request identifies the project, and requests are spaced out as Wikimedia asks. The first run was compared figure by figure with a separate hand pull, and they matched. Each brand's record in the JSON carries the revision ids it was computed from, so any figure can be traced to the exact version of the article or item.</p>
+<p>Planned, not yet in place: an automatic week-on-week check that stops publication if numbers jump implausibly, and a check of any written summary against the edits it describes. Until then the author reviews each issue.</p>
+
+<h2>If your brand is listed</h2>
+<p>Anyone can correct facts in Wikidata, including people who work for the brand. Wikimedia's Terms of Use require anyone who is paid to edit, such as staff or an agency, to disclose that on their account. English Wikipedia also asks people with a conflict of interest not to edit the article directly, and to suggest changes on the article's talk page instead.</p>
+
+<h2>Corrections</h2>
+<p>Report an error on <a href="https://github.com/MinorNobles/brandtabulator/issues">GitHub</a> or through <a href="https://michaelquinn.ai">michaelquinn.ai</a>. Corrections are published as dated notes.</p>
+
+<h2>Data and licence</h2>
+<p>Wikipedia text is licensed CC BY-SA; Wikidata is CC0. The data files here are published under CC BY-SA 4.0. Weekly CSV and JSON files are on the <a href="/data/">data page</a>.</p>
+
+<h2>Related work</h2>
+<ul>
+<li><b>QRank</b>: a ranking of Wikidata items by pageviews across Wikimedia sites, published on Wikimedia's cloud.</li>
+<li><b>Recoin</b>: a Wikidata tool that shows which properties an item is missing compared with similar items.</li>
+<li><b>Wiki3DRank</b> (Universidad de Murcia): a model that ranks topics by Wikidata statements, language editions and article length.</li>
+<li><b>Dror Poleg's Wikipedia Power Ranking</b>: a weekly ranking of people by edits to their Wikipedia biographies.</li>
+</ul>"""
+
+def methods_md(cats):
+    out = "# Methods\n\nPre-launch draft. The full methods page is at " + SITE_URL + "/methods/\n\n## Definitions\n\n"
+    out += "".join(f"- **{n}**: {d}\n" for (n, _, _, d) in COLDEFS)
+    out += "\n## Key properties checked\n\n" + ", ".join(f"{v} ({k})" for k, v in KEY_PROPS.items())
+    out += "\n\n## Identity links counted\n\n" + ", ".join(f"{IDENTITY_LABELS.get(k,k)} ({k})" for k in IDENTITY_PROPS) + "\n"
+    for c in cats:
+        cs = c.get("competitive_set") or {}
+        out += f"\n## {c['name']}\n\nFull category query:\n\n```sparql\n{c.get('discovery_sparql','')}\n```\n\nAdded by hand: " + (", ".join(f"{a.get('label')} ({a['qid']}): {a.get('reason','')}" for a in c.get('manual_additions', [])) or "none") + ".\n\nRemoved by hand: " + (", ".join(f"{q}: {w}" for q, w in (c.get('exclude') or {}).items()) or "none") + f".\n\n{cs.get('name','Competitive set')}: {cs.get('basis','')} Chosen by: {cs.get('chosen_by','')}.\n"
+    return out
+
+def build_site():
+    """Home, categories, data and methods pages; llms.txt, robots.txt, sitemap.xml. All links built from SITE_URL."""
+    import html as H
+    cats = load_categories()
+    def w(rel, text):
+        path = os.path.join(ROOT, rel); os.makedirs(os.path.dirname(path), exist_ok=True); open(path, "w").write(fix_links(text))
+    rows = ""; mdrows = ""
+    for c in cats:
+        L = c["_latest"]
+        if not L: continue
+        n = len(L["brands"]); d = L["computed_at"]
+        rows += f'<tr><td><a href="/categories/{c["slug"]}/">{H.escape(c["name"])}</a></td><td class="mono">{n}</td><td class="mono">{d}</td><td>{H.escape(L.get("pageview_month",""))}</td></tr>'
+        mdrows += f"| [{c['name']}](/categories/{c['slug']}/) | {n} | {d} |\n"
+    cat_table = f'<table><thead><tr><th>Category</th><th>Brands</th><th>Issue</th><th>Views month</th></tr></thead><tbody>{rows}</tbody></table>'
+    w("index.html", shell("Brandtabulator", "Weekly rankings of brands by how well their public record on Wikipedia and Wikidata is kept.",
+        f"""<h1>Brandtabulator</h1>
+<p>AI assistants and search engines describe brands using the public record: Wikipedia articles and the facts in Wikidata. This site shows, category by category, how complete and how current each brand's record is, and how often machines read it. It is updated every week.</p>
+<p>It does not rank brands as products. It shows whose record is kept up, whose is not, and where the facts and the descriptions disagree.</p>
+<h2>Categories</h2>{cat_table}
+<p><a href="/methods/">How this is measured</a> · <a href="/data/">Data files</a></p>"""))
+    w("categories/index.html", shell("Categories — Brandtabulator", "Brand categories covered by Brandtabulator.", f"<h1>Categories</h1>{cat_table}"))
+    w("categories/index.md", "# Categories\n\n| Category | Brands | Issue |\n|---|---|---|\n" + mdrows)
+    drows = ""; dmd = ""
+    for c in cats:
+        dd = os.path.join(ROOT, "data", c["slug"])
+        if not os.path.isdir(dd): continue
+        files = sorted([f for f in os.listdir(dd) if f.endswith((".csv", ".json"))], reverse=True)
+        def label(f):
+            if f == "latest.json": return "Latest issue (JSON)"
+            if f == "candidates.json": return "Full-category query results"
+            return ("Issue " + f.rsplit(".", 1)[0] + (" (CSV)" if f.endswith(".csv") else " (JSON)"))
+        items = "".join(f'<li><a href="/data/{c["slug"]}/{f}">{label(f)}</a></li>' for f in files)
+        drows += f"<h2>{H.escape(c['name'])}</h2><ul>{items}</ul>"
+        dmd += f"\n## {c['name']}\n\n" + "".join(f"- [{label(f)}](/data/{c['slug']}/{f})\n" for f in files)
+    w("data/index.html", shell("Data — Brandtabulator", "Weekly data files.", f"<h1>Data</h1><p>Each week's figures, as CSV and JSON. Each brand's JSON record includes the Wikipedia and Wikidata revision ids the figures came from. Licence: CC BY-SA 4.0.</p>{drows}"))
+    w("data/index.md", "# Data\n" + dmd)
+    w("methods/index.html", shell("Methods — Brandtabulator", "How Brandtabulator measures brands' public records.", methods_body(cats)))
+    w("methods/index.md", methods_md(cats))
+    catlines = "".join(f"- {c['name']}: {SITE_URL}/categories/{c['slug']}/ (Markdown: {SITE_URL}/categories/{c['slug']}/index.md; data: {SITE_URL}/data/{c['slug']}/latest.json)\n" for c in cats if c["_latest"])
+    open(os.path.join(ROOT, "llms.txt"), "w").write(f"""# Brandtabulator
+
+> Weekly rankings of brands, by category, by how complete and current their public record on Wikipedia and Wikidata is, and how often machines read it. Author: Michael Quinn (michaelquinn.ai). Part of the Brand AI Report. Pre-launch draft.
+
+## Categories
+
+{catlines}
+## Reference
+
+- Methods: {SITE_URL}/methods/ (Markdown: {SITE_URL}/methods/index.md)
+- Data files: {SITE_URL}/data/
+- Source code: https://github.com/MinorNobles/brandtabulator
+
+## Conventions
+
+- Each brand's JSON record carries the Wikipedia and Wikidata revision ids its figures were computed from.
+- Category pages and the methods page have Markdown versions at index.md in the same folder.
+- Reader views are Wikimedia's "user" agent class; spider and automated classes are reported separately. None measure AI companies' bulk use of Wikipedia.
+""")
+    open(os.path.join(ROOT, "robots.txt"), "w").write(f"User-agent: *\nAllow: /\n\nSitemap: {SITE_URL}/sitemap.xml\n")
+    today = dt.date.today().isoformat()
+    urls = [("/", today), ("/methods/", today), ("/categories/", today), ("/data/", today)] + [(f"/categories/{c['slug']}/", c["_latest"]["computed_at"]) for c in cats if c["_latest"]]
+    body = "".join(f"  <url><loc>{SITE_URL}{u}</loc><lastmod>{d}</lastmod></url>\n" for u, d in urls)
+    open(os.path.join(ROOT, "sitemap.xml"), "w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + body + "</urlset>\n")
 
 # ---------- main ----------
 def main():
@@ -279,8 +480,8 @@ def main():
 
     if a.render_only:
         meta = json.load(open(os.path.join(outdir, "latest.json"))); rows = meta["brands"]; date = meta["computed_at"]; pv_month = meta["pageview_month"]
-        open(os.path.join(pagedir, "index.md"), "w").write(f"# {cat['name']}\n\nIssue {date}. {len(rows)} brands. Ranked by staleness (longest unupdated first). Views: {pv_month}.\n\n" + md_table(rows, cat) + f"\nData: [CSV](/data/{a.slug}/{date}.csv) · [JSON](/data/{a.slug}/{date}.json) · [Methods](/methods/)\n")
-        open(os.path.join(pagedir, "index.html"), "w").write(html_page(cat, rows, date, pv_month)); print("rendered from latest.json"); return
+        open(os.path.join(pagedir, "index.md"), "w").write(fix_links(f"# {cat['name']}\n\nIssue {date}. {len(rows)} brands. Ranked by staleness (longest unupdated first). Views: {pv_month}.\n\n" + md_table(rows, cat) + f"\nData: [CSV](/data/{a.slug}/{date}.csv) · [JSON](/data/{a.slug}/{date}.json) · [Methods](/methods/)\n"))
+        open(os.path.join(pagedir, "index.html"), "w").write(fix_links(html_page(cat, rows, date, pv_month))); build_site(); print("rendered from latest.json"); return
 
     if not a.skip_discovery and cat.get("discovery_sparql"):
         print("discovery query…", flush=True)
@@ -335,9 +536,9 @@ def main():
             "user_agent": UA, "brands": rows}
     json.dump(meta, open(os.path.join(outdir, f"{date}.json"), "w"), indent=1)
     json.dump(meta, open(os.path.join(outdir, "latest.json"), "w"), indent=1)
-    open(os.path.join(pagedir, "index.md"), "w").write(f"# {cat['name']}\n\nIssue {date}. {len(rows)} brands. Ranked by staleness (longest unupdated first). Views: {pv_month}.\n\n" + md_table(rows, cat) + f"\nData: [CSV](/data/{a.slug}/{date}.csv) · [JSON](/data/{a.slug}/{date}.json) · [Methods](/methods/)\n")
-    open(os.path.join(pagedir, "index.html"), "w").write(html_page(cat, rows, date, pv_month))
-    update_sitemap(date, a.slug)
+    open(os.path.join(pagedir, "index.md"), "w").write(fix_links(f"# {cat['name']}\n\nIssue {date}. {len(rows)} brands. Ranked by staleness (longest unupdated first). Views: {pv_month}.\n\n" + md_table(rows, cat) + f"\nData: [CSV](/data/{a.slug}/{date}.csv) · [JSON](/data/{a.slug}/{date}.json) · [Methods](/methods/)\n"))
+    open(os.path.join(pagedir, "index.html"), "w").write(fix_links(html_page(cat, rows, date, pv_month)))
+    build_site()
     print("done:", date, flush=True)
 
 if __name__ == "__main__":

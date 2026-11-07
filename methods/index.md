@@ -1,25 +1,43 @@
 # Methods
 
-Stub. To be completed before the first issue.
+Pre-launch draft. The full methods page is at https://minornobles.github.io/brandtabulator/methods/
 
-## Sources
-All data is public Wikimedia data: Wikipedia revision history and pageviews (by agent class), Wikidata items and statements, and QRank. Brand lists come from Wikidata SPARQL queries published alongside each category.
+## Definitions
 
-## Metrics (definitions to be finalised)
-- Last substantive edit: most recent edit excluding bot accounts and reverted edits.
-- 90-day edit velocity: edits in the last 90 days divided by the category median.
-- Ballast: share of Wikidata statements carrying at least one reference; presence of key properties (industry, CEO, inception, official website, parent organization, subsidiaries).
-- Editions: number of language Wikipedias with an article (sitelinks).
-- Reader / spider / automated views: Wikimedia pageview agent classes, last 30 days.
-- sameAs: whether the brand's official website declares its Wikidata item or Wikipedia article in schema.org markup.
+- **#**: Rank by staleness within this category. 1 = longest without a substantive edit.
+- **Brand**: English Wikipedia article and Wikidata item (Q-id). Click either to see the source.
+- **Last substantive edit**: Most recent English Wikipedia edit of 50 bytes or more by a non-bot account that was not later reverted.
+- **90d edits / editors**: Edits to the English article in the 90 days to the issue date, and how many distinct accounts made them.
+- **Reverted**: Of those 90-day edits, how many were reverted. A measure of contestation.
+- **Statements (referenced)**: Number of statements on the Wikidata item, and how many carry at least one reference.
+- **Ballast**: Share of Wikidata statements that carry a reference. Sourced, complete Wikidata is what lets the record hold up.
+- **Identity links out**: Statements on the item that point to the brand's own products, brands, subsidiaries, holdings, founders, origin, motto, awards or executives. What the item says the brand is.
+- **Key props**: Of six properties a brand item should carry: industry, product, parent, subsidiaries, owner-of, Google Knowledge Graph id.
+- **Editions**: Language Wikipedias (and sister projects) with a page linked to this item. Sail area.
+- **Refs**: Reference tags in the English article.
+- **Words**: Approximate word count of the English article.
+- **Reader views**: English Wikipedia views in the stated month from Wikimedia's "user" agent class: traffic that presents as a browser. Not a guarantee of a human.
+- **Spider**: Views from declared crawlers such as Googlebot.
+- **Automated**: Views from undeclared traffic that Wikimedia's heuristics flag as bot-like. The scraper signal.
 
-## Verification
-1. Deterministic checks: every link resolves, every revision id matches the data, every sentence carries a claim record, timestamps fall inside the issue window.
-2. A second model, of a different family, checks each sentence against the linked record and logs the result. The log is published with the page.
-3. A person reads every page before publication.
+## Key properties checked
 
-## Prior work
-QRank (Wikimedia), Recoin (Wikidata gadget), Wiki3DRank (Universidad de Murcia), XTools, ORES, Dror Poleg's Wikipedia Power Ranking.
+industry (P452), product (P1056), parent (P749), subsidiary (P355), owner of (P1830), Google KG id (P2671)
 
-## Corrections
-Pages are never edited in place. Corrections are dated notes linked from the page.
+## Identity links counted
+
+product or material produced (P1056), brand (P1716), subsidiary (P355), owner of (P1830), notable work (P800), country of origin (P495), motto (P1451), award received (P166), significant event (P793), founded by (P112), chief executive officer (P169)
+
+## Watch manufacturers
+
+Full category query:
+
+```sparql
+SELECT DISTINCT ?item ?itemLabel ?sitelinks WHERE { { ?item wdt:P452 wd:Q41767 . } UNION { ?item wdt:P452 wd:Q63346664 . } UNION { ?item wdt:P1056 wd:Q178794 . } UNION { ?item wdt:P31 wd:Q136094627 . } ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language "en". } } ORDER BY DESC(?sitelinks) LIMIT 400
+```
+
+Added by hand: Seiko (Q322601): Not classified as a watch company in Wikidata (no industry/product statement); obviously belongs., Swatch (Q573422): Same..
+
+Removed by hand: none.
+
+Competitive set (draft): Draft: US mass- and mid-market brands a Citizen buyer might compare against, plus Citizen's own Bulova. Not yet reviewed by the author. Chosen by: Claude, as a draft on 2026-11-07; pending Michael Quinn's review.
