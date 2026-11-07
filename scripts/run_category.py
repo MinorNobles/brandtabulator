@@ -137,24 +137,108 @@ def md_table(rows, cat):
         h += f"| {r.get('rank_days_since_50byte','')} | [{r['label']}](https://en.wikipedia.org/wiki/{urllib.parse.quote((r.get('enwiki_title') or '').replace(' ','_'))}) ([{r['qid']}](https://www.wikidata.org/wiki/{r['qid']})) | {(r.get('wp_last_50byte') or '')[:10]} | {r.get('wp_edits_90d','')} / {r.get('wp_editors_90d','')} | {r.get('wd_statements','')} ({r.get('wd_referenced','')}) | {r.get('ballast_pct','')}% | {r.get('identity_links_out','')} | {r.get('wd_sitelinks','')} | {r.get('wp_refs','')} | {r.get('pv_user','')} | {r.get('pv_bot_share','')}% |\n"
     return h
 
+COLDEFS = [
+    ("#", "rank_days_since_50byte", "num", "Rank by staleness within this category. 1 = longest without a substantive edit."),
+    ("Brand", "label", "str", "English Wikipedia article and Wikidata item (Q-id). Click either to see the source."),
+    ("Last substantive edit", "wp_last_50byte", "date", "Most recent English Wikipedia edit of 50 bytes or more by a non-bot account that was not later reverted."),
+    ("90d edits / editors", "wp_edits_90d", "num", "Edits to the English article in the 90 days to the issue date, and how many distinct accounts made them."),
+    ("Reverted", "wp_reverted_90d", "num", "Of those 90-day edits, how many were reverted. A measure of contestation."),
+    ("Statements (referenced)", "wd_statements", "num", "Number of statements on the Wikidata item, and how many carry at least one reference."),
+    ("Ballast", "ballast_pct", "num", "Share of Wikidata statements that carry a reference. Sourced, complete Wikidata is what lets the record hold up."),
+    ("Identity links out", "identity_links_out", "num", "Statements on the item that point to the brand's own products, brands, subsidiaries, holdings, founders, origin, motto, awards or executives. What the item says the brand is."),
+    ("Key props", "key_props_present", "num", "Of six properties a brand item should carry: industry, product, parent, subsidiaries, owner-of, Google Knowledge Graph id."),
+    ("Editions", "wd_sitelinks", "num", "Language Wikipedias (and sister projects) with a page linked to this item. Sail area."),
+    ("Refs", "wp_refs", "num", "Reference tags in the English article."),
+    ("Words", "wp_words", "num", "Approximate word count of the English article."),
+    ("Reader views", "pv_user", "num", "English Wikipedia views in the stated month from Wikimedia's \"user\" agent class: traffic that presents as a browser. Not a guarantee of a human."),
+    ("Spider", "pv_spider", "num", "Views from declared crawlers such as Googlebot."),
+    ("Automated", "pv_automated", "num", "Views from undeclared traffic that Wikimedia's heuristics flag as bot-like. The scraper signal."),
+]
+
 def html_page(cat, rows, date, pv_month):
     import html as H
+    def cell(r, key):
+        v = r.get(key)
+        if key == "label":
+            t = (r.get("enwiki_title") or "").replace(" ", "_")
+            return f'<a href="https://en.wikipedia.org/wiki/{H.escape(urllib.parse.quote(t))}">{H.escape(r["label"])}</a> <span class="q"><a href="https://www.wikidata.org/wiki/{r["qid"]}">{r["qid"]}</a></span>', r["label"]
+        if key == "wp_last_50byte": return (v or "")[:10], (v or "")[:10]
+        if key == "wp_edits_90d": return f'{r.get("wp_edits_90d","")} / {r.get("wp_editors_90d","")}', r.get("wp_edits_90d") or 0
+        if key == "wd_statements": return f'{r.get("wd_statements","")} <span class="q">({r.get("wd_referenced","")})</span>', r.get("wd_statements") or 0
+        if key == "ballast_pct": return f'{v}%', v or 0
+        if key in ("pv_user", "pv_spider", "pv_automated"): return (f'{v:,}' if isinstance(v, int) else ""), v or 0
+        return ("" if v is None else str(v)), (v if v is not None else 0)
     trs = ""
     for r in sorted(rows, key=lambda r: r.get("rank_days_since_50byte") or 999):
-        trs += f"<tr><td>{r.get('rank_days_since_50byte','')}</td><td><a href='https://en.wikipedia.org/wiki/{H.escape(urllib.parse.quote((r.get('enwiki_title') or '').replace(' ','_')))}'>{H.escape(r['label'])}</a> <small><a href='https://www.wikidata.org/wiki/{r['qid']}'>{r['qid']}</a></small></td><td>{(r.get('wp_last_50byte') or '')[:10]}</td><td>{r.get('wp_edits_90d','')} / {r.get('wp_editors_90d','')}</td><td>{r.get('wd_statements','')} ({r.get('wd_referenced','')})</td><td>{r.get('ballast_pct','')}%</td><td>{r.get('identity_links_out','')}</td><td>{r.get('wd_sitelinks','')}</td><td>{r.get('wp_refs','')}</td><td>{r.get('pv_user','')}</td><td>{r.get('pv_spider','') if r.get('pv_spider') is not None else ''}</td><td>{r.get('pv_automated','') if r.get('pv_automated') is not None else ''}</td></tr>"
-    return f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{H.escape(cat['name'])} — Brandtabulator</title>
+        tds = ""
+        for (_, key, kind, _) in COLDEFS:
+            txt, val = cell(r, key)
+            cls = ' class="mono"' if kind != "str" else ""
+            tds += f'<td{cls} data-v="{H.escape(str(val))}">{txt}</td>'
+        hl = ' class="hl"' if r["qid"] in cat.get("highlight", []) else ""
+        trs += f"<tr{hl}>{tds}</tr>"
+    ths = "".join(f'<th data-kind="{k}" title="{H.escape(d)}" tabindex="0" role="button" aria-label="{H.escape(n)}: {H.escape(d)}. Click to sort.">{H.escape(n)}<span class="arr" aria-hidden="true"></span></th>' for (n, _, k, d) in COLDEFS)
+    defs = "".join(f"<dt>{H.escape(n)}</dt><dd>{H.escape(d)}</dd>" for (n, _, _, d) in COLDEFS)
+    ld = json.dumps({"@context":"https://schema.org","@type":"Dataset","name":f"Brandtabulator — {cat['name']} — {date}","description":"Public-record activity metrics for brands in this category, computed from Wikipedia and Wikidata.","dateModified":date,"license":"https://creativecommons.org/licenses/by-sa/4.0/","creator":{"@type":"Person","name":"Michael Quinn","url":"https://michaelquinn.ai"},"distribution":[{"@type":"DataDownload","encodingFormat":"text/csv","contentUrl":f"/data/{cat['slug']}/{date}.csv"},{"@type":"DataDownload","encodingFormat":"application/json","contentUrl":f"/data/{cat['slug']}/{date}.json"}]})
+    n = len(rows); med_e = statistics.median([r.get("wp_edits_90d", 0) or 0 for r in rows]); med_b = statistics.median([r.get("ballast_pct", 0) for r in rows])
+    stale = max(rows, key=lambda r: r.get("days_since_50byte") or 0); fresh = min(rows, key=lambda r: r.get("days_since_50byte") if r.get("days_since_50byte") is not None else 9999)
+    return f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{H.escape(cat['name'])} — Brandtabulator</title>
 <meta name="description" content="Weekly ranking of {H.escape(cat['name'].lower())} by how actively their public record on Wikipedia and Wikidata is maintained.">
 <link rel="alternate" type="application/json" href="/data/{cat['slug']}/latest.json">
-<script type="application/ld+json">{json.dumps({"@context":"https://schema.org","@type":"Dataset","name":f"Brandtabulator — {cat['name']} — {date}","description":"Public-record activity metrics for brands in this category, computed from Wikipedia and Wikidata.","dateModified":date,"license":"https://creativecommons.org/licenses/by-sa/4.0/","creator":{"@type":"Person","name":"Michael Quinn","url":"https://michaelquinn.ai"},"distribution":[{"@type":"DataDownload","encodingFormat":"text/csv","contentUrl":f"/data/{cat['slug']}/{date}.csv"},{"@type":"DataDownload","encodingFormat":"application/json","contentUrl":f"/data/{cat['slug']}/{date}.json"}]})}</script>
-<style>body{{margin:0;font-family:system-ui,sans-serif;background:#f4f3ef;color:#1b1b1b}}main{{max-width:1100px;margin:0 auto;padding:40px 24px}}table{{border-collapse:collapse;width:100%;font-size:14px}}th,td{{text-align:left;padding:8px;border-bottom:1px solid #e3e1da;vertical-align:top}}th{{font-weight:500;color:#555;font-size:12px}}a{{color:#0b4f8a}}.wrap{{overflow-x:auto}}small{{color:#555}}</style></head>
-<body><main>
-<p><a href="/">Brandtabulator</a> · <a href="/categories/">Categories</a> · issue {date}</p>
-<h1>{H.escape(cat['name'])}</h1>
-<p>{len(rows)} brands. Ranked by staleness: days since the last edit of 50+ bytes by a non-bot account that was not reverted. Longest-unupdated first. Edit counts cover the 90 days to {date}. Views are English Wikipedia, {pv_month}, by Wikimedia agent class. <a href="/methods/">Definitions</a> · <a href="/data/{cat['slug']}/{date}.csv">CSV</a> · <a href="/data/{cat['slug']}/{date}.json">JSON</a> · <a href="/data/{cat['slug']}/candidates.json">Discovery candidates</a></p>
-<div class="wrap"><table><thead><tr><th>#</th><th>Brand</th><th>Last ≥50-byte edit</th><th>90d edits / editors</th><th>Wikidata statements (referenced)</th><th>Ballast</th><th>Identity links out</th><th>Editions</th><th>Refs</th><th>Reader views</th><th>Spider</th><th>Automated</th></tr></thead><tbody>{trs}</tbody></table></div>
-<p><small>Reader views are Wikimedia's "user" agent class: traffic that presents as a browser. Spider = declared crawlers. Automated = undeclared traffic flagged as bot-like. None measure AI retrieval through dumps or Enterprise feeds. Every figure links to the Wikipedia article and Wikidata item it was computed from; revision ids are in the JSON.</small></p>
-<p><small>Michael Quinn · <a href="https://michaelquinn.ai">michaelquinn.ai</a> · Brandtabulator (working title), part of the Brand AI Report. Pages are regenerated weekly and never edited in place.</small></p>
-</main></body></html>"""
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script type="application/ld+json">{ld}</script>
+<style>
+body{{margin:0;background:#f4f3ef;color:#1b1b1b;font-family:'IBM Plex Sans',system-ui,sans-serif;-webkit-font-smoothing:antialiased}}
+a{{color:#0b4f8a;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}}a:hover{{color:#063a66}}
+.mast{{border-bottom:1px solid #cfcdc5;background:#fbfaf7}}.mast .in{{max-width:1180px;margin:0 auto;padding:18px 32px;display:flex;justify-content:space-between;align-items:baseline;gap:24px;flex-wrap:wrap}}
+.brand{{font-size:20px;font-weight:600;letter-spacing:-.01em;text-decoration:none;color:#1b1b1b}}.sub{{font-size:13px;color:#555}}
+main{{max-width:1180px;margin:0 auto;padding:40px 32px 64px;display:flex;flex-direction:column;gap:32px}}
+h1{{margin:0;font-size:40px;line-height:1.1;font-weight:600;letter-spacing:-.02em}}
+.lead{{background:#fff;border:1px solid #cfcdc5;padding:24px 28px;display:flex;flex-direction:column;gap:8px}}.lead p{{margin:0;font-size:20px;line-height:1.4;font-weight:500}}
+.card{{background:#fff;border:1px solid #cfcdc5;padding:22px 26px;display:flex;flex-direction:column;gap:14px}}
+.card h2{{margin:0;font-size:18px;font-weight:600}}
+.wrap{{overflow-x:auto}}table{{border-collapse:collapse;width:100%}}
+th{{font-weight:500;color:#555;text-align:left;font-size:12px;padding:10px 10px;border-bottom:1px solid #cfcdc5;white-space:nowrap;cursor:pointer;user-select:none;position:relative}}
+th:hover,th:focus{{color:#1b1b1b;background:#f4f3ef;outline:none}}th .arr::after{{content:"";margin-left:6px;color:#999}}th.asc .arr::after{{content:"▲"}}th.desc .arr::after{{content:"▼"}}
+th[title]:hover::before,th[title]:focus::before{{content:attr(title);position:absolute;left:0;top:100%;z-index:5;width:260px;white-space:normal;background:#1b1b1b;color:#f4f3ef;font-size:12px;line-height:1.4;padding:8px 10px;font-weight:400;cursor:default}}
+td{{padding:11px 10px;border-bottom:1px solid #e3e1da;font-size:14px;vertical-align:top}}tr.hl td{{background:#fff8e6}}
+.mono{{font-family:'IBM Plex Mono',ui-monospace,monospace}}.q{{font-size:12px;color:#555}}
+dl{{display:grid;grid-template-columns:200px 1fr;gap:6px 16px;font-size:13px;margin:0}}dt{{font-weight:600}}dd{{margin:0;color:#444;line-height:1.45}}
+.foot{{border-top:1px solid #cfcdc5;padding-top:20px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;font-size:13px;color:#444;line-height:1.5}}.foot b{{display:block;color:#1b1b1b;margin-bottom:4px;font-weight:600}}
+details summary{{cursor:pointer;font-size:14px;font-weight:500}}
+@media (max-width:760px){{main{{padding:24px 20px 48px;gap:22px}}h1{{font-size:30px}}.lead p{{font-size:17px}}.foot{{grid-template-columns:1fr}}dl{{grid-template-columns:1fr}}th[title]:hover::before{{display:none}}}}
+</style></head>
+<body>
+<div class="mast"><div class="in"><div style="display:flex;gap:16px;align-items:baseline;flex-wrap:wrap"><a class="brand" href="/">Brandtabulator</a><span class="sub">working title · under the Brand AI Report</span></div><div class="sub" style="display:flex;gap:16px;flex-wrap:wrap"><a href="/categories/">Categories</a><a href="/methods/">Methods</a><a href="/data/">Data</a><span>Issue {date}</span></div></div></div>
+<main>
+<div style="display:flex;flex-direction:column;gap:10px"><div class="sub"><a href="/categories/">Categories</a> · {n} brands</div><h1>{H.escape(cat['name'])}</h1></div>
+<div class="lead"><div class="sub" style="text-transform:uppercase;letter-spacing:.06em;font-size:12px;font-weight:500">This issue</div>
+<p>Longest without a substantive edit: {H.escape(stale['label'])}, {stale.get('days_since_50byte')} days. Most recently worked on: {H.escape(fresh['label'])}. Category median is {med_e:g} edits per 90 days and {med_b:g}% of Wikidata statements referenced.</p>
+<div class="sub">Every figure links to the Wikipedia article and Wikidata item it was computed from. Revision ids are in the <a href="/data/{cat['slug']}/{date}.json">JSON</a>.</div></div>
+<div class="card">
+<div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px"><h2>The regatta</h2><span class="sub">Same wind for every boat. Click a heading to sort; hover for its definition. Default order: longest unupdated first.</span></div>
+<div class="wrap"><table id="regatta"><thead><tr>{ths}</tr></thead><tbody>{trs}</tbody></table></div>
+<div class="sub">Edits: 90 days to {date}. Views: English Wikipedia, {pv_month}, by Wikimedia agent class. <a href="/data/{cat['slug']}/{date}.csv">CSV</a> · <a href="/data/{cat['slug']}/{date}.json">JSON</a> · <a href="/data/{cat['slug']}/candidates.json">Discovery candidates</a> · <a href="/methods/">Methods</a></div>
+<details><summary>Column definitions</summary><div style="padding-top:12px"><dl>{defs}</dl></div></details>
+</div>
+<div class="foot">
+<div><b>How this page is made</b>Computed from public Wikimedia data: Wikipedia revision history and pageviews, Wikidata items and statements. Membership of the category is editorial and listed in the repository. <a href="/methods/">Definitions</a>.</div>
+<div><b>Agent classes</b>Reader = Wikimedia's "user" class, traffic that presents as a browser. Spider = declared crawlers. Automated = undeclared traffic flagged as bot-like. None measure AI retrieval through dumps or Enterprise feeds.</div>
+<div><b>Author</b>Michael Quinn · <a href="https://michaelquinn.ai">michaelquinn.ai</a><br>Pages are regenerated weekly and never edited in place. Corrections are dated notes.</div>
+</div>
+</main>
+<script>
+(function(){{var t=document.getElementById('regatta');if(!t)return;var ths=t.tHead.rows[0].cells,tb=t.tBodies[0];
+function sortBy(i,dir){{var k=ths[i].getAttribute('data-kind');var rows=Array.prototype.slice.call(tb.rows);
+rows.sort(function(a,b){{var x=a.cells[i].getAttribute('data-v'),y=b.cells[i].getAttribute('data-v');
+if(k==='num'){{x=parseFloat(x)||0;y=parseFloat(y)||0;return dir*(x-y);}}return dir*String(x).localeCompare(String(y));}});
+rows.forEach(function(r){{tb.appendChild(r);}});
+for(var j=0;j<ths.length;j++)ths[j].classList.remove('asc','desc');ths[i].classList.add(dir>0?'asc':'desc');}}
+Array.prototype.forEach.call(ths,function(th,i){{var dir=1;function go(){{dir=th.classList.contains('asc')?-1:1;sortBy(i,dir);}}
+th.addEventListener('click',go);th.addEventListener('keydown',function(e){{if(e.key==='Enter'||e.key===' '){{e.preventDefault();go();}}}});}});}})();
+</script>
+</body></html>"""
 
 def update_sitemap(date, cat_slug):
     p = os.path.join(ROOT, "sitemap.xml")
@@ -167,7 +251,7 @@ def update_sitemap(date, cat_slug):
 
 # ---------- main ----------
 def main():
-    ap = argparse.ArgumentParser(); ap.add_argument("slug"); ap.add_argument("--date"); ap.add_argument("--skip-discovery", action="store_true")
+    ap = argparse.ArgumentParser(); ap.add_argument("slug"); ap.add_argument("--date"); ap.add_argument("--skip-discovery", action="store_true"); ap.add_argument("--render-only", action="store_true", help="rebuild pages from data/<slug>/latest.json without fetching")
     a = ap.parse_args()
     today = dt.date.fromisoformat(a.date) if a.date else dt.date.today()
     cat = json.load(open(os.path.join(ROOT, "categories", a.slug + ".json")))
@@ -177,6 +261,11 @@ def main():
     # previous full month for pageviews
     first = today.replace(day=1); last_prev = first - dt.timedelta(days=1); start = last_prev.replace(day=1)
     pv_start, pv_end = start.strftime("%Y%m%d"), last_prev.strftime("%Y%m%d"); pv_month = start.strftime("%B %Y")
+
+    if a.render_only:
+        meta = json.load(open(os.path.join(outdir, "latest.json"))); rows = meta["brands"]; date = meta["computed_at"]; pv_month = meta["pageview_month"]
+        open(os.path.join(pagedir, "index.md"), "w").write(f"# {cat['name']}\n\nIssue {date}. {len(rows)} brands. Ranked by staleness (longest unupdated first). Views: {pv_month}.\n\n" + md_table(rows, cat) + f"\nData: [CSV](/data/{a.slug}/{date}.csv) · [JSON](/data/{a.slug}/{date}.json) · [Methods](/methods/)\n")
+        open(os.path.join(pagedir, "index.html"), "w").write(html_page(cat, rows, date, pv_month)); print("rendered from latest.json"); return
 
     if not a.skip_discovery and cat.get("discovery_sparql"):
         print("discovery query…", flush=True)

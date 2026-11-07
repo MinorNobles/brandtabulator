@@ -3,20 +3,79 @@
   "name": "Watch manufacturers",
   "note": "Citizen's US mass/mid-market competitive set. Members chosen by hand on 2026-11-07. Seiko and Swatch are not classified as watch companies in Wikidata and would be missed by the discovery query.",
   "members": [
-    {"qid": "Q1368019", "label": "Citizen", "enwiki": "Citizen Watch"},
-    {"qid": "Q322601",  "label": "Seiko", "enwiki": "Seiko"},
-    {"qid": "Q217338",  "label": "Casio", "enwiki": "Casio"},
-    {"qid": "Q1644618", "label": "Timex", "enwiki": "Timex Group USA"},
-    {"qid": "Q356212",  "label": "Fossil", "enwiki": "Fossil Group"},
-    {"qid": "Q663300",  "label": "Bulova", "enwiki": "Bulova"},
-    {"qid": "Q659530",  "label": "Tissot", "enwiki": "Tissot"},
-    {"qid": "Q573422",  "label": "Swatch", "enwiki": "Swatch"},
-    {"qid": "Q1771114", "label": "Orient", "enwiki": "Orient Watch"},
-    {"qid": "Q1573565", "label": "Hamilton", "enwiki": "Hamilton Watch Company"},
-    {"qid": "Q939816",  "label": "Movado", "enwiki": "Movado"},
-    {"qid": "Q6060981", "label": "Invicta", "enwiki": "Invicta Watch Group"},
-    {"qid": "Q603698",  "label": "Longines", "enwiki": "Longines"},
-    {"qid": "Q180014",  "label": "Rado", "enwiki": "Rado (watchmaker)"}
+    {
+      "qid": "Q1368019",
+      "label": "Citizen",
+      "enwiki": "Citizen Watch"
+    },
+    {
+      "qid": "Q322601",
+      "label": "Seiko",
+      "enwiki": "Seiko"
+    },
+    {
+      "qid": "Q217338",
+      "label": "Casio",
+      "enwiki": "Casio"
+    },
+    {
+      "qid": "Q1644618",
+      "label": "Timex",
+      "enwiki": "Timex Group USA"
+    },
+    {
+      "qid": "Q356212",
+      "label": "Fossil",
+      "enwiki": "Fossil Group"
+    },
+    {
+      "qid": "Q663300",
+      "label": "Bulova",
+      "enwiki": "Bulova"
+    },
+    {
+      "qid": "Q659530",
+      "label": "Tissot",
+      "enwiki": "Tissot"
+    },
+    {
+      "qid": "Q573422",
+      "label": "Swatch",
+      "enwiki": "Swatch"
+    },
+    {
+      "qid": "Q1771114",
+      "label": "Orient",
+      "enwiki": "Orient Watch"
+    },
+    {
+      "qid": "Q1573565",
+      "label": "Hamilton",
+      "enwiki": "Hamilton Watch Company"
+    },
+    {
+      "qid": "Q939816",
+      "label": "Movado",
+      "enwiki": "Movado"
+    },
+    {
+      "qid": "Q6060981",
+      "label": "Invicta",
+      "enwiki": "Invicta Watch Group"
+    },
+    {
+      "qid": "Q603698",
+      "label": "Longines",
+      "enwiki": "Longines"
+    },
+    {
+      "qid": "Q180014",
+      "label": "Rado",
+      "enwiki": "Rado (watchmaker)"
+    }
   ],
-  "discovery_sparql": "SELECT DISTINCT ?item ?itemLabel ?sitelinks WHERE { { ?item wdt:P452 wd:Q41767 . } UNION { ?item wdt:P452 wd:Q63346664 . } UNION { ?item wdt:P1056 wd:Q178794 . } UNION { ?item wdt:P31 wd:Q136094627 . } ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". } } ORDER BY DESC(?sitelinks) LIMIT 400"
+  "discovery_sparql": "SELECT DISTINCT ?item ?itemLabel ?sitelinks WHERE { { ?item wdt:P452 wd:Q41767 . } UNION { ?item wdt:P452 wd:Q63346664 . } UNION { ?item wdt:P1056 wd:Q178794 . } UNION { ?item wdt:P31 wd:Q136094627 . } ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". } } ORDER BY DESC(?sitelinks) LIMIT 400",
+  "highlight": [
+    "Q1368019"
+  ]
 }
