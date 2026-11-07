@@ -1,0 +1,19 @@
+# Brandtabulator
+
+> Weekly rankings of brands, by category, by how actively their public record on Wikipedia and Wikidata is maintained. Author: Michael Quinn (michaelquinn.ai). Part of the Brand AI Report.
+
+Status: site skeleton, no issues published yet.
+
+## What is here
+
+- /categories/ — one page per brand category, with the weekly ranking ("the regatta")
+- /brands/ — one page per brand, keyed to its Wikidata Q-id
+- /data/ — the weekly data as JSON and CSV, plus the SPARQL queries that produced each brand list
+- /methods/ — metric definitions, agent-class definitions, verification process, corrections policy
+
+## Conventions
+
+- Every claim links to a specific Wikipedia revision (oldid) or diff, or a Wikidata revision.
+- Pages are regenerated weekly and never edited in place. Corrections are dated notes.
+- Markdown versions of every page are at the same path with .md appended.
+- Reader views are Wikimedia's "user" agent class; spider and automated classes are reported separately. None measure AI retrieval via dumps or Enterprise feeds.
