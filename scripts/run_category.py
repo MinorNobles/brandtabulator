@@ -92,7 +92,7 @@ def issue_box(cat, rows):
     e1 = d - dt.timedelta(days=1); s1 = e1 - dt.timedelta(days=6); e0 = s1 - dt.timedelta(days=1); s0 = e0 - dt.timedelta(days=6)
     span = lambda a, b: (f"{a.day}–{b.day} {b:%B}" if a.month == b.month else f"{a.day} {a:%B} – {b.day} {b:%B}")
     return (f"<p style='margin:0 0 8px'>{H.escape(tgt['label'])} against the average of its {len(comp)} competitors, per AI. This week is {span(s1, e1)}; last week is {span(s0, e0)}.</p>"
-            f"<div class='wrap'><table style='min-width:0;width:100%'><thead><tr><th></th><th>{H.escape(tgt['label'])}</th><th>Average competitor</th></tr></thead><tbody>{body}</tbody></table></div>")
+            f"<div class='wrap'><table class='issue' style='min-width:0;width:100%'><thead><tr><th></th><th>{H.escape(tgt['label'])}</th><th>Average competitor</th></tr></thead><tbody>{body}</tbody></table></div>")
 
 def fix_links(text):
     """Turn site-root links ("/methods/") into links that work under BASE."""
@@ -346,6 +346,7 @@ dl{{display:grid;grid-template-columns:200px 1fr;gap:6px 16px;font-size:13px;mar
 details summary{{cursor:pointer;font-size:14px;font-weight:500}}
 @media (max-width:760px){{main{{padding:24px 20px 48px;gap:22px}}h1{{font-size:30px}}.lead p{{font-size:17px}}.foot{{grid-template-columns:1fr}}dl{{grid-template-columns:1fr}}}}
 
+@media (max-width:600px){{table.issue thead tr,table.issue tbody tr{{display:grid;grid-template-columns:1fr 1fr;column-gap:12px}}table.issue thead th:first-child{{display:none}}table.issue tbody td:first-child{{grid-column:1/-1;font-weight:600;padding-bottom:2px;border-bottom:0}}table.issue td,table.issue th{{white-space:normal}}}}
 .cmp{{display:none;font-size:12px;color:#77756d;font-style:italic}}.setview .cmp{{display:inline}}
 </style></head>
 <body>
@@ -361,7 +362,7 @@ details summary{{cursor:pointer;font-size:14px;font-weight:500}}
 <p style="margin:0;font-size:15px;line-height:1.55"><b>Why &ldquo;the regatta&rdquo;?</b> Because Wikipedia and Wikidata can give brands a competitive advantage in some AI results, the regatta metaphor is useful and memorable. The wind is the market. It blows the same for every brand, more or less. Wikidata is the ballast: the weight of facts about the brand, normally just under the surface of AI responses. Wikipedia is the sail area (often cited in AI responses): what is written about the brand, with each statement backed by a published source. Ballast keeps the brand upright and accurately described; sail area moves it forward into view. Both are public, and any editor can change or challenge them.</p>
 {seg_html}
 <div class="sub" id="viewnote"><span data-for="all"><b>Full category:</b> {H.escape(cat.get("full_category_description",""))}. {H.escape(cat.get("inclusion_rule",""))}</span>{set_note}</div>
-<div class="sub">Click any column heading to sort by it. Click the <b>i</b> next to a heading to see what it measures. Questions: <a href="mailto:Michael@MichaelQuinn.ai">Michael@MichaelQuinn.ai</a></div>
+<div class="sub">Click or tap any column heading to sort by it. Click or tap the <b>i</b> next to a heading to see what it measures. Questions: <a href="mailto:Michael@MichaelQuinn.ai">Michael@MichaelQuinn.ai</a></div>
 <div class="wrap"><table id="regatta"><thead><tr>{ths}</tr></thead><tbody>{trs}</tbody></table></div>
 <div class="sub">Edits: 90 days to {date}. Views: English Wikipedia, {pv_month}, by Wikimedia agent class.</div>
 <details><summary>Column definitions</summary><div style="padding-top:12px"><dl>{defs}</dl></div></details>
