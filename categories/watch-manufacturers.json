@@ -81,13 +81,13 @@
       "qid": "Q322601",
       "label": "Seiko",
       "enwiki": "Seiko",
-      "reason": "Not classified as a watch company in Wikidata (no industry/product statement); obviously belongs."
+      "reason": "has an English Wikipedia article, but its Wikidata entry doesn't say it makes watches."
     },
     {
       "qid": "Q573422",
       "label": "Swatch",
       "enwiki": "Swatch",
-      "reason": "Same."
+      "reason": "has an English Wikipedia article, but its Wikidata entry doesn't say it makes watches."
     }
   ],
   "inclusion_rule": "Only brands that have customers, business or consumer, are included. Companies that Wikidata records as dissolved have no current customers and are left out.",
