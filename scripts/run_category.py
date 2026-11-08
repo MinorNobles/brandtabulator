@@ -306,15 +306,16 @@ def html_page(cat, rows, date, pv_month):
     ex = cat.get("exclude", {}) or {}
     if isinstance(ex, list): ex = {q: "" for q in ex}
     removed = ("Removed by hand, with reasons: " + "; ".join(f"{H.escape(q)} ({H.escape(why)})" for q, why in ex.items()) + ".") if ex else "Nothing removed by hand."
+    hlc = cat.get("highlight") or {}
+    hl = ", ".join(H.escape(r["label"]) for r in rows if r.get("highlight"))
+    hl_note = (f' <span>Highlighted: {hl}. {H.escape(hlc.get("reason",""))}</span>' if hl else "") + (f' <span>{H.escape(", ".join(hlc["missing"]))}: {H.escape(hlc.get("missing_note",""))}</span>' if hlc.get("missing") else "")
     if cs.get("members"):
         seg_html = f'<div class="seg" role="group" aria-label="Which brands to show"><button type="button" class="on" data-view="all">Full category <span class="n">{n}</span></button><button type="button" data-view="set">{H.escape(cs.get("name","Competitive set"))} <span class="n">{n_set}</span></button></div>' + (f'<div class="sub">The competitive view shows the set plus the highlighted brands, so you can compare them side by side.</div>' if any(r.get("highlight") for r in rows) else "")
         set_note = ai_set_note(cat) if cs.get("_summary") else f'<span data-for="set" hidden><b>{H.escape(cs.get("name","Competitive set"))}:</b> {H.escape(cs.get("basis",""))} Chosen by {H.escape(cs.get("chosen_by","the author"))}; the list is in the <a href="https://github.com/MinorNobles/brandtabulator/blob/main/categories/{cat["slug"]}.json">category file</a>.</span>'
+        set_note += hl_note
     else:
         seg_html = ""
-        hl = ", ".join(H.escape(r["label"]) for r in rows if r.get("highlight"))
-        hlc = cat.get("highlight") or {}
-        hl = ", ".join(H.escape(r["label"]) for r in rows if r.get("highlight"))
-        set_note = (f' <span>Highlighted: {hl}. {H.escape(hlc.get("reason",""))}</span>' if hl else "") + (f' <span>{H.escape(", ".join(hlc["missing"]))}: {H.escape(hlc.get("missing_note",""))}</span>' if hlc.get("missing") else "")
+        set_note = hl_note
     stale = max(rows, key=lambda r: r.get("days_since_50byte") or 0); fresh = min(rows, key=lambda r: r.get("days_since_50byte") if r.get("days_since_50byte") is not None else 9999)
     return f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{H.escape(cat['name'])} — BrandTabulator</title>
