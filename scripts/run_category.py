@@ -45,7 +45,7 @@ def load_ai_set(cat):
     if not p or not os.path.exists(os.path.join(ROOT, p)): return
     sm = json.load(open(os.path.join(ROOT, p)))
     cs["_summary"] = sm
-    cs["members"] = [b["qid"] for b in sm["brands"] if b.get("qid") and b.get("in_category") and len(b["engines"]) >= 2]
+    cs["members"] = [b["qid"] for b in sm["brands"] if b.get("qid") and (b.get("status") == "in set, on page" if "status" in b else (b.get("in_category") and len(b["engines"]) >= 2))]
 
 def ai_set_note(cat):
     import html as H
