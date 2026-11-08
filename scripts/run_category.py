@@ -293,7 +293,7 @@ def html_page(cat, rows, date, pv_month):
             cls = ' class="mono"' if kind != "str" else ""
             tds += f'<td{cls} data-v="{H.escape(str(val))}">{txt}</td>'
         cls = ("hl " if (r.get("in_set") or r.get("highlight")) else "") + ("dis" if r.get("dissolved") else "")
-        trs += f'<tr class="{cls.strip()}" data-set="{1 if (r.get("in_set") or r.get("highlight")) else 0}">{tds}</tr>'
+        trs += f'<tr class="{cls.strip()}" data-qid="{r["qid"]}" data-set="{1 if (r.get("in_set") or r.get("highlight")) else 0}">{tds}</tr>'
     ths = "".join(f'<th data-kind="{k}"><span class="hd" tabindex="0" role="button" data-tip="{H.escape(d)}" aria-label="Sort by {H.escape(n)}">{H.escape(n)}<span class="arr" aria-hidden="true"></span></span><button type="button" class="i" data-def="def-{i}" aria-label="Definition of {H.escape(n)}">i</button></th>' for i, (n, _, k, d) in enumerate(COLDEFS))
     defs = "".join(f'<dt id="def-{i}">{H.escape(n)}</dt><dd>{H.escape(d)}</dd>' for i, (n, _, _, d) in enumerate(COLDEFS))
     ld = json.dumps({"@context":"https://schema.org","@type":"Dataset","name":f"BrandTabulator — {cat['name']} — {date}","description":"Public-record activity metrics for brands in this category, computed from Wikipedia and Wikidata.","dateModified":date,"license":"https://creativecommons.org/licenses/by-sa/4.0/","url":f"{SITE_URL}/{cat_path(cat)}/","creator":{"@type":"Person","name":"Michael Quinn","url":"https://michaelquinn.ai","email":"Michael@MichaelQuinn.ai"},"publisher":{"@type":"Organization","name":"MichaelQuinn.ai","url":"https://michaelquinn.ai"},"isPartOf":{"@type":"WebSite","name":"BrandTabulator","url":f"{SITE_URL}/"},"distribution":[{"@type":"DataDownload","encodingFormat":"text/csv","contentUrl":f"{SITE_URL}/data/{cat['slug']}/{date}.csv"},{"@type":"DataDownload","encodingFormat":"application/json","contentUrl":f"{SITE_URL}/data/{cat['slug']}/{date}.json"}]})
@@ -352,7 +352,7 @@ details summary{{cursor:pointer;font-size:14px;font-weight:500}}
 <div class="mast"><div class="in"><div style="display:flex;gap:16px;align-items:baseline;flex-wrap:wrap"><a class="brand" href="/">BrandTabulator</a><span class="sub">by Michael Quinn · <a href="https://michaelquinn.ai">MichaelQuinn.ai</a></span></div><div class="sub" style="display:flex;gap:16px;flex-wrap:wrap"><a href="/methods/">Methods</a><span>Issue {date}</span></div></div></div>
 <main>
 <div style="display:flex;flex-direction:column;gap:10px"><div class="sub">{n} brands</div><h1>{H.escape(cat['name'])}</h1></div>
-{("<div style='background:#fff;border:1px solid #cfcdc5;padding:18px 22px'>" + (f"<p style='margin:0 0 8px;font-weight:600'>{H.escape(cat['intro_title'])}</p>" if cat.get("intro_title") else "") + "".join(f"<p style='margin:0 0 8px'>{H.escape(p).replace('Michael@MichaelQuinn.ai', '<a href=mailto:Michael@MichaelQuinn.ai>Michael@MichaelQuinn.ai</a>')}</p>" for p in cat["intro"]) + "</div>") if cat.get("intro") else ""}
+{("<div style='background:#fff;border:1px solid #cfcdc5;padding:18px 22px'>" + (f"<p style='margin:0 0 8px;font-weight:600'>{H.escape(cat['intro_title'])}</p>" if cat.get("intro_title") else "") + "".join(f"<p style='margin:0 0 8px'>{H.escape(p).replace('Michael@MichaelQuinn.ai', '<a href=mailto:Michael@MichaelQuinn.ai>Michael@MichaelQuinn.ai</a>')}</p>" for p in [x.replace("{product}", cat.get("product_noun","")).replace("{products}", cat.get("products_noun","")) for x in cat["intro"]]) + "</div>") if cat.get("intro") else ""}
 <div class="lead"><div class="sub" style="text-transform:uppercase;letter-spacing:.06em;font-size:12px;font-weight:500">This issue</div>
 {issue_box(cat, rows) or f"<p>Longest without a substantive edit: {H.escape(stale['label'])}, {stale.get('days_since_50byte')} days. Most recently worked on: {H.escape(fresh['label'])}. Category median is {med_e:g} edits per 90 days and {med_b:g}% of Wikidata statements referenced.</p>"}
 <div class="sub">{prov} <a href="/data/{cat['slug']}/{date}.json">JSON</a> · <a href="/methods/">How this is measured</a></div></div>
@@ -360,7 +360,7 @@ details summary{{cursor:pointer;font-size:14px;font-weight:500}}
 <div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px"><h2>The regatta</h2><span class="sub">Default order: longest unupdated first.</span></div>
 <p style="margin:0;font-size:15px;line-height:1.55"><b>Why &ldquo;the regatta&rdquo;?</b> Because Wikipedia and Wikidata can give brands a competitive advantage in some AI results, the regatta metaphor is useful and memorable. The wind is the market. It blows the same for every brand, more or less. Wikidata is the ballast: the weight of facts about the brand, normally just under the surface of AI responses. Wikipedia is the sail area (often cited in AI responses): what is written about the brand, with each statement backed by a published source. Ballast keeps the brand upright and accurately described; sail area moves it forward into view. Both are public, and any editor can change or challenge them.</p>
 {seg_html}
-<div class="sub" id="viewnote"><span data-for="all"><b>Full category:</b> every Wikidata item that is classified as a watch company (industry horology or watchmaking, product watch, or instance of watch manufacturing company) and has an English Wikipedia article, as returned by <a href="/data/{cat['slug']}/candidates.json">this query</a>. {H.escape(cat.get("inclusion_rule",""))}</span>{set_note}</div>
+<div class="sub" id="viewnote"><span data-for="all"><b>Full category:</b> {H.escape(cat.get("full_category_description",""))}, as returned by <a href="/data/{cat['slug']}/candidates.json">this query</a>. {H.escape(cat.get("inclusion_rule",""))}</span>{set_note}</div>
 <div class="sub">Click any column heading to sort by it. Click the <b>i</b> next to a heading to see what it measures. Questions: <a href="mailto:Michael@MichaelQuinn.ai">Michael@MichaelQuinn.ai</a></div>
 <div class="wrap"><table id="regatta"><thead><tr>{ths}</tr></thead><tbody>{trs}</tbody></table></div>
 <div class="sub">Edits: 90 days to {date}. Views: English Wikipedia, {pv_month}, by Wikimedia agent class. <a href="/data/{cat['slug']}/{date}.csv">CSV</a> · <a href="/data/{cat['slug']}/{date}.json">JSON</a> · <a href="/data/{cat['slug']}/candidates.json">Discovery candidates</a> · <a href="/methods/">Methods</a></div>
@@ -533,12 +533,63 @@ def build_site():
     body = "".join(f"  <url><loc>{SITE_URL}{u}</loc><lastmod>{d}</lastmod></url>\n" for u, d in urls)
     open(os.path.join(ROOT, "sitemap.xml"), "w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + body + "</urlset>\n")
 
+RECIPIENT_KEYS = ("highlight", "competitive_set", "intro", "intro_title")
+
+def views(cat):
+    """The neutral category view, then one view per recipient (category settings overlaid with the recipient's)."""
+    base = {k: v for k, v in cat.items() if k not in ("recipients", "highlight", "competitive_set")}
+    yield None, base
+    for key, rc in (cat.get("recipients") or {}).items():
+        v = dict(base); v.update({k: json.loads(json.dumps(x)) for k, x in rc.items()}); v["_recipient"] = key
+        load_ai_set(v)
+        yield key, v
+
+def flag_rows(rows, view):
+    set_q = set((view.get("competitive_set") or {}).get("members", [])); hl_q = set((view.get("highlight") or {}).get("members", []))
+    out = []
+    for r in rows:
+        r = dict(r); r["in_set"] = r["qid"] in set_q; r["highlight"] = r["qid"] in hl_q; out.append(r)
+    return out
+
+def verify_page(html, view, rows):
+    """Stop publication if the page's competitor rows do not match the published results file."""
+    problems = []
+    shown = set(re.findall(r'data-qid="(Q\d+)" data-set="1"', html))
+    expected = {r["qid"] for r in rows if r.get("in_set") or r.get("highlight")}
+    if shown != expected: problems.append(f"rows marked for the competitor view {sorted(shown ^ expected)} differ from the set plus highlights")
+    sm = (view.get("competitive_set") or {}).get("_summary")
+    if sm:
+        pub = {b["qid"] for b in sm["brands"] if b.get("qid") and (b.get("status") == "in set, on page" if "status" in b else (b.get("in_category") and len(b["engines"]) >= 2))}
+        in_table = {r["qid"] for r in rows}
+        missing = pub - in_table
+        if missing: problems.append(f"set brands missing from the table: {sorted(missing)}")
+        if {r["qid"] for r in rows if r.get("in_set")} != pub & in_table: problems.append("set members on the page differ from the results file")
+        m = re.search(r'data-view="set">[^<]*<span class="n">(\d+)</span>', html)
+        if not m or int(m.group(1)) != len(pub & in_table): problems.append("the set count on the button differs from the results file")
+    if problems:
+        raise SystemExit("NOT PUBLISHED (" + (view.get("_recipient") or "category page") + "): " + "; ".join(problems))
+
+def render_all(cat, rows, date, pv_month, pagedir, slug):
+    for key, view in views(cat):
+        vr = flag_rows(rows, view)
+        html = html_page(view, vr, date, pv_month)
+        verify_page(html, view, vr)
+        d = pagedir if key is None else os.path.join(pagedir, key)
+        os.makedirs(d, exist_ok=True)
+        open(os.path.join(d, "index.html"), "w").write(fix_links(html))
+        if key is None:
+            open(os.path.join(d, "index.md"), "w").write(fix_links(f"# {cat['name']}\n\nIssue {date}. {len(rows)} brands. Ranked by staleness (longest unupdated first). Views: {pv_month}.\n\n" + md_table(vr, view) + f"\nData: [CSV](/data/{slug}/{date}.csv) · [JSON](/data/{slug}/{date}.json) · [Methods](/methods/)\n"))
+    build_site()
+
 # ---------- main ----------
 def main():
     ap = argparse.ArgumentParser(); ap.add_argument("slug"); ap.add_argument("--date"); ap.add_argument("--skip-discovery", action="store_true"); ap.add_argument("--render-only", action="store_true", help="rebuild pages from data/<slug>/latest.json without fetching")
     a = ap.parse_args()
     today = dt.date.fromisoformat(a.date) if a.date else dt.date.today()
-    cat = json.load(open(os.path.join(ROOT, "categories", a.slug + ".json"))); load_ai_set(cat)
+    cat = json.load(open(os.path.join(ROOT, "categories", a.slug + ".json")))
+    extra_q = set()
+    for _k, _v in views(cat):
+        extra_q |= set((_v.get("competitive_set") or {}).get("members", [])) | set((_v.get("highlight") or {}).get("members", []))
     outdir = os.path.join(ROOT, "data", a.slug); os.makedirs(outdir, exist_ok=True)
     pagedir = os.path.join(ROOT, cat_path(cat)); os.makedirs(pagedir, exist_ok=True)
 
@@ -548,10 +599,7 @@ def main():
 
     if a.render_only:
         meta = json.load(open(os.path.join(outdir, "latest.json"))); rows = meta["brands"]; date = meta["computed_at"]; pv_month = meta["pageview_month"]
-        set_q = set((cat.get("competitive_set") or {}).get("members", [])); hl_q = set((cat.get("highlight") or {}).get("members", []))
-        for r in rows: r["in_set"] = r["qid"] in set_q; r["highlight"] = r["qid"] in hl_q
-        open(os.path.join(pagedir, "index.md"), "w").write(fix_links(f"# {cat['name']}\n\nIssue {date}. {len(rows)} brands. Ranked by staleness (longest unupdated first). Views: {pv_month}.\n\n" + md_table(rows, cat) + f"\nData: [CSV](/data/{a.slug}/{date}.csv) · [JSON](/data/{a.slug}/{date}.json) · [Methods](/methods/)\n"))
-        open(os.path.join(pagedir, "index.html"), "w").write(fix_links(html_page(cat, rows, date, pv_month))); build_site(); print("rendered from latest.json"); return
+        render_all(cat, rows, date, pv_month, pagedir, a.slug); print("rendered from latest.json"); return
 
     if not a.skip_discovery and cat.get("discovery_sparql"):
         print("discovery query…", flush=True)
@@ -581,8 +629,7 @@ def main():
         e = ents.get(m["qid"]); row = {"qid": m["qid"], "label": m.get("label") or (e.get("labels", {}).get("en") or {}).get("value") or m["qid"]}
         row.update(wd_metrics(e))
         row["dissolved"] = "P576" in e.get("claims", {})
-        row["in_set"] = m["qid"] in set((cat.get("competitive_set") or {}).get("members", []))
-        row["highlight"] = m["qid"] in set((cat.get("highlight") or {}).get("members", []))
+        row["in_set"] = False; row["highlight"] = False
         row["manual_addition"] = m["qid"] in {x["qid"] for x in cat.get("manual_additions", [])}
         title = m.get("enwiki") or row.get("enwiki_title")
         if title:
@@ -594,7 +641,7 @@ def main():
         row["days_since_50byte"] = days_since(row.get("wp_last_50byte"), today)
         row["days_since_substantive"] = days_since(row.get("wp_last_substantive"), today)
         row["days_since_wd_edit"] = days_since(row.get("wd_modified"), today)
-        if row["in_set"] or row["highlight"]:
+        if m["qid"] in extra_q:
             weekly_extras(row, today)
         rows.append(row)
 
@@ -624,9 +671,7 @@ def main():
             "user_agent": UA, "previous_issue": prev_file[:10] if prev_file else None, "inclusion_rule": cat.get("inclusion_rule"), "excluded": excluded, "brands": rows}
     json.dump(meta, open(os.path.join(outdir, f"{date}.json"), "w"), indent=1)
     json.dump(meta, open(os.path.join(outdir, "latest.json"), "w"), indent=1)
-    open(os.path.join(pagedir, "index.md"), "w").write(fix_links(f"# {cat['name']}\n\nIssue {date}. {len(rows)} brands. Ranked by staleness (longest unupdated first). Views: {pv_month}.\n\n" + md_table(rows, cat) + f"\nData: [CSV](/data/{a.slug}/{date}.csv) · [JSON](/data/{a.slug}/{date}.json) · [Methods](/methods/)\n"))
-    open(os.path.join(pagedir, "index.html"), "w").write(fix_links(html_page(cat, rows, date, pv_month)))
-    build_site()
+    render_all(cat, rows, date, pv_month, pagedir, a.slug)
     print("done:", date, flush=True)
 
 if __name__ == "__main__":

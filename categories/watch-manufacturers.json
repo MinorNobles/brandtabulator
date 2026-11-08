@@ -90,19 +90,6 @@
       "reason": "Same."
     }
   ],
-  "highlight": {
-    "members": [
-      "Q1368019",
-      "Q663300",
-      "Q4039046"
-    ],
-    "reason": "Brands sold in the US by Citizen Watch of America.",
-    "missing": [
-      "Alpina",
-      "Accutron"
-    ],
-    "missing_note": "Also sold by Citizen Watch of America, but not in this category: neither has an English Wikipedia article that Wikidata classifies as a watch company."
-  },
   "inclusion_rule": "Only brands that have customers, business or consumer, are included. Companies that Wikidata records as dissolved have no current customers and are left out.",
   "exclude_dissolved": true,
   "exclude": {
@@ -111,14 +98,33 @@
   },
   "path": "watches",
   "intro": [
-    "When watch customers ask AI about a brand or the category, AI can lean heavily on Wikipedia and Wikidata. BrandTabulator ranks every brand in the category by how complete and current its record is. It is refreshed every week, so bookmark this tab.",
+    "When {product} customers ask AI about a brand or the category, AI can lean heavily on Wikipedia and Wikidata. BrandTabulator ranks every brand in the category by how complete and current its record is. It is refreshed every week, so bookmark this tab.",
     "Of course, there are many sources that AI relies on. My work is to Diagnose the responses, Investigate the sources they credit, and Prescribe what can be done to improve the visibility and accuracy of brand descriptions in AI (DIP). To learn more, contact Michael@MichaelQuinn.ai"
   ],
   "intro_title": "BrandTabulator",
   "product_noun": "watch",
   "products_noun": "watches",
-  "competitive_set": {
-    "name": "Competitors, per AI",
-    "summary": "data/watch-manufacturers/competitors/latest.json"
+  "full_category_description": "every Wikidata item that is classified as a watch company (industry horology or watchmaking, product watch, or instance of watch manufacturing company) and has an English Wikipedia article",
+  "recipients": {
+    "citizen": {
+      "recipient": "Ranajay Nandy, Citizen Watch of America",
+      "highlight": {
+        "members": [
+          "Q1368019",
+          "Q663300",
+          "Q4039046"
+        ],
+        "reason": "Brands sold in the US by Citizen Watch of America.",
+        "missing": [
+          "Alpina",
+          "Accutron"
+        ],
+        "missing_note": "Also sold by Citizen Watch of America, but not in this category: neither has an English Wikipedia article that Wikidata classifies as a watch company."
+      },
+      "competitive_set": {
+        "name": "Competitors, per AI",
+        "summary": "data/watch-manufacturers/competitors/citizen/latest.json"
+      }
+    }
   }
 }
