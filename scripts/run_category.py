@@ -215,7 +215,9 @@ def html_page(cat, rows, date, pv_month):
     else:
         seg_html = ""
         hl = ", ".join(H.escape(r["label"]) for r in rows if r.get("highlight"))
-        set_note = ""
+        hlc = cat.get("highlight") or {}
+        hl = ", ".join(H.escape(r["label"]) for r in rows if r.get("highlight"))
+        set_note = (f' <span>Highlighted: {hl}. {H.escape(hlc.get("reason",""))}</span>' if hl else "") + (f' <span>{H.escape(", ".join(hlc["missing"]))}: {H.escape(hlc.get("missing_note",""))}</span>' if hlc.get("missing") else "")
     stale = max(rows, key=lambda r: r.get("days_since_50byte") or 0); fresh = min(rows, key=lambda r: r.get("days_since_50byte") if r.get("days_since_50byte") is not None else 9999)
     return f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{H.escape(cat['name'])} — Brandtabulator</title>
@@ -257,7 +259,7 @@ details summary{{cursor:pointer;font-size:14px;font-weight:500}}
 <div class="card">
 <div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px"><h2>The regatta</h2><span class="sub">Same wind for every boat. Click a heading to sort; hover or tap ⓘ for its definition. Default order: longest unupdated first.</span></div>
 {seg_html}
-<div class="sub" id="viewnote"><span data-for="all"><b>Full category:</b> every Wikidata item that is classified as a watch company (industry horology or watchmaking, product watch, or instance of watch manufacturing company) and has an English Wikipedia article, as returned by <a href="/data/{cat['slug']}/candidates.json">this query</a>.</span>{set_note}</div>
+<div class="sub" id="viewnote"><span data-for="all"><b>Full category:</b> every Wikidata item that is classified as a watch company (industry horology or watchmaking, product watch, or instance of watch manufacturing company) and has an English Wikipedia article, as returned by <a href="/data/{cat['slug']}/candidates.json">this query</a>. {H.escape(cat.get("inclusion_rule",""))}</span>{set_note}</div>
 <div class="sub">Click any column heading to sort by it. Click the <b>i</b> next to a heading to see what it measures. Questions: <a href="mailto:Michael@MichaelQuinn.ai">Michael@MichaelQuinn.ai</a></div>
 <div class="wrap"><table id="regatta"><thead><tr>{ths}</tr></thead><tbody>{trs}</tbody></table></div>
 <div class="sub">Edits: 90 days to {date}. Views: English Wikipedia, {pv_month}, by Wikimedia agent class. <a href="/data/{cat['slug']}/{date}.csv">CSV</a> · <a href="/data/{cat['slug']}/{date}.json">JSON</a> · <a href="/data/{cat['slug']}/candidates.json">Discovery candidates</a> · <a href="/methods/">Methods</a></div>
@@ -339,7 +341,7 @@ def methods_body(cats):
         adds = "".join(f"<li>{H.escape(a.get('label', a['qid']))} ({a['qid']}): {H.escape(a.get('reason',''))}</li>" for a in c.get("manual_additions", [])) or "<li>None.</li>"
         exs = "".join(f"<li>{H.escape(q)}: {H.escape(why)}</li>" for q, why in ex.items()) or "<li>None. If any brand is ever removed by hand, it will be listed here with the reason.</li>"
         percat += f"""<h3>{H.escape(c['name'])}</h3>
-<p><b>Full category.</b> Every Wikidata item returned by the query below that has an English Wikipedia article. Companies that Wikidata records as dissolved are kept and shown greyed.</p>
+<p><b>Full category.</b> Every Wikidata item returned by the query below that has an English Wikipedia article. {H.escape(c.get('inclusion_rule') or 'Companies that Wikidata records as dissolved are kept and shown greyed.')}</p>
 <pre>{H.escape(c.get('discovery_sparql',''))}</pre>
 <p><b>Added by hand</b> (the query does not find them):</p><ul>{adds}</ul>
 <p><b>Removed by hand:</b></p><ul>{exs}</ul>
@@ -535,6 +537,12 @@ def main():
         row["days_since_wd_edit"] = days_since(row.get("wd_modified"), today)
         rows.append(row)
 
+    excluded = []
+    if cat.get("exclude_dissolved"):
+        excluded = [{"qid": r["qid"], "label": r["label"], "reason": "dissolved (Wikidata records a dissolution date)"} for r in rows if r.get("dissolved")]
+        rows = [r for r in rows if not r.get("dissolved")]
+    excluded += [{"qid": q, "label": q, "reason": why} for q, why in (cat.get("exclude") or {}).items()] if isinstance(cat.get("exclude"), dict) else []
+
     for key, lower in [("days_since_50byte", True), ("ballast_pct", False), ("wp_edits_90d", False), ("pv_user", False), ("identity_links_out", False), ("wd_statements", False), ("wd_sitelinks", False), ("wp_refs_per_1000_words", False), ("pv_bot_share", True)]:
         percentiles(rows, key, lower); rank(rows, key, reverse=(key != "pv_bot_share"))  # staleness rank: longest unupdated = 1
 
@@ -543,7 +551,7 @@ def main():
         w = csv.DictWriter(f, fieldnames=COLS, extrasaction="ignore"); w.writeheader(); w.writerows(rows)
     meta = {"category": cat["name"], "slug": a.slug, "computed_at": date, "edit_window_days": 90, "pageview_month": pv_month, "pageview_range": [pv_start, pv_end],
             "median_edits_90d": statistics.median([r.get("wp_edits_90d", 0) or 0 for r in rows]), "median_ballast_pct": statistics.median([r.get("ballast_pct", 0) for r in rows]),
-            "user_agent": UA, "brands": rows}
+            "user_agent": UA, "inclusion_rule": cat.get("inclusion_rule"), "excluded": excluded, "brands": rows}
     json.dump(meta, open(os.path.join(outdir, f"{date}.json"), "w"), indent=1)
     json.dump(meta, open(os.path.join(outdir, "latest.json"), "w"), indent=1)
     open(os.path.join(pagedir, "index.md"), "w").write(fix_links(f"# {cat['name']}\n\nIssue {date}. {len(rows)} brands. Ranked by staleness (longest unupdated first). Views: {pv_month}.\n\n" + md_table(rows, cat) + f"\nData: [CSV](/data/{a.slug}/{date}.csv) · [JSON](/data/{a.slug}/{date}.json) · [Methods](/methods/)\n"))
