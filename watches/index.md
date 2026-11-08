@@ -141,4 +141,4 @@ Issue 2026-11-08. 136 brands. Ranked by staleness (longest unupdated first). Vie
 | 135 | [Orient](https://en.wikipedia.org/wiki/Orient_Watch) ([Q1771114](https://www.wikidata.org/wiki/Q1771114)) | 2026-11-07 | 6 / 6 | 25 (15) | 60.0% | 1 | 21 | 27 | 6616 | 26.3% |
 |  | [Maximilian Büsser and Friends](https://en.wikipedia.org/wiki/Maximilian_B%C3%BCsser_and_Friends) ([Q108281469](https://www.wikidata.org/wiki/Q108281469)) |  | 0 / 0 | 4 (3) | 75.0% | 2 | 1 | 0 | 28 | 53.3% |
 
-Data: [CSV](/data/watch-manufacturers/2026-11-08.csv) · [JSON](/data/watch-manufacturers/2026-11-08.json) · [Methods](/methods/)
+Questions: Michael@MichaelQuinn.ai

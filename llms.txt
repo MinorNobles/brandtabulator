@@ -4,15 +4,10 @@
 
 ## Categories
 
-- Watch manufacturers: https://brandtabulator.michaelquinn.ai/watches/ (Markdown: https://brandtabulator.michaelquinn.ai/watches/index.md; data: https://brandtabulator.michaelquinn.ai/data/watch-manufacturers/latest.json)
-
-## Reference
-
-- Methods: https://brandtabulator.michaelquinn.ai/methods/ (Markdown: https://brandtabulator.michaelquinn.ai/methods/index.md)
-- Source code: https://github.com/MinorNobles/brandtabulator
+- Watch manufacturers: https://brandtabulator.michaelquinn.ai/watches/ (Markdown: https://brandtabulator.michaelquinn.ai/watches/index.md)
 
 ## Conventions
 
-- Each brand's JSON record carries the Wikipedia and Wikidata revision ids its figures were computed from.
-- Category pages and the methods page have Markdown versions at index.md in the same folder.
+- Category pages have Markdown versions at index.md in the same folder.
+- Questions: Michael@MichaelQuinn.ai
 - Reader views are Wikimedia's "user" agent class; spider and automated classes are reported separately. None measure AI companies' bulk use of Wikipedia.

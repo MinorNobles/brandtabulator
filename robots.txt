@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /data/
+Disallow: /categories/
 
 Sitemap: https://brandtabulator.michaelquinn.ai/sitemap.xml

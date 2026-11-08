@@ -34,7 +34,6 @@ def cat_rules_html(c):
     adds = "".join(f"<li>{H.escape(a.get('label', a['qid']))} ({a['qid']}): {H.escape(a.get('reason',''))}</li>" for a in c.get("manual_additions", [])) or "<li>None.</li>"
     exs = "".join(f"<li>{H.escape(q)}: {H.escape(why)}</li>" for q, why in ex.items()) or "<li>None.</li>"
     return f"""<p>{H.escape(c.get('inclusion_rule',''))}</p>
-<p><b>Query</b> (anyone can rerun it on query.wikidata.org):</p><pre style="white-space:pre-wrap;font-size:12px;background:#f4f3ef;padding:10px">{H.escape(c.get('discovery_sparql',''))}</pre>
 <p><b>Added by hand</b> (the query does not find them):</p><ul>{adds}</ul>
 <p><b>Left out under the rule</b> (besides dissolved companies, which the data file lists):</p><ul>{exs}</ul>"""
 
@@ -83,7 +82,7 @@ def issue_box(cat, rows):
     def cell(now, before, label):
         if now is None: return "<td>—</td>"
         if before is None: return f"<td><b>{fmt(now)}</b></td>"
-        ch = "" if before == 0 else (" · no change" if now == before else f" · {'+' if now > before else '−'}{abs(100*(now-before)/before):.0f}%")
+        ch = "" if (before == 0 or max(abs(now), abs(before)) < 5) else (" · no change" if now == before else f" · {'+' if now > before else '−'}{abs(100*(now-before)/before):.0f}%")
         return f"<td><b>{fmt(now)}</b><br><span class='sub'>{label}: {fmt(before)}{ch}</span></td>"
     def avg(k):
         v = [r.get(k) for r in comp]
@@ -296,12 +295,12 @@ def html_page(cat, rows, date, pv_month):
         trs += f'<tr class="{cls.strip()}" data-qid="{r["qid"]}" data-set="{1 if (r.get("in_set") or r.get("highlight")) else 0}">{tds}</tr>'
     ths = "".join(f'<th data-kind="{k}"><span class="hd" tabindex="0" role="button" data-tip="{H.escape(d)}" aria-label="Sort by {H.escape(n)}">{H.escape(n)}<span class="arr" aria-hidden="true"></span></span><button type="button" class="i" data-def="def-{i}" aria-label="Definition of {H.escape(n)}">i</button></th>' for i, (n, _, k, d) in enumerate(COLDEFS))
     defs = "".join(f'<dt id="def-{i}">{H.escape(n)}</dt><dd>{H.escape(d)}</dd>' for i, (n, _, _, d) in enumerate(COLDEFS))
-    ld = json.dumps({"@context":"https://schema.org","@type":"Dataset","name":f"BrandTabulator — {cat['name']} — {date}","description":"Public-record activity metrics for brands in this category, computed from Wikipedia and Wikidata.","dateModified":date,"license":"https://creativecommons.org/licenses/by-sa/4.0/","url":f"{SITE_URL}/{cat_path(cat)}/","creator":{"@type":"Person","name":"Michael Quinn","url":"https://michaelquinn.ai","email":"Michael@MichaelQuinn.ai"},"publisher":{"@type":"Organization","name":"MichaelQuinn.ai","url":"https://michaelquinn.ai"},"isPartOf":{"@type":"WebSite","name":"BrandTabulator","url":f"{SITE_URL}/"},"distribution":[{"@type":"DataDownload","encodingFormat":"text/csv","contentUrl":f"{SITE_URL}/data/{cat['slug']}/{date}.csv"},{"@type":"DataDownload","encodingFormat":"application/json","contentUrl":f"{SITE_URL}/data/{cat['slug']}/{date}.json"}]})
+    ld = json.dumps({"@context":"https://schema.org","@type":"Dataset","name":f"BrandTabulator — {cat['name']} — {date}","description":"Public-record activity metrics for brands in this category, computed from Wikipedia and Wikidata.","dateModified":date,"license":"https://creativecommons.org/licenses/by-sa/4.0/","url":f"{SITE_URL}/{cat_path(cat)}/","creator":{"@type":"Person","name":"Michael Quinn","url":"https://michaelquinn.ai","email":"Michael@MichaelQuinn.ai"},"publisher":{"@type":"Organization","name":"MichaelQuinn.ai","url":"https://michaelquinn.ai"},"isPartOf":{"@type":"WebSite","name":"BrandTabulator","url":f"{SITE_URL}/"}})
     cs = cat.get("competitive_set") or {}; n_set = sum(1 for r in rows if r.get("in_set")); n_dis = sum(1 for r in rows if r.get("dissolved"))
     adds = ", ".join(H.escape(x.get("label", x["qid"])) for x in cat.get("manual_additions", []))
     n = len(rows); med_e = statistics.median([r.get("wp_edits_90d", 0) or 0 for r in rows]); med_b = statistics.median([r.get("ballast_pct", 0) for r in rows])
     has_rev = any(r.get("wp_current_revid") for r in rows)
-    prov = ("Edit dates link to the edit itself. The JSON records the exact Wikipedia and Wikidata revisions each figure was computed from."
+    prov = ("Edit dates link to the edit itself."
             if has_rev else "Each brand links to its Wikipedia article and Wikidata item.")
     ex = cat.get("exclude", {}) or {}
     if isinstance(ex, list): ex = {q: "" for q in ex}
@@ -320,7 +319,6 @@ def html_page(cat, rows, date, pv_month):
     return f"""<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{H.escape(cat['name'])} — BrandTabulator</title>
 <meta name="description" content="Weekly ranking of {H.escape(cat['name'].lower())} by how actively their public record on Wikipedia and Wikidata is maintained.">
-<link rel="alternate" type="application/json" href="/data/{cat['slug']}/latest.json">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <script type="application/ld+json">{ld}</script>
 <style>
@@ -350,26 +348,26 @@ details summary{{cursor:pointer;font-size:14px;font-weight:500}}
 .cmp{{display:none;font-size:12px;color:#77756d;font-style:italic}}.setview .cmp{{display:inline}}
 </style></head>
 <body>
-<div class="mast"><div class="in"><div style="display:flex;gap:16px;align-items:baseline;flex-wrap:wrap"><a class="brand" href="/">BrandTabulator</a><span class="sub">by Michael Quinn · <a href="https://michaelquinn.ai">MichaelQuinn.ai</a></span></div><div class="sub" style="display:flex;gap:16px;flex-wrap:wrap"><a href="/methods/">Methods</a><span>Issue {date}</span></div></div></div>
+<div class="mast"><div class="in"><div style="display:flex;gap:16px;align-items:baseline;flex-wrap:wrap"><a class="brand" href="/">BrandTabulator</a><span class="sub">by Michael Quinn · <a href="https://michaelquinn.ai">MichaelQuinn.ai</a></span></div><div class="sub" style="display:flex;gap:16px;flex-wrap:wrap"><span>Issue {date}</span></div></div></div>
 <main>
 <div style="display:flex;flex-direction:column;gap:10px"><div class="sub">{n} brands</div><h1>{H.escape(cat['name'])}</h1></div>
 {("<div style='background:#fff;border:1px solid #cfcdc5;padding:18px 22px'>" + (f"<p style='margin:0 0 8px;font-weight:600'>{H.escape(cat['intro_title'])}</p>" if cat.get("intro_title") else "") + "".join(f"<p style='margin:0 0 8px'>{H.escape(p).replace('Michael@MichaelQuinn.ai', '<a href=mailto:Michael@MichaelQuinn.ai>Michael@MichaelQuinn.ai</a>')}</p>" for p in [x.replace("{product}", cat.get("product_noun","")).replace("{products}", cat.get("products_noun","")) for x in cat["intro"]]) + "</div>") if cat.get("intro") else ""}
 <div class="lead"><div class="sub" style="text-transform:uppercase;letter-spacing:.06em;font-size:12px;font-weight:500">This issue</div>
 {issue_box(cat, rows) or f"<p>Longest without a substantive edit: {H.escape(stale['label'])}, {stale.get('days_since_50byte')} days. Most recently worked on: {H.escape(fresh['label'])}. Category median is {med_e:g} edits per 90 days and {med_b:g}% of Wikidata statements referenced.</p>"}
-<div class="sub">{prov} <a href="/data/{cat['slug']}/{date}.json">JSON</a> · <a href="/methods/">How this is measured</a></div></div>
+<div class="sub">{prov}</div></div>
 <div class="card">
 <div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px"><h2>The regatta</h2><span class="sub">Default order: longest unupdated first.</span></div>
 <p style="margin:0;font-size:15px;line-height:1.55"><b>Why &ldquo;the regatta&rdquo;?</b> Because Wikipedia and Wikidata can give brands a competitive advantage in some AI results, the regatta metaphor is useful and memorable. The wind is the market. It blows the same for every brand, more or less. Wikidata is the ballast: the weight of facts about the brand, normally just under the surface of AI responses. Wikipedia is the sail area (often cited in AI responses): what is written about the brand, with each statement backed by a published source. Ballast keeps the brand upright and accurately described; sail area moves it forward into view. Both are public, and any editor can change or challenge them.</p>
 {seg_html}
-<div class="sub" id="viewnote"><span data-for="all"><b>Full category:</b> {H.escape(cat.get("full_category_description",""))}, as returned by <a href="/data/{cat['slug']}/candidates.json">this query</a>. {H.escape(cat.get("inclusion_rule",""))}</span>{set_note}</div>
+<div class="sub" id="viewnote"><span data-for="all"><b>Full category:</b> {H.escape(cat.get("full_category_description",""))}. {H.escape(cat.get("inclusion_rule",""))}</span>{set_note}</div>
 <div class="sub">Click any column heading to sort by it. Click the <b>i</b> next to a heading to see what it measures. Questions: <a href="mailto:Michael@MichaelQuinn.ai">Michael@MichaelQuinn.ai</a></div>
 <div class="wrap"><table id="regatta"><thead><tr>{ths}</tr></thead><tbody>{trs}</tbody></table></div>
-<div class="sub">Edits: 90 days to {date}. Views: English Wikipedia, {pv_month}, by Wikimedia agent class. <a href="/data/{cat['slug']}/{date}.csv">CSV</a> · <a href="/data/{cat['slug']}/{date}.json">JSON</a> · <a href="/data/{cat['slug']}/candidates.json">Discovery candidates</a> · <a href="/methods/">Methods</a></div>
+<div class="sub">Edits: 90 days to {date}. Views: English Wikipedia, {pv_month}, by Wikimedia agent class.</div>
 <details><summary>Column definitions</summary><div style="padding-top:12px"><dl>{defs}</dl></div></details>
 <details><summary>Which brands are included</summary><div style="padding-top:12px">{cat_rules_html(cat)}</div></details>
 </div>
 <div class="foot">
-<div><b>How this page is made</b>Computed from public Wikimedia data: Wikipedia revision history and pageviews, Wikidata items and statements. Which brands appear follows a published query and a stated rule, both on this page. <a href="/methods/">Methods</a>.</div>
+<div><b>How this page is made</b>Computed from public Wikimedia data: Wikipedia revision history and pageviews, Wikidata items and statements. Which brands appear follows a stated rule, on this page.</div>
 <div><b>Agent classes</b>Reader = Wikimedia's "user" class, traffic that presents as a browser. Spider = declared crawlers. Automated = undeclared traffic flagged as bot-like. None measure AI retrieval through dumps or Enterprise feeds.</div>
 <div><b>Author</b>Michael Quinn · <a href="https://michaelquinn.ai">michaelquinn.ai</a><br>The page is regenerated each week; each week's data files are kept under their date. Corrections are dated notes. Pre-launch: issues before the first public one may be regenerated.</div>
 </div>
@@ -416,9 +414,9 @@ def shell(title, desc, body):
 <title>{H.escape(title)}</title><meta name="description" content="{H.escape(desc)}">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>{SHELL_CSS}</style></head><body>
-<div class="mast"><div class="in"><div style="display:flex;gap:16px;align-items:baseline;flex-wrap:wrap"><a class="brand" href="/">BrandTabulator</a><span class="sub">by Michael Quinn · <a href="https://michaelquinn.ai">MichaelQuinn.ai</a></span></div><div class="sub" style="display:flex;gap:16px;flex-wrap:wrap"><a href="/methods/">Methods</a></div></div></div>
+<div class="mast"><div class="in"><div style="display:flex;gap:16px;align-items:baseline;flex-wrap:wrap"><a class="brand" href="/">BrandTabulator</a><span class="sub">by Michael Quinn · <a href="https://michaelquinn.ai">MichaelQuinn.ai</a></span></div></div></div>
 <main>{body}
-<div class="foot">Michael Quinn · <a href="https://michaelquinn.ai">michaelquinn.ai</a> · Questions: <a href="mailto:Michael@MichaelQuinn.ai">Michael@MichaelQuinn.ai</a> · Computed from public Wikimedia data. Code: <a href="https://github.com/MinorNobles/brandtabulator">github.com/MinorNobles/brandtabulator</a></div>
+<div class="foot">Michael Quinn · <a href="https://michaelquinn.ai">michaelquinn.ai</a> · Questions: <a href="mailto:Michael@MichaelQuinn.ai">Michael@MichaelQuinn.ai</a> · Computed from public Wikimedia data.</div>
 </main></body></html>"""
 
 def load_categories():
@@ -505,11 +503,8 @@ def build_site():
         path = os.path.join(ROOT, rel); os.makedirs(os.path.dirname(path), exist_ok=True); open(path, "w").write(fix_links(text))
     w("index.html", shell("BrandTabulator", "Weekly rankings of brands by how well their public record on Wikipedia and Wikidata is kept.",
         f"""<h1>BrandTabulator</h1>
-<div style="background:#fff;border:1px solid #cfcdc5;padding:18px 22px;margin:8px 0 4px"><p style="margin:0 0 8px;font-weight:600">Why this matters to a marketing team</p><p style="margin:0 0 8px">When a customer asks AI about a brand or category, the AI leans heavily on Wikipedia and the facts behind it in Wikidata. When a brand's pages are thin, out of date, or contradictory, AI can describe the brand incorrectly or mix it up with another company.</p><p style="margin:0">Your team can't see this from inside the company. BrandTabulator shows where your brand stands against everyone else in its category, week by week, and what is missing.</p></div>
-<p><a href="/methods/">How this is measured</a></p>"""))
-    w("methods/index.html", shell("Methods — BrandTabulator", "How BrandTabulator measures brands' public records.", methods_body(cats)))
-    w("methods/index.md", methods_md(cats))
-    catlines = "".join(f"- {c['name']}: {SITE_URL}/{cat_path(c)}/ (Markdown: {SITE_URL}/{cat_path(c)}/index.md; data: {SITE_URL}/data/{c['slug']}/latest.json)\n" for c in cats if c["_latest"])
+<div style="background:#fff;border:1px solid #cfcdc5;padding:18px 22px;margin:8px 0 4px"><p style="margin:0 0 8px;font-weight:600">Why this matters to a marketing team</p><p style="margin:0 0 8px">When a customer asks AI about a brand or category, the AI leans heavily on Wikipedia and the facts behind it in Wikidata. When a brand's pages are thin, out of date, or contradictory, AI can describe the brand incorrectly or mix it up with another company.</p><p style="margin:0">Your team can't see this from inside the company. BrandTabulator shows where your brand stands against everyone else in its category, week by week, and what is missing.</p></div>"""))
+    catlines = "".join(f"- {c['name']}: {SITE_URL}/{cat_path(c)}/ (Markdown: {SITE_URL}/{cat_path(c)}/index.md)\n" for c in cats if c["_latest"])
     open(os.path.join(ROOT, "llms.txt"), "w").write(f"""# BrandTabulator
 
 > Weekly rankings of brands, by category, by how complete and current their public record on Wikipedia and Wikidata is, and how often machines read it. Author: Michael Quinn (michaelquinn.ai). Part of the Brand AI Report. Pre-launch.
@@ -517,20 +512,15 @@ def build_site():
 ## Categories
 
 {catlines}
-## Reference
-
-- Methods: {SITE_URL}/methods/ (Markdown: {SITE_URL}/methods/index.md)
-- Source code: https://github.com/MinorNobles/brandtabulator
-
 ## Conventions
 
-- Each brand's JSON record carries the Wikipedia and Wikidata revision ids its figures were computed from.
-- Category pages and the methods page have Markdown versions at index.md in the same folder.
+- Category pages have Markdown versions at index.md in the same folder.
+- Questions: Michael@MichaelQuinn.ai
 - Reader views are Wikimedia's "user" agent class; spider and automated classes are reported separately. None measure AI companies' bulk use of Wikipedia.
 """)
-    open(os.path.join(ROOT, "robots.txt"), "w").write(f"User-agent: *\nAllow: /\n\nSitemap: {SITE_URL}/sitemap.xml\n")
+    open(os.path.join(ROOT, "robots.txt"), "w").write(f"User-agent: *\nAllow: /\nDisallow: /data/\nDisallow: /categories/\n\nSitemap: {SITE_URL}/sitemap.xml\n")
     today = dt.date.today().isoformat()
-    urls = [("/", today), ("/methods/", today)] + [(f"/{cat_path(c)}/", c["_latest"]["computed_at"]) for c in cats if c["_latest"]]
+    urls = [("/", today)] + [(f"/{cat_path(c)}/", c["_latest"]["computed_at"]) for c in cats if c["_latest"]]
     body = "".join(f"  <url><loc>{SITE_URL}{u}</loc><lastmod>{d}</lastmod></url>\n" for u, d in urls)
     open(os.path.join(ROOT, "sitemap.xml"), "w").write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + body + "</urlset>\n")
 
@@ -579,7 +569,7 @@ def render_all(cat, rows, date, pv_month, pagedir, slug):
         os.makedirs(d, exist_ok=True)
         open(os.path.join(d, "index.html"), "w").write(fix_links(html))
         if key is None:
-            open(os.path.join(d, "index.md"), "w").write(fix_links(f"# {cat['name']}\n\nIssue {date}. {len(rows)} brands. Ranked by staleness (longest unupdated first). Views: {pv_month}.\n\n" + md_table(vr, view) + f"\nData: [CSV](/data/{slug}/{date}.csv) · [JSON](/data/{slug}/{date}.json) · [Methods](/methods/)\n"))
+            open(os.path.join(d, "index.md"), "w").write(fix_links(f"# {cat['name']}\n\nIssue {date}. {len(rows)} brands. Ranked by staleness (longest unupdated first). Views: {pv_month}.\n\n" + md_table(vr, view) + "\nQuestions: Michael@MichaelQuinn.ai\n"))
     build_site()
 
 # ---------- main ----------
