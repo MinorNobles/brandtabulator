@@ -1,0 +1,26 @@
+name: Lookup
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  lookup:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests
+      - run: python3 scripts/wd_lookup.py
+      - name: Commit results
+        run: |
+          git config user.name "brandtabulator-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add review/lookup_result.json
+          git diff --cached --quiet && echo "nothing to commit" || git commit -m "Lookup results"
+          git pull --rebase -X theirs origin main || true
+          git push
