@@ -106,6 +106,7 @@
   "inclusion_rule": "Only brands that have customers, business or consumer, are included. Companies that Wikidata records as dissolved have no current customers and are left out.",
   "exclude_dissolved": true,
   "exclude": {
-    "Q1496822": "Geneva Seal: a certification, not a business with customers"
+    "Q1496822": "Geneva Seal: a certification, not a business with customers",
+    "Q138307980": "The Geneva School of Watchmaking: a school, not a brand with customers"
   }
 }
