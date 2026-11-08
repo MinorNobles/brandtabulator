@@ -59,6 +59,13 @@ def main():
             res["sparql"][name] = {"count": len(rows), "rows": [{k: v["value"].rsplit("/", 1)[-1] if v["type"] == "uri" else v["value"] for k, v in b.items()} for b in rows[:400]]}
         except Exception as ex:
             res["sparql"][name] = {"error": str(ex)[:300]}
+    res["urls"] = {}
+    for name, u in (req.get("urls") or {}).items():
+        try:
+            r = S.get(u, timeout=60); time.sleep(1.2)
+            res["urls"][name] = r.json() if r.ok else {"status": r.status_code}
+        except Exception as ex:
+            res["urls"][name] = {"error": str(ex)[:200]}
     json.dump(res, open(os.path.join(ROOT, "review", "lookup_result.json"), "w"), indent=1, ensure_ascii=False)
     print("done")
 

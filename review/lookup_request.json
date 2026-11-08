@@ -1,35 +1,22 @@
 {
- "search": [
-  "Merit (company)",
-  "Centric Brands",
-  "Peacock (streaming service)"
- ],
- "items": [
-  "Q6375797",
-  "Q134612138",
-  "Q1260606",
-  "Q26913624",
-  "Q1353939",
-  "Q62029290",
-  "Q934273",
-  "Q2813",
-  "Q2961234",
-  "Q4745165",
-  "Q2241604",
-  "Q116030556",
-  "Q85865456",
-  "Q19867857",
-  "Q1113804"
- ],
- "sparql": {
-  "handbags": "SELECT DISTINCT ?item ?itemLabel ?sitelinks WHERE { { ?item wdt:P1056 wd:Q467505 . } UNION { ?item wdt:P1056 wd:Q96141153 . } UNION { ?item wdt:P452 wd:Q96141153 . } UNION { ?item wdt:P1056 wd:Q1065579 . } ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". } } ORDER BY DESC(?sitelinks) LIMIT 1000",
-  "cosmetics": "SELECT DISTINCT ?item ?itemLabel ?sitelinks WHERE { { ?item wdt:P452 wd:Q12752882 . } UNION { ?item wdt:P1056 wd:Q131207 . } ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". } } ORDER BY DESC(?sitelinks) LIMIT 1000",
-  "mealkits": "SELECT DISTINCT ?item ?itemLabel ?sitelinks WHERE { { ?item wdt:P452 wd:Q10578348 . } UNION { ?item wdt:P31 wd:Q10578348 . } UNION { ?item wdt:P1056 wd:Q10578348 . } UNION { ?item wdt:P31 wd:Q105693306 . } UNION { ?item wdt:P452 wd:Q105693306 . } ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". } } ORDER BY DESC(?sitelinks) LIMIT 1000",
-  "plumbing": "SELECT DISTINCT ?item ?itemLabel ?sitelinks WHERE { { ?item wdt:P1056 wd:Q2024731 . } UNION { ?item wdt:P452 wd:Q2024731 . } UNION { ?item wdt:P1056/wdt:P279 wd:Q2024731 . } ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". } } ORDER BY DESC(?sitelinks) LIMIT 1000",
-  "marketplaces": "SELECT DISTINCT ?item ?itemLabel ?sitelinks WHERE { { ?item wdt:P31 wd:Q3390477 . } UNION { ?item wdt:P452 wd:Q3390477 . } ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". } } ORDER BY DESC(?sitelinks) LIMIT 1000",
-  "jewelry_retail": "SELECT DISTINCT ?item ?itemLabel ?sitelinks WHERE { { ?item wdt:P452 wd:Q126793 ; wdt:P1056 wd:Q161439 . } UNION { ?item wdt:P31 wd:Q4237303 . } UNION { ?item wdt:P31 wd:Q106611381 . } UNION { ?item wdt:P452 wd:Q4237303 . } ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". } } ORDER BY DESC(?sitelinks) LIMIT 1000",
-  "soft_drinks": "SELECT DISTINCT ?item ?itemLabel ?sitelinks WHERE { { ?item wdt:P31 wd:Q114392939 . } UNION { ?item wdt:P31/wdt:P279* wd:Q147538 . } ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". } } ORDER BY DESC(?sitelinks) LIMIT 1000",
-  "us_isps": "SELECT DISTINCT ?item ?itemLabel ?sitelinks WHERE { { { ?item wdt:P31 wd:Q11371 . } UNION { ?item wdt:P452 wd:Q11371 . } ?item wdt:P17 wd:Q30 . } ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". } } ORDER BY DESC(?sitelinks) LIMIT 1000",
-  "apparel": "SELECT (COUNT(DISTINCT ?item) AS ?n) WHERE { { ?item wdt:P452 wd:Q11828862 . } UNION { ?item wdt:P1056 wd:Q11460 . } ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . }"
+ "search": [],
+ "items": [],
+ "sparql": {},
+ "urls": {
+  "Citizen_Watch|user": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Citizen_Watch/daily/2026101800/2026110700",
+  "Citizen_Watch|spider": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/spider/Citizen_Watch/daily/2026101800/2026110700",
+  "Citizen_Watch|automated": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/automated/Citizen_Watch/daily/2026101800/2026110700",
+  "Seiko|user": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Seiko/daily/2026101800/2026110700",
+  "Seiko|spider": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/spider/Seiko/daily/2026101800/2026110700",
+  "Seiko|automated": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/automated/Seiko/daily/2026101800/2026110700",
+  "Casio|user": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Casio/daily/2026101800/2026110700",
+  "Casio|spider": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/spider/Casio/daily/2026101800/2026110700",
+  "Casio|automated": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/automated/Casio/daily/2026101800/2026110700",
+  "Bulova|user": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Bulova/daily/2026101800/2026110700",
+  "Bulova|spider": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/spider/Bulova/daily/2026101800/2026110700",
+  "Bulova|automated": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/automated/Bulova/daily/2026101800/2026110700",
+  "Timex|user": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Timex/daily/2026101800/2026110700",
+  "Timex|spider": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/spider/Timex/daily/2026101800/2026110700",
+  "Timex|automated": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/automated/Timex/daily/2026101800/2026110700"
  }
 }
