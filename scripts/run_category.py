@@ -264,7 +264,7 @@ def html_page(cat, rows, date, pv_month):
         v = r.get(key)
         if key == "label":
             t = (r.get("enwiki_title") or "").replace(" ", "_")
-            return f'<a href="https://en.wikipedia.org/wiki/{H.escape(urllib.parse.quote(t))}">{H.escape(r["label"])}</a> <span class="q"><a href="https://www.wikidata.org/wiki/{r["qid"]}">{r["qid"]}</a></span>', r["label"]
+            return f'<a href="https://en.wikipedia.org/wiki/{H.escape(urllib.parse.quote(t))}">{H.escape(r["label"])}</a> <span class="q"><a href="https://www.wikidata.org/wiki/{r["qid"]}">{r["qid"]}</a></span>' + ('<span class="cmp"><br>shown for comparison, not in the set</span>' if (r.get("highlight") and not r.get("in_set")) else ""), r["label"]
         if key == "wp_last_50byte":
             d = (v or "")[:10]; rid = r.get("wp_last_50byte_revid")
             if rid:
@@ -336,6 +336,8 @@ dl{{display:grid;grid-template-columns:200px 1fr;gap:6px 16px;font-size:13px;mar
 .foot{{border-top:1px solid #cfcdc5;padding-top:20px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;font-size:13px;color:#444;line-height:1.5}}.foot b{{display:block;color:#1b1b1b;margin-bottom:4px;font-weight:600}}
 details summary{{cursor:pointer;font-size:14px;font-weight:500}}
 @media (max-width:760px){{main{{padding:24px 20px 48px;gap:22px}}h1{{font-size:30px}}.lead p{{font-size:17px}}.foot{{grid-template-columns:1fr}}dl{{grid-template-columns:1fr}}}}
+
+.cmp{{display:none;font-size:12px;color:#77756d;font-style:italic}}.setview .cmp{{display:inline}}
 </style></head>
 <body>
 <div class="mast"><div class="in"><div style="display:flex;gap:16px;align-items:baseline;flex-wrap:wrap"><a class="brand" href="/">BrandTabulator</a><span class="sub">by Michael Quinn · <a href="https://michaelquinn.ai">MichaelQuinn.ai</a></span></div><div class="sub" style="display:flex;gap:16px;flex-wrap:wrap"><a href="/methods/">Methods</a><span>Issue {date}</span></div></div></div>
@@ -371,7 +373,7 @@ rows.forEach(function(r){{tb.appendChild(r);}});
 for(var j=0;j<ths.length;j++)ths[j].classList.remove('asc','desc');ths[i].classList.add(dir>0?'asc':'desc');}}
 var seg=document.querySelector('.seg');if(seg){{seg.addEventListener('click',function(e){{var b=e.target.closest('button');if(!b)return;var v=b.getAttribute('data-view');
 Array.prototype.forEach.call(seg.querySelectorAll('button'),function(x){{x.classList.toggle('on',x===b);}});
-Array.prototype.forEach.call(tb.rows,function(r){{r.classList.toggle('hidden',v==='set'&&r.getAttribute('data-set')!=='1');}});
+t.classList.toggle('setview',v==='set');Array.prototype.forEach.call(tb.rows,function(r){{r.classList.toggle('hidden',v==='set'&&r.getAttribute('data-set')!=='1');}});
 Array.prototype.forEach.call(document.querySelectorAll('#viewnote [data-for]'),function(x){{x.hidden=x.getAttribute('data-for')!==v;}});}});}}
 Array.prototype.forEach.call(ths,function(th,i){{var hd=th.querySelector('.hd'),ib=th.querySelector('.i');
 function go(){{sortBy(i,th.classList.contains('asc')?-1:1);hd.blur();}}
