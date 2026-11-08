@@ -365,6 +365,7 @@ table.issue td,table.issue th{{padding:6px 10px}}table.issue td{{font-size:14px}
 <div class="sub" id="viewnote"><span data-for="all"><b>Full category:</b> {H.escape(cat.get("full_category_description",""))}. {H.escape(cat.get("inclusion_rule",""))}</span>{set_note}</div>
 <div class="sub">Click or tap any column heading to sort by it. Click or tap the <b>i</b> next to a heading to see what it measures. Questions: <a href="mailto:Michael@MichaelQuinn.ai">Michael@MichaelQuinn.ai</a></div>
 <div class="wrap"><table id="regatta"><thead><tr>{ths}</tr></thead><tbody>{trs}</tbody></table></div>
+<div class="sub">Changes are counted over the last 90 days. Readers are counted for {pv_month}, on English Wikipedia.</div>
 <details><summary>Column definitions</summary><div style="padding-top:12px"><dl>{defs}</dl></div></details>
 <details><summary>Which brands are included</summary><div style="padding-top:12px">{cat_rules_html(cat)}</div></details>
 </div>
