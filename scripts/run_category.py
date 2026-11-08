@@ -60,6 +60,11 @@ def ai_set_note(cat):
 def p_url(p):
     return p.strip("/")
 
+def rows_date(rows):
+    return ISSUE_DATE.get("d")
+
+ISSUE_DATE = {}
+
 def issue_box(cat, rows):
     """This week: the target brand against the average of its AI-named competitors."""
     import html as H
@@ -77,14 +82,17 @@ def issue_box(cat, rows):
     def fmt(v): return "—" if v is None else (f"{v:,.0f}" if abs(v) >= 100 or float(v).is_integer() else f"{v:,.1f}")
     def cell(now, before, label):
         if now is None: return "<td>—</td>"
-        if before is None: return f"<td><b>{fmt(now)}</b><br><span class='sub'>first issue</span></td>"
+        if before is None: return f"<td><b>{fmt(now)}</b></td>"
         ch = "" if before == 0 else (" · no change" if now == before else f" · {'+' if now > before else '−'}{abs(100*(now-before)/before):.0f}%")
         return f"<td><b>{fmt(now)}</b><br><span class='sub'>{label}: {fmt(before)}{ch}</span></td>"
     def avg(k):
         v = [r.get(k) for r in comp]
         return None if any(x is None for x in v) else sum(v) / len(v)
     body = "".join(f"<tr><td>{H.escape(n)}</td>{cell(tgt.get(a), tgt.get(b), lab)}{cell(avg(a), avg(b), lab)}</tr>" for n, a, b, lab in M)
-    return (f"<p style='margin:0 0 8px'>{H.escape(tgt['label'])} against the average of its {len(comp)} competitors, per AI. Weeks run to yesterday.</p>"
+    d = dt.date.fromisoformat(rows_date(rows)) if rows_date(rows) else dt.date.today()
+    e1 = d - dt.timedelta(days=1); s1 = e1 - dt.timedelta(days=6); e0 = s1 - dt.timedelta(days=1); s0 = e0 - dt.timedelta(days=6)
+    span = lambda a, b: (f"{a.day}–{b.day} {b:%B}" if a.month == b.month else f"{a.day} {a:%B} – {b.day} {b:%B}")
+    return (f"<p style='margin:0 0 8px'>{H.escape(tgt['label'])} against the average of its {len(comp)} competitors, per AI. This week is {span(s1, e1)}; last week is {span(s0, e0)}.</p>"
             f"<div class='wrap'><table style='min-width:0;width:100%'><thead><tr><th></th><th>{H.escape(tgt['label'])}</th><th>Average competitor</th></tr></thead><tbody>{body}</tbody></table></div>")
 
 def fix_links(text):
@@ -150,7 +158,7 @@ def weekly_extras(row, today):
     j = get("https://www.wikidata.org/w/api.php", {"action": "query", "format": "json", "formatversion": "2", "prop": "revisions", "rvprop": "timestamp", "rvlimit": "100", "titles": row["qid"]}).json()
     revs = (j["query"]["pages"][0].get("revisions") or [])
     a, b = (today - dt.timedelta(days=7)).isoformat(), (today - dt.timedelta(days=14)).isoformat()
-    row["wd_changes_7d"] = sum(1 for r in revs if r["timestamp"] >= a)
+    row["wd_changes_7d"] = sum(1 for r in revs if a <= r["timestamp"] < today.isoformat())
     row["wd_changes_prev7d"] = sum(1 for r in revs if b <= r["timestamp"] < a)
 
 # ---------- metrics ----------
@@ -201,7 +209,7 @@ def wp_metrics(title, today):
         "wp_last_50byte_revid": big["revid"] if big else None,
         "wp_last_50byte_parentid": big.get("parentid") if big else None,
         "wp_revisions_examined": len(revs),
-        "wp_changes_7d": sum(1 for r in revs if r["timestamp"] >= (today - dt.timedelta(days=7)).isoformat()),
+        "wp_changes_7d": sum(1 for r in revs if (today - dt.timedelta(days=7)).isoformat() <= r["timestamp"] < today.isoformat()),
         "wp_changes_prev7d": sum(1 for r in revs if (today - dt.timedelta(days=14)).isoformat() <= r["timestamp"] < (today - dt.timedelta(days=7)).isoformat()),
     }
     w = wp_api({"prop": "revisions", "rvprop": "content", "rvslots": "main", "titles": title})
@@ -259,6 +267,7 @@ COLDEFS = [
 ]
 
 def html_page(cat, rows, date, pv_month):
+    ISSUE_DATE["d"] = date
     import html as H
     def cell(r, key):
         v = r.get(key)
