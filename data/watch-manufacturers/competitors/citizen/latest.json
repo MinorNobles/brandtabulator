@@ -6,7 +6,7 @@
  "engines": {
   "Claude": "claude-opus-4-7",
   "Gemini": "gemini-2.5-pro",
-  "ChatGPT": "gpt-5.5"
+  "ChatGPT": "gpt-6.1-sol"
  },
  "web_search": true,
  "runs_per_question": 3,
