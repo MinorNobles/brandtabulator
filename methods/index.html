@@ -27,10 +27,10 @@ table{border-collapse:collapse;width:100%}th,td{text-align:left;padding:9px 10px
 <h2>Which brands are included</h2>
 <p>Each category has two lists. The <b>full category</b> comes from a published query, so anyone can reproduce it. A <b>competitive set</b> is a smaller list chosen by a person, and the page says who chose it and why.</p>
 <h3>Watch manufacturers</h3>
-<p><b>Full category.</b> Every Wikidata item returned by the query below that has an English Wikipedia article. Companies that Wikidata records as dissolved are kept and shown greyed.</p>
+<p><b>Full category.</b> Every Wikidata item returned by the query below that has an English Wikipedia article. Only brands that have customers, business or consumer, are included. Companies that Wikidata records as dissolved have no current customers and are left out.</p>
 <pre>SELECT DISTINCT ?item ?itemLabel ?sitelinks WHERE { { ?item wdt:P452 wd:Q41767 . } UNION { ?item wdt:P452 wd:Q63346664 . } UNION { ?item wdt:P1056 wd:Q178794 . } UNION { ?item wdt:P31 wd:Q136094627 . } ?article schema:about ?item ; schema:isPartOf &lt;https://en.wikipedia.org/&gt; . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language &quot;en&quot;. } } ORDER BY DESC(?sitelinks) LIMIT 400</pre>
 <p><b>Added by hand</b> (the query does not find them):</p><ul><li>Seiko (Q322601): Not classified as a watch company in Wikidata (no industry/product statement); obviously belongs.</li><li>Swatch (Q573422): Same.</li></ul>
-<p><b>Removed by hand:</b></p><ul><li>None. If any brand is ever removed by hand, it will be listed here with the reason.</li></ul>
+<p><b>Removed by hand:</b></p><ul><li>Q1496822: Geneva Seal: a certification, not a business with customers</li></ul>
 <p><b>Competitive set.</b> None yet. One will be added only when it rests on a stated, sourced rule.</p>
 
 <h2>Definitions</h2>

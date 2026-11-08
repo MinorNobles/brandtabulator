@@ -1,5 +1,5 @@
 {
- "computed_at": "2026-11-07",
+ "computed_at": "2026-11-08",
  "query": "SELECT DISTINCT ?item ?itemLabel ?sitelinks WHERE { { ?item wdt:P452 wd:Q41767 . } UNION { ?item wdt:P452 wd:Q63346664 . } UNION { ?item wdt:P1056 wd:Q178794 . } UNION { ?item wdt:P31 wd:Q136094627 . } ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". } } ORDER BY DESC(?sitelinks) LIMIT 400",
  "candidates": [
   {
@@ -13,13 +13,13 @@
    "sitelinks": 56
   },
   {
-   "qid": "Q752515",
-   "label": "Bulgari",
+   "qid": "Q635484",
+   "label": "Giorgio Armani",
    "sitelinks": 52
   },
   {
-   "qid": "Q635484",
-   "label": "Giorgio Armani",
+   "qid": "Q752515",
+   "label": "Bulgari",
    "sitelinks": 52
   },
   {
@@ -53,13 +53,13 @@
    "sitelinks": 35
   },
   {
-   "qid": "Q603698",
-   "label": "Longines",
+   "qid": "Q136503",
+   "label": "Mango",
    "sitelinks": 32
   },
   {
-   "qid": "Q136503",
-   "label": "Mango",
+   "qid": "Q603698",
+   "label": "Longines",
    "sitelinks": 32
   },
   {
@@ -78,13 +78,13 @@
    "sitelinks": 29
   },
   {
-   "qid": "Q62341",
-   "label": "Vacheron Constantin",
+   "qid": "Q180014",
+   "label": "Rado",
    "sitelinks": 28
   },
   {
-   "qid": "Q180014",
-   "label": "Rado",
+   "qid": "Q62341",
+   "label": "Vacheron Constantin",
    "sitelinks": 28
   },
   {
@@ -148,13 +148,13 @@
    "sitelinks": 20
   },
   {
-   "qid": "Q670112",
-   "label": "Chopard",
+   "qid": "Q579097",
+   "label": "Vostok watches",
    "sitelinks": 19
   },
   {
-   "qid": "Q579097",
-   "label": "Vostok watches",
+   "qid": "Q670112",
+   "label": "Chopard",
    "sitelinks": 19
   },
   {
@@ -203,6 +203,11 @@
    "sitelinks": 15
   },
   {
+   "qid": "Q356212",
+   "label": "Fossil",
+   "sitelinks": 14
+  },
+  {
    "qid": "Q676990",
    "label": "Raymond Weil",
    "sitelinks": 14
@@ -210,11 +215,6 @@
   {
    "qid": "Q2708181",
    "label": "Van Cleef & Arpels",
-   "sitelinks": 14
-  },
-  {
-   "qid": "Q356212",
-   "label": "Fossil",
    "sitelinks": 14
   },
   {
@@ -233,19 +233,14 @@
    "sitelinks": 13
   },
   {
-   "qid": "Q3431044",
-   "label": "Richard Mille",
-   "sitelinks": 13
-  },
-  {
    "qid": "Q1316779",
    "label": "S.T. Dupont",
    "sitelinks": 13
   },
   {
-   "qid": "Q1725661",
-   "label": "Mido",
-   "sitelinks": 12
+   "qid": "Q3431044",
+   "label": "Richard Mille",
+   "sitelinks": 13
   },
   {
    "qid": "Q670962",
@@ -260,6 +255,11 @@
   {
    "qid": "Q939816",
    "label": "Movado",
+   "sitelinks": 12
+  },
+  {
+   "qid": "Q1725661",
+   "label": "Mido",
    "sitelinks": 12
   },
   {
@@ -313,13 +313,13 @@
    "sitelinks": 10
   },
   {
-   "qid": "Q4950531",
-   "label": "Bovet Fleurier",
+   "qid": "Q723456",
+   "label": "Universal Gen\u00e8ve",
    "sitelinks": 9
   },
   {
-   "qid": "Q723456",
-   "label": "Universal Gen\u00e8ve",
+   "qid": "Q4950531",
+   "label": "Bovet Fleurier",
    "sitelinks": 9
   },
   {
@@ -338,13 +338,13 @@
    "sitelinks": 8
   },
   {
-   "qid": "Q1379518",
-   "label": "Ronda",
+   "qid": "Q870335",
+   "label": "Eberhard & Co.",
    "sitelinks": 8
   },
   {
-   "qid": "Q870335",
-   "label": "Eberhard & Co.",
+   "qid": "Q1379518",
+   "label": "Ronda",
    "sitelinks": 8
   },
   {
@@ -378,33 +378,13 @@
    "sitelinks": 7
   },
   {
-   "qid": "Q1037713",
-   "label": "Carl F. Bucherer",
-   "sitelinks": 7
-  },
-  {
-   "qid": "Q869734",
-   "label": "Ebel",
-   "sitelinks": 7
-  },
-  {
-   "qid": "Q1496822",
-   "label": "Geneva seal",
-   "sitelinks": 7
-  },
-  {
-   "qid": "Q7370254",
-   "label": "Rotary Watches",
-   "sitelinks": 7
-  },
-  {
    "qid": "Q747413",
    "label": "LIP",
    "sitelinks": 7
   },
   {
-   "qid": "Q1660409",
-   "label": "Nixon",
+   "qid": "Q1037713",
+   "label": "Carl F. Bucherer",
    "sitelinks": 7
   },
   {
@@ -413,8 +393,28 @@
    "sitelinks": 7
   },
   {
+   "qid": "Q869734",
+   "label": "Ebel",
+   "sitelinks": 7
+  },
+  {
+   "qid": "Q1660409",
+   "label": "Nixon",
+   "sitelinks": 7
+  },
+  {
+   "qid": "Q1496822",
+   "label": "Geneva seal",
+   "sitelinks": 7
+  },
+  {
    "qid": "Q3375046",
    "label": "Pequignet",
+   "sitelinks": 7
+  },
+  {
+   "qid": "Q7370254",
+   "label": "Rotary Watches",
    "sitelinks": 7
   },
   {
@@ -488,13 +488,18 @@
    "sitelinks": 4
   },
   {
+   "qid": "Q2929726",
+   "label": "Bedat & Co",
+   "sitelinks": 4
+  },
+  {
    "qid": "Q3365612",
    "label": "Parmigiani Fleurier",
    "sitelinks": 4
   },
   {
-   "qid": "Q2929726",
-   "label": "Bedat & Co",
+   "qid": "Q3488681",
+   "label": "Soci\u00e9t\u00e9 Suisse pour l'Industrie Horlog\u00e8re",
    "sitelinks": 4
   },
   {
@@ -538,18 +543,13 @@
    "sitelinks": 3
   },
   {
-   "qid": "Q3205398",
-   "label": "L\u2019Ep\u00e9e 1839",
-   "sitelinks": 3
-  },
-  {
-   "qid": "Q3488681",
-   "label": "Soci\u00e9t\u00e9 Suisse pour l'Industrie Horlog\u00e8re",
-   "sitelinks": 3
-  },
-  {
    "qid": "Q2943705",
    "label": "Cecil Purnell",
+   "sitelinks": 3
+  },
+  {
+   "qid": "Q3205398",
+   "label": "L\u2019Ep\u00e9e 1839",
    "sitelinks": 3
   },
   {
