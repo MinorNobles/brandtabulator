@@ -1,0 +1,43 @@
+{
+  "slug": "cosmetics",
+  "name": "Cosmetics companies",
+  "draft": true,
+  "path": "cosmetics",
+  "product_noun": "beauty product",
+  "products_noun": "beauty products",
+  "note": "DRAFT rule proposed by Claude on 8 Nov 2026 for Michael Quinn's approval. Not published.",
+  "discovery_sparql": "SELECT DISTINCT ?item ?itemLabel ?sitelinks WHERE { { ?item wdt:P452 wd:Q12752882 . } UNION { ?item wdt:P1056 wd:Q131207 . } ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". } } ORDER BY DESC(?sitelinks) LIMIT 1000",
+  "members_from_discovery": true,
+  "members": [],
+  "manual_additions": [],
+  "inclusion_rule": "Only brands that have customers, business or consumer, are included. Companies that Wikidata records as dissolved have no current customers and are left out.",
+  "exclude_dissolved": true,
+  "exclude": {},
+  "full_category_description": "every Wikidata item whose industry is cosmetics or whose products include cosmetics, and that has an English Wikipedia article",
+  "intro_title": "BrandTabulator",
+  "intro": [
+    "When {product} customers ask AI about a brand or the category, AI can lean heavily on Wikipedia and Wikidata. BrandTabulator ranks every brand in the category by how complete and current its record is. It is refreshed every week, so bookmark this tab.",
+    "Of course, there are many sources that AI relies on. My work is to Diagnose the responses, Investigate the sources they credit, and Prescribe what can be done to improve the visibility and accuracy of brand descriptions in AI (DIP). To learn more, contact Michael@MichaelQuinn.ai"
+  ],
+  "recipients": {
+    "loreal": {
+      "recipient": "Saad Jawed, L'Oréal North America",
+      "highlight": {
+        "members": [
+          "Q156077"
+        ],
+        "reason": "The brand this page was prepared for."
+      }
+    },
+    "merit": {
+      "recipient": "Randi Gray, Merit Beauty",
+      "highlight": {
+        "members": [],
+        "missing": [
+          "Merit Beauty"
+        ],
+        "missing_note": "Not in this category: Merit Beauty has no Wikidata entry."
+      }
+    }
+  }
+}

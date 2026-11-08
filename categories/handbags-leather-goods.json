@@ -1,0 +1,40 @@
+{
+  "slug": "handbags-leather-goods",
+  "name": "Handbags and leather goods",
+  "draft": true,
+  "path": "handbags",
+  "product_noun": "handbag",
+  "products_noun": "handbags",
+  "note": "DRAFT rule proposed by Claude on 8 Nov 2026 for Michael Quinn's approval. Not published.",
+  "discovery_sparql": "SELECT DISTINCT ?item ?itemLabel ?sitelinks WHERE { { ?item wdt:P1056 wd:Q467505 . } UNION { ?item wdt:P1056 wd:Q96141153 . } UNION { ?item wdt:P452 wd:Q96141153 . } ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". } } ORDER BY DESC(?sitelinks) LIMIT 1000",
+  "members_from_discovery": true,
+  "members": [],
+  "manual_additions": [
+    {
+      "qid": "Q727697",
+      "label": "Coach",
+      "enwiki": "Coach New York",
+      "reason": "Wikidata lists Coach's product as clothing, not handbags or leather goods"
+    }
+  ],
+  "inclusion_rule": "Only brands that have customers, business or consumer, are included. Companies that Wikidata records as dissolved have no current customers and are left out.",
+  "exclude_dissolved": true,
+  "exclude": {},
+  "full_category_description": "every Wikidata item whose products include handbags or leather goods, or whose industry is leather goods, and that has an English Wikipedia article",
+  "intro_title": "BrandTabulator",
+  "intro": [
+    "When {product} customers ask AI about a brand or the category, AI can lean heavily on Wikipedia and Wikidata. BrandTabulator ranks every brand in the category by how complete and current its record is. It is refreshed every week, so bookmark this tab.",
+    "Of course, there are many sources that AI relies on. My work is to Diagnose the responses, Investigate the sources they credit, and Prescribe what can be done to improve the visibility and accuracy of brand descriptions in AI (DIP). To learn more, contact Michael@MichaelQuinn.ai"
+  ],
+  "recipients": {
+    "coach": {
+      "recipient": "Pooja Chandiramani, Coach",
+      "highlight": {
+        "members": [
+          "Q727697"
+        ],
+        "reason": "The brand this page was prepared for."
+      }
+    }
+  }
+}

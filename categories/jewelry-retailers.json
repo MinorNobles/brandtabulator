@@ -1,0 +1,33 @@
+{
+  "slug": "jewelry-retailers",
+  "name": "Jewelry retailers",
+  "draft": true,
+  "path": "jewelry-retailers",
+  "product_noun": "jewelry store",
+  "products_noun": "jewelry stores",
+  "note": "DRAFT rule proposed by Claude on 8 Nov 2026 for Michael Quinn's approval. Not published.",
+  "discovery_sparql": "SELECT DISTINCT ?item ?itemLabel ?sitelinks WHERE { { ?item wdt:P452 wd:Q126793 ; wdt:P1056 wd:Q161439 . } UNION { ?item wdt:P31 wd:Q4237303 . } UNION { ?item wdt:P31 wd:Q106611381 . } UNION { ?item wdt:P452 wd:Q4237303 . } ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". } } ORDER BY DESC(?sitelinks) LIMIT 1000",
+  "members_from_discovery": true,
+  "members": [],
+  "manual_additions": [],
+  "inclusion_rule": "Only brands that have customers, business or consumer, are included. Companies that Wikidata records as dissolved have no current customers and are left out.",
+  "exclude_dissolved": true,
+  "exclude": {},
+  "full_category_description": "every Wikidata item classified as a jewelry retailer or jewelry shop chain, or a retailer whose products include jewelry, and that has an English Wikipedia article",
+  "intro_title": "BrandTabulator",
+  "intro": [
+    "When {product} customers ask AI about a brand or the category, AI can lean heavily on Wikipedia and Wikidata. BrandTabulator ranks every brand in the category by how complete and current its record is. It is refreshed every week, so bookmark this tab.",
+    "Of course, there are many sources that AI relies on. My work is to Diagnose the responses, Investigate the sources they credit, and Prescribe what can be done to improve the visibility and accuracy of brand descriptions in AI (DIP). To learn more, contact Michael@MichaelQuinn.ai"
+  ],
+  "recipients": {
+    "signet": {
+      "recipient": "Jubin Thomas, Signet Jewelers",
+      "highlight": {
+        "members": [
+          "Q7512923"
+        ],
+        "reason": "The brand this page was prepared for."
+      }
+    }
+  }
+}

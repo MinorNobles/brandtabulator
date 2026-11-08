@@ -427,6 +427,7 @@ def load_categories():
     for fn in sorted(os.listdir(os.path.join(ROOT, "categories"))):
         if not fn.endswith(".json"): continue
         c = json.load(open(os.path.join(ROOT, "categories", fn)))
+        if c.get("draft"): continue          # drafts gather data but are not published or listed
         lp = os.path.join(ROOT, "data", c["slug"], "latest.json")
         c["_latest"] = json.load(open(lp)) if os.path.exists(lp) else None
         cats.append(c)
@@ -564,6 +565,8 @@ def verify_page(html, view, rows):
         raise SystemExit("NOT PUBLISHED (" + (view.get("_recipient") or "category page") + "): " + "; ".join(problems))
 
 def render_all(cat, rows, date, pv_month, pagedir, slug):
+    if cat.get("draft"):
+        print("draft category: data saved, no pages published"); build_site(); return
     for key, view in views(cat):
         vr = flag_rows(rows, view)
         html = html_page(view, vr, date, pv_month)

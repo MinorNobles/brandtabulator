@@ -1,0 +1,33 @@
+{
+  "slug": "us-internet-providers",
+  "name": "US internet providers",
+  "draft": true,
+  "path": "internet",
+  "product_noun": "internet provider",
+  "products_noun": "internet providers",
+  "note": "DRAFT rule proposed by Claude on 8 Nov 2026 for Michael Quinn's approval. Not published.",
+  "discovery_sparql": "SELECT DISTINCT ?item ?itemLabel ?sitelinks WHERE { { { ?item wdt:P31 wd:Q11371 . } UNION { ?item wdt:P452 wd:Q11371 . } ?item wdt:P17 wd:Q30 . } ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". } } ORDER BY DESC(?sitelinks) LIMIT 1000",
+  "members_from_discovery": true,
+  "members": [],
+  "manual_additions": [],
+  "inclusion_rule": "Only brands that have customers, business or consumer, are included. Companies that Wikidata records as dissolved have no current customers and are left out.",
+  "exclude_dissolved": true,
+  "exclude": {},
+  "full_category_description": "every Wikidata item in the United States classified as an internet service provider, and that has an English Wikipedia article",
+  "intro_title": "BrandTabulator",
+  "intro": [
+    "When {product} customers ask AI about a brand or the category, AI can lean heavily on Wikipedia and Wikidata. BrandTabulator ranks every brand in the category by how complete and current its record is. It is refreshed every week, so bookmark this tab.",
+    "Of course, there are many sources that AI relies on. My work is to Diagnose the responses, Investigate the sources they credit, and Prescribe what can be done to improve the visibility and accuracy of brand descriptions in AI (DIP). To learn more, contact Michael@MichaelQuinn.ai"
+  ],
+  "recipients": {
+    "xfinity": {
+      "recipient": "David Krauza, Comcast",
+      "highlight": {
+        "members": [
+          "Q5151002"
+        ],
+        "reason": "The brand this page was prepared for."
+      }
+    }
+  }
+}
