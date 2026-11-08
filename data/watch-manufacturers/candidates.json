@@ -398,13 +398,13 @@
    "sitelinks": 7
   },
   {
-   "qid": "Q1660409",
-   "label": "Nixon",
+   "qid": "Q1496822",
+   "label": "Geneva seal",
    "sitelinks": 7
   },
   {
-   "qid": "Q1496822",
-   "label": "Geneva seal",
+   "qid": "Q1660409",
+   "label": "Nixon",
    "sitelinks": 7
   },
   {
@@ -503,6 +503,21 @@
    "sitelinks": 4
   },
   {
+   "qid": "Q15634637",
+   "label": "Sowind Group",
+   "sitelinks": 4
+  },
+  {
+   "qid": "Q15790137",
+   "label": "Bucherer Group",
+   "sitelinks": 4
+  },
+  {
+   "qid": "Q8028615",
+   "label": "Wittnauer",
+   "sitelinks": 4
+  },
+  {
    "qid": "Q4770013",
    "label": "Anonimo",
    "sitelinks": 4
@@ -515,21 +530,6 @@
   {
    "qid": "Q7497723",
    "label": "Shinola Detroit",
-   "sitelinks": 4
-  },
-  {
-   "qid": "Q8028615",
-   "label": "Wittnauer",
-   "sitelinks": 4
-  },
-  {
-   "qid": "Q15634637",
-   "label": "Sowind Group",
-   "sitelinks": 4
-  },
-  {
-   "qid": "Q15790137",
-   "label": "Bucherer Group",
    "sitelinks": 4
   },
   {
@@ -550,26 +550,6 @@
   {
    "qid": "Q3205398",
    "label": "L\u2019Ep\u00e9e 1839",
-   "sitelinks": 3
-  },
-  {
-   "qid": "Q3622871",
-   "label": "Armand Nicolet",
-   "sitelinks": 3
-  },
-  {
-   "qid": "Q4035633",
-   "label": "ck Calvin Klein",
-   "sitelinks": 3
-  },
-  {
-   "qid": "Q5306863",
-   "label": "Dreffa",
-   "sitelinks": 3
-  },
-  {
-   "qid": "Q6318900",
-   "label": "Juvenia",
    "sitelinks": 3
   },
   {
@@ -600,6 +580,26 @@
   {
    "qid": "Q11300325",
    "label": "Grand Seiko",
+   "sitelinks": 3
+  },
+  {
+   "qid": "Q3622871",
+   "label": "Armand Nicolet",
+   "sitelinks": 3
+  },
+  {
+   "qid": "Q4035633",
+   "label": "ck Calvin Klein",
+   "sitelinks": 3
+  },
+  {
+   "qid": "Q5306863",
+   "label": "Dreffa",
+   "sitelinks": 3
+  },
+  {
+   "qid": "Q6318900",
+   "label": "Juvenia",
    "sitelinks": 3
   },
   {
@@ -663,8 +663,13 @@
    "sitelinks": 2
   },
   {
-   "qid": "Q5321881",
-   "label": "E. Gluck Corporation",
+   "qid": "Q105070633",
+   "label": "Farer",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q19520534",
+   "label": "Manufacture Modules Technologies",
    "sitelinks": 1
   },
   {
@@ -673,13 +678,8 @@
    "sitelinks": 1
   },
   {
-   "qid": "Q105070633",
-   "label": "Farer",
-   "sitelinks": 1
-  },
-  {
-   "qid": "Q19520534",
-   "label": "Manufacture Modules Technologies",
+   "qid": "Q5321881",
+   "label": "E. Gluck Corporation",
    "sitelinks": 1
   },
   {
