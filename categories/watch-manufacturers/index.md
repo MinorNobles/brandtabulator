@@ -1,6 +1,6 @@
 # Watch manufacturers
 
-Issue 2026-11-08. 137 brands. Ranked by staleness (longest unupdated first). Views: October 2026.
+Issue 2026-11-08. 136 brands. Ranked by staleness (longest unupdated first). Views: October 2026.
 
 | # stale | Brand | Last ≥50-byte edit | 90d edits/editors | Wikidata stmts (ref'd) | Ballast | Identity links out | Editions | Refs | Reader views | Bot share |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -119,7 +119,7 @@ Issue 2026-11-08. 137 brands. Ranked by staleness (longest unupdated first). Vie
 | 113 | [Seiko](https://en.wikipedia.org/wiki/Seiko) ([Q322601](https://www.wikidata.org/wiki/Q322601)) | 2026-09-20 | 7 / 5 | 66 (32) | 48.5% | 6 | 40 | 280 | 15779 | 28.2% |
 | 114 | [Audemars Piguet](https://en.wikipedia.org/wiki/Audemars_Piguet) ([Q667425](https://www.wikidata.org/wiki/Q667425)) | 2026-09-20 | 7 / 5 | 40 (18) | 45.0% | 2 | 30 | 197 | 9296 | 23.9% |
 | 115 | [A. Lange & Söhne](https://en.wikipedia.org/wiki/A._Lange_%26_S%C3%B6hne) ([Q278880](https://www.wikidata.org/wiki/Q278880)) | 2026-09-21 | 7 / 7 | 46 (20) | 43.5% | 1 | 20 | 153 | 5774 | 20.2% |
-| 116 | [Panerai Watches](https://en.wikipedia.org/wiki/Panerai) ([Q1475590](https://www.wikidata.org/wiki/Q1475590)) | 2026-09-21 | 4 / 4 | 36 (14) | 38.9% | 1 | 17 | 19 | 3197 | 29.3% |
+| 116 | [Panerai Watches](https://en.wikipedia.org/wiki/Panerai) ([Q1475590](https://www.wikidata.org/wiki/Q1475590)) | 2026-09-21 | 4 / 4 | 36 (14) | 38.9% | 1 | 18 | 19 | 3197 | 29.3% |
 | 117 | [Roger Dubuis](https://en.wikipedia.org/wiki/Roger_Dubuis) ([Q670160](https://www.wikidata.org/wiki/Q670160)) | 2026-09-21 | 1 / 1 | 31 (14) | 45.2% | 1 | 15 | 92 | 1279 | 35.5% |
 | 118 | [Czapek & Cie](https://en.wikipedia.org/wiki/Czapek_%26_Cie) ([Q25043079](https://www.wikidata.org/wiki/Q25043079)) | 2026-09-22 | 4 / 4 | 9 (4) | 44.4% | 1 | 3 | 127 | 1048 | 28.6% |
 | 119 | [Mango](https://en.wikipedia.org/wiki/Mango_%28retailer%29) ([Q136503](https://www.wikidata.org/wiki/Q136503)) | 2026-09-23 | 10 / 7 | 61 (22) | 36.1% | 10 | 32 | 75 | 5302 | 35.7% |
@@ -139,7 +139,6 @@ Issue 2026-11-08. 137 brands. Ranked by staleness (longest unupdated first). Vie
 | 133 | [Victorinox](https://en.wikipedia.org/wiki/Victorinox) ([Q503405](https://www.wikidata.org/wiki/Q503405)) | 2026-10-29 | 9 / 1 | 63 (26) | 41.3% | 8 | 35 | 26 | 3825 | 36.3% |
 | 134 | [Breitling](https://en.wikipedia.org/wiki/Breitling_SA) ([Q665740](https://www.wikidata.org/wiki/Q665740)) | 2026-11-01 | 8 / 6 | 46 (18) | 39.1% | 3 | 37 | 28 | 5235 | 29.3% |
 | 135 | [Orient](https://en.wikipedia.org/wiki/Orient_Watch) ([Q1771114](https://www.wikidata.org/wiki/Q1771114)) | 2026-11-07 | 6 / 6 | 25 (15) | 60.0% | 1 | 21 | 27 | 6616 | 26.3% |
-|  | [The Geneva School of Watchmaking](https://en.wikipedia.org/wiki/The_Geneva_School_of_Watchmaking) ([Q138307980](https://www.wikidata.org/wiki/Q138307980)) |  | 0 / 0 | 8 (0) | 0.0% | 1 | 2 | 170 | 242 | 45.4% |
 |  | [Maximilian Büsser and Friends](https://en.wikipedia.org/wiki/Maximilian_B%C3%BCsser_and_Friends) ([Q108281469](https://www.wikidata.org/wiki/Q108281469)) |  | 0 / 0 | 4 (3) | 75.0% | 2 | 1 | 0 | 28 | 53.3% |
 
 Data: [CSV](/brandtabulator/data/watch-manufacturers/2026-11-08.csv) · [JSON](/brandtabulator/data/watch-manufacturers/2026-11-08.json) · [Methods](/brandtabulator/methods/)

@@ -38,6 +38,6 @@ SELECT DISTINCT ?item ?itemLabel ?sitelinks WHERE { { ?item wdt:P452 wd:Q41767 .
 
 Added by hand: Seiko (Q322601): Not classified as a watch company in Wikidata (no industry/product statement); obviously belongs., Swatch (Q573422): Same..
 
-Removed by hand: Q1496822: Geneva Seal: a certification, not a business with customers.
+Removed by hand: Q1496822: Geneva Seal: a certification, not a business with customers, Q138307980: The Geneva School of Watchmaking: a school, not a brand with customers.
 
 Competitive set: none yet. One will be added only when it rests on a stated, sourced rule.
