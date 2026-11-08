@@ -109,5 +109,9 @@
     "Q1496822": "Geneva Seal: a certification, not a business with customers",
     "Q138307980": "The Geneva School of Watchmaking: a school, not a brand with customers"
   },
-  "path": "watches"
+  "path": "watches",
+  "intro": [
+    "When watch customers ask AI about a brand or the category, AI can lean heavily on Wikipedia and Wikidata. BrandTabulator ranks every brand in the category by how complete and current its record is. It is refreshed every week, so bookmark this tab.",
+    "Of course, there are many sources that AI relies on. My work is to diagnose AI responses, investigate the sources and prescribe what can be done to improve the visibility and accuracy of brand descriptions in AI (DIP)."
+  ]
 }

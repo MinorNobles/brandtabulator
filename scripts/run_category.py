@@ -267,6 +267,7 @@ details summary{{cursor:pointer;font-size:14px;font-weight:500}}
 <div class="mast"><div class="in"><div style="display:flex;gap:16px;align-items:baseline;flex-wrap:wrap"><a class="brand" href="/">BrandTabulator</a><span class="sub">by Michael Quinn · <a href="https://michaelquinn.ai">MichaelQuinn.ai</a></span></div><div class="sub" style="display:flex;gap:16px;flex-wrap:wrap"><a href="/methods/">Methods</a><span>Issue {date}</span></div></div></div>
 <main>
 <div style="display:flex;flex-direction:column;gap:10px"><div class="sub">{n} brands</div><h1>{H.escape(cat['name'])}</h1></div>
+{("<div style='background:#fff;border:1px solid #cfcdc5;padding:18px 22px'>" + "".join(f"<p style='margin:0 0 8px'>{H.escape(p)}</p>" for p in cat["intro"]) + "<p style='margin:0'><a href='mailto:Michael@MichaelQuinn.ai'>Michael@MichaelQuinn.ai</a></p></div>") if cat.get("intro") else ""}
 <div class="lead"><div class="sub" style="text-transform:uppercase;letter-spacing:.06em;font-size:12px;font-weight:500">This issue</div>
 <p>Longest without a substantive edit: {H.escape(stale['label'])}, {stale.get('days_since_50byte')} days. Most recently worked on: {H.escape(fresh['label'])}. Category median is {med_e:g} edits per 90 days and {med_b:g}% of Wikidata statements referenced.</p>
 <div class="sub">{prov} <a href="/data/{cat['slug']}/{date}.json">JSON</a> · <a href="/methods/">How this is measured</a></div></div>
