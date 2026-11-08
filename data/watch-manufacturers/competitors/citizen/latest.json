@@ -6,7 +6,7 @@
  "engines": {
   "Claude": "claude-opus-4-7",
   "Gemini": "gemini-2.5-pro",
-  "ChatGPT": "gpt-6.1-sol"
+  "ChatGPT": "gpt-5.5"
  },
  "web_search": true,
  "runs_per_question": 3,
@@ -17,6 +17,11 @@
  ],
  "answers_total": 27,
  "answers_counted": 27,
+ "readers": {
+  "first": "claude-opus-4-7",
+  "second": "gemini-2.5-pro"
+ },
+ "reading_rule": "A brand counts as named in an answer only if both readers list it.",
  "rule": "In the competitive set if named by at least 2 of the 3 engines.",
  "brands": [
   {
@@ -28,7 +33,8 @@
     "Claude",
     "Gemini"
    ],
-   "answers": 29
+   "answers": 27,
+   "status": "in set, on page"
   },
   {
    "brand": "Casio",
@@ -39,7 +45,8 @@
     "Claude",
     "Gemini"
    ],
-   "answers": 28
+   "answers": 26,
+   "status": "in set, on page"
   },
   {
    "brand": "Orient",
@@ -50,7 +57,8 @@
     "Claude",
     "Gemini"
    ],
-   "answers": 25
+   "answers": 25,
+   "status": "in set, on page"
   },
   {
    "brand": "Tissot",
@@ -61,7 +69,8 @@
     "Claude",
     "Gemini"
    ],
-   "answers": 24
+   "answers": 24,
+   "status": "in set, on page"
   },
   {
    "brand": "Bulova",
@@ -72,7 +81,8 @@
     "Claude",
     "Gemini"
    ],
-   "answers": 14
+   "answers": 14,
+   "status": "in set, on page"
   },
   {
    "brand": "Hamilton",
@@ -83,7 +93,8 @@
     "Claude",
     "Gemini"
    ],
-   "answers": 12
+   "answers": 12,
+   "status": "in set, on page"
   },
   {
    "brand": "Timex",
@@ -94,17 +105,8 @@
     "Claude",
     "Gemini"
    ],
-   "answers": 11
-  },
-  {
-   "brand": "Swatch",
-   "qid": "Q573422",
-   "in_category": true,
-   "engines": [
-    "Claude",
-    "Gemini"
-   ],
-   "answers": 7
+   "answers": 11,
+   "status": "in set, on page"
   },
   {
    "brand": "Rolex",
@@ -114,7 +116,8 @@
     "Claude",
     "Gemini"
    ],
-   "answers": 6
+   "answers": 6,
+   "status": "in set, on page"
   },
   {
    "brand": "Titan Industries",
@@ -124,7 +127,8 @@
     "Claude",
     "Gemini"
    ],
-   "answers": 6
+   "answers": 6,
+   "status": "in set, on page"
   },
   {
    "brand": "Fossil",
@@ -134,7 +138,8 @@
     "ChatGPT",
     "Claude"
    ],
-   "answers": 5
+   "answers": 5,
+   "status": "in set, on page"
   },
   {
    "brand": "Longines",
@@ -144,7 +149,19 @@
     "Claude",
     "Gemini"
    ],
-   "answers": 5
+   "answers": 5,
+   "status": "in set, on page"
+  },
+  {
+   "brand": "Swatch",
+   "qid": "Q573422",
+   "in_category": true,
+   "engines": [
+    "Claude",
+    "Gemini"
+   ],
+   "answers": 5,
+   "status": "in set, on page"
   },
   {
    "brand": "Junghans",
@@ -154,7 +171,8 @@
     "Claude",
     "Gemini"
    ],
-   "answers": 4
+   "answers": 4,
+   "status": "in set, on page"
   },
   {
    "brand": "TAG Heuer",
@@ -164,7 +182,8 @@
     "Claude",
     "Gemini"
    ],
-   "answers": 4
+   "answers": 4,
+   "status": "in set, on page"
   },
   {
    "brand": "Grand Seiko",
@@ -174,8 +193,9 @@
     "Claude",
     "Gemini"
    ],
-   "answers": 3
+   "answers": 3,
+   "status": "in set, on page"
   }
  ],
- "note": "Only brands in the competitive set are listed: named by at least 2 of the 3 assistants and in this BrandTabulator category."
+ "note": "Only brands in the competitive set and in this BrandTabulator category are listed."
 }
