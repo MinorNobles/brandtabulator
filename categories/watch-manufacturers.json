@@ -112,6 +112,7 @@
   "path": "watches",
   "intro": [
     "When watch customers ask AI about a brand or the category, AI can lean heavily on Wikipedia and Wikidata. BrandTabulator ranks every brand in the category by how complete and current its record is. It is refreshed every week, so bookmark this tab.",
-    "Of course, there are many sources that AI relies on. My work is to diagnose AI responses, investigate the sources and prescribe what can be done to improve the visibility and accuracy of brand descriptions in AI (DIP)."
-  ]
+    "Of course, there are many sources that AI relies on. My work is to Diagnose the responses, Investigate the sources they credit, and Prescribe what can be done to improve the visibility and accuracy of brand descriptions in AI (DIP). To learn more, contact Michael@MichaelQuinn.ai"
+  ],
+  "intro_title": "BrandTabulator"
 }
