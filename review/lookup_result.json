@@ -1,3542 +1,2765 @@
 {
- "search": {
-  "Merit (company)": [],
-  "Centric Brands": [],
-  "Peacock (streaming service)": []
- },
- "items": {
-  "Q6375797": {
-   "label": "Kate Spade New York",
-   "description": "American fashion design house",
-   "enwiki": "Kate Spade New York",
-   "P31": [
-    [
-     "Q4830453",
-     "business"
-    ]
-   ],
-   "P452": [],
-   "P1056": [],
-   "P749": [],
-   "P127": [],
-   "P355": [],
-   "P1830": [],
-   "P17": [
-    [
-     "Q30",
-     "United States"
-    ]
-   ]
-  },
-  "Q134612138": {
-   "label": "Michael Kors",
-   "description": "fashion brand owned by Capri Holdings",
-   "enwiki": null,
-   "P31": [
-    [
-     "Q1618899",
-     "fashion label"
-    ],
-    [
-     "Q76213285",
-     "clothing store chain"
-    ]
-   ],
-   "P452": [],
-   "P1056": [],
-   "P749": [],
-   "P127": [
-    [
-     "Q19572998",
-     "Capri Holdings"
-    ]
-   ],
-   "P355": [],
-   "P1830": [],
-   "P17": []
-  },
-  "Q1260606": {
-   "label": "Estée Lauder Companies",
-   "description": "American-based cosmetics company",
-   "enwiki": "Estée Lauder Companies",
-   "P31": [
-    [
-     "Q4830453",
-     "business"
-    ],
-    [
-     "Q6881511",
-     "enterprise"
-    ],
-    [
-     "Q891723",
-     "public company"
-    ]
-   ],
-   "P452": [
-    [
-     "Q12752882",
-     "cosmetics industry"
-    ]
-   ],
-   "P1056": [],
-   "P749": [],
-   "P127": [],
-   "P355": [
-    [
-     "Q105132734",
-     "Bobbi Brown"
-    ],
-    [
-     "Q113961540",
-     "The Cosmetics Company Store"
-    ],
-    [
-     "Q2655764",
-     "Clinique Laboratories, LLC"
-    ],
-    [
-     "Q107023942",
-     "DECIEM"
-    ],
-    [
-     "Q85845827",
-     "Dr. Jart+"
-    ],
-    [
-     "Q2624442",
-     "Make-up Art Cosmetics"
-    ],
-    [
-     "Q6643229",
-     "Origins Natural Resources, Inc."
-    ],
-    [
-     "Q105476592",
-     "Tom Ford"
-    ],
-    [
-     "Q4827965",
-     "Aveda"
-    ],
-    [
-     "Q29469190",
-     "Le Labo"
-    ],
-    [
-     "Q2928140",
-     "Bumble and bumble"
-    ],
-    [
-     "Q20724743",
-     "Jo Malone London"
-    ],
-    [
-     "Q139667832",
-     "Prescriptives"
-    ],
-    [
-     "Q27842292",
-     "Aramis (fragrance)"
-    ],
-    [
-     "Q140458112",
-     "Lab Series"
-    ]
-   ],
-   "P1830": [],
-   "P17": [
-    [
-     "Q30",
-     "United States"
-    ],
-    [
-     "Q142",
-     "France"
-    ]
-   ]
-  },
-  "Q26913624": {
-   "label": "Blue Apron",
-   "description": "meal delivery service",
-   "enwiki": "Blue Apron",
-   "P31": [
-    [
-     "Q35127",
-     "website"
-    ],
-    [
-     "Q4830453",
-     "business"
-    ],
-    [
-     "Q891723",
-     "public company"
-    ],
-    [
-     "Q105693306",
-     "meal kit delivery service"
-    ],
-    [
-     "Q658255",
-     "subsidiary company"
-    ]
-   ],
-   "P452": [
-    [
-     "Q3181044",
-     "online food ordering"
-    ],
-    [
-     "Q10932402",
-     "food delivery"
-    ]
-   ],
-   "P1056": [],
-   "P749": [
-    [
-     "Q133715205",
-     "Wonder Group Inc."
-    ]
-   ],
-   "P127": [
-    [
-     "Q133715205",
-     "Wonder Group Inc."
-    ]
-   ],
-   "P355": [],
-   "P1830": [],
-   "P17": [
-    [
-     "Q30",
-     "United States"
-    ]
-   ]
-  },
-  "Q1353939": {
-   "label": null,
-   "description": "American e-commerce company",
-   "enwiki": "Etsy",
-   "P31": [
-    [
-     "Q4830453",
-     "business"
-    ],
-    [
-     "Q891723",
-     "public company"
-    ]
-   ],
-   "P452": [
-    [
-     "Q484847",
-     "e-commerce"
-    ]
-   ],
-   "P1056": [],
-   "P749": [],
-   "P127": [],
-   "P355": [
-    [
-     "Q29115431",
-     "alittleMarket.com"
-    ],
-    [
-     "Q24900594",
-     "Depop"
-    ]
-   ],
-   "P1830": [],
-   "P17": [
-    [
-     "Q30",
-     "United States"
-    ]
-   ]
-  },
-  "Q62029290": {
-   "label": "Kay Jewelers",
-   "description": "jewelry chain operated by Sterling Jewelers",
-   "enwiki": "Kay Jewelers",
-   "P31": [
-    [
-     "Q4830453",
-     "business"
-    ],
-    [
-     "Q783794",
-     "company"
-    ]
-   ],
-   "P452": [
-    [
-     "Q126793",
-     "retail"
-    ]
-   ],
-   "P1056": [],
-   "P749": [
-    [
-     "Q7611434",
-     "Sterling Jewelers"
-    ]
-   ],
-   "P127": [
-    [
-     "Q7512923",
-     "Signet Jewelers Limited"
-    ]
-   ],
-   "P355": [],
-   "P1830": [],
-   "P17": []
-  },
-  "Q934273": {
-   "label": "Powerade",
-   "description": "sports drink manufactured and marketed by The Coca-Cola Company",
-   "enwiki": "Powerade",
-   "P31": [
-    [
-     "Q114392939",
-     "drink brand"
-    ]
-   ],
-   "P452": [],
-   "P1056": [],
-   "P749": [],
-   "P127": [],
-   "P355": [],
-   "P1830": [],
-   "P17": []
-  },
-  "Q2813": {
-   "label": "Coca-Cola",
-   "description": "carbonated brown-colored soft drink",
-   "enwiki": "Coca-Cola",
-   "P31": [
-    [
-     "Q114392939",
-     "drink brand"
-    ],
-    [
-     "Q167270",
-     "trademark"
-    ],
-    [
-     "Q1485500",
-     "tangible good"
-    ]
-   ],
-   "P452": [],
-   "P1056": [],
-   "P749": [],
-   "P127": [
-    [
-     "Q3295867",
-     "The Coca-Cola Company"
-    ]
-   ],
-   "P355": [],
-   "P1830": [],
-   "P17": [
-    [
-     "Q30",
-     "United States"
-    ]
-   ]
-  },
-  "Q2961234": {
-   "label": "Charter Communications",
-   "description": "American cable services provider",
-   "enwiki": "Charter Communications",
-   "P31": [
-    [
-     "Q4830453",
-     "business"
-    ],
-    [
-     "Q6881511",
-     "enterprise"
-    ],
-    [
-     "Q891723",
-     "public company"
-    ]
-   ],
-   "P452": [
-    [
-     "Q2401742",
-     "telecommunications industry"
-    ]
-   ],
-   "P1056": [
-    [
-     "Q184452",
-     "cable television"
-    ]
-   ],
-   "P749": [],
-   "P127": [
-    [
-     "Q1516562",
-     "Liberty Media"
-    ]
-   ],
-   "P355": [
-    [
-     "Q6038075",
-     "Insight Communications Inc."
-    ],
-    [
-     "Q7805197",
-     "Spectrum"
-    ],
-    [
-     "Q1885099",
-     "Time Warner Cable"
-    ],
-    [
-     "Q5179879",
-     "Cox Communications"
-    ]
-   ],
-   "P1830": [],
-   "P17": [
-    [
-     "Q30",
-     "United States"
-    ]
-   ]
-  },
-  "Q4745165": {
-   "label": "American Standard Brands",
-   "description": "North American Plumbing Fixture Manufacturer",
-   "enwiki": "American Standard Brands",
-   "P31": [
-    [
-     "Q4830453",
-     "business"
-    ]
-   ],
-   "P452": [
-    [
-     "Q187939",
-     "industrial manufacturing"
-    ]
-   ],
-   "P1056": [
-    [
-     "Q2024731",
-     "plumbing fixture"
-    ]
-   ],
-   "P749": [],
-   "P127": [],
-   "P355": [],
-   "P1830": [],
-   "P17": []
-  },
-  "Q2241604": {
-   "label": "Pandora",
-   "description": "Danish multinational jewelry manufacturer and retail chain",
-   "enwiki": "Pandora (jewelry)",
-   "P31": [
-    [
-     "Q4830453",
-     "business"
-    ],
-    [
-     "Q726870",
-     "brick and mortar"
-    ],
-    [
-     "Q6881511",
-     "enterprise"
-    ],
-    [
-     "Q891723",
-     "public company"
-    ]
-   ],
-   "P452": [
-    [
-     "Q161439",
-     "jewelry"
-    ],
-    [
-     "Q126793",
-     "retail"
-    ]
-   ],
-   "P1056": [
-    [
-     "Q1536680",
-     "costume jewelry"
-    ]
-   ],
-   "P749": [],
-   "P127": [
-    [
-     "Q2241604",
-     "Pandora"
-    ],
-    [
-     "Q219635",
-     "BlackRock"
-    ],
-    [
-     "Q29785200",
-     "Parvus Asset Management Europe Limited"
-    ]
-   ],
-   "P355": [],
-   "P1830": [],
-   "P17": [
-    [
-     "Q35",
-     "Denmark"
-    ]
-   ]
-  },
-  "Q116030556": {
-   "label": "Rare Beauty",
-   "description": "American cosmetics company",
-   "enwiki": "Rare Beauty",
-   "P31": [
-    [
-     "Q783794",
-     "company"
-    ]
-   ],
-   "P452": [
-    [
-     "Q12752882",
-     "cosmetics industry"
-    ]
-   ],
-   "P1056": [],
-   "P749": [],
-   "P127": [
-    [
-     "Q83287",
-     "Selena Gomez"
-    ]
-   ],
-   "P355": [],
-   "P1830": [],
-   "P17": [
-    [
-     "Q30",
-     "United States"
-    ]
-   ]
-  },
-  "Q85865456": {
-   "label": "Glossier",
-   "description": "skincare and beauty brand",
-   "enwiki": "Glossier",
-   "P31": [
-    [
-     "Q431289",
-     "brand"
-    ]
-   ],
-   "P452": [
-    [
-     "Q12752882",
-     "cosmetics industry"
-    ]
-   ],
-   "P1056": [],
-   "P749": [],
-   "P127": [],
-   "P355": [],
-   "P1830": [],
-   "P17": [
-    [
-     "Q30",
-     "United States"
-    ]
-   ]
-  },
-  "Q19867857": {
-   "label": "Bodyarmor SuperDrink",
-   "description": "American sports drink",
-   "enwiki": "Bodyarmor SuperDrink",
-   "P31": [
-    [
-     "Q4830453",
-     "business"
-    ],
-    [
-     "Q431289",
-     "brand"
-    ]
-   ],
-   "P452": [],
-   "P1056": [],
-   "P749": [],
-   "P127": [],
-   "P355": [],
-   "P1830": [],
-   "P17": [
-    [
-     "Q30",
-     "United States"
-    ]
-   ]
-  },
-  "Q1113804": {
-   "label": "Comcast",
-   "description": "American multinational telecommunications conglomerate",
-   "enwiki": "Comcast",
-   "P31": [
-    [
-     "Q4830453",
-     "business"
-    ],
-    [
-     "Q6881511",
-     "enterprise"
-    ],
-    [
-     "Q891723",
-     "public company"
-    ],
-    [
-     "Q2401749",
-     "telecommunications company"
-    ]
-   ],
-   "P452": [
-    [
-     "Q2401742",
-     "telecommunications industry"
-    ]
-   ],
-   "P1056": [
-    [
-     "Q184452",
-     "cable television"
-    ]
-   ],
-   "P749": [],
-   "P127": [],
-   "P355": [
-    [
-     "Q724759",
-     "NBCUniversal"
-    ],
-    [
-     "Q918390",
-     "Sky Group"
-    ],
-    [
-     "Q60740233",
-     "Comcast Ventures"
-    ]
-   ],
-   "P1830": [
-    [
-     "Q168383",
-     "Universal Pictures"
-    ]
-   ],
-   "P17": [
-    [
-     "Q30",
-     "United States"
-    ]
-   ]
-  }
- },
- "sparql": {
-  "handbags": {
-   "count": 81,
-   "rows": [
-    {
-     "item": "Q178516",
-     "itemLabel": "Gucci",
-     "sitelinks": "75"
-    },
-    {
-     "item": "Q157064",
-     "itemLabel": "Puma",
-     "sitelinks": "70"
-    },
-    {
-     "item": "Q191485",
-     "itemLabel": "Louis Vuitton",
-     "sitelinks": "69"
-    },
-    {
-     "item": "Q26070",
-     "itemLabel": "Uniqlo",
-     "sitelinks": "64"
-    },
-    {
-     "item": "Q218115",
-     "itemLabel": "Chanel",
-     "sitelinks": "64"
-    },
-    {
-     "item": "Q309031",
-     "itemLabel": "Lacoste",
-     "sitelinks": "60"
-    },
-    {
-     "item": "Q752515",
-     "itemLabel": "Bulgari",
-     "sitelinks": "52"
-    },
-    {
-     "item": "Q319515",
-     "itemLabel": "Converse",
-     "sitelinks": "47"
-    },
-    {
-     "item": "Q759210",
-     "itemLabel": "Givenchy",
-     "sitelinks": "46"
-    },
-    {
-     "item": "Q107377209",
-     "itemLabel": "Shein",
-     "sitelinks": "41"
-    },
-    {
-     "item": "Q482539",
-     "itemLabel": "Fila, Inc.",
-     "sitelinks": "40"
-    },
-    {
-     "item": "Q152784",
-     "itemLabel": "The North Face, Inc.",
-     "sitelinks": "37"
-    },
-    {
-     "item": "Q1066156",
-     "itemLabel": "Le Coq sportif",
-     "sitelinks": "35"
-    },
-    {
-     "item": "Q136503",
-     "itemLabel": "Mango",
-     "sitelinks": "32"
-    },
-    {
-     "item": "Q1659229",
-     "itemLabel": "Supreme",
-     "sitelinks": "29"
-    },
-    {
-     "item": "Q895795",
-     "itemLabel": "Kenzo",
-     "sitelinks": "26"
-    },
-    {
-     "item": "Q1329463",
-     "itemLabel": "Quiksilver",
-     "sitelinks": "26"
-    },
-    {
-     "item": "Q1687798",
-     "itemLabel": "Saucony",
-     "sitelinks": "21"
-    },
-    {
-     "item": "Q11828862",
-     "itemLabel": "clothing industry",
-     "sitelinks": "21"
-    },
-    {
-     "item": "Q3946053",
-     "itemLabel": "Salvatore Ferragamo",
-     "sitelinks": "21"
-    },
-    {
-     "item": "Q83750",
-     "itemLabel": "Desigual",
-     "sitelinks": "20"
-    },
-    {
-     "item": "Q182399",
-     "itemLabel": "J. Barbour and Sons",
-     "sitelinks": "20"
-    },
-    {
-     "item": "Q3277165",
-     "itemLabel": "Acne Studios",
-     "sitelinks": "15"
-    },
-    {
-     "item": "Q1484081",
-     "itemLabel": "G-Star Raw",
-     "sitelinks": "14"
-    },
-    {
-     "item": "Q1316779",
-     "itemLabel": "S.T. Dupont",
-     "sitelinks": "13"
-    },
-    {
-     "item": "Q917561",
-     "itemLabel": "Kitsuné",
-     "sitelinks": "12"
-    },
-    {
-     "item": "Q835487",
-     "itemLabel": "MCM Worldwide",
-     "sitelinks": "11"
-    },
-    {
-     "item": "Q688195",
-     "itemLabel": "Bally",
-     "sitelinks": "10"
-    },
-    {
-     "item": "Q4465402",
-     "itemLabel": "Tumi Inc.",
-     "sitelinks": "9"
-    },
-    {
-     "item": "Q23672312",
-     "itemLabel": "Herschel Supply Co.",
-     "sitelinks": "8"
-    },
-    {
-     "item": "Q978919",
-     "itemLabel": "México.",
-     "sitelinks": "8"
-    },
-    {
-     "item": "Q3356778",
-     "itemLabel": "Q3356778",
-     "sitelinks": "8"
-    },
-    {
-     "item": "Q30595852",
-     "itemLabel": "Byredo",
-     "sitelinks": "7"
-    },
-    {
-     "item": "Q3112837",
-     "itemLabel": "Goyard",
-     "sitelinks": "7"
-    },
-    {
-     "item": "Q2399832",
-     "itemLabel": "J.M. Weston",
-     "sitelinks": "6"
-    },
-    {
-     "item": "Q980030",
-     "itemLabel": "Ed Meier",
-     "sitelinks": "6"
-    },
-    {
-     "item": "Q1017972",
-     "itemLabel": "Butlers",
-     "sitelinks": "6"
-    },
-    {
-     "item": "Q3210329",
-     "itemLabel": "La Maison Simons",
-     "sitelinks": "6"
-    },
-    {
-     "item": "Q17141914",
-     "itemLabel": "Scotch & Soda",
-     "sitelinks": "6"
-    },
-    {
-     "item": "Q7136948",
-     "itemLabel": "Parfois",
-     "sitelinks": "6"
-    },
-    {
-     "item": "Q3905555",
-     "itemLabel": "Piquadro",
-     "sitelinks": "5"
-    },
-    {
-     "item": "Q13577441",
-     "itemLabel": "Audimas, AB",
-     "sitelinks": "5"
-    },
-    {
-     "item": "Q5113774",
-     "itemLabel": "Chrome Hearts",
-     "sitelinks": "5"
-    },
-    {
-     "item": "Q7899859",
-     "itemLabel": "Urban Behavior",
-     "sitelinks": "5"
-    },
-    {
-     "item": "Q1694737",
-     "itemLabel": "Manufactum",
-     "sitelinks": "4"
-    },
-    {
-     "item": "Q19988222",
-     "itemLabel": "Tory Burch LLC",
-     "sitelinks": "4"
-    },
-    {
-     "item": "Q28035409",
-     "itemLabel": "Carpisa",
-     "sitelinks": "3"
-    },
-    {
-     "item": "Q4838385",
-     "itemLabel": "Baby Phat",
-     "sitelinks": "3"
-    },
-    {
-     "item": "Q60963734",
-     "itemLabel": "Palace Skateboards",
-     "sitelinks": "3"
-    },
-    {
-     "item": "Q28164179",
-     "itemLabel": "Fastrack",
-     "sitelinks": "3"
-    },
-    {
-     "item": "Q6911563",
-     "itemLabel": "Morgan",
-     "sitelinks": "3"
-    },
-    {
-     "item": "Q5515124",
-     "itemLabel": "G Ettinger Ltd.",
-     "sitelinks": "2"
-    },
-    {
-     "item": "Q104842926",
-     "itemLabel": "Ganni",
-     "sitelinks": "2"
-    },
-    {
-     "item": "Q118144474",
-     "itemLabel": "The Bridge",
-     "sitelinks": "2"
-    },
-    {
-     "item": "Q17102372",
-     "itemLabel": "Valextra",
-     "sitelinks": "2"
-    },
-    {
-     "item": "Q50428076",
-     "itemLabel": "Rebecca Minkoff",
-     "sitelinks": "2"
-    },
-    {
-     "item": "Q5322608",
-     "itemLabel": "eBags.com",
-     "sitelinks": "2"
-    },
-    {
-     "item": "Q5508324",
-     "itemLabel": "O bag",
-     "sitelinks": "2"
-    },
-    {
-     "item": "Q5745049",
-     "itemLabel": "Hervé Chapelier",
-     "sitelinks": "2"
-    },
-    {
-     "item": "Q129939616",
-     "itemLabel": "The Kingsman Shop (London)",
-     "sitelinks": "2"
-    },
-    {
-     "item": "Q48797459",
-     "itemLabel": "Zimmermann",
-     "sitelinks": "2"
-    },
-    {
-     "item": "Q53673099",
-     "itemLabel": "Ksenia Schnaider",
-     "sitelinks": "2"
-    },
-    {
-     "item": "Q3528523",
-     "itemLabel": "Tilley Endurables",
-     "sitelinks": "2"
-    },
-    {
-     "item": "Q17146251",
-     "itemLabel": "SONGZIO",
-     "sitelinks": "2"
-    },
-    {
-     "item": "Q4965872",
-     "itemLabel": "BrickArms",
-     "sitelinks": "2"
-    },
-    {
-     "item": "Q7169633",
-     "itemLabel": "Perrin Paris",
-     "sitelinks": "2"
-    },
-    {
-     "item": "Q7596005",
-     "itemLabel": "Stacy Adams",
-     "sitelinks": "2"
-    },
-    {
-     "item": "Q7588866",
-     "itemLabel": "St. John Knits International Inc.",
-     "sitelinks": "2"
-    },
-    {
-     "item": "Q16966936",
-     "itemLabel": "Petunia Pickle Bottom",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q4882178",
-     "itemLabel": "Belen Echandia",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q5297166",
-     "itemLabel": "Dooney & Bourke",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q5378357",
-     "itemLabel": "English Retreads",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q55622209",
-     "itemLabel": "Mark Cross",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q85811208",
-     "itemLabel": "Tusting",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q132235241",
-     "itemLabel": "Troubadour Goods",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q16933219",
-     "itemLabel": "Strathberry of Scotland",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q19571387",
-     "itemLabel": "Cushnie et Ochs",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q4950489",
-     "itemLabel": "Boux Avenue",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q5125764",
-     "itemLabel": "Clandestine Industries",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q6901341",
-     "itemLabel": "Monoblock Industry of Imagineering",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q8042379",
-     "itemLabel": "XOXO",
-     "sitelinks": "1"
+ "search": {},
+ "items": {},
+ "sparql": {},
+ "urls": {
+  "Citizen_Watch|user": {
+   "items": [
+    {
+     "project": "en.wikipedia",
+     "article": "Citizen_Watch",
+     "granularity": "daily",
+     "timestamp": "2026101800",
+     "access": "all-access",
+     "agent": "user",
+     "views": 393
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Citizen_Watch",
+     "granularity": "daily",
+     "timestamp": "2026101900",
+     "access": "all-access",
+     "agent": "user",
+     "views": 332
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Citizen_Watch",
+     "granularity": "daily",
+     "timestamp": "2026102000",
+     "access": "all-access",
+     "agent": "user",
+     "views": 308
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Citizen_Watch",
+     "granularity": "daily",
+     "timestamp": "2026102100",
+     "access": "all-access",
+     "agent": "user",
+     "views": 315
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Citizen_Watch",
+     "granularity": "daily",
+     "timestamp": "2026102200",
+     "access": "all-access",
+     "agent": "user",
+     "views": 314
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Citizen_Watch",
+     "granularity": "daily",
+     "timestamp": "2026102300",
+     "access": "all-access",
+     "agent": "user",
+     "views": 310
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Citizen_Watch",
+     "granularity": "daily",
+     "timestamp": "2026102400",
+     "access": "all-access",
+     "agent": "user",
+     "views": 297
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Citizen_Watch",
+     "granularity": "daily",
+     "timestamp": "2026102500",
+     "access": "all-access",
+     "agent": "user",
+     "views": 574
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Citizen_Watch",
+     "granularity": "daily",
+     "timestamp": "2026102600",
+     "access": "all-access",
+     "agent": "user",
+     "views": 466
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Citizen_Watch",
+     "granularity": "daily",
+     "timestamp": "2026102700",
+     "access": "all-access",
+     "agent": "user",
+     "views": 362
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Citizen_Watch",
+     "granularity": "daily",
+     "timestamp": "2026102800",
+     "access": "all-access",
+     "agent": "user",
+     "views": 375
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Citizen_Watch",
+     "granularity": "daily",
+     "timestamp": "2026102900",
+     "access": "all-access",
+     "agent": "user",
+     "views": 337
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Citizen_Watch",
+     "granularity": "daily",
+     "timestamp": "2026103000",
+     "access": "all-access",
+     "agent": "user",
+     "views": 318
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Citizen_Watch",
+     "granularity": "daily",
+     "timestamp": "2026103100",
+     "access": "all-access",
+     "agent": "user",
+     "views": 358
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Citizen_Watch",
+     "granularity": "daily",
+     "timestamp": "2026110100",
+     "access": "all-access",
+     "agent": "user",
+     "views": 363
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Citizen_Watch",
+     "granularity": "daily",
+     "timestamp": "2026110200",
+     "access": "all-access",
+     "agent": "user",
+     "views": 329
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Citizen_Watch",
+     "granularity": "daily",
+     "timestamp": "2026110300",
+     "access": "all-access",
+     "agent": "user",
+     "views": 267
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Citizen_Watch",
+     "granularity": "daily",
+     "timestamp": "2026110400",
+     "access": "all-access",
+     "agent": "user",
+     "views": 285
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Citizen_Watch",
+     "granularity": "daily",
+     "timestamp": "2026110500",
+     "access": "all-access",
+     "agent": "user",
+     "views": 287
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Citizen_Watch",
+     "granularity": "daily",
+     "timestamp": "2026110600",
+     "access": "all-access",
+     "agent": "user",
+     "views": 304
     }
    ]
   },
-  "cosmetics": {
-   "count": 197,
-   "rows": [
+  "Citizen_Watch|spider": {
+   "items": [
+    {
+     "project": "en.wikipedia",
+     "article": "Citizen_Watch",
+     "granularity": "daily",
+     "timestamp": "2026101800",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 37
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Citizen_Watch",
+     "granularity": "daily",
+     "timestamp": "2026101900",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 37
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Citizen_Watch",
+     "granularity": "daily",
+     "timestamp": "2026102000",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 33
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Citizen_Watch",
+     "granularity": "daily",
+     "timestamp": "2026102100",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 27
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Citizen_Watch",
+     "granularity": "daily",
+     "timestamp": "2026102200",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 56
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Citizen_Watch",
+     "granularity": "daily",
+     "timestamp": "2026102300",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 36
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Citizen_Watch",
+     "granularity": "daily",
+     "timestamp": "2026102400",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 41
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Citizen_Watch",
+     "granularity": "daily",
+     "timestamp": "2026102500",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 41
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Citizen_Watch",
+     "granularity": "daily",
+     "timestamp": "2026102600",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 41
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Citizen_Watch",
+     "granularity": "daily",
+     "timestamp": "2026102700",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 26
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Citizen_Watch",
+     "granularity": "daily",
+     "timestamp": "2026102800",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 29
+    },
     {
-     "item": "Q157062",
-     "itemLabel": "Unilever",
-     "sitelinks": "65"
-    },
-    {
-     "item": "Q156077",
-     "itemLabel": "L'Oréal",
-     "sitelinks": "59"
-    },
-    {
-     "item": "Q843887",
-     "itemLabel": "Hermès",
-     "sitelinks": "59"
-    },
-    {
-     "item": "Q332477",
-     "itemLabel": "Victoria’s Secret",
-     "sitelinks": "59"
-    },
-    {
-     "item": "Q214480",
-     "itemLabel": "Dolce & Gabbana",
-     "sitelinks": "53"
-    },
-    {
-     "item": "Q635484",
-     "itemLabel": "Giorgio Armani",
-     "sitelinks": "52"
-    },
-    {
-     "item": "Q634881",
-     "itemLabel": "Tommy Hilfiger B.V.",
-     "sitelinks": "37"
-    },
-    {
-     "item": "Q730893",
-     "itemLabel": "Oriflame Cosmetics",
-     "sitelinks": "36"
-    },
-    {
-     "item": "Q481800",
-     "itemLabel": "Amway",
-     "sitelinks": "34"
-    },
-    {
-     "item": "Q791285",
-     "itemLabel": "Avon Products Inc.",
-     "sitelinks": "33"
-    },
-    {
-     "item": "Q1541268",
-     "itemLabel": "Lancôme",
-     "sitelinks": "33"
-    },
-    {
-     "item": "Q201691",
-     "itemLabel": "Beiersdorf",
-     "sitelinks": "32"
-    },
-    {
-     "item": "Q1351054",
-     "itemLabel": "Maybelline",
-     "sitelinks": "32"
-    },
-    {
-     "item": "Q1036056",
-     "itemLabel": "Cargill",
-     "sitelinks": "32"
-    },
-    {
-     "item": "Q837851",
-     "itemLabel": "The Body Shop",
-     "sitelinks": "30"
-    },
-    {
-     "item": "Q555900",
-     "itemLabel": "Head & Shoulders",
-     "sitelinks": "30"
-    },
-    {
-     "item": "Q1260606",
-     "itemLabel": "Estée Lauder Companies",
-     "sitelinks": "28"
-    },
-    {
-     "item": "Q728185",
-     "itemLabel": "Shiseido",
-     "sitelinks": "27"
-    },
-    {
-     "item": "Q1459595",
-     "itemLabel": "Revlon",
-     "sitelinks": "26"
-    },
-    {
-     "item": "Q1195245",
-     "itemLabel": "beauty salon",
-     "sitelinks": "25"
-    },
-    {
-     "item": "Q2624442",
-     "itemLabel": "Make-up Art Cosmetics",
-     "sitelinks": "23"
-    },
-    {
-     "item": "Q902855",
-     "itemLabel": "Kao Corporation",
-     "sitelinks": "22"
-    },
-    {
-     "item": "Q1104787",
-     "itemLabel": "Coty",
-     "sitelinks": "21"
-    },
-    {
-     "item": "Q2655764",
-     "itemLabel": "Clinique Laboratories, LLC",
-     "sitelinks": "21"
-    },
-    {
-     "item": "Q28859450",
-     "itemLabel": "Kylie Cosmetics",
-     "sitelinks": "20"
-    },
-    {
-     "item": "Q2354647",
-     "itemLabel": "Max Factor",
-     "sitelinks": "20"
-    },
-    {
-     "item": "Q687934",
-     "itemLabel": "Weleda",
-     "sitelinks": "19"
-    },
-    {
-     "item": "Q966846",
-     "itemLabel": "Rimmel",
-     "sitelinks": "19"
-    },
-    {
-     "item": "Q1585448",
-     "itemLabel": "Lush",
-     "sitelinks": "19"
-    },
-    {
-     "item": "Q211951",
-     "itemLabel": "ASOS",
-     "sitelinks": "18"
-    },
-    {
-     "item": "Q3410623",
-     "itemLabel": "Puig",
-     "sitelinks": "17"
-    },
-    {
-     "item": "Q51135597",
-     "itemLabel": "Fenty Beauty",
-     "sitelinks": "16"
-    },
-    {
-     "item": "Q1880676",
-     "itemLabel": "L'Occitane en Provence",
-     "sitelinks": "16"
-    },
-    {
-     "item": "Q1066784",
-     "itemLabel": "Q1066784",
-     "sitelinks": "15"
-    },
-    {
-     "item": "Q7880076",
-     "itemLabel": "Ulta Beauty",
-     "sitelinks": "15"
-    },
-    {
-     "item": "Q470196",
-     "itemLabel": "Mary Kay",
-     "sitelinks": "14"
-    },
-    {
-     "item": "Q2975619",
-     "itemLabel": "Clarins",
-     "sitelinks": "14"
-    },
-    {
-     "item": "Q570747",
-     "itemLabel": "Douglas",
-     "sitelinks": "13"
-    },
-    {
-     "item": "Q7390579",
-     "itemLabel": "SK-II",
-     "sitelinks": "13"
-    },
-    {
-     "item": "Q490142",
-     "itemLabel": "Amorepacific Corporation",
-     "sitelinks": "12"
-    },
-    {
-     "item": "Q2056628",
-     "itemLabel": "Acqua di Parma",
-     "sitelinks": "12"
-    },
-    {
-     "item": "Q2895769",
-     "itemLabel": "Benefit Cosmetics",
-     "sitelinks": "12"
-    },
-    {
-     "item": "Q3196447",
-     "itemLabel": "Kiehl's",
-     "sitelinks": "12"
-    },
-    {
-     "item": "Q680145",
-     "itemLabel": "Schlecker",
-     "sitelinks": "12"
-    },
-    {
-     "item": "Q1629990",
-     "itemLabel": "CoverGirl",
-     "sitelinks": "12"
-    },
-    {
-     "item": "Q650195",
-     "itemLabel": "Johann Maria Farina gegenüber dem Jülichs-Platz",
-     "sitelinks": "11"
-    },
-    {
-     "item": "Q16176002",
-     "itemLabel": "Innisfree",
-     "sitelinks": "11"
-    },
-    {
-     "item": "Q3131210",
-     "itemLabel": "Natura Cosméticos S.A.",
-     "sitelinks": "11"
-    },
-    {
-     "item": "Q20724743",
-     "itemLabel": "Jo Malone London",
-     "sitelinks": "11"
-    },
-    {
-     "item": "Q116030556",
-     "itemLabel": "Rare Beauty",
-     "sitelinks": "11"
-    },
-    {
-     "item": "Q77659264",
-     "itemLabel": "Haus Laboratories",
-     "sitelinks": "11"
-    },
-    {
-     "item": "Q153264",
-     "itemLabel": "Urban Decay",
-     "sitelinks": "10"
-    },
-    {
-     "item": "Q1578717",
-     "itemLabel": "Rochas",
-     "sitelinks": "10"
-    },
-    {
-     "item": "Q18208332",
-     "itemLabel": "Johnson's Baby",
-     "sitelinks": "10"
-    },
-    {
-     "item": "Q4350170",
-     "itemLabel": "Lumene",
-     "sitelinks": "10"
-    },
-    {
-     "item": "Q3869356",
-     "itemLabel": "NARS Cosmetics",
-     "sitelinks": "10"
-    },
-    {
-     "item": "Q6479731",
-     "itemLabel": "Lakmé Cosmetics",
-     "sitelinks": "10"
-    },
-    {
-     "item": "Q3485326",
-     "itemLabel": "Sisley",
-     "sitelinks": "9"
-    },
-    {
-     "item": "Q4688560",
-     "itemLabel": "Aesop",
-     "sitelinks": "9"
-    },
-    {
-     "item": "Q1042422",
-     "itemLabel": "Mentholatum",
-     "sitelinks": "9"
-    },
-    {
-     "item": "Q1372140",
-     "itemLabel": "Eucerin",
-     "sitelinks": "9"
-    },
-    {
-     "item": "Q18857532",
-     "itemLabel": "KOSÉ Corporation",
-     "sitelinks": "9"
-    },
-    {
-     "item": "Q23731014",
-     "itemLabel": "Moroccanoil Inc.",
-     "sitelinks": "9"
-    },
-    {
-     "item": "Q130331887",
-     "itemLabel": "Natura & Co",
-     "sitelinks": "9"
-    },
-    {
-     "item": "Q1999812",
-     "itemLabel": "Kérastase",
-     "sitelinks": "8"
-    },
-    {
-     "item": "Q16174973",
-     "itemLabel": "Etude House",
-     "sitelinks": "8"
-    },
-    {
-     "item": "Q16951811",
-     "itemLabel": "Bioderma",
-     "sitelinks": "8"
-    },
-    {
-     "item": "Q13220217",
-     "itemLabel": "Super-Pharm",
-     "sitelinks": "8"
-    },
-    {
-     "item": "Q1703526",
-     "itemLabel": "JOOP!",
-     "sitelinks": "7"
-    },
-    {
-     "item": "Q4043688",
-     "itemLabel": "Manic Panic",
-     "sitelinks": "7"
-    },
-    {
-     "item": "Q5420712",
-     "itemLabel": "Inglot cosmetics",
-     "sitelinks": "7"
-    },
-    {
-     "item": "Q23671513",
-     "itemLabel": "NYX Professional Makeup",
-     "sitelinks": "7"
-    },
-    {
-     "item": "Q30595852",
-     "itemLabel": "Byredo",
-     "sitelinks": "7"
-    },
-    {
-     "item": "Q12752882",
-     "itemLabel": "cosmetics industry",
-     "sitelinks": "7"
-    },
-    {
-     "item": "Q117086143",
-     "itemLabel": "R.E.M. Beauty",
-     "sitelinks": "7"
-    },
-    {
-     "item": "Q7121247",
-     "itemLabel": "PZ Cussons",
-     "sitelinks": "7"
-    },
-    {
-     "item": "Q879124",
-     "itemLabel": "Mäurer & Wirtz",
-     "sitelinks": "6"
-    },
-    {
-     "item": "Q11332202",
-     "itemLabel": "Fancl Corporation",
-     "sitelinks": "6"
-    },
-    {
-     "item": "Q16935507",
-     "itemLabel": "Nature Republic",
-     "sitelinks": "6"
-    },
-    {
-     "item": "Q16966916",
-     "itemLabel": "Eisenberg Paris",
-     "sitelinks": "6"
-    },
-    {
-     "item": "Q4695024",
-     "itemLabel": "Ahava",
-     "sitelinks": "6"
-    },
-    {
-     "item": "Q4827965",
-     "itemLabel": "Aveda",
-     "sitelinks": "6"
-    },
-    {
-     "item": "Q5461899",
-     "itemLabel": "Floris of London",
-     "sitelinks": "6"
-    },
-    {
-     "item": "Q7643261",
-     "itemLabel": "Superdrug",
-     "sitelinks": "6"
-    },
-    {
-     "item": "Q849057",
-     "itemLabel": "Sean John",
-     "sitelinks": "6"
-    },
-    {
-     "item": "Q56274930",
-     "itemLabel": "Anastasia Beverly Hills",
-     "sitelinks": "6"
-    },
-    {
-     "item": "Q12728140",
-     "itemLabel": "Farmec",
-     "sitelinks": "6"
-    },
-    {
-     "item": "Q769749",
-     "itemLabel": "ICI Paris XL",
-     "sitelinks": "5"
-    },
-    {
-     "item": "Q2052213",
-     "itemLabel": "Douglas Holding",
-     "sitelinks": "5"
-    },
-    {
-     "item": "Q15982607",
-     "itemLabel": "OPI Products",
-     "sitelinks": "5"
-    },
-    {
-     "item": "Q3242538",
-     "itemLabel": "Lise Watier",
-     "sitelinks": "5"
-    },
-    {
-     "item": "Q5880444",
-     "itemLabel": "Holiday Magic",
-     "sitelinks": "5"
-    },
-    {
-     "item": "Q6643229",
-     "itemLabel": "Origins Natural Resources, Inc.",
-     "sitelinks": "5"
-    },
-    {
-     "item": "Q7287039",
-     "itemLabel": "Rallet",
-     "sitelinks": "5"
-    },
-    {
-     "item": "Q1574066",
-     "itemLabel": "Alberto-Culver",
-     "sitelinks": "5"
-    },
-    {
-     "item": "Q17011854",
-     "itemLabel": "Make Up For Ever",
-     "sitelinks": "5"
-    },
-    {
-     "item": "Q5427623",
-     "itemLabel": "Fabergé",
-     "sitelinks": "5"
-    },
-    {
-     "item": "Q1872841",
-     "itemLabel": "Parfums Lubin",
-     "sitelinks": "4"
-    },
-    {
-     "item": "Q15925466",
-     "itemLabel": "Pechoin",
-     "sitelinks": "4"
-    },
-    {
-     "item": "Q16984395",
-     "itemLabel": "Birchbox",
-     "sitelinks": "4"
-    },
-    {
-     "item": "Q3438623",
-     "itemLabel": "Roger & Gallet",
-     "sitelinks": "4"
-    },
-    {
-     "item": "Q4942162",
-     "itemLabel": "Bonne Bell",
-     "sitelinks": "4"
-    },
-    {
-     "item": "Q5304135",
-     "itemLabel": "Dr. Hauschka",
-     "sitelinks": "4"
-    },
-    {
-     "item": "Q5362329",
-     "itemLabel": "Elizabeth Arden",
-     "sitelinks": "4"
-    },
-    {
-     "item": "Q3285626",
-     "itemLabel": "Mane SA",
-     "sitelinks": "4"
-    },
-    {
-     "item": "Q3365053",
-     "itemLabel": "Parfums Christian Dior",
-     "sitelinks": "4"
-    },
-    {
-     "item": "Q5364466",
-     "itemLabel": "Ella Baché",
-     "sitelinks": "4"
-    },
-    {
-     "item": "Q5422801",
-     "itemLabel": "e.l.f. Cosmetics",
-     "sitelinks": "4"
-    },
-    {
-     "item": "Q5842302",
-     "itemLabel": "Jabot Cosmetics",
-     "sitelinks": "4"
-    },
-    {
-     "item": "Q6523325",
-     "itemLabel": "Lenthéric",
-     "sitelinks": "4"
-    },
-    {
-     "item": "Q7073219",
-     "itemLabel": "O Boticário",
-     "sitelinks": "4"
-    },
-    {
-     "item": "Q22343638",
-     "itemLabel": "Kryolan",
-     "sitelinks": "4"
-    },
-    {
-     "item": "Q48941923",
-     "itemLabel": "Natura Siberica",
-     "sitelinks": "4"
-    },
-    {
-     "item": "Q13013832",
-     "itemLabel": "Karmarts",
-     "sitelinks": "4"
-    },
-    {
-     "item": "Q19988222",
-     "itemLabel": "Tory Burch LLC",
-     "sitelinks": "4"
-    },
-    {
-     "item": "Q106670902",
-     "itemLabel": "Charlotte Tilbury Beauty",
-     "sitelinks": "4"
-    },
-    {
-     "item": "Q132188357",
-     "itemLabel": "Codex Labs",
-     "sitelinks": "4"
-    },
-    {
-     "item": "Q54959010",
-     "itemLabel": "ColourPop Cosmetics",
-     "sitelinks": "4"
-    },
-    {
-     "item": "Q60743811",
-     "itemLabel": "Huda Beauty",
-     "sitelinks": "4"
-    },
-    {
-     "item": "Q67810810",
-     "itemLabel": "Dermacol",
-     "sitelinks": "4"
-    },
-    {
-     "item": "Q10536847",
-     "itemLabel": "IsaDora cosmetics",
-     "sitelinks": "4"
-    },
-    {
-     "item": "Q5580952",
-     "itemLabel": "Golrang Industrial Group",
-     "sitelinks": "4"
-    },
-    {
-     "item": "Q6786143",
-     "itemLabel": "Matas",
-     "sitelinks": "4"
-    },
-    {
-     "item": "Q1776388",
-     "itemLabel": "Klosterfrau Melissengeist",
-     "sitelinks": "3"
-    },
-    {
-     "item": "Q17008691",
-     "itemLabel": "Jurlique",
-     "sitelinks": "3"
-    },
-    {
-     "item": "Q9390905",
-     "itemLabel": "Ziaja",
-     "sitelinks": "3"
-    },
-    {
-     "item": "Q3888961",
-     "itemLabel": "Paglieri",
-     "sitelinks": "3"
-    },
-    {
-     "item": "Q4733723",
-     "itemLabel": "Almay",
-     "sitelinks": "3"
-    },
-    {
-     "item": "Q8080013",
-     "itemLabel": "Ĭsa Knox",
-     "sitelinks": "3"
-    },
-    {
-     "item": "Q7462961",
-     "itemLabel": "Shaklee",
-     "sitelinks": "3"
-    },
-    {
-     "item": "Q7520975",
-     "itemLabel": "SimplySiti",
-     "sitelinks": "3"
-    },
-    {
-     "item": "Q23731275",
-     "itemLabel": "CeraVe",
-     "sitelinks": "3"
-    },
-    {
-     "item": "Q27863816",
-     "itemLabel": "Brihans Natural Products",
-     "sitelinks": "3"
-    },
-    {
-     "item": "Q48989740",
-     "itemLabel": "Bielenda Group",
-     "sitelinks": "3"
-    },
-    {
-     "item": "Q72342808",
-     "itemLabel": "Jeffree Star Cosmetics",
-     "sitelinks": "3"
-    },
-    {
-     "item": "Q76089779",
-     "itemLabel": "Il Makiage",
-     "sitelinks": "3"
-    },
-    {
-     "item": "Q85865456",
-     "itemLabel": "Glossier",
-     "sitelinks": "3"
-    },
-    {
-     "item": "Q119051016",
-     "itemLabel": "L'Occitane Group",
-     "sitelinks": "3"
-    },
-    {
-     "item": "Q5655156",
-     "itemLabel": "Hard Candy, LLC",
-     "sitelinks": "3"
-    },
-    {
-     "item": "Q7405065",
-     "itemLabel": "Sally Beauty Holdings",
-     "sitelinks": "3"
-    },
-    {
-     "item": "Q17192252",
-     "itemLabel": "Albion",
-     "sitelinks": "2"
-    },
-    {
-     "item": "Q4874312",
-     "itemLabel": "Bayankala",
-     "sitelinks": "2"
-    },
-    {
-     "item": "Q4930376",
-     "itemLabel": "Bluemercury",
-     "sitelinks": "2"
-    },
-    {
-     "item": "Q5050948",
-     "itemLabel": "Caswell-Massey",
-     "sitelinks": "2"
-    },
-    {
-     "item": "Q6726282",
-     "itemLabel": "Madame C.J. Walker Manufacturing Company",
-     "sitelinks": "2"
-    },
-    {
-     "item": "Q7721109",
-     "itemLabel": "The Campana Company",
-     "sitelinks": "2"
-    },
-    {
-     "item": "Q7756719",
-     "itemLabel": "The Perfume Shop",
-     "sitelinks": "2"
-    },
-    {
-     "item": "Q7880095",
-     "itemLabel": "Ultima II",
-     "sitelinks": "2"
-    },
-    {
-     "item": "Q30595236",
-     "itemLabel": "Piesse & Lubin",
-     "sitelinks": "2"
-    },
-    {
-     "item": "Q85816886",
-     "itemLabel": "Younique",
-     "sitelinks": "2"
-    },
-    {
-     "item": "Q138604040",
-     "itemLabel": "Booksy",
-     "sitelinks": "2"
-    },
-    {
-     "item": "Q51643883",
-     "itemLabel": "Carl A. Høyers Stomatolfabrikk",
-     "sitelinks": "2"
-    },
-    {
-     "item": "Q136222804",
-     "itemLabel": "FOREO",
-     "sitelinks": "2"
-    },
-    {
-     "item": "Q104844059",
-     "itemLabel": "Merle Norman Cosmetics",
-     "sitelinks": "2"
-    },
-    {
-     "item": "Q107313639",
-     "itemLabel": "Lipsy Limited",
-     "sitelinks": "2"
-    },
-    {
-     "item": "Q98830365",
-     "itemLabel": "Aravind Laboratories",
-     "sitelinks": "2"
-    },
-    {
-     "item": "Q4529583",
-     "itemLabel": "Evalar",
-     "sitelinks": "2"
-    },
-    {
-     "item": "Q7592028",
-     "itemLabel": "St. Tropez",
-     "sitelinks": "2"
-    },
-    {
-     "item": "Q17077228",
-     "itemLabel": "Rachel K",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q6888376",
-     "itemLabel": "Modelinia",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q6904029",
-     "itemLabel": "Montagne Jeunesse",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q7077217",
-     "itemLabel": "odaban",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q7928246",
-     "itemLabel": "Vie at Home",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q22908167",
-     "itemLabel": "RealSelf",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q23671678",
-     "itemLabel": "Tarte, Inc.",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q28147933",
-     "itemLabel": "Poro College",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q28222828",
-     "itemLabel": "Beautycounter",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q28448277",
-     "itemLabel": "The Art and Olfaction Awards",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q29467841",
-     "itemLabel": "Barry M",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q30063733",
-     "itemLabel": "Koscot Interplanetary",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q30593181",
-     "itemLabel": "Ipsy",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q30643120",
-     "itemLabel": "Clive Christian Perfume",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q44631749",
-     "itemLabel": "Saje Natural Wellness",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q33308819",
-     "itemLabel": "Credo",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q16835173",
-     "itemLabel": "DEX New York",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q16864872",
-     "itemLabel": "Ebony Fashion Fair",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q21593047",
-     "itemLabel": "Dermstore",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q85847172",
-     "itemLabel": "Seacret",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q85944707",
-     "itemLabel": "Morphe",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q119862489",
-     "itemLabel": "Trixie Cosmetics",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q130425958",
-     "itemLabel": "SHEGLAM",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q133258700",
-     "itemLabel": "H Beauty",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q58494514",
-     "itemLabel": "Milk Makeup",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q135901859",
-     "itemLabel": "Mrs. India Inc",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q139751043",
-     "itemLabel": "Tira",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q139667832",
-     "itemLabel": "Prescriptives",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q140129210",
-     "itemLabel": "Beauty Pie",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q140471223",
-     "itemLabel": "Cocosolis",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q109000979",
-     "itemLabel": "Revolution Beauty",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q109970024",
-     "itemLabel": "Beauty Bakerie",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q124244482",
-     "itemLabel": "Luna Daily",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q124547645",
-     "itemLabel": "Drunk Elephant",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q126811307",
-     "itemLabel": "Atelier Rebul",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q85845553",
-     "itemLabel": "Bondi Sands",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q4792656",
-     "itemLabel": "Armand Dupree",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q7917662",
-     "itemLabel": "Vbeaute",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q7933168",
-     "itemLabel": "Violent Lips",
-     "sitelinks": "1"
+     "project": "en.wikipedia",
+     "article": "Citizen_Watch",
+     "granularity": "daily",
+     "timestamp": "2026102900",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 33
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Citizen_Watch",
+     "granularity": "daily",
+     "timestamp": "2026103000",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 42
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Citizen_Watch",
+     "granularity": "daily",
+     "timestamp": "2026103100",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 26
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Citizen_Watch",
+     "granularity": "daily",
+     "timestamp": "2026110100",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 37
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Citizen_Watch",
+     "granularity": "daily",
+     "timestamp": "2026110200",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 41
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Citizen_Watch",
+     "granularity": "daily",
+     "timestamp": "2026110300",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 30
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Citizen_Watch",
+     "granularity": "daily",
+     "timestamp": "2026110400",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 33
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Citizen_Watch",
+     "granularity": "daily",
+     "timestamp": "2026110500",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 33
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Citizen_Watch",
+     "granularity": "daily",
+     "timestamp": "2026110600",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 45
     }
    ]
   },
-  "mealkits": {
-   "count": 11,
-   "rows": [
+  "Citizen_Watch|automated": {
+   "items": [
     {
-     "item": "Q23014836",
-     "itemLabel": "Q23014836",
-     "sitelinks": "17"
+     "project": "en.wikipedia",
+     "article": "Citizen_Watch",
+     "granularity": "daily",
+     "timestamp": "2026101800",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 68
     },
     {
-     "item": "Q26913624",
-     "itemLabel": "Blue Apron",
-     "sitelinks": "6"
+     "project": "en.wikipedia",
+     "article": "Citizen_Watch",
+     "granularity": "daily",
+     "timestamp": "2026101900",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 66
     },
     {
-     "item": "Q54621402",
-     "itemLabel": "Goodfood Market",
-     "sitelinks": "4"
+     "project": "en.wikipedia",
+     "article": "Citizen_Watch",
+     "granularity": "daily",
+     "timestamp": "2026102000",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 52
     },
     {
-     "item": "Q24886395",
-     "itemLabel": "Home Chef",
-     "sitelinks": "3"
+     "project": "en.wikipedia",
+     "article": "Citizen_Watch",
+     "granularity": "daily",
+     "timestamp": "2026102100",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 54
     },
     {
-     "item": "Q5588477",
-     "itemLabel": "Gousto",
-     "sitelinks": "3"
+     "project": "en.wikipedia",
+     "article": "Citizen_Watch",
+     "granularity": "daily",
+     "timestamp": "2026102200",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 51
     },
     {
-     "item": "Q96241460",
-     "itemLabel": "Cook it",
-     "sitelinks": "3"
+     "project": "en.wikipedia",
+     "article": "Citizen_Watch",
+     "granularity": "daily",
+     "timestamp": "2026102300",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 60
     },
     {
-     "item": "Q39073838",
-     "itemLabel": "Plated",
-     "sitelinks": "2"
+     "project": "en.wikipedia",
+     "article": "Citizen_Watch",
+     "granularity": "daily",
+     "timestamp": "2026102400",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 56
     },
     {
-     "item": "Q109849577",
-     "itemLabel": "Mindful Chef",
-     "sitelinks": "1"
+     "project": "en.wikipedia",
+     "article": "Citizen_Watch",
+     "granularity": "daily",
+     "timestamp": "2026102500",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 66
     },
     {
-     "item": "Q23023560",
-     "itemLabel": "Sun Basket",
-     "sitelinks": "1"
+     "project": "en.wikipedia",
+     "article": "Citizen_Watch",
+     "granularity": "daily",
+     "timestamp": "2026102600",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 60
     },
     {
-     "item": "Q23461804",
-     "itemLabel": "My Food Bag",
-     "sitelinks": "1"
+     "project": "en.wikipedia",
+     "article": "Citizen_Watch",
+     "granularity": "daily",
+     "timestamp": "2026102700",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 57
     },
     {
-     "item": "Q23461961",
-     "itemLabel": "SimplyCook",
-     "sitelinks": "1"
+     "project": "en.wikipedia",
+     "article": "Citizen_Watch",
+     "granularity": "daily",
+     "timestamp": "2026102800",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 39
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Citizen_Watch",
+     "granularity": "daily",
+     "timestamp": "2026102900",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 55
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Citizen_Watch",
+     "granularity": "daily",
+     "timestamp": "2026103000",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 66
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Citizen_Watch",
+     "granularity": "daily",
+     "timestamp": "2026103100",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 52
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Citizen_Watch",
+     "granularity": "daily",
+     "timestamp": "2026110100",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 64
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Citizen_Watch",
+     "granularity": "daily",
+     "timestamp": "2026110200",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 45
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Citizen_Watch",
+     "granularity": "daily",
+     "timestamp": "2026110300",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 52
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Citizen_Watch",
+     "granularity": "daily",
+     "timestamp": "2026110400",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 54
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Citizen_Watch",
+     "granularity": "daily",
+     "timestamp": "2026110500",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 51
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Citizen_Watch",
+     "granularity": "daily",
+     "timestamp": "2026110600",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 35
     }
    ]
   },
-  "plumbing": {
-   "count": 6,
-   "rows": [
+  "Seiko|user": {
+   "items": [
     {
-     "item": "Q1751566",
-     "itemLabel": "Toto Ltd.",
-     "sitelinks": "24"
+     "project": "en.wikipedia",
+     "article": "Seiko",
+     "granularity": "daily",
+     "timestamp": "2026101800",
+     "access": "all-access",
+     "agent": "user",
+     "views": 501
     },
     {
-     "item": "Q316477",
-     "itemLabel": "Grohe",
-     "sitelinks": "20"
+     "project": "en.wikipedia",
+     "article": "Seiko",
+     "granularity": "daily",
+     "timestamp": "2026101900",
+     "access": "all-access",
+     "agent": "user",
+     "views": 499
     },
     {
-     "item": "Q5158063",
-     "itemLabel": "Conair Corporation",
-     "sitelinks": "10"
+     "project": "en.wikipedia",
+     "article": "Seiko",
+     "granularity": "daily",
+     "timestamp": "2026102000",
+     "access": "all-access",
+     "agent": "user",
+     "views": 481
     },
     {
-     "item": "Q4745165",
-     "itemLabel": "American Standard Brands",
-     "sitelinks": "4"
+     "project": "en.wikipedia",
+     "article": "Seiko",
+     "granularity": "daily",
+     "timestamp": "2026102100",
+     "access": "all-access",
+     "agent": "user",
+     "views": 476
     },
     {
-     "item": "Q7541067",
-     "itemLabel": "Sloan Valve Company",
-     "sitelinks": "4"
+     "project": "en.wikipedia",
+     "article": "Seiko",
+     "granularity": "daily",
+     "timestamp": "2026102200",
+     "access": "all-access",
+     "agent": "user",
+     "views": 508
     },
     {
-     "item": "Q19871557",
-     "itemLabel": "Bristan",
-     "sitelinks": "3"
+     "project": "en.wikipedia",
+     "article": "Seiko",
+     "granularity": "daily",
+     "timestamp": "2026102300",
+     "access": "all-access",
+     "agent": "user",
+     "views": 453
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Seiko",
+     "granularity": "daily",
+     "timestamp": "2026102400",
+     "access": "all-access",
+     "agent": "user",
+     "views": 522
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Seiko",
+     "granularity": "daily",
+     "timestamp": "2026102500",
+     "access": "all-access",
+     "agent": "user",
+     "views": 527
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Seiko",
+     "granularity": "daily",
+     "timestamp": "2026102600",
+     "access": "all-access",
+     "agent": "user",
+     "views": 503
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Seiko",
+     "granularity": "daily",
+     "timestamp": "2026102700",
+     "access": "all-access",
+     "agent": "user",
+     "views": 443
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Seiko",
+     "granularity": "daily",
+     "timestamp": "2026102800",
+     "access": "all-access",
+     "agent": "user",
+     "views": 439
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Seiko",
+     "granularity": "daily",
+     "timestamp": "2026102900",
+     "access": "all-access",
+     "agent": "user",
+     "views": 472
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Seiko",
+     "granularity": "daily",
+     "timestamp": "2026103000",
+     "access": "all-access",
+     "agent": "user",
+     "views": 463
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Seiko",
+     "granularity": "daily",
+     "timestamp": "2026103100",
+     "access": "all-access",
+     "agent": "user",
+     "views": 438
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Seiko",
+     "granularity": "daily",
+     "timestamp": "2026110100",
+     "access": "all-access",
+     "agent": "user",
+     "views": 491
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Seiko",
+     "granularity": "daily",
+     "timestamp": "2026110200",
+     "access": "all-access",
+     "agent": "user",
+     "views": 508
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Seiko",
+     "granularity": "daily",
+     "timestamp": "2026110300",
+     "access": "all-access",
+     "agent": "user",
+     "views": 460
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Seiko",
+     "granularity": "daily",
+     "timestamp": "2026110400",
+     "access": "all-access",
+     "agent": "user",
+     "views": 415
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Seiko",
+     "granularity": "daily",
+     "timestamp": "2026110500",
+     "access": "all-access",
+     "agent": "user",
+     "views": 456
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Seiko",
+     "granularity": "daily",
+     "timestamp": "2026110600",
+     "access": "all-access",
+     "agent": "user",
+     "views": 493
     }
    ]
   },
-  "marketplaces": {
-   "count": 99,
-   "rows": [
+  "Seiko|spider": {
+   "items": [
+    {
+     "project": "en.wikipedia",
+     "article": "Seiko",
+     "granularity": "daily",
+     "timestamp": "2026101800",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 142
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Seiko",
+     "granularity": "daily",
+     "timestamp": "2026101900",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 109
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Seiko",
+     "granularity": "daily",
+     "timestamp": "2026102000",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 159
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Seiko",
+     "granularity": "daily",
+     "timestamp": "2026102100",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 86
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Seiko",
+     "granularity": "daily",
+     "timestamp": "2026102200",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 60
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Seiko",
+     "granularity": "daily",
+     "timestamp": "2026102300",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 103
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Seiko",
+     "granularity": "daily",
+     "timestamp": "2026102400",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 56
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Seiko",
+     "granularity": "daily",
+     "timestamp": "2026102500",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 88
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Seiko",
+     "granularity": "daily",
+     "timestamp": "2026102600",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 97
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Seiko",
+     "granularity": "daily",
+     "timestamp": "2026102700",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 81
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Seiko",
+     "granularity": "daily",
+     "timestamp": "2026102800",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 63
+    },
     {
-     "item": "Q58024",
-     "itemLabel": "eBay",
-     "sitelinks": "91"
-    },
-    {
-     "item": "Q114258161",
-     "itemLabel": "Temu",
-     "sitelinks": "49"
-    },
-    {
-     "item": "Q29904317",
-     "itemLabel": "AliExpress",
-     "sitelinks": "49"
-    },
-    {
-     "item": "Q107377209",
-     "itemLabel": "Shein",
-     "sitelinks": "41"
-    },
-    {
-     "item": "Q2117484",
-     "itemLabel": "Taobao",
-     "sitelinks": "34"
-    },
-    {
-     "item": "Q7501150",
-     "itemLabel": "Shopify",
-     "sitelinks": "33"
-    },
-    {
-     "item": "Q685967",
-     "itemLabel": "Kaufland",
-     "sitelinks": "31"
-    },
-    {
-     "item": "Q1948478",
-     "itemLabel": "OLX",
-     "sitelinks": "28"
-    },
-    {
-     "item": "Q676585",
-     "itemLabel": "Fnac",
-     "sitelinks": "24"
-    },
-    {
-     "item": "Q5410132",
-     "itemLabel": "Fiverr",
-     "sitelinks": "22"
-    },
-    {
-     "item": "Q11935495",
-     "itemLabel": "Vinted",
-     "sitelinks": "21"
-    },
-    {
-     "item": "Q54863641",
-     "itemLabel": "Shopee",
-     "sitelinks": "21"
-    },
-    {
-     "item": "Q106650129",
-     "itemLabel": "OpenSea",
-     "sitelinks": "20"
-    },
-    {
-     "item": "Q3344170",
-     "itemLabel": "Upwork",
-     "sitelinks": "19"
-    },
-    {
-     "item": "Q47796826",
-     "itemLabel": "Wish.com",
-     "sitelinks": "18"
-    },
-    {
-     "item": "Q1204827",
-     "itemLabel": "Q1204827",
-     "sitelinks": "17"
-    },
-    {
-     "item": "Q58014",
-     "itemLabel": "Allegro",
-     "sitelinks": "15"
-    },
-    {
-     "item": "Q12521890",
-     "itemLabel": "Tokopedia",
-     "sitelinks": "14"
-    },
-    {
-     "item": "Q60851537",
-     "itemLabel": "Joom",
-     "sitelinks": "13"
-    },
-    {
-     "item": "Q18712957",
-     "itemLabel": "Farfetch",
-     "sitelinks": "12"
-    },
-    {
-     "item": "Q4034642",
-     "itemLabel": "avito.ru",
-     "sitelinks": "11"
-    },
-    {
-     "item": "Q21019721",
-     "itemLabel": "Mercari",
-     "sitelinks": "8"
-    },
-    {
-     "item": "Q12476649",
-     "itemLabel": "Blibli",
-     "sitelinks": "7"
-    },
-    {
-     "item": "Q4537982",
-     "itemLabel": "Yandex Market",
-     "sitelinks": "7"
-    },
-    {
-     "item": "Q609913",
-     "itemLabel": "bol",
-     "sitelinks": "7"
-    },
-    {
-     "item": "Q16382903",
-     "itemLabel": "BrickLink",
-     "sitelinks": "7"
-    },
-    {
-     "item": "Q3228701",
-     "itemLabel": "leboncoin",
-     "sitelinks": "6"
-    },
-    {
-     "item": "Q17008943",
-     "itemLabel": "LocalBitcoins",
-     "sitelinks": "6"
-    },
-    {
-     "item": "Q2735739",
-     "itemLabel": "Rakuten France",
-     "sitelinks": "5"
-    },
-    {
-     "item": "Q2943530",
-     "itemLabel": "Cdiscount",
-     "sitelinks": "5"
-    },
-    {
-     "item": "Q7303547",
-     "itemLabel": "Redbubble",
-     "sitelinks": "5"
-    },
-    {
-     "item": "Q16172136",
-     "itemLabel": "Qoo10.jp",
-     "sitelinks": "5"
-    },
-    {
-     "item": "Q18207238",
-     "itemLabel": "OpenBazaar",
-     "sitelinks": "5"
-    },
-    {
-     "item": "Q97658635",
-     "itemLabel": "Lamoda",
-     "sitelinks": "4"
-    },
-    {
-     "item": "Q125981507",
-     "itemLabel": "TikTok Shop",
-     "sitelinks": "4"
-    },
-    {
-     "item": "Q4051696",
-     "itemLabel": "Tradera",
-     "sitelinks": "4"
-    },
-    {
-     "item": "Q1068745",
-     "itemLabel": "Check24",
-     "sitelinks": "4"
-    },
-    {
-     "item": "Q28127117",
-     "itemLabel": "CGTrader",
-     "sitelinks": "4"
-    },
-    {
-     "item": "Q18168341",
-     "itemLabel": "rover.com",
-     "sitelinks": "4"
-    },
-    {
-     "item": "Q138854957",
-     "itemLabel": "Haizol",
-     "sitelinks": "4"
-    },
-    {
-     "item": "Q55775893",
-     "itemLabel": "StockX",
-     "sitelinks": "4"
-    },
-    {
-     "item": "Q21172222",
-     "itemLabel": "Fever",
-     "sitelinks": "3"
-    },
-    {
-     "item": "Q7546910",
-     "itemLabel": "SnagAJob.com",
-     "sitelinks": "3"
-    },
-    {
-     "item": "Q5036903",
-     "itemLabel": "Capterra",
-     "sitelinks": "3"
-    },
-    {
-     "item": "Q7831908",
-     "itemLabel": "TradeMe",
-     "sitelinks": "3"
-    },
-    {
-     "item": "Q17050956",
-     "itemLabel": "ClickBus",
-     "sitelinks": "3"
-    },
-    {
-     "item": "Q17091141",
-     "itemLabel": "Vrbo",
-     "sitelinks": "3"
-    },
-    {
-     "item": "Q18287150",
-     "itemLabel": "Barnebys",
-     "sitelinks": "3"
-    },
-    {
-     "item": "Q18395635",
-     "itemLabel": "Q18395635",
-     "sitelinks": "3"
-    },
-    {
-     "item": "Q22907444",
-     "itemLabel": "OfferUp",
-     "sitelinks": "3"
-    },
-    {
-     "item": "Q138791818",
-     "itemLabel": "GuruWalk",
-     "sitelinks": "3"
-    },
-    {
-     "item": "Q39059538",
-     "itemLabel": "jiji.ng",
-     "sitelinks": "3"
-    },
-    {
-     "item": "Q113371997",
-     "itemLabel": "24S",
-     "sitelinks": "2"
-    },
-    {
-     "item": "Q97371372",
-     "itemLabel": "Maremagnum",
-     "sitelinks": "2"
-    },
-    {
-     "item": "Q97961181",
-     "itemLabel": "Bookimed",
-     "sitelinks": "2"
-    },
-    {
-     "item": "Q20715684",
-     "itemLabel": "Goldbelly",
-     "sitelinks": "2"
-    },
-    {
-     "item": "Q18216788",
-     "itemLabel": "Chairish",
-     "sitelinks": "2"
-    },
-    {
-     "item": "Q138604040",
-     "itemLabel": "Booksy",
-     "sitelinks": "2"
-    },
-    {
-     "item": "Q124304528",
-     "itemLabel": "Clicktrans",
-     "sitelinks": "2"
-    },
-    {
-     "item": "Q11863880",
-     "itemLabel": "huuto.net",
-     "sitelinks": "2"
-    },
-    {
-     "item": "Q5323107",
-     "itemLabel": "eHealthInsurance",
-     "sitelinks": "2"
-    },
-    {
-     "item": "Q6084252",
-     "itemLabel": "Çiçeksepeti",
-     "sitelinks": "2"
-    },
-    {
-     "item": "Q17085896",
-     "itemLabel": "TickPick",
-     "sitelinks": "2"
-    },
-    {
-     "item": "Q17144066",
-     "itemLabel": "Ticket Liquidator",
-     "sitelinks": "2"
-    },
-    {
-     "item": "Q20026895",
-     "itemLabel": "MyMiniFactory",
-     "sitelinks": "2"
-    },
-    {
-     "item": "Q20026900",
-     "itemLabel": "Pinshape",
-     "sitelinks": "2"
-    },
-    {
-     "item": "Q21041436",
-     "itemLabel": "Tor Carding Forum",
-     "sitelinks": "2"
-    },
-    {
-     "item": "Q21463663",
-     "itemLabel": "TodayTix",
-     "sitelinks": "2"
-    },
-    {
-     "item": "Q24204315",
-     "itemLabel": "Letgo",
-     "sitelinks": "2"
-    },
-    {
-     "item": "Q140287877",
-     "itemLabel": "Lazada Philippines",
-     "sitelinks": "2"
-    },
-    {
-     "item": "Q55735432",
-     "itemLabel": "TradeKorea",
-     "sitelinks": "2"
-    },
-    {
-     "item": "Q104856323",
-     "itemLabel": "Teachers Pay Teachers",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q108600562",
-     "itemLabel": "Minecraft Marketplace",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q27889316",
-     "itemLabel": "BoutiqueAfricaine.com",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q22080310",
-     "itemLabel": "Bark",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q125345974",
-     "itemLabel": "MyDeal",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q14644751",
-     "itemLabel": "becoacht.com",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q17019397",
-     "itemLabel": "Oneflare",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q19646230",
-     "itemLabel": "Luxify",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q117767926",
-     "itemLabel": "TakeLessons",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q131553572",
-     "itemLabel": "Daft.ie",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q128265812",
-     "itemLabel": "Propstore",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q138545698",
-     "itemLabel": "POIZON",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q6675775",
-     "itemLabel": "LoopNet",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q6850790",
-     "itemLabel": "Milanuncios",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q7166413",
-     "itemLabel": "Pepperfry.com",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q7532027",
-     "itemLabel": "sittercity.com",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q8029787",
-     "itemLabel": "Wolf & Badger",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q19903400",
-     "itemLabel": "LendKey",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q19903598",
-     "itemLabel": "reissued.com",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q20715068",
-     "itemLabel": "Shift",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q20984297",
-     "itemLabel": "Sendo.vn",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q22908167",
-     "itemLabel": "RealSelf",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q22909454",
-     "itemLabel": "ToursByLocals",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q27150174",
-     "itemLabel": "Peerspace",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q65090792",
-     "itemLabel": "The RealReal",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q96373794",
-     "itemLabel": "Bookshop.org",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q48791881",
-     "itemLabel": "Spacer",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q54958366",
-     "itemLabel": "Tradesy",
-     "sitelinks": "1"
+     "project": "en.wikipedia",
+     "article": "Seiko",
+     "granularity": "daily",
+     "timestamp": "2026102900",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 93
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Seiko",
+     "granularity": "daily",
+     "timestamp": "2026103000",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 67
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Seiko",
+     "granularity": "daily",
+     "timestamp": "2026103100",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 55
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Seiko",
+     "granularity": "daily",
+     "timestamp": "2026110100",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 80
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Seiko",
+     "granularity": "daily",
+     "timestamp": "2026110200",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 63
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Seiko",
+     "granularity": "daily",
+     "timestamp": "2026110300",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 131
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Seiko",
+     "granularity": "daily",
+     "timestamp": "2026110400",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 95
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Seiko",
+     "granularity": "daily",
+     "timestamp": "2026110500",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 86
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Seiko",
+     "granularity": "daily",
+     "timestamp": "2026110600",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 70
     }
    ]
   },
-  "jewelry_retail": {
-   "count": 37,
-   "rows": [
+  "Seiko|automated": {
+   "items": [
     {
-     "item": "Q1066858",
-     "itemLabel": "Tiffany & Co.",
-     "sitelinks": "47"
+     "project": "en.wikipedia",
+     "article": "Seiko",
+     "granularity": "daily",
+     "timestamp": "2026101800",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 79
     },
     {
-     "item": "Q538587",
-     "itemLabel": "Cartier",
-     "sitelinks": "42"
+     "project": "en.wikipedia",
+     "article": "Seiko",
+     "granularity": "daily",
+     "timestamp": "2026101900",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 111
     },
     {
-     "item": "Q806085",
-     "itemLabel": "Banana Republic",
-     "sitelinks": "23"
+     "project": "en.wikipedia",
+     "article": "Seiko",
+     "granularity": "daily",
+     "timestamp": "2026102000",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 130
     },
     {
-     "item": "Q1435535",
-     "itemLabel": "Folli Follie",
-     "sitelinks": "13"
+     "project": "en.wikipedia",
+     "article": "Seiko",
+     "granularity": "daily",
+     "timestamp": "2026102100",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 94
     },
     {
-     "item": "Q7444725",
-     "itemLabel": "Sector No Limits",
-     "sitelinks": "9"
+     "project": "en.wikipedia",
+     "article": "Seiko",
+     "granularity": "daily",
+     "timestamp": "2026102200",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 93
     },
     {
-     "item": "Q7512923",
-     "itemLabel": "Signet Jewelers Limited",
-     "sitelinks": "6"
+     "project": "en.wikipedia",
+     "article": "Seiko",
+     "granularity": "daily",
+     "timestamp": "2026102300",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 103
     },
     {
-     "item": "Q3308250",
-     "itemLabel": "Michael Hill Jeweller",
-     "sitelinks": "5"
+     "project": "en.wikipedia",
+     "article": "Seiko",
+     "granularity": "daily",
+     "timestamp": "2026102400",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 131
     },
     {
-     "item": "Q3300085",
-     "itemLabel": "Mauboussin",
-     "sitelinks": "5"
+     "project": "en.wikipedia",
+     "article": "Seiko",
+     "granularity": "daily",
+     "timestamp": "2026102500",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 91
     },
     {
-     "item": "Q16841180",
-     "itemLabel": "Hardy Brothers",
-     "sitelinks": "5"
+     "project": "en.wikipedia",
+     "article": "Seiko",
+     "granularity": "daily",
+     "timestamp": "2026102600",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 101
     },
     {
-     "item": "Q11341902",
-     "itemLabel": "Mikimoto",
-     "sitelinks": "4"
+     "project": "en.wikipedia",
+     "article": "Seiko",
+     "granularity": "daily",
+     "timestamp": "2026102700",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 92
     },
     {
-     "item": "Q16995161",
-     "itemLabel": "Helzberg Diamonds",
-     "sitelinks": "4"
+     "project": "en.wikipedia",
+     "article": "Seiko",
+     "granularity": "daily",
+     "timestamp": "2026102800",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 78
     },
     {
-     "item": "Q13415716",
-     "itemLabel": "Thomas Sabo",
-     "sitelinks": "3"
+     "project": "en.wikipedia",
+     "article": "Seiko",
+     "granularity": "daily",
+     "timestamp": "2026102900",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 103
     },
     {
-     "item": "Q3931843",
-     "itemLabel": "Mouawad",
-     "sitelinks": "3"
+     "project": "en.wikipedia",
+     "article": "Seiko",
+     "granularity": "daily",
+     "timestamp": "2026103000",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 88
     },
     {
-     "item": "Q7488019",
-     "itemLabel": "Shane Company",
-     "sitelinks": "3"
+     "project": "en.wikipedia",
+     "article": "Seiko",
+     "granularity": "daily",
+     "timestamp": "2026103100",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 92
     },
     {
-     "item": "Q5423915",
-     "itemLabel": "F. Hinds",
-     "sitelinks": "3"
+     "project": "en.wikipedia",
+     "article": "Seiko",
+     "granularity": "daily",
+     "timestamp": "2026110100",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 107
     },
     {
-     "item": "Q8065305",
-     "itemLabel": "Zale Corporation",
-     "sitelinks": "3"
+     "project": "en.wikipedia",
+     "article": "Seiko",
+     "granularity": "daily",
+     "timestamp": "2026110200",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 73
     },
     {
-     "item": "Q18162112",
-     "itemLabel": "Angus & Coote",
-     "sitelinks": "2"
+     "project": "en.wikipedia",
+     "article": "Seiko",
+     "granularity": "daily",
+     "timestamp": "2026110300",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 67
     },
     {
-     "item": "Q30688033",
-     "itemLabel": "Apan Jewellers",
-     "sitelinks": "2"
+     "project": "en.wikipedia",
+     "article": "Seiko",
+     "granularity": "daily",
+     "timestamp": "2026110400",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 88
     },
     {
-     "item": "Q4878226",
-     "itemLabel": "Beaverbrooks",
-     "sitelinks": "2"
+     "project": "en.wikipedia",
+     "article": "Seiko",
+     "granularity": "daily",
+     "timestamp": "2026110500",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 71
     },
     {
-     "item": "Q4886196",
-     "itemLabel": "Ben Moss Jewellers",
-     "sitelinks": "2"
-    },
-    {
-     "item": "Q4946656",
-     "itemLabel": "Borsheim's Fine Jewelry",
-     "sitelinks": "2"
-    },
-    {
-     "item": "Q5393358",
-     "itemLabel": "Ernest Jones",
-     "sitelinks": "2"
-    },
-    {
-     "item": "Q16993095",
-     "itemLabel": "Goldsmiths",
-     "sitelinks": "2"
-    },
-    {
-     "item": "Q17005474",
-     "itemLabel": "Goldmark Jeweller",
-     "sitelinks": "2"
-    },
-    {
-     "item": "Q18636699",
-     "itemLabel": "Wallace Bishop",
-     "sitelinks": "2"
-    },
-    {
-     "item": "Q25000196",
-     "itemLabel": "C.D. Peacock",
-     "sitelinks": "2"
-    },
-    {
-     "item": "Q20708050",
-     "itemLabel": "Ben Bridge Jeweler",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q96417583",
-     "itemLabel": "Afterthoughts",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q5086396",
-     "itemLabel": "Charm Diamond Centres",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q16992776",
-     "itemLabel": "Gerald Online",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q16994672",
-     "itemLabel": "H. J. Wilson Co.",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q28406430",
-     "itemLabel": "T.H. Baker",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q54958662",
-     "itemLabel": "QALO",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q5693076",
-     "itemLabel": "Hearts on Fire",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q7263734",
-     "itemLabel": "Pyrrha Jewelry",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q7611434",
-     "itemLabel": "Sterling Jewelers",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q7865065",
-     "itemLabel": "ULTRA Diamonds",
-     "sitelinks": "1"
+     "project": "en.wikipedia",
+     "article": "Seiko",
+     "granularity": "daily",
+     "timestamp": "2026110600",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 81
     }
    ]
   },
-  "soft_drinks": {
-   "count": 104,
-   "rows": [
+  "Casio|user": {
+   "items": [
+    {
+     "project": "en.wikipedia",
+     "article": "Casio",
+     "granularity": "daily",
+     "timestamp": "2026101800",
+     "access": "all-access",
+     "agent": "user",
+     "views": 537
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Casio",
+     "granularity": "daily",
+     "timestamp": "2026101900",
+     "access": "all-access",
+     "agent": "user",
+     "views": 570
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Casio",
+     "granularity": "daily",
+     "timestamp": "2026102000",
+     "access": "all-access",
+     "agent": "user",
+     "views": 577
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Casio",
+     "granularity": "daily",
+     "timestamp": "2026102100",
+     "access": "all-access",
+     "agent": "user",
+     "views": 620
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Casio",
+     "granularity": "daily",
+     "timestamp": "2026102200",
+     "access": "all-access",
+     "agent": "user",
+     "views": 555
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Casio",
+     "granularity": "daily",
+     "timestamp": "2026102300",
+     "access": "all-access",
+     "agent": "user",
+     "views": 555
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Casio",
+     "granularity": "daily",
+     "timestamp": "2026102400",
+     "access": "all-access",
+     "agent": "user",
+     "views": 587
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Casio",
+     "granularity": "daily",
+     "timestamp": "2026102500",
+     "access": "all-access",
+     "agent": "user",
+     "views": 613
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Casio",
+     "granularity": "daily",
+     "timestamp": "2026102600",
+     "access": "all-access",
+     "agent": "user",
+     "views": 564
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Casio",
+     "granularity": "daily",
+     "timestamp": "2026102700",
+     "access": "all-access",
+     "agent": "user",
+     "views": 502
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Casio",
+     "granularity": "daily",
+     "timestamp": "2026102800",
+     "access": "all-access",
+     "agent": "user",
+     "views": 566
+    },
     {
-     "item": "Q2813",
-     "itemLabel": "Coca-Cola",
-     "sitelinks": "153"
-    },
-    {
-     "item": "Q47719",
-     "itemLabel": "Pepsi",
-     "sitelinks": "104"
-    },
-    {
-     "item": "Q51482",
-     "itemLabel": "Red Bull",
-     "sitelinks": "65"
-    },
-    {
-     "item": "Q544293",
-     "itemLabel": "Monster Energy",
-     "sitelinks": "39"
-    },
-    {
-     "item": "Q257260",
-     "itemLabel": "OpenCola",
-     "sitelinks": "35"
-    },
-    {
-     "item": "Q720479",
-     "itemLabel": "Asahi Breweries",
-     "sitelinks": "32"
-    },
-    {
-     "item": "Q938806",
-     "itemLabel": "Irn-Bru",
-     "sitelinks": "30"
-    },
-    {
-     "item": "Q53",
-     "itemLabel": "Club-Mate",
-     "sitelinks": "27"
-    },
-    {
-     "item": "Q304992",
-     "itemLabel": "Gatorade",
-     "sitelinks": "27"
-    },
-    {
-     "item": "Q685005",
-     "itemLabel": "Ovaltine",
-     "sitelinks": "26"
-    },
-    {
-     "item": "Q1206045",
-     "itemLabel": "ramune",
-     "sitelinks": "26"
-    },
-    {
-     "item": "Q1146721",
-     "itemLabel": "Drambuie",
-     "sitelinks": "24"
-    },
-    {
-     "item": "Q934273",
-     "itemLabel": "Powerade",
-     "sitelinks": "20"
-    },
-    {
-     "item": "Q707412",
-     "itemLabel": "Sinalco",
-     "sitelinks": "19"
-    },
-    {
-     "item": "Q172209",
-     "itemLabel": "Q172209",
-     "sitelinks": "18"
-    },
-    {
-     "item": "Q284148",
-     "itemLabel": "Burn",
-     "sitelinks": "18"
-    },
-    {
-     "item": "Q383742",
-     "itemLabel": "Afri-Cola",
-     "sitelinks": "16"
-    },
-    {
-     "item": "Q1422578",
-     "itemLabel": "Spezi",
-     "sitelinks": "14"
-    },
-    {
-     "item": "Q3493770",
-     "itemLabel": "Pepsi Max",
-     "sitelinks": "14"
-    },
-    {
-     "item": "Q629009",
-     "itemLabel": "San Pellegrino",
-     "sitelinks": "12"
-    },
-    {
-     "item": "Q2471375",
-     "itemLabel": "Guaraná Antarctica",
-     "sitelinks": "11"
-    },
-    {
-     "item": "Q1165857",
-     "itemLabel": "Vinea",
-     "sitelinks": "9"
-    },
-    {
-     "item": "Q2027181",
-     "itemLabel": "Kola Real",
-     "sitelinks": "9"
-    },
-    {
-     "item": "Q3006006",
-     "itemLabel": "Crystal Pepsi",
-     "sitelinks": "9"
-    },
-    {
-     "item": "Q1817063",
-     "itemLabel": "Lemon & Paeroa",
-     "sitelinks": "9"
-    },
-    {
-     "item": "Q2975184",
-     "itemLabel": "Clamato",
-     "sitelinks": "9"
-    },
-    {
-     "item": "Q15267446",
-     "itemLabel": "A&W Root Beer",
-     "sitelinks": "9"
-    },
-    {
-     "item": "Q47529172",
-     "itemLabel": "Duchess",
-     "sitelinks": "8"
-    },
-    {
-     "item": "Q1022438",
-     "itemLabel": "C.C. Lemon",
-     "sitelinks": "8"
-    },
-    {
-     "item": "Q1044125",
-     "itemLabel": "Caro",
-     "sitelinks": "8"
-    },
-    {
-     "item": "Q24699992",
-     "itemLabel": "Apple Sidra",
-     "sitelinks": "8"
-    },
-    {
-     "item": "Q7103779",
-     "itemLabel": "Oronamin",
-     "sitelinks": "7"
-    },
-    {
-     "item": "Q3079990",
-     "itemLabel": "Four Loko",
-     "sitelinks": "7"
-    },
-    {
-     "item": "Q3306449",
-     "itemLabel": "Sierra Mist",
-     "sitelinks": "6"
-    },
-    {
-     "item": "Q7166482",
-     "itemLabel": "Pepsi Blue",
-     "sitelinks": "6"
-    },
-    {
-     "item": "Q3327455",
-     "itemLabel": "Mug Root Beer",
-     "sitelinks": "5"
-    },
-    {
-     "item": "Q97225239",
-     "itemLabel": "Nocco",
-     "sitelinks": "5"
-    },
-    {
-     "item": "Q5446350",
-     "itemLabel": "Fibe Mini",
-     "sitelinks": "5"
-    },
-    {
-     "item": "Q5769794",
-     "itemLabel": "Hires Root Beer",
-     "sitelinks": "5"
-    },
-    {
-     "item": "Q5968519",
-     "itemLabel": "IBC Root Beer",
-     "sitelinks": "5"
-    },
-    {
-     "item": "Q7907710",
-     "itemLabel": "V",
-     "sitelinks": "5"
-    },
-    {
-     "item": "Q30745703",
-     "itemLabel": "Akpan",
-     "sitelinks": "5"
-    },
-    {
-     "item": "Q55530589",
-     "itemLabel": "-196˚C Strong Zero",
-     "sitelinks": "5"
-    },
-    {
-     "item": "Q3959196",
-     "itemLabel": "Shark",
-     "sitelinks": "4"
-    },
-    {
-     "item": "Q263424",
-     "itemLabel": "Fruitopia",
-     "sitelinks": "4"
-    },
-    {
-     "item": "Q1825420",
-     "itemLabel": "Rose's lime juice",
-     "sitelinks": "4"
-    },
-    {
-     "item": "Q2262742",
-     "itemLabel": "Barr Cola",
-     "sitelinks": "4"
-    },
-    {
-     "item": "Q4048217",
-     "itemLabel": "Revo drink",
-     "sitelinks": "4"
-    },
-    {
-     "item": "Q5027077",
-     "itemLabel": "Camp Coffee",
-     "sitelinks": "4"
-    },
-    {
-     "item": "Q7166492",
-     "itemLabel": "Pepsi Zero Sugar",
-     "sitelinks": "4"
-    },
-    {
-     "item": "Q7801404",
-     "itemLabel": "Tiger Energy Drink",
-     "sitelinks": "4"
-    },
-    {
-     "item": "Q7922309",
-     "itemLabel": "Vernors",
-     "sitelinks": "4"
-    },
-    {
-     "item": "Q116271920",
-     "itemLabel": "Starry",
-     "sitelinks": "4"
-    },
-    {
-     "item": "Q2955902",
-     "itemLabel": "Champis",
-     "sitelinks": "3"
-    },
-    {
-     "item": "Q4993891",
-     "itemLabel": "Solo",
-     "sitelinks": "3"
-    },
-    {
-     "item": "Q4714042",
-     "itemLabel": "Ale-8-One",
-     "sitelinks": "3"
-    },
-    {
-     "item": "Q5506218",
-     "itemLabel": "Frostop",
-     "sitelinks": "3"
-    },
-    {
-     "item": "Q11052513",
-     "itemLabel": "Laoshan Cola",
-     "sitelinks": "3"
-    },
-    {
-     "item": "Q116347263",
-     "itemLabel": "bubly sparkling water",
-     "sitelinks": "3"
-    },
-    {
-     "item": "Q124607851",
-     "itemLabel": "DeeDo",
-     "sitelinks": "3"
-    },
-    {
-     "item": "Q124655625",
-     "itemLabel": "Polaris drinking water",
-     "sitelinks": "3"
-    },
-    {
-     "item": "Q136604589",
-     "itemLabel": "Palestine Cola",
-     "sitelinks": "3"
-    },
-    {
-     "item": "Q11264601",
-     "itemLabel": "Gabu Gabu!",
-     "sitelinks": "2"
-    },
-    {
-     "item": "Q108101704",
-     "itemLabel": "Red lemonade",
-     "sitelinks": "2"
-    },
-    {
-     "item": "Q126751995",
-     "itemLabel": "Mojo (sort drink)",
-     "sitelinks": "2"
-    },
-    {
-     "item": "Q136132285",
-     "itemLabel": "Gorilla Energy",
-     "sitelinks": "2"
-    },
-    {
-     "item": "Q111165191",
-     "itemLabel": "Kolashanpan",
-     "sitelinks": "2"
-    },
-    {
-     "item": "Q14939632",
-     "itemLabel": "Double Seven",
-     "sitelinks": "2"
-    },
-    {
-     "item": "Q15902235",
-     "itemLabel": "Big Gulp",
-     "sitelinks": "2"
-    },
-    {
-     "item": "Q16900542",
-     "itemLabel": "Goombay Punch",
-     "sitelinks": "2"
-    },
-    {
-     "item": "Q17125545",
-     "itemLabel": "Orbitz",
-     "sitelinks": "2"
-    },
-    {
-     "item": "Q48814334",
-     "itemLabel": "Brew Dr. Kombucha",
-     "sitelinks": "2"
-    },
-    {
-     "item": "Q60742371",
-     "itemLabel": "Funny Face",
-     "sitelinks": "2"
-    },
-    {
-     "item": "Q61076621",
-     "itemLabel": "Pure Leaf",
-     "sitelinks": "2"
-    },
-    {
-     "item": "Q107208174",
-     "itemLabel": "Twisted Tea",
-     "sitelinks": "2"
-    },
-    {
-     "item": "Q6786204",
-     "itemLabel": "Match",
-     "sitelinks": "2"
-    },
-    {
-     "item": "Q124048235",
-     "itemLabel": "Cisco",
-     "sitelinks": "2"
-    },
-    {
-     "item": "Q136340072",
-     "itemLabel": "Bornir Dhuchnir Doi",
-     "sitelinks": "2"
-    },
-    {
-     "item": "Q16920231",
-     "itemLabel": "Jupiña",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q48965868",
-     "itemLabel": "Eastroc Super Drink",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q106432380",
-     "itemLabel": "Pabst Blue Ribbon THC-infused seltzer",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q115978878",
-     "itemLabel": "Swee Touch Nee",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q16941360",
-     "itemLabel": "Lurvills Delight",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q16995698",
-     "itemLabel": "Kingstone Press Cider",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q17117923",
-     "itemLabel": "Virgil's Root Beer",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q20746260",
-     "itemLabel": "Mr Sherick's Shakes",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q22236223",
-     "itemLabel": "Dr. McGillicuddy's",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q24910061",
-     "itemLabel": "Paper Boat",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q4863348",
-     "itemLabel": "Barrelhead Root Beer",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q4881550",
-     "itemLabel": "Bejois Mango Drink",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q5130888",
-     "itemLabel": "Clearly Canadian",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q5139746",
-     "itemLabel": "Coco Rico",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q7084877",
-     "itemLabel": "Old Rosie",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q7118848",
-     "itemLabel": "PDQ Chocolate",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q7304900",
-     "itemLabel": "Red Rock",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q7634395",
-     "itemLabel": "Suero Oral",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q8066733",
-     "itemLabel": "Zarex",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q120727385",
-     "itemLabel": "Suiza Dairy",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q122929434",
-     "itemLabel": "Coca-Cola with Coffee",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q124077458",
-     "itemLabel": "Coca-Cola Cherry Vanilla",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q125470253",
-     "itemLabel": "Coca-Cola Spiced",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q125755189",
-     "itemLabel": "Beefamato",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q126107676",
-     "itemLabel": "Sprite Lemon+",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q127668696",
-     "itemLabel": "Más+",
-     "sitelinks": "1"
+     "project": "en.wikipedia",
+     "article": "Casio",
+     "granularity": "daily",
+     "timestamp": "2026102900",
+     "access": "all-access",
+     "agent": "user",
+     "views": 588
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Casio",
+     "granularity": "daily",
+     "timestamp": "2026103000",
+     "access": "all-access",
+     "agent": "user",
+     "views": 444
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Casio",
+     "granularity": "daily",
+     "timestamp": "2026103100",
+     "access": "all-access",
+     "agent": "user",
+     "views": 532
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Casio",
+     "granularity": "daily",
+     "timestamp": "2026110100",
+     "access": "all-access",
+     "agent": "user",
+     "views": 638
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Casio",
+     "granularity": "daily",
+     "timestamp": "2026110200",
+     "access": "all-access",
+     "agent": "user",
+     "views": 546
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Casio",
+     "granularity": "daily",
+     "timestamp": "2026110300",
+     "access": "all-access",
+     "agent": "user",
+     "views": 503
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Casio",
+     "granularity": "daily",
+     "timestamp": "2026110400",
+     "access": "all-access",
+     "agent": "user",
+     "views": 468
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Casio",
+     "granularity": "daily",
+     "timestamp": "2026110500",
+     "access": "all-access",
+     "agent": "user",
+     "views": 494
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Casio",
+     "granularity": "daily",
+     "timestamp": "2026110600",
+     "access": "all-access",
+     "agent": "user",
+     "views": 489
     }
    ]
   },
-  "us_isps": {
-   "count": 33,
-   "rows": [
+  "Casio|spider": {
+   "items": [
     {
-     "item": "Q467752",
-     "itemLabel": "Verizon",
-     "sitelinks": "50"
+     "project": "en.wikipedia",
+     "article": "Casio",
+     "granularity": "daily",
+     "timestamp": "2026101800",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 58
     },
     {
-     "item": "Q3511885",
-     "itemLabel": "T-Mobile US",
-     "sitelinks": "19"
+     "project": "en.wikipedia",
+     "article": "Casio",
+     "granularity": "daily",
+     "timestamp": "2026101900",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 44
     },
     {
-     "item": "Q1885099",
-     "itemLabel": "Time Warner Cable",
-     "sitelinks": "14"
+     "project": "en.wikipedia",
+     "article": "Casio",
+     "granularity": "daily",
+     "timestamp": "2026102000",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 72
     },
     {
-     "item": "Q5151002",
-     "itemLabel": "Xfinity",
-     "sitelinks": "12"
+     "project": "en.wikipedia",
+     "article": "Casio",
+     "granularity": "daily",
+     "timestamp": "2026102100",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 70
     },
     {
-     "item": "Q21016183",
-     "itemLabel": "Riseup",
-     "sitelinks": "11"
+     "project": "en.wikipedia",
+     "article": "Casio",
+     "granularity": "daily",
+     "timestamp": "2026102200",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 47
     },
     {
-     "item": "Q1346687",
-     "itemLabel": "Hurricane Electric",
-     "sitelinks": "11"
+     "project": "en.wikipedia",
+     "article": "Casio",
+     "granularity": "daily",
+     "timestamp": "2026102300",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 76
     },
     {
-     "item": "Q4118540",
-     "itemLabel": "RhythmOne",
-     "sitelinks": "11"
+     "project": "en.wikipedia",
+     "article": "Casio",
+     "granularity": "daily",
+     "timestamp": "2026102400",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 82
     },
     {
-     "item": "Q5179879",
-     "itemLabel": "Cox Communications",
-     "sitelinks": "10"
+     "project": "en.wikipedia",
+     "article": "Casio",
+     "granularity": "daily",
+     "timestamp": "2026102500",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 75
     },
     {
-     "item": "Q919511",
-     "itemLabel": "EarthLink",
-     "sitelinks": "8"
+     "project": "en.wikipedia",
+     "article": "Casio",
+     "granularity": "daily",
+     "timestamp": "2026102600",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 48
     },
     {
-     "item": "Q11301445",
-     "itemLabel": "Sparklight",
-     "sitelinks": "5"
+     "project": "en.wikipedia",
+     "article": "Casio",
+     "granularity": "daily",
+     "timestamp": "2026102700",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 56
     },
     {
-     "item": "Q7805197",
-     "itemLabel": "Spectrum",
-     "sitelinks": "5"
+     "project": "en.wikipedia",
+     "article": "Casio",
+     "granularity": "daily",
+     "timestamp": "2026102800",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 59
     },
     {
-     "item": "Q20001634",
-     "itemLabel": "Global Impact Investing Network",
-     "sitelinks": "5"
+     "project": "en.wikipedia",
+     "article": "Casio",
+     "granularity": "daily",
+     "timestamp": "2026102900",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 64
     },
     {
-     "item": "Q4654562",
-     "itemLabel": "AT&T U-verse",
-     "sitelinks": "3"
+     "project": "en.wikipedia",
+     "article": "Casio",
+     "granularity": "daily",
+     "timestamp": "2026103000",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 61
     },
     {
-     "item": "Q1582470",
-     "itemLabel": "Savvis",
-     "sitelinks": "3"
+     "project": "en.wikipedia",
+     "article": "Casio",
+     "granularity": "daily",
+     "timestamp": "2026103100",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 66
     },
     {
-     "item": "Q7231483",
-     "itemLabel": "Portal Software",
-     "sitelinks": "3"
+     "project": "en.wikipedia",
+     "article": "Casio",
+     "granularity": "daily",
+     "timestamp": "2026110100",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 58
     },
     {
-     "item": "Q6998829",
-     "itemLabel": "Netcom",
-     "sitelinks": "2"
+     "project": "en.wikipedia",
+     "article": "Casio",
+     "granularity": "daily",
+     "timestamp": "2026110200",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 62
     },
     {
-     "item": "Q7561773",
-     "itemLabel": "Sonic.net",
-     "sitelinks": "2"
+     "project": "en.wikipedia",
+     "article": "Casio",
+     "granularity": "daily",
+     "timestamp": "2026110300",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 50
     },
     {
-     "item": "Q7808108",
-     "itemLabel": "Ting",
-     "sitelinks": "2"
+     "project": "en.wikipedia",
+     "article": "Casio",
+     "granularity": "daily",
+     "timestamp": "2026110400",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 57
     },
     {
-     "item": "Q85791087",
-     "itemLabel": "Optimum",
-     "sitelinks": "2"
+     "project": "en.wikipedia",
+     "article": "Casio",
+     "granularity": "daily",
+     "timestamp": "2026110500",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 81
     },
     {
-     "item": "Q96419412",
-     "itemLabel": "Stargate Industries",
-     "sitelinks": "2"
-    },
-    {
-     "item": "Q4906217",
-     "itemLabel": "Big River Telephone",
-     "sitelinks": "2"
-    },
-    {
-     "item": "Q5968489",
-     "itemLabel": "iBAHN",
-     "sitelinks": "2"
-    },
-    {
-     "item": "Q134722282",
-     "itemLabel": "Loop Internet",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q16997963",
-     "itemLabel": "Juno Online Services",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q5403313",
-     "itemLabel": "Etheric Networks",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q65951698",
-     "itemLabel": "Greenlight Networks",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q6863428",
-     "itemLabel": "MindVox",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q6956098",
-     "itemLabel": "NYSERNet",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q7165838",
-     "itemLabel": "PeoplePC",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q7902489",
-     "itemLabel": "Utah Telecommunication Open Infrastructure Agency",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q7975272",
-     "itemLabel": "WaveDivision Holdings, LLC",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q5446391",
-     "itemLabel": "Fibernet Corp.",
-     "sitelinks": "1"
-    },
-    {
-     "item": "Q8042357",
-     "itemLabel": "XMission",
-     "sitelinks": "1"
+     "project": "en.wikipedia",
+     "article": "Casio",
+     "granularity": "daily",
+     "timestamp": "2026110600",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 61
     }
    ]
   },
-  "apparel": {
-   "count": 1,
-   "rows": [
+  "Casio|automated": {
+   "items": [
     {
-     "n": "875"
+     "project": "en.wikipedia",
+     "article": "Casio",
+     "granularity": "daily",
+     "timestamp": "2026101800",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 109
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Casio",
+     "granularity": "daily",
+     "timestamp": "2026101900",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 111
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Casio",
+     "granularity": "daily",
+     "timestamp": "2026102000",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 110
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Casio",
+     "granularity": "daily",
+     "timestamp": "2026102100",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 84
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Casio",
+     "granularity": "daily",
+     "timestamp": "2026102200",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 87
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Casio",
+     "granularity": "daily",
+     "timestamp": "2026102300",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 114
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Casio",
+     "granularity": "daily",
+     "timestamp": "2026102400",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 119
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Casio",
+     "granularity": "daily",
+     "timestamp": "2026102500",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 104
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Casio",
+     "granularity": "daily",
+     "timestamp": "2026102600",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 126
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Casio",
+     "granularity": "daily",
+     "timestamp": "2026102700",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 86
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Casio",
+     "granularity": "daily",
+     "timestamp": "2026102800",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 94
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Casio",
+     "granularity": "daily",
+     "timestamp": "2026102900",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 81
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Casio",
+     "granularity": "daily",
+     "timestamp": "2026103000",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 80
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Casio",
+     "granularity": "daily",
+     "timestamp": "2026103100",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 82
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Casio",
+     "granularity": "daily",
+     "timestamp": "2026110100",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 95
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Casio",
+     "granularity": "daily",
+     "timestamp": "2026110200",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 101
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Casio",
+     "granularity": "daily",
+     "timestamp": "2026110300",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 79
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Casio",
+     "granularity": "daily",
+     "timestamp": "2026110400",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 106
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Casio",
+     "granularity": "daily",
+     "timestamp": "2026110500",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 72
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Casio",
+     "granularity": "daily",
+     "timestamp": "2026110600",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 82
+    }
+   ]
+  },
+  "Bulova|user": {
+   "items": [
+    {
+     "project": "en.wikipedia",
+     "article": "Bulova",
+     "granularity": "daily",
+     "timestamp": "2026101800",
+     "access": "all-access",
+     "agent": "user",
+     "views": 313
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Bulova",
+     "granularity": "daily",
+     "timestamp": "2026101900",
+     "access": "all-access",
+     "agent": "user",
+     "views": 290
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Bulova",
+     "granularity": "daily",
+     "timestamp": "2026102000",
+     "access": "all-access",
+     "agent": "user",
+     "views": 269
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Bulova",
+     "granularity": "daily",
+     "timestamp": "2026102100",
+     "access": "all-access",
+     "agent": "user",
+     "views": 271
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Bulova",
+     "granularity": "daily",
+     "timestamp": "2026102200",
+     "access": "all-access",
+     "agent": "user",
+     "views": 271
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Bulova",
+     "granularity": "daily",
+     "timestamp": "2026102300",
+     "access": "all-access",
+     "agent": "user",
+     "views": 226
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Bulova",
+     "granularity": "daily",
+     "timestamp": "2026102400",
+     "access": "all-access",
+     "agent": "user",
+     "views": 273
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Bulova",
+     "granularity": "daily",
+     "timestamp": "2026102500",
+     "access": "all-access",
+     "agent": "user",
+     "views": 326
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Bulova",
+     "granularity": "daily",
+     "timestamp": "2026102600",
+     "access": "all-access",
+     "agent": "user",
+     "views": 304
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Bulova",
+     "granularity": "daily",
+     "timestamp": "2026102700",
+     "access": "all-access",
+     "agent": "user",
+     "views": 239
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Bulova",
+     "granularity": "daily",
+     "timestamp": "2026102800",
+     "access": "all-access",
+     "agent": "user",
+     "views": 227
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Bulova",
+     "granularity": "daily",
+     "timestamp": "2026102900",
+     "access": "all-access",
+     "agent": "user",
+     "views": 262
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Bulova",
+     "granularity": "daily",
+     "timestamp": "2026103000",
+     "access": "all-access",
+     "agent": "user",
+     "views": 294
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Bulova",
+     "granularity": "daily",
+     "timestamp": "2026103100",
+     "access": "all-access",
+     "agent": "user",
+     "views": 262
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Bulova",
+     "granularity": "daily",
+     "timestamp": "2026110100",
+     "access": "all-access",
+     "agent": "user",
+     "views": 279
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Bulova",
+     "granularity": "daily",
+     "timestamp": "2026110200",
+     "access": "all-access",
+     "agent": "user",
+     "views": 312
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Bulova",
+     "granularity": "daily",
+     "timestamp": "2026110300",
+     "access": "all-access",
+     "agent": "user",
+     "views": 272
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Bulova",
+     "granularity": "daily",
+     "timestamp": "2026110400",
+     "access": "all-access",
+     "agent": "user",
+     "views": 219
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Bulova",
+     "granularity": "daily",
+     "timestamp": "2026110500",
+     "access": "all-access",
+     "agent": "user",
+     "views": 254
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Bulova",
+     "granularity": "daily",
+     "timestamp": "2026110600",
+     "access": "all-access",
+     "agent": "user",
+     "views": 286
+    }
+   ]
+  },
+  "Bulova|spider": {
+   "items": [
+    {
+     "project": "en.wikipedia",
+     "article": "Bulova",
+     "granularity": "daily",
+     "timestamp": "2026101800",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 38
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Bulova",
+     "granularity": "daily",
+     "timestamp": "2026101900",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 22
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Bulova",
+     "granularity": "daily",
+     "timestamp": "2026102000",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 19
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Bulova",
+     "granularity": "daily",
+     "timestamp": "2026102100",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 31
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Bulova",
+     "granularity": "daily",
+     "timestamp": "2026102200",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 39
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Bulova",
+     "granularity": "daily",
+     "timestamp": "2026102300",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 35
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Bulova",
+     "granularity": "daily",
+     "timestamp": "2026102400",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 30
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Bulova",
+     "granularity": "daily",
+     "timestamp": "2026102500",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 34
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Bulova",
+     "granularity": "daily",
+     "timestamp": "2026102600",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 36
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Bulova",
+     "granularity": "daily",
+     "timestamp": "2026102700",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 28
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Bulova",
+     "granularity": "daily",
+     "timestamp": "2026102800",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 27
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Bulova",
+     "granularity": "daily",
+     "timestamp": "2026102900",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 29
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Bulova",
+     "granularity": "daily",
+     "timestamp": "2026103000",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 23
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Bulova",
+     "granularity": "daily",
+     "timestamp": "2026103100",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 32
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Bulova",
+     "granularity": "daily",
+     "timestamp": "2026110100",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 35
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Bulova",
+     "granularity": "daily",
+     "timestamp": "2026110200",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 26
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Bulova",
+     "granularity": "daily",
+     "timestamp": "2026110300",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 35
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Bulova",
+     "granularity": "daily",
+     "timestamp": "2026110400",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 22
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Bulova",
+     "granularity": "daily",
+     "timestamp": "2026110500",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 24
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Bulova",
+     "granularity": "daily",
+     "timestamp": "2026110600",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 45
+    }
+   ]
+  },
+  "Bulova|automated": {
+   "items": [
+    {
+     "project": "en.wikipedia",
+     "article": "Bulova",
+     "granularity": "daily",
+     "timestamp": "2026101800",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 49
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Bulova",
+     "granularity": "daily",
+     "timestamp": "2026101900",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 67
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Bulova",
+     "granularity": "daily",
+     "timestamp": "2026102000",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 71
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Bulova",
+     "granularity": "daily",
+     "timestamp": "2026102100",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 55
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Bulova",
+     "granularity": "daily",
+     "timestamp": "2026102200",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 36
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Bulova",
+     "granularity": "daily",
+     "timestamp": "2026102300",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 56
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Bulova",
+     "granularity": "daily",
+     "timestamp": "2026102400",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 34
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Bulova",
+     "granularity": "daily",
+     "timestamp": "2026102500",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 48
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Bulova",
+     "granularity": "daily",
+     "timestamp": "2026102600",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 56
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Bulova",
+     "granularity": "daily",
+     "timestamp": "2026102700",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 43
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Bulova",
+     "granularity": "daily",
+     "timestamp": "2026102800",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 59
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Bulova",
+     "granularity": "daily",
+     "timestamp": "2026102900",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 48
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Bulova",
+     "granularity": "daily",
+     "timestamp": "2026103000",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 92
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Bulova",
+     "granularity": "daily",
+     "timestamp": "2026103100",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 53
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Bulova",
+     "granularity": "daily",
+     "timestamp": "2026110100",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 42
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Bulova",
+     "granularity": "daily",
+     "timestamp": "2026110200",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 52
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Bulova",
+     "granularity": "daily",
+     "timestamp": "2026110300",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 50
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Bulova",
+     "granularity": "daily",
+     "timestamp": "2026110400",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 67
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Bulova",
+     "granularity": "daily",
+     "timestamp": "2026110500",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 34
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Bulova",
+     "granularity": "daily",
+     "timestamp": "2026110600",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 42
+    }
+   ]
+  },
+  "Timex|user": {
+   "items": [
+    {
+     "project": "en.wikipedia",
+     "article": "Timex",
+     "granularity": "daily",
+     "timestamp": "2026101800",
+     "access": "all-access",
+     "agent": "user",
+     "views": 14
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Timex",
+     "granularity": "daily",
+     "timestamp": "2026101900",
+     "access": "all-access",
+     "agent": "user",
+     "views": 14
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Timex",
+     "granularity": "daily",
+     "timestamp": "2026102000",
+     "access": "all-access",
+     "agent": "user",
+     "views": 14
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Timex",
+     "granularity": "daily",
+     "timestamp": "2026102100",
+     "access": "all-access",
+     "agent": "user",
+     "views": 17
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Timex",
+     "granularity": "daily",
+     "timestamp": "2026102200",
+     "access": "all-access",
+     "agent": "user",
+     "views": 17
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Timex",
+     "granularity": "daily",
+     "timestamp": "2026102300",
+     "access": "all-access",
+     "agent": "user",
+     "views": 11
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Timex",
+     "granularity": "daily",
+     "timestamp": "2026102400",
+     "access": "all-access",
+     "agent": "user",
+     "views": 21
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Timex",
+     "granularity": "daily",
+     "timestamp": "2026102500",
+     "access": "all-access",
+     "agent": "user",
+     "views": 16
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Timex",
+     "granularity": "daily",
+     "timestamp": "2026102600",
+     "access": "all-access",
+     "agent": "user",
+     "views": 20
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Timex",
+     "granularity": "daily",
+     "timestamp": "2026102700",
+     "access": "all-access",
+     "agent": "user",
+     "views": 16
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Timex",
+     "granularity": "daily",
+     "timestamp": "2026102800",
+     "access": "all-access",
+     "agent": "user",
+     "views": 22
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Timex",
+     "granularity": "daily",
+     "timestamp": "2026102900",
+     "access": "all-access",
+     "agent": "user",
+     "views": 13
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Timex",
+     "granularity": "daily",
+     "timestamp": "2026103000",
+     "access": "all-access",
+     "agent": "user",
+     "views": 18
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Timex",
+     "granularity": "daily",
+     "timestamp": "2026103100",
+     "access": "all-access",
+     "agent": "user",
+     "views": 14
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Timex",
+     "granularity": "daily",
+     "timestamp": "2026110100",
+     "access": "all-access",
+     "agent": "user",
+     "views": 26
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Timex",
+     "granularity": "daily",
+     "timestamp": "2026110200",
+     "access": "all-access",
+     "agent": "user",
+     "views": 20
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Timex",
+     "granularity": "daily",
+     "timestamp": "2026110300",
+     "access": "all-access",
+     "agent": "user",
+     "views": 9
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Timex",
+     "granularity": "daily",
+     "timestamp": "2026110400",
+     "access": "all-access",
+     "agent": "user",
+     "views": 15
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Timex",
+     "granularity": "daily",
+     "timestamp": "2026110500",
+     "access": "all-access",
+     "agent": "user",
+     "views": 22
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Timex",
+     "granularity": "daily",
+     "timestamp": "2026110600",
+     "access": "all-access",
+     "agent": "user",
+     "views": 20
+    }
+   ]
+  },
+  "Timex|spider": {
+   "items": [
+    {
+     "project": "en.wikipedia",
+     "article": "Timex",
+     "granularity": "daily",
+     "timestamp": "2026101800",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 3
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Timex",
+     "granularity": "daily",
+     "timestamp": "2026101900",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 2
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Timex",
+     "granularity": "daily",
+     "timestamp": "2026102000",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 4
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Timex",
+     "granularity": "daily",
+     "timestamp": "2026102100",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 1
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Timex",
+     "granularity": "daily",
+     "timestamp": "2026102200",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 2
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Timex",
+     "granularity": "daily",
+     "timestamp": "2026102300",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 0
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Timex",
+     "granularity": "daily",
+     "timestamp": "2026102400",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 4
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Timex",
+     "granularity": "daily",
+     "timestamp": "2026102500",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 3
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Timex",
+     "granularity": "daily",
+     "timestamp": "2026102600",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 0
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Timex",
+     "granularity": "daily",
+     "timestamp": "2026102700",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 2
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Timex",
+     "granularity": "daily",
+     "timestamp": "2026102800",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 0
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Timex",
+     "granularity": "daily",
+     "timestamp": "2026102900",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 3
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Timex",
+     "granularity": "daily",
+     "timestamp": "2026103000",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 1
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Timex",
+     "granularity": "daily",
+     "timestamp": "2026103100",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 4
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Timex",
+     "granularity": "daily",
+     "timestamp": "2026110100",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 1
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Timex",
+     "granularity": "daily",
+     "timestamp": "2026110200",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 12
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Timex",
+     "granularity": "daily",
+     "timestamp": "2026110300",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 5
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Timex",
+     "granularity": "daily",
+     "timestamp": "2026110400",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 6
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Timex",
+     "granularity": "daily",
+     "timestamp": "2026110500",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 4
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Timex",
+     "granularity": "daily",
+     "timestamp": "2026110600",
+     "access": "all-access",
+     "agent": "spider",
+     "views": 4
+    }
+   ]
+  },
+  "Timex|automated": {
+   "items": [
+    {
+     "project": "en.wikipedia",
+     "article": "Timex",
+     "granularity": "daily",
+     "timestamp": "2026101800",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 0
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Timex",
+     "granularity": "daily",
+     "timestamp": "2026101900",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 4
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Timex",
+     "granularity": "daily",
+     "timestamp": "2026102000",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 1
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Timex",
+     "granularity": "daily",
+     "timestamp": "2026102100",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 3
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Timex",
+     "granularity": "daily",
+     "timestamp": "2026102200",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 2
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Timex",
+     "granularity": "daily",
+     "timestamp": "2026102300",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 2
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Timex",
+     "granularity": "daily",
+     "timestamp": "2026102400",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 4
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Timex",
+     "granularity": "daily",
+     "timestamp": "2026102500",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 3
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Timex",
+     "granularity": "daily",
+     "timestamp": "2026102600",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 0
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Timex",
+     "granularity": "daily",
+     "timestamp": "2026102700",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 2
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Timex",
+     "granularity": "daily",
+     "timestamp": "2026102800",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 2
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Timex",
+     "granularity": "daily",
+     "timestamp": "2026102900",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 4
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Timex",
+     "granularity": "daily",
+     "timestamp": "2026103000",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 4
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Timex",
+     "granularity": "daily",
+     "timestamp": "2026103100",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 1
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Timex",
+     "granularity": "daily",
+     "timestamp": "2026110100",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 2
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Timex",
+     "granularity": "daily",
+     "timestamp": "2026110200",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 4
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Timex",
+     "granularity": "daily",
+     "timestamp": "2026110300",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 5
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Timex",
+     "granularity": "daily",
+     "timestamp": "2026110400",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 2
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Timex",
+     "granularity": "daily",
+     "timestamp": "2026110500",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 4
+    },
+    {
+     "project": "en.wikipedia",
+     "article": "Timex",
+     "granularity": "daily",
+     "timestamp": "2026110600",
+     "access": "all-access",
+     "agent": "automated",
+     "views": 1
     }
    ]
   }
