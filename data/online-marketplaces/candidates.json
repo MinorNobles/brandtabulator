@@ -1,0 +1,501 @@
+{
+ "computed_at": "2026-11-08",
+ "query": "SELECT DISTINCT ?item ?itemLabel ?sitelinks WHERE { { ?item wdt:P31 wd:Q3390477 . } UNION { ?item wdt:P452 wd:Q3390477 . } ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". } } ORDER BY DESC(?sitelinks) LIMIT 1000",
+ "candidates": [
+  {
+   "qid": "Q58024",
+   "label": "eBay",
+   "sitelinks": 91
+  },
+  {
+   "qid": "Q114258161",
+   "label": "Temu",
+   "sitelinks": 49
+  },
+  {
+   "qid": "Q29904317",
+   "label": "AliExpress",
+   "sitelinks": 49
+  },
+  {
+   "qid": "Q107377209",
+   "label": "Shein",
+   "sitelinks": 41
+  },
+  {
+   "qid": "Q2117484",
+   "label": "Taobao",
+   "sitelinks": 34
+  },
+  {
+   "qid": "Q7501150",
+   "label": "Shopify",
+   "sitelinks": 33
+  },
+  {
+   "qid": "Q685967",
+   "label": "Kaufland",
+   "sitelinks": 31
+  },
+  {
+   "qid": "Q1948478",
+   "label": "OLX",
+   "sitelinks": 28
+  },
+  {
+   "qid": "Q676585",
+   "label": "Fnac",
+   "sitelinks": 24
+  },
+  {
+   "qid": "Q5410132",
+   "label": "Fiverr",
+   "sitelinks": 22
+  },
+  {
+   "qid": "Q11935495",
+   "label": "Vinted",
+   "sitelinks": 21
+  },
+  {
+   "qid": "Q54863641",
+   "label": "Shopee",
+   "sitelinks": 21
+  },
+  {
+   "qid": "Q106650129",
+   "label": "OpenSea",
+   "sitelinks": 20
+  },
+  {
+   "qid": "Q3344170",
+   "label": "Upwork",
+   "sitelinks": 19
+  },
+  {
+   "qid": "Q47796826",
+   "label": "Wish.com",
+   "sitelinks": 18
+  },
+  {
+   "qid": "Q1204827",
+   "label": "Q1204827",
+   "sitelinks": 17
+  },
+  {
+   "qid": "Q58014",
+   "label": "Allegro",
+   "sitelinks": 15
+  },
+  {
+   "qid": "Q12521890",
+   "label": "Tokopedia",
+   "sitelinks": 14
+  },
+  {
+   "qid": "Q60851537",
+   "label": "Joom",
+   "sitelinks": 13
+  },
+  {
+   "qid": "Q18712957",
+   "label": "Farfetch",
+   "sitelinks": 12
+  },
+  {
+   "qid": "Q4034642",
+   "label": "avito.ru",
+   "sitelinks": 11
+  },
+  {
+   "qid": "Q21019721",
+   "label": "Mercari",
+   "sitelinks": 8
+  },
+  {
+   "qid": "Q609913",
+   "label": "bol",
+   "sitelinks": 7
+  },
+  {
+   "qid": "Q12476649",
+   "label": "Blibli",
+   "sitelinks": 7
+  },
+  {
+   "qid": "Q4537982",
+   "label": "Yandex Market",
+   "sitelinks": 7
+  },
+  {
+   "qid": "Q16382903",
+   "label": "BrickLink",
+   "sitelinks": 7
+  },
+  {
+   "qid": "Q3228701",
+   "label": "leboncoin",
+   "sitelinks": 6
+  },
+  {
+   "qid": "Q17008943",
+   "label": "LocalBitcoins",
+   "sitelinks": 6
+  },
+  {
+   "qid": "Q2735739",
+   "label": "Rakuten France",
+   "sitelinks": 5
+  },
+  {
+   "qid": "Q2943530",
+   "label": "Cdiscount",
+   "sitelinks": 5
+  },
+  {
+   "qid": "Q7303547",
+   "label": "Redbubble",
+   "sitelinks": 5
+  },
+  {
+   "qid": "Q16172136",
+   "label": "Qoo10.jp",
+   "sitelinks": 5
+  },
+  {
+   "qid": "Q18207238",
+   "label": "OpenBazaar",
+   "sitelinks": 5
+  },
+  {
+   "qid": "Q1068745",
+   "label": "Check24",
+   "sitelinks": 4
+  },
+  {
+   "qid": "Q97658635",
+   "label": "Lamoda",
+   "sitelinks": 4
+  },
+  {
+   "qid": "Q4051696",
+   "label": "Tradera",
+   "sitelinks": 4
+  },
+  {
+   "qid": "Q125981507",
+   "label": "TikTok Shop",
+   "sitelinks": 4
+  },
+  {
+   "qid": "Q138854957",
+   "label": "Haizol",
+   "sitelinks": 4
+  },
+  {
+   "qid": "Q55775893",
+   "label": "StockX",
+   "sitelinks": 4
+  },
+  {
+   "qid": "Q28127117",
+   "label": "CGTrader",
+   "sitelinks": 4
+  },
+  {
+   "qid": "Q18168341",
+   "label": "rover.com",
+   "sitelinks": 4
+  },
+  {
+   "qid": "Q21172222",
+   "label": "Fever",
+   "sitelinks": 3
+  },
+  {
+   "qid": "Q7546910",
+   "label": "SnagAJob.com",
+   "sitelinks": 3
+  },
+  {
+   "qid": "Q5036903",
+   "label": "Capterra",
+   "sitelinks": 3
+  },
+  {
+   "qid": "Q7831908",
+   "label": "TradeMe",
+   "sitelinks": 3
+  },
+  {
+   "qid": "Q138791818",
+   "label": "GuruWalk",
+   "sitelinks": 3
+  },
+  {
+   "qid": "Q39059538",
+   "label": "jiji.ng",
+   "sitelinks": 3
+  },
+  {
+   "qid": "Q17050956",
+   "label": "ClickBus",
+   "sitelinks": 3
+  },
+  {
+   "qid": "Q17091141",
+   "label": "Vrbo",
+   "sitelinks": 3
+  },
+  {
+   "qid": "Q18287150",
+   "label": "Barnebys",
+   "sitelinks": 3
+  },
+  {
+   "qid": "Q18395635",
+   "label": "Q18395635",
+   "sitelinks": 3
+  },
+  {
+   "qid": "Q22907444",
+   "label": "OfferUp",
+   "sitelinks": 3
+  },
+  {
+   "qid": "Q113371997",
+   "label": "24S",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q97371372",
+   "label": "Maremagnum",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q97961181",
+   "label": "Bookimed",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q20715684",
+   "label": "Goldbelly",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q18216788",
+   "label": "Chairish",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q138604040",
+   "label": "Booksy",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q124304528",
+   "label": "Clicktrans",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q11863880",
+   "label": "huuto.net",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q5323107",
+   "label": "eHealthInsurance",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q6084252",
+   "label": "\u00c7i\u00e7eksepeti",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q140287877",
+   "label": "Lazada Philippines",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q55735432",
+   "label": "TradeKorea",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q17085896",
+   "label": "TickPick",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q17144066",
+   "label": "Ticket Liquidator",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q20026895",
+   "label": "MyMiniFactory",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q20026900",
+   "label": "Pinshape",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q21041436",
+   "label": "Tor Carding Forum",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q21463663",
+   "label": "TodayTix",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q24204315",
+   "label": "Letgo",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q104856323",
+   "label": "Teachers Pay Teachers",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q108600562",
+   "label": "Minecraft Marketplace",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q27889316",
+   "label": "BoutiqueAfricaine.com",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q22080310",
+   "label": "Bark",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q125345974",
+   "label": "MyDeal",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q14644751",
+   "label": "becoacht.com",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q17019397",
+   "label": "Oneflare",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q19646230",
+   "label": "Luxify",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q117767926",
+   "label": "TakeLessons",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q131553572",
+   "label": "Daft.ie",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q128265812",
+   "label": "Propstore",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q138545698",
+   "label": "POIZON",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q6675775",
+   "label": "LoopNet",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q6850790",
+   "label": "Milanuncios",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q7166413",
+   "label": "Pepperfry.com",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q7532027",
+   "label": "sittercity.com",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q8029787",
+   "label": "Wolf & Badger",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q65090792",
+   "label": "The RealReal",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q96373794",
+   "label": "Bookshop.org",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q48791881",
+   "label": "Spacer",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q54958366",
+   "label": "Tradesy",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q19903400",
+   "label": "LendKey",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q19903598",
+   "label": "reissued.com",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q20715068",
+   "label": "Shift",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q20984297",
+   "label": "Sendo.vn",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q22908167",
+   "label": "RealSelf",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q22909454",
+   "label": "ToursByLocals",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q27150174",
+   "label": "Peerspace",
+   "sitelinks": 1
+  }
+ ]
+}

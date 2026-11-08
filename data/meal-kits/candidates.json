@@ -1,0 +1,61 @@
+{
+ "computed_at": "2026-11-08",
+ "query": "SELECT DISTINCT ?item ?itemLabel ?sitelinks WHERE { { ?item wdt:P452 wd:Q10578348 . } UNION { ?item wdt:P31 wd:Q10578348 . } UNION { ?item wdt:P1056 wd:Q10578348 . } UNION { ?item wdt:P31 wd:Q105693306 . } UNION { ?item wdt:P452 wd:Q105693306 . } ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". } } ORDER BY DESC(?sitelinks) LIMIT 1000",
+ "candidates": [
+  {
+   "qid": "Q23014836",
+   "label": "Q23014836",
+   "sitelinks": 17
+  },
+  {
+   "qid": "Q26913624",
+   "label": "Blue Apron",
+   "sitelinks": 6
+  },
+  {
+   "qid": "Q54621402",
+   "label": "Goodfood Market",
+   "sitelinks": 4
+  },
+  {
+   "qid": "Q24886395",
+   "label": "Home Chef",
+   "sitelinks": 3
+  },
+  {
+   "qid": "Q5588477",
+   "label": "Gousto",
+   "sitelinks": 3
+  },
+  {
+   "qid": "Q96241460",
+   "label": "Cook it",
+   "sitelinks": 3
+  },
+  {
+   "qid": "Q39073838",
+   "label": "Plated",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q109849577",
+   "label": "Mindful Chef",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q23023560",
+   "label": "Sun Basket",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q23461804",
+   "label": "My Food Bag",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q23461961",
+   "label": "SimplyCook",
+   "sitelinks": 1
+  }
+ ]
+}

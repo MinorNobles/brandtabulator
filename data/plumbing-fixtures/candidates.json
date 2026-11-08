@@ -1,0 +1,36 @@
+{
+ "computed_at": "2026-11-08",
+ "query": "SELECT DISTINCT ?item ?itemLabel ?sitelinks WHERE { { ?item wdt:P1056 wd:Q2024731 . } UNION { ?item wdt:P452 wd:Q2024731 . } UNION { ?item wdt:P1056/wdt:P279 wd:Q2024731 . } ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". } } ORDER BY DESC(?sitelinks) LIMIT 1000",
+ "candidates": [
+  {
+   "qid": "Q1751566",
+   "label": "Toto Ltd.",
+   "sitelinks": 24
+  },
+  {
+   "qid": "Q316477",
+   "label": "Grohe",
+   "sitelinks": 20
+  },
+  {
+   "qid": "Q5158063",
+   "label": "Conair Corporation",
+   "sitelinks": 10
+  },
+  {
+   "qid": "Q4745165",
+   "label": "American Standard Brands",
+   "sitelinks": 4
+  },
+  {
+   "qid": "Q7541067",
+   "label": "Sloan Valve Company",
+   "sitelinks": 4
+  },
+  {
+   "qid": "Q19871557",
+   "label": "Bristan",
+   "sitelinks": 3
+  }
+ ]
+}

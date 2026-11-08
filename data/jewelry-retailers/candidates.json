@@ -1,0 +1,191 @@
+{
+ "computed_at": "2026-11-08",
+ "query": "SELECT DISTINCT ?item ?itemLabel ?sitelinks WHERE { { ?item wdt:P452 wd:Q126793 ; wdt:P1056 wd:Q161439 . } UNION { ?item wdt:P31 wd:Q4237303 . } UNION { ?item wdt:P31 wd:Q106611381 . } UNION { ?item wdt:P452 wd:Q4237303 . } ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". } } ORDER BY DESC(?sitelinks) LIMIT 1000",
+ "candidates": [
+  {
+   "qid": "Q1066858",
+   "label": "Tiffany & Co.",
+   "sitelinks": 47
+  },
+  {
+   "qid": "Q538587",
+   "label": "Cartier",
+   "sitelinks": 42
+  },
+  {
+   "qid": "Q806085",
+   "label": "Banana Republic",
+   "sitelinks": 23
+  },
+  {
+   "qid": "Q1435535",
+   "label": "Folli Follie",
+   "sitelinks": 13
+  },
+  {
+   "qid": "Q7444725",
+   "label": "Sector No Limits",
+   "sitelinks": 9
+  },
+  {
+   "qid": "Q7512923",
+   "label": "Signet Jewelers Limited",
+   "sitelinks": 6
+  },
+  {
+   "qid": "Q3308250",
+   "label": "Michael Hill Jeweller",
+   "sitelinks": 5
+  },
+  {
+   "qid": "Q3300085",
+   "label": "Mauboussin",
+   "sitelinks": 5
+  },
+  {
+   "qid": "Q16841180",
+   "label": "Hardy Brothers",
+   "sitelinks": 5
+  },
+  {
+   "qid": "Q16995161",
+   "label": "Helzberg Diamonds",
+   "sitelinks": 4
+  },
+  {
+   "qid": "Q11341902",
+   "label": "Mikimoto",
+   "sitelinks": 4
+  },
+  {
+   "qid": "Q3931843",
+   "label": "Mouawad",
+   "sitelinks": 3
+  },
+  {
+   "qid": "Q7488019",
+   "label": "Shane Company",
+   "sitelinks": 3
+  },
+  {
+   "qid": "Q5423915",
+   "label": "F. Hinds",
+   "sitelinks": 3
+  },
+  {
+   "qid": "Q8065305",
+   "label": "Zale Corporation",
+   "sitelinks": 3
+  },
+  {
+   "qid": "Q13415716",
+   "label": "Thomas Sabo",
+   "sitelinks": 3
+  },
+  {
+   "qid": "Q4878226",
+   "label": "Beaverbrooks",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q4886196",
+   "label": "Ben Moss Jewellers",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q4946656",
+   "label": "Borsheim's Fine Jewelry",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q5393358",
+   "label": "Ernest Jones",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q16993095",
+   "label": "Goldsmiths",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q17005474",
+   "label": "Goldmark Jeweller",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q18162112",
+   "label": "Angus & Coote",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q18636699",
+   "label": "Wallace Bishop",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q25000196",
+   "label": "C.D. Peacock",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q30688033",
+   "label": "Apan Jewellers",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q5086396",
+   "label": "Charm Diamond Centres",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q16992776",
+   "label": "Gerald Online",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q16994672",
+   "label": "H. J. Wilson Co.",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q20708050",
+   "label": "Ben Bridge Jeweler",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q28406430",
+   "label": "T.H. Baker",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q54958662",
+   "label": "QALO",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q5693076",
+   "label": "Hearts on Fire",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q7263734",
+   "label": "Pyrrha Jewelry",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q7611434",
+   "label": "Sterling Jewelers",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q7865065",
+   "label": "ULTRA Diamonds",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q96417583",
+   "label": "Afterthoughts",
+   "sitelinks": 1
+  }
+ ]
+}

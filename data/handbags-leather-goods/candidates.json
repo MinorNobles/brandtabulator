@@ -1,0 +1,156 @@
+{
+ "computed_at": "2026-11-08",
+ "query": "SELECT DISTINCT ?item ?itemLabel ?sitelinks WHERE { { ?item wdt:P1056 wd:Q467505 . } UNION { ?item wdt:P1056 wd:Q96141153 . } UNION { ?item wdt:P452 wd:Q96141153 . } ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". } } ORDER BY DESC(?sitelinks) LIMIT 1000",
+ "candidates": [
+  {
+   "qid": "Q178516",
+   "label": "Gucci",
+   "sitelinks": 75
+  },
+  {
+   "qid": "Q191485",
+   "label": "Louis Vuitton",
+   "sitelinks": 69
+  },
+  {
+   "qid": "Q309031",
+   "label": "Lacoste",
+   "sitelinks": 60
+  },
+  {
+   "qid": "Q752515",
+   "label": "Bulgari",
+   "sitelinks": 52
+  },
+  {
+   "qid": "Q759210",
+   "label": "Givenchy",
+   "sitelinks": 46
+  },
+  {
+   "qid": "Q895795",
+   "label": "Kenzo",
+   "sitelinks": 26
+  },
+  {
+   "qid": "Q4465402",
+   "label": "Tumi Inc.",
+   "sitelinks": 9
+  },
+  {
+   "qid": "Q23672312",
+   "label": "Herschel Supply Co.",
+   "sitelinks": 8
+  },
+  {
+   "qid": "Q30595852",
+   "label": "Byredo",
+   "sitelinks": 7
+  },
+  {
+   "qid": "Q3112837",
+   "label": "Goyard",
+   "sitelinks": 7
+  },
+  {
+   "qid": "Q2399832",
+   "label": "J.M. Weston",
+   "sitelinks": 6
+  },
+  {
+   "qid": "Q980030",
+   "label": "Ed Meier",
+   "sitelinks": 6
+  },
+  {
+   "qid": "Q3905555",
+   "label": "Piquadro",
+   "sitelinks": 5
+  },
+  {
+   "qid": "Q1694737",
+   "label": "Manufactum",
+   "sitelinks": 4
+  },
+  {
+   "qid": "Q28035409",
+   "label": "Carpisa",
+   "sitelinks": 3
+  },
+  {
+   "qid": "Q4838385",
+   "label": "Baby Phat",
+   "sitelinks": 3
+  },
+  {
+   "qid": "Q5515124",
+   "label": "G Ettinger Ltd.",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q104842926",
+   "label": "Ganni",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q118144474",
+   "label": "The Bridge",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q17102372",
+   "label": "Valextra",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q50428076",
+   "label": "Rebecca Minkoff",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q5322608",
+   "label": "eBags.com",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q5508324",
+   "label": "O bag",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q5745049",
+   "label": "Herv\u00e9 Chapelier",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q16966936",
+   "label": "Petunia Pickle Bottom",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q4882178",
+   "label": "Belen Echandia",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q5297166",
+   "label": "Dooney & Bourke",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q5378357",
+   "label": "English Retreads",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q55622209",
+   "label": "Mark Cross",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q85811208",
+   "label": "Tusting",
+   "sitelinks": 1
+  }
+ ]
+}

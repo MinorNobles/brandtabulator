@@ -132,8 +132,8 @@ Issue 2026-11-08. 136 brands. Ranked by staleness (longest unupdated first). Vie
 | 126 | [Raymond Weil](https://en.wikipedia.org/wiki/Raymond_Weil) ([Q676990](https://www.wikidata.org/wiki/Q676990)) | 2026-10-08 | 1 / 1 | 26 (11) | 42.3% | 1 | 14 | 8 | 1399 | 29.8% |
 | 127 | [Richard Mille](https://en.wikipedia.org/wiki/Richard_Mille) ([Q3431044](https://www.wikidata.org/wiki/Q3431044)) | 2026-10-09 | 14 / 4 | 27 (7) | 25.9% | 0 | 13 | 81 | 11074 | 23.1% |
 | 128 | [Vostok Europe](https://en.wikipedia.org/wiki/Vostok_Europe) ([Q15733690](https://www.wikidata.org/wiki/Q15733690)) | 2026-10-09 | 3 / 3 | 11 (3) | 27.3% | 3 | 8 | 56 | 399 | 45.8% |
-| 129 | [Giorgio Armani](https://en.wikipedia.org/wiki/Armani) ([Q635484](https://www.wikidata.org/wiki/Q635484)) | 2026-10-20 | 5 / 3 | 72 (24) | 33.3% | 12 | 52 | 158 | 12419 | 26.1% |
-| 130 | [Bulgari](https://en.wikipedia.org/wiki/Bulgari) ([Q752515](https://www.wikidata.org/wiki/Q752515)) | 2026-10-20 | 17 / 13 | 76 (39) | 51.3% | 6 | 52 | 84 | 24183 | 18.0% |
+| 129 | [Bulgari](https://en.wikipedia.org/wiki/Bulgari) ([Q752515](https://www.wikidata.org/wiki/Q752515)) | 2026-10-20 | 17 / 13 | 76 (39) | 51.3% | 6 | 52 | 84 | 24183 | 18.0% |
+| 130 | [Giorgio Armani](https://en.wikipedia.org/wiki/Armani) ([Q635484](https://www.wikidata.org/wiki/Q635484)) | 2026-10-20 | 5 / 3 | 72 (24) | 33.3% | 12 | 52 | 158 | 12419 | 26.1% |
 | 131 | [Hamilton](https://en.wikipedia.org/wiki/Hamilton_Watch_Company) ([Q1573565](https://www.wikidata.org/wiki/Q1573565)) | 2026-10-23 | 4 / 3 | 25 (15) | 60.0% | 1 | 16 | 35 | 8971 | 19.5% |
 | 132 | [S.T. Dupont](https://en.wikipedia.org/wiki/S._T._Dupont) ([Q1316779](https://www.wikidata.org/wiki/Q1316779)) | 2026-10-28 | 7 / 6 | 28 (17) | 60.7% | 4 | 13 | 11 | 1079 | 39.3% |
 | 133 | [Victorinox](https://en.wikipedia.org/wiki/Victorinox) ([Q503405](https://www.wikidata.org/wiki/Q503405)) | 2026-10-29 | 9 / 1 | 63 (26) | 41.3% | 8 | 35 | 26 | 3825 | 36.3% |

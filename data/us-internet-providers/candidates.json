@@ -1,0 +1,171 @@
+{
+ "computed_at": "2026-11-08",
+ "query": "SELECT DISTINCT ?item ?itemLabel ?sitelinks WHERE { { { ?item wdt:P31 wd:Q11371 . } UNION { ?item wdt:P452 wd:Q11371 . } ?item wdt:P17 wd:Q30 . } ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". } } ORDER BY DESC(?sitelinks) LIMIT 1000",
+ "candidates": [
+  {
+   "qid": "Q467752",
+   "label": "Verizon",
+   "sitelinks": 50
+  },
+  {
+   "qid": "Q3511885",
+   "label": "T-Mobile US",
+   "sitelinks": 19
+  },
+  {
+   "qid": "Q1885099",
+   "label": "Time Warner Cable",
+   "sitelinks": 14
+  },
+  {
+   "qid": "Q5151002",
+   "label": "Xfinity",
+   "sitelinks": 12
+  },
+  {
+   "qid": "Q1346687",
+   "label": "Hurricane Electric",
+   "sitelinks": 11
+  },
+  {
+   "qid": "Q4118540",
+   "label": "RhythmOne",
+   "sitelinks": 11
+  },
+  {
+   "qid": "Q21016183",
+   "label": "Riseup",
+   "sitelinks": 11
+  },
+  {
+   "qid": "Q5179879",
+   "label": "Cox Communications",
+   "sitelinks": 10
+  },
+  {
+   "qid": "Q919511",
+   "label": "EarthLink",
+   "sitelinks": 8
+  },
+  {
+   "qid": "Q11301445",
+   "label": "Sparklight",
+   "sitelinks": 5
+  },
+  {
+   "qid": "Q7805197",
+   "label": "Spectrum",
+   "sitelinks": 5
+  },
+  {
+   "qid": "Q20001634",
+   "label": "Global Impact Investing Network",
+   "sitelinks": 5
+  },
+  {
+   "qid": "Q1582470",
+   "label": "Savvis",
+   "sitelinks": 3
+  },
+  {
+   "qid": "Q7231483",
+   "label": "Portal Software",
+   "sitelinks": 3
+  },
+  {
+   "qid": "Q4654562",
+   "label": "AT&T U-verse",
+   "sitelinks": 3
+  },
+  {
+   "qid": "Q4906217",
+   "label": "Big River Telephone",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q5968489",
+   "label": "iBAHN",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q96419412",
+   "label": "Stargate Industries",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q6998829",
+   "label": "Netcom",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q7561773",
+   "label": "Sonic.net",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q7808108",
+   "label": "Ting",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q85791087",
+   "label": "Optimum",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q5446391",
+   "label": "Fibernet Corp.",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q7165838",
+   "label": "PeoplePC",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q8042357",
+   "label": "XMission",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q134722282",
+   "label": "Loop Internet",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q16997963",
+   "label": "Juno Online Services",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q5403313",
+   "label": "Etheric Networks",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q65951698",
+   "label": "Greenlight Networks",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q6863428",
+   "label": "MindVox",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q6956098",
+   "label": "NYSERNet",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q7902489",
+   "label": "Utah Telecommunication Open Infrastructure Agency",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q7975272",
+   "label": "WaveDivision Holdings, LLC",
+   "sitelinks": 1
+  }
+ ]
+}

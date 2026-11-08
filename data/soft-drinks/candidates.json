@@ -1,0 +1,526 @@
+{
+ "computed_at": "2026-11-08",
+ "query": "SELECT DISTINCT ?item ?itemLabel ?sitelinks WHERE { { ?item wdt:P31 wd:Q114392939 . } UNION { ?item wdt:P31/wdt:P279* wd:Q147538 . } ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". } } ORDER BY DESC(?sitelinks) LIMIT 1000",
+ "candidates": [
+  {
+   "qid": "Q2813",
+   "label": "Coca-Cola",
+   "sitelinks": 153
+  },
+  {
+   "qid": "Q47719",
+   "label": "Pepsi",
+   "sitelinks": 104
+  },
+  {
+   "qid": "Q51482",
+   "label": "Red Bull",
+   "sitelinks": 65
+  },
+  {
+   "qid": "Q544293",
+   "label": "Monster Energy",
+   "sitelinks": 39
+  },
+  {
+   "qid": "Q257260",
+   "label": "OpenCola",
+   "sitelinks": 35
+  },
+  {
+   "qid": "Q720479",
+   "label": "Asahi Breweries",
+   "sitelinks": 32
+  },
+  {
+   "qid": "Q938806",
+   "label": "Irn-Bru",
+   "sitelinks": 30
+  },
+  {
+   "qid": "Q53",
+   "label": "Club-Mate",
+   "sitelinks": 27
+  },
+  {
+   "qid": "Q304992",
+   "label": "Gatorade",
+   "sitelinks": 27
+  },
+  {
+   "qid": "Q685005",
+   "label": "Ovaltine",
+   "sitelinks": 26
+  },
+  {
+   "qid": "Q1206045",
+   "label": "ramune",
+   "sitelinks": 26
+  },
+  {
+   "qid": "Q1146721",
+   "label": "Drambuie",
+   "sitelinks": 24
+  },
+  {
+   "qid": "Q934273",
+   "label": "Powerade",
+   "sitelinks": 20
+  },
+  {
+   "qid": "Q707412",
+   "label": "Sinalco",
+   "sitelinks": 19
+  },
+  {
+   "qid": "Q172209",
+   "label": "Q172209",
+   "sitelinks": 18
+  },
+  {
+   "qid": "Q284148",
+   "label": "Burn",
+   "sitelinks": 18
+  },
+  {
+   "qid": "Q383742",
+   "label": "Afri-Cola",
+   "sitelinks": 16
+  },
+  {
+   "qid": "Q1422578",
+   "label": "Spezi",
+   "sitelinks": 14
+  },
+  {
+   "qid": "Q3493770",
+   "label": "Pepsi Max",
+   "sitelinks": 14
+  },
+  {
+   "qid": "Q629009",
+   "label": "San Pellegrino",
+   "sitelinks": 12
+  },
+  {
+   "qid": "Q2471375",
+   "label": "Guaran\u00e1 Antarctica",
+   "sitelinks": 11
+  },
+  {
+   "qid": "Q1165857",
+   "label": "Vinea",
+   "sitelinks": 9
+  },
+  {
+   "qid": "Q2027181",
+   "label": "Kola Real",
+   "sitelinks": 9
+  },
+  {
+   "qid": "Q3006006",
+   "label": "Crystal Pepsi",
+   "sitelinks": 9
+  },
+  {
+   "qid": "Q1817063",
+   "label": "Lemon & Paeroa",
+   "sitelinks": 9
+  },
+  {
+   "qid": "Q2975184",
+   "label": "Clamato",
+   "sitelinks": 9
+  },
+  {
+   "qid": "Q15267446",
+   "label": "A&W Root Beer",
+   "sitelinks": 9
+  },
+  {
+   "qid": "Q47529172",
+   "label": "Duchess",
+   "sitelinks": 8
+  },
+  {
+   "qid": "Q1044125",
+   "label": "Caro",
+   "sitelinks": 8
+  },
+  {
+   "qid": "Q1022438",
+   "label": "C.C. Lemon",
+   "sitelinks": 8
+  },
+  {
+   "qid": "Q24699992",
+   "label": "Apple Sidra",
+   "sitelinks": 8
+  },
+  {
+   "qid": "Q7103779",
+   "label": "Oronamin",
+   "sitelinks": 7
+  },
+  {
+   "qid": "Q3079990",
+   "label": "Four Loko",
+   "sitelinks": 7
+  },
+  {
+   "qid": "Q3306449",
+   "label": "Sierra Mist",
+   "sitelinks": 6
+  },
+  {
+   "qid": "Q7166482",
+   "label": "Pepsi Blue",
+   "sitelinks": 6
+  },
+  {
+   "qid": "Q97225239",
+   "label": "Nocco",
+   "sitelinks": 5
+  },
+  {
+   "qid": "Q3327455",
+   "label": "Mug Root Beer",
+   "sitelinks": 5
+  },
+  {
+   "qid": "Q5446350",
+   "label": "Fibe Mini",
+   "sitelinks": 5
+  },
+  {
+   "qid": "Q5769794",
+   "label": "Hires Root Beer",
+   "sitelinks": 5
+  },
+  {
+   "qid": "Q5968519",
+   "label": "IBC Root Beer",
+   "sitelinks": 5
+  },
+  {
+   "qid": "Q7907710",
+   "label": "V",
+   "sitelinks": 5
+  },
+  {
+   "qid": "Q30745703",
+   "label": "Akpan",
+   "sitelinks": 5
+  },
+  {
+   "qid": "Q55530589",
+   "label": "-196\u02daC Strong Zero",
+   "sitelinks": 5
+  },
+  {
+   "qid": "Q3959196",
+   "label": "Shark",
+   "sitelinks": 4
+  },
+  {
+   "qid": "Q263424",
+   "label": "Fruitopia",
+   "sitelinks": 4
+  },
+  {
+   "qid": "Q1825420",
+   "label": "Rose's lime juice",
+   "sitelinks": 4
+  },
+  {
+   "qid": "Q2262742",
+   "label": "Barr Cola",
+   "sitelinks": 4
+  },
+  {
+   "qid": "Q4048217",
+   "label": "Revo drink",
+   "sitelinks": 4
+  },
+  {
+   "qid": "Q5027077",
+   "label": "Camp Coffee",
+   "sitelinks": 4
+  },
+  {
+   "qid": "Q7166492",
+   "label": "Pepsi Zero Sugar",
+   "sitelinks": 4
+  },
+  {
+   "qid": "Q7801404",
+   "label": "Tiger Energy Drink",
+   "sitelinks": 4
+  },
+  {
+   "qid": "Q7922309",
+   "label": "Vernors",
+   "sitelinks": 4
+  },
+  {
+   "qid": "Q116271920",
+   "label": "Starry",
+   "sitelinks": 4
+  },
+  {
+   "qid": "Q2955902",
+   "label": "Champis",
+   "sitelinks": 3
+  },
+  {
+   "qid": "Q4993891",
+   "label": "Solo",
+   "sitelinks": 3
+  },
+  {
+   "qid": "Q4714042",
+   "label": "Ale-8-One",
+   "sitelinks": 3
+  },
+  {
+   "qid": "Q5506218",
+   "label": "Frostop",
+   "sitelinks": 3
+  },
+  {
+   "qid": "Q11052513",
+   "label": "Laoshan Cola",
+   "sitelinks": 3
+  },
+  {
+   "qid": "Q116347263",
+   "label": "bubly sparkling water",
+   "sitelinks": 3
+  },
+  {
+   "qid": "Q124607851",
+   "label": "DeeDo",
+   "sitelinks": 3
+  },
+  {
+   "qid": "Q124655625",
+   "label": "Polaris drinking water",
+   "sitelinks": 3
+  },
+  {
+   "qid": "Q136604589",
+   "label": "Palestine Cola",
+   "sitelinks": 3
+  },
+  {
+   "qid": "Q108101704",
+   "label": "Red lemonade",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q126751995",
+   "label": "Mojo (sort drink)",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q136132285",
+   "label": "Gorilla Energy",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q11264601",
+   "label": "Gabu Gabu!",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q6786204",
+   "label": "Match",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q111165191",
+   "label": "Kolashanpan",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q14939632",
+   "label": "Double Seven",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q15902235",
+   "label": "Big Gulp",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q16900542",
+   "label": "Goombay Punch",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q17125545",
+   "label": "Orbitz",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q48814334",
+   "label": "Brew Dr. Kombucha",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q60742371",
+   "label": "Funny Face",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q61076621",
+   "label": "Pure Leaf",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q107208174",
+   "label": "Twisted Tea",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q124048235",
+   "label": "Cisco",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q136340072",
+   "label": "Bornir Dhuchnir Doi",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q16920231",
+   "label": "Jupi\u00f1a",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q48965868",
+   "label": "Eastroc Super Drink",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q4863348",
+   "label": "Barrelhead Root Beer",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q4881550",
+   "label": "Bejois Mango Drink",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q5130888",
+   "label": "Clearly Canadian",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q5139746",
+   "label": "Coco Rico",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q7084877",
+   "label": "Old Rosie",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q7118848",
+   "label": "PDQ Chocolate",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q7304900",
+   "label": "Red Rock",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q7634395",
+   "label": "Suero Oral",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q8066733",
+   "label": "Zarex",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q106432380",
+   "label": "Pabst Blue Ribbon THC-infused seltzer",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q115978878",
+   "label": "Swee Touch Nee",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q16941360",
+   "label": "Lurvills Delight",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q16995698",
+   "label": "Kingstone Press Cider",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q17117923",
+   "label": "Virgil's Root Beer",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q20746260",
+   "label": "Mr Sherick's Shakes",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q22236223",
+   "label": "Dr. McGillicuddy's",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q24910061",
+   "label": "Paper Boat",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q120727385",
+   "label": "Suiza Dairy",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q122929434",
+   "label": "Coca-Cola with Coffee",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q124077458",
+   "label": "Coca-Cola Cherry Vanilla",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q125470253",
+   "label": "Coca-Cola Spiced",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q125755189",
+   "label": "Beefamato",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q126107676",
+   "label": "Sprite Lemon+",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q127668696",
+   "label": "M\u00e1s+",
+   "sitelinks": 1
+  }
+ ]
+}
