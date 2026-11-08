@@ -32,10 +32,10 @@ def cat_rules_html(c):
     ex = c.get("exclude", {}) or {}
     if isinstance(ex, list): ex = {q: "" for q in ex}
     adds = "".join(f"<li><b>{H.escape(a.get('label', a['qid']))}:</b> {H.escape(a.get('reason',''))}</li>" for a in c.get("manual_additions", [])) or "<li>None.</li>"
-    exs = "".join(f"<li>{H.escape(q)}: {H.escape(why)}</li>" for q, why in ex.items()) or "<li>None.</li>"
+    exs = "".join(f"<li>{H.escape(why)}</li>" for q, why in ex.items()) or "<li>None.</li>"
     return f"""<p>{H.escape(c.get('inclusion_rule',''))}</p>
 <p><b>Added by hand</b> (the query misses them):</p><ul>{adds}</ul>
-<p><b>Left out under the rule</b> (besides dissolved companies, which the data file lists):</p><ul>{exs}</ul>"""
+<p><b>Left out under the rule</b>, besides companies that Wikidata records as dissolved:</p><ul>{exs}</ul>"""
 
 def load_ai_set(cat):
     """If the category's competitive set comes from AI answers, read the published summary and fill in its members."""
