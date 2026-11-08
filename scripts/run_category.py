@@ -83,7 +83,7 @@ def issue_box(cat, rows):
         if now is None: return "<td>—</td>"
         if before is None: return f"<td><b>{fmt(now)}</b></td>"
         ch = "" if (before == 0 or max(abs(now), abs(before)) < 5) else (" · no change" if now == before else f" · {'+' if now > before else '−'}{abs(100*(now-before)/before):.0f}%")
-        return f"<td><b>{fmt(now)}</b><br><span class='sub'>{label}: {fmt(before)}{ch}</span></td>"
+        return f"<td><b>{fmt(now)}</b> <span class='sub'>· {label} {fmt(before)}{ch}</span></td>"
     def avg(k):
         v = [r.get(k) for r in comp]
         return None if any(x is None for x in v) else sum(v) / len(v)
@@ -346,6 +346,7 @@ dl{{display:grid;grid-template-columns:200px 1fr;gap:6px 16px;font-size:13px;mar
 details summary{{cursor:pointer;font-size:14px;font-weight:500}}
 @media (max-width:760px){{main{{padding:24px 20px 48px;gap:22px}}h1{{font-size:30px}}.lead p{{font-size:17px}}.foot{{grid-template-columns:1fr}}dl{{grid-template-columns:1fr}}}}
 
+table.issue td,table.issue th{{padding:6px 10px}}table.issue td{{font-size:14px}}table.issue td .sub{{font-size:13px;white-space:nowrap}}
 @media (max-width:600px){{table.issue thead tr,table.issue tbody tr{{display:grid;grid-template-columns:1fr 1fr;column-gap:12px}}table.issue thead th:first-child{{display:none}}table.issue tbody td:first-child{{grid-column:1/-1;font-weight:600;padding-bottom:2px;border-bottom:0}}table.issue td,table.issue th{{white-space:normal}}}}
 .cmp{{display:none;font-size:12px;color:#77756d;font-style:italic}}.setview .cmp{{display:inline}}
 </style></head>
