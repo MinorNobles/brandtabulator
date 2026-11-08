@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://minornobles.github.io/brandtabulator/sitemap.xml
+Sitemap: https://brandtabulator.michaelquinn.ai/sitemap.xml

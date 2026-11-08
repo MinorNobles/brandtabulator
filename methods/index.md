@@ -1,6 +1,6 @@
 # Methods
 
-Pre-launch draft. The full methods page is at https://minornobles.github.io/brandtabulator/methods/
+Pre-launch draft. The full methods page is at https://brandtabulator.michaelquinn.ai/methods/
 
 ## Definitions
 

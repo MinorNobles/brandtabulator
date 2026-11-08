@@ -21,7 +21,7 @@ UA = f"BrandTabulator/0.1 ({CONTACT})"
 PACE = float(os.environ.get("BT_PACE_SECONDS", "1.2"))
 S = requests.Session(); S.headers["User-Agent"] = UA
 # The site's public address. Change this one value (or set BT_SITE_URL) when the site moves to its own domain.
-SITE_URL = os.environ.get("BT_SITE_URL", "https://minornobles.github.io/brandtabulator").rstrip("/")
+SITE_URL = os.environ.get("BT_SITE_URL", "https://brandtabulator.michaelquinn.ai").rstrip("/")
 BASE = urllib.parse.urlparse(SITE_URL).path.rstrip("/")   # "/brandtabulator" today, "" on a custom domain
 
 def cat_path(c):

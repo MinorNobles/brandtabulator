@@ -4,11 +4,11 @@
 
 ## Categories
 
-- Watch manufacturers: https://minornobles.github.io/brandtabulator/watches/ (Markdown: https://minornobles.github.io/brandtabulator/watches/index.md; data: https://minornobles.github.io/brandtabulator/data/watch-manufacturers/latest.json)
+- Watch manufacturers: https://brandtabulator.michaelquinn.ai/watches/ (Markdown: https://brandtabulator.michaelquinn.ai/watches/index.md; data: https://brandtabulator.michaelquinn.ai/data/watch-manufacturers/latest.json)
 
 ## Reference
 
-- Methods: https://minornobles.github.io/brandtabulator/methods/ (Markdown: https://minornobles.github.io/brandtabulator/methods/index.md)
+- Methods: https://brandtabulator.michaelquinn.ai/methods/ (Markdown: https://brandtabulator.michaelquinn.ai/methods/index.md)
 - Source code: https://github.com/MinorNobles/brandtabulator
 
 ## Conventions
