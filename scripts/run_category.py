@@ -84,15 +84,18 @@ def issue_box(cat, rows):
         if before is None: return f"<td><b>{fmt(now)}</b></td>"
         ch = "" if (before == 0 or max(abs(now), abs(before)) < 5) else (" · no change" if now == before else f" · {'+' if now > before else '−'}{abs(100*(now-before)/before):.0f}%")
         return f"<td><b>{fmt(now)}</b> <span class='sub'>· {label} {fmt(before)}{ch}</span></td>"
-    def avg(k):
+    def avg(k):   # the typical competitor: the middle value (median)
         v = [r.get(k) for r in comp]
-        return None if any(x is None for x in v) else sum(v) / len(v)
+        if any(x is None for x in v): return None
+        v = sorted(v); n = len(v)
+        return v[n // 2] if n % 2 else (v[n // 2 - 1] + v[n // 2]) / 2
     body = "".join(f"<tr><td>{H.escape(n)}</td>{cell(tgt.get(a), tgt.get(b), lab)}{cell(avg(a), avg(b), lab)}</tr>" for n, a, b, lab in M)
     d = dt.date.fromisoformat(rows_date(rows)) if rows_date(rows) else dt.date.today()
     e1 = d - dt.timedelta(days=1); s1 = e1 - dt.timedelta(days=6); e0 = s1 - dt.timedelta(days=1); s0 = e0 - dt.timedelta(days=6)
     span = lambda a, b: (f"{a.day}–{b.day} {b:%B}" if a.month == b.month else f"{a.day} {a:%B} – {b.day} {b:%B}")
-    return (f"<p style='margin:0 0 8px'>{H.escape(tgt['label'])} against the average of its {len(comp)} competitors, per AI. This week is {span(s1, e1)}; last week is {span(s0, e0)}.</p>"
-            f"<div class='wrap'><table class='issue' style='min-width:0;width:100%'><thead><tr><th></th><th>{H.escape(tgt['label'])}</th><th>Average competitor</th></tr></thead><tbody>{body}</tbody></table></div>")
+    return (f"<p style='margin:0 0 8px'>{H.escape(tgt['label'])} against its {len(comp)} competitors, per AI. This week is {span(s1, e1)}; last week is {span(s0, e0)}.</p>"
+            f"<div class='wrap'><table class='issue' style='min-width:0;width:100%'><thead><tr><th></th><th>{H.escape(tgt['label'])}</th><th>Typical competitor</th></tr></thead><tbody>{body}</tbody></table></div>"
+            f"<div class='sub' style='margin-top:6px'>Typical competitor is the middle figure among the {len(comp)}. Changes count edits made by people, not by bots or batch tools.</div>")
 
 def fix_links(text):
     """Turn site-root links ("/methods/") into links that work under BASE."""
@@ -154,11 +157,11 @@ def weekly_extras(row, today):
     if row.get("enwiki_title"):
         row["pv7_wp"], row["pvprev7_wp"] = daily_views("en.wikipedia", row["enwiki_title"], today)
     row["pv7_wd"], row["pvprev7_wd"] = daily_views("www.wikidata.org", row["qid"], today)
-    j = get("https://www.wikidata.org/w/api.php", {"action": "query", "format": "json", "formatversion": "2", "prop": "revisions", "rvprop": "timestamp", "rvlimit": "100", "titles": row["qid"]}).json()
+    j = get("https://www.wikidata.org/w/api.php", {"action": "query", "format": "json", "formatversion": "2", "prop": "revisions", "rvprop": "timestamp|user|tags|comment", "rvlimit": "100", "titles": row["qid"]}).json()
     revs = (j["query"]["pages"][0].get("revisions") or [])
     a, b = (today - dt.timedelta(days=7)).isoformat(), (today - dt.timedelta(days=14)).isoformat()
-    row["wd_changes_7d"] = sum(1 for r in revs if a <= r["timestamp"] < today.isoformat())
-    row["wd_changes_prev7d"] = sum(1 for r in revs if b <= r["timestamp"] < a)
+    row["wd_changes_7d"] = sum(1 for r in revs if by_person(r) and a <= r["timestamp"] < today.isoformat())
+    row["wd_changes_prev7d"] = sum(1 for r in revs if by_person(r) and b <= r["timestamp"] < a)
 
 # ---------- metrics ----------
 def wd_metrics(e):
@@ -185,6 +188,10 @@ def wd_metrics(e):
 def is_bot(rev):
     return bool(re.search(r"bot\b", rev.get("user", ""), re.I)) or any("bot" in t.lower() for t in rev.get("tags", []))
 
+def by_person(rev):
+    """An edit made by a person, one at a time: not a bot account and not a batch tool run."""
+    return not is_bot(rev) and not re.search(r"quickstatements|batch[ _#]|openrefine", rev.get("comment", "") + " " + " ".join(rev.get("tags", [])), re.I)
+
 def wp_metrics(title, today):
     j = wp_api({"prop": "revisions|info", "rvlimit": "200", "rvprop": "ids|timestamp|user|tags|size|comment", "titles": title})
     page = j["query"]["pages"][0]
@@ -208,8 +215,8 @@ def wp_metrics(title, today):
         "wp_last_50byte_revid": big["revid"] if big else None,
         "wp_last_50byte_parentid": big.get("parentid") if big else None,
         "wp_revisions_examined": len(revs),
-        "wp_changes_7d": sum(1 for r in revs if (today - dt.timedelta(days=7)).isoformat() <= r["timestamp"] < today.isoformat()),
-        "wp_changes_prev7d": sum(1 for r in revs if (today - dt.timedelta(days=14)).isoformat() <= r["timestamp"] < (today - dt.timedelta(days=7)).isoformat()),
+        "wp_changes_7d": sum(1 for r in revs if by_person(r) and (today - dt.timedelta(days=7)).isoformat() <= r["timestamp"] < today.isoformat()),
+        "wp_changes_prev7d": sum(1 for r in revs if by_person(r) and (today - dt.timedelta(days=14)).isoformat() <= r["timestamp"] < (today - dt.timedelta(days=7)).isoformat()),
     }
     w = wp_api({"prop": "revisions", "rvprop": "content", "rvslots": "main", "titles": title})
     txt = w["query"]["pages"][0]["revisions"][0]["slots"]["main"]["content"]
