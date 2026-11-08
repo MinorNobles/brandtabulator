@@ -1,0 +1,181 @@
+{
+ "target": "Citizen",
+ "target_qid": "Q1368019",
+ "category_slug": "watch-manufacturers",
+ "date": "2026-11-08",
+ "engines": {
+  "Claude": "claude-opus-4-7",
+  "Gemini": "gemini-2.5-pro",
+  "ChatGPT": "gpt-6.1-sol"
+ },
+ "web_search": true,
+ "runs_per_question": 3,
+ "questions": [
+  "Who are the main competitors of Citizen watches?",
+  "What watch brands are similar to Citizen?",
+  "I'm thinking about buying a Citizen watch. What other brands should I consider?"
+ ],
+ "answers_total": 27,
+ "answers_counted": 27,
+ "rule": "In the competitive set if named by at least 2 of the 3 engines.",
+ "brands": [
+  {
+   "brand": "Seiko",
+   "qid": "Q322601",
+   "in_category": true,
+   "engines": [
+    "ChatGPT",
+    "Claude",
+    "Gemini"
+   ],
+   "answers": 29
+  },
+  {
+   "brand": "Casio",
+   "qid": "Q217338",
+   "in_category": true,
+   "engines": [
+    "ChatGPT",
+    "Claude",
+    "Gemini"
+   ],
+   "answers": 28
+  },
+  {
+   "brand": "Orient",
+   "qid": "Q1771114",
+   "in_category": true,
+   "engines": [
+    "ChatGPT",
+    "Claude",
+    "Gemini"
+   ],
+   "answers": 25
+  },
+  {
+   "brand": "Tissot",
+   "qid": "Q659530",
+   "in_category": true,
+   "engines": [
+    "ChatGPT",
+    "Claude",
+    "Gemini"
+   ],
+   "answers": 24
+  },
+  {
+   "brand": "Bulova",
+   "qid": "Q663300",
+   "in_category": true,
+   "engines": [
+    "ChatGPT",
+    "Claude",
+    "Gemini"
+   ],
+   "answers": 14
+  },
+  {
+   "brand": "Hamilton",
+   "qid": "Q1573565",
+   "in_category": true,
+   "engines": [
+    "ChatGPT",
+    "Claude",
+    "Gemini"
+   ],
+   "answers": 12
+  },
+  {
+   "brand": "Timex",
+   "qid": "Q1644618",
+   "in_category": true,
+   "engines": [
+    "ChatGPT",
+    "Claude",
+    "Gemini"
+   ],
+   "answers": 11
+  },
+  {
+   "brand": "Swatch",
+   "qid": "Q573422",
+   "in_category": true,
+   "engines": [
+    "Claude",
+    "Gemini"
+   ],
+   "answers": 7
+  },
+  {
+   "brand": "Rolex",
+   "qid": "Q62288",
+   "in_category": true,
+   "engines": [
+    "Claude",
+    "Gemini"
+   ],
+   "answers": 6
+  },
+  {
+   "brand": "Titan Industries",
+   "qid": "Q3536932",
+   "in_category": true,
+   "engines": [
+    "Claude",
+    "Gemini"
+   ],
+   "answers": 6
+  },
+  {
+   "brand": "Fossil",
+   "qid": "Q356212",
+   "in_category": true,
+   "engines": [
+    "ChatGPT",
+    "Claude"
+   ],
+   "answers": 5
+  },
+  {
+   "brand": "Longines",
+   "qid": "Q603698",
+   "in_category": true,
+   "engines": [
+    "Claude",
+    "Gemini"
+   ],
+   "answers": 5
+  },
+  {
+   "brand": "Junghans",
+   "qid": "Q560976",
+   "in_category": true,
+   "engines": [
+    "Claude",
+    "Gemini"
+   ],
+   "answers": 4
+  },
+  {
+   "brand": "TAG Heuer",
+   "qid": "Q645984",
+   "in_category": true,
+   "engines": [
+    "Claude",
+    "Gemini"
+   ],
+   "answers": 4
+  },
+  {
+   "brand": "Grand Seiko",
+   "qid": "Q11300325",
+   "in_category": true,
+   "engines": [
+    "Claude",
+    "Gemini"
+   ],
+   "answers": 3
+  }
+ ],
+ "note": "Only brands in the competitive set are listed: named by at least 2 of the 3 assistants and in this BrandTabulator category."
+}
