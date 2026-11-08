@@ -55,9 +55,7 @@ def ai_set_note(cat):
     eng = ", ".join(f"{k} ({v})" for k, v in sm["engines"].items())
     d = dt.date.fromisoformat(sm["date"]).strftime("%-d %B %Y")
     return (f'<span data-for="set" hidden><b>{H.escape(cs.get("name","Competitive set"))}.</b> On {d}, I asked three AI assistants, each searching the web, the questions a customer or marketer might ask: {qs} '
-            f'I asked each question three times on each assistant: {eng}. A brand is in this set if at least two of the three assistants named it. The set is refreshed monthly. '
-            + (f'Named by AI but not in this category: {H.escape(", ".join(outside))}. ' if outside else "")
-            + f'<a href="/{p_url(cs["summary"])}">How often each brand was named</a>.</span>')
+            f'I asked each question three times on each assistant: {eng}. A brand is in this set if at least two of the three assistants named it. The set is refreshed monthly.</span>')
 
 def p_url(p):
     return p.strip("/")
