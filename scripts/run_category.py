@@ -60,6 +60,33 @@ def ai_set_note(cat):
 def p_url(p):
     return p.strip("/")
 
+def issue_box(cat, rows):
+    """This week: the target brand against the average of its AI-named competitors."""
+    import html as H
+    cs = cat.get("competitive_set") or {}; sm = cs.get("_summary")
+    if not sm: return ""
+    tgt = next((r for r in rows if r["qid"] == sm["target_qid"]), None)
+    comp = [r for r in rows if r.get("in_set") and r["qid"] != sm["target_qid"]]
+    if not tgt or not comp: return ""
+    M = [("Changes to Wikipedia articles", "wp_changes_7d", "wp_changes_prev7d", "last week"),
+         ("Sources cited in Wikipedia articles", "wp_refs", "wp_refs_prev", "last issue"),
+         ("People and machines reading Wikipedia articles", "pv7_wp", "pvprev7_wp", "last week"),
+         ("Changes to Wikidata entries", "wd_changes_7d", "wd_changes_prev7d", "last week"),
+         ("Facts recorded in Wikidata", "wd_statements", "wd_statements_prev", "last issue"),
+         ("People and machines reading Wikidata entries", "pv7_wd", "pvprev7_wd", "last week")]
+    def fmt(v): return "—" if v is None else (f"{v:,.0f}" if abs(v) >= 100 or float(v).is_integer() else f"{v:,.1f}")
+    def cell(now, before, label):
+        if now is None: return "<td>—</td>"
+        if before is None: return f"<td><b>{fmt(now)}</b><br><span class='sub'>first issue</span></td>"
+        ch = "" if before == 0 else (" · no change" if now == before else f" · {'+' if now > before else '−'}{abs(100*(now-before)/before):.0f}%")
+        return f"<td><b>{fmt(now)}</b><br><span class='sub'>{label}: {fmt(before)}{ch}</span></td>"
+    def avg(k):
+        v = [r.get(k) for r in comp]
+        return None if any(x is None for x in v) else sum(v) / len(v)
+    body = "".join(f"<tr><td>{H.escape(n)}</td>{cell(tgt.get(a), tgt.get(b), lab)}{cell(avg(a), avg(b), lab)}</tr>" for n, a, b, lab in M)
+    return (f"<p style='margin:0 0 8px'>{H.escape(tgt['label'])} against the average of its {len(comp)} competitors, per AI. Weeks run to yesterday.</p>"
+            f"<div class='wrap'><table style='min-width:0;width:100%'><thead><tr><th></th><th>{H.escape(tgt['label'])}</th><th>Average competitor</th></tr></thead><tbody>{body}</tbody></table></div>")
+
 def fix_links(text):
     """Turn site-root links ("/methods/") into links that work under BASE."""
     return text.replace('href="/', f'href="{BASE}/').replace('](/', f']({BASE}/')
@@ -102,6 +129,29 @@ def pageviews(title, agent, start, end):
     time.sleep(PACE)
     if not r.ok: return None
     return sum(i["views"] for i in r.json().get("items", []))
+
+def daily_views(project, article, today):
+    """People and machines (all agents) reading a page: last 7 days and the 7 before, ending yesterday."""
+    end = today - dt.timedelta(days=1); start = end - dt.timedelta(days=13)
+    t = urllib.parse.quote(article.replace(" ", "_"), safe="")
+    url = f"https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/{project}/all-access/all-agents/{t}/daily/{start:%Y%m%d}00/{end:%Y%m%d}00"
+    r = S.get(url, timeout=60); time.sleep(PACE)
+    if r.status_code == 429: time.sleep(30); r = S.get(url, timeout=60); time.sleep(PACE)
+    if r.status_code == 404: return 0, 0
+    if not r.ok: return None, None
+    cut = (end - dt.timedelta(days=6)).strftime("%Y%m%d")
+    items = r.json().get("items", [])
+    return sum(i["views"] for i in items if i["timestamp"][:8] >= cut), sum(i["views"] for i in items if i["timestamp"][:8] < cut)
+
+def weekly_extras(row, today):
+    if row.get("enwiki_title"):
+        row["pv7_wp"], row["pvprev7_wp"] = daily_views("en.wikipedia", row["enwiki_title"], today)
+    row["pv7_wd"], row["pvprev7_wd"] = daily_views("www.wikidata.org", row["qid"], today)
+    j = get("https://www.wikidata.org/w/api.php", {"action": "query", "format": "json", "formatversion": "2", "prop": "revisions", "rvprop": "timestamp", "rvlimit": "100", "titles": row["qid"]}).json()
+    revs = (j["query"]["pages"][0].get("revisions") or [])
+    a, b = (today - dt.timedelta(days=7)).isoformat(), (today - dt.timedelta(days=14)).isoformat()
+    row["wd_changes_7d"] = sum(1 for r in revs if r["timestamp"] >= a)
+    row["wd_changes_prev7d"] = sum(1 for r in revs if b <= r["timestamp"] < a)
 
 # ---------- metrics ----------
 def wd_metrics(e):
@@ -151,6 +201,8 @@ def wp_metrics(title, today):
         "wp_last_50byte_revid": big["revid"] if big else None,
         "wp_last_50byte_parentid": big.get("parentid") if big else None,
         "wp_revisions_examined": len(revs),
+        "wp_changes_7d": sum(1 for r in revs if r["timestamp"] >= (today - dt.timedelta(days=7)).isoformat()),
+        "wp_changes_prev7d": sum(1 for r in revs if (today - dt.timedelta(days=14)).isoformat() <= r["timestamp"] < (today - dt.timedelta(days=7)).isoformat()),
     }
     w = wp_api({"prop": "revisions", "rvprop": "content", "rvslots": "main", "titles": title})
     txt = w["query"]["pages"][0]["revisions"][0]["slots"]["main"]["content"]
@@ -291,10 +343,11 @@ details summary{{cursor:pointer;font-size:14px;font-weight:500}}
 <div style="display:flex;flex-direction:column;gap:10px"><div class="sub">{n} brands</div><h1>{H.escape(cat['name'])}</h1></div>
 {("<div style='background:#fff;border:1px solid #cfcdc5;padding:18px 22px'>" + (f"<p style='margin:0 0 8px;font-weight:600'>{H.escape(cat['intro_title'])}</p>" if cat.get("intro_title") else "") + "".join(f"<p style='margin:0 0 8px'>{H.escape(p).replace('Michael@MichaelQuinn.ai', '<a href=mailto:Michael@MichaelQuinn.ai>Michael@MichaelQuinn.ai</a>')}</p>" for p in cat["intro"]) + "</div>") if cat.get("intro") else ""}
 <div class="lead"><div class="sub" style="text-transform:uppercase;letter-spacing:.06em;font-size:12px;font-weight:500">This issue</div>
-<p>Longest without a substantive edit: {H.escape(stale['label'])}, {stale.get('days_since_50byte')} days. Most recently worked on: {H.escape(fresh['label'])}. Category median is {med_e:g} edits per 90 days and {med_b:g}% of Wikidata statements referenced.</p>
+{issue_box(cat, rows) or f"<p>Longest without a substantive edit: {H.escape(stale['label'])}, {stale.get('days_since_50byte')} days. Most recently worked on: {H.escape(fresh['label'])}. Category median is {med_e:g} edits per 90 days and {med_b:g}% of Wikidata statements referenced.</p>"}
 <div class="sub">{prov} <a href="/data/{cat['slug']}/{date}.json">JSON</a> · <a href="/methods/">How this is measured</a></div></div>
 <div class="card">
-<div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px"><h2>The regatta</h2><span class="sub">Same wind for every boat. Click a heading to sort; hover or tap ⓘ for its definition. Default order: longest unupdated first.</span></div>
+<div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px"><h2>The regatta</h2><span class="sub">Default order: longest unupdated first.</span></div>
+<p style="margin:0;font-size:15px;line-height:1.55"><b>Why &ldquo;the regatta&rdquo;?</b> The wind is the market. It blows on every brand, more or less. Wikidata is the ballast: the weight of facts about the brand. The brand can add and correct those facts, provided it says who is editing. Wikipedia is the sail area: what is written about the brand, with each statement backed by a published source. The brand cannot edit it directly; it can only ask. Both are public, and any editor can change or challenge them.</p>
 {seg_html}
 <div class="sub" id="viewnote"><span data-for="all"><b>Full category:</b> every Wikidata item that is classified as a watch company (industry horology or watchmaking, product watch, or instance of watch manufacturing company) and has an English Wikipedia article, as returned by <a href="/data/{cat['slug']}/candidates.json">this query</a>. {H.escape(cat.get("inclusion_rule",""))}</span>{set_note}</div>
 <div class="sub">Click any column heading to sort by it. Click the <b>i</b> next to a heading to see what it measures. Questions: <a href="mailto:Michael@MichaelQuinn.ai">Michael@MichaelQuinn.ai</a></div>
@@ -530,6 +583,8 @@ def main():
         row["days_since_50byte"] = days_since(row.get("wp_last_50byte"), today)
         row["days_since_substantive"] = days_since(row.get("wp_last_substantive"), today)
         row["days_since_wd_edit"] = days_since(row.get("wd_modified"), today)
+        if row["in_set"] or row["highlight"]:
+            weekly_extras(row, today)
         rows.append(row)
 
     excluded = []
@@ -538,6 +593,15 @@ def main():
         rows = [r for r in rows if not r.get("dissolved")]
     excluded += [{"qid": q, "label": q, "reason": why} for q, why in (cat.get("exclude") or {}).items()] if isinstance(cat.get("exclude"), dict) else []
 
+    prev_file = None
+    for f in sorted(os.listdir(outdir), reverse=True):
+        if re.match(r"\d{4}-\d\d-\d\d\.json$", f) and f[:10] <= (today - dt.timedelta(days=5)).isoformat():
+            prev_file = f; break
+    if prev_file:
+        prev = {b["qid"]: b for b in json.load(open(os.path.join(outdir, prev_file)))["brands"]}
+        for r in rows:
+            p = prev.get(r["qid"]) or {}
+            r["wp_refs_prev"] = p.get("wp_refs"); r["wd_statements_prev"] = p.get("wd_statements")
     for key, lower in [("days_since_50byte", True), ("ballast_pct", False), ("wp_edits_90d", False), ("pv_user", False), ("identity_links_out", False), ("wd_statements", False), ("wd_sitelinks", False), ("wp_refs_per_1000_words", False), ("pv_bot_share", True)]:
         percentiles(rows, key, lower); rank(rows, key, reverse=(key != "pv_bot_share"))  # staleness rank: longest unupdated = 1
 
@@ -546,7 +610,7 @@ def main():
         w = csv.DictWriter(f, fieldnames=COLS, extrasaction="ignore"); w.writeheader(); w.writerows(rows)
     meta = {"category": cat["name"], "slug": a.slug, "computed_at": date, "edit_window_days": 90, "pageview_month": pv_month, "pageview_range": [pv_start, pv_end],
             "median_edits_90d": statistics.median([r.get("wp_edits_90d", 0) or 0 for r in rows]), "median_ballast_pct": statistics.median([r.get("ballast_pct", 0) for r in rows]),
-            "user_agent": UA, "inclusion_rule": cat.get("inclusion_rule"), "excluded": excluded, "brands": rows}
+            "user_agent": UA, "previous_issue": prev_file[:10] if prev_file else None, "inclusion_rule": cat.get("inclusion_rule"), "excluded": excluded, "brands": rows}
     json.dump(meta, open(os.path.join(outdir, f"{date}.json"), "w"), indent=1)
     json.dump(meta, open(os.path.join(outdir, "latest.json"), "w"), indent=1)
     open(os.path.join(pagedir, "index.md"), "w").write(fix_links(f"# {cat['name']}\n\nIssue {date}. {len(rows)} brands. Ranked by staleness (longest unupdated first). Views: {pv_month}.\n\n" + md_table(rows, cat) + f"\nData: [CSV](/data/{a.slug}/{date}.csv) · [JSON](/data/{a.slug}/{date}.json) · [Methods](/methods/)\n"))

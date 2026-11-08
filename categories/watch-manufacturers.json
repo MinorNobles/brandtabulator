@@ -118,7 +118,7 @@
   "product_noun": "watch",
   "products_noun": "watches",
   "competitive_set": {
-    "name": "Citizen's competitors, as named by AI",
+    "name": "Competitors, per AI",
     "summary": "data/watch-manufacturers/competitors/latest.json"
   }
 }
