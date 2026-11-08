@@ -1,314 +1,65 @@
 {
  "search": {
-  "Coach New York": [
+  "Tapestry": [
    {
-    "qid": "Q727697",
-    "label": "Coach",
-    "description": "American luxury design house"
-   }
-  ],
-  "Tapestry Inc": [],
-  "L'Oréal": [
-   {
-    "qid": "Q156077",
-    "label": "L'Oréal",
-    "description": "international cosmetics and beauty company"
+    "qid": "Q411032",
+    "label": "Tapestry",
+    "description": "1971 studio album by Carole King"
    },
    {
-    "qid": "Q1786381",
-    "label": "L'Oréal-UNESCO Award For Women in Science",
-    "description": "scientific award"
+    "qid": "Q184296",
+    "label": "tapestry",
+    "description": "textile artwork, traditionally woven on a vertical loom using tapestry weaving techniques, sometimes embellished with embroidery or paint"
    },
    {
-    "qid": "Q30338221",
-    "label": "L'Oréal USA",
+    "qid": "Q131764095",
+    "label": "Tapestry",
     "description": null
    },
    {
-    "qid": "Q6455840",
-    "label": "L'Oréal Professionnel",
-    "description": null
+    "qid": "Q3275203",
+    "label": "needlepoint",
+    "description": "textile artwork created with a needle and yarn on canvas or mesh"
    },
    {
-    "qid": "Q16038760",
-    "label": "L’Oréal Foundation",
-    "description": null
+    "qid": "Q7684563",
+    "label": "Tapestry",
+    "description": "episode of Star Trek: The Next Generation (S6 E15)"
    },
    {
-    "qid": "Q54968122",
-    "label": "L'ORÉAL Česká republika",
-    "description": "company in the Czech Republic"
+    "qid": "Q29167534",
+    "label": "tapestry weave",
+    "description": "process of weaving using tapestry techniques where the weft threads travel only the width of a pattern element rather than the full width of the warp"
    }
   ],
-  "Merit Beauty": [],
-  "HelloFresh": [
+  "Merit cosmetics": [],
+  "Centric Brands Inc": [],
+  "Peacock streaming": [],
+  "Comcast": [
    {
-    "qid": "Q23014836",
-    "label": "HelloFresh SE",
-    "description": "German meal-kit provider"
-   }
-  ],
-  "Kohler Co.": [
-   {
-    "qid": "Q6426036",
-    "label": "Kohler Company",
-    "description": "American hardware manufacturing company based in Kohler, Wisconsin"
-   }
-  ],
-  "eBay": [
-   {
-    "qid": "Q58024",
-    "label": "eBay",
-    "description": "American multinational internet corporation that manages eBay.com"
+    "qid": "Q1113804",
+    "label": "Comcast",
+    "description": "American multinational telecommunications conglomerate"
    },
-   {
-    "qid": "Q127268",
-    "label": "eBay",
-    "description": "song by \"Weird Al\" Yankovic"
-   },
-   {
-    "qid": "Q110043517",
-    "label": "eBay",
-    "description": "sketch from Saturday Night Live"
-   },
-   {
-    "qid": "Q140362854",
-    "label": "eBay",
-    "description": "mobile application"
-   },
-   {
-    "qid": "Q139985468",
-    "label": "Ebayo",
-    "description": "family name"
-   },
-   {
-    "qid": "Q29000329",
-    "label": "eBay Korea",
-    "description": null
-   }
-  ],
-  "Signet Jewelers": [
-   {
-    "qid": "Q7512923",
-    "label": "Signet Jewelers Limited",
-    "description": "jewellery retailer"
-   }
-  ],
-  "Centric Brands": [],
-  "Gatorade": [
-   {
-    "qid": "Q304992",
-    "label": "Gatorade",
-    "description": "manufacturer of sports-themed beverage and food products"
-   },
-   {
-    "qid": "Q17508078",
-    "label": "Gatorade",
-    "description": "1982 studio album by Willis Jackson"
-   },
-   {
-    "qid": "Q378806",
-    "label": "Bluegreen Vacations Duel",
-    "description": "qualifying auto races to the Daytona 500"
-   },
-   {
-    "qid": "Q5527478",
-    "label": "Gatorade Garden City Complex",
-    "description": "arena in St. Catharines, Ontario, Canada"
-   },
-   {
-    "qid": "Q1278629",
-    "label": "Gatorade Center",
-    "description": "arena in Turku, Finland"
-   },
-   {
-    "qid": "Q10288508",
-    "label": "Gatorade Sports Science Institute",
-    "description": null
-   }
-  ],
-  "Frito-Lay": [
-   {
-    "qid": "Q1221751",
-    "label": "Frito-Lay",
-    "description": "American food company"
-   },
-   {
-    "qid": "Q30645550",
-    "label": "Frito-Lay Canada",
-    "description": "company"
-   },
-   {
-    "qid": "Q107322327",
-    "label": "Frito-Lay Corporate Headquarters",
-    "description": "corporate headquarters at 7701 Legacy Dr. Plano, Texas"
-   },
-   {
-    "qid": "Q116712161",
-    "label": "Frito-Lay Cogen Plant",
-    "description": "power station with capacity >1MW in Kern County, California"
-   },
-   {
-    "qid": "Q106411908",
-    "label": "Frito-Lay (Switzerland)",
-    "description": "company in Bern, Switzerland"
-   },
-   {
-    "qid": "Q116719843",
-    "label": "Frito Lay Incorporated",
-    "description": "power station with capacity >1MW in Windham County, Connecticut"
-   }
-  ],
-  "Pepsi": [
-   {
-    "qid": "Q334800",
-    "label": "PepsiCo",
-    "description": "American soft drink company"
-   },
-   {
-    "qid": "Q47719",
-    "label": "Pepsi",
-    "description": "soft drink owned and manufactured by PepsiCo"
-   },
-   {
-    "qid": "Q69662787",
-    "label": "Pepsi",
-    "description": "female given name"
-   },
-   {
-    "qid": "Q7166507",
-    "label": "Pepsinae",
-    "description": "subfamily of wasps"
-   },
-   {
-    "qid": "Q18606964",
-    "label": "Pepsis",
-    "description": "genus of insects"
-   },
-   {
-    "qid": "Q795470",
-    "label": "Ball Arena",
-    "description": "indoor arena in Denver, Colorado, USA"
-   }
-  ],
-  "Quaker Oats Company": [
-   {
-    "qid": "Q2699694",
-    "label": "Quaker Oats Company",
-    "description": "American food conglomerate"
-   },
-   {
-    "qid": "Q121299425",
-    "label": "Quaker Oats Company",
-    "description": "production company"
-   },
-   {
-    "qid": "Q117318772",
-    "label": "Public Utility Holding Corporation of America",
-    "description": "business"
-   }
-  ],
-  "Tropicana Products": [
-   {
-    "qid": "Q1846049",
-    "label": "Tropicana Products",
-    "description": "American fruit juice beverages producer"
-   },
-   {
-    "qid": "Q116712923",
-    "label": "Tropicana Products Bradent",
-    "description": "power station with capacity >1MW in Manatee County, Florida"
-   }
-  ],
-  "Lay's": [
-   {
-    "qid": "Q723513",
-    "label": "Lay’s",
-    "description": "snack food company"
-   },
-   {
-    "qid": "Q785359",
-    "label": "Lay-Saint-Christophe",
-    "description": "commune in Meurthe-et-Moselle, France"
-   },
-   {
-    "qid": "Q224971",
-    "label": "Lay-Saint-Remy",
-    "description": "commune in Meurthe-et-Moselle, France"
-   },
-   {
-    "qid": "Q114411246",
-    "label": "Lay Sreyrath",
-    "description": "researcher"
-   },
-   {
-    "qid": "Q15631493",
-    "label": "Lay Siyah Rural District",
-    "description": "rural district in Isfahan, Iran"
-   },
-   {
-    "qid": "Q96416347",
-    "label": "non-technical summary",
-    "description": "reduced text of the document"
-   }
-  ],
-  "Doritos": [
-   {
-    "qid": "Q776795",
-    "label": "Doritos",
-    "description": "American brand of flavored tortilla chips"
-   },
-   {
-    "qid": "Q5298021",
-    "label": "Doritos Crash Course",
-    "description": "2010 video game"
-   },
-   {
-    "qid": "Q16259434",
-    "label": "Doritos Crash Course 2",
-    "description": "2013 video game"
-   },
-   {
-    "qid": "Q124065022",
-    "label": "Doritos VR Battle",
-    "description": "2016 video game"
-   },
-   {
-    "qid": "Q108370822",
-    "label": "Doritos Crash Course",
-    "description": "video game series"
-   },
-   {
-    "qid": "Q125552533",
-    "label": "Doritos Spicy Pineapple Jalapeño",
-    "description": "Doritos flavor variant"
-   }
-  ],
-  "Xfinity": [
    {
     "qid": "Q5151002",
     "label": "Xfinity",
     "description": "American cable provider"
    },
    {
-    "qid": "Q8043977",
-    "label": "Xfinity Streampix",
-    "description": "online on demand media streaming service offered by Comcast"
+    "qid": "Q680614",
+    "label": "30 Rockefeller Plaza",
+    "description": "Art Deco skyscraper at the Rockefeller Center in Midtown Manhattan, New York City"
    },
    {
-    "qid": "Q645499",
-    "label": "NASCAR O'Reilly Auto Parts Series",
-    "description": "second national division of NASCAR"
+    "qid": "Q4036429",
+    "label": "Comcast Spectacor",
+    "description": "American sports and entertainment company"
    },
    {
-    "qid": "Q746918",
-    "label": "Xfinity 500",
-    "description": "auto race held in fall at Martinsville Speedway, United States"
-   },
-   {
-    "qid": "Q818735",
-    "label": "Xfinity Mobile Arena",
-    "description": "multi-purpose indoor arena located in Philadelphia, Pennsylvania, United States"
+    "qid": "Q3684032",
+    "label": "Angel of the Winds Arena",
+    "description": "indoor arena in Everett, Washington, U.S"
    },
    {
     "qid": "Q2985114",
@@ -316,600 +67,2017 @@
     "description": "basketball arena at the University of Maryland"
    }
   ],
-  "Peacock streaming service": [],
-  "NBCUniversal": [
+  "Michael Kors": [
    {
-    "qid": "Q724759",
-    "label": "NBCUniversal",
-    "description": "American media and entertainment conglomerate"
+    "qid": "Q19572998",
+    "label": "Capri Holdings",
+    "description": "holdings company that owns several multinational fashion brands"
    },
    {
-    "qid": "Q6952746",
-    "label": "NBCUniversal Syndication Studios",
-    "description": "American distributor group owned by NBCUniversal through Comcast"
+    "qid": "Q134612138",
+    "label": "Michael Kors",
+    "description": "fashion brand owned by Capri Holdings"
    },
    {
-    "qid": "Q1337530",
-    "label": "Universal Television",
-    "description": "television production arm of the NBCUniversal Television and Streaming"
+    "qid": "Q717618",
+    "label": "Michael Kors",
+    "description": "American fashion designer (born 1959)"
    },
    {
-    "qid": "Q1753607",
-    "label": "Universal Networks International",
-    "description": "division of NBCUniversal"
+    "qid": "Q91042355",
+    "label": "Michael Korsch",
+    "description": "researcher (ORCID 0000-0001-8841-2744)"
    },
    {
-    "qid": "Q1205595",
-    "label": "NBCUniversal Entertainment Japan LLC",
-    "description": "Japanese entertainment company"
+    "qid": "Q96213261",
+    "label": "Michael Korsmeier",
+    "description": "researcher"
    },
    {
-    "qid": "Q9048317",
-    "label": "NBCUniversal Media Group",
-    "description": "American television group owned by Comcast through NBCUniversal"
+    "qid": "Q1928265",
+    "label": "Michael Korstick",
+    "description": "German pianist"
    }
   ],
-  "Sky Group": [
+  "Kate Spade New York": [
    {
-    "qid": "Q918390",
-    "label": "Sky Group",
-    "description": "British media and telecommunications conglomerate"
-   },
-   {
-    "qid": "Q134679243",
-    "label": "Sky Group",
-    "description": "French organization"
+    "qid": "Q6375797",
+    "label": "Kate Spade New York",
+    "description": "American fashion design house"
    }
   ],
-  "Comcast Business": [
+  "Estée Lauder Companies": [
    {
-    "qid": "Q16829921",
-    "label": "Comcast Business",
-    "description": "business communications division of Comcast"
+    "qid": "Q1260606",
+    "label": "Estée Lauder Companies",
+    "description": "American-based cosmetics company"
    },
    {
-    "qid": "Q136498573",
-    "label": "2025 Comcast Business U.S. Open",
+    "qid": "Q113961540",
+    "label": "The Cosmetics Company Store",
+    "description": "American-based cosmetics company"
+   }
+  ],
+  "Blue Apron": [
+   {
+    "qid": "Q26913624",
+    "label": "Blue Apron",
+    "description": "meal delivery service"
+   },
+   {
+    "qid": "Q114686170",
+    "label": "Blue Apron’s Costs Eat Profit; Shares Sour",
+    "description": "Wall Street Journal article (August 10, 2017)"
+   },
+   {
+    "qid": "Q114686583",
+    "label": "Blue Apron Competitor HelloFresh to Launch IPO",
+    "description": "Wall Street Journal article (October 10, 2017)"
+   }
+  ],
+  "Moen": [
+   {
+    "qid": "Q16934183",
+    "label": "Moen",
+    "description": "family name"
+   },
+   {
+    "qid": "Q6890213",
+    "label": "Moen",
+    "description": "village in Risør, Norway"
+   },
+   {
+    "qid": "Q140873",
+    "label": "Moenkhausia",
+    "description": "genus of tetra fish"
+   },
+   {
+    "qid": "Q135032713",
+    "label": "Moen",
+    "description": "2024 video game developed by Atlas Interactive"
+   },
+   {
+    "qid": "Q377429",
+    "label": "Moen",
+    "description": "section of Zwevegem, Belgium"
+   },
+   {
+    "qid": "Q60948",
+    "label": "Conrad Moench",
+    "description": "German botanist (1744–1805)"
+   }
+  ],
+  "Etsy": [
+   {
+    "qid": "Q1353939",
+    "label": "Etsy",
+    "description": "American e-commerce company"
+   },
+   {
+    "qid": "Q115801954",
+    "label": "Etsya (Pauly-Wissowa)",
+    "description": "encyclopedic article in Paulys Realencyclopädie der classischen Altertumswissenschaft (RE)"
+   },
+   {
+    "qid": "Q140995022",
+    "label": "Etsy",
+    "description": "marketplace run by Etsy, Inc."
+   },
+   {
+    "qid": "Q64712040",
+    "label": "Esty Quesada",
+    "description": "Spanish YouTuber, content creator, disc jockey, actress and director."
+   },
+   {
+    "qid": "Q85759725",
+    "label": "Etsyena",
+    "description": "ancient city of Phrygia in modern-day Turkey"
+   },
+   {
+    "qid": "Q137168794",
+    "label": "Etsy witches",
+    "description": "internet witchcraft vendors"
+   }
+  ],
+  "Kay Jewelers": [
+   {
+    "qid": "Q62029290",
+    "label": "Kay Jewelers",
+    "description": "jewelry chain operated by Sterling Jewelers"
+   }
+  ],
+  "Powerade": [
+   {
+    "qid": "Q934273",
+    "label": "Powerade",
+    "description": "sports drink manufactured and marketed by The Coca-Cola Company"
+   },
+   {
+    "qid": "Q3544228",
+    "label": "Powerade Tigers",
+    "description": "Filipino basketball team"
+   },
+   {
+    "qid": "Q2944866",
+    "label": "CAA Centre",
+    "description": "arena in Brampton, Ontario, Canada"
+   },
+   {
+    "qid": "Q83855081",
+    "label": "Powerade Dome 2 Dome Cycling Spectacular 2007",
     "description": null
    },
    {
-    "qid": "Q130570640",
-    "label": "2024 Comcast Business U.S. Open Championships",
-    "description": null
-   }
-  ],
-  "handbag": [
-   {
-    "qid": "Q467505",
-    "label": "handbag",
-    "description": "handled medium-to-large bag that is often fashionably designed, typically used by women, to hold personal items"
-   },
-   {
-    "qid": "Q3032212",
-    "label": "diva house",
-    "description": "subgenre of house"
-   },
-   {
-    "qid": "Q87577524",
-    "label": "👜",
-    "description": "Unicode character"
-   },
-   {
-    "qid": "Q93119024",
-    "label": "Handbag",
-    "description": "play written by Mark Ravenhill"
-   },
-   {
-    "qid": "Q64537856",
-    "label": "Handbag",
-    "description": "drawing in the National Gallery of Art (NGA 14395)"
-   },
-   {
-    "qid": "Q64561716",
-    "label": "Handbag",
-    "description": "drawing in the National Gallery of Art (NGA 20197)"
-   }
-  ],
-  "leather goods": [
-   {
-    "qid": "Q96141153",
-    "label": "leather goods",
-    "description": "goods made of leather"
-   },
-   {
-    "qid": "Q112703",
-    "label": "leather goods maker",
-    "description": "craftsperson who makes small leather goods (bags, wallets, belts)"
-   },
-   {
-    "qid": "Q47508066",
-    "label": "leather shop",
-    "description": "shop that sells products made out of leather"
-   },
-   {
-    "qid": "Q57262261",
-    "label": "leather goods trade",
+    "qid": "Q83855086",
+    "label": "Powerade Dome 2 Dome Cycling Spectacular 2008",
     "description": null
    },
    {
-    "qid": "Q123187273",
-    "label": "Leather Goods, Not Elsewhere Classified",
-    "description": "SIC industry classification"
-   },
-   {
-    "qid": "Q141327036",
-    "label": "Leather goods factory",
+    "qid": "Q83855099",
+    "label": "Powerade Dome 2 Dome Cycling Spectacular 2014",
     "description": null
    }
   ],
-  "fashion accessory": [
+  "Coca-Cola": [
    {
-    "qid": "Q1065579",
-    "label": "fashion accessory",
-    "description": "item carried or worn which is used to contribute to the wearer's outfit"
+    "qid": "Q3295867",
+    "label": "The Coca-Cola Company",
+    "description": "American multinational beverage corporation"
+   },
+   {
+    "qid": "Q2813",
+    "label": "Coca-Cola",
+    "description": "carbonated brown-colored soft drink"
+   },
+   {
+    "qid": "Q1104910",
+    "label": "Coca-Cola HBC",
+    "description": "company"
+   },
+   {
+    "qid": "Q20811256",
+    "label": "Coca-Cola Europacific Partners",
+    "description": "multinational bottling company"
+   },
+   {
+    "qid": "Q85753171",
+    "label": "Coca-Cola",
+    "description": "painting by Andy Warhol"
+   },
+   {
+    "qid": "Q97186830",
+    "label": "Coca Cola",
+    "description": "2019 single by Chadia Rodríguez"
    }
   ],
-  "cosmetics": [
+  "Charter Communications": [
    {
-    "qid": "Q131207",
-    "label": "cosmetics",
-    "description": "substances used to enhance the appearance or odor of the human body"
+    "qid": "Q2961234",
+    "label": "Charter Communications",
+    "description": "American cable services provider"
    },
    {
-    "qid": "Q27727532",
-    "label": "Cosmetics",
-    "description": "journal"
-   },
-   {
-    "qid": "Q11193716",
-    "label": "Cosmetics",
-    "description": null
-   },
-   {
-    "qid": "Q12752882",
-    "label": "cosmetics industry",
-    "description": "industry that manufactures and distributes cosmetic products"
-   },
-   {
-    "qid": "Q19787844",
-    "label": "Cosmetics Europe",
-    "description": "organization in Brussels, Belgium"
-   },
-   {
-    "qid": "Q1195245",
-    "label": "beauty salon",
-    "description": "establishment dealing in cosmetic treatments, such as hairdressing and nail services"
+    "qid": "Q16910938",
+    "label": "Charter Communications",
+    "description": "defunct book publishing company"
    }
   ],
-  "cosmetics company": [],
-  "make-up": [
+  "Netflix": [
    {
-    "qid": "Q60978511",
-    "label": "make up",
-    "description": "2019 track by Ariana Grande (explicit version)"
+    "qid": "Q907311",
+    "label": "Netflix",
+    "description": "American subscription video on-demand over-the-top streaming service"
    },
    {
-    "qid": "Q131207",
-    "label": "cosmetics",
-    "description": "substances used to enhance the appearance or odor of the human body"
+    "qid": "Q116452644",
+    "label": "Netflix, Inc.",
+    "description": "American media company"
    },
    {
-    "qid": "Q17150821",
-    "label": "Make Up",
-    "description": "2014 EP by Hyomin"
+    "qid": "Q63523678",
+    "label": "Netflix",
+    "description": "2019 single by Lazza"
    },
    {
-    "qid": "Q60978486",
-    "label": "make up",
-    "description": "2019 track by Ariana Grande (clean version)"
+    "qid": "Q12311300",
+    "label": "filler episode",
+    "description": "episode that does not advance the plot of a television series"
    },
    {
-    "qid": "Q66105151",
-    "label": "Make-Up",
-    "description": "original song written and composed by Prince"
+    "qid": "Q110568280",
+    "label": "Netflix 'N Swill",
+    "description": "podcast"
    },
    {
-    "qid": "Q1190910",
-    "label": "make-up",
-    "description": "action of using makeup to modify the appearance of the face for aesthetic purposes"
+    "qid": "Q104414180",
+    "label": "Netflix Animation Studios",
+    "description": "American animation studio"
    }
   ],
-  "meal kit": [
+  "Glossier": [
    {
-    "qid": "Q10578348",
-    "label": "meal kit",
-    "description": "subscription service–foodservice business model"
-   },
-   {
-    "qid": "Q105693306",
-    "label": "meal kit delivery service",
-    "description": null
+    "qid": "Q85865456",
+    "label": "Glossier",
+    "description": "skincare and beauty brand"
    }
   ],
-  "plumbing fixture": [
+  "Factor meals": [],
+  "Rare Beauty": [
    {
-    "qid": "Q2024731",
-    "label": "plumbing fixture",
-    "description": "exchangeable device which can be connected to a plumbing system to deliver and drain water"
+    "qid": "Q116030556",
+    "label": "Rare Beauty",
+    "description": "American cosmetics company"
    },
    {
-    "qid": "Q123188266",
-    "label": "Plumbing Fixture Fittings and Trim",
-    "description": "SIC industry classification"
+    "qid": "Q58879568",
+    "label": "Rare Beauty Decays with ATLAS and CMS Experiments at LHC",
+    "description": "scholarly article"
    },
    {
-    "qid": "Q83926803",
-    "label": "Plumbing Fixtures",
-    "description": null
-   },
-   {
-    "qid": "Q116970854",
-    "label": "plumbing fixture hardware & part",
-    "description": "plumbing product"
-   },
-   {
-    "qid": "Q123132083",
-    "label": "Plumbing Fixture Fitting and Trim Manufacturing",
-    "description": "NAICS industry classification"
-   },
-   {
-    "qid": "Q43337269",
-    "label": "Plumbing fixtures in special environments",
-    "description": "scientific article published on 01 August 1983"
-   }
-  ],
-  "bathroom fixture": [
-   {
-    "qid": "Q123205555",
-    "label": "Bathroom fixtures and components",
-    "description": "US patent 11272813"
-   }
-  ],
-  "online marketplace": [
-   {
-    "qid": "Q3390477",
-    "label": "online marketplace",
-    "description": "type of e-commerce site"
-   },
-   {
-    "qid": "Q141753546",
-    "label": "LogiFindex",
-    "description": "Turkish freight marketplace and logistics decision-support platform connecting shippers with carriers, cargo insurers and customs brokers"
-   },
-   {
-    "qid": "Q124464524",
-    "label": "Online marketplace cooperative promotional platform",
-    "description": "US patent 11295342"
-   }
-  ],
-  "jewellery retailer": [
-   {
-    "qid": "Q4237303",
-    "label": "jewellery retailer",
+    "qid": "Q132098463",
+    "label": "Rare Beauty, Llc",
     "description": null
    }
   ],
-  "jewelry store": [
+  "Pandora jewelry": [
    {
-    "qid": "Q20708021",
-    "label": "jewelry shop",
-    "description": "shop which sells jewelry"
-   },
-   {
-    "qid": "Q106611381",
-    "label": "jewelry shop chain",
-    "description": "jewelry shops that share a brand and central management, and usually have standardized business methods and practices"
-   },
-   {
-    "qid": "Q99750872",
-    "label": "Jewelry Store",
-    "description": "building in Harpers Ferry, West Virginia"
-   },
-   {
-    "qid": "Q59189243",
-    "label": "Jewelry Store Fence",
-    "description": "episode of The Cisco Kid (S2 E4)"
-   },
-   {
-    "qid": "Q64164201",
-    "label": "Jewelry store window display--Los Angeles",
-    "description": "photograph in the National Gallery of Art (NGA 83369)"
-   },
-   {
-    "qid": "Q123152062",
-    "label": "Jewelry Stores",
-    "description": "superseded NAICS industry classification"
+    "qid": "Q2241604",
+    "label": "Pandora",
+    "description": "Danish multinational jewelry manufacturer and retail chain"
    }
   ],
-  "clothing industry": [
+  "Mercari": [
    {
-    "qid": "Q11828862",
-    "label": "clothing industry",
-    "description": "industry encompassing the design, manufacturing, wholesaling and retailing of clothes"
+    "qid": "Q101040966",
+    "label": "Mercari",
+    "description": "family name"
    },
    {
-    "qid": "Q111973242",
-    "label": "Clothing industry, branches and accessories",
-    "description": "special category of commodities/wares of the 20th Century Press Archives"
+    "qid": "Q21019721",
+    "label": "Mercari",
+    "description": "e-commerce company based in Japan"
    },
    {
-    "qid": "Q124656580",
-    "label": "underwear industry",
-    "description": null
-   },
-   {
-    "qid": "Q113432129",
-    "label": "Clothing industry, branches and accessories : United States",
-    "description": "folder of the 20th Century Press Archives"
-   },
-   {
-    "qid": "Q113432126",
-    "label": "Clothing industry, branches and accessories : Japan",
-    "description": "folder of the 20th Century Press Archives"
-   },
-   {
-    "qid": "Q113432127",
-    "label": "Clothing industry, branches and accessories : Poland",
-    "description": "folder of the 20th Century Press Archives"
+    "qid": "Q3974600",
+    "label": "IMO 7528659",
+    "description": "scrapped RoRo ship"
    }
   ],
-  "sports drink": [
+  "American Standard Brands": [
    {
-    "qid": "Q949948",
-    "label": "sports drink",
-    "description": "oral electrolytic infusion"
-   },
-   {
-    "qid": "Q37882209",
-    "label": "Sports Drinks and Energy Drinks for Children and Adolescents: Are They Appropriate?",
-    "description": "scientific article published on May 29, 2011"
-   },
-   {
-    "qid": "Q34265482",
-    "label": "Sports drinks hazard to teeth",
-    "description": "scientific article"
-   },
-   {
-    "qid": "Q36172002",
-    "label": "Sports drinks and dental erosion",
-    "description": "scientific article published on 01 April 2005"
-   },
-   {
-    "qid": "Q81596396",
-    "label": "Sports drinks, exercise training, and competition",
-    "description": "scientific article published on 01 July 2008"
-   },
-   {
-    "qid": "Q84368585",
-    "label": "Sports drinks and dental erosion",
-    "description": "scientific article published on 01 April 2011"
+    "qid": "Q4745165",
+    "label": "American Standard Brands",
+    "description": "North American Plumbing Fixture Manufacturer"
    }
   ],
-  "soft drink": [
+  "Cheetos": [
    {
-    "qid": "Q147538",
-    "label": "soft drink",
-    "description": "non-alcoholic drink, often carbonated (sparkling)"
+    "qid": "Q117453107",
+    "label": "Cheetos",
+    "description": "Taiwanese progamer"
    },
    {
-    "qid": "Q3126187",
-    "label": "svagdricka",
-    "description": "Swedish low-alcohol malt beverage"
+    "qid": "Q484544",
+    "label": "Cheetos",
+    "description": "brand of snack food"
    },
    {
-    "qid": "Q3516350",
-    "label": "soda tax",
-    "description": "tax or surcharge on soft drinks"
+    "qid": "Q125552139",
+    "label": "Flamin' Hot Cheetos",
+    "description": "Cheetos flavor variant"
    },
    {
-    "qid": "Q13081740",
-    "label": "sulfite ammonia caramel",
-    "description": "substance used as a food additive"
+    "qid": "Q125556963",
+    "label": "Cheetos Puffs Flamin' Hot",
+    "description": "Cheetos flavor variant"
    },
    {
-    "qid": "Q12001725",
-    "label": "Soft Drinks & Hard Fights",
-    "description": "1979 studio album by Septimus"
+    "qid": "Q125556933",
+    "label": "Cheetos Xxtra Flamin' Hot",
+    "description": "Cheetos flavor variant"
    },
    {
-    "qid": "Q115753740",
-    "label": "soft drinks; bottled mineral waters",
-    "description": "class in the Central Product Classification Version 2.1"
+    "qid": "Q125556926",
+    "label": "Cheetos Flamin' Hot Limón",
+    "description": "Cheetos flavor variant"
    }
   ],
-  "snack food": [
+  "BodyArmor": [
    {
-    "qid": "Q749316",
-    "label": "snack",
-    "description": "small portion of food eaten between meals"
-   },
-   {
-    "qid": "Q140256237",
-    "label": "Snack food extrusion",
-    "description": null
-   },
-   {
-    "qid": "Q73128024",
-    "label": "snack food manufacturer",
-    "description": "company in the business of manufacturing snack foods"
-   },
-   {
-    "qid": "Q7546874",
-    "label": "Snack Foods Limited",
-    "description": "Australian snack food company"
-   },
-   {
-    "qid": "Q141950220",
-    "label": "Snack foods of Bosnia and Herzegovina",
-    "description": "Wikimedia category"
-   },
-   {
-    "qid": "Q112925730",
-    "label": "Snack Food Development With Single Phase Extrusion-cooking Technology",
-    "description": "2016 master's thesis by Kristy Kwok at Auckland University of Technology"
-   }
-  ],
-  "potato chip": [
-   {
-    "qid": "Q173265",
-    "label": "potato chip",
-    "description": "deep-fried or baked thin slice of potato"
-   },
-   {
-    "qid": "Q110059696",
-    "label": "Potato Chip",
-    "description": "sketch from Saturday Night Live"
-   },
-   {
-    "qid": "Q29641766",
-    "label": "Potato Chip Rock",
-    "description": "tourist attraction in San Diego, California"
-   },
-   {
-    "qid": "Q15463153",
-    "label": "Chamaedorea tuerckheimii",
-    "description": "species of plant"
-   },
-   {
-    "qid": "Q123187157",
-    "label": "Potato Chips, Corn Chips, and Similar Snacks",
-    "description": "SIC industry classification"
-   },
-   {
-    "qid": "Q46844290",
-    "label": "Potato chip intake increases ascorbic acid levels and decreases reactive oxygen species in SMP30/GNL knockout mouse tissues",
-    "description": "scientific article"
-   }
-  ],
-  "internet service provider": [
-   {
-    "qid": "Q11371",
-    "label": "internet service provider",
-    "description": "organization that provides access to the Internet"
-   },
-   {
-    "qid": "Q1478521",
-    "label": "ISPA",
-    "description": "Internet Service Providers Austria"
-   },
-   {
-    "qid": "Q16885029",
-    "label": "Internet Service Providers Association of Ireland",
-    "description": null
-   },
-   {
-    "qid": "Q3684624",
-    "label": "Internet service provider and web host",
-    "description": null
-   },
-   {
-    "qid": "Q6055666",
-    "label": "Internet Service Providers Association",
-    "description": "trade association"
-   },
-   {
-    "qid": "Q123177837",
-    "label": "Internet Service Providers",
-    "description": "superseded NAICS industry classification"
-   }
-  ],
-  "cable television": [
-   {
-    "qid": "Q184452",
-    "label": "cable television",
-    "description": "television content transmitted via signals on coaxial cable"
-   },
-   {
-    "qid": "Q5009242",
-    "label": "cable channel",
-    "description": "television channel available via cable television"
-   },
-   {
-    "qid": "Q1717176",
-    "label": "cable television company",
-    "description": null
-   },
-   {
-    "qid": "Q95431314",
-    "label": "Cable Television Networks (Regulation) Act, 1995",
-    "description": "Act of the Parliament of India"
-   },
-   {
-    "qid": "Q95656690",
-    "label": "Cable Television Networks (Regulation) Amendment Act, 2000",
-    "description": "Act of the Parliament of India"
-   },
-   {
-    "qid": "Q94234924",
-    "label": "Cable Television Networks (Regulation) Amendment Act, 2007",
-    "description": "Act of the Parliament of India"
-   }
-  ],
-  "streaming service": [
-   {
-    "qid": "Q63241860",
-    "label": "streaming service",
-    "description": "service that delivers on-demand media content via the Internet"
-   },
-   {
-    "qid": "Q102336293",
-    "label": "live streaming service",
-    "description": "audio/video/videogame and/or live streaming platform where users can live stream on a variety of topics"
-   },
-   {
-    "qid": "Q95000029",
-    "label": "WATCH IT",
-    "description": "Egyptian digital platform for VOD"
-   },
-   {
-    "qid": "Q137212272",
-    "label": "dedicated streaming service button",
-    "description": "type of push-buttons used on smart TV remote controllers"
-   },
-   {
-    "qid": "Q118652591",
-    "label": "Streaming service data receiving device and method in mobile communication system for supporting plurality of radio access interfaces",
-    "description": "US patent 11159594"
-   },
-   {
-    "qid": "Q114686559",
-    "label": "Streaming Service Tests Appetite for Low-Cost TV Without Sports",
-    "description": "Wall Street Journal article (November 14, 2017)"
-   }
-  ],
-  "video on demand": [
-   {
-    "qid": "Q723685",
-    "label": "video on demand",
-    "description": "systems which allow users to select and watch to video content on demand"
-   },
-   {
-    "qid": "Q113050355",
-    "label": "VOD channel",
-    "description": "type of YouTube channel used for posting entire recordings of past live streams, for use with P3831"
-   },
-   {
-    "qid": "Q136807651",
-    "label": "Video-on-demand content delivery method for providing video-on-demand services to TV service subscribers",
-    "description": "US patent 11259089"
-   },
-   {
-    "qid": "Q136807682",
-    "label": "Video-on-demand content delivery system for providing video-on-demand services to TV service subscribers",
-    "description": "US patent 11252476"
-   },
-   {
-    "qid": "Q110986995",
-    "label": "Video on demand",
-    "description": "2014 article"
-   },
-   {
-    "qid": "Q16294865",
-    "label": "subscription video on demand service",
-    "description": null
+    "qid": "Q19867857",
+    "label": "Bodyarmor SuperDrink",
+    "description": "American sports drink"
    }
   ]
  },
- "items": {},
+ "items": {
+  "Q727697": {
+   "label": "Coach",
+   "description": "American luxury design house",
+   "enwiki": "Coach New York",
+   "P31": [
+    [
+     "Q4830453",
+     "business"
+    ],
+    [
+     "Q6881511",
+     "enterprise"
+    ],
+    [
+     "Q891723",
+     "public company"
+    ]
+   ],
+   "P452": [],
+   "P1056": [
+    [
+     "Q11460",
+     "clothing"
+    ]
+   ],
+   "P749": [],
+   "P127": [
+    [
+     "Q56273715",
+     "Tapestry, Inc."
+    ]
+   ],
+   "P355": [],
+   "P1830": [],
+   "P17": [
+    [
+     "Q30",
+     "United States"
+    ]
+   ]
+  },
+  "Q156077": {
+   "label": "L'Oréal",
+   "description": "international cosmetics and beauty company",
+   "enwiki": "L'Oréal",
+   "P31": [
+    [
+     "Q43229",
+     "organization"
+    ],
+    [
+     "Q161726",
+     "multinational corporation"
+    ]
+   ],
+   "P452": [
+    [
+     "Q3246832",
+     "personal care product"
+    ],
+    [
+     "Q12752882",
+     "cosmetics industry"
+    ],
+    [
+     "Q1187656",
+     "fast-moving consumer goods"
+    ],
+    [
+     "Q112166087",
+     null
+    ]
+   ],
+   "P1056": [],
+   "P749": [],
+   "P127": [
+    [
+     "Q369937",
+     "Eugène Schueller"
+    ],
+    [
+     "Q297804",
+     "Liliane Bettencourt"
+    ],
+    [
+     "Q120801968",
+     "GESPARAL"
+    ],
+    [
+     "Q120802048",
+     "TETHYS"
+    ],
+    [
+     "Q160746",
+     "Nestlé"
+    ],
+    [
+     "Q120802048",
+     "TETHYS"
+    ],
+    [
+     "Q160746",
+     "Nestlé"
+    ],
+    [
+     "Q120802048",
+     "TETHYS"
+    ],
+    [
+     "Q160746",
+     "Nestlé"
+    ]
+   ],
+   "P355": [
+    [
+     "Q134890544",
+     "AcneFree"
+    ],
+    [
+     "Q4688560",
+     "Aesop"
+    ],
+    [
+     "Q134890548",
+     "Ambi"
+    ],
+    [
+     "Q104865463",
+     "Atelier Cologne"
+    ],
+    [
+     "Q134788670",
+     "Azzaro"
+    ],
+    [
+     "Q134788842",
+     "Biolage"
+    ],
+    [
+     "Q2494771",
+     "Biotherm"
+    ],
+    [
+     "Q2932498",
+     "Cacharel"
+    ],
+    [
+     "Q2932784",
+     "Cadum"
+    ],
+    [
+     "Q2938848",
+     "Carita"
+    ],
+    [
+     "Q5044206",
+     "Carol's Daughter"
+    ],
+    [
+     "Q23731275",
+     "CeraVe"
+    ],
+    [
+     "Q134787001",
+     "Dark & Lovely"
+    ],
+    [
+     "Q134890556",
+     "Dermablend"
+    ],
+    [
+     "Q134890640",
+     "Dessange"
+    ],
+    [
+     "Q20971334",
+     "Diesel"
+    ],
+    [
+     "Q134890657",
+     "Dop"
+    ],
+    [
+     "Q134890680",
+     "Fitne"
+    ],
+    [
+     "Q599755",
+     "Garnier"
+    ],
+    [
+     "Q20971337",
+     "Giorgio Armani"
+    ],
+    [
+     "Q3129665",
+     "Helena Rubinstein"
+    ],
+    [
+     "Q134890710",
+     "Heliotrop"
+    ],
+    [
+     "Q134788479",
+     "IT Cosmetics"
+    ],
+    [
+     "Q132096970",
+     "Jacquemus Beauty"
+    ],
+    [
+     "Q1999812",
+     "Kérastase"
+    ],
+    [
+     "Q3196447",
+     "Kiehl's"
+    ],
+    [
+     "Q1541268",
+     "Lancôme"
+    ],
+    [
+     "Q134890727",
+     "La Provençale"
+    ],
+    [
+     "Q1356442",
+     "La Roche-Posay"
+    ],
+    [
+     "Q134890733",
+     "Logodent"
+    ],
+    [
+     "Q3258067",
+     "Logona"
+    ],
+    [
+     "Q134789096",
+     "L'Oréal Paris"
+    ],
+    [
+     "Q6455840",
+     "L'Oréal Professionnel"
+    ],
+    [
+     "Q134788414",
+     "Maison Margiela"
+    ],
+    [
+     "Q134788015",
+     "Matrix"
+    ],
+    [
+     "Q1351054",
+     "Maybelline"
+    ],
+    [
+     "Q134786716",
+     "Medik8"
+    ],
+    [
+     "Q134787209",
+     "Magic"
+    ],
+    [
+     "Q6817173",
+     "Mennen"
+    ],
+    [
+     "Q134789067",
+     "Miu Miu"
+    ],
+    [
+     "Q21428371",
+     "Mixa"
+    ],
+    [
+     "Q134890762",
+     "Mizani"
+    ],
+    [
+     "Q134788567",
+     "Mugler"
+    ],
+    [
+     "Q134890778",
+     "Narta"
+    ],
+    [
+     "Q10336819",
+     null
+    ],
+    [
+     "Q23671513",
+     "NYX Professional Makeup"
+    ],
+    [
+     "Q134788715",
+     "Prada Beauty"
+    ],
+    [
+     "Q7261179",
+     "Pureology"
+    ],
+    [
+     "Q20971370",
+     "Ralph Lauren"
+    ],
+    [
+     "Q7305998",
+     "Redken"
+    ],
+    [
+     "Q109043900",
+     "Sanoflore"
+    ],
+    [
+     "Q134890801",
+     "Sante"
+    ],
+    [
+     "Q25394641",
+     "Shu Uemura"
+    ],
+    [
+     "Q134787669",
+     "Skinbetter Science"
+    ],
+    [
+     "Q7535296",
+     "SkinCeuticals"
+    ],
+    [
+     "Q21178775",
+     "Stylenanda"
+    ],
+    [
+     "Q134787425",
+     "Takami"
+    ],
+    [
+     "Q134788111",
+     "Thayers"
+    ],
+    [
+     "Q153264",
+     "Urban Decay"
+    ],
+    [
+     "Q3552554",
+     "Ushuaïa"
+    ],
+    [
+     "Q134788648",
+     "Valentino Beauty"
+    ],
+    [
+     "Q2079719",
+     "Vichy"
+    ],
+    [
+     "Q134788610",
+     "Viktor&Rolf"
+    ],
+    [
+     "Q134787782",
+     "Vogue"
+    ],
+    [
+     "Q134890837",
+     "Youth To The People"
+    ],
+    [
+     "Q16034592",
+     "YSL Beauty"
+    ],
+    [
+     "Q134788799",
+     "Yuesai"
+    ]
+   ],
+   "P1830": [
+    [
+     "Q158205",
+     "Sanofi"
+    ],
+    [
+     "Q104429453",
+     "L'Oreal Baltic"
+    ],
+    [
+     "Q30338221",
+     "L'Oréal USA"
+    ],
+    [
+     "Q1809810",
+     "Le Club des Créateurs de Beauté"
+    ],
+    [
+     "Q126872348",
+     "Logocos"
+    ],
+    [
+     "Q3438623",
+     "Roger & Gallet"
+    ],
+    [
+     "Q3508942",
+     "Synthélabo"
+    ],
+    [
+     "Q16666468",
+     "Nickel"
+    ],
+    [
+     "Q20971340",
+     "Guy Laroche"
+    ],
+    [
+     "Q20971360",
+     "Paloma Picasso"
+    ],
+    [
+     "Q25379159",
+     "Gemey Paris"
+    ],
+    [
+     "Q21294908",
+     "LaSCAD"
+    ]
+   ],
+   "P17": [
+    [
+     "Q142",
+     "France"
+    ]
+   ]
+  },
+  "Q23014836": {
+   "label": null,
+   "description": "German meal-kit provider",
+   "enwiki": "HelloFresh",
+   "P31": [
+    [
+     "Q4830453",
+     "business"
+    ],
+    [
+     "Q891723",
+     "public company"
+    ]
+   ],
+   "P452": [
+    [
+     "Q15825471",
+     "food retail sector"
+    ],
+    [
+     "Q10932402",
+     "food delivery"
+    ],
+    [
+     "Q10578348",
+     "meal kit"
+    ]
+   ],
+   "P1056": [],
+   "P749": [],
+   "P127": [],
+   "P355": [],
+   "P1830": [
+    [
+     "Q141774590",
+     "Youfoodz"
+    ],
+    [
+     "Q141774593",
+     "EveryPlate"
+    ]
+   ],
+   "P17": [
+    [
+     "Q183",
+     "Germany"
+    ]
+   ]
+  },
+  "Q6426036": {
+   "label": "Kohler Company",
+   "description": "American hardware manufacturing company based in Kohler, Wisconsin",
+   "enwiki": "Kohler Co.",
+   "P31": [
+    [
+     "Q4830453",
+     "business"
+    ],
+    [
+     "Q6881511",
+     "enterprise"
+    ]
+   ],
+   "P452": [
+    [
+     "Q187939",
+     "industrial manufacturing"
+    ]
+   ],
+   "P1056": [],
+   "P749": [],
+   "P127": [],
+   "P355": [
+    [
+     "Q29002345",
+     "Kohler (China)"
+    ],
+    [
+     "Q29002346",
+     "Kohler (New Zealand)"
+    ],
+    [
+     "Q6426043",
+     "Kohler Mira Ltd"
+    ]
+   ],
+   "P1830": [],
+   "P17": [
+    [
+     "Q30",
+     "United States"
+    ]
+   ]
+  },
+  "Q58024": {
+   "label": "eBay",
+   "description": "American multinational internet corporation that manages eBay.com",
+   "enwiki": "EBay",
+   "P31": [
+    [
+     "Q4830453",
+     "business"
+    ],
+    [
+     "Q6881511",
+     "enterprise"
+    ],
+    [
+     "Q891723",
+     "public company"
+    ],
+    [
+     "Q3390477",
+     "online marketplace"
+    ],
+    [
+     "Q6576792",
+     "online community"
+    ],
+    [
+     "Q125265855",
+     "classified advertising website"
+    ],
+    [
+     "Q43229",
+     "organization"
+    ]
+   ],
+   "P452": [
+    [
+     "Q484847",
+     "e-commerce"
+    ],
+    [
+     "Q126793",
+     "retail"
+    ]
+   ],
+   "P1056": [],
+   "P749": [],
+   "P127": [
+    [
+     "Q348483",
+     "Pierre Omidyar"
+    ],
+    [
+     "Q849363",
+     "The Vanguard Group"
+    ],
+    [
+     "Q219635",
+     "BlackRock"
+    ]
+   ],
+   "P355": [
+    [
+     "Q29000329",
+     "eBay Korea"
+    ],
+    [
+     "Q29000330",
+     "Ebay (Ireland)"
+    ],
+    [
+     "Q7627285",
+     "StubHub"
+    ],
+    [
+     "Q911595",
+     "StumbleUpon"
+    ],
+    [
+     "Q483959",
+     "PayPal"
+    ],
+    [
+     "Q246125",
+     "Skype Technologies"
+    ],
+    [
+     "Q1771581",
+     "mobile.de"
+    ],
+    [
+     "Q16172136",
+     "Qoo10.jp"
+    ]
+   ],
+   "P1830": [
+    [
+     "Q5641633",
+     "half.com"
+    ],
+    [
+     "Q12308022",
+     "Den Blå Avis"
+    ],
+    [
+     "Q483959",
+     "PayPal"
+    ],
+    [
+     "Q2279861",
+     "Shopping.com"
+    ],
+    [
+     "Q4038149",
+     "Epinions"
+    ],
+    [
+     "Q5618258",
+     "Gumtree"
+    ]
+   ],
+   "P17": [
+    [
+     "Q30",
+     "United States"
+    ]
+   ]
+  },
+  "Q7512923": {
+   "label": "Signet Jewelers Limited",
+   "description": "jewellery retailer",
+   "enwiki": "Signet Jewelers",
+   "P31": [
+    [
+     "Q4830453",
+     "business"
+    ],
+    [
+     "Q891723",
+     "public company"
+    ]
+   ],
+   "P452": [
+    [
+     "Q126793",
+     "retail"
+    ]
+   ],
+   "P1056": [
+    [
+     "Q161439",
+     "jewelry"
+    ]
+   ],
+   "P749": [],
+   "P127": [],
+   "P355": [
+    [
+     "Q8065305",
+     "Zale Corporation"
+    ],
+    [
+     "Q7611434",
+     "Sterling Jewelers"
+    ]
+   ],
+   "P1830": [],
+   "P17": [
+    [
+     "Q23635",
+     "Bermuda"
+    ],
+    [
+     "Q30",
+     "United States"
+    ]
+   ]
+  },
+  "Q304992": {
+   "label": "Gatorade",
+   "description": "manufacturer of sports-themed beverage and food products",
+   "enwiki": "Gatorade",
+   "P31": [
+    [
+     "Q167270",
+     "trademark"
+    ],
+    [
+     "Q114392939",
+     "drink brand"
+    ],
+    [
+     "Q4830453",
+     "business"
+    ]
+   ],
+   "P452": [
+    [
+     "Q540912",
+     "food industry"
+    ]
+   ],
+   "P1056": [],
+   "P749": [
+    [
+     "Q334800",
+     "PepsiCo"
+    ]
+   ],
+   "P127": [
+    [
+     "Q334800",
+     "PepsiCo"
+    ],
+    [
+     "Q2699694",
+     "Quaker Oats Company"
+    ]
+   ],
+   "P355": [],
+   "P1830": [],
+   "P17": [
+    [
+     "Q30",
+     "United States"
+    ]
+   ]
+  },
+  "Q1221751": {
+   "label": "Frito-Lay",
+   "description": "American food company",
+   "enwiki": "Frito-Lay",
+   "P31": [
+    [
+     "Q4830453",
+     "business"
+    ]
+   ],
+   "P452": [
+    [
+     "Q540912",
+     "food industry"
+    ]
+   ],
+   "P1056": [
+    [
+     "Q723513",
+     "Lay’s"
+    ]
+   ],
+   "P749": [
+    [
+     "Q334800",
+     "PepsiCo"
+    ]
+   ],
+   "P127": [],
+   "P355": [
+    [
+     "Q1296097",
+     "Walkers"
+    ],
+    [
+     "Q7396446",
+     "Sabritas"
+    ]
+   ],
+   "P1830": [],
+   "P17": [
+    [
+     "Q30",
+     "United States"
+    ]
+   ]
+  },
+  "Q47719": {
+   "label": "Pepsi",
+   "description": "soft drink owned and manufactured by PepsiCo",
+   "enwiki": "Pepsi",
+   "P31": [
+    [
+     "Q114392939",
+     "drink brand"
+    ]
+   ],
+   "P452": [],
+   "P1056": [],
+   "P749": [
+    [
+     "Q334800",
+     "PepsiCo"
+    ]
+   ],
+   "P127": [],
+   "P355": [],
+   "P1830": [],
+   "P17": [
+    [
+     "Q30",
+     "United States"
+    ]
+   ]
+  },
+  "Q2699694": {
+   "label": "Quaker Oats Company",
+   "description": "American food conglomerate",
+   "enwiki": "Quaker Oats Company",
+   "P31": [
+    [
+     "Q4830453",
+     "business"
+    ],
+    [
+     "Q6881511",
+     "enterprise"
+    ]
+   ],
+   "P452": [
+    [
+     "Q540912",
+     "food industry"
+    ]
+   ],
+   "P1056": [
+    [
+     "Q768267",
+     "breakfast cereal"
+    ]
+   ],
+   "P749": [
+    [
+     "Q334800",
+     "PepsiCo"
+    ]
+   ],
+   "P127": [
+    [
+     "Q334800",
+     "PepsiCo"
+    ]
+   ],
+   "P355": [
+    [
+     "Q7435826",
+     "Scott's Porage Oats"
+    ]
+   ],
+   "P1830": [],
+   "P17": [
+    [
+     "Q30",
+     "United States"
+    ]
+   ]
+  },
+  "Q1846049": {
+   "label": "Tropicana Products",
+   "description": "American fruit juice beverages producer",
+   "enwiki": "Tropicana Brands Group",
+   "P31": [
+    [
+     "Q4830453",
+     "business"
+    ],
+    [
+     "Q431289",
+     "brand"
+    ]
+   ],
+   "P452": [
+    [
+     "Q540912",
+     "food industry"
+    ],
+    [
+     "Q4899370",
+     "beverage industry"
+    ]
+   ],
+   "P1056": [
+    [
+     "Q40050",
+     "drink"
+    ],
+    [
+     "Q784230",
+     "Punica"
+    ]
+   ],
+   "P749": [
+    [
+     "Q334800",
+     "PepsiCo"
+    ]
+   ],
+   "P127": [
+    [
+     "Q334800",
+     "PepsiCo"
+    ]
+   ],
+   "P355": [],
+   "P1830": [],
+   "P17": [
+    [
+     "Q30",
+     "United States"
+    ]
+   ]
+  },
+  "Q723513": {
+   "label": "Lay’s",
+   "description": "snack food company",
+   "enwiki": "Lay's",
+   "P31": [
+    [
+     "Q4830453",
+     "business"
+    ]
+   ],
+   "P452": [
+    [
+     "Q173265",
+     "potato chip"
+    ]
+   ],
+   "P1056": [],
+   "P749": [],
+   "P127": [
+    [
+     "Q1221751",
+     "Frito-Lay"
+    ],
+    [
+     "Q334800",
+     "PepsiCo"
+    ]
+   ],
+   "P355": [],
+   "P1830": [],
+   "P17": [
+    [
+     "Q30",
+     "United States"
+    ]
+   ]
+  },
+  "Q776795": {
+   "label": "Doritos",
+   "description": "American brand of flavored tortilla chips",
+   "enwiki": "Doritos",
+   "P31": [
+    [
+     "Q431289",
+     "brand"
+    ]
+   ],
+   "P452": [],
+   "P1056": [],
+   "P749": [],
+   "P127": [
+    [
+     "Q1221751",
+     "Frito-Lay"
+    ]
+   ],
+   "P355": [],
+   "P1830": [],
+   "P17": []
+  },
+  "Q5151002": {
+   "label": "Xfinity",
+   "description": "American cable provider",
+   "enwiki": "Xfinity",
+   "P31": [
+    [
+     "Q4830453",
+     "business"
+    ],
+    [
+     "Q11371",
+     "internet service provider"
+    ]
+   ],
+   "P452": [
+    [
+     "Q2401742",
+     "telecommunications industry"
+    ],
+    [
+     "Q11371",
+     "internet service provider"
+    ],
+    [
+     "Q184452",
+     "cable television"
+    ],
+    [
+     "Q1266169",
+     "telephone company"
+    ],
+    [
+     "Q1941618",
+     "mobile network operator"
+    ],
+    [
+     "Q22908936",
+     "home security"
+    ]
+   ],
+   "P1056": [
+    [
+     "Q184452",
+     "cable television"
+    ]
+   ],
+   "P749": [],
+   "P127": [],
+   "P355": [],
+   "P1830": [],
+   "P17": [
+    [
+     "Q30",
+     "United States"
+    ]
+   ]
+  },
+  "Q724759": {
+   "label": "NBCUniversal",
+   "description": "American media and entertainment conglomerate",
+   "enwiki": "NBCUniversal",
+   "P31": [
+    [
+     "Q658255",
+     "subsidiary company"
+    ],
+    [
+     "Q6881511",
+     "enterprise"
+    ]
+   ],
+   "P452": [
+    [
+     "Q289",
+     "television"
+    ]
+   ],
+   "P1056": [
+    [
+     "Q15078788",
+     "broadcasting"
+    ],
+    [
+     "Q79719",
+     "license"
+    ]
+   ],
+   "P749": [
+    [
+     "Q1113804",
+     "Comcast"
+    ]
+   ],
+   "P127": [
+    [
+     "Q1113804",
+     "Comcast"
+    ]
+   ],
+   "P355": [
+    [
+     "Q1186857",
+     "Universal Destinations & Experiences"
+    ],
+    [
+     "Q13974",
+     "NBC"
+    ],
+    [
+     "Q168383",
+     "Universal Pictures"
+    ],
+    [
+     "Q262523",
+     "Universal TV"
+    ],
+    [
+     "Q67765302",
+     null
+    ],
+    [
+     "Q5433722",
+     "Fandango"
+    ]
+   ],
+   "P1830": [
+    [
+     "Q13974",
+     "NBC"
+    ],
+    [
+     "Q13973",
+     "MS NOW"
+    ],
+    [
+     "Q136538",
+     "Telemundo"
+    ],
+    [
+     "Q186943",
+     "13th Street Universal"
+    ],
+    [
+     "Q262523",
+     "Universal TV"
+    ],
+    [
+     "Q289984",
+     "Syfy Universal"
+    ],
+    [
+     "Q533547",
+     "Pacific Data Images"
+    ],
+    [
+     "Q614539",
+     "Calle 13"
+    ],
+    [
+     "Q649649",
+     "Focus Features"
+    ],
+    [
+     "Q680614",
+     "30 Rockefeller Plaza"
+    ],
+    [
+     "Q700894",
+     "KidsCo"
+    ],
+    [
+     "Q1023911",
+     null
+    ],
+    [
+     "Q1023914",
+     "CNBC Asia"
+    ],
+    [
+     "Q1023912",
+     "CNBC"
+    ],
+    [
+     "Q1205595",
+     "NBCUniversal Entertainment Japan LLC"
+    ],
+    [
+     "Q1337530",
+     "Universal Television"
+    ],
+    [
+     "Q1753607",
+     "Universal Networks International"
+    ],
+    [
+     "Q2877626",
+     "NBC News"
+    ],
+    [
+     "Q2939795",
+     "Carnival Films"
+    ],
+    [
+     "Q3334259",
+     "NBC New York Nonstop"
+    ],
+    [
+     "Q3334262",
+     "NBCSN"
+    ],
+    [
+     "Q3564712",
+     "WKAQ-TV"
+    ],
+    [
+     "Q3565810",
+     "Walter Lantz Productions"
+    ],
+    [
+     "Q3869435",
+     "NBC Universal Global Networks Italia"
+    ],
+    [
+     "Q4005797",
+     "Universal Studios Home Entertainment"
+    ],
+    [
+     "Q4549539",
+     "13th Street"
+    ],
+    [
+     "Q5135090",
+     "Cloo"
+    ],
+    [
+     "Q5151008",
+     "Comcast Network"
+    ],
+    [
+     "Q5283796",
+     "Diva"
+    ],
+    [
+     "Q5321349",
+     "E! Entertainment Radio"
+    ],
+    [
+     "Q5433722",
+     "Fandango"
+    ],
+    [
+     "Q6935542",
+     "Universo"
+    ],
+    [
+     "Q6952747",
+     "NBCUniversal Cable Entertainment"
+    ],
+    [
+     "Q7191139",
+     "PictureBox Movies"
+    ],
+    [
+     "Q7388983",
+     "SBS CNBC"
+    ],
+    [
+     "Q7628254",
+     "Studio Universal"
+    ],
+    [
+     "Q7660488",
+     "Syfy Universal"
+    ],
+    [
+     "Q7696986",
+     "Television Without Pity"
+    ],
+    [
+     "Q7893902",
+     "Universal Channel"
+    ],
+    [
+     "Q9048317",
+     "NBCUniversal Media Group"
+    ],
+    [
+     "Q12184050",
+     "NBCNews.com"
+    ],
+    [
+     "Q15501374",
+     "Hallmark Channel"
+    ],
+    [
+     "Q16986509",
+     "Peacock Productions"
+    ],
+    [
+     "Q16997482",
+     "iVillage"
+    ],
+    [
+     "Q18125857",
+     "GolfNow"
+    ],
+    [
+     "Q20656711",
+     "E!"
+    ],
+    [
+     "Q21003690",
+     "Telemundo Internacional"
+    ],
+    [
+     "Q21996407",
+     "SeeSo"
+    ],
+    [
+     "Q29918977",
+     "Diva (Asia TV channel)"
+    ],
+    [
+     "Q30632606",
+     "Universal Studios Lot"
+    ]
+   ],
+   "P17": [
+    [
+     "Q30",
+     "United States"
+    ]
+   ]
+  },
+  "Q918390": {
+   "label": "Sky Group",
+   "description": "British media and telecommunications conglomerate",
+   "enwiki": "Sky Group",
+   "P31": [
+    [
+     "Q6881511",
+     "enterprise"
+    ],
+    [
+     "Q658255",
+     "subsidiary company"
+    ]
+   ],
+   "P452": [
+    [
+     "Q56611639",
+     "media industry"
+    ]
+   ],
+   "P1056": [
+    [
+     "Q209588",
+     "satellite television"
+    ]
+   ],
+   "P749": [
+    [
+     "Q1113804",
+     "Comcast"
+    ]
+   ],
+   "P127": [
+    [
+     "Q1113804",
+     "Comcast"
+    ]
+   ],
+   "P355": [
+    [
+     "Q16606776",
+     "Sky Italia"
+    ],
+    [
+     "Q7723489",
+     "The Cloud"
+    ],
+    [
+     "Q7537260",
+     "Sky Broadband"
+    ],
+    [
+     "Q652282",
+     "Sky"
+    ],
+    [
+     "Q7537355",
+     "Sky Ireland"
+    ],
+    [
+     "Q478825",
+     "Amstrad"
+    ],
+    [
+     "Q4673290",
+     "Acetrax"
+    ],
+    [
+     "Q16987731",
+     "ITV Digital Channels Ltd"
+    ],
+    [
+     "Q2033167",
+     "Sky UK"
+    ],
+    [
+     "Q7864915",
+     "UK Online"
+    ],
+    [
+     "Q7537250",
+     "Sky Betting & Gaming"
+    ],
+    [
+     "Q3046634",
+     "Easynet"
+    ],
+    [
+     "Q796719",
+     "Sky Italia"
+    ]
+   ],
+   "P1830": [],
+   "P17": [
+    [
+     "Q145",
+     "United Kingdom"
+    ]
+   ]
+  },
+  "Q334800": {
+   "label": "PepsiCo",
+   "description": "American soft drink company",
+   "enwiki": "PepsiCo",
+   "P31": [
+    [
+     "Q778575",
+     "conglomerate"
+    ],
+    [
+     "Q6881511",
+     "enterprise"
+    ],
+    [
+     "Q891723",
+     "public company"
+    ]
+   ],
+   "P452": [
+    [
+     "Q4899370",
+     "beverage industry"
+    ],
+    [
+     "Q1187656",
+     "fast-moving consumer goods"
+    ],
+    [
+     "Q540912",
+     "food industry"
+    ]
+   ],
+   "P1056": [
+    [
+     "Q47719",
+     "Pepsi"
+    ],
+    [
+     "Q5275050",
+     "Diet Pepsi"
+    ],
+    [
+     "Q896",
+     "Mountain Dew"
+    ],
+    [
+     "Q270059",
+     "7 Up"
+    ],
+    [
+     "Q304992",
+     "Gatorade"
+    ],
+    [
+     "Q3813358",
+     "Mauby"
+    ],
+    [
+     "Q784230",
+     "Punica"
+    ],
+    [
+     "Q5573519",
+     "Paso de los Toros"
+    ],
+    [
+     "Q568384",
+     "Mirinda"
+    ]
+   ],
+   "P749": [],
+   "P127": [
+    [
+     "Q849363",
+     "The Vanguard Group"
+    ],
+    [
+     "Q219635",
+     "BlackRock"
+    ],
+    [
+     "Q7603552",
+     "State Street Investment Management"
+    ]
+   ],
+   "P355": [
+    [
+     "Q30713677",
+     "PepsiCo Canada"
+    ],
+    [
+     "Q30713701",
+     "PepsiCo Holdings"
+    ],
+    [
+     "Q7764913",
+     "The Smith's Snackfood Company"
+    ],
+    [
+     "Q5520129",
+     "Gamesa"
+    ],
+    [
+     "Q4930246",
+     "Bluebird Foods"
+    ],
+    [
+     "Q17082362",
+     "Naked Juice"
+    ],
+    [
+     "Q16850746",
+     "Izze Beverage Company"
+    ],
+    [
+     "Q642959",
+     "Lebedyansky"
+    ],
+    [
+     "Q50407282",
+     "PepsiCo Ukraine"
+    ],
+    [
+     "Q1846049",
+     "Tropicana Products"
+    ],
+    [
+     "Q304992",
+     "Gatorade"
+    ],
+    [
+     "Q7640676",
+     "Sunny Delight Beverages"
+    ],
+    [
+     "Q668737",
+     "Yum! Brands"
+    ],
+    [
+     "Q1221751",
+     "Frito-Lay"
+    ],
+    [
+     "Q2699694",
+     "Quaker Oats Company"
+    ],
+    [
+     "Q61075558",
+     "Fruko"
+    ]
+   ],
+   "P1830": [
+    [
+     "Q846834",
+     "Calbee"
+    ],
+    [
+     "Q1459797",
+     "Rockstar"
+    ],
+    [
+     "Q1846049",
+     "Tropicana Products"
+    ],
+    [
+     "Q2699694",
+     "Quaker Oats Company"
+    ],
+    [
+     "Q304992",
+     "Gatorade"
+    ],
+    [
+     "Q492747",
+     "Dole plc"
+    ]
+   ],
+   "P17": [
+    [
+     "Q30",
+     "United States"
+    ],
+    [
+     "Q31",
+     "Belgium"
+    ]
+   ]
+  },
+  "Q16829921": {
+   "label": "Comcast Business",
+   "description": "business communications division of Comcast",
+   "enwiki": "Comcast Business",
+   "P31": [
+    [
+     "Q4830453",
+     "business"
+    ]
+   ],
+   "P452": [
+    [
+     "Q2401742",
+     "telecommunications industry"
+    ]
+   ],
+   "P1056": [],
+   "P749": [],
+   "P127": [
+    [
+     "Q1113804",
+     "Comcast"
+    ]
+   ],
+   "P355": [
+    [
+     "Q39049120",
+     "Masergy Communications"
+    ],
+    [
+     "Q109591345",
+     "Defined Technologies"
+    ]
+   ],
+   "P1830": [],
+   "P17": [
+    [
+     "Q30",
+     "United States"
+    ]
+   ]
+  }
+ },
  "sparql": {}
 }
