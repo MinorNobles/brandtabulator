@@ -38,6 +38,30 @@ def cat_rules_html(c):
 <p><b>Added by hand</b> (the query does not find them):</p><ul>{adds}</ul>
 <p><b>Left out under the rule</b> (besides dissolved companies, which the data file lists):</p><ul>{exs}</ul>"""
 
+def load_ai_set(cat):
+    """If the category's competitive set comes from AI answers, read the published summary and fill in its members."""
+    cs = cat.get("competitive_set") or {}
+    p = cs.get("summary")
+    if not p or not os.path.exists(os.path.join(ROOT, p)): return
+    sm = json.load(open(os.path.join(ROOT, p)))
+    cs["_summary"] = sm
+    cs["members"] = [b["qid"] for b in sm["brands"] if b.get("qid") and b.get("in_category") and len(b["engines"]) >= 2]
+
+def ai_set_note(cat):
+    import html as H
+    cs = cat["competitive_set"]; sm = cs["_summary"]
+    qs = " ".join(f"&ldquo;{H.escape(q)}&rdquo;" for q in sm["questions"])
+    outside = [b["brand"] for b in sm["brands"] if not b.get("in_category") and len(b["engines"]) >= 2]
+    eng = ", ".join(f"{k} ({v})" for k, v in sm["engines"].items())
+    d = dt.date.fromisoformat(sm["date"]).strftime("%-d %B %Y")
+    return (f'<span data-for="set" hidden><b>{H.escape(cs.get("name","Competitive set"))}.</b> On {d}, I asked three AI assistants, each searching the web, the questions a customer or marketer might ask: {qs} '
+            f'I asked each question three times on each assistant: {eng}. A brand is in this set if at least two of the three assistants named it. The set is refreshed monthly. '
+            + (f'Named by AI but not in this category: {H.escape(", ".join(outside))}. ' if outside else "")
+            + f'<a href="/{p_url(cs["summary"])}">How often each brand was named</a>.</span>')
+
+def p_url(p):
+    return p.strip("/")
+
 def fix_links(text):
     """Turn site-root links ("/methods/") into links that work under BASE."""
     return text.replace('href="/', f'href="{BASE}/').replace('](/', f']({BASE}/')
@@ -210,7 +234,7 @@ def html_page(cat, rows, date, pv_month):
             cls = ' class="mono"' if kind != "str" else ""
             tds += f'<td{cls} data-v="{H.escape(str(val))}">{txt}</td>'
         cls = ("hl " if (r.get("in_set") or r.get("highlight")) else "") + ("dis" if r.get("dissolved") else "")
-        trs += f'<tr class="{cls.strip()}" data-set="{1 if r.get("in_set") else 0}">{tds}</tr>'
+        trs += f'<tr class="{cls.strip()}" data-set="{1 if (r.get("in_set") or r.get("highlight")) else 0}">{tds}</tr>'
     ths = "".join(f'<th data-kind="{k}"><span class="hd" tabindex="0" role="button" data-tip="{H.escape(d)}" aria-label="Sort by {H.escape(n)}">{H.escape(n)}<span class="arr" aria-hidden="true"></span></span><button type="button" class="i" data-def="def-{i}" aria-label="Definition of {H.escape(n)}">i</button></th>' for i, (n, _, k, d) in enumerate(COLDEFS))
     defs = "".join(f'<dt id="def-{i}">{H.escape(n)}</dt><dd>{H.escape(d)}</dd>' for i, (n, _, _, d) in enumerate(COLDEFS))
     ld = json.dumps({"@context":"https://schema.org","@type":"Dataset","name":f"BrandTabulator — {cat['name']} — {date}","description":"Public-record activity metrics for brands in this category, computed from Wikipedia and Wikidata.","dateModified":date,"license":"https://creativecommons.org/licenses/by-sa/4.0/","url":f"{SITE_URL}/{cat_path(cat)}/","creator":{"@type":"Person","name":"Michael Quinn","url":"https://michaelquinn.ai","email":"Michael@MichaelQuinn.ai"},"publisher":{"@type":"Organization","name":"MichaelQuinn.ai","url":"https://michaelquinn.ai"},"isPartOf":{"@type":"WebSite","name":"BrandTabulator","url":f"{SITE_URL}/"},"distribution":[{"@type":"DataDownload","encodingFormat":"text/csv","contentUrl":f"{SITE_URL}/data/{cat['slug']}/{date}.csv"},{"@type":"DataDownload","encodingFormat":"application/json","contentUrl":f"{SITE_URL}/data/{cat['slug']}/{date}.json"}]})
@@ -224,8 +248,8 @@ def html_page(cat, rows, date, pv_month):
     if isinstance(ex, list): ex = {q: "" for q in ex}
     removed = ("Removed by hand, with reasons: " + "; ".join(f"{H.escape(q)} ({H.escape(why)})" for q, why in ex.items()) + ".") if ex else "Nothing removed by hand."
     if cs.get("members"):
-        seg_html = f'<div class="seg" role="group" aria-label="Which brands to show"><button type="button" class="on" data-view="all">Full category <span class="n">{n}</span></button><button type="button" data-view="set">{H.escape(cs.get("name","Competitive set"))} <span class="n">{n_set}</span></button></div>'
-        set_note = f'<span data-for="set" hidden><b>{H.escape(cs.get("name","Competitive set"))}:</b> {H.escape(cs.get("basis",""))} Chosen by {H.escape(cs.get("chosen_by","the author"))}; the list is in the <a href="https://github.com/MinorNobles/brandtabulator/blob/main/categories/{cat["slug"]}.json">category file</a>.</span>'
+        seg_html = f'<div class="seg" role="group" aria-label="Which brands to show"><button type="button" class="on" data-view="all">Full category <span class="n">{n}</span></button><button type="button" data-view="set">{H.escape(cs.get("name","Competitive set"))} <span class="n">{n_set}</span></button></div>' + (f'<div class="sub">The competitive view shows the set plus the highlighted brands, so you can compare them side by side.</div>' if any(r.get("highlight") for r in rows) else "")
+        set_note = ai_set_note(cat) if cs.get("_summary") else f'<span data-for="set" hidden><b>{H.escape(cs.get("name","Competitive set"))}:</b> {H.escape(cs.get("basis",""))} Chosen by {H.escape(cs.get("chosen_by","the author"))}; the list is in the <a href="https://github.com/MinorNobles/brandtabulator/blob/main/categories/{cat["slug"]}.json">category file</a>.</span>'
     else:
         seg_html = ""
         hl = ", ".join(H.escape(r["label"]) for r in rows if r.get("highlight"))
@@ -452,7 +476,7 @@ def main():
     ap = argparse.ArgumentParser(); ap.add_argument("slug"); ap.add_argument("--date"); ap.add_argument("--skip-discovery", action="store_true"); ap.add_argument("--render-only", action="store_true", help="rebuild pages from data/<slug>/latest.json without fetching")
     a = ap.parse_args()
     today = dt.date.fromisoformat(a.date) if a.date else dt.date.today()
-    cat = json.load(open(os.path.join(ROOT, "categories", a.slug + ".json")))
+    cat = json.load(open(os.path.join(ROOT, "categories", a.slug + ".json"))); load_ai_set(cat)
     outdir = os.path.join(ROOT, "data", a.slug); os.makedirs(outdir, exist_ok=True)
     pagedir = os.path.join(ROOT, cat_path(cat)); os.makedirs(pagedir, exist_ok=True)
 

@@ -116,5 +116,9 @@
   ],
   "intro_title": "BrandTabulator",
   "product_noun": "watch",
-  "products_noun": "watches"
+  "products_noun": "watches",
+  "competitive_set": {
+    "name": "Citizen's competitors, as named by AI",
+    "summary": "data/watch-manufacturers/competitors/latest.json"
+  }
 }
