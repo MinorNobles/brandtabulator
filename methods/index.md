@@ -27,17 +27,3 @@ industry (P452), product (P1056), parent (P749), subsidiary (P355), owner of (P1
 ## Identity links counted
 
 product or material produced (P1056), brand (P1716), subsidiary (P355), owner of (P1830), notable work (P800), country of origin (P495), motto (P1451), award received (P166), significant event (P793), founded by (P112), chief executive officer (P169)
-
-## Watch manufacturers
-
-Full category query:
-
-```sparql
-SELECT DISTINCT ?item ?itemLabel ?sitelinks WHERE { { ?item wdt:P452 wd:Q41767 . } UNION { ?item wdt:P452 wd:Q63346664 . } UNION { ?item wdt:P1056 wd:Q178794 . } UNION { ?item wdt:P31 wd:Q136094627 . } ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language "en". } } ORDER BY DESC(?sitelinks) LIMIT 400
-```
-
-Added by hand: Seiko (Q322601): Not classified as a watch company in Wikidata (no industry/product statement); obviously belongs., Swatch (Q573422): Same..
-
-Removed by hand: Q1496822: Geneva Seal: a certification, not a business with customers, Q138307980: The Geneva School of Watchmaking: a school, not a brand with customers.
-
-Competitive set: none yet. One will be added only when it rests on a stated, sourced rule.

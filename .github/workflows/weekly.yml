@@ -6,9 +6,9 @@ on:
   workflow_dispatch:
     inputs:
       category:
-        description: "Category slug"
-        default: "watch-manufacturers"
-        required: true
+        description: "Category slug (leave blank to run every category)"
+        default: ""
+        required: false
 
 permissions:
   contents: write
@@ -25,7 +25,12 @@ jobs:
       - name: Run category
         env:
           BT_CONTACT: ${{ vars.BT_CONTACT || 'https://github.com/MinorNobles/brandtabulator' }}
-        run: python3 scripts/run_category.py "${{ github.event.inputs.category || 'watch-manufacturers' }}"
+        run: |
+          if [ -n "${{ github.event.inputs.category }}" ]; then
+            python3 scripts/run_category.py "${{ github.event.inputs.category }}"
+          else
+            for f in categories/*.json; do python3 scripts/run_category.py "$(basename "$f" .json)" || echo "FAILED: $f"; done
+          fi
       - name: Commit results
         run: |
           git config user.name "brandtabulator-bot"

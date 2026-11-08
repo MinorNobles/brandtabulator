@@ -108,5 +108,6 @@
   "exclude": {
     "Q1496822": "Geneva Seal: a certification, not a business with customers",
     "Q138307980": "The Geneva School of Watchmaking: a school, not a brand with customers"
-  }
+  },
+  "path": "watches"
 }

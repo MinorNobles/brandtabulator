@@ -1,5 +1,5 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Methods — Brandtabulator</title><meta name="description" content="How Brandtabulator measures brands&#x27; public records.">
+<title>Methods — BrandTabulator</title><meta name="description" content="How BrandTabulator measures brands&#x27; public records.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>body{margin:0;background:#f4f3ef;color:#1b1b1b;font-family:'IBM Plex Sans',system-ui,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.5}
 a{color:#0b4f8a;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}a:hover{color:#063a66}
@@ -14,9 +14,9 @@ table{border-collapse:collapse;width:100%}th,td{text-align:left;padding:9px 10px
 .note{background:#fff;border:1px solid #cfcdc5;padding:14px 18px;margin:16px 0}
 .foot{border-top:1px solid #cfcdc5;margin-top:48px;padding-top:16px;font-size:13px;color:#555}
 @media (max-width:760px){main{padding:24px 20px 48px}h1{font-size:28px}dl{grid-template-columns:1fr}}</style></head><body>
-<div class="mast"><div class="in"><div style="display:flex;gap:16px;align-items:baseline;flex-wrap:wrap"><a class="brand" href="/brandtabulator/">Brandtabulator</a><span class="sub">working title · under the Brand AI Report</span></div><div class="sub" style="display:flex;gap:16px;flex-wrap:wrap"><a href="/brandtabulator/categories/">Categories</a><a href="/brandtabulator/methods/">Methods</a><a href="/brandtabulator/data/">Data</a></div></div></div>
+<div class="mast"><div class="in"><div style="display:flex;gap:16px;align-items:baseline;flex-wrap:wrap"><a class="brand" href="/brandtabulator/">BrandTabulator</a><span class="sub">by Michael Quinn · <a href="https://michaelquinn.ai">MichaelQuinn.ai</a></span></div><div class="sub" style="display:flex;gap:16px;flex-wrap:wrap"><a href="/brandtabulator/methods/">Methods</a></div></div></div>
 <main><h1>Methods</h1>
-<div class="note"><b>Status.</b> Pre-launch draft, working title. Issues dated before the first public issue may be regenerated. From the first public issue on, each week's data files are kept unchanged under their date.</div>
+<div class="note"><b>Status.</b> Pre-launch. Issues dated before the first public issue may be regenerated. From the first public issue on, each week's data files are kept unchanged under their date.</div>
 
 <h2>What this measures</h2>
 <p>When people ask AI assistants about products, the answers lean on the public record. This site looks at two parts of that record for each brand, and compares brands within a category.</p>
@@ -25,13 +25,7 @@ table{border-collapse:collapse;width:100%}th,td{text-align:left;padding:9px 10px
 <p>It also counts how often machines load the article. It does not rank brands as products, and it does not say which brands are best.</p>
 
 <h2>Which brands are included</h2>
-<p>Each category has two lists. The <b>full category</b> comes from a published query, so anyone can reproduce it. A <b>competitive set</b> is a smaller list chosen by a person, and the page says who chose it and why.</p>
-<h3>Watch manufacturers</h3>
-<p><b>Full category.</b> Every Wikidata item returned by the query below that has an English Wikipedia article. Only brands that have customers, business or consumer, are included. Companies that Wikidata records as dissolved have no current customers and are left out.</p>
-<pre>SELECT DISTINCT ?item ?itemLabel ?sitelinks WHERE { { ?item wdt:P452 wd:Q41767 . } UNION { ?item wdt:P452 wd:Q63346664 . } UNION { ?item wdt:P1056 wd:Q178794 . } UNION { ?item wdt:P31 wd:Q136094627 . } ?article schema:about ?item ; schema:isPartOf &lt;https://en.wikipedia.org/&gt; . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language &quot;en&quot;. } } ORDER BY DESC(?sitelinks) LIMIT 400</pre>
-<p><b>Added by hand</b> (the query does not find them):</p><ul><li>Seiko (Q322601): Not classified as a watch company in Wikidata (no industry/product statement); obviously belongs.</li><li>Swatch (Q573422): Same.</li></ul>
-<p><b>Removed by hand:</b></p><ul><li>Q1496822: Geneva Seal: a certification, not a business with customers</li><li>Q138307980: The Geneva School of Watchmaking: a school, not a brand with customers</li></ul>
-<p><b>Competitive set.</b> None yet. One will be added only when it rests on a stated, sourced rule.</p>
+<p>Each category comes from a published Wikidata query, so anyone can reproduce it. Only brands that have customers, business or consumer, are included; companies that Wikidata records as dissolved are left out. Each category page states its own query, any brands added or left out by hand, and why.</p>
 
 <h2>Definitions</h2>
 <dl><dt>#</dt><dd>Rank by staleness within this category. 1 = longest without a substantive edit.</dd><dt>Brand</dt><dd>English Wikipedia article and Wikidata item (Q-id). Click either to see the source.</dd><dt>Last substantive edit</dt><dd>Most recent English Wikipedia edit of 50 bytes or more by a non-bot account that was not later reverted.</dd><dt>90d edits / editors</dt><dd>Edits to the English article in the 90 days to the issue date, and how many distinct accounts made them.</dd><dt>Reverted</dt><dd>Of those 90-day edits, how many were reverted. A measure of contestation.</dd><dt>Statements (referenced)</dt><dd>Number of statements on the Wikidata item, and how many carry at least one reference.</dd><dt>Ballast</dt><dd>Share of Wikidata statements that carry a reference. Sourced, complete Wikidata is what lets the record hold up.</dd><dt>Identity links out</dt><dd>Statements on the item that point to the brand&#x27;s own products, brands, subsidiaries, holdings, founders, origin, motto, awards or executives. What the item says the brand is.</dd><dt>Key props</dt><dd>Of six properties a brand item should carry: industry, product, parent, subsidiaries, owner-of, Google Knowledge Graph id.</dd><dt>Editions</dt><dd>Language Wikipedias (and sister projects) with a page linked to this item. Sail area.</dd><dt>Refs</dt><dd>Reference tags in the English article.</dd><dt>Words</dt><dd>Approximate word count of the English article.</dd><dt>Reader views</dt><dd>English Wikipedia views in the stated month from Wikimedia&#x27;s &quot;user&quot; agent class: traffic that presents as a browser. Not a guarantee of a human.</dd><dt>Spider</dt><dd>Views from declared crawlers such as Googlebot.</dd><dt>Automated</dt><dd>Views from undeclared traffic that Wikimedia&#x27;s heuristics flag as bot-like. The scraper signal.</dd></dl>
@@ -65,7 +59,7 @@ table{border-collapse:collapse;width:100%}th,td{text-align:left;padding:9px 10px
 <p>Report an error on <a href="https://github.com/MinorNobles/brandtabulator/issues">GitHub</a> or through <a href="https://michaelquinn.ai">michaelquinn.ai</a>. Corrections are published as dated notes.</p>
 
 <h2>Data and licence</h2>
-<p>Wikipedia text is licensed CC BY-SA; Wikidata is CC0. The data files here are published under CC BY-SA 4.0. Weekly CSV and JSON files are on the <a href="/brandtabulator/data/">data page</a>.</p>
+<p>Wikipedia text is licensed CC BY-SA; Wikidata is CC0. The data files here are published under CC BY-SA 4.0. Each category page links to its own weekly CSV and JSON files.</p>
 
 <h2>Related work</h2>
 <ul>
@@ -74,5 +68,5 @@ table{border-collapse:collapse;width:100%}th,td{text-align:left;padding:9px 10px
 <li><b>Wiki3DRank</b> (Universidad de Murcia): a model that ranks topics by Wikidata statements, language editions and article length.</li>
 <li><b>Dror Poleg's Wikipedia Power Ranking</b>: a weekly ranking of people by edits to their Wikipedia biographies.</li>
 </ul>
-<div class="foot">Michael Quinn · <a href="https://michaelquinn.ai">michaelquinn.ai</a> · Pre-launch draft. Computed from public Wikimedia data. Code: <a href="https://github.com/MinorNobles/brandtabulator">github.com/MinorNobles/brandtabulator</a></div>
+<div class="foot">Michael Quinn · <a href="https://michaelquinn.ai">michaelquinn.ai</a> · Questions: <a href="mailto:Michael@MichaelQuinn.ai">Michael@MichaelQuinn.ai</a> · Computed from public Wikimedia data. Code: <a href="https://github.com/MinorNobles/brandtabulator">github.com/MinorNobles/brandtabulator</a></div>
 </main></body></html>
