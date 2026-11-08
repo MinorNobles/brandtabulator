@@ -16,7 +16,7 @@
   "full_category_description": "every Wikidata item in the United States classified as an internet service provider, and that has an English Wikipedia article",
   "intro_title": "BrandTabulator",
   "intro": [
-    "When customers ask AI about a {product} brand or the category, it can lean heavily on Wikipedia and Wikidata. BrandTabulator measures how fully and how recently each brand is described on those sites, and how often it is read by people and machines. BrandTabulator refreshes every week, so bookmark this tab.",
+    "When customers ask AI about a {product} brand or the category, it can lean heavily on Wikipedia and Wikidata. BrandTabulator measures how fully and recently each brand is described on those sites, and how often it is read by people and machines. BrandTabulator refreshes every week, so bookmark this tab.",
     "Of course, there are many sources that AI relies on. My work is to Diagnose the responses, Investigate the sources they credit, and Prescribe what can be done to improve the visibility and accuracy of a brand's descriptions in AI (DIP). I'm available for workshops, speaking engagements and consultations for brands in AI. Contact Michael@MichaelQuinn.ai"
   ],
   "recipients": {
