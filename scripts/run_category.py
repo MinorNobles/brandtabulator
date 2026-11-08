@@ -91,7 +91,7 @@ def issue_box(cat, rows):
         return v[n // 2] if n % 2 else (v[n // 2 - 1] + v[n // 2]) / 2
     body = "".join(f"<tr><td>{H.escape(n)}</td>{cell(tgt.get(a), tgt.get(b), lab)}{cell(avg(a), avg(b), lab)}</tr>" for n, a, b, lab in M)
     d = dt.date.fromisoformat(rows_date(rows)) if rows_date(rows) else dt.date.today()
-    e1 = d - dt.timedelta(days=1); s1 = e1 - dt.timedelta(days=6); e0 = s1 - dt.timedelta(days=1); s0 = e0 - dt.timedelta(days=6)
+    s1, e1, s0, e0 = weeks(d)
     span = lambda a, b: (f"{a.day}–{b.day} {b:%B}" if a.month == b.month else f"{a.day} {a:%B} – {b.day} {b:%B}")
     return (f"<p style='margin:0 0 8px'>{H.escape(tgt['label'])} against its {len(comp)} competitors, per AI. This week is {span(s1, e1)}.</p>"
             f"<div class='wrap'><table class='issue' style='min-width:0;width:100%'><thead><tr><th></th><th>{H.escape(tgt['label'])}</th><th>Typical competitor</th></tr></thead><tbody>{body}</tbody></table></div>"
@@ -140,16 +140,24 @@ def pageviews(title, agent, start, end):
     if not r.ok: return None
     return sum(i["views"] for i in r.json().get("items", []))
 
+def weeks(today):
+    """This week = the 7 days ending two days ago (Wikimedia's daily figures are then complete); last week = the 7 before."""
+    end = today - dt.timedelta(days=2)
+    return end - dt.timedelta(days=6), end, end - dt.timedelta(days=13), end - dt.timedelta(days=7)
+
+def in_week(ts, a, b):
+    return a.isoformat() <= ts[:10] <= b.isoformat()
+
 def daily_views(project, article, today):
     """People and machines (all agents) reading a page: last 7 days and the 7 before, ending yesterday."""
-    end = today - dt.timedelta(days=1); start = end - dt.timedelta(days=13)
+    s1, end, start, e0 = weeks(today)
     t = urllib.parse.quote(article.replace(" ", "_"), safe="")
     url = f"https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/{project}/all-access/all-agents/{t}/daily/{start:%Y%m%d}00/{end:%Y%m%d}00"
     r = S.get(url, timeout=60); time.sleep(PACE)
     if r.status_code == 429: time.sleep(30); r = S.get(url, timeout=60); time.sleep(PACE)
     if r.status_code == 404: return 0, 0
     if not r.ok: return None, None
-    cut = (end - dt.timedelta(days=6)).strftime("%Y%m%d")
+    cut = s1.strftime("%Y%m%d")
     items = r.json().get("items", [])
     return sum(i["views"] for i in items if i["timestamp"][:8] >= cut), sum(i["views"] for i in items if i["timestamp"][:8] < cut)
 
@@ -159,9 +167,9 @@ def weekly_extras(row, today):
     row["pv7_wd"], row["pvprev7_wd"] = daily_views("www.wikidata.org", row["qid"], today)
     j = get("https://www.wikidata.org/w/api.php", {"action": "query", "format": "json", "formatversion": "2", "prop": "revisions", "rvprop": "timestamp|user|tags|comment", "rvlimit": "100", "titles": row["qid"]}).json()
     revs = (j["query"]["pages"][0].get("revisions") or [])
-    a, b = (today - dt.timedelta(days=7)).isoformat(), (today - dt.timedelta(days=14)).isoformat()
-    row["wd_changes_7d"] = sum(1 for r in revs if by_person(r) and a <= r["timestamp"] < today.isoformat())
-    row["wd_changes_prev7d"] = sum(1 for r in revs if by_person(r) and b <= r["timestamp"] < a)
+    s1, e1, s0, e0 = weeks(today)
+    row["wd_changes_7d"] = sum(1 for r in revs if by_person(r) and in_week(r["timestamp"], s1, e1))
+    row["wd_changes_prev7d"] = sum(1 for r in revs if by_person(r) and in_week(r["timestamp"], s0, e0))
 
 # ---------- metrics ----------
 def wd_metrics(e):
@@ -215,8 +223,8 @@ def wp_metrics(title, today):
         "wp_last_50byte_revid": big["revid"] if big else None,
         "wp_last_50byte_parentid": big.get("parentid") if big else None,
         "wp_revisions_examined": len(revs),
-        "wp_changes_7d": sum(1 for r in revs if by_person(r) and (today - dt.timedelta(days=7)).isoformat() <= r["timestamp"] < today.isoformat()),
-        "wp_changes_prev7d": sum(1 for r in revs if by_person(r) and (today - dt.timedelta(days=14)).isoformat() <= r["timestamp"] < (today - dt.timedelta(days=7)).isoformat()),
+        "wp_changes_7d": sum(1 for r in revs if by_person(r) and in_week(r["timestamp"], *weeks(today)[:2])),
+        "wp_changes_prev7d": sum(1 for r in revs if by_person(r) and in_week(r["timestamp"], *weeks(today)[2:])),
     }
     w = wp_api({"prop": "revisions", "rvprop": "content", "rvslots": "main", "titles": title})
     txt = w["query"]["pages"][0]["revisions"][0]["slots"]["main"]["content"]
