@@ -1,6 +1,6 @@
 # Watch manufacturers
 
-Issue 2026-11-08. 136 brands. Ranked by staleness (longest unupdated first). Views: October 2026.
+Issue 2026-11-09. 136 brands. Ranked by staleness (longest unupdated first). Views: October 2026.
 
 | # stale | Brand | Last ≥50-byte edit | 90d edits/editors | Wikidata stmts (ref'd) | Ballast | Identity links out | Editions | Refs | Reader views | Bot share |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -107,7 +107,7 @@ Issue 2026-11-08. 136 brands. Ranked by staleness (longest unupdated first). Vie
 | 101 | [Manufacture Royale](https://en.wikipedia.org/wiki/Manufacture_Royale) ([Q25112291](https://www.wikidata.org/wiki/Q25112291)) | 2026-08-31 | 1 / 1 | 11 (6) | 54.5% | 2 | 3 | 5 | 137 | 40.4% |
 | 102 | [Slava watches](https://en.wikipedia.org/wiki/Slava_watches) ([Q1651954](https://www.wikidata.org/wiki/Q1651954)) | 2026-09-01 | 1 / 1 | 12 (9) | 75.0% | 1 | 11 | 5 | 486 | 38.7% |
 | 103 | [Lemania](https://en.wikipedia.org/wiki/Lemania) ([Q688410](https://www.wikidata.org/wiki/Q688410)) | 2026-09-06 | 5 / 3 | 11 (8) | 72.7% | 2 | 7 | 12 | 569 | 43.3% |
-| 104 | [Bulova](https://en.wikipedia.org/wiki/Bulova) ([Q663300](https://www.wikidata.org/wiki/Q663300)) | 2026-09-07 | 5 / 4 | 51 (15) | 29.4% | 4 | 22 | 54 | 8732 | 22.8% |
+| 104 | [Bulova](https://en.wikipedia.org/wiki/Bulova) ([Q663300](https://www.wikidata.org/wiki/Q663300)) | 2026-09-07 | 6 / 5 | 51 (15) | 29.4% | 4 | 22 | 54 | 8732 | 22.8% |
 | 105 | [Nixon](https://en.wikipedia.org/wiki/Nixon_%28company%29) ([Q1660409](https://www.wikidata.org/wiki/Q1660409)) | 2026-09-08 | 1 / 1 | 12 (7) | 58.3% | 1 | 7 | 39 | 925 | 40.8% |
 | 106 | [Baume et Mercier](https://en.wikipedia.org/wiki/Baume_et_Mercier) ([Q138109](https://www.wikidata.org/wiki/Q138109)) | 2026-09-14 | 5 / 4 | 32 (10) | 31.2% | 1 | 15 | 21 | 2171 | 25.1% |
 | 107 | [Frédérique Constant](https://en.wikipedia.org/wiki/Fr%C3%A9d%C3%A9rique_Constant) ([Q4039046](https://www.wikidata.org/wiki/Q4039046)) | 2026-09-14 | 28 / 6 | 17 (5) | 29.4% | 3 | 11 | 45 | 3787 | 22.4% |
@@ -121,24 +121,24 @@ Issue 2026-11-08. 136 brands. Ranked by staleness (longest unupdated first). Vie
 | 115 | [Panerai Watches](https://en.wikipedia.org/wiki/Panerai) ([Q1475590](https://www.wikidata.org/wiki/Q1475590)) | 2026-09-21 | 4 / 4 | 36 (14) | 38.9% | 1 | 18 | 19 | 3197 | 29.3% |
 | 116 | [Roger Dubuis](https://en.wikipedia.org/wiki/Roger_Dubuis) ([Q670160](https://www.wikidata.org/wiki/Q670160)) | 2026-09-21 | 1 / 1 | 31 (14) | 45.2% | 1 | 15 | 92 | 1279 | 35.5% |
 | 117 | [Czapek & Cie](https://en.wikipedia.org/wiki/Czapek_%26_Cie) ([Q25043079](https://www.wikidata.org/wiki/Q25043079)) | 2026-09-22 | 4 / 4 | 9 (4) | 44.4% | 1 | 3 | 127 | 1048 | 28.6% |
-| 118 | [Mango](https://en.wikipedia.org/wiki/Mango_%28retailer%29) ([Q136503](https://www.wikidata.org/wiki/Q136503)) | 2026-09-23 | 10 / 7 | 61 (22) | 36.1% | 10 | 32 | 75 | 5302 | 35.7% |
+| 118 | [Mango](https://en.wikipedia.org/wiki/Mango_%28retailer%29) ([Q136503](https://www.wikidata.org/wiki/Q136503)) | 2026-09-23 | 9 / 6 | 61 (22) | 36.1% | 10 | 32 | 75 | 5302 | 35.7% |
 | 119 | [Shinola Detroit](https://en.wikipedia.org/wiki/Shinola_%28retail_company%29) ([Q7497723](https://www.wikidata.org/wiki/Q7497723)) | 2026-09-23 | 12 / 4 | 30 (12) | 40.0% | 5 | 4 | 113 | 1893 | 30.8% |
 | 120 | [Rado](https://en.wikipedia.org/wiki/Rado_%28watchmaker%29) ([Q180014](https://www.wikidata.org/wiki/Q180014)) | 2026-09-24 | 1 / 1 | 32 (20) | 62.5% | 1 | 28 | 32 | 3167 | 26.2% |
-| 121 | [Rolex](https://en.wikipedia.org/wiki/Rolex) ([Q62288](https://www.wikidata.org/wiki/Q62288)) | 2026-09-24 | 19 / 14 | 81 (37) | 45.7% | 4 | 66 | 144 | 27750 | 28.6% |
-| 122 | [International Watch Company](https://en.wikipedia.org/wiki/IWC_Schaffhausen) ([Q662902](https://www.wikidata.org/wiki/Q662902)) | 2026-09-29 | 10 / 7 | 48 (22) | 45.8% | 1 | 26 | 76 | 5220 | 24.9% |
-| 123 | [Vertex Watches Limited](https://en.wikipedia.org/wiki/Vertex_Watches_Limited) ([Q141256416](https://www.wikidata.org/wiki/Q141256416)) | 2026-09-30 | 8 / 2 | 3 (0) | 0.0% | 0 | 1 | 28 | 316 | 38.2% |
-| 124 | [Titan Industries](https://en.wikipedia.org/wiki/Titan_Company) ([Q3536932](https://www.wikidata.org/wiki/Q3536932)) | 2026-10-07 | 9 / 8 | 19 (6) | 31.6% | 6 | 14 | 52 | 31767 | 16.7% |
-| 125 | [Raymond Weil](https://en.wikipedia.org/wiki/Raymond_Weil) ([Q676990](https://www.wikidata.org/wiki/Q676990)) | 2026-10-08 | 1 / 1 | 26 (11) | 42.3% | 1 | 14 | 8 | 1399 | 29.8% |
-| 126 | [Richard Mille](https://en.wikipedia.org/wiki/Richard_Mille) ([Q3431044](https://www.wikidata.org/wiki/Q3431044)) | 2026-10-09 | 14 / 4 | 27 (7) | 25.9% | 0 | 13 | 81 | 11074 | 23.1% |
-| 127 | [Vostok Europe](https://en.wikipedia.org/wiki/Vostok_Europe) ([Q15733690](https://www.wikidata.org/wiki/Q15733690)) | 2026-10-09 | 3 / 3 | 11 (3) | 27.3% | 3 | 8 | 56 | 399 | 45.8% |
-| 128 | [Bulgari](https://en.wikipedia.org/wiki/Bulgari) ([Q752515](https://www.wikidata.org/wiki/Q752515)) | 2026-10-20 | 17 / 13 | 76 (39) | 51.3% | 6 | 52 | 84 | 24183 | 18.0% |
-| 129 | [Giorgio Armani](https://en.wikipedia.org/wiki/Armani) ([Q635484](https://www.wikidata.org/wiki/Q635484)) | 2026-10-20 | 5 / 3 | 72 (24) | 33.3% | 12 | 52 | 158 | 12419 | 26.1% |
-| 130 | [Hamilton](https://en.wikipedia.org/wiki/Hamilton_Watch_Company) ([Q1573565](https://www.wikidata.org/wiki/Q1573565)) | 2026-10-23 | 4 / 3 | 25 (15) | 60.0% | 1 | 16 | 35 | 8971 | 19.5% |
-| 131 | [S.T. Dupont](https://en.wikipedia.org/wiki/S._T._Dupont) ([Q1316779](https://www.wikidata.org/wiki/Q1316779)) | 2026-10-28 | 7 / 6 | 28 (17) | 60.7% | 4 | 13 | 11 | 1079 | 39.3% |
-| 132 | [Victorinox](https://en.wikipedia.org/wiki/Victorinox) ([Q503405](https://www.wikidata.org/wiki/Q503405)) | 2026-10-29 | 9 / 1 | 63 (26) | 41.3% | 8 | 35 | 26 | 3825 | 36.3% |
-| 133 | [Breitling](https://en.wikipedia.org/wiki/Breitling_SA) ([Q665740](https://www.wikidata.org/wiki/Q665740)) | 2026-11-01 | 8 / 6 | 46 (18) | 39.1% | 3 | 37 | 28 | 5235 | 29.3% |
-| 134 | [Orient](https://en.wikipedia.org/wiki/Orient_Watch) ([Q1771114](https://www.wikidata.org/wiki/Q1771114)) | 2026-11-07 | 6 / 6 | 25 (15) | 60.0% | 1 | 21 | 27 | 6616 | 26.3% |
-| 135 | [Richemont](https://en.wikipedia.org/wiki/Richemont) ([Q689240](https://www.wikidata.org/wiki/Q689240)) | 2026-11-08 | 4 / 4 | 54 (22) | 40.7% | 20 | 25 | 41 | 15595 | 18.0% |
+| 121 | [Rolex](https://en.wikipedia.org/wiki/Rolex) ([Q62288](https://www.wikidata.org/wiki/Q62288)) | 2026-09-24 | 20 / 15 | 81 (37) | 45.7% | 4 | 66 | 144 | 27750 | 28.6% |
+| 122 | [Vertex Watches Limited](https://en.wikipedia.org/wiki/Vertex_Watches_Limited) ([Q141256416](https://www.wikidata.org/wiki/Q141256416)) | 2026-09-30 | 8 / 2 | 3 (0) | 0.0% | 0 | 1 | 28 | 316 | 38.2% |
+| 123 | [Titan Industries](https://en.wikipedia.org/wiki/Titan_Company) ([Q3536932](https://www.wikidata.org/wiki/Q3536932)) | 2026-10-07 | 9 / 8 | 19 (6) | 31.6% | 6 | 14 | 52 | 31767 | 16.7% |
+| 124 | [Raymond Weil](https://en.wikipedia.org/wiki/Raymond_Weil) ([Q676990](https://www.wikidata.org/wiki/Q676990)) | 2026-10-08 | 1 / 1 | 26 (11) | 42.3% | 1 | 14 | 8 | 1399 | 29.8% |
+| 125 | [Richard Mille](https://en.wikipedia.org/wiki/Richard_Mille) ([Q3431044](https://www.wikidata.org/wiki/Q3431044)) | 2026-10-09 | 14 / 4 | 27 (7) | 25.9% | 0 | 13 | 81 | 11074 | 23.1% |
+| 126 | [Vostok Europe](https://en.wikipedia.org/wiki/Vostok_Europe) ([Q15733690](https://www.wikidata.org/wiki/Q15733690)) | 2026-10-09 | 3 / 3 | 11 (3) | 27.3% | 3 | 8 | 56 | 399 | 45.8% |
+| 127 | [Giorgio Armani](https://en.wikipedia.org/wiki/Armani) ([Q635484](https://www.wikidata.org/wiki/Q635484)) | 2026-10-20 | 5 / 3 | 72 (24) | 33.3% | 12 | 52 | 158 | 12419 | 26.1% |
+| 128 | [Bulgari](https://en.wikipedia.org/wiki/Bulgari) ([Q752515](https://www.wikidata.org/wiki/Q752515)) | 2026-10-20 | 15 / 11 | 76 (39) | 51.3% | 6 | 52 | 84 | 24183 | 18.0% |
+| 129 | [Hamilton](https://en.wikipedia.org/wiki/Hamilton_Watch_Company) ([Q1573565](https://www.wikidata.org/wiki/Q1573565)) | 2026-10-23 | 4 / 3 | 25 (15) | 60.0% | 1 | 16 | 35 | 8971 | 19.5% |
+| 130 | [S.T. Dupont](https://en.wikipedia.org/wiki/S._T._Dupont) ([Q1316779](https://www.wikidata.org/wiki/Q1316779)) | 2026-10-28 | 7 / 6 | 28 (17) | 60.7% | 4 | 13 | 11 | 1079 | 39.3% |
+| 131 | [Victorinox](https://en.wikipedia.org/wiki/Victorinox) ([Q503405](https://www.wikidata.org/wiki/Q503405)) | 2026-10-29 | 9 / 1 | 63 (26) | 41.3% | 8 | 35 | 26 | 3825 | 36.3% |
+| 132 | [Breitling](https://en.wikipedia.org/wiki/Breitling_SA) ([Q665740](https://www.wikidata.org/wiki/Q665740)) | 2026-11-01 | 8 / 6 | 46 (18) | 39.1% | 3 | 37 | 28 | 5235 | 29.3% |
+| 133 | [Orient](https://en.wikipedia.org/wiki/Orient_Watch) ([Q1771114](https://www.wikidata.org/wiki/Q1771114)) | 2026-11-07 | 6 / 6 | 25 (15) | 60.0% | 1 | 21 | 27 | 6616 | 26.3% |
+| 134 | [Richemont](https://en.wikipedia.org/wiki/Richemont) ([Q689240](https://www.wikidata.org/wiki/Q689240)) | 2026-11-08 | 4 / 4 | 54 (22) | 40.7% | 20 | 25 | 41 | 15595 | 18.0% |
+| 135 | [International Watch Company](https://en.wikipedia.org/wiki/IWC_Schaffhausen) ([Q662902](https://www.wikidata.org/wiki/Q662902)) | 2026-11-09 | 12 / 8 | 48 (22) | 45.8% | 1 | 26 | 40 | 5220 | 24.9% |
 |  | [Maximilian Büsser and Friends](https://en.wikipedia.org/wiki/Maximilian_B%C3%BCsser_and_Friends) ([Q108281469](https://www.wikidata.org/wiki/Q108281469)) |  | 0 / 0 | 4 (3) | 75.0% | 2 | 1 | 0 | 28 | 53.3% |
 
 Questions: Michael@MichaelQuinn.ai
