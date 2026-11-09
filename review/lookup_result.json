@@ -1,572 +1,488 @@
 {
- "search": {},
- "items": {},
- "sparql": {
-  "by_label": {
-   "count": 70,
-   "rows": [
-    {
-     "name": "Mulberry",
-     "item": "Q3866987",
-     "title": "Mulberry Group",
-     "inst": "retail chain|brick and mortar|public company|business|fashion merchandising",
-     "prods": "clothing",
-     "inds": "fashion"
-    },
-    {
-     "name": "Mango",
-     "item": "Q136503",
-     "title": "Mango (retailer)",
-     "inst": "brick and mortar|business|clothing store chain",
-     "prods": "watch|infant clothing|eyewear|footwear|fashion accessory|perfume|clothing",
-     "inds": "retail|clothing industry|fast fashion"
-    },
-    {
-     "name": "Guess",
-     "item": "Q2470307",
-     "title": "Guess (company)",
-     "inst": "brick and mortar|enterprise|public company|business",
-     "prods": "clothing",
-     "inds": "retail"
-    },
-    {
-     "name": "Tory Burch",
-     "item": "Q19988222",
-     "title": "Tory Burch LLC",
-     "inst": "brick and mortar|fashion house|business",
-     "prods": "fashion accessory|cosmetics|clothing",
-     "inds": "retail|clothing industry"
-    },
-    {
-     "name": "Zara",
-     "item": "Q147662",
-     "title": "Zara (retailer)",
-     "inst": "brick and mortar|clothing store chain|perfume brand",
-     "prods": "perfume|clothing",
-     "inds": "textile industry|clothing industry|perfumes industry|retail industry"
-    },
-    {
-     "name": "Celine",
-     "item": "Q948531",
-     "title": "Celine (brand)",
-     "inst": "fashion house|perfume brand",
-     "prods": "perfume|clothing",
-     "inds": "clothing industry|perfumes industry|wholesale trade (business-to-business) of other household goods"
-    },
-    {
-     "name": "The Row",
-     "item": "Q25351941",
-     "title": "The Row (fashion label)",
-     "inst": "company|fashion label",
-     "prods": "",
-     "inds": "clothing industry"
-    },
-    {
-     "name": "Fossil",
-     "item": "Q356212",
-     "title": "Fossil Group",
-     "inst": "enterprise|public company|business",
-     "prods": "watch",
-     "inds": "bijou"
-    },
-    {
-     "name": "Polène",
-     "item": "Q122055705",
-     "title": "Polène",
-     "inst": "brand",
-     "prods": "",
-     "inds": "leather crafting"
-    },
-    {
-     "name": "Longchamp",
-     "item": "Q1869471",
-     "title": "Longchamp (company)",
-     "inst": "organization",
-     "prods": "",
-     "inds": "manufacturing of travel items, leather goods and saddlery"
-    },
-    {
-     "name": "Mulberry",
-     "item": "Q80179",
-     "title": "Mulberry, Arkansas",
-     "inst": "human settlement|city in the United States",
-     "prods": "",
-     "inds": ""
-    },
-    {
-     "name": "Mango",
-     "item": "Q116595",
-     "title": "Mango (airline)",
-     "inst": "airline",
-     "prods": "",
-     "inds": ""
-    },
-    {
-     "name": "Zara",
-     "item": "Q147630",
-     "title": "Zara, Turkey",
-     "inst": "town",
-     "prods": "",
-     "inds": ""
-    },
-    {
-     "name": "Zara",
-     "item": "Q170415",
-     "title": "Stara Zagora",
-     "inst": "big city|municipality seat|oblast seat|city in Bulgaria",
-     "prods": "",
-     "inds": ""
-    },
-    {
-     "name": "Mulberry",
-     "item": "Q325055",
-     "title": "Praha, Texas",
-     "inst": "ghost town|unincorporated community",
-     "prods": "",
-     "inds": ""
-    },
-    {
-     "name": "Celine",
-     "item": "Q666450",
-     "title": "Celine (concert residency)",
-     "inst": "concert residency",
-     "prods": "",
-     "inds": ""
-    },
-    {
-     "name": "Kate Spade",
-     "item": "Q753521",
-     "title": "Kate Spade & Company",
-     "inst": "public company|business|enterprise",
-     "prods": "clothing",
-     "inds": ""
-    },
-    {
-     "name": "Celine",
-     "item": "Q822782",
-     "title": "Celine, Jastrebarsko",
-     "inst": "settlement in Croatia",
-     "prods": "",
-     "inds": ""
-    },
-    {
-     "name": "Celine",
-     "item": "Q847879",
-     "title": "Celine, Vrbovec",
-     "inst": "settlement in Croatia",
-     "prods": "",
-     "inds": ""
-    },
-    {
-     "name": "Celine",
-     "item": "Q859326",
-     "title": "Celine, Međimurje County",
-     "inst": "settlement in Croatia",
-     "prods": "",
-     "inds": ""
-    },
-    {
-     "name": "Mango",
-     "item": "Q927706",
-     "title": "Mongo people",
-     "inst": "ethnic group",
-     "prods": "",
-     "inds": ""
-    },
-    {
-     "name": "Zara",
-     "item": "Q1088305",
-     "title": "Zara (Milan Metro)",
-     "inst": "metro station|underground station",
-     "prods": "",
-     "inds": ""
-    },
-    {
-     "name": "Mango",
-     "item": "Q1392195",
-     "title": "Mango, Togo",
-     "inst": "city",
-     "prods": "",
-     "inds": ""
-    },
-    {
-     "name": "Fossil",
-     "item": "Q1439431",
-     "title": "Fossil (software)",
-     "inst": "free software|distributed revision control system|forge|repository web interface|wiki software|source code repository|version control system|communication protocol|bug tracking system",
-     "prods": "",
-     "inds": ""
-    },
-    {
-     "name": "Longchamp",
-     "item": "Q1542489",
-     "title": "Longchamp Racecourse",
-     "inst": "horse racing venue",
-     "prods": "",
-     "inds": ""
-    },
-    {
-     "name": "Mango",
-     "item": "Q1637528",
-     "title": "Mango (Jamshedpur)",
-     "inst": "suburb",
-     "prods": "",
-     "inds": ""
-    },
-    {
-     "name": "Mulberry",
-     "item": "Q1952075",
-     "title": "Mulberry (email client)",
-     "inst": "email client|formerly proprietary software",
-     "prods": "",
-     "inds": ""
-    },
-    {
-     "name": "Mango",
-     "item": "Q1992999",
-     "title": "Mango, Florida",
-     "inst": "census-designated place in the United States",
-     "prods": "",
-     "inds": ""
-    },
-    {
-     "name": "Mulberry",
-     "item": "Q2030854",
-     "title": "Mulberry, Wilkes County, North Carolina",
-     "inst": "census-designated place in the United States",
-     "prods": "",
-     "inds": ""
-    },
-    {
-     "name": "Mulberry",
-     "item": "Q2153870",
-     "title": "Mulberry, Florida",
-     "inst": "city in the United States",
-     "prods": "",
-     "inds": ""
-    },
-    {
-     "name": "Mulberry",
-     "item": "Q2271930",
-     "title": "Mulberry, Kansas",
-     "inst": "city in the United States",
-     "prods": "",
-     "inds": ""
-    },
-    {
-     "name": "Fossil",
-     "item": "Q2293692",
-     "title": "Fossil, Oregon",
-     "inst": "city of Oregon|county seat",
-     "prods": "",
-     "inds": ""
-    },
-    {
-     "name": "Zara",
-     "item": "Q2294530",
-     "title": "Italian cruiser Zara",
-     "inst": "heavy cruiser",
-     "prods": "",
-     "inds": ""
-    },
-    {
-     "name": "Zara",
-     "item": "Q2302191",
-     "title": "Zarra, Spain",
-     "inst": "municipality of Spain|municipality of the Valencian Community",
-     "prods": "",
-     "inds": ""
-    },
-    {
-     "name": "Mango",
-     "item": "Q2426245",
-     "title": "Mango (software)",
-     "inst": "software|XMPP client",
-     "prods": "",
-     "inds": ""
-    },
-    {
-     "name": "Celine",
-     "item": "Q2491538",
-     "title": "Celine, Krško",
-     "inst": "human settlement",
-     "prods": "",
-     "inds": ""
-    },
-    {
-     "name": "Mulberry",
-     "item": "Q2542498",
-     "title": "Mulberry, South Carolina",
-     "inst": "census-designated place in the United States",
-     "prods": "",
-     "inds": ""
-    },
-    {
-     "name": "Mulberry",
-     "item": "Q2606595",
-     "title": "Mulberry, Ohio",
-     "inst": "census-designated place in the United States",
-     "prods": "",
-     "inds": ""
-    },
-    {
-     "name": "Mulberry",
-     "item": "Q2641162",
-     "title": "Mulberry, Indiana",
-     "inst": "town in the United States",
-     "prods": "",
-     "inds": ""
-    },
-    {
-     "name": "Mulberry",
-     "item": "Q2887113",
-     "title": "Mulberry, Oklahoma",
-     "inst": "census-designated place in the United States",
-     "prods": "",
-     "inds": ""
-    },
-    {
-     "name": "Mango",
-     "item": "Q3844575",
-     "title": "Mango (group)",
-     "inst": "musical group",
-     "prods": "",
-     "inds": ""
-    },
-    {
-     "name": "Zara",
-     "item": "Q4023851",
-     "title": "Zara (game)",
-     "inst": "dice game",
-     "prods": "",
-     "inds": ""
-    },
-    {
-     "name": "Zara",
-     "item": "Q4023853",
-     "title": "Zara (name)",
-     "inst": "female given name",
-     "prods": "",
-     "inds": ""
-    },
-    {
-     "name": "Coccinelle",
-     "item": "Q5139163",
-     "title": "Coccinelle (software)",
-     "inst": "free and open-source software",
-     "prods": "",
-     "inds": ""
-    },
-    {
-     "name": "Fossil",
-     "item": "Q5473449",
-     "title": "Fossil (novel)",
-     "inst": "literary work",
-     "prods": "",
-     "inds": ""
-    },
-    {
-     "name": "Mango",
-     "item": "Q6749077",
-     "title": "Mango (Saturday Night Live)",
-     "inst": "character|fictional human",
-     "prods": "",
-     "inds": ""
-    },
-    {
-     "name": "Mulberry",
-     "item": "Q6933787",
-     "title": "Mulberry, Cornwall",
-     "inst": "hamlet",
-     "prods": "",
-     "inds": ""
-    },
-    {
-     "name": "Mulberry",
-     "item": "Q6933791",
-     "title": "Mulberry (TV series)",
-     "inst": "television series",
-     "prods": "",
-     "inds": ""
-    },
-    {
-     "name": "Mulberry",
-     "item": "Q6933789",
-     "title": "Mulberry, Tennessee",
-     "inst": "unincorporated community",
-     "prods": "",
-     "inds": ""
-    },
-    {
-     "name": "Mulberry",
-     "item": "Q6933792",
-     "title": "Mulberry, Surry County, North Carolina",
-     "inst": "unincorporated community",
-     "prods": "",
-     "inds": ""
-    },
-    {
-     "name": "The Row",
-     "item": "Q7761642",
-     "title": "The Row, Virginia",
-     "inst": "unincorporated community",
-     "prods": "",
-     "inds": ""
-    },
-    {
-     "name": "The Row",
-     "item": "Q7761641",
-     "title": "The Row (Lyme, New York)",
-     "inst": "historic house",
-     "prods": "",
-     "inds": ""
-    },
-    {
-     "name": "Zara",
-     "item": "Q8066526",
-     "title": "Zara (character)",
-     "inst": "comics character",
-     "prods": "",
-     "inds": ""
-    },
-    {
-     "name": "Fossil",
-     "item": "Q11681908",
-     "title": "Fossil (file system)",
-     "inst": "file system",
-     "prods": "",
-     "inds": ""
-    },
-    {
-     "name": "Mulberry",
-     "item": "Q14711089",
-     "title": "Mulberry, Texas",
-     "inst": "unincorporated community",
-     "prods": "",
-     "inds": ""
-    },
-    {
-     "name": "Guess",
-     "item": "Q15156906",
-     "title": "Guess (TV program)",
-     "inst": "television program",
-     "prods": "",
-     "inds": ""
-    },
-    {
-     "name": "Mango",
-     "item": "Q16889925",
-     "title": "Mango language (China)",
-     "inst": "language",
-     "prods": "",
-     "inds": ""
-    },
-    {
-     "name": "Mango",
-     "item": "Q16997298",
-     "title": "Mango (horse)",
-     "inst": "horse",
-     "prods": "",
-     "inds": ""
-    },
-    {
-     "name": "Celine",
-     "item": "Q18338336",
-     "title": "Celine",
-     "inst": "female given name",
-     "prods": "",
-     "inds": ""
-    },
-    {
-     "name": "Mango",
-     "item": "Q20432799",
-     "title": "Mango (Tonga)",
-     "inst": "island",
-     "prods": "",
-     "inds": ""
-    },
-    {
-     "name": "Mulberry",
-     "item": "Q65085721",
-     "title": "Mulberry, Barrow County, Georgia",
-     "inst": "unincorporated community",
-     "prods": "",
-     "inds": ""
-    },
-    {
-     "name": "Mango",
-     "item": "Q83954970",
-     "title": "Mango Records",
-     "inst": "record label",
-     "prods": "",
-     "inds": ""
-    },
-    {
-     "name": "Zara",
-     "item": "Q104858595",
-     "title": "Zara (play)",
-     "inst": "literary work",
-     "prods": "",
-     "inds": ""
-    },
-    {
-     "name": "Celine",
-     "item": "Q108913484",
-     "title": "Celine (2021 concert residency)",
-     "inst": "concert residency",
-     "prods": "",
-     "inds": ""
-    },
-    {
-     "name": "Mulberry",
-     "item": "Q134970817",
-     "title": "Mulberry, Georgia",
-     "inst": "city in the United States",
-     "prods": "",
-     "inds": ""
-    },
-    {
-     "name": "Stuart Weitzman",
-     "item": "Q138755005",
-     "title": "Stuart Weitzman (fashion house)",
-     "inst": "brand",
-     "prods": "",
-     "inds": ""
-    },
-    {
-     "name": "Zara",
-     "item": "Q3370",
-     "title": "Zadar",
-     "inst": "town in Croatia|city",
-     "prods": "",
-     "inds": ""
-    },
-    {
-     "name": "Zara",
-     "item": "Q6583",
-     "title": "Sahara",
-     "inst": "desert",
-     "prods": "",
-     "inds": ""
-    },
-    {
-     "name": "Mango",
-     "item": "Q20130",
-     "title": "Mango, Piedmont",
-     "inst": "comune of Italy",
-     "prods": "",
-     "inds": ""
-    },
-    {
-     "name": "Brahmin",
-     "item": "Q47140",
-     "title": "Brahmin",
-     "inst": "caste",
-     "prods": "",
-     "inds": ""
-    }
+ "search": {
+  "Michael Kors": [
+   {
+    "qid": "Q19572998",
+    "label": "Capri Holdings",
+    "description": "holdings company that owns several multinational fashion brands"
+   },
+   {
+    "qid": "Q134612138",
+    "label": "Michael Kors",
+    "description": "fashion brand owned by Capri Holdings"
+   },
+   {
+    "qid": "Q717618",
+    "label": "Michael Kors",
+    "description": "American fashion designer (born 1959)"
+   },
+   {
+    "qid": "Q91042355",
+    "label": "Michael Korsch",
+    "description": "researcher (ORCID 0000-0001-8841-2744)"
+   },
+   {
+    "qid": "Q96213261",
+    "label": "Michael Korsmeier",
+    "description": "researcher"
+   },
+   {
+    "qid": "Q1928265",
+    "label": "Michael Korstick",
+    "description": "German pianist"
+   }
+  ],
+  "Marc Jacobs": [
+   {
+    "qid": "Q313108",
+    "label": "Marc Jacobs",
+    "description": "American fashion designer (born 1963)"
+   },
+   {
+    "qid": "Q102403363",
+    "label": "Marc Jacobs",
+    "description": null
+   },
+   {
+    "qid": "Q132717489",
+    "label": "Marc Jacobs",
+    "description": "New Zealand kiteboarder"
+   },
+   {
+    "qid": "Q45789717",
+    "label": "Marc Zimmermann",
+    "description": "German cheminformatician"
+   },
+   {
+    "qid": "Q108190893",
+    "label": "Marc Jacobs",
+    "description": "American fashion house"
+   },
+   {
+    "qid": "Q86962095",
+    "label": "Marc Jacobs",
+    "description": "Jacobs, Marc, 1963 July 15-"
+   }
+  ],
+  "Coccinelle": [
+   {
+    "qid": "Q2737959",
+    "label": "Coccinelle",
+    "description": "French actress and entertainer (1931–2006)"
+   },
+   {
+    "qid": "Q944874",
+    "label": "Coccinelle",
+    "description": "Italian fashion label"
+   },
+   {
+    "qid": "Q1878611",
+    "label": "Coccinelle",
+    "description": "amusement ride in Walibi Belgium"
+   },
+   {
+    "qid": "Q5139163",
+    "label": "Coccinelle",
+    "description": "free software tool"
+   },
+   {
+    "qid": "Q25327",
+    "label": "Coccinellidae",
+    "description": "family of beetles"
+   },
+   {
+    "qid": "Q52934577",
+    "label": "Coccinelle",
+    "description": "kindergarten in Paternò, Catania, Sicily, Italy"
+   }
+  ],
+  "Cuyana": [
+   {
+    "qid": "Q18095964",
+    "label": "Cuyana",
+    "description": "genus of insects"
+   },
+   {
+    "qid": "Q13655205",
+    "label": "Cuyana maurii",
+    "description": "species of insect"
+   },
+   {
+    "qid": "Q23647728",
+    "label": "Cuyanas",
+    "description": "hill in Santiago Metropolitan Region, Chile"
+   },
+   {
+    "qid": "Q5197116",
+    "label": "Cuyunon people",
+    "description": "Visayan ethnic group"
+   }
+  ]
+ },
+ "items": {
+  "Q6375797": {
+   "label": "Kate Spade New York",
+   "description": "American fashion design house",
+   "enwiki": "Kate Spade New York",
+   "P31": [
+    [
+     "Q4830453",
+     "business"
+    ]
+   ],
+   "P452": [],
+   "P1056": [],
+   "P749": [],
+   "P127": [],
+   "P355": [],
+   "P1830": [],
+   "P17": [
+    [
+     "Q30",
+     "United States"
+    ]
    ]
+  },
+  "Q753521": {
+   "label": "Kate Spade & Company",
+   "description": "fashion company",
+   "enwiki": "Kate Spade & Company",
+   "P31": [
+    [
+     "Q4830453",
+     "business"
+    ],
+    [
+     "Q6881511",
+     "enterprise"
+    ],
+    [
+     "Q891723",
+     "public company"
+    ]
+   ],
+   "P452": [],
+   "P1056": [
+    [
+     "Q11460",
+     "clothing"
+    ]
+   ],
+   "P749": [
+    [
+     "Q56273715",
+     "Tapestry, Inc."
+    ]
+   ],
+   "P127": [],
+   "P355": [],
+   "P1830": [],
+   "P17": [
+    [
+     "Q30",
+     "United States"
+    ]
+   ]
+  },
+  "Q19572998": {
+   "label": "Capri Holdings",
+   "description": "holdings company that owns several multinational fashion brands",
+   "enwiki": "Capri Holdings",
+   "P31": [
+    [
+     "Q4830453",
+     "business"
+    ],
+    [
+     "Q726870",
+     "brick and mortar"
+    ],
+    [
+     "Q6881511",
+     "enterprise"
+    ],
+    [
+     "Q891723",
+     "public company"
+    ],
+    [
+     "Q1618899",
+     "fashion label"
+    ]
+   ],
+   "P452": [
+    [
+     "Q11828862",
+     "clothing industry"
+    ]
+   ],
+   "P1056": [],
+   "P749": [],
+   "P127": [],
+   "P355": [],
+   "P1830": [
+    [
+     "Q5213855",
+     "Jimmy Choo Ltd"
+    ],
+    [
+     "Q696376",
+     "Versace"
+    ],
+    [
+     "Q134612138",
+     "Michael Kors"
+    ]
+   ],
+   "P17": []
+  },
+  "Q132111641": {
+   "label": null,
+   "description": null,
+   "enwiki": null,
+   "P31": [
+    [
+     "Q43229",
+     "organization"
+    ]
+   ],
+   "P452": [
+    [
+     "Q112165707",
+     "wholesale trade (business-to-business) of other household goods"
+    ]
+   ],
+   "P1056": [],
+   "P749": [],
+   "P127": [],
+   "P355": [],
+   "P1830": [],
+   "P17": [
+    [
+     "Q142",
+     "France"
+    ]
+   ]
+  },
+  "Q138755005": {
+   "label": "Stuart Weitzman",
+   "description": "American luxury footwear brand",
+   "enwiki": "Stuart Weitzman (fashion house)",
+   "P31": [
+    [
+     "Q431289",
+     "brand"
+    ]
+   ],
+   "P452": [],
+   "P1056": [],
+   "P749": [],
+   "P127": [],
+   "P355": [],
+   "P1830": [],
+   "P17": []
+  },
+  "Q1869471": {
+   "label": "Longchamp",
+   "description": "French leathergoods company",
+   "enwiki": "Longchamp (company)",
+   "P31": [
+    [
+     "Q43229",
+     "organization"
+    ]
+   ],
+   "P452": [
+    [
+     "Q112165225",
+     "manufacturing of travel items, leather goods and saddlery"
+    ]
+   ],
+   "P1056": [],
+   "P749": [],
+   "P127": [],
+   "P355": [],
+   "P1830": [],
+   "P17": [
+    [
+     "Q142",
+     "France"
+    ]
+   ]
+  },
+  "Q16933219": {
+   "label": "Strathberry of Scotland",
+   "description": "Scottish fashion accessory company",
+   "enwiki": "Strathberry",
+   "P31": [
+    [
+     "Q783794",
+     "company"
+    ]
+   ],
+   "P452": [
+    [
+     "Q12684",
+     "fashion"
+    ]
+   ],
+   "P1056": [
+    [
+     "Q1065579",
+     "fashion accessory"
+    ]
+   ],
+   "P749": [],
+   "P127": [],
+   "P355": [],
+   "P1830": [],
+   "P17": []
+  },
+  "Q64026213": {
+   "label": "Madewell",
+   "description": "American retail chain operated by J.Crew",
+   "enwiki": null,
+   "P31": [
+    [
+     "Q507619",
+     "retail chain"
+    ]
+   ],
+   "P452": [],
+   "P1056": [],
+   "P749": [
+    [
+     "Q5370765",
+     "J.Crew"
+    ]
+   ],
+   "P127": [],
+   "P355": [],
+   "P1830": [],
+   "P17": []
   }
  },
- "urls": {}
+ "sparql": {},
+ "urls": {
+  "wp": {
+   "batchcomplete": "",
+   "query": {
+    "redirects": [
+     {
+      "from": "Marc Jacobs (brand)",
+      "to": "Marc Jacobs",
+      "tofragment": "Stores"
+     },
+     {
+      "from": "Madewell",
+      "to": "J.Crew"
+     },
+     {
+      "from": "Rebecca Minkoff",
+      "to": "Rebecca Minkoff (company)"
+     },
+     {
+      "from": "Michael Kors (brand)",
+      "to": "Capri Holdings"
+     }
+    ],
+    "pages": {
+     "-1": {
+      "ns": 0,
+      "title": "Michael Kors (company)",
+      "missing": ""
+     },
+     "-2": {
+      "ns": 0,
+      "title": "Marc Jacobs (company)",
+      "missing": ""
+     },
+     "-3": {
+      "ns": 0,
+      "title": "Cuyana",
+      "missing": ""
+     },
+     "-4": {
+      "ns": 0,
+      "title": "Coccinelle (company)",
+      "missing": ""
+     },
+     "-5": {
+      "ns": 0,
+      "title": "Coccinelle (brand)",
+      "missing": ""
+     },
+     "-6": {
+      "ns": 0,
+      "title": "DeMellier",
+      "missing": ""
+     },
+     "649384": {
+      "pageid": 649384,
+      "ns": 0,
+      "title": "Fossil Group",
+      "pageprops": {
+       "wikibase_item": "Q356212"
+      }
+     },
+     "35298186": {
+      "pageid": 35298186,
+      "ns": 0,
+      "title": "Kate Spade New York",
+      "pageprops": {
+       "wikibase_item": "Q6375797"
+      }
+     },
+     "74598145": {
+      "pageid": 74598145,
+      "ns": 0,
+      "title": "Polène",
+      "pageprops": {
+       "wikibase_item": "Q122055705"
+      }
+     },
+     "41437026": {
+      "pageid": 41437026,
+      "ns": 0,
+      "title": "Strathberry",
+      "pageprops": {
+       "wikibase_item": "Q16933219"
+      }
+     },
+     "44942502": {
+      "pageid": 44942502,
+      "ns": 0,
+      "title": "Capri Holdings",
+      "pageprops": {
+       "wikibase_item": "Q19572998"
+      }
+     },
+     "2143479": {
+      "pageid": 2143479,
+      "ns": 0,
+      "title": "J.Crew",
+      "pageprops": {
+       "wikibase_item": "Q5370765"
+      }
+     },
+     "1865085": {
+      "pageid": 1865085,
+      "ns": 0,
+      "title": "Marc Jacobs",
+      "pageprops": {
+       "wikibase_item": "Q313108"
+      }
+     },
+     "58410842": {
+      "pageid": 58410842,
+      "ns": 0,
+      "title": "Rebecca Minkoff (company)",
+      "pageprops": {
+       "wikibase_item": "Q50428076"
+      }
+     }
+    }
+   }
+  }
+ }
 }
