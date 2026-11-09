@@ -1,0 +1,300 @@
+{
+ "target": "Robin Hood Foundation",
+ "target_qid": "Q174896",
+ "category_slug": "nyc-charities",
+ "date": "2026-11-09",
+ "engines": {
+  "Claude": "claude-opus-4-7",
+  "Gemini": "gemini-2.5-pro",
+  "ChatGPT": "gpt-6.1-sol"
+ },
+ "web_search": true,
+ "runs_per_question": 3,
+ "questions": [
+  "What charities are similar to the Robin Hood Foundation?",
+  "Which foundations fund anti-poverty work in New York City like the Robin Hood Foundation?",
+  "I'm thinking about donating to the Robin Hood Foundation. What other charities should I consider?"
+ ],
+ "answers_total": 27,
+ "answers_counted": 27,
+ "readers": {
+  "first": "claude-opus-4-7",
+  "second": "gemini-2.5-pro"
+ },
+ "reading_rule": "A brand counts as named in an answer only if both readers list it.",
+ "rule": "In the competitive set if named by at least 2 of the 3 engines.",
+ "brands": [
+  {
+   "brand": "GiveDirectly",
+   "qid": "Q5565603",
+   "in_category": true,
+   "engines": [
+    "ChatGPT",
+    "Claude",
+    "Gemini"
+   ],
+   "answers": 12,
+   "status": "in set, on page"
+  },
+  {
+   "brand": "City Harvest",
+   "qid": "Q16241195",
+   "in_category": true,
+   "engines": [
+    "ChatGPT",
+    "Claude",
+    "Gemini"
+   ],
+   "answers": 11,
+   "status": "in set, on page"
+  },
+  {
+   "brand": "The New York Community Trust",
+   "qid": "Q17071538",
+   "in_category": true,
+   "engines": [
+    "ChatGPT",
+    "Claude",
+    "Gemini"
+   ],
+   "answers": 9,
+   "status": "in set, on page"
+  },
+  {
+   "brand": "United Way",
+   "qid": "Q3050859",
+   "in_category": true,
+   "engines": [
+    "ChatGPT",
+    "Claude",
+    "Gemini"
+   ],
+   "answers": 9,
+   "status": "in set, on page"
+  },
+  {
+   "brand": "Tipping Point Community",
+   "qid": "Q7808928",
+   "in_category": true,
+   "engines": [
+    "ChatGPT",
+    "Claude",
+    "Gemini"
+   ],
+   "answers": 7,
+   "status": "in set, on page"
+  },
+  {
+   "brand": "Coalition for the Homeless",
+   "qid": "Q5137966",
+   "in_category": true,
+   "engines": [
+    "ChatGPT",
+    "Claude",
+    "Gemini"
+   ],
+   "answers": 5,
+   "status": "in set, on page"
+  },
+  {
+   "brand": "Ford Foundation",
+   "qid": "Q1313036",
+   "in_category": true,
+   "engines": [
+    "Claude",
+    "Gemini"
+   ],
+   "answers": 9,
+   "status": "in set, on page"
+  },
+  {
+   "brand": "CARE",
+   "qid": "Q699385",
+   "in_category": true,
+   "engines": [
+    "Claude",
+    "Gemini"
+   ],
+   "answers": 8,
+   "status": "in set, on page"
+  },
+  {
+   "brand": "Habitat for Humanity",
+   "qid": "Q1192147",
+   "in_category": true,
+   "engines": [
+    "Claude",
+    "Gemini"
+   ],
+   "answers": 6,
+   "status": "in set, on page"
+  },
+  {
+   "brand": "New York Foundation",
+   "qid": "Q17083435",
+   "in_category": true,
+   "engines": [
+    "ChatGPT",
+    "Claude"
+   ],
+   "answers": 6,
+   "status": "in set, on page"
+  },
+  {
+   "brand": "Salvation Army",
+   "qid": "Q188307",
+   "in_category": true,
+   "engines": [
+    "Claude",
+    "Gemini"
+   ],
+   "answers": 6,
+   "status": "in set, on page"
+  },
+  {
+   "brand": "New York Cares",
+   "qid": "Q7013100",
+   "in_category": true,
+   "engines": [
+    "Claude",
+    "Gemini"
+   ],
+   "answers": 5,
+   "status": "in set, on page"
+  },
+  {
+   "brand": "Rockefeller Foundation",
+   "qid": "Q862034",
+   "in_category": true,
+   "engines": [
+    "Claude",
+    "Gemini"
+   ],
+   "answers": 5,
+   "status": "in set, on page"
+  },
+  {
+   "brand": "Starr Foundation",
+   "qid": "Q7766326",
+   "in_category": true,
+   "engines": [
+    "ChatGPT",
+    "Gemini"
+   ],
+   "answers": 5,
+   "status": "in set, on page"
+  },
+  {
+   "brand": "Against Malaria Foundation",
+   "qid": "Q4691036",
+   "in_category": true,
+   "engines": [
+    "ChatGPT",
+    "Claude"
+   ],
+   "answers": 4,
+   "status": "in set, on page"
+  },
+  {
+   "brand": "Feeding America",
+   "qid": "Q2006911",
+   "in_category": true,
+   "engines": [
+    "Claude",
+    "Gemini"
+   ],
+   "answers": 4,
+   "status": "in set, on page"
+  },
+  {
+   "brand": "New Profit",
+   "qid": "Q7011071",
+   "in_category": true,
+   "engines": [
+    "ChatGPT",
+    "Gemini"
+   ],
+   "answers": 4,
+   "status": "in set, on page"
+  },
+  {
+   "brand": "Food Bank For New York City",
+   "qid": "Q5465293",
+   "in_category": true,
+   "engines": [
+    "Claude",
+    "Gemini"
+   ],
+   "answers": 3,
+   "status": "in set, on page"
+  },
+  {
+   "brand": "Mother Cabrini Health Foundation",
+   "qid": "Q107675906",
+   "in_category": true,
+   "engines": [
+    "ChatGPT",
+    "Gemini"
+   ],
+   "answers": 3,
+   "status": "in set, on page"
+  },
+  {
+   "brand": "Blue Meridian Partners",
+   "qid": "Q136324442",
+   "in_category": true,
+   "engines": [
+    "ChatGPT",
+    "Gemini"
+   ],
+   "answers": 2,
+   "status": "in set, on page"
+  },
+  {
+   "brand": "Center on Budget and Policy Priorities",
+   "qid": "Q5060005",
+   "in_category": true,
+   "engines": [
+    "Claude",
+    "Gemini"
+   ],
+   "answers": 2,
+   "status": "in set, on page"
+  },
+  {
+   "brand": "Henry Street Settlement",
+   "qid": "Q5728819",
+   "in_category": true,
+   "engines": [
+    "ChatGPT",
+    "Claude"
+   ],
+   "answers": 2,
+   "status": "in set, on page"
+  },
+  {
+   "brand": "National Low Income Housing Coalition",
+   "qid": "Q54828837",
+   "in_category": true,
+   "engines": [
+    "Claude",
+    "Gemini"
+   ],
+   "answers": 2,
+   "status": "in set, on page"
+  }
+ ],
+ "note": "Only brands in the competitive set and in this BrandTabulator category are listed.",
+ "open_questions": {
+  "questions": [
+   "I'd like to make a holiday donation to a very trustworthy foundation in NYC that fights poverty. Who should I consider giving to?"
+  ],
+  "answers": 9,
+  "target_named_in": 9,
+  "by_engine": {
+   "Claude": "3 of 3",
+   "Gemini": "3 of 3",
+   "ChatGPT": "3 of 3"
+  }
+ }
+}

@@ -1,7 +1,7 @@
 {
   "slug": "nyc-charities",
   "name": "New York charities",
-  "draft": true,
+  "draft": false,
   "recipient_only": true,
   "path": "charities",
   "product_noun": "charity",
