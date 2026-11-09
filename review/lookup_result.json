@@ -3,358 +3,418 @@
  "items": {},
  "sparql": {},
  "urls": {
-  "Turing AI developer hiring company": {
-   "batchcomplete": "",
-   "continue": {
-    "sroffset": 3,
-    "continue": "-||"
-   },
-   "query": {
-    "searchinfo": {
-     "totalhits": 47
-    },
-    "search": [
-     {
-      "ns": 0,
-      "title": "SpaceXAI",
-      "pageid": 74330685,
-      "size": 68060,
-      "wordcount": 5411,
-      "snippet": "generation tools. On March 28, 2025, Musk announced that x<span class=\"searchmatch\">AI</span> acquired sister <span class=\"searchmatch\">company</span> X Corp., the <span class=\"searchmatch\">developer</span> of social media platform X (formerly Twitter), which",
-      "timestamp": "2026-11-09T17:54:22Z"
-     },
-     {
-      "ns": 0,
-      "title": "OpenAI",
-      "pageid": 48795986,
-      "size": 226615,
-      "wordcount": 18739,
-      "snippet": "CEO Vijaye Raji as Open<span class=\"searchmatch\">AI&#039;s</span> chief technology officer of applications. The <span class=\"searchmatch\">company</span> also announced development of an <span class=\"searchmatch\">AI</span>-driven <span class=\"searchmatch\">hiring</span> service designed to rival",
-      "timestamp": "2026-11-08T10:14:23Z"
-     },
-     {
-      "ns": 0,
-      "title": "AI build-out financing",
-      "pageid": 84046820,
-      "size": 34288,
-      "wordcount": 3584,
-      "snippet": "&quot;frontier labs,&quot; a term used for <span class=\"searchmatch\">AI</span> <span class=\"searchmatch\">developers</span> building the most advanced large language models, principally Open<span class=\"searchmatch\">AI</span> and Anthropic. Because hyperscalers",
-      "timestamp": "2026-11-05T02:45:19Z"
-     }
-    ]
-   }
-  },
-  "Braintrust freelance network": {
-   "batchcomplete": "",
-   "query": {
-    "searchinfo": {
-     "totalhits": 1
-    },
-    "search": [
-     {
-      "ns": 0,
-      "title": "Walt Disney Animation Studios",
-      "pageid": 1303939,
-      "size": 222723,
-      "wordcount": 20634,
-      "snippet": "known as the Disney Story Trust. It was somewhat similar to the Pixar <span class=\"searchmatch\">Braintrust</span>, but its meetings were reportedly &quot;more polite&quot; than those of its Pixar",
-      "timestamp": "2026-11-01T19:26:48Z"
-     }
-    ]
-   }
-  },
-  "Gun.io freelance": {
-   "batchcomplete": "",
-   "continue": {
-    "sroffset": 3,
-    "continue": "-||"
-   },
-   "query": {
-    "searchinfo": {
-     "totalhits": 71,
-     "suggestion": "gubbio freelance",
-     "suggestionsnippet": "<em>gubbio</em> freelance"
-    },
-    "search": [
-     {
-      "ns": 0,
-      "title": "Iyo Sky",
-      "pageid": 34496660,
-      "size": 264653,
-      "wordcount": 21599,
-      "snippet": "where she is the incumbent Queen of the Ring. She competed as <span class=\"searchmatch\">Io</span> Shirai (紫雷 イオ, Shirai <span class=\"searchmatch\">Io</span>) (/ˈiːoʊ/) in WWE&#039;s developmental brand NXT, where she was a",
-      "timestamp": "2026-11-07T20:25:55Z"
-     },
-     {
-      "ns": 0,
-      "title": "Hitman 3",
-      "pageid": 64249568,
-      "size": 124400,
-      "wordcount": 11540,
-      "snippet": "The <span class=\"searchmatch\">Freelancer</span> mode was originally set to be released in 2022, though its release was pushed to January 2023. Alongside <span class=\"searchmatch\">Freelancer&#039;s</span> release, <span class=\"searchmatch\">IO</span> Interactive",
-      "timestamp": "2026-11-08T11:13:33Z"
-     },
-     {
-      "ns": 0,
-      "title": "Hitman: Codename 47",
-      "pageid": 970264,
-      "size": 25365,
-      "wordcount": 2558,
-      "snippet": "Hitman: Codename 47 is a stealth video game developed by <span class=\"searchmatch\">IO</span> Interactive and published by Eidos Interactive exclusively for Microsoft Windows in November",
-      "timestamp": "2026-11-06T12:02:14Z"
-     }
-    ]
-   }
-  },
-  "Lemon.io developers": {
-   "batchcomplete": "",
-   "continue": {
-    "sroffset": 3,
-    "continue": "-||"
-   },
-   "query": {
-    "searchinfo": {
-     "totalhits": 63,
-     "suggestion": "lemonia developer",
-     "suggestionsnippet": "<em>lemonia developer</em>"
-    },
-    "search": [
-     {
-      "ns": 0,
-      "title": "Internet of things",
-      "pageid": 12057519,
-      "size": 228951,
-      "wordcount": 22264,
-      "snippet": "Internet of things (<span class=\"searchmatch\">Io</span>T) describes physical objects that are embedded with sensors, processing ability, software, and other technologies that connect and",
-      "timestamp": "2026-11-06T16:33:53Z"
-     },
-     {
-      "ns": 0,
-      "title": "Qt (software)",
-      "pageid": 25204,
-      "size": 82081,
-      "wordcount": 5841,
-      "snippet": "and the Qt Project under open-source governance, involving individual <span class=\"searchmatch\">developers</span> and organizations working to advance Qt. Qt is available under both commercial",
-      "timestamp": "2026-11-09T12:51:03Z"
-     },
-     {
-      "ns": 0,
-      "title": "Zyrinx",
-      "pageid": 11085918,
-      "size": 2362,
-      "wordcount": 184,
-      "snippet": "multiplayer focused games. MobyGames – Zyrinx Sega 32x demo tape by Zyrinx &amp; <span class=\"searchmatch\">Lemon</span> (game company) Jesper Kyd Online &quot;Hardcore Gaming 101: Zyrinx&quot;. Hardcore",
-      "timestamp": "2026-02-07T21:54:42Z"
-     }
-    ]
-   }
-  },
-  "Revelo developers Latin America": {
-   "batchcomplete": "",
-   "query": {
-    "searchinfo": {
-     "totalhits": 3,
-     "suggestion": "rebels developer latin america",
-     "suggestionsnippet": "<em>rebels developer</em> latin america"
-    },
-    "search": [
-     {
-      "ns": 0,
-      "title": "Eduardo Costantini",
-      "pageid": 8661569,
-      "size": 15502,
-      "wordcount": 1347,
-      "snippet": "1946) is an Argentine real estate <span class=\"searchmatch\">developer</span> and businessman and the founder and chairman of the Museum of <span class=\"searchmatch\">Latin</span> <span class=\"searchmatch\">American</span> Art of Buenos Aires (MALBA). As",
-      "timestamp": "2026-08-31T03:49:33Z"
-     },
-     {
-      "ns": 0,
-      "title": "Battery energy storage system",
-      "pageid": 49336757,
-      "size": 72931,
-      "wordcount": 5987,
-      "snippet": "Malte (5 June 2025). &quot;Cinco segundos, mil millones en juego: el apagón que <span class=\"searchmatch\">reveló</span> el valor estratégico de la red eléctrica&quot;. El Español. Retrieved 1 June",
-      "timestamp": "2026-10-21T08:32:01Z"
-     },
-     {
-      "ns": 0,
-      "title": "Deaths in May 2021",
-      "pageid": 66193660,
-      "size": 293575,
-      "wordcount": 20722,
-      "snippet": "arrest. María Amalia <span class=\"searchmatch\">Revelo</span>, 65, Costa Rican businesswoman, minister of tourism (2018–2020). Lee Ross, 78, Canadian-born <span class=\"searchmatch\">American</span> psychologist. Waltraut",
-      "timestamp": "2026-11-06T08:45:17Z"
-     }
-    ]
-   }
-  },
-  "Codeable WordPress": {
-   "batchcomplete": "",
-   "continue": {
-    "sroffset": 3,
-    "continue": "-||"
-   },
-   "query": {
-    "searchinfo": {
-     "totalhits": 28023
-    },
-    "search": [
-     {
-      "ns": 0,
-      "title": "WordPress",
-      "pageid": 605856,
-      "size": 90850,
-      "wordcount": 6223,
-      "snippet": "NextGEN Gallery Weblog software <span class=\"searchmatch\">WordPress</span>.com Mullenweg, Matt (May 27, 2003). &quot;<span class=\"searchmatch\">WordPress</span> Now Available&quot;. <span class=\"searchmatch\">wordpress</span>.org. <span class=\"searchmatch\">WordPress</span>. Archived from the original",
-      "timestamp": "2026-11-03T07:14:18Z"
-     },
-     {
-      "ns": 0,
-      "title": "WordPress.com",
-      "pageid": 2895712,
-      "size": 11755,
-      "wordcount": 1038,
-      "snippet": "portal Automattic <span class=\"searchmatch\">WordPress</span> WooCommerce Managed hosting Software as a service Content management system &quot;Writing a Plugin&quot;. <span class=\"searchmatch\">Wordpress</span>.org. Archived from",
-      "timestamp": "2026-09-22T03:25:08Z"
-     },
-     {
-      "ns": 0,
-      "title": "Code word (figure of speech)",
-      "pageid": 1654771,
-      "size": 8843,
-      "wordcount": 1049,
-      "snippet": "A <span class=\"searchmatch\">code</span> <span class=\"searchmatch\">word</span> is a <span class=\"searchmatch\">word</span> or a phrase designed to convey a predetermined meaning to an audience who know the phrase, while remaining inconspicuous to the",
-      "timestamp": "2026-07-11T19:25:21Z"
-     }
-    ]
-   }
-  },
-  "t": {
+  "ex": {
    "batchcomplete": "",
    "query": {
     "pages": {
-     "-1": {
-      "ns": 0,
-      "title": "Gun.io",
-      "missing": ""
-     },
-     "-2": {
-      "ns": 0,
-      "title": "Lemon.io",
-      "missing": ""
-     },
-     "-3": {
-      "ns": 0,
-      "title": "Turing (company)",
-      "missing": ""
-     },
-     "-4": {
-      "ns": 0,
-      "title": "Turing (recruitment company)",
-      "missing": ""
-     },
-     "-5": {
-      "ns": 0,
-      "title": "Braintrust (company)",
-      "missing": ""
-     },
-     "-6": {
-      "ns": 0,
-      "title": "Revelo",
-      "missing": ""
-     },
-     "-7": {
-      "ns": 0,
-      "title": "Wellfound",
-      "missing": ""
-     },
-     "-8": {
-      "ns": 0,
-      "title": "Arc.dev",
-      "missing": ""
-     },
-     "-9": {
-      "ns": 0,
-      "title": "BairesDev",
-      "missing": ""
-     },
-     "-10": {
-      "ns": 0,
-      "title": "Catalant Technologies",
-      "missing": ""
-     },
-     "-11": {
-      "ns": 0,
-      "title": "Codeable",
-      "missing": ""
-     },
-     "-12": {
-      "ns": 0,
-      "title": "Turing Enterprises",
-      "missing": ""
-     },
      "52237243": {
       "pageid": 52237243,
       "ns": 0,
       "title": "Andela",
-      "pageprops": {
-       "wikibase_item": "Q28186691"
-      }
+      "extract": "Andela is a private marketplace for technical talent. Andela focuses on sustainable careers, connecting technologists with long-term engagements, access to international roles, and competitive compensation. \nAndela allows companies to access technical talent in approximately 135 countries who are skilled in application development, artificial intelligence, data engineering, cloud, and DevOps. It sources, screens, and onboards the talent, handling the entirety of the hiring lifecycle. Andela uses AI/ML in its platform to match applicants with available roles.",
+      "contentmodel": "wikitext",
+      "pagelanguage": "en",
+      "pagelanguagehtmlcode": "en",
+      "pagelanguagedir": "ltr",
+      "touched": "2026-11-08T02:13:28Z",
+      "lastrevid": 1381127155,
+      "length": 19632
      },
-     "37477387": {
-      "pageid": 37477387,
+     "73416675": {
+      "pageid": 73416675,
       "ns": 0,
-      "title": "AngelList",
-      "pageprops": {
-       "wikibase_item": "Q4762034"
+      "title": "Braintrust",
+      "extract": "Braintrust is an American artificial intelligence software company that develops evaluation and observability tools for large language model (LLM) applications and AI systems. The company was founded in 2023 by Ankur Goyal and is headquartered in San Francisco, California.",
+      "contentmodel": "wikitext",
+      "pagelanguage": "en",
+      "pagelanguagehtmlcode": "en",
+      "pagelanguagedir": "ltr",
+      "touched": "2026-11-08T21:41:55Z",
+      "lastrevid": 1374149924,
+      "length": 8367
+     },
+     "51171340": {
+      "pageid": 51171340,
+      "ns": 0,
+      "title": "Catalant",
+      "extract": "Catalant Technologies, Inc., formerly HourlyNerd, is a consulting solution that uses a machine-learning algorithm to recommend independent consultants whose skills and expertise are needed for client projects. More than 70,000 independent consultants are listed on Catalant. Catalant is based in Boston, MA.",
+      "contentmodel": "wikitext",
+      "pagelanguage": "en",
+      "pagelanguagehtmlcode": "en",
+      "pagelanguagedir": "ltr",
+      "touched": "2026-11-08T02:12:55Z",
+      "lastrevid": 1363504888,
+      "length": 6843
+     },
+     "31452088": {
+      "pageid": 31452088,
+      "ns": 0,
+      "title": "Fiverr",
+      "extract": "Fiverr is an Israeli multinational online marketplace for freelance services. It connects freelancers to people or businesses looking for services. Fiverr takes its name from the $5 asking price attached to all tasks when the company was founded, though many sellers now charge more.\nListings on Fiverr are described as diverse, ranging from \"get a well-designed business card\" to \"help with HTML, JavaScript, CSS, and jQuery\". The highest-paying jobs on Fiverr include website design, social media manager, proofreading, copywriting, and resume writing. Freelancers work from a variety of workplaces. The platform is global, with freelancers and businesses spanning an estimated 160 countries. Fiverr listed on the NYSE in 2019.",
+      "contentmodel": "wikitext",
+      "pagelanguage": "en",
+      "pagelanguagehtmlcode": "en",
+      "pagelanguagedir": "ltr",
+      "touched": "2026-11-08T02:02:27Z",
+      "lastrevid": 1384325239,
+      "length": 18231
+     },
+     "27245692": {
+      "pageid": 27245692,
+      "ns": 0,
+      "title": "Freelancer.com",
+      "extract": "Freelancer is an Australian freelance marketplace website, which allows potential employers to post jobs that freelancers can then bid to complete. Founded in 2009, its headquarters is located in Sydney, Australia, though it also has offices in Vancouver, London, Buenos Aires, Manila, and Jakarta.\n\n",
+      "contentmodel": "wikitext",
+      "pagelanguage": "en",
+      "pagelanguagehtmlcode": "en",
+      "pagelanguagedir": "ltr",
+      "touched": "2026-11-08T21:26:35Z",
+      "lastrevid": 1381976525,
+      "length": 13753
+     },
+     "47695892": {
+      "pageid": 47695892,
+      "ns": 0,
+      "title": "Gigster",
+      "extract": "Gigster provides a service that allows users to get tech projects built on demand. It was co-founded by Roger Dickey and Debo Olaosebikan and based in San Francisco, California. They received seed funding from Greylock Partners, Bloomberg Beta, as well as notable angel investors and founders Naval Ravikant of AngelList, Justin Waldron of Zynga, and Emmett Shear of Twitch, among others. They were a part of Y-Combinator's Summer 2015 class.\nOn December 7, 2015, Gigster announced its $10m Series A funding round led by Andreessen Horowitz, which will be used to further build the startup's AI and machine learning technology. The company announced on August 29, 2017, that they had raised $20 million in investments led by RedPoint Ventures for its Series B funding round, which included existing investor, Andreessen Horowitz and first time tech investor and retired basketball star, Michael Jordan. By this time the company had received a total funding of $32.5 million.\nOn May 26, 2021, Gigster announced that it had been acquired by Ionic Partners, an Austin-based firm that buys and operates enterprise software businesses.\nOn November 1, 2023, Gigster acquired CodersRank, a Debrecen, Hungary-based platform that ranks IT developers. The purchase was announced earlier in September of the same year.\nOn March 26, 2024, Ionic Partners announced Gigster had been sold to cloud optimization services company Virtasant.",
+      "contentmodel": "wikitext",
+      "pagelanguage": "en",
+      "pagelanguagehtmlcode": "en",
+      "pagelanguagedir": "ltr",
+      "touched": "2026-11-08T02:11:17Z",
+      "lastrevid": 1384326718,
+      "length": 4855
+     },
+     "57770895": {
+      "pageid": 57770895,
+      "ns": 0,
+      "title": "Toptal",
+      "extract": "Toptal is a global remote company that provides a freelancing platform, connecting businesses with software engineers, designers, finance experts, product managers, and project managers. The company has no headquarters.",
+      "contentmodel": "wikitext",
+      "pagelanguage": "en",
+      "pagelanguagehtmlcode": "en",
+      "pagelanguagedir": "ltr",
+      "touched": "2026-11-08T02:16:43Z",
+      "lastrevid": 1380873877,
+      "length": 6273
+     },
+     "10002787": {
+      "pageid": 10002787,
+      "ns": 0,
+      "title": "Upwork",
+      "extract": "Upwork Inc. (formerly Elance-oDesk) is an American freelancing platform headquartered in Palo Alto and San Francisco, California. The company was formed in 2013 as Elance-oDesk after the merger of Elance Inc. and oDesk Corp. The merged company was subsequently rebranded as Upwork in 2015. Upwork went public in 2018. Changes to its fees and account policies have repeatedly drawn protests from freelancers, and after a prolonged decline in its share price the company became the target of an activist investor campaign in 2024 and carried out large workforce reductions in 2024 and 2026.",
+      "contentmodel": "wikitext",
+      "pagelanguage": "en",
+      "pagelanguagehtmlcode": "en",
+      "pagelanguagedir": "ltr",
+      "touched": "2026-11-08T01:47:47Z",
+      "lastrevid": 1377256758,
+      "length": 21457
+     }
+    }
+   },
+   "limits": {
+    "extracts": 20
+   }
+  },
+  "pv": {
+   "batchcomplete": "",
+   "query": {
+    "pages": {
+     "52237243": {
+      "pageid": 52237243,
+      "ns": 0,
+      "title": "Andela",
+      "pageviews": {
+       "2026-10-10": 47,
+       "2026-10-11": 41,
+       "2026-10-12": 61,
+       "2026-10-13": 49,
+       "2026-10-14": 36,
+       "2026-10-15": 46,
+       "2026-10-16": 31,
+       "2026-10-17": 33,
+       "2026-10-18": 37,
+       "2026-10-19": 43,
+       "2026-10-20": 39,
+       "2026-10-21": 27,
+       "2026-10-22": 39,
+       "2026-10-23": 35,
+       "2026-10-24": 25,
+       "2026-10-25": 17,
+       "2026-10-26": 32,
+       "2026-10-27": 50,
+       "2026-10-28": 51,
+       "2026-10-29": 47,
+       "2026-10-30": 47,
+       "2026-10-31": 33,
+       "2026-11-01": 22,
+       "2026-11-02": 41,
+       "2026-11-03": 54,
+       "2026-11-04": 26,
+       "2026-11-05": 43,
+       "2026-11-06": 36,
+       "2026-11-07": 34,
+       "2026-11-08": 19
       }
      },
      "73416675": {
       "pageid": 73416675,
       "ns": 0,
       "title": "Braintrust",
-      "pageprops": {
-       "wikibase_item": "Q141164091"
+      "pageviews": {
+       "2026-10-10": 37,
+       "2026-10-11": 43,
+       "2026-10-12": 53,
+       "2026-10-13": 54,
+       "2026-10-14": 42,
+       "2026-10-15": 46,
+       "2026-10-16": 57,
+       "2026-10-17": 23,
+       "2026-10-18": 17,
+       "2026-10-19": 44,
+       "2026-10-20": 43,
+       "2026-10-21": 38,
+       "2026-10-22": 39,
+       "2026-10-23": 43,
+       "2026-10-24": 29,
+       "2026-10-25": 9,
+       "2026-10-26": 26,
+       "2026-10-27": 19,
+       "2026-10-28": 33,
+       "2026-10-29": 16,
+       "2026-10-30": 19,
+       "2026-10-31": 8,
+       "2026-11-01": 8,
+       "2026-11-02": 21,
+       "2026-11-03": 12,
+       "2026-11-04": 19,
+       "2026-11-05": 22,
+       "2026-11-06": 18,
+       "2026-11-07": 10,
+       "2026-11-08": 22
       }
      },
      "51171340": {
       "pageid": 51171340,
       "ns": 0,
       "title": "Catalant",
-      "pageprops": {
-       "wikibase_item": "Q28401895"
+      "pageviews": {
+       "2026-10-10": 43,
+       "2026-10-11": 44,
+       "2026-10-12": 80,
+       "2026-10-13": 42,
+       "2026-10-14": 25,
+       "2026-10-15": 12,
+       "2026-10-16": 12,
+       "2026-10-17": 14,
+       "2026-10-18": 7,
+       "2026-10-19": 17,
+       "2026-10-20": 18,
+       "2026-10-21": 35,
+       "2026-10-22": 36,
+       "2026-10-23": 13,
+       "2026-10-24": 16,
+       "2026-10-25": 8,
+       "2026-10-26": 6,
+       "2026-10-27": 5,
+       "2026-10-28": 9,
+       "2026-10-29": 9,
+       "2026-10-30": 8,
+       "2026-10-31": 8,
+       "2026-11-01": 12,
+       "2026-11-02": 4,
+       "2026-11-03": 11,
+       "2026-11-04": 3,
+       "2026-11-05": 5,
+       "2026-11-06": 5,
+       "2026-11-07": null,
+       "2026-11-08": null
       }
      },
      "31452088": {
       "pageid": 31452088,
       "ns": 0,
       "title": "Fiverr",
-      "pageprops": {
-       "wikibase_item": "Q5410132"
+      "pageviews": {
+       "2026-10-10": 448,
+       "2026-10-11": 282,
+       "2026-10-12": 299,
+       "2026-10-13": 351,
+       "2026-10-14": 280,
+       "2026-10-15": 277,
+       "2026-10-16": 222,
+       "2026-10-17": 205,
+       "2026-10-18": 264,
+       "2026-10-19": 245,
+       "2026-10-20": 248,
+       "2026-10-21": 294,
+       "2026-10-22": 297,
+       "2026-10-23": 257,
+       "2026-10-24": 221,
+       "2026-10-25": 244,
+       "2026-10-26": 261,
+       "2026-10-27": 301,
+       "2026-10-28": 317,
+       "2026-10-29": 295,
+       "2026-10-30": 235,
+       "2026-10-31": 191,
+       "2026-11-01": 222,
+       "2026-11-02": 322,
+       "2026-11-03": 292,
+       "2026-11-04": 326,
+       "2026-11-05": 312,
+       "2026-11-06": 248,
+       "2026-11-07": null,
+       "2026-11-08": null
       }
      },
      "27245692": {
       "pageid": 27245692,
       "ns": 0,
       "title": "Freelancer.com",
-      "pageprops": {
-       "wikibase_item": "Q5500950"
+      "pageviews": {
+       "2026-10-10": 66,
+       "2026-10-11": 62,
+       "2026-10-12": 69,
+       "2026-10-13": 55,
+       "2026-10-14": 46,
+       "2026-10-15": 45,
+       "2026-10-16": 43,
+       "2026-10-17": 52,
+       "2026-10-18": 54,
+       "2026-10-19": 59,
+       "2026-10-20": 64,
+       "2026-10-21": 57,
+       "2026-10-22": 44,
+       "2026-10-23": 63,
+       "2026-10-24": 58,
+       "2026-10-25": 42,
+       "2026-10-26": 69,
+       "2026-10-27": 49,
+       "2026-10-28": 52,
+       "2026-10-29": 59,
+       "2026-10-30": 58,
+       "2026-10-31": 49,
+       "2026-11-01": 46,
+       "2026-11-02": 52,
+       "2026-11-03": 55,
+       "2026-11-04": 39,
+       "2026-11-05": 40,
+       "2026-11-06": 39,
+       "2026-11-07": null,
+       "2026-11-08": null
       }
      },
      "47695892": {
       "pageid": 47695892,
       "ns": 0,
       "title": "Gigster",
-      "pageprops": {
-       "wikibase_item": "Q21070780"
+      "pageviews": {
+       "2026-10-10": 3,
+       "2026-10-11": 3,
+       "2026-10-12": 3,
+       "2026-10-13": 6,
+       "2026-10-14": 5,
+       "2026-10-15": 9,
+       "2026-10-16": 4,
+       "2026-10-17": 3,
+       "2026-10-18": 5,
+       "2026-10-19": 3,
+       "2026-10-20": 4,
+       "2026-10-21": 4,
+       "2026-10-22": 10,
+       "2026-10-23": 2,
+       "2026-10-24": 0,
+       "2026-10-25": 4,
+       "2026-10-26": 4,
+       "2026-10-27": 2,
+       "2026-10-28": 3,
+       "2026-10-29": 3,
+       "2026-10-30": 3,
+       "2026-10-31": 5,
+       "2026-11-01": 5,
+       "2026-11-02": 2,
+       "2026-11-03": 4,
+       "2026-11-04": 1,
+       "2026-11-05": 2,
+       "2026-11-06": 3,
+       "2026-11-07": 2,
+       "2026-11-08": 0
+      }
+     },
+     "57770895": {
+      "pageid": 57770895,
+      "ns": 0,
+      "title": "Toptal",
+      "pageviews": {
+       "2026-10-10": 51,
+       "2026-10-11": 27,
+       "2026-10-12": 47,
+       "2026-10-13": 52,
+       "2026-10-14": 56,
+       "2026-10-15": 44,
+       "2026-10-16": 26,
+       "2026-10-17": 27,
+       "2026-10-18": 58,
+       "2026-10-19": 33,
+       "2026-10-20": 42,
+       "2026-10-21": 76,
+       "2026-10-22": 42,
+       "2026-10-23": 35,
+       "2026-10-24": 28,
+       "2026-10-25": 22,
+       "2026-10-26": 50,
+       "2026-10-27": 29,
+       "2026-10-28": 41,
+       "2026-10-29": 38,
+       "2026-10-30": 27,
+       "2026-10-31": 20,
+       "2026-11-01": 30,
+       "2026-11-02": 49,
+       "2026-11-03": 39,
+       "2026-11-04": 37,
+       "2026-11-05": 29,
+       "2026-11-06": 29,
+       "2026-11-07": null,
+       "2026-11-08": null
       }
      },
      "10002787": {
       "pageid": 10002787,
       "ns": 0,
       "title": "Upwork",
-      "pageprops": {
-       "wikibase_item": "Q3344170"
+      "pageviews": {
+       "2026-10-10": 206,
+       "2026-10-11": 154,
+       "2026-10-12": 203,
+       "2026-10-13": 179,
+       "2026-10-14": 205,
+       "2026-10-15": 200,
+       "2026-10-16": 159,
+       "2026-10-17": 117,
+       "2026-10-18": 133,
+       "2026-10-19": 181,
+       "2026-10-20": 175,
+       "2026-10-21": 179,
+       "2026-10-22": 229,
+       "2026-10-23": 200,
+       "2026-10-24": 167,
+       "2026-10-25": 162,
+       "2026-10-26": 230,
+       "2026-10-27": 227,
+       "2026-10-28": 208,
+       "2026-10-29": 166,
+       "2026-10-30": 135,
+       "2026-10-31": 124,
+       "2026-11-01": 144,
+       "2026-11-02": 187,
+       "2026-11-03": 212,
+       "2026-11-04": 172,
+       "2026-11-05": 179,
+       "2026-11-06": 154,
+       "2026-11-07": null,
+       "2026-11-08": null
       }
      }
     }
