@@ -1,0 +1,181 @@
+{
+ "target": "Coach",
+ "target_qid": "Q727697",
+ "category_slug": "handbags-leather-goods",
+ "date": "2026-11-09",
+ "engines": {
+  "Claude": "claude-opus-4-7",
+  "Gemini": "gemini-2.5-pro",
+  "ChatGPT": "gpt-6.1-sol"
+ },
+ "web_search": true,
+ "runs_per_question": 3,
+ "questions": [
+  "Who are the main competitors of Coach handbags?",
+  "What handbag brands are similar to Coach?",
+  "I'm thinking about buying a Coach handbag. What other brands should I consider?"
+ ],
+ "answers_total": 27,
+ "answers_counted": 27,
+ "readers": {
+  "first": "claude-opus-4-7",
+  "second": "gemini-2.5-pro"
+ },
+ "reading_rule": "A brand counts as named in an answer only if both readers list it.",
+ "rule": "In the competitive set if named by at least 2 of the 3 engines.",
+ "brands": [
+  {
+   "brand": "Kate Spade New York",
+   "qid": "Q6375797",
+   "in_category": true,
+   "engines": [
+    "ChatGPT",
+    "Claude",
+    "Gemini"
+   ],
+   "answers": 27,
+   "status": "in set, on page"
+  },
+  {
+   "brand": "Tory Burch",
+   "qid": "Q19988222",
+   "in_category": true,
+   "engines": [
+    "ChatGPT",
+    "Claude",
+    "Gemini"
+   ],
+   "answers": 27,
+   "status": "in set, on page"
+  },
+  {
+   "brand": "Longchamp",
+   "qid": "Q1869471",
+   "in_category": true,
+   "engines": [
+    "ChatGPT",
+    "Claude",
+    "Gemini"
+   ],
+   "answers": 21,
+   "status": "in set, on page"
+  },
+  {
+   "brand": "Dooney & Bourke",
+   "qid": "Q5297166",
+   "in_category": true,
+   "engines": [
+    "ChatGPT",
+    "Claude",
+    "Gemini"
+   ],
+   "answers": 17,
+   "status": "in set, on page"
+  },
+  {
+   "brand": "Polène",
+   "qid": "Q122055705",
+   "in_category": true,
+   "engines": [
+    "ChatGPT",
+    "Claude",
+    "Gemini"
+   ],
+   "answers": 15,
+   "status": "in set, on page"
+  },
+  {
+   "brand": "Strathberry",
+   "qid": "Q16933219",
+   "in_category": true,
+   "engines": [
+    "ChatGPT",
+    "Claude",
+    "Gemini"
+   ],
+   "answers": 14,
+   "status": "in set, on page"
+  },
+  {
+   "brand": "Fossil",
+   "qid": "Q356212",
+   "in_category": true,
+   "engines": [
+    "ChatGPT",
+    "Claude",
+    "Gemini"
+   ],
+   "answers": 11,
+   "status": "in set, on page"
+  },
+  {
+   "brand": "Gucci",
+   "qid": "Q178516",
+   "in_category": true,
+   "engines": [
+    "ChatGPT",
+    "Claude",
+    "Gemini"
+   ],
+   "answers": 5,
+   "status": "in set, on page"
+  },
+  {
+   "brand": "Prada",
+   "qid": "Q193136",
+   "in_category": true,
+   "engines": [
+    "ChatGPT",
+    "Claude",
+    "Gemini"
+   ],
+   "answers": 5,
+   "status": "in set, on page"
+  },
+  {
+   "brand": "Furla",
+   "qid": "Q3073195",
+   "in_category": true,
+   "engines": [
+    "ChatGPT",
+    "Claude"
+   ],
+   "answers": 12,
+   "status": "in set, on page"
+  },
+  {
+   "brand": "Rebecca Minkoff",
+   "qid": "Q50428076",
+   "in_category": true,
+   "engines": [
+    "Claude",
+    "Gemini"
+   ],
+   "answers": 7,
+   "status": "in set, on page"
+  },
+  {
+   "brand": "Guess",
+   "qid": "Q2470307",
+   "in_category": true,
+   "engines": [
+    "Claude",
+    "Gemini"
+   ],
+   "answers": 5,
+   "status": "in set, on page"
+  },
+  {
+   "brand": "Louis Vuitton",
+   "qid": "Q191485",
+   "in_category": true,
+   "engines": [
+    "ChatGPT",
+    "Gemini"
+   ],
+   "answers": 3,
+   "status": "in set, on page"
+  }
+ ],
+ "note": "Only brands in the competitive set and in this BrandTabulator category are listed."
+}
