@@ -1,60 +1,273 @@
 {
- "search": {
-  "Robin Hood Foundation": [
-   {
-    "qid": "Q174896",
-    "label": "Robin Hood Foundation",
-    "description": "foundation"
-   }
-  ]
- },
+ "search": {},
  "items": {},
  "sparql": {},
  "urls": {
-  "wp": {
+  "t0": {
    "batchcomplete": "",
    "query": {
+    "redirects": [
+     {
+      "from": "Oxfam America",
+      "to": "Oxfam",
+      "tofragment": "Oxfam America"
+     },
+     {
+      "from": "CARE (relief agency)",
+      "to": "CARE International"
+     },
+     {
+      "from": "The Salvation Army",
+      "to": "Salvation Army"
+     },
+     {
+      "from": "New Profit",
+      "to": "New Profit Inc."
+     },
+     {
+      "from": "New York Community Trust",
+      "to": "The New York Community Trust"
+     }
+    ],
     "pages": {
      "-1": {
       "ns": 0,
-      "title": "Robin Hood (charity)",
-      "missing": "",
-      "contentmodel": "wikitext",
-      "pagelanguage": "en",
-      "pagelanguagehtmlcode": "en",
-      "pagelanguagedir": "ltr"
+      "title": "Altman Foundation",
+      "missing": ""
      },
-     "11061413": {
-      "pageid": 11061413,
+     "-2": {
       "ns": 0,
-      "title": "Robin Hood Foundation",
+      "title": "Pinkerton Foundation",
+      "missing": ""
+     },
+     "-3": {
+      "ns": 0,
+      "title": "Tiger Foundation",
+      "missing": ""
+     },
+     "-4": {
+      "ns": 0,
+      "title": "United Way of New York City",
+      "missing": ""
+     },
+     "-5": {
+      "ns": 0,
+      "title": "Food Bank for New York City",
+      "missing": ""
+     },
+     "32395888": {
+      "pageid": 32395888,
+      "ns": 0,
+      "title": "Against Malaria Foundation",
       "pageprops": {
-       "wikibase-shortdesc": "Charitable organization in New York City",
-       "wikibase_item": "Q174896"
-      },
-      "contentmodel": "wikitext",
-      "pagelanguage": "en",
-      "pagelanguagehtmlcode": "en",
-      "pagelanguagedir": "ltr",
-      "touched": "2026-11-08T01:48:25Z",
-      "lastrevid": 1383665210,
-      "length": 14822
+       "wikibase_item": "Q4691036"
+      }
+     },
+     "246892": {
+      "pageid": 246892,
+      "ns": 0,
+      "title": "CARE International",
+      "pageprops": {
+       "wikibase_item": "Q699385"
+      }
+     },
+     "5846289": {
+      "pageid": 5846289,
+      "ns": 0,
+      "title": "City Harvest",
+      "pageprops": {
+       "disambiguation": "",
+       "wikibase_item": "Q5123215"
+      }
+     },
+     "7590724": {
+      "pageid": 7590724,
+      "ns": 0,
+      "title": "Coalition for the Homeless",
+      "pageprops": {
+       "wikibase_item": "Q5137966"
+      }
+     },
+     "2643914": {
+      "pageid": 2643914,
+      "ns": 0,
+      "title": "Feeding America",
+      "pageprops": {
+       "wikibase_item": "Q2006911"
+      }
+     },
+     "92405": {
+      "pageid": 92405,
+      "ns": 0,
+      "title": "Ford Foundation",
+      "pageprops": {
+       "wikibase_item": "Q1313036"
+      }
+     },
+     "33834107": {
+      "pageid": 33834107,
+      "ns": 0,
+      "title": "GiveDirectly",
+      "pageprops": {
+       "wikibase_item": "Q5565603"
+      }
+     },
+     "450053": {
+      "pageid": 450053,
+      "ns": 0,
+      "title": "Habitat for Humanity",
+      "pageprops": {
+       "wikibase_item": "Q1192147"
+      }
+     },
+     "67754493": {
+      "pageid": 67754493,
+      "ns": 0,
+      "title": "Mother Cabrini Health Foundation",
+      "pageprops": {
+       "wikibase_item": "Q107675906"
+      }
+     },
+     "8990857": {
+      "pageid": 8990857,
+      "ns": 0,
+      "title": "New York Cares",
+      "pageprops": {
+       "wikibase_item": "Q7013100"
+      }
+     },
+     "28084588": {
+      "pageid": 28084588,
+      "ns": 0,
+      "title": "New York Foundation",
+      "pageprops": {
+       "wikibase_item": "Q17083435"
+      }
+     },
+     "227730": {
+      "pageid": 227730,
+      "ns": 0,
+      "title": "Rockefeller Foundation",
+      "pageprops": {
+       "wikibase_item": "Q862034"
+      }
+     },
+     "14870544": {
+      "pageid": 14870544,
+      "ns": 0,
+      "title": "Starr Foundation",
+      "pageprops": {
+       "wikibase_item": "Q7766326"
+      }
+     },
+     "78307489": {
+      "pageid": 78307489,
+      "ns": 0,
+      "title": "The New York Community Trust",
+      "pageprops": {
+       "wikibase_item": "Q17071538"
+      }
+     },
+     "19575265": {
+      "pageid": 19575265,
+      "ns": 0,
+      "title": "Tipping Point Community",
+      "pageprops": {
+       "wikibase_item": "Q7808928"
+      }
+     },
+     "16652340": {
+      "pageid": 16652340,
+      "ns": 0,
+      "title": "New Profit Inc.",
+      "pageprops": {
+       "wikibase_item": "Q7011071"
+      }
+     },
+     "19698439": {
+      "pageid": 19698439,
+      "ns": 0,
+      "title": "Oxfam",
+      "pageprops": {
+       "wikibase_item": "Q267941"
+      }
+     },
+     "88801": {
+      "pageid": 88801,
+      "ns": 0,
+      "title": "Salvation Army",
+      "pageprops": {
+       "wikibase_item": "Q188307"
+      }
      }
     }
    }
   },
-  "pv": {
-   "items": [
-    {
-     "project": "en.wikipedia",
-     "article": "Robin_Hood_Foundation",
-     "granularity": "monthly",
-     "timestamp": "2026100100",
-     "access": "all-access",
-     "agent": "user",
-     "views": 3264
+  "t25": {
+   "batchcomplete": "",
+   "query": {
+    "redirects": [
+     {
+      "from": "United Way Worldwide",
+      "to": "United Way"
+     }
+    ],
+    "pages": {
+     "-1": {
+      "ns": 0,
+      "title": "The HOPE Program",
+      "missing": ""
+     },
+     "81394563": {
+      "pageid": 81394563,
+      "ns": 0,
+      "title": "Blue Meridian Partners",
+      "pageprops": {
+       "wikibase_item": "Q136324442"
+      }
+     },
+     "6145602": {
+      "pageid": 6145602,
+      "ns": 0,
+      "title": "Center on Budget and Policy Priorities",
+      "pageprops": {
+       "wikibase_item": "Q5060005"
+      }
+     },
+     "3549998": {
+      "pageid": 3549998,
+      "ns": 0,
+      "title": "Charity Navigator",
+      "pageprops": {
+       "wikibase_item": "Q1063259"
+      }
+     },
+     "957603": {
+      "pageid": 957603,
+      "ns": 0,
+      "title": "Henry Street Settlement",
+      "pageprops": {
+       "wikibase_item": "Q5728819"
+      }
+     },
+     "65991056": {
+      "pageid": 65991056,
+      "ns": 0,
+      "title": "National Low Income Housing Coalition",
+      "pageprops": {
+       "wikibase_item": "Q54828837"
+      }
+     },
+     "212204": {
+      "pageid": 212204,
+      "ns": 0,
+      "title": "United Way",
+      "pageprops": {
+       "wikibase_item": "Q3050859"
+      }
+     }
     }
-   ]
+   }
   }
  }
 }
