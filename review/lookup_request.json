@@ -1,11 +1,11 @@
 {
- "search": [],
+ "search": [
+  "Robin Hood Foundation"
+ ],
  "items": [],
  "sparql": {},
  "urls": {
-  "info": "https://en.wikipedia.org/w/api.php?action=query&redirects=1&prop=pageprops|info|revisions&rvprop=timestamp&rvlimit=1&rvdir=newer&format=json&titles=Kohler%20Kitchen%20%26%20Bath%7CKohler%20Co.",
-  "pv_kb": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Kohler_Kitchen_%26_Bath/monthly/2026100100/2026103100",
-  "pv_co": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Kohler_Co./monthly/2026100100/2026103100",
-  "intro": "https://en.wikipedia.org/w/api.php?action=query&prop=extracts&exintro=1&explaintext=1&format=json&titles=Kohler%20Kitchen%20%26%20Bath%7CKohler%20Co."
+  "wp": "https://en.wikipedia.org/w/api.php?action=query&redirects=1&prop=pageprops|info&format=json&titles=Robin%20Hood%20Foundation%7CRobin%20Hood%20%28charity%29",
+  "pv": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Robin_Hood_Foundation/monthly/2026100100/2026103100"
  }
 }
