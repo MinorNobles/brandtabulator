@@ -1,0 +1,40 @@
+{
+  "slug": "talent-networks",
+  "name": "Freelance talent networks",
+  "draft": true,
+  "recipient_only": true,
+  "path": "talent",
+  "product_noun": "freelance talent network",
+  "products_noun": "freelance talent networks",
+  "note": "Set up 9 Nov 2026 at Michael Quinn's request. Same rule as Coach: Toptal plus the brands at least 2 of 3 AI assistants name as its competitors that have their own English Wikipedia article.",
+  "members_from_discovery": false,
+  "members": [
+    {
+      "qid": "Q21462713",
+      "label": "Toptal",
+      "enwiki": "Toptal"
+    }
+  ],
+  "manual_additions": [],
+  "exclude": {},
+  "inclusion_rule": "This page lists Toptal and the brands that at least two of three AI assistants named as Toptal's competitors, if the brand has its own English Wikipedia article. Companies that Wikidata records as dissolved are left out.",
+  "exclude_dissolved": true,
+  "full_category_description": "Toptal and the brands AI names as its competitors",
+  "intro_title": "BrandTabulator",
+  "intro": [
+    "When customers ask AI about a {product} brand or the category, it can lean heavily on Wikipedia and Wikidata. BrandTabulator measures how fully and recently each brand is described on those sites, and how often it is read by people and machines. BrandTabulator refreshes every week, so bookmark this tab.",
+    "Of course, there are many sources that AI relies on. My work is to Diagnose the responses, Investigate the sources they credit, and Prescribe what can be done to improve the visibility and accuracy of a brand's descriptions in AI (DIP).",
+    "I'm available for workshops, speaking engagements and consultations for brands in AI. Contact Michael@MichaelQuinn.ai"
+  ],
+  "recipients": {
+    "toptal": {
+      "recipient": "Taso Du Val, Toptal",
+      "highlight": {
+        "members": [
+          "Q21462713"
+        ],
+        "reason": "The brand this page was prepared for."
+      }
+    }
+  }
+}
