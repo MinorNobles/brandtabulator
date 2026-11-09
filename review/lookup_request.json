@@ -1,20 +1,16 @@
 {
- "search": [
-  "Moen",
-  "Brizo",
-  "Delta Faucet",
-  "Rohl",
-  "Pfister faucets",
-  "Kraus",
-  "Kallista",
-  "Newport Brass",
-  "Waterworks",
-  "Waterstone",
-  "Victoria + Albert"
- ],
+ "search": [],
  "items": [],
  "sparql": {},
  "urls": {
-  "wp": "https://en.wikipedia.org/w/api.php?action=query&redirects=1&prop=pageprops|info&ppprop=wikibase_item|disambiguation&format=json&titles=Moen%7CMoen%20%28company%29%7CHansgrohe%7CGrohe%7CAmerican%20Standard%20Brands%7CBrizo%7CDelta%20Faucet%20Company%7CDelta%20Faucet%7CRohl%7CHouse%20of%20Rohl%7CToto%20Ltd.%7CPfister%7CPrice%20Pfister%7CPfister%20%28company%29%7CKraus%7CKraus%20%28company%29%7CDuravit%7CKallista%7CKallista%20%28company%29%7CNewport%20Brass%7CVilleroy%20%26%20Boch%7CWaterworks%7CWaterworks%20%28company%29%7CWaterstone%7CWaterstone%20Faucets%7CVictoria%20%2B%20Albert%7CVictoria%20and%20Albert%20Baths%7CKohler%20Co."
+  "Brizo": "https://en.wikipedia.org/w/api.php?action=query&list=search&srlimit=4&format=json&srsearch=Brizo%20faucet",
+  "Rohl": "https://en.wikipedia.org/w/api.php?action=query&list=search&srlimit=4&format=json&srsearch=Rohl%20faucet",
+  "Kraus": "https://en.wikipedia.org/w/api.php?action=query&list=search&srlimit=4&format=json&srsearch=Kraus%20sinks%20faucets",
+  "Kallista": "https://en.wikipedia.org/w/api.php?action=query&list=search&srlimit=4&format=json&srsearch=Kallista%20Kohler%20plumbing",
+  "Newport Brass": "https://en.wikipedia.org/w/api.php?action=query&list=search&srlimit=4&format=json&srsearch=Newport%20Brass",
+  "Waterworks": "https://en.wikipedia.org/w/api.php?action=query&list=search&srlimit=4&format=json&srsearch=Waterworks%20bath%20fixtures%20company",
+  "Waterstone": "https://en.wikipedia.org/w/api.php?action=query&list=search&srlimit=4&format=json&srsearch=Waterstone%20faucets",
+  "Victoria + Albert": "https://en.wikipedia.org/w/api.php?action=query&list=search&srlimit=4&format=json&srsearch=Victoria%20%2B%20Albert%20baths",
+  "titles": "https://en.wikipedia.org/w/api.php?action=query&redirects=1&prop=pageprops&format=json&titles=Brizo%20%28company%29%7CRohl%20%28company%29%7CKraus%20USA%7CKallista%20%28brand%29%7CWaterworks%20%28retailer%29%7CWaterworks%20%28company%29%7CVictoria%20%2B%20Albert%20Baths%7CNewport%20Brass%20%28company%29"
  }
 }
