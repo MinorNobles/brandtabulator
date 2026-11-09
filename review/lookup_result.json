@@ -3,72 +3,309 @@
  "items": {},
  "sparql": {},
  "urls": {
-  "t0": {
+  "City Harvest food rescue New York": {
+   "batchcomplete": "",
+   "continue": {
+    "sroffset": 3,
+    "continue": "-||"
+   },
+   "query": {
+    "searchinfo": {
+     "totalhits": 1188
+    },
+    "search": [
+     {
+      "ns": 0,
+      "title": "City Harvest (United States)",
+      "pageid": 40400556,
+      "size": 14035,
+      "wordcount": 1192,
+      "snippet": "<span class=\"searchmatch\">City</span> <span class=\"searchmatch\">Harvest</span> is one of <span class=\"searchmatch\">New</span> <span class=\"searchmatch\">York</span> <span class=\"searchmatch\">City&#039;s</span> largest <span class=\"searchmatch\">food</span> <span class=\"searchmatch\">rescue</span> organizations. The organization collects <span class=\"searchmatch\">food</span> waste from restaurants, bakeries, and cafes. City",
+      "timestamp": "2026-11-01T21:48:28Z"
+     },
+     {
+      "ns": 0,
+      "title": "City Harvest",
+      "pageid": 5846289,
+      "size": 277,
+      "wordcount": 69,
+      "snippet": "Kingdom), a London-based food charity City <span class=\"searchmatch\">Harvest</span> (United States), a <span class=\"searchmatch\">New</span> <span class=\"searchmatch\">York</span> <span class=\"searchmatch\">food</span> <span class=\"searchmatch\">rescue</span> organization <span class=\"searchmatch\">City</span> <span class=\"searchmatch\">Harvest</span> Church, Singapore This disambiguation",
+      "timestamp": "2020-10-16T12:16:39Z"
+     },
+     {
+      "ns": 0,
+      "title": "Food rescue",
+      "pageid": 9958022,
+      "size": 66036,
+      "wordcount": 6697,
+      "snippet": "<span class=\"searchmatch\">Food</span> <span class=\"searchmatch\">rescue</span>, also called <span class=\"searchmatch\">food</span> recovery, <span class=\"searchmatch\">food</span> salvage or surplus <span class=\"searchmatch\">food</span> redistribution, is the practice of gleaning edible <span class=\"searchmatch\">food</span> that would otherwise go to",
+      "timestamp": "2026-09-10T13:26:35Z"
+     }
+    ]
+   }
+  },
+  "Food Bank For New York City": {
+   "batchcomplete": "",
+   "continue": {
+    "sroffset": 3,
+    "continue": "-||"
+   },
+   "query": {
+    "searchinfo": {
+     "totalhits": 22554
+    },
+    "search": [
+     {
+      "ns": 0,
+      "title": "Food Bank For New York City",
+      "pageid": 10186316,
+      "size": 9163,
+      "wordcount": 796,
+      "snippet": "<span class=\"searchmatch\">Food</span> <span class=\"searchmatch\">Bank</span> <span class=\"searchmatch\">For</span> <span class=\"searchmatch\">New</span> <span class=\"searchmatch\">York</span> <span class=\"searchmatch\">City</span> is a non-profit social services organization and the major hunger-relief organization working against hunger in the five boroughs",
+      "timestamp": "2026-04-26T19:27:05Z"
+     },
+     {
+      "ns": 0,
+      "title": "Food system in New York City",
+      "pageid": 18555654,
+      "size": 21129,
+      "wordcount": 2139,
+      "snippet": "<span class=\"searchmatch\">New</span> <span class=\"searchmatch\">York</span> <span class=\"searchmatch\">City</span>, there is an extensive water supply system that supports several programs and infrastructure pertaining to the <span class=\"searchmatch\">city&#039;s</span> <span class=\"searchmatch\">food</span> supply. <span class=\"searchmatch\">City</span>",
+      "timestamp": "2026-09-22T04:23:57Z"
+     },
+     {
+      "ns": 0,
+      "title": "Gabriele Corcos",
+      "pageid": 48106565,
+      "size": 13966,
+      "wordcount": 1340,
+      "snippet": "the <span class=\"searchmatch\">Food</span> <span class=\"searchmatch\">Bank</span> <span class=\"searchmatch\">For</span> <span class=\"searchmatch\">New</span> <span class=\"searchmatch\">York</span> <span class=\"searchmatch\">City</span> and hosted a pop-up dinner series in October 2014 where a large portion of the proceeds benefited the <span class=\"searchmatch\">Food</span> <span class=\"searchmatch\">Bank</span>. Season",
+      "timestamp": "2026-09-29T17:22:45Z"
+     }
+    ]
+   }
+  },
+  "Altman Foundation New York": {
+   "batchcomplete": "",
+   "continue": {
+    "sroffset": 3,
+    "continue": "-||"
+   },
+   "query": {
+    "searchinfo": {
+     "totalhits": 1551,
+     "suggestion": "altran foundation new york",
+     "suggestionsnippet": "<em>altran</em> foundation new york"
+    },
+    "search": [
+     {
+      "ns": 0,
+      "title": "B. Altman and Company",
+      "pageid": 5692465,
+      "size": 15856,
+      "wordcount": 1630,
+      "snippet": "B. <span class=\"searchmatch\">Altman</span> and Company was a luxury department store and chain, founded in 1865 in <span class=\"searchmatch\">New</span> <span class=\"searchmatch\">York</span> City, <span class=\"searchmatch\">New</span> <span class=\"searchmatch\">York</span>, by Benjamin <span class=\"searchmatch\">Altman</span>. Its flagship store, the",
+      "timestamp": "2026-08-31T09:55:43Z"
+     },
+     {
+      "ns": 0,
+      "title": "Removal of Sam Altman from OpenAI",
+      "pageid": 75352338,
+      "size": 83031,
+      "wordcount": 6407,
+      "snippet": " OpenAI&#039;s board of directors ousted co-founder and chief executive Sam <span class=\"searchmatch\">Altman</span>. In an official post on the company&#039;s website, it was stated that &quot;the board",
+      "timestamp": "2026-11-04T20:07:31Z"
+     },
+     {
+      "ns": 0,
+      "title": "Benjamin Altman",
+      "pageid": 13678532,
+      "size": 19329,
+      "wordcount": 627,
+      "snippet": "Benjamin <span class=\"searchmatch\">Altman</span> (July 12, 1840 – October 7, 1913) was a <span class=\"searchmatch\">New</span> <span class=\"searchmatch\">York</span> City department store owner and art collector who is best known today for his large art",
+      "timestamp": "2026-07-18T01:04:20Z"
+     }
+    ]
+   }
+  },
+  "Pinkerton Foundation": {
+   "batchcomplete": "",
+   "continue": {
+    "sroffset": 3,
+    "continue": "-||"
+   },
+   "query": {
+    "searchinfo": {
+     "totalhits": 606
+    },
+    "search": [
+     {
+      "ns": 0,
+      "title": "James Piereson",
+      "pageid": 38154287,
+      "size": 8997,
+      "wordcount": 601,
+      "snippet": "Institute each year. He serves on the Boards of the <span class=\"searchmatch\">Pinkerton</span> <span class=\"searchmatch\">Foundation</span>, the Thomas W. Smith <span class=\"searchmatch\">Foundation</span>, the Center for Individual Rights, the Philanthropy",
+      "timestamp": "2025-08-21T10:23:49Z"
+     },
+     {
+      "ns": 0,
+      "title": "PassBlue",
+      "pageid": 77328292,
+      "size": 10422,
+      "wordcount": 1069,
+      "snippet": "institutions.&quot; PassBlue is also supported by the Wallace Fox <span class=\"searchmatch\">Foundation</span>, <span class=\"searchmatch\">Pinkerton</span> <span class=\"searchmatch\">Foundation</span> and other charitable institutions, as well as by thousands",
+      "timestamp": "2026-09-24T06:02:50Z"
+     },
+     {
+      "ns": 0,
+      "title": "Richard Mills Smith",
+      "pageid": 20571190,
+      "size": 5105,
+      "wordcount": 531,
+      "snippet": "the board in 1995, and then in 2010, Smith became president of The <span class=\"searchmatch\">Pinkerton</span> <span class=\"searchmatch\">Foundation</span>, a nonprofit organization supporting programs for disadvantaged and",
+      "timestamp": "2026-11-08T02:52:46Z"
+     }
+    ]
+   }
+  },
+  "Tiger Foundation Julian Robertson": {
+   "batchcomplete": "",
+   "continue": {
+    "sroffset": 3,
+    "continue": "-||"
+   },
+   "query": {
+    "searchinfo": {
+     "totalhits": 218
+    },
+    "search": [
+     {
+      "ns": 0,
+      "title": "Julian Robertson",
+      "pageid": 1139600,
+      "size": 23431,
+      "wordcount": 1867,
+      "snippet": "<span class=\"searchmatch\">Julian</span> Hart <span class=\"searchmatch\">Robertson</span> Jr. KNZM (June 25, 1932 – August 23, 2022) was an American hedge fund manager, and philanthropist. <span class=\"searchmatch\">Robertson</span> founded <span class=\"searchmatch\">Tiger</span> Management",
+      "timestamp": "2026-10-11T01:23:02Z"
+     },
+     {
+      "ns": 0,
+      "title": "Stephen Mandel (hedge fund manager)",
+      "pageid": 27881998,
+      "size": 10291,
+      "wordcount": 775,
+      "snippet": "analyst and eventually managing director at <span class=\"searchmatch\">Tiger</span> Management, a hedge fund founded by <span class=\"searchmatch\">Julian</span> <span class=\"searchmatch\">Robertson</span>. <span class=\"searchmatch\">Robertson</span>, himself a billionaire, referred to Mandel",
+      "timestamp": "2026-10-17T16:04:54Z"
+     },
+     {
+      "ns": 0,
+      "title": "Geoffrey Robertson",
+      "pageid": 3140285,
+      "size": 34810,
+      "wordcount": 3290,
+      "snippet": "dramatised by <span class=\"searchmatch\">Tiger</span> Aspect Productions in a TV series entitled Summerhill and broadcast on BBC Four and CBBC. In August 2000, <span class=\"searchmatch\">Robertson</span> was retained by",
+      "timestamp": "2026-10-25T17:38:32Z"
+     }
+    ]
+   }
+  },
+  "United Way of New York City": {
+   "batchcomplete": "",
+   "continue": {
+    "sroffset": 3,
+    "continue": "-||"
+   },
+   "query": {
+    "searchinfo": {
+     "totalhits": 128273
+    },
+    "search": [
+     {
+      "ns": 0,
+      "title": "New York City",
+      "pageid": 645042,
+      "size": 390835,
+      "wordcount": 37077,
+      "snippet": "<span class=\"searchmatch\">New</span> <span class=\"searchmatch\">York</span>, often called <span class=\"searchmatch\">New</span> <span class=\"searchmatch\">York</span> <span class=\"searchmatch\">City</span> (NYC), is the most populous <span class=\"searchmatch\">city</span> in the <span class=\"searchmatch\">United</span> States. It is located at the southern tip <span class=\"searchmatch\">of</span> <span class=\"searchmatch\">New</span> <span class=\"searchmatch\">York</span> State on New",
+      "timestamp": "2026-11-08T14:13:53Z"
+     },
+     {
+      "ns": 0,
+      "title": "New York City Hall",
+      "pageid": 276722,
+      "size": 29626,
+      "wordcount": 2909,
+      "snippet": "<span class=\"searchmatch\">New</span> <span class=\"searchmatch\">York</span> <span class=\"searchmatch\">City</span> Hall is the seat <span class=\"searchmatch\">of</span> <span class=\"searchmatch\">New</span> <span class=\"searchmatch\">York</span> <span class=\"searchmatch\">City</span> government, located at the center <span class=\"searchmatch\">of</span> <span class=\"searchmatch\">City</span> Hall Park in the Civic Center area <span class=\"searchmatch\">of</span> Lower Manhattan, between",
+      "timestamp": "2026-10-12T19:48:07Z"
+     },
+     {
+      "ns": 0,
+      "title": "Boroughs of New York City",
+      "pageid": 5155825,
+      "size": 47602,
+      "wordcount": 4680,
+      "snippet": "<span class=\"searchmatch\">New</span> <span class=\"searchmatch\">York</span> <span class=\"searchmatch\">City</span> is made up <span class=\"searchmatch\">of</span> five governmental districts named boroughs: The Bronx, Brooklyn, Manhattan, Queens, and Staten Island. Each borough is coextensive",
+      "timestamp": "2026-11-08T18:45:39Z"
+     }
+    ]
+   }
+  },
+  "t": {
    "batchcomplete": "",
    "query": {
     "redirects": [
      {
-      "from": "Oxfam America",
-      "to": "Oxfam",
-      "tofragment": "Oxfam America"
+      "from": "City Harvest (charity)",
+      "to": "City Harvest"
      },
      {
-      "from": "CARE (relief agency)",
-      "to": "CARE International"
-     },
-     {
-      "from": "The Salvation Army",
-      "to": "Salvation Army"
-     },
-     {
-      "from": "New Profit",
-      "to": "New Profit Inc."
-     },
-     {
-      "from": "New York Community Trust",
-      "to": "The New York Community Trust"
+      "from": "City Harvest (organization)",
+      "to": "City Harvest"
      }
     ],
     "pages": {
      "-1": {
       "ns": 0,
-      "title": "Altman Foundation",
+      "title": "City Harvest (New York)",
       "missing": ""
      },
      "-2": {
       "ns": 0,
-      "title": "Pinkerton Foundation",
+      "title": "Food Bank of New York City",
       "missing": ""
      },
      "-3": {
       "ns": 0,
-      "title": "Tiger Foundation",
+      "title": "United Way of New York City",
       "missing": ""
      },
      "-4": {
       "ns": 0,
-      "title": "United Way of New York City",
+      "title": "The Pinkerton Foundation",
       "missing": ""
      },
      "-5": {
       "ns": 0,
-      "title": "Food Bank for New York City",
+      "title": "The Tiger Foundation",
       "missing": ""
      },
-     "32395888": {
-      "pageid": 32395888,
+     "-6": {
       "ns": 0,
-      "title": "Against Malaria Foundation",
-      "pageprops": {
-       "wikibase_item": "Q4691036"
-      }
+      "title": "The Altman Foundation",
+      "missing": ""
      },
-     "246892": {
-      "pageid": 246892,
+     "-7": {
       "ns": 0,
-      "title": "CARE International",
+      "title": "HOPE Program",
+      "missing": ""
+     },
+     "10186316": {
+      "pageid": 10186316,
+      "ns": 0,
+      "title": "Food Bank For New York City",
       "pageprops": {
-       "wikibase_item": "Q699385"
+       "wikibase_item": "Q5465293"
       }
      },
      "5846289": {
@@ -78,192 +315,6 @@
       "pageprops": {
        "disambiguation": "",
        "wikibase_item": "Q5123215"
-      }
-     },
-     "7590724": {
-      "pageid": 7590724,
-      "ns": 0,
-      "title": "Coalition for the Homeless",
-      "pageprops": {
-       "wikibase_item": "Q5137966"
-      }
-     },
-     "2643914": {
-      "pageid": 2643914,
-      "ns": 0,
-      "title": "Feeding America",
-      "pageprops": {
-       "wikibase_item": "Q2006911"
-      }
-     },
-     "92405": {
-      "pageid": 92405,
-      "ns": 0,
-      "title": "Ford Foundation",
-      "pageprops": {
-       "wikibase_item": "Q1313036"
-      }
-     },
-     "33834107": {
-      "pageid": 33834107,
-      "ns": 0,
-      "title": "GiveDirectly",
-      "pageprops": {
-       "wikibase_item": "Q5565603"
-      }
-     },
-     "450053": {
-      "pageid": 450053,
-      "ns": 0,
-      "title": "Habitat for Humanity",
-      "pageprops": {
-       "wikibase_item": "Q1192147"
-      }
-     },
-     "67754493": {
-      "pageid": 67754493,
-      "ns": 0,
-      "title": "Mother Cabrini Health Foundation",
-      "pageprops": {
-       "wikibase_item": "Q107675906"
-      }
-     },
-     "8990857": {
-      "pageid": 8990857,
-      "ns": 0,
-      "title": "New York Cares",
-      "pageprops": {
-       "wikibase_item": "Q7013100"
-      }
-     },
-     "28084588": {
-      "pageid": 28084588,
-      "ns": 0,
-      "title": "New York Foundation",
-      "pageprops": {
-       "wikibase_item": "Q17083435"
-      }
-     },
-     "227730": {
-      "pageid": 227730,
-      "ns": 0,
-      "title": "Rockefeller Foundation",
-      "pageprops": {
-       "wikibase_item": "Q862034"
-      }
-     },
-     "14870544": {
-      "pageid": 14870544,
-      "ns": 0,
-      "title": "Starr Foundation",
-      "pageprops": {
-       "wikibase_item": "Q7766326"
-      }
-     },
-     "78307489": {
-      "pageid": 78307489,
-      "ns": 0,
-      "title": "The New York Community Trust",
-      "pageprops": {
-       "wikibase_item": "Q17071538"
-      }
-     },
-     "19575265": {
-      "pageid": 19575265,
-      "ns": 0,
-      "title": "Tipping Point Community",
-      "pageprops": {
-       "wikibase_item": "Q7808928"
-      }
-     },
-     "16652340": {
-      "pageid": 16652340,
-      "ns": 0,
-      "title": "New Profit Inc.",
-      "pageprops": {
-       "wikibase_item": "Q7011071"
-      }
-     },
-     "19698439": {
-      "pageid": 19698439,
-      "ns": 0,
-      "title": "Oxfam",
-      "pageprops": {
-       "wikibase_item": "Q267941"
-      }
-     },
-     "88801": {
-      "pageid": 88801,
-      "ns": 0,
-      "title": "Salvation Army",
-      "pageprops": {
-       "wikibase_item": "Q188307"
-      }
-     }
-    }
-   }
-  },
-  "t25": {
-   "batchcomplete": "",
-   "query": {
-    "redirects": [
-     {
-      "from": "United Way Worldwide",
-      "to": "United Way"
-     }
-    ],
-    "pages": {
-     "-1": {
-      "ns": 0,
-      "title": "The HOPE Program",
-      "missing": ""
-     },
-     "81394563": {
-      "pageid": 81394563,
-      "ns": 0,
-      "title": "Blue Meridian Partners",
-      "pageprops": {
-       "wikibase_item": "Q136324442"
-      }
-     },
-     "6145602": {
-      "pageid": 6145602,
-      "ns": 0,
-      "title": "Center on Budget and Policy Priorities",
-      "pageprops": {
-       "wikibase_item": "Q5060005"
-      }
-     },
-     "3549998": {
-      "pageid": 3549998,
-      "ns": 0,
-      "title": "Charity Navigator",
-      "pageprops": {
-       "wikibase_item": "Q1063259"
-      }
-     },
-     "957603": {
-      "pageid": 957603,
-      "ns": 0,
-      "title": "Henry Street Settlement",
-      "pageprops": {
-       "wikibase_item": "Q5728819"
-      }
-     },
-     "65991056": {
-      "pageid": 65991056,
-      "ns": 0,
-      "title": "National Low Income Housing Coalition",
-      "pageprops": {
-       "wikibase_item": "Q54828837"
-      }
-     },
-     "212204": {
-      "pageid": 212204,
-      "ns": 0,
-      "title": "United Way",
-      "pageprops": {
-       "wikibase_item": "Q3050859"
       }
      }
     }
