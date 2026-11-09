@@ -13,6 +13,36 @@
       "qid": "Q21462713",
       "label": "Toptal",
       "enwiki": "Toptal"
+    },
+    {
+      "qid": "Q3344170",
+      "label": "Upwork",
+      "enwiki": "Upwork"
+    },
+    {
+      "qid": "Q28186691",
+      "label": "Andela",
+      "enwiki": "Andela"
+    },
+    {
+      "qid": "Q5410132",
+      "label": "Fiverr",
+      "enwiki": "Fiverr"
+    },
+    {
+      "qid": "Q5500950",
+      "label": "Freelancer.com",
+      "enwiki": "Freelancer.com"
+    },
+    {
+      "qid": "Q21070780",
+      "label": "Gigster",
+      "enwiki": "Gigster"
+    },
+    {
+      "qid": "Q28401895",
+      "label": "Catalant",
+      "enwiki": "Catalant"
     }
   ],
   "manual_additions": [],
@@ -34,6 +64,11 @@
           "Q21462713"
         ],
         "reason": "The brand this page was prepared for."
+      },
+      "competitive_set": {
+        "name": "Competitors, per AI",
+        "summary": "data/talent-networks/competitors/toptal/latest.json",
+        "unshown_note": "Also named by AI but not shown, because they have no English Wikipedia article of their own: Gun.io, Lemon.io, Turing, Braintrust, Revelo, Wellfound, Arc.dev, BairesDev and Codeable."
       }
     }
   }
