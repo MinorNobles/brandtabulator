@@ -1,636 +1,352 @@
 {
- "search": {
-  "Moen": [
-   {
-    "qid": "Q16934183",
-    "label": "Moen",
-    "description": "family name"
-   },
-   {
-    "qid": "Q6890213",
-    "label": "Moen",
-    "description": "village in Risør, Norway"
-   },
-   {
-    "qid": "Q140873",
-    "label": "Moenkhausia",
-    "description": "genus of tetra fish"
-   },
-   {
-    "qid": "Q135032713",
-    "label": "Moen",
-    "description": "2024 video game developed by Atlas Interactive"
-   },
-   {
-    "qid": "Q377429",
-    "label": "Moen",
-    "description": "section of Zwevegem, Belgium"
-   },
-   {
-    "qid": "Q60948",
-    "label": "Conrad Moench",
-    "description": "German botanist (1744–1805)"
-   }
-  ],
-  "Brizo": [
-   {
-    "qid": "Q135061381",
-    "label": "Brizo",
-    "description": "video game"
-   },
-   {
-    "qid": "Q848691",
-    "label": "Brizon",
-    "description": "commune in Haute-Savoie, France"
-   },
-   {
-    "qid": "Q10435845",
-    "label": "Brizoides",
-    "description": "genus of insects"
-   },
-   {
-    "qid": "Q921527",
-    "label": "Brizo",
-    "description": "ancient Greek goddess"
-   },
-   {
-    "qid": "Q34401937",
-    "label": "Brizo (Pauly-Wissowa)",
-    "description": "encyclopedic article in Paulys Realencyclopädie der classischen Altertumswissenschaft (RE)"
-   },
-   {
-    "qid": "Q45510632",
-    "label": "Břízova",
-    "description": "street in Prague, Czech Republic"
-   }
-  ],
-  "Delta Faucet": [
-   {
-    "qid": "Q30272285",
-    "label": "Delta Faucet (United States)",
-    "description": "company in Delta, United States"
-   },
-   {
-    "qid": "Q104840769",
-    "label": "Delta Faucet Company",
-    "description": "plumbing fixtures company"
-   }
-  ],
-  "Rohl": [
-   {
-    "qid": "Q37553699",
-    "label": "Rohl",
-    "description": "family name"
-   },
-   {
-    "qid": "Q37439711",
-    "label": "Rohleder",
-    "description": "family name"
-   },
-   {
-    "qid": "Q112118368",
-    "label": "Brittany Rohl",
-    "description": "researcher"
-   },
-   {
-    "qid": "Q37077049",
-    "label": "Rohlfs",
-    "description": "family name"
-   },
-   {
-    "qid": "Q105538997",
-    "label": "Röhling",
-    "description": "family name"
-   },
-   {
-    "qid": "Q21493720",
-    "label": "Röhl",
-    "description": "family name"
-   }
-  ],
-  "Pfister faucets": [],
-  "Kraus": [
-   {
-    "qid": "Q931355",
-    "label": "Kraus",
-    "description": "family name"
-   },
-   {
-    "qid": "Q107639437",
-    "label": "Kraus",
-    "description": "American musical artist"
-   },
-   {
-    "qid": "Q21449125",
-    "label": "Krause",
-    "description": "family name"
-   },
-   {
-    "qid": "Q105991680",
-    "label": "Krausová",
-    "description": "family name"
-   },
-   {
-    "qid": "Q502675",
-    "label": "Krauschwitz",
-    "description": "municipality of Germany"
-   },
-   {
-    "qid": "Q37458083",
-    "label": "Krausz",
-    "description": "family name"
-   }
-  ],
-  "Kallista": [
-   {
-    "qid": "Q131994270",
-    "label": "Kallista",
-    "description": "female given name"
-   },
-   {
-    "qid": "Q6353868",
-    "label": "Kallista",
-    "description": "locality in Victoria, Australia"
-   },
-   {
-    "qid": "Q65264484",
-    "label": "Kallista Kann",
-    "description": "Estonian linguist (1895–1983)"
-   },
-   {
-    "qid": "Q93510413",
-    "label": "Kallista Field",
-    "description": "New Zealand equestrian (born 1978)"
-   },
-   {
-    "qid": "Q108495897",
-    "label": "Kallistaios (Pauly-Wissowa)",
-    "description": "cross-reference in Paulys Realencyclopädie der classischen Altertumswissenschaft (RE)"
-   },
-   {
-    "qid": "Q108495894",
-    "label": "Kallistatas (Pauly-Wissowa)",
-    "description": "cross-reference in Paulys Realencyclopädie der classischen Altertumswissenschaft (RE)"
-   }
-  ],
-  "Newport Brass": [],
-  "Waterworks": [
-   {
-    "qid": "Q15911738",
-    "label": "hydroelectric power station",
-    "description": "facility generating electric power using hydroelectricity"
-   },
-   {
-    "qid": "Q1061108",
-    "label": "water supply",
-    "description": "provision of water by public utilities, commercial organisations, community endeavors or by individuals"
-   },
-   {
-    "qid": "Q10373565",
-    "label": "waterworks",
-    "description": "facility for water treatment"
-   },
-   {
-    "qid": "Q9341055",
-    "label": "water treatment plant",
-    "description": "facility where water is treated"
-   },
-   {
-    "qid": "Q113484281",
-    "label": "Waterworks",
-    "description": "episode of Better Call Saul (S6 E12)"
-   },
-   {
-    "qid": "Q1130265",
-    "label": "hydraulic engineering",
-    "description": "sub-discipline of civil engineering concerned with the flow and conveyance of fluids, principally water and sewage"
-   }
-  ],
-  "Waterstone": [
-   {
-    "qid": "Q113402414",
-    "label": "waterstone",
-    "description": "whetstone that uses water to sharpen steel tools"
-   },
-   {
-    "qid": "Q21291396",
-    "label": "Waterstonellidea",
-    "description": "order of arthropods"
-   },
-   {
-    "qid": "Q21291393",
-    "label": "Waterstonellidae",
-    "description": "family of arthropods"
-   },
-   {
-    "qid": "Q117078624",
-    "label": "Waterstone",
-    "description": "family name"
-   },
-   {
-    "qid": "Q151779",
-    "label": "Waterstones",
-    "description": "British bookstore chain"
-   },
-   {
-    "qid": "Q7974461",
-    "label": "Waterstonella",
-    "description": "genus of arthropods"
-   }
-  ],
-  "Victoria + Albert": []
- },
+ "search": {},
  "items": {},
  "sparql": {},
  "urls": {
-  "wp": {
+  "Brizo": {
    "batchcomplete": "",
    "query": {
-    "redirects": [
+    "searchinfo": {
+     "totalhits": 3,
+     "suggestion": "brito faucet",
+     "suggestionsnippet": "<em>brito</em> faucet"
+    },
+    "search": [
      {
-      "from": "Waterworks",
-      "to": "Water supply"
+      "ns": 0,
+      "title": "Delta Faucet Company",
+      "pageid": 4527287,
+      "size": 5635,
+      "wordcount": 510,
+      "snippet": "manufactures and markets <span class=\"searchmatch\">faucets</span>, kitchen sinks, bath/shower fixtures, steam showers, and water filtration units under the Delta, <span class=\"searchmatch\">Brizo</span>, Newport Brass, Kraus",
+      "timestamp": "2026-10-27T17:38:05Z"
      },
      {
-      "from": "Waterstone",
-      "to": "Sharpening stone"
+      "ns": 0,
+      "title": "Masco",
+      "pageid": 2641015,
+      "size": 23766,
+      "wordcount": 2270,
+      "snippet": " Inc. Newport Brass Ginger Bristan Delta <span class=\"searchmatch\">Faucet</span> Company Peerless (economy) Delta <span class=\"searchmatch\">Faucet</span> (mainstream) <span class=\"searchmatch\">Brizo</span> (luxury) Kraus (sinks) Hansgrohe SE Heritage",
+      "timestamp": "2026-10-23T00:37:31Z"
      },
      {
-      "from": "Delta Faucet",
-      "to": "Delta Faucet Company"
-     },
-     {
-      "from": "Price Pfister",
-      "to": "Pfister (firm)"
-     },
-     {
-      "from": "Moen (company)",
-      "to": "Moen Incorporated"
-     },
-     {
-      "from": "House of Rohl",
-      "to": "Fortune Brands Innovations"
+      "ns": 0,
+      "title": "Jason Wu",
+      "pageid": 20520400,
+      "size": 16246,
+      "wordcount": 1452,
+      "snippet": "were photographed underwater by Howard Schatz for Delta <span class=\"searchmatch\">Faucet</span> Company&#039;s <span class=\"searchmatch\">Brizo</span> branded <span class=\"searchmatch\">faucet</span> campaign in 2006. In 2008 he was nominated for the CFDA",
+      "timestamp": "2026-09-19T19:17:05Z"
      }
-    ],
+    ]
+   }
+  },
+  "Rohl": {
+   "batchcomplete": "",
+   "query": {
+    "searchinfo": {
+     "totalhits": 2,
+     "suggestion": "roll faucet",
+     "suggestionsnippet": "<em>roll</em> faucet"
+    },
+    "search": [
+     {
+      "ns": 0,
+      "title": "Fortune Brands Innovations",
+      "pageid": 33318775,
+      "size": 22228,
+      "wordcount": 1802,
+      "snippet": "or assembles and sells <span class=\"searchmatch\">faucets</span>, accessories, kitchen sinks and waste disposals, predominantly under the Moen and House of <span class=\"searchmatch\">Rohl</span> brands, which includes",
+      "timestamp": "2026-08-13T02:33:38Z"
+     },
+     {
+      "ns": 0,
+      "title": "List of Eureka episodes",
+      "pageid": 6056836,
+      "size": 104765,
+      "wordcount": 1827,
+      "snippet": "they have experienced sudden muteness, lethal human bio-luminescence, and <span class=\"searchmatch\">faucets</span> running blood. Allison begins to glow. Eureka loses its power supply. A",
+      "timestamp": "2026-08-21T02:33:04Z"
+     }
+    ]
+   }
+  },
+  "Kraus": {
+   "batchcomplete": "",
+   "query": {
+    "searchinfo": {
+     "totalhits": 3,
+     "suggestion": "kraus sings fawcett",
+     "suggestionsnippet": "kraus <em>sings fawcett</em>"
+    },
+    "search": [
+     {
+      "ns": 0,
+      "title": "Delta Faucet Company",
+      "pageid": 4527287,
+      "size": 5635,
+      "wordcount": 510,
+      "snippet": "markets <span class=\"searchmatch\">faucets</span>, kitchen <span class=\"searchmatch\">sinks</span>, bath/shower fixtures, steam showers, and water filtration units under the Delta, Brizo, Newport Brass, <span class=\"searchmatch\">Kraus</span>, and Peerless",
+      "timestamp": "2026-10-27T17:38:05Z"
+     },
+     {
+      "ns": 0,
+      "title": "Masco",
+      "pageid": 2641015,
+      "size": 23766,
+      "wordcount": 2270,
+      "snippet": "Newport Brass Ginger Bristan Delta <span class=\"searchmatch\">Faucet</span> Company Peerless (economy) Delta <span class=\"searchmatch\">Faucet</span> (mainstream) Brizo (luxury) <span class=\"searchmatch\">Kraus</span> (<span class=\"searchmatch\">sinks</span>) Hansgrohe SE Heritage Bathrooms",
+      "timestamp": "2026-10-23T00:37:31Z"
+     },
+     {
+      "ns": 0,
+      "title": "January–March 2023 in science",
+      "pageid": 74144765,
+      "size": 325799,
+      "wordcount": 29055,
+      "snippet": " D. L.; Huffman, K. M.; Kobor, M. S.; Kothari, M.; Graf, G. H.; <span class=\"searchmatch\">Kraus</span>, V. B.; <span class=\"searchmatch\">Kraus</span>, W. E.; Lin, D. T. S.; Pieper, C. F.; Ramaker, M. E.; Bhapkar, M",
+      "timestamp": "2026-10-26T14:31:17Z"
+     }
+    ]
+   }
+  },
+  "Kallista": {
+   "batchcomplete": "",
+   "query": {
+    "searchinfo": {
+     "totalhits": 2
+    },
+    "search": [
+     {
+      "ns": 0,
+      "title": "Kohler Kitchen & Bath",
+      "pageid": 48635101,
+      "size": 5185,
+      "wordcount": 330,
+      "snippet": "<span class=\"searchmatch\">Kohler</span> Kitchen &amp; Bath, a division of the <span class=\"searchmatch\">Kohler</span> Company, manufactures kitchen and bath <span class=\"searchmatch\">plumbing</span> fixtures. The <span class=\"searchmatch\">Kohler</span> Kitchen &amp; Bath Group has locations",
+      "timestamp": "2026-07-09T00:15:04Z"
+     },
+     {
+      "ns": 0,
+      "title": "Kohler Co.",
+      "pageid": 625919,
+      "size": 23664,
+      "wordcount": 2243,
+      "snippet": "<span class=\"searchmatch\">Kohler</span> Co., is an American manufacturing company founded in 1873 by John Michael <span class=\"searchmatch\">Kohler</span>, based in <span class=\"searchmatch\">Kohler</span>, Wisconsin. <span class=\"searchmatch\">Kohler</span> is best known for its plumbing",
+      "timestamp": "2026-10-23T22:08:06Z"
+     }
+    ]
+   }
+  },
+  "Newport Brass": {
+   "batchcomplete": "",
+   "continue": {
+    "sroffset": 4,
+    "continue": "-||"
+   },
+   "query": {
+    "searchinfo": {
+     "totalhits": 2259,
+     "suggestion": "newport bass",
+     "suggestionsnippet": "newport bass"
+    },
+    "search": [
+     {
+      "ns": 0,
+      "title": "Delta Faucet Company",
+      "pageid": 4527287,
+      "size": 5635,
+      "wordcount": 510,
+      "snippet": " steam showers, and water filtration units under the Delta, Brizo, <span class=\"searchmatch\">Newport</span> <span class=\"searchmatch\">Brass</span>, Kraus, and Peerless brand names. Delta Faucet Company is a division",
+      "timestamp": "2026-10-27T17:38:05Z"
+     },
+     {
+      "ns": 0,
+      "title": "Brass Eye",
+      "pageid": 18950040,
+      "size": 32047,
+      "wordcount": 3276,
+      "snippet": "<span class=\"searchmatch\">Brass</span> Eye is a British satirical television series parodying current affairs news programming. A series of six episodes aired on Channel 4 in 1997, followed",
+      "timestamp": "2026-10-30T16:23:22Z"
+     },
+     {
+      "ns": 0,
+      "title": "Masco",
+      "pageid": 2641015,
+      "size": 23766,
+      "wordcount": 2270,
+      "snippet": "to succeed him effective July 7, 2025. Axor <span class=\"searchmatch\">Brass</span>Craft Manufacturing Company Brasstech, Inc. <span class=\"searchmatch\">Newport</span> <span class=\"searchmatch\">Brass</span> Ginger Bristan Delta Faucet Company Peerless",
+      "timestamp": "2026-10-23T00:37:31Z"
+     },
+     {
+      "ns": 0,
+      "title": "Monumental brass",
+      "pageid": 2399004,
+      "size": 19570,
+      "wordcount": 2264,
+      "snippet": "Cameron, H. K. (1970). A List of Monumental <span class=\"searchmatch\">Brasses</span> on the Continent of Europe. <span class=\"searchmatch\">Newport</span> Pagnell: Monumental <span class=\"searchmatch\">Brass</span> Society. ISBN 0950129801. Clayton, Muriel",
+      "timestamp": "2026-10-22T18:03:01Z"
+     }
+    ]
+   }
+  },
+  "Waterworks": {
+   "batchcomplete": "",
+   "continue": {
+    "sroffset": 4,
+    "continue": "-||"
+   },
+   "query": {
+    "searchinfo": {
+     "totalhits": 18,
+     "suggestion": "waterworks baths features company",
+     "suggestionsnippet": "waterworks <em>baths features</em> company"
+    },
+    "search": [
+     {
+      "ns": 0,
+      "title": "List of companies of the United Kingdom A–J",
+      "pageid": 58221230,
+      "size": 314599,
+      "wordcount": 40853,
+      "snippet": "Railway – was a railway <span class=\"searchmatch\">company</span> established in 1844 that operated from 1850 to 1859. Chester <span class=\"searchmatch\">Waterworks</span> <span class=\"searchmatch\">Company</span> – was a utility <span class=\"searchmatch\">company</span> supplying water that",
+      "timestamp": "2026-11-06T08:24:35Z"
+     },
+     {
+      "ns": 0,
+      "title": "Water supply",
+      "pageid": 684928,
+      "size": 40992,
+      "wordcount": 5602,
+      "snippet": "the world was installed by engineer James Simpson for the Chelsea <span class=\"searchmatch\">Waterworks</span> <span class=\"searchmatch\">Company</span> in London in 1829. The practice of water treatment soon became mainstream",
+      "timestamp": "2026-06-10T10:37:59Z"
+     },
+     {
+      "ns": 0,
+      "title": "Titanic",
+      "pageid": 19285924,
+      "size": 203630,
+      "wordcount": 22394,
+      "snippet": "Victorian-style Turkish <span class=\"searchmatch\">bath</span>, and opulent cabins. A high-powered spark-gap transmitter was provided by the Marconi Marine <span class=\"searchmatch\">Company</span> for first-class passenger",
+      "timestamp": "2026-11-07T00:46:26Z"
+     },
+     {
+      "ns": 0,
+      "title": "List of acts of the Parliament of the United Kingdom from 1851",
+      "pageid": 75511315,
+      "size": 108122,
+      "wordcount": 1579,
+      "snippet": "Lancaster Road (Western District) Act 1826 (7 Geo. 4. c. lxxi) Leicester <span class=\"searchmatch\">Waterworks</span> Act 1847 (10 &amp; 11 Vict. c. cclxxxii) Road from Derby to Hurdloe House",
+      "timestamp": "2026-10-14T18:49:17Z"
+     }
+    ]
+   }
+  },
+  "Waterstone": {
+   "batchcomplete": "",
+   "query": {
+    "searchinfo": {
+     "totalhits": 0,
+     "suggestion": "waterston fawcett",
+     "suggestionsnippet": "<em>waterston fawcett</em>"
+    },
+    "search": []
+   }
+  },
+  "Victoria + Albert": {
+   "batchcomplete": "",
+   "continue": {
+    "sroffset": 4,
+    "continue": "-||"
+   },
+   "query": {
+    "searchinfo": {
+     "totalhits": 816
+    },
+    "search": [
+     {
+      "ns": 0,
+      "title": "Victoria Baths",
+      "pageid": 3428915,
+      "size": 14448,
+      "wordcount": 1184,
+      "snippet": "<span class=\"searchmatch\">Victoria</span> <span class=\"searchmatch\">Baths</span> is a Grade II* listed building, in the Chorlton-on-Medlock area of Manchester, England. The <span class=\"searchmatch\">baths</span> opened to the public in 1906 and cost",
+      "timestamp": "2026-05-09T12:51:55Z"
+     },
+     {
+      "ns": 0,
+      "title": "Victorian Turkish baths",
+      "pageid": 65454966,
+      "size": 121016,
+      "wordcount": 17176,
+      "snippet": "available. Hot-air <span class=\"searchmatch\">baths</span> of the same type, built after Queen <span class=\"searchmatch\">Victoria&#039;s</span> reign (1837–1901), are known as Victorian-style Turkish <span class=\"searchmatch\">baths</span>, and are also covered",
+      "timestamp": "2026-09-02T01:45:37Z"
+     },
+     {
+      "ns": 0,
+      "title": "Victoria, Princess Royal",
+      "pageid": 261020,
+      "size": 93312,
+      "wordcount": 11083,
+      "snippet": "German Emperor. She was the eldest child of Queen <span class=\"searchmatch\">Victoria</span> of the United Kingdom and Prince <span class=\"searchmatch\">Albert</span> of Saxe-Coburg and Gotha and was created Princess Royal",
+      "timestamp": "2026-10-09T18:59:32Z"
+     },
+     {
+      "ns": 0,
+      "title": "I54",
+      "pageid": 12994185,
+      "size": 8757,
+      "wordcount": 927,
+      "snippet": "Company) (2018) Atlas Copco (2018) Access 360 (Profab) (2023) <span class=\"searchmatch\">Victoria</span> + <span class=\"searchmatch\">Albert</span> <span class=\"searchmatch\">Baths</span> Limited (2023) &quot;JLR plans i54 Wolverhampton engine plant and 1",
+      "timestamp": "2026-07-16T18:00:22Z"
+     }
+    ]
+   }
+  },
+  "titles": {
+   "batchcomplete": "",
+   "query": {
     "pages": {
      "-1": {
       "ns": 0,
-      "title": "Pfister (company)",
-      "missing": "",
-      "contentmodel": "wikitext",
-      "pagelanguage": "en",
-      "pagelanguagehtmlcode": "en",
-      "pagelanguagedir": "ltr"
+      "title": "Brizo (company)",
+      "missing": ""
      },
      "-2": {
       "ns": 0,
-      "title": "Kraus (company)",
-      "missing": "",
-      "contentmodel": "wikitext",
-      "pagelanguage": "en",
-      "pagelanguagehtmlcode": "en",
-      "pagelanguagedir": "ltr"
+      "title": "Rohl (company)",
+      "missing": ""
      },
      "-3": {
       "ns": 0,
-      "title": "Kallista (company)",
-      "missing": "",
-      "contentmodel": "wikitext",
-      "pagelanguage": "en",
-      "pagelanguagehtmlcode": "en",
-      "pagelanguagedir": "ltr"
+      "title": "Kraus USA",
+      "missing": ""
      },
      "-4": {
       "ns": 0,
-      "title": "Newport Brass",
-      "missing": "",
-      "contentmodel": "wikitext",
-      "pagelanguage": "en",
-      "pagelanguagehtmlcode": "en",
-      "pagelanguagedir": "ltr"
+      "title": "Kallista (brand)",
+      "missing": ""
      },
      "-5": {
       "ns": 0,
-      "title": "Waterworks (company)",
-      "missing": "",
-      "contentmodel": "wikitext",
-      "pagelanguage": "en",
-      "pagelanguagehtmlcode": "en",
-      "pagelanguagedir": "ltr"
+      "title": "Waterworks (retailer)",
+      "missing": ""
      },
      "-6": {
       "ns": 0,
-      "title": "Waterstone Faucets",
-      "missing": "",
-      "contentmodel": "wikitext",
-      "pagelanguage": "en",
-      "pagelanguagehtmlcode": "en",
-      "pagelanguagedir": "ltr"
+      "title": "Waterworks (company)",
+      "missing": ""
      },
      "-7": {
       "ns": 0,
-      "title": "Victoria + Albert",
-      "missing": "",
-      "contentmodel": "wikitext",
-      "pagelanguage": "en",
-      "pagelanguagehtmlcode": "en",
-      "pagelanguagedir": "ltr"
+      "title": "Victoria + Albert Baths",
+      "missing": ""
      },
      "-8": {
       "ns": 0,
-      "title": "Victoria and Albert Baths",
-      "missing": "",
-      "contentmodel": "wikitext",
-      "pagelanguage": "en",
-      "pagelanguagehtmlcode": "en",
-      "pagelanguagedir": "ltr"
-     },
-     "16922366": {
-      "pageid": 16922366,
-      "ns": 0,
-      "title": "American Standard Brands",
-      "pageprops": {
-       "wikibase_item": "Q4745165"
-      },
-      "contentmodel": "wikitext",
-      "pagelanguage": "en",
-      "pagelanguagehtmlcode": "en",
-      "pagelanguagedir": "ltr",
-      "touched": "2026-11-08T01:52:48Z",
-      "lastrevid": 1379222665,
-      "length": 14557
-     },
-     "79356": {
-      "pageid": 79356,
-      "ns": 0,
-      "title": "Brizo",
-      "pageprops": {
-       "wikibase_item": "Q921527"
-      },
-      "contentmodel": "wikitext",
-      "pagelanguage": "en",
-      "pagelanguagehtmlcode": "en",
-      "pagelanguagedir": "ltr",
-      "touched": "2026-11-08T21:17:29Z",
-      "lastrevid": 1372223406,
-      "length": 4657
-     },
-     "4527287": {
-      "pageid": 4527287,
-      "ns": 0,
-      "title": "Delta Faucet Company",
-      "pageprops": {
-       "wikibase_item": "Q104840769"
-      },
-      "contentmodel": "wikitext",
-      "pagelanguage": "en",
-      "pagelanguagehtmlcode": "en",
-      "pagelanguagedir": "ltr",
-      "touched": "2026-11-08T21:20:51Z",
-      "lastrevid": 1382265945,
-      "length": 5635
-     },
-     "21872094": {
-      "pageid": 21872094,
-      "ns": 0,
-      "title": "Duravit",
-      "pageprops": {
-       "wikibase_item": "Q1266808"
-      },
-      "contentmodel": "wikitext",
-      "pagelanguage": "en",
-      "pagelanguagehtmlcode": "en",
-      "pagelanguagedir": "ltr",
-      "touched": "2026-11-08T21:25:09Z",
-      "lastrevid": 1368867435,
-      "length": 3864
-     },
-     "34973758": {
-      "pageid": 34973758,
-      "ns": 0,
-      "title": "Grohe",
-      "pageprops": {
-       "wikibase_item": "Q316477"
-      },
-      "contentmodel": "wikitext",
-      "pagelanguage": "en",
-      "pagelanguagehtmlcode": "en",
-      "pagelanguagedir": "ltr",
-      "touched": "2026-11-08T16:04:30Z",
-      "lastrevid": 1384508963,
-      "length": 20298
-     },
-     "4024998": {
-      "pageid": 4024998,
-      "ns": 0,
-      "title": "Hansgrohe",
-      "pageprops": {
-       "wikibase_item": "Q741499"
-      },
-      "contentmodel": "wikitext",
-      "pagelanguage": "en",
-      "pagelanguagehtmlcode": "en",
-      "pagelanguagedir": "ltr",
-      "touched": "2026-11-08T01:42:24Z",
-      "lastrevid": 1359523779,
-      "length": 10639
-     },
-     "609299": {
-      "pageid": 609299,
-      "ns": 0,
-      "title": "Kallista",
-      "pageprops": {
-       "wikibase_item": "Q6353868"
-      },
-      "contentmodel": "wikitext",
-      "pagelanguage": "en",
-      "pagelanguagehtmlcode": "en",
-      "pagelanguagedir": "ltr",
-      "touched": "2026-11-08T21:18:04Z",
-      "lastrevid": 1384046496,
-      "length": 10802
-     },
-     "625919": {
-      "pageid": 625919,
-      "ns": 0,
-      "title": "Kohler Co.",
-      "pageprops": {
-       "wikibase_item": "Q6426036"
-      },
-      "contentmodel": "wikitext",
-      "pagelanguage": "en",
-      "pagelanguagehtmlcode": "en",
-      "pagelanguagedir": "ltr",
-      "touched": "2026-11-08T21:18:05Z",
-      "lastrevid": 1381650827,
-      "length": 23664
-     },
-     "1351705": {
-      "pageid": 1351705,
-      "ns": 0,
-      "title": "Kraus",
-      "pageprops": {
-       "wikibase_item": "Q931355"
-      },
-      "contentmodel": "wikitext",
-      "pagelanguage": "en",
-      "pagelanguagehtmlcode": "en",
-      "pagelanguagedir": "ltr",
-      "touched": "2026-11-07T19:48:13Z",
-      "lastrevid": 1369566229,
-      "length": 7319
-     },
-     "3637739": {
-      "pageid": 3637739,
-      "ns": 0,
-      "title": "Moen",
-      "pageprops": {
-       "disambiguation": "",
-       "wikibase_item": "Q1942387"
-      },
-      "contentmodel": "wikitext",
-      "pagelanguage": "en",
-      "pagelanguagehtmlcode": "en",
-      "pagelanguagedir": "ltr",
-      "touched": "2026-11-07T19:49:33Z",
-      "lastrevid": 1366333521,
-      "length": 858
-     },
-     "79468842": {
-      "pageid": 79468842,
-      "ns": 0,
-      "title": "Pfister",
-      "pageprops": {
-       "disambiguation": "",
-       "wikibase_item": "Q2083867"
-      },
-      "contentmodel": "wikitext",
-      "pagelanguage": "en",
-      "pagelanguagehtmlcode": "en",
-      "pagelanguagedir": "ltr",
-      "touched": "2026-10-24T11:32:14Z",
-      "lastrevid": 1322012569,
-      "length": 543
-     },
-     "12049094": {
-      "pageid": 12049094,
-      "ns": 0,
-      "title": "Rohl",
-      "pageprops": {
-       "wikibase_item": "Q37553699"
-      },
-      "contentmodel": "wikitext",
-      "pagelanguage": "en",
-      "pagelanguagehtmlcode": "en",
-      "pagelanguagedir": "ltr",
-      "touched": "2026-10-26T19:32:01Z",
-      "lastrevid": 1295386766,
-      "length": 530
-     },
-     "1349076": {
-      "pageid": 1349076,
-      "ns": 0,
-      "title": "Toto Ltd.",
-      "pageprops": {
-       "wikibase_item": "Q1751566"
-      },
-      "contentmodel": "wikitext",
-      "pagelanguage": "en",
-      "pagelanguagehtmlcode": "en",
-      "pagelanguagedir": "ltr",
-      "touched": "2026-11-08T01:36:54Z",
-      "lastrevid": 1381714465,
-      "length": 8530
-     },
-     "6227038": {
-      "pageid": 6227038,
-      "ns": 0,
-      "title": "Villeroy & Boch",
-      "pageprops": {
-       "wikibase_item": "Q705042"
-      },
-      "contentmodel": "wikitext",
-      "pagelanguage": "en",
-      "pagelanguagehtmlcode": "en",
-      "pagelanguagedir": "ltr",
-      "touched": "2026-11-08T01:45:01Z",
-      "lastrevid": 1378857926,
-      "length": 32048
-     },
-     "33318775": {
-      "pageid": 33318775,
-      "ns": 0,
-      "title": "Fortune Brands Innovations",
-      "pageprops": {
-       "wikibase_item": "Q5472859"
-      },
-      "contentmodel": "wikitext",
-      "pagelanguage": "en",
-      "pagelanguagehtmlcode": "en",
-      "pagelanguagedir": "ltr",
-      "touched": "2026-11-08T21:27:54Z",
-      "lastrevid": 1369129827,
-      "length": 22228
-     },
-     "4315614": {
-      "pageid": 4315614,
-      "ns": 0,
-      "title": "Moen Incorporated",
-      "pageprops": {
-       "wikibase_item": "Q6890215"
-      },
-      "contentmodel": "wikitext",
-      "pagelanguage": "en",
-      "pagelanguagehtmlcode": "en",
-      "pagelanguagedir": "ltr",
-      "touched": "2026-11-08T21:20:46Z",
-      "lastrevid": 1361480157,
-      "length": 7397
-     },
-     "1015405": {
-      "pageid": 1015405,
-      "ns": 0,
-      "title": "Pfister (firm)",
-      "pageprops": {
-       "wikibase_item": "Q7179796"
-      },
-      "contentmodel": "wikitext",
-      "pagelanguage": "en",
-      "pagelanguagehtmlcode": "en",
-      "pagelanguagedir": "ltr",
-      "touched": "2026-11-08T01:35:59Z",
-      "lastrevid": 1359653175,
-      "length": 11291
-     },
-     "2642022": {
-      "pageid": 2642022,
-      "ns": 0,
-      "title": "Sharpening stone",
-      "pageprops": {
-       "wikibase_item": "Q507559"
-      },
-      "contentmodel": "wikitext",
-      "pagelanguage": "en",
-      "pagelanguagehtmlcode": "en",
-      "pagelanguagedir": "ltr",
-      "touched": "2026-11-08T21:20:05Z",
-      "lastrevid": 1384410491,
-      "length": 20692
-     },
-     "684928": {
-      "pageid": 684928,
-      "ns": 0,
-      "title": "Water supply",
-      "pageprops": {
-       "wikibase_item": "Q1061108"
-      },
-      "contentmodel": "wikitext",
-      "pagelanguage": "en",
-      "pagelanguagehtmlcode": "en",
-      "pagelanguagedir": "ltr",
-      "touched": "2026-11-08T21:18:09Z",
-      "lastrevid": 1358699047,
-      "length": 40992
+      "title": "Newport Brass (company)",
+      "missing": ""
      }
     }
    }
