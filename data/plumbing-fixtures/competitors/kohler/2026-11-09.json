@@ -1,0 +1,135 @@
+{
+ "target": "Kohler",
+ "target_qid": "Q6426036",
+ "category_slug": "plumbing-fixtures",
+ "date": "2026-11-09",
+ "engines": {
+  "Claude": "claude-opus-4-7",
+  "Gemini": "gemini-2.5-pro",
+  "ChatGPT": "gpt-6.1-sol"
+ },
+ "web_search": true,
+ "runs_per_question": 3,
+ "questions": [
+  "Who are the main competitors of Kohler kitchen and bath fixtures?",
+  "What kitchen and bath brands are similar to Kohler?",
+  "I'm thinking about buying a Kohler faucet. What other brands should I consider?"
+ ],
+ "answers_total": 27,
+ "answers_counted": 27,
+ "readers": {
+  "first": "claude-opus-4-7",
+  "second": "gemini-2.5-pro"
+ },
+ "reading_rule": "A brand counts as named in an answer only if both readers list it.",
+ "rule": "In the competitive set if named by at least 2 of the 3 engines.",
+ "brands": [
+  {
+   "brand": "Delta Faucet",
+   "qid": "Q104840769",
+   "in_category": true,
+   "engines": [
+    "ChatGPT",
+    "Claude",
+    "Gemini"
+   ],
+   "answers": 27,
+   "status": "in set, on page"
+  },
+  {
+   "brand": "Hansgrohe",
+   "qid": "Q741499",
+   "in_category": true,
+   "engines": [
+    "ChatGPT",
+    "Claude",
+    "Gemini"
+   ],
+   "answers": 27,
+   "status": "in set, on page"
+  },
+  {
+   "brand": "Moen",
+   "qid": "Q6890215",
+   "in_category": true,
+   "engines": [
+    "ChatGPT",
+    "Claude",
+    "Gemini"
+   ],
+   "answers": 27,
+   "status": "in set, on page"
+  },
+  {
+   "brand": "Grohe",
+   "qid": "Q316477",
+   "in_category": true,
+   "engines": [
+    "ChatGPT",
+    "Claude",
+    "Gemini"
+   ],
+   "answers": 25,
+   "status": "in set, on page"
+  },
+  {
+   "brand": "American Standard",
+   "qid": "Q4745165",
+   "in_category": true,
+   "engines": [
+    "ChatGPT",
+    "Claude",
+    "Gemini"
+   ],
+   "answers": 24,
+   "status": "in set, on page"
+  },
+  {
+   "brand": "Toto",
+   "qid": "Q1751566",
+   "in_category": true,
+   "engines": [
+    "ChatGPT",
+    "Claude",
+    "Gemini"
+   ],
+   "answers": 16,
+   "status": "in set, on page"
+  },
+  {
+   "brand": "Pfister",
+   "qid": "Q7179796",
+   "in_category": true,
+   "engines": [
+    "ChatGPT",
+    "Claude",
+    "Gemini"
+   ],
+   "answers": 14,
+   "status": "in set, on page"
+  },
+  {
+   "brand": "Duravit",
+   "qid": "Q1266808",
+   "in_category": true,
+   "engines": [
+    "Claude",
+    "Gemini"
+   ],
+   "answers": 8,
+   "status": "in set, on page"
+  },
+  {
+   "brand": "Villeroy & Boch",
+   "qid": "Q705042",
+   "in_category": true,
+   "engines": [
+    "Claude",
+    "Gemini"
+   ],
+   "answers": 4,
+   "status": "in set, on page"
+  }
+ ],
+ "note": "Only brands in the competitive set and in this BrandTabulator category are listed."
+}

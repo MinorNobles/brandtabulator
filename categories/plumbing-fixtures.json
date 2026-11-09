@@ -1,7 +1,7 @@
 {
   "slug": "plumbing-fixtures",
   "name": "Kitchen and bath fixtures",
-  "draft": true,
+  "draft": false,
   "path": "kitchen-bath",
   "product_noun": "plumbing fixture",
   "products_noun": "plumbing fixtures",
