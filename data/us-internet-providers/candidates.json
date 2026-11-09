@@ -1,5 +1,5 @@
 {
- "computed_at": "2026-11-08",
+ "computed_at": "2026-11-09",
  "query": "SELECT DISTINCT ?item ?itemLabel ?sitelinks WHERE { { { ?item wdt:P31 wd:Q11371 . } UNION { ?item wdt:P452 wd:Q11371 . } ?item wdt:P17 wd:Q30 . } ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". } } ORDER BY DESC(?sitelinks) LIMIT 1000",
  "candidates": [
   {

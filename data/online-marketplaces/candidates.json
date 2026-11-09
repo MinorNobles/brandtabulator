@@ -1,5 +1,5 @@
 {
- "computed_at": "2026-11-08",
+ "computed_at": "2026-11-09",
  "query": "SELECT DISTINCT ?item ?itemLabel ?sitelinks WHERE { { ?item wdt:P31 wd:Q3390477 . } UNION { ?item wdt:P452 wd:Q3390477 . } ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". } } ORDER BY DESC(?sitelinks) LIMIT 1000",
  "candidates": [
   {
@@ -168,18 +168,13 @@
    "sitelinks": 5
   },
   {
-   "qid": "Q1068745",
-   "label": "Check24",
-   "sitelinks": 4
-  },
-  {
    "qid": "Q97658635",
    "label": "Lamoda",
    "sitelinks": 4
   },
   {
-   "qid": "Q4051696",
-   "label": "Tradera",
+   "qid": "Q1068745",
+   "label": "Check24",
    "sitelinks": 4
   },
   {
@@ -188,13 +183,8 @@
    "sitelinks": 4
   },
   {
-   "qid": "Q138854957",
-   "label": "Haizol",
-   "sitelinks": 4
-  },
-  {
-   "qid": "Q55775893",
-   "label": "StockX",
+   "qid": "Q4051696",
+   "label": "Tradera",
    "sitelinks": 4
   },
   {
@@ -205,6 +195,16 @@
   {
    "qid": "Q18168341",
    "label": "rover.com",
+   "sitelinks": 4
+  },
+  {
+   "qid": "Q55775893",
+   "label": "StockX",
+   "sitelinks": 4
+  },
+  {
+   "qid": "Q138854957",
+   "label": "Haizol",
    "sitelinks": 4
   },
   {
@@ -225,16 +225,6 @@
   {
    "qid": "Q7831908",
    "label": "TradeMe",
-   "sitelinks": 3
-  },
-  {
-   "qid": "Q138791818",
-   "label": "GuruWalk",
-   "sitelinks": 3
-  },
-  {
-   "qid": "Q39059538",
-   "label": "jiji.ng",
    "sitelinks": 3
   },
   {
@@ -263,19 +253,14 @@
    "sitelinks": 3
   },
   {
-   "qid": "Q113371997",
-   "label": "24S",
-   "sitelinks": 2
+   "qid": "Q39059538",
+   "label": "jiji.ng",
+   "sitelinks": 3
   },
   {
-   "qid": "Q97371372",
-   "label": "Maremagnum",
-   "sitelinks": 2
-  },
-  {
-   "qid": "Q97961181",
-   "label": "Bookimed",
-   "sitelinks": 2
+   "qid": "Q138791818",
+   "label": "GuruWalk",
+   "sitelinks": 3
   },
   {
    "qid": "Q20715684",
@@ -290,6 +275,21 @@
   {
    "qid": "Q138604040",
    "label": "Booksy",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q113371997",
+   "label": "24S",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q97371372",
+   "label": "Maremagnum",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q97961181",
+   "label": "Bookimed",
    "sitelinks": 2
   },
   {
@@ -310,16 +310,6 @@
   {
    "qid": "Q6084252",
    "label": "\u00c7i\u00e7eksepeti",
-   "sitelinks": 2
-  },
-  {
-   "qid": "Q140287877",
-   "label": "Lazada Philippines",
-   "sitelinks": 2
-  },
-  {
-   "qid": "Q55735432",
-   "label": "TradeKorea",
    "sitelinks": 2
   },
   {
@@ -358,14 +348,14 @@
    "sitelinks": 2
   },
   {
-   "qid": "Q104856323",
-   "label": "Teachers Pay Teachers",
-   "sitelinks": 1
+   "qid": "Q55735432",
+   "label": "TradeKorea",
+   "sitelinks": 2
   },
   {
-   "qid": "Q108600562",
-   "label": "Minecraft Marketplace",
-   "sitelinks": 1
+   "qid": "Q140287877",
+   "label": "Lazada Philippines",
+   "sitelinks": 2
   },
   {
    "qid": "Q27889316",
@@ -395,6 +385,16 @@
   {
    "qid": "Q19646230",
    "label": "Luxify",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q104856323",
+   "label": "Teachers Pay Teachers",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q108600562",
+   "label": "Minecraft Marketplace",
    "sitelinks": 1
   },
   {
@@ -443,26 +443,6 @@
    "sitelinks": 1
   },
   {
-   "qid": "Q65090792",
-   "label": "The RealReal",
-   "sitelinks": 1
-  },
-  {
-   "qid": "Q96373794",
-   "label": "Bookshop.org",
-   "sitelinks": 1
-  },
-  {
-   "qid": "Q48791881",
-   "label": "Spacer",
-   "sitelinks": 1
-  },
-  {
-   "qid": "Q54958366",
-   "label": "Tradesy",
-   "sitelinks": 1
-  },
-  {
    "qid": "Q19903400",
    "label": "LendKey",
    "sitelinks": 1
@@ -495,6 +475,26 @@
   {
    "qid": "Q27150174",
    "label": "Peerspace",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q48791881",
+   "label": "Spacer",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q54958366",
+   "label": "Tradesy",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q65090792",
+   "label": "The RealReal",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q96373794",
+   "label": "Bookshop.org",
    "sitelinks": 1
   }
  ]

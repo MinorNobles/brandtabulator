@@ -1,5 +1,5 @@
 {
- "computed_at": "2026-11-08",
+ "computed_at": "2026-11-09",
  "query": "SELECT DISTINCT ?item ?itemLabel ?sitelinks WHERE { { ?item wdt:P452 wd:Q126793 ; wdt:P1056 wd:Q161439 . } UNION { ?item wdt:P31 wd:Q4237303 . } UNION { ?item wdt:P31 wd:Q106611381 . } UNION { ?item wdt:P452 wd:Q4237303 . } ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". } } ORDER BY DESC(?sitelinks) LIMIT 1000",
  "candidates": [
   {
@@ -33,13 +33,13 @@
    "sitelinks": 6
   },
   {
-   "qid": "Q3308250",
-   "label": "Michael Hill Jeweller",
+   "qid": "Q3300085",
+   "label": "Mauboussin",
    "sitelinks": 5
   },
   {
-   "qid": "Q3300085",
-   "label": "Mauboussin",
+   "qid": "Q3308250",
+   "label": "Michael Hill Jeweller",
    "sitelinks": 5
   },
   {
@@ -58,13 +58,13 @@
    "sitelinks": 4
   },
   {
-   "qid": "Q3931843",
-   "label": "Mouawad",
+   "qid": "Q7488019",
+   "label": "Shane Company",
    "sitelinks": 3
   },
   {
-   "qid": "Q7488019",
-   "label": "Shane Company",
+   "qid": "Q3931843",
+   "label": "Mouawad",
    "sitelinks": 3
   },
   {

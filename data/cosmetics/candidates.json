@@ -1,5 +1,5 @@
 {
- "computed_at": "2026-11-08",
+ "computed_at": "2026-11-09",
  "query": "SELECT DISTINCT ?item ?itemLabel ?sitelinks WHERE { { ?item wdt:P452 wd:Q12752882 . } UNION { ?item wdt:P1056 wd:Q131207 . } ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". } } ORDER BY DESC(?sitelinks) LIMIT 1000",
  "candidates": [
   {
@@ -8,13 +8,13 @@
    "sitelinks": 65
   },
   {
-   "qid": "Q332477",
-   "label": "Victoria\u2019s Secret",
+   "qid": "Q156077",
+   "label": "L'Or\u00e9al",
    "sitelinks": 59
   },
   {
-   "qid": "Q156077",
-   "label": "L'Or\u00e9al",
+   "qid": "Q332477",
+   "label": "Victoria\u2019s Secret",
    "sitelinks": 59
   },
   {
@@ -58,13 +58,13 @@
    "sitelinks": 33
   },
   {
-   "qid": "Q1036056",
-   "label": "Cargill",
+   "qid": "Q201691",
+   "label": "Beiersdorf",
    "sitelinks": 32
   },
   {
-   "qid": "Q201691",
-   "label": "Beiersdorf",
+   "qid": "Q1036056",
+   "label": "Cargill",
    "sitelinks": 32
   },
   {
@@ -113,13 +113,13 @@
    "sitelinks": 22
   },
   {
-   "qid": "Q2655764",
-   "label": "Clinique Laboratories, LLC",
+   "qid": "Q1104787",
+   "label": "Coty",
    "sitelinks": 21
   },
   {
-   "qid": "Q1104787",
-   "label": "Coty",
+   "qid": "Q2655764",
+   "label": "Clinique Laboratories, LLC",
    "sitelinks": 21
   },
   {
@@ -158,6 +158,11 @@
    "sitelinks": 17
   },
   {
+   "qid": "Q1066784",
+   "label": "Q1066784",
+   "sitelinks": 16
+  },
+  {
    "qid": "Q1880676",
    "label": "L'Occitane en Provence",
    "sitelinks": 16
@@ -166,11 +171,6 @@
    "qid": "Q51135597",
    "label": "Fenty Beauty",
    "sitelinks": 16
-  },
-  {
-   "qid": "Q1066784",
-   "label": "Q1066784",
-   "sitelinks": 15
   },
   {
    "qid": "Q7880076",
@@ -213,11 +213,6 @@
    "sitelinks": 12
   },
   {
-   "qid": "Q3196447",
-   "label": "Kiehl's",
-   "sitelinks": 12
-  },
-  {
    "qid": "Q2056628",
    "label": "Acqua di Parma",
    "sitelinks": 12
@@ -228,23 +223,13 @@
    "sitelinks": 12
   },
   {
-   "qid": "Q3131210",
-   "label": "Natura Cosm\u00e9ticos S.A.",
-   "sitelinks": 11
-  },
-  {
-   "qid": "Q20724743",
-   "label": "Jo Malone London",
-   "sitelinks": 11
+   "qid": "Q3196447",
+   "label": "Kiehl's",
+   "sitelinks": 12
   },
   {
    "qid": "Q650195",
    "label": "Johann Maria Farina gegen\u00fcber dem J\u00fclichs-Platz",
-   "sitelinks": 11
-  },
-  {
-   "qid": "Q16176002",
-   "label": "Innisfree",
    "sitelinks": 11
   },
   {
@@ -258,18 +243,28 @@
    "sitelinks": 11
   },
   {
+   "qid": "Q16176002",
+   "label": "Innisfree",
+   "sitelinks": 11
+  },
+  {
+   "qid": "Q20724743",
+   "label": "Jo Malone London",
+   "sitelinks": 11
+  },
+  {
+   "qid": "Q3131210",
+   "label": "Natura Cosm\u00e9ticos S.A.",
+   "sitelinks": 11
+  },
+  {
    "qid": "Q153264",
    "label": "Urban Decay",
    "sitelinks": 10
   },
   {
-   "qid": "Q3869356",
-   "label": "NARS Cosmetics",
-   "sitelinks": 10
-  },
-  {
-   "qid": "Q6479731",
-   "label": "Lakm\u00e9 Cosmetics",
+   "qid": "Q18208332",
+   "label": "Johnson's Baby",
    "sitelinks": 10
   },
   {
@@ -278,13 +273,18 @@
    "sitelinks": 10
   },
   {
+   "qid": "Q3869356",
+   "label": "NARS Cosmetics",
+   "sitelinks": 10
+  },
+  {
    "qid": "Q4350170",
    "label": "Lumene",
    "sitelinks": 10
   },
   {
-   "qid": "Q18208332",
-   "label": "Johnson's Baby",
+   "qid": "Q6479731",
+   "label": "Lakm\u00e9 Cosmetics",
    "sitelinks": 10
   },
   {
@@ -295,6 +295,16 @@
   {
    "qid": "Q1372140",
    "label": "Eucerin",
+   "sitelinks": 9
+  },
+  {
+   "qid": "Q130331887",
+   "label": "Natura & Co",
+   "sitelinks": 9
+  },
+  {
+   "qid": "Q3485326",
+   "label": "Sisley",
    "sitelinks": 9
   },
   {
@@ -313,18 +323,8 @@
    "sitelinks": 9
   },
   {
-   "qid": "Q3485326",
-   "label": "Sisley",
-   "sitelinks": 9
-  },
-  {
-   "qid": "Q130331887",
-   "label": "Natura & Co",
-   "sitelinks": 9
-  },
-  {
-   "qid": "Q13220217",
-   "label": "Super-Pharm",
+   "qid": "Q16174973",
+   "label": "Etude House",
    "sitelinks": 8
   },
   {
@@ -338,9 +338,34 @@
    "sitelinks": 8
   },
   {
-   "qid": "Q16174973",
-   "label": "Etude House",
+   "qid": "Q13220217",
+   "label": "Super-Pharm",
    "sitelinks": 8
+  },
+  {
+   "qid": "Q117086143",
+   "label": "R.E.M. Beauty",
+   "sitelinks": 7
+  },
+  {
+   "qid": "Q1703526",
+   "label": "JOOP!",
+   "sitelinks": 7
+  },
+  {
+   "qid": "Q23671513",
+   "label": "NYX Professional Makeup",
+   "sitelinks": 7
+  },
+  {
+   "qid": "Q30595852",
+   "label": "Byredo",
+   "sitelinks": 7
+  },
+  {
+   "qid": "Q4043688",
+   "label": "Manic Panic",
+   "sitelinks": 7
   },
   {
    "qid": "Q7121247",
@@ -353,33 +378,8 @@
    "sitelinks": 7
   },
   {
-   "qid": "Q30595852",
-   "label": "Byredo",
-   "sitelinks": 7
-  },
-  {
-   "qid": "Q1703526",
-   "label": "JOOP!",
-   "sitelinks": 7
-  },
-  {
-   "qid": "Q4043688",
-   "label": "Manic Panic",
-   "sitelinks": 7
-  },
-  {
    "qid": "Q5420712",
    "label": "Inglot cosmetics",
-   "sitelinks": 7
-  },
-  {
-   "qid": "Q23671513",
-   "label": "NYX Professional Makeup",
-   "sitelinks": 7
-  },
-  {
-   "qid": "Q117086143",
-   "label": "R.E.M. Beauty",
    "sitelinks": 7
   },
   {
@@ -388,28 +388,8 @@
    "sitelinks": 6
   },
   {
-   "qid": "Q12728140",
-   "label": "Farmec",
-   "sitelinks": 6
-  },
-  {
-   "qid": "Q56274930",
-   "label": "Anastasia Beverly Hills",
-   "sitelinks": 6
-  },
-  {
    "qid": "Q879124",
    "label": "M\u00e4urer & Wirtz",
-   "sitelinks": 6
-  },
-  {
-   "qid": "Q4695024",
-   "label": "Ahava",
-   "sitelinks": 6
-  },
-  {
-   "qid": "Q4827965",
-   "label": "Aveda",
    "sitelinks": 6
   },
   {
@@ -428,6 +408,26 @@
    "sitelinks": 6
   },
   {
+   "qid": "Q4695024",
+   "label": "Ahava",
+   "sitelinks": 6
+  },
+  {
+   "qid": "Q4827965",
+   "label": "Aveda",
+   "sitelinks": 6
+  },
+  {
+   "qid": "Q56274930",
+   "label": "Anastasia Beverly Hills",
+   "sitelinks": 6
+  },
+  {
+   "qid": "Q12728140",
+   "label": "Farmec",
+   "sitelinks": 6
+  },
+  {
    "qid": "Q5461899",
    "label": "Floris of London",
    "sitelinks": 6
@@ -438,8 +438,28 @@
    "sitelinks": 6
   },
   {
+   "qid": "Q769749",
+   "label": "ICI Paris XL",
+   "sitelinks": 5
+  },
+  {
    "qid": "Q1574066",
    "label": "Alberto-Culver",
+   "sitelinks": 5
+  },
+  {
+   "qid": "Q15982607",
+   "label": "OPI Products",
+   "sitelinks": 5
+  },
+  {
+   "qid": "Q2052213",
+   "label": "Douglas Holding",
+   "sitelinks": 5
+  },
+  {
+   "qid": "Q3242538",
+   "label": "Lise Watier",
    "sitelinks": 5
   },
   {
@@ -458,26 +478,6 @@
    "sitelinks": 5
   },
   {
-   "qid": "Q769749",
-   "label": "ICI Paris XL",
-   "sitelinks": 5
-  },
-  {
-   "qid": "Q2052213",
-   "label": "Douglas Holding",
-   "sitelinks": 5
-  },
-  {
-   "qid": "Q3242538",
-   "label": "Lise Watier",
-   "sitelinks": 5
-  },
-  {
-   "qid": "Q15982607",
-   "label": "OPI Products",
-   "sitelinks": 5
-  },
-  {
    "qid": "Q6643229",
    "label": "Origins Natural Resources, Inc.",
    "sitelinks": 5
@@ -486,6 +486,61 @@
    "qid": "Q7287039",
    "label": "Rallet",
    "sitelinks": 5
+  },
+  {
+   "qid": "Q106670902",
+   "label": "Charlotte Tilbury Beauty",
+   "sitelinks": 4
+  },
+  {
+   "qid": "Q15925466",
+   "label": "Pechoin",
+   "sitelinks": 4
+  },
+  {
+   "qid": "Q16984395",
+   "label": "Birchbox",
+   "sitelinks": 4
+  },
+  {
+   "qid": "Q1872841",
+   "label": "Parfums Lubin",
+   "sitelinks": 4
+  },
+  {
+   "qid": "Q22343638",
+   "label": "Kryolan",
+   "sitelinks": 4
+  },
+  {
+   "qid": "Q48941923",
+   "label": "Natura Siberica",
+   "sitelinks": 4
+  },
+  {
+   "qid": "Q3285626",
+   "label": "Mane SA",
+   "sitelinks": 4
+  },
+  {
+   "qid": "Q3365053",
+   "label": "Parfums Christian Dior",
+   "sitelinks": 4
+  },
+  {
+   "qid": "Q3438623",
+   "label": "Roger & Gallet",
+   "sitelinks": 4
+  },
+  {
+   "qid": "Q4942162",
+   "label": "Bonne Bell",
+   "sitelinks": 4
+  },
+  {
+   "qid": "Q5304135",
+   "label": "Dr. Hauschka",
+   "sitelinks": 4
   },
   {
    "qid": "Q10536847",
@@ -518,83 +573,8 @@
    "sitelinks": 4
   },
   {
-   "qid": "Q16984395",
-   "label": "Birchbox",
-   "sitelinks": 4
-  },
-  {
    "qid": "Q19988222",
    "label": "Tory Burch LLC",
-   "sitelinks": 4
-  },
-  {
-   "qid": "Q1872841",
-   "label": "Parfums Lubin",
-   "sitelinks": 4
-  },
-  {
-   "qid": "Q3285626",
-   "label": "Mane SA",
-   "sitelinks": 4
-  },
-  {
-   "qid": "Q3365053",
-   "label": "Parfums Christian Dior",
-   "sitelinks": 4
-  },
-  {
-   "qid": "Q3438623",
-   "label": "Roger & Gallet",
-   "sitelinks": 4
-  },
-  {
-   "qid": "Q4942162",
-   "label": "Bonne Bell",
-   "sitelinks": 4
-  },
-  {
-   "qid": "Q5304135",
-   "label": "Dr. Hauschka",
-   "sitelinks": 4
-  },
-  {
-   "qid": "Q15925466",
-   "label": "Pechoin",
-   "sitelinks": 4
-  },
-  {
-   "qid": "Q5364466",
-   "label": "Ella Bach\u00e9",
-   "sitelinks": 4
-  },
-  {
-   "qid": "Q5842302",
-   "label": "Jabot Cosmetics",
-   "sitelinks": 4
-  },
-  {
-   "qid": "Q6523325",
-   "label": "Lenth\u00e9ric",
-   "sitelinks": 4
-  },
-  {
-   "qid": "Q7073219",
-   "label": "O Botic\u00e1rio",
-   "sitelinks": 4
-  },
-  {
-   "qid": "Q22343638",
-   "label": "Kryolan",
-   "sitelinks": 4
-  },
-  {
-   "qid": "Q48941923",
-   "label": "Natura Siberica",
-   "sitelinks": 4
-  },
-  {
-   "qid": "Q106670902",
-   "label": "Charlotte Tilbury Beauty",
    "sitelinks": 4
   },
   {
@@ -618,13 +598,33 @@
    "sitelinks": 4
   },
   {
-   "qid": "Q5655156",
-   "label": "Hard Candy, LLC",
+   "qid": "Q5364466",
+   "label": "Ella Bach\u00e9",
+   "sitelinks": 4
+  },
+  {
+   "qid": "Q5842302",
+   "label": "Jabot Cosmetics",
+   "sitelinks": 4
+  },
+  {
+   "qid": "Q6523325",
+   "label": "Lenth\u00e9ric",
+   "sitelinks": 4
+  },
+  {
+   "qid": "Q7073219",
+   "label": "O Botic\u00e1rio",
+   "sitelinks": 4
+  },
+  {
+   "qid": "Q85865456",
+   "label": "Glossier",
    "sitelinks": 3
   },
   {
-   "qid": "Q7405065",
-   "label": "Sally Beauty Holdings",
+   "qid": "Q119051016",
+   "label": "L'Occitane Group",
    "sitelinks": 3
   },
   {
@@ -633,13 +633,28 @@
    "sitelinks": 3
   },
   {
-   "qid": "Q27863816",
-   "label": "Brihans Natural Products",
+   "qid": "Q9390905",
+   "label": "Ziaja",
    "sitelinks": 3
   },
   {
    "qid": "Q1776388",
    "label": "Klosterfrau Melissengeist",
+   "sitelinks": 3
+  },
+  {
+   "qid": "Q23731275",
+   "label": "CeraVe",
+   "sitelinks": 3
+  },
+  {
+   "qid": "Q27863816",
+   "label": "Brihans Natural Products",
+   "sitelinks": 3
+  },
+  {
+   "qid": "Q48989740",
+   "label": "Bielenda Group",
    "sitelinks": 3
   },
   {
@@ -653,8 +668,23 @@
    "sitelinks": 3
   },
   {
-   "qid": "Q9390905",
-   "label": "Ziaja",
+   "qid": "Q5655156",
+   "label": "Hard Candy, LLC",
+   "sitelinks": 3
+  },
+  {
+   "qid": "Q7405065",
+   "label": "Sally Beauty Holdings",
+   "sitelinks": 3
+  },
+  {
+   "qid": "Q72342808",
+   "label": "Jeffree Star Cosmetics",
+   "sitelinks": 3
+  },
+  {
+   "qid": "Q76089779",
+   "label": "Il Makiage",
    "sitelinks": 3
   },
   {
@@ -673,58 +703,33 @@
    "sitelinks": 3
   },
   {
-   "qid": "Q23731275",
-   "label": "CeraVe",
-   "sitelinks": 3
-  },
-  {
-   "qid": "Q48989740",
-   "label": "Bielenda Group",
-   "sitelinks": 3
-  },
-  {
-   "qid": "Q85865456",
-   "label": "Glossier",
-   "sitelinks": 3
-  },
-  {
-   "qid": "Q119051016",
-   "label": "L'Occitane Group",
-   "sitelinks": 3
-  },
-  {
-   "qid": "Q72342808",
-   "label": "Jeffree Star Cosmetics",
-   "sitelinks": 3
-  },
-  {
-   "qid": "Q76089779",
-   "label": "Il Makiage",
-   "sitelinks": 3
-  },
-  {
-   "qid": "Q4529583",
-   "label": "Evalar",
+   "qid": "Q104844059",
+   "label": "Merle Norman Cosmetics",
    "sitelinks": 2
   },
   {
-   "qid": "Q5050948",
-   "label": "Caswell-Massey",
-   "sitelinks": 2
-  },
-  {
-   "qid": "Q6726282",
-   "label": "Madame C.J. Walker Manufacturing Company",
-   "sitelinks": 2
-  },
-  {
-   "qid": "Q7592028",
-   "label": "St. Tropez",
+   "qid": "Q107313639",
+   "label": "Lipsy Limited",
    "sitelinks": 2
   },
   {
    "qid": "Q85816886",
    "label": "Younique",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q98830365",
+   "label": "Aravind Laboratories",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q17192252",
+   "label": "Albion",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q30595236",
+   "label": "Piesse & Lubin",
    "sitelinks": 2
   },
   {
@@ -738,43 +743,23 @@
    "sitelinks": 2
   },
   {
-   "qid": "Q17192252",
-   "label": "Albion",
+   "qid": "Q5050948",
+   "label": "Caswell-Massey",
    "sitelinks": 2
   },
   {
-   "qid": "Q7721109",
-   "label": "The Campana Company",
+   "qid": "Q4529583",
+   "label": "Evalar",
    "sitelinks": 2
   },
   {
-   "qid": "Q7756719",
-   "label": "The Perfume Shop",
+   "qid": "Q6726282",
+   "label": "Madame C.J. Walker Manufacturing Company",
    "sitelinks": 2
   },
   {
-   "qid": "Q7880095",
-   "label": "Ultima II",
-   "sitelinks": 2
-  },
-  {
-   "qid": "Q30595236",
-   "label": "Piesse & Lubin",
-   "sitelinks": 2
-  },
-  {
-   "qid": "Q104844059",
-   "label": "Merle Norman Cosmetics",
-   "sitelinks": 2
-  },
-  {
-   "qid": "Q107313639",
-   "label": "Lipsy Limited",
-   "sitelinks": 2
-  },
-  {
-   "qid": "Q98830365",
-   "label": "Aravind Laboratories",
+   "qid": "Q7592028",
+   "label": "St. Tropez",
    "sitelinks": 2
   },
   {
@@ -793,43 +778,58 @@
    "sitelinks": 2
   },
   {
-   "qid": "Q4792656",
-   "label": "Armand Dupree",
+   "qid": "Q7721109",
+   "label": "The Campana Company",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q7756719",
+   "label": "The Perfume Shop",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q7880095",
+   "label": "Ultima II",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q109000979",
+   "label": "Revolution Beauty",
    "sitelinks": 1
   },
   {
-   "qid": "Q7917662",
-   "label": "Vbeaute",
+   "qid": "Q109970024",
+   "label": "Beauty Bakerie",
    "sitelinks": 1
   },
   {
-   "qid": "Q7933168",
-   "label": "Violent Lips",
+   "qid": "Q119862489",
+   "label": "Trixie Cosmetics",
    "sitelinks": 1
   },
   {
-   "qid": "Q16835173",
-   "label": "DEX New York",
+   "qid": "Q124244482",
+   "label": "Luna Daily",
    "sitelinks": 1
   },
   {
-   "qid": "Q16864872",
-   "label": "Ebony Fashion Fair",
+   "qid": "Q124547645",
+   "label": "Drunk Elephant",
    "sitelinks": 1
   },
   {
-   "qid": "Q17077228",
-   "label": "Rachel K",
+   "qid": "Q126811307",
+   "label": "Atelier Rebul",
    "sitelinks": 1
   },
   {
-   "qid": "Q21593047",
-   "label": "Dermstore",
+   "qid": "Q130425958",
+   "label": "SHEGLAM",
    "sitelinks": 1
   },
   {
-   "qid": "Q23671678",
-   "label": "Tarte, Inc.",
+   "qid": "Q85845553",
+   "label": "Bondi Sands",
    "sitelinks": 1
   },
   {
@@ -843,28 +843,18 @@
    "sitelinks": 1
   },
   {
-   "qid": "Q6888376",
-   "label": "Modelinia",
-   "sitelinks": 1
-  },
-  {
-   "qid": "Q6904029",
-   "label": "Montagne Jeunesse",
-   "sitelinks": 1
-  },
-  {
-   "qid": "Q7077217",
-   "label": "odaban",
-   "sitelinks": 1
-  },
-  {
-   "qid": "Q7928246",
-   "label": "Vie at Home",
+   "qid": "Q17077228",
+   "label": "Rachel K",
    "sitelinks": 1
   },
   {
    "qid": "Q22908167",
    "label": "RealSelf",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q23671678",
+   "label": "Tarte, Inc.",
    "sitelinks": 1
   },
   {
@@ -913,43 +903,33 @@
    "sitelinks": 1
   },
   {
-   "qid": "Q109000979",
-   "label": "Revolution Beauty",
+   "qid": "Q4792656",
+   "label": "Armand Dupree",
    "sitelinks": 1
   },
   {
-   "qid": "Q109970024",
-   "label": "Beauty Bakerie",
+   "qid": "Q7917662",
+   "label": "Vbeaute",
    "sitelinks": 1
   },
   {
-   "qid": "Q119862489",
-   "label": "Trixie Cosmetics",
+   "qid": "Q7933168",
+   "label": "Violent Lips",
    "sitelinks": 1
   },
   {
-   "qid": "Q124244482",
-   "label": "Luna Daily",
+   "qid": "Q16835173",
+   "label": "DEX New York",
    "sitelinks": 1
   },
   {
-   "qid": "Q124547645",
-   "label": "Drunk Elephant",
+   "qid": "Q16864872",
+   "label": "Ebony Fashion Fair",
    "sitelinks": 1
   },
   {
-   "qid": "Q126811307",
-   "label": "Atelier Rebul",
-   "sitelinks": 1
-  },
-  {
-   "qid": "Q130425958",
-   "label": "SHEGLAM",
-   "sitelinks": 1
-  },
-  {
-   "qid": "Q85845553",
-   "label": "Bondi Sands",
+   "qid": "Q21593047",
+   "label": "Dermstore",
    "sitelinks": 1
   },
   {
@@ -985,6 +965,26 @@
   {
    "qid": "Q140471223",
    "label": "Cocosolis",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q6888376",
+   "label": "Modelinia",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q6904029",
+   "label": "Montagne Jeunesse",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q7077217",
+   "label": "odaban",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q7928246",
+   "label": "Vie at Home",
    "sitelinks": 1
   }
  ]

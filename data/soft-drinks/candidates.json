@@ -1,5 +1,5 @@
 {
- "computed_at": "2026-11-08",
+ "computed_at": "2026-11-09",
  "query": "SELECT DISTINCT ?item ?itemLabel ?sitelinks WHERE { { ?item wdt:P31 wd:Q114392939 . } UNION { ?item wdt:P31/wdt:P279* wd:Q147538 . } ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". } } ORDER BY DESC(?sitelinks) LIMIT 1000",
  "candidates": [
   {
@@ -73,13 +73,13 @@
    "sitelinks": 19
   },
   {
-   "qid": "Q172209",
-   "label": "Q172209",
+   "qid": "Q284148",
+   "label": "Burn",
    "sitelinks": 18
   },
   {
-   "qid": "Q284148",
-   "label": "Burn",
+   "qid": "Q172209",
+   "label": "Q172209",
    "sitelinks": 18
   },
   {
@@ -108,6 +108,16 @@
    "sitelinks": 11
   },
   {
+   "qid": "Q1817063",
+   "label": "Lemon & Paeroa",
+   "sitelinks": 9
+  },
+  {
+   "qid": "Q2975184",
+   "label": "Clamato",
+   "sitelinks": 9
+  },
+  {
    "qid": "Q1165857",
    "label": "Vinea",
    "sitelinks": 9
@@ -123,23 +133,13 @@
    "sitelinks": 9
   },
   {
-   "qid": "Q1817063",
-   "label": "Lemon & Paeroa",
-   "sitelinks": 9
-  },
-  {
-   "qid": "Q2975184",
-   "label": "Clamato",
-   "sitelinks": 9
-  },
-  {
    "qid": "Q15267446",
    "label": "A&W Root Beer",
    "sitelinks": 9
   },
   {
-   "qid": "Q47529172",
-   "label": "Duchess",
+   "qid": "Q1022438",
+   "label": "C.C. Lemon",
    "sitelinks": 8
   },
   {
@@ -148,8 +148,8 @@
    "sitelinks": 8
   },
   {
-   "qid": "Q1022438",
-   "label": "C.C. Lemon",
+   "qid": "Q47529172",
+   "label": "Duchess",
    "sitelinks": 8
   },
   {
@@ -178,11 +178,6 @@
    "sitelinks": 6
   },
   {
-   "qid": "Q97225239",
-   "label": "Nocco",
-   "sitelinks": 5
-  },
-  {
    "qid": "Q3327455",
    "label": "Mug Root Beer",
    "sitelinks": 5
@@ -208,6 +203,11 @@
    "sitelinks": 5
   },
   {
+   "qid": "Q97225239",
+   "label": "Nocco",
+   "sitelinks": 5
+  },
+  {
    "qid": "Q30745703",
    "label": "Akpan",
    "sitelinks": 5
@@ -216,11 +216,6 @@
    "qid": "Q55530589",
    "label": "-196\u02daC Strong Zero",
    "sitelinks": 5
-  },
-  {
-   "qid": "Q3959196",
-   "label": "Shark",
-   "sitelinks": 4
   },
   {
    "qid": "Q263424",
@@ -235,6 +230,11 @@
   {
    "qid": "Q2262742",
    "label": "Barr Cola",
+   "sitelinks": 4
+  },
+  {
+   "qid": "Q3959196",
+   "label": "Shark",
    "sitelinks": 4
   },
   {
@@ -313,6 +313,16 @@
    "sitelinks": 3
   },
   {
+   "qid": "Q11264601",
+   "label": "Gabu Gabu!",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q6786204",
+   "label": "Match",
+   "sitelinks": 2
+  },
+  {
    "qid": "Q108101704",
    "label": "Red lemonade",
    "sitelinks": 2
@@ -328,13 +338,13 @@
    "sitelinks": 2
   },
   {
-   "qid": "Q11264601",
-   "label": "Gabu Gabu!",
+   "qid": "Q124048235",
+   "label": "Cisco",
    "sitelinks": 2
   },
   {
-   "qid": "Q6786204",
-   "label": "Match",
+   "qid": "Q136340072",
+   "label": "Bornir Dhuchnir Doi",
    "sitelinks": 2
   },
   {
@@ -383,26 +393,6 @@
    "sitelinks": 2
   },
   {
-   "qid": "Q124048235",
-   "label": "Cisco",
-   "sitelinks": 2
-  },
-  {
-   "qid": "Q136340072",
-   "label": "Bornir Dhuchnir Doi",
-   "sitelinks": 2
-  },
-  {
-   "qid": "Q16920231",
-   "label": "Jupi\u00f1a",
-   "sitelinks": 1
-  },
-  {
-   "qid": "Q48965868",
-   "label": "Eastroc Super Drink",
-   "sitelinks": 1
-  },
-  {
    "qid": "Q4863348",
    "label": "Barrelhead Root Beer",
    "sitelinks": 1
@@ -448,6 +438,51 @@
    "sitelinks": 1
   },
   {
+   "qid": "Q16920231",
+   "label": "Jupi\u00f1a",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q48965868",
+   "label": "Eastroc Super Drink",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q120727385",
+   "label": "Suiza Dairy",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q122929434",
+   "label": "Coca-Cola with Coffee",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q124077458",
+   "label": "Coca-Cola Cherry Vanilla",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q125470253",
+   "label": "Coca-Cola Spiced",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q125755189",
+   "label": "Beefamato",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q126107676",
+   "label": "Sprite Lemon+",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q127668696",
+   "label": "M\u00e1s+",
+   "sitelinks": 1
+  },
+  {
    "qid": "Q106432380",
    "label": "Pabst Blue Ribbon THC-infused seltzer",
    "sitelinks": 1
@@ -485,41 +520,6 @@
   {
    "qid": "Q24910061",
    "label": "Paper Boat",
-   "sitelinks": 1
-  },
-  {
-   "qid": "Q120727385",
-   "label": "Suiza Dairy",
-   "sitelinks": 1
-  },
-  {
-   "qid": "Q122929434",
-   "label": "Coca-Cola with Coffee",
-   "sitelinks": 1
-  },
-  {
-   "qid": "Q124077458",
-   "label": "Coca-Cola Cherry Vanilla",
-   "sitelinks": 1
-  },
-  {
-   "qid": "Q125470253",
-   "label": "Coca-Cola Spiced",
-   "sitelinks": 1
-  },
-  {
-   "qid": "Q125755189",
-   "label": "Beefamato",
-   "sitelinks": 1
-  },
-  {
-   "qid": "Q126107676",
-   "label": "Sprite Lemon+",
-   "sitelinks": 1
-  },
-  {
-   "qid": "Q127668696",
-   "label": "M\u00e1s+",
    "sitelinks": 1
   }
  ]
