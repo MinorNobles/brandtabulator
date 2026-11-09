@@ -270,7 +270,7 @@ COLDEFS = [
     ("Reverted", "wp_reverted_90d", "num", "Of those 90-day edits, how many were reverted. A measure of contestation."),
     ("Statements (referenced)", "wd_statements", "num", "Number of statements on the Wikidata item, and how many carry at least one reference."),
     ("Ballast", "ballast_pct", "num", "Share of Wikidata statements that carry a reference. Sourced, complete Wikidata is what lets the record hold up."),
-    ("Identity links out", "identity_links_out", "num", "Statements on the item that point to the brand's own products, brands, subsidiaries, holdings, founders, origin, motto, awards or executives. What the item says the brand is."),
+    ("Identity links out", "identity_links_out", "num", "How many facts in the brand's Wikidata entry connect it to its own products, brands, companies it owns, founders, home country, slogan, awards or leaders. This is what Wikidata says the brand is."),
     ("Key props", "key_props_present", "num", "Of six properties a brand item should carry: industry, product, parent, subsidiaries, owner-of, Google Knowledge Graph id."),
     ("Editions", "wd_sitelinks", "num", "Language Wikipedias (and sister projects) with a page linked to this item. Sail area."),
     ("Refs", "wp_refs", "num", "Reference tags in the English article."),
