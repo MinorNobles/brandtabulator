@@ -13,6 +13,121 @@
       "qid": "Q174896",
       "label": "Robin Hood Foundation",
       "enwiki": "Robin Hood Foundation"
+    },
+    {
+      "qid": "Q5565603",
+      "label": "GiveDirectly",
+      "enwiki": "GiveDirectly"
+    },
+    {
+      "qid": "Q16241195",
+      "label": "City Harvest",
+      "enwiki": "City Harvest (United States)"
+    },
+    {
+      "qid": "Q17071538",
+      "label": "The New York Community Trust",
+      "enwiki": "The New York Community Trust"
+    },
+    {
+      "qid": "Q7808928",
+      "label": "Tipping Point Community",
+      "enwiki": "Tipping Point Community"
+    },
+    {
+      "qid": "Q5137966",
+      "label": "Coalition for the Homeless",
+      "enwiki": "Coalition for the Homeless"
+    },
+    {
+      "qid": "Q1313036",
+      "label": "Ford Foundation",
+      "enwiki": "Ford Foundation"
+    },
+    {
+      "qid": "Q699385",
+      "label": "CARE",
+      "enwiki": "CARE International"
+    },
+    {
+      "qid": "Q17083435",
+      "label": "New York Foundation",
+      "enwiki": "New York Foundation"
+    },
+    {
+      "qid": "Q188307",
+      "label": "Salvation Army",
+      "enwiki": "Salvation Army"
+    },
+    {
+      "qid": "Q7013100",
+      "label": "New York Cares",
+      "enwiki": "New York Cares"
+    },
+    {
+      "qid": "Q862034",
+      "label": "Rockefeller Foundation",
+      "enwiki": "Rockefeller Foundation"
+    },
+    {
+      "qid": "Q7766326",
+      "label": "Starr Foundation",
+      "enwiki": "Starr Foundation"
+    },
+    {
+      "qid": "Q4691036",
+      "label": "Against Malaria Foundation",
+      "enwiki": "Against Malaria Foundation"
+    },
+    {
+      "qid": "Q2006911",
+      "label": "Feeding America",
+      "enwiki": "Feeding America"
+    },
+    {
+      "qid": "Q7011071",
+      "label": "New Profit",
+      "enwiki": "New Profit Inc."
+    },
+    {
+      "qid": "Q5465293",
+      "label": "Food Bank For New York City",
+      "enwiki": "Food Bank For New York City"
+    },
+    {
+      "qid": "Q1192147",
+      "label": "Habitat for Humanity",
+      "enwiki": "Habitat for Humanity"
+    },
+    {
+      "qid": "Q107675906",
+      "label": "Mother Cabrini Health Foundation",
+      "enwiki": "Mother Cabrini Health Foundation"
+    },
+    {
+      "qid": "Q3050859",
+      "label": "United Way",
+      "enwiki": "United Way"
+    },
+    {
+      "qid": "Q136324442",
+      "label": "Blue Meridian Partners",
+      "enwiki": "Blue Meridian Partners"
+    },
+    {
+      "qid": "Q5060005",
+      "label": "Center on Budget and Policy Priorities",
+      "enwiki": "Center on Budget and Policy Priorities"
+    },
+    {
+      "qid": "Q5728819",
+      "label": "Henry Street Settlement",
+      "enwiki": "Henry Street Settlement"
+    },
+    {
+      "qid": "Q54828837",
+      "label": "National Low Income Housing Coalition",
+      "enwiki": "National Low Income Housing Coalition"
     }
   ],
   "manual_additions": [],
@@ -28,12 +143,17 @@
   ],
   "recipients": {
     "robinhood": {
-      "recipient": "Robin Hood Foundation",
+      "recipient": "Greg Taylor, Robin Hood",
       "highlight": {
         "members": [
           "Q174896"
         ],
         "reason": "The organization this page was prepared for."
+      },
+      "competitive_set": {
+        "name": "Peers, per AI",
+        "summary": "data/nyc-charities/competitors/robinhood/latest.json",
+        "unshown_note": "Also named by AI but not shown, because they have no English Wikipedia article of their own: Altman Foundation, Oxfam America, The Pinkerton Foundation, Tiger Foundation and The HOPE Program."
       }
     }
   }
