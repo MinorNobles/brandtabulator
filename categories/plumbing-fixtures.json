@@ -1,26 +1,69 @@
 {
   "slug": "plumbing-fixtures",
-  "name": "Plumbing fixture makers",
+  "name": "Kitchen and bath fixtures",
   "draft": true,
-  "path": "plumbing-fixtures",
+  "path": "kitchen-bath",
   "product_noun": "plumbing fixture",
   "products_noun": "plumbing fixtures",
-  "note": "DRAFT rule proposed by Claude on 8 Nov 2026 for Michael Quinn's approval. Not published.",
-  "discovery_sparql": "SELECT DISTINCT ?item ?itemLabel ?sitelinks WHERE { { ?item wdt:P1056 wd:Q2024731 . } UNION { ?item wdt:P452 wd:Q2024731 . } UNION { ?item wdt:P1056/wdt:P279 wd:Q2024731 . } ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". } } ORDER BY DESC(?sitelinks) LIMIT 1000",
-  "members_from_discovery": true,
-  "members": [],
-  "manual_additions": [
+  "note": "Brand list approved by Michael Quinn (same rule as Coach, 9 Nov 2026): Kohler plus the brands at least 2 of 3 AI assistants named as Kohler competitors (run of 9 Nov 2026) that have their own English Wikipedia article. No neutral category page.",
+  "members_from_discovery": false,
+  "members": [
     {
       "qid": "Q6426036",
       "label": "Kohler",
-      "enwiki": "Kohler Co.",
-      "reason": "Wikidata lists Kohler's industry as industrial manufacturing, with no products"
+      "enwiki": "Kohler Co."
+    },
+    {
+      "qid": "Q6890215",
+      "label": "Moen",
+      "enwiki": "Moen Incorporated"
+    },
+    {
+      "qid": "Q741499",
+      "label": "Hansgrohe",
+      "enwiki": "Hansgrohe"
+    },
+    {
+      "qid": "Q316477",
+      "label": "Grohe",
+      "enwiki": "Grohe"
+    },
+    {
+      "qid": "Q4745165",
+      "label": "American Standard",
+      "enwiki": "American Standard Brands"
+    },
+    {
+      "qid": "Q104840769",
+      "label": "Delta Faucet",
+      "enwiki": "Delta Faucet Company"
+    },
+    {
+      "qid": "Q1751566",
+      "label": "Toto",
+      "enwiki": "Toto Ltd."
+    },
+    {
+      "qid": "Q7179796",
+      "label": "Pfister",
+      "enwiki": "Pfister (firm)"
+    },
+    {
+      "qid": "Q1266808",
+      "label": "Duravit",
+      "enwiki": "Duravit"
+    },
+    {
+      "qid": "Q705042",
+      "label": "Villeroy & Boch",
+      "enwiki": "Villeroy & Boch"
     }
   ],
-  "inclusion_rule": "Only brands that have customers, business or consumer, are included. Companies that Wikidata records as dissolved have no current customers and are left out.",
+  "manual_additions": [],
+  "inclusion_rule": "This page lists Kohler and the brands that at least two of three AI assistants named as Kohler's competitors, if the brand has its own English Wikipedia article. Companies that Wikidata records as dissolved are left out.",
   "exclude_dissolved": true,
   "exclude": {},
-  "full_category_description": "every Wikidata item whose products are plumbing fixtures, and that has an English Wikipedia article",
+  "full_category_description": "Kohler and the brands AI names as its competitors",
   "intro_title": "BrandTabulator",
   "intro": [
     "When customers ask AI about a {product} brand or the category, it can lean heavily on Wikipedia and Wikidata. BrandTabulator measures how fully and recently each brand is described on those sites, and how often it is read by people and machines. BrandTabulator refreshes every week, so bookmark this tab.",
@@ -35,7 +78,13 @@
           "Q6426036"
         ],
         "reason": "The brand this page was prepared for."
+      },
+      "competitive_set": {
+        "name": "Competitors, per AI",
+        "summary": "data/plumbing-fixtures/competitors/kohler/latest.json",
+        "unshown_note": "Also named by AI but not shown, because they have no English Wikipedia article of their own: Brizo, Rohl, House of Rohl, Kraus, Kallista, Newport Brass, Waterworks, Waterstone and Victoria + Albert."
       }
     }
-  }
+  },
+  "recipient_only": true
 }
