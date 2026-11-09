@@ -1,22 +1,32 @@
 {
- "search": [
-  "Michael Kors",
-  "Marc Jacobs",
-  "Coccinelle",
-  "Cuyana"
- ],
- "items": [
-  "Q6375797",
-  "Q753521",
-  "Q19572998",
-  "Q132111641",
-  "Q138755005",
-  "Q1869471",
-  "Q16933219",
-  "Q64026213"
- ],
+ "search": [],
+ "items": [],
  "sparql": {},
  "urls": {
-  "wp": "https://en.wikipedia.org/w/api.php?action=query&redirects=1&prop=pageprops&ppprop=wikibase_item&format=json&titles=Michael%20Kors%20%28brand%29%7CMichael%20Kors%20%28company%29%7CMarc%20Jacobs%20%28brand%29%7CMarc%20Jacobs%20%28company%29%7CCuyana%7CCoccinelle%20%28company%29%7CCoccinelle%20%28brand%29%7CDeMellier%7CKate%20Spade%20New%20York%7CRebecca%20Minkoff%7CStrathberry%7CPol%C3%A8ne%7CMadewell%7CFossil%20Group"
+  "titles": "https://en.wikipedia.org/w/api.php?action=query&redirects=1&prop=pageprops&ppprop=wikibase_item&format=json&titles=L%27Or%C3%A9al%20Paris%7CMaybelline%7CGarnier%20%28brand%29%7CGarnier%7CLanc%C3%B4me%7CCeraVe%7CLa%20Roche-Posay%7CKiehl%27s%7CNYX%20Cosmetics%7CNYX%20Professional%20Makeup%7CK%C3%A9rastase%7CVichy%20Laboratoires%7CYves%20Saint%20Laurent%20Beaut%C3%A9%7CUrban%20Decay%7CIT%20Cosmetics%7CRedken%7CEssie%7CSkinCeuticals%7CL%27Or%C3%A9al%7CMatrix%20Essentials%7CMixa%7CAesop%20%28brand%29%7CYouth%20to%20the%20People%7CDermablend",
+  "pv:L'Oréal Paris": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/L%27Or%C3%A9al_Paris/monthly/2026100100/2026103100",
+  "pv:Maybelline": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Maybelline/monthly/2026100100/2026103100",
+  "pv:Garnier (brand)": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Garnier_%28brand%29/monthly/2026100100/2026103100",
+  "pv:Garnier": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Garnier/monthly/2026100100/2026103100",
+  "pv:Lancôme": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Lanc%C3%B4me/monthly/2026100100/2026103100",
+  "pv:CeraVe": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/CeraVe/monthly/2026100100/2026103100",
+  "pv:La Roche-Posay": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/La_Roche-Posay/monthly/2026100100/2026103100",
+  "pv:Kiehl's": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Kiehl%27s/monthly/2026100100/2026103100",
+  "pv:NYX Cosmetics": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/NYX_Cosmetics/monthly/2026100100/2026103100",
+  "pv:NYX Professional Makeup": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/NYX_Professional_Makeup/monthly/2026100100/2026103100",
+  "pv:Kérastase": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/K%C3%A9rastase/monthly/2026100100/2026103100",
+  "pv:Vichy Laboratoires": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Vichy_Laboratoires/monthly/2026100100/2026103100",
+  "pv:Yves Saint Laurent Beauté": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Yves_Saint_Laurent_Beaut%C3%A9/monthly/2026100100/2026103100",
+  "pv:Urban Decay": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Urban_Decay/monthly/2026100100/2026103100",
+  "pv:IT Cosmetics": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/IT_Cosmetics/monthly/2026100100/2026103100",
+  "pv:Redken": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Redken/monthly/2026100100/2026103100",
+  "pv:Essie": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Essie/monthly/2026100100/2026103100",
+  "pv:SkinCeuticals": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/SkinCeuticals/monthly/2026100100/2026103100",
+  "pv:L'Oréal": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/L%27Or%C3%A9al/monthly/2026100100/2026103100",
+  "pv:Matrix Essentials": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Matrix_Essentials/monthly/2026100100/2026103100",
+  "pv:Mixa": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Mixa/monthly/2026100100/2026103100",
+  "pv:Aesop (brand)": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Aesop_%28brand%29/monthly/2026100100/2026103100",
+  "pv:Youth to the People": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Youth_to_the_People/monthly/2026100100/2026103100",
+  "pv:Dermablend": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Dermablend/monthly/2026100100/2026103100"
  }
 }
