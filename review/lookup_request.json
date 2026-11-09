@@ -1,14 +1,1 @@
-{
- "search": [],
- "items": [],
- "sparql": {},
- "urls": {
-  "City Harvest food rescue New York": "https://en.wikipedia.org/w/api.php?action=query&list=search&srlimit=3&format=json&srsearch=City%20Harvest%20food%20rescue%20New%20York",
-  "Food Bank For New York City": "https://en.wikipedia.org/w/api.php?action=query&list=search&srlimit=3&format=json&srsearch=Food%20Bank%20For%20New%20York%20City",
-  "Altman Foundation New York": "https://en.wikipedia.org/w/api.php?action=query&list=search&srlimit=3&format=json&srsearch=Altman%20Foundation%20New%20York",
-  "Pinkerton Foundation": "https://en.wikipedia.org/w/api.php?action=query&list=search&srlimit=3&format=json&srsearch=Pinkerton%20Foundation",
-  "Tiger Foundation Julian Robertson": "https://en.wikipedia.org/w/api.php?action=query&list=search&srlimit=3&format=json&srsearch=Tiger%20Foundation%20Julian%20Robertson",
-  "United Way of New York City": "https://en.wikipedia.org/w/api.php?action=query&list=search&srlimit=3&format=json&srsearch=United%20Way%20of%20New%20York%20City",
-  "t": "https://en.wikipedia.org/w/api.php?action=query&redirects=1&prop=pageprops&ppprop=wikibase_item|disambiguation&format=json&titles=City%20Harvest%20%28New%20York%29%7CCity%20Harvest%20%28organization%29%7CCity%20Harvest%20%28charity%29%7CFood%20Bank%20For%20New%20York%20City%7CFood%20Bank%20of%20New%20York%20City%7CUnited%20Way%20of%20New%20York%20City%7CThe%20Pinkerton%20Foundation%7CThe%20Tiger%20Foundation%7CThe%20Altman%20Foundation%7CHOPE%20Program"
- }
-}
+{"search": [], "items": [], "sparql": {}, "urls": {"t": "https://en.wikipedia.org/w/api.php?action=query&prop=pageprops&ppprop=wikibase_item&format=json&titles=City%20Harvest%20%28United%20States%29"}}
