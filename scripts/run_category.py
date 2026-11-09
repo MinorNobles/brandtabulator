@@ -91,7 +91,7 @@ def issue_box(cat, rows):
         return v[n // 2] if n % 2 else (v[n // 2 - 1] + v[n // 2]) / 2
     body = "".join(f"<tr><td>{H.escape(n)}</td>{cell(tgt.get(a), tgt.get(b), lab)}{cell(avg(a), avg(b), lab)}</tr>" for n, a, b, lab in M)
     d = dt.date.fromisoformat(rows_date(rows)) if rows_date(rows) else dt.date.today()
-    s1, e1, s0, e0 = weeks(d)
+    s1, e1, s0, e0 = weeks(d)   # uses the week end saved with the data
     span = lambda a, b: (f"{a.day}–{b.day} {b:%B}" if a.month == b.month else f"{a.day} {a:%B} – {b.day} {b:%B}")
     return (f"<p style='margin:0 0 8px'>{H.escape(tgt['label'])} against its {len(comp)} competitors, per AI. This week is {span(s1, e1)}.</p>"
             f"<div class='wrap'><table class='issue' style='min-width:0;width:100%'><thead><tr><th></th><th>{H.escape(tgt['label'])}</th><th>Typical competitor</th></tr></thead><tbody>{body}</tbody></table></div>"
@@ -140,9 +140,23 @@ def pageviews(title, agent, start, end):
     if not r.ok: return None
     return sum(i["views"] for i in r.json().get("items", []))
 
+WEEK = {"end": None}
+
+def latest_published_day(today):
+    """The latest day for which Wikimedia has published daily reader figures (checked on English Wikipedia's Main Page)."""
+    start = today - dt.timedelta(days=10)
+    url = f"https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/all-agents/Main_Page/daily/{start:%Y%m%d}00/{today:%Y%m%d}00"
+    try:
+        r = S.get(url, timeout=60); time.sleep(PACE)
+        days = [i["timestamp"][:8] for i in r.json().get("items", [])]
+        if days: return dt.datetime.strptime(max(days), "%Y%m%d").date()
+    except Exception:
+        pass
+    return today - dt.timedelta(days=3)
+
 def weeks(today):
-    """This week = the 7 days ending two days ago (Wikimedia's daily figures are then complete); last week = the 7 before."""
-    end = today - dt.timedelta(days=2)
+    """This week = the 7 days ending on the latest day Wikimedia has published; last week = the 7 before."""
+    end = WEEK["end"] or (today - dt.timedelta(days=3))
     return end - dt.timedelta(days=6), end, end - dt.timedelta(days=13), end - dt.timedelta(days=7)
 
 def in_week(ts, a, b):
@@ -612,7 +626,10 @@ def main():
 
     if a.render_only:
         meta = json.load(open(os.path.join(outdir, "latest.json"))); rows = meta["brands"]; date = meta["computed_at"]; pv_month = meta["pageview_month"]
+        if meta.get("week_end"): WEEK["end"] = dt.date.fromisoformat(meta["week_end"])
         render_all(cat, rows, date, pv_month, pagedir, a.slug); print("rendered from latest.json"); return
+    WEEK["end"] = latest_published_day(today)
+    print("Week ends", WEEK["end"])
 
     if not a.skip_discovery and cat.get("discovery_sparql"):
         print("discovery query…", flush=True)
@@ -681,7 +698,7 @@ def main():
         w = csv.DictWriter(f, fieldnames=COLS, extrasaction="ignore"); w.writeheader(); w.writerows(rows)
     meta = {"category": cat["name"], "slug": a.slug, "computed_at": date, "edit_window_days": 90, "pageview_month": pv_month, "pageview_range": [pv_start, pv_end],
             "median_edits_90d": statistics.median([r.get("wp_edits_90d", 0) or 0 for r in rows]), "median_ballast_pct": statistics.median([r.get("ballast_pct", 0) for r in rows]),
-            "user_agent": UA, "previous_issue": prev_file[:10] if prev_file else None, "inclusion_rule": cat.get("inclusion_rule"), "excluded": excluded, "brands": rows}
+            "user_agent": UA, "week_end": WEEK["end"].isoformat() if WEEK["end"] else None, "previous_issue": prev_file[:10] if prev_file else None, "inclusion_rule": cat.get("inclusion_rule"), "excluded": excluded, "brands": rows}
     json.dump(meta, open(os.path.join(outdir, f"{date}.json"), "w"), indent=1)
     json.dump(meta, open(os.path.join(outdir, "latest.json"), "w"), indent=1)
     render_all(cat, rows, date, pv_month, pagedir, a.slug)
