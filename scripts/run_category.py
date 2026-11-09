@@ -33,9 +33,12 @@ def cat_rules_html(c):
     if isinstance(ex, list): ex = {q: "" for q in ex}
     adds = "".join(f"<li><b>{H.escape(a.get('label', a['qid']))}:</b> {H.escape(a.get('reason',''))}</li>" for a in c.get("manual_additions", [])) or "<li>None.</li>"
     exs = "".join(f"<li>{H.escape(why)}</li>" for q, why in ex.items()) or "<li>None.</li>"
-    return f"""<p>{H.escape(c.get('inclusion_rule',''))}</p>
-<p><b>Added by hand</b> (the query misses them):</p><ul>{adds}</ul>
-<p><b>Left out under the rule</b>, besides companies that Wikidata records as dissolved:</p><ul>{exs}</ul>"""
+    out = f"<p>{H.escape(c.get('inclusion_rule',''))}</p>"
+    if c.get("manual_additions") or not c.get("recipient_only"):
+        out += f"\n<p><b>Added by hand</b> (the query misses them):</p><ul>{adds}</ul>"
+    if ex or not c.get("recipient_only"):
+        out += f"\n<p><b>Left out under the rule</b>, besides companies that Wikidata records as dissolved:</p><ul>{exs}</ul>"
+    return out
 
 def load_ai_set(cat):
     """If the category's competitive set comes from AI answers, read the published summary and fill in its members."""
@@ -337,7 +340,11 @@ def html_page(cat, rows, date, pv_month):
     hlc = cat.get("highlight") or {}
     hl = ", ".join(H.escape(r["label"]) for r in rows if r.get("highlight"))
     hl_note = (f' <span>Highlighted: {hl}. {H.escape(hlc.get("reason",""))}</span>' if hl else "") + (f' <span>{H.escape(", ".join(hlc["missing"]))}: {H.escape(hlc.get("missing_note",""))}</span>' if hlc.get("missing") else "")
-    if cs.get("members"):
+    if cat.get("recipient_only") and cs.get("_summary"):
+        seg_html = ""
+        un = f' {H.escape(cs["unshown_note"])}' if cs.get("unshown_note") else ""
+        set_note = ai_set_note(cat).replace('data-for="set" hidden', 'data-for="all"', 1).replace("</span>", un + "</span>", 1) + hl_note
+    elif cs.get("members"):
         seg_html = f'<div class="seg" role="group" aria-label="Which brands to show"><button type="button" class="on" data-view="all">Full category <span class="n">{n}</span></button><button type="button" data-view="set">{H.escape(cs.get("name","Competitive set"))} <span class="n">{n_set}</span></button></div>' + (f'<div class="sub">The competitive view shows the set plus the highlighted brands, so you can compare them side by side.</div>' if any(r.get("highlight") for r in rows) else "")
         set_note = ai_set_note(cat) if cs.get("_summary") else f'<span data-for="set" hidden><b>{H.escape(cs.get("name","Competitive set"))}:</b> {H.escape(cs.get("basis",""))} Chosen by {H.escape(cs.get("chosen_by","the author"))}; the list is in the <a href="https://github.com/MinorNobles/brandtabulator/blob/main/categories/{cat["slug"]}.json">category file</a>.</span>'
         set_note += hl_note
@@ -391,7 +398,7 @@ table.issue td,table.issue th{{padding:6px 10px}}table.issue td{{font-size:14px}
 <div style="display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px"><h2>The regatta</h2><span class="sub">Default order: longest unupdated first.</span></div>
 <p style="margin:0;font-size:15px;line-height:1.55"><b>Why &ldquo;the regatta&rdquo;?</b> Even if you have never been near a boat, you know the sails power it and a keel or ballast keeps it stable. The difference between Wikipedia and Wikidata is not obvious, hence the metaphor. Wikipedia is the sail area (often cited in AI responses): what is written about the brand, with each statement backed by a published source. Wikidata is the ballast: the weight of facts about the brand, normally just under the surface of AI responses and one of the sources behind Google&rsquo;s Knowledge Graph. Ballast helps AI recognize the brand as a real thing and describe it accurately, while sails move it forward into view. The boat is your brand. The regatta is a competition for visibility in AI responses about your category.</p>
 {seg_html}
-<div class="sub" id="viewnote"><span data-for="all"><b>Full category:</b> {H.escape(cat.get("full_category_description",""))}. {H.escape(cat.get("inclusion_rule",""))}</span>{set_note}</div>
+<div class="sub" id="viewnote">{"" if cat.get("recipient_only") else f'<span data-for="all"><b>Full category:</b> {H.escape(cat.get("full_category_description",""))}. {H.escape(cat.get("inclusion_rule",""))}</span>'}{set_note}</div>
 <div class="sub">Click or tap any column heading to sort by it. Click or tap the <b>i</b> next to a heading to see what it measures. Questions: <a href="mailto:Michael@MichaelQuinn.ai">Michael@MichaelQuinn.ai</a></div>
 <div class="wrap"><table id="regatta"><thead><tr>{ths}</tr></thead><tbody>{trs}</tbody></table></div>
 <div class="sub">Changes are counted over the last 90 days. Readers are counted for {pv_month}, on English Wikipedia.</div>
@@ -457,7 +464,7 @@ def load_categories():
     for fn in sorted(os.listdir(os.path.join(ROOT, "categories"))):
         if not fn.endswith(".json"): continue
         c = json.load(open(os.path.join(ROOT, "categories", fn)))
-        if c.get("draft"): continue          # drafts gather data but are not published or listed
+        if c.get("draft") or c.get("recipient_only"): continue          # drafts gather data but are not published or listed
         lp = os.path.join(ROOT, "data", c["slug"], "latest.json")
         c["_latest"] = json.load(open(lp)) if os.path.exists(lp) else None
         cats.append(c)
@@ -589,8 +596,11 @@ def verify_page(html, view, rows):
         missing = pub - in_table
         if missing: problems.append(f"set brands missing from the table: {sorted(missing)}")
         if {r["qid"] for r in rows if r.get("in_set")} != pub & in_table: problems.append("set members on the page differ from the results file")
-        m = re.search(r'data-view="set">[^<]*<span class="n">(\d+)</span>', html)
-        if not m or int(m.group(1)) != len(pub & in_table): problems.append("the set count on the button differs from the results file")
+        if view.get("recipient_only"):
+            if {r["qid"] for r in rows} - pub - {r["qid"] for r in rows if r.get("highlight")}: problems.append("the table holds brands that are neither in the set nor highlighted")
+        else:
+            m = re.search(r'data-view="set">[^<]*<span class="n">(\d+)</span>', html)
+            if not m or int(m.group(1)) != len(pub & in_table): problems.append("the set count on the button differs from the results file")
     if problems:
         raise SystemExit("NOT PUBLISHED (" + (view.get("_recipient") or "category page") + "): " + "; ".join(problems))
 
@@ -598,6 +608,7 @@ def render_all(cat, rows, date, pv_month, pagedir, slug):
     if cat.get("draft"):
         print("draft category: data saved, no pages published"); build_site(); return
     for key, view in views(cat):
+        if key is None and cat.get("recipient_only"): continue   # the brand list is built from one recipient's AI set, so there is no neutral page
         vr = flag_rows(rows, view)
         html = html_page(view, vr, date, pv_month)
         verify_page(html, view, vr)

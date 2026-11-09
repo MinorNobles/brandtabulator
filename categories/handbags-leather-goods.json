@@ -5,22 +5,85 @@
   "path": "handbags",
   "product_noun": "handbag",
   "products_noun": "handbags",
-  "note": "DRAFT rule proposed by Claude on 8 Nov 2026 for Michael Quinn's approval. Not published.",
-  "discovery_sparql": "SELECT DISTINCT ?item ?itemLabel ?sitelinks WHERE { { ?item wdt:P1056 wd:Q467505 . } UNION { ?item wdt:P1056 wd:Q96141153 . } UNION { ?item wdt:P452 wd:Q96141153 . } ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". } } ORDER BY DESC(?sitelinks) LIMIT 1000",
-  "members_from_discovery": true,
-  "members": [],
-  "manual_additions": [
+  "note": "Brand list approved by Michael Quinn on 9 Nov 2026: Coach plus the brands at least 2 of 3 AI assistants named as Coach competitors (run of 9 Nov 2026) that have their own English Wikipedia article. No neutral category page.",
+  "members_from_discovery": false,
+  "members": [
     {
       "qid": "Q727697",
       "label": "Coach",
-      "enwiki": "Coach New York",
-      "reason": "Wikidata lists Coach's product as clothing, not handbags or leather goods"
+      "enwiki": "Coach New York"
+    },
+    {
+      "qid": "Q19988222",
+      "label": "Tory Burch",
+      "enwiki": "Tory Burch LLC"
+    },
+    {
+      "qid": "Q6375797",
+      "label": "Kate Spade New York",
+      "enwiki": "Kate Spade New York"
+    },
+    {
+      "qid": "Q1869471",
+      "label": "Longchamp",
+      "enwiki": "Longchamp (company)"
+    },
+    {
+      "qid": "Q5297166",
+      "label": "Dooney & Bourke",
+      "enwiki": "Dooney & Bourke"
+    },
+    {
+      "qid": "Q122055705",
+      "label": "Polène",
+      "enwiki": "Polène"
+    },
+    {
+      "qid": "Q16933219",
+      "label": "Strathberry",
+      "enwiki": "Strathberry"
+    },
+    {
+      "qid": "Q356212",
+      "label": "Fossil",
+      "enwiki": "Fossil Group"
+    },
+    {
+      "qid": "Q178516",
+      "label": "Gucci",
+      "enwiki": "Gucci"
+    },
+    {
+      "qid": "Q193136",
+      "label": "Prada",
+      "enwiki": "Prada"
+    },
+    {
+      "qid": "Q3073195",
+      "label": "Furla",
+      "enwiki": "Furla"
+    },
+    {
+      "qid": "Q50428076",
+      "label": "Rebecca Minkoff",
+      "enwiki": "Rebecca Minkoff (company)"
+    },
+    {
+      "qid": "Q2470307",
+      "label": "Guess",
+      "enwiki": "Guess (company)"
+    },
+    {
+      "qid": "Q191485",
+      "label": "Louis Vuitton",
+      "enwiki": "Louis Vuitton"
     }
   ],
-  "inclusion_rule": "Only brands that have customers, business or consumer, are included. Companies that Wikidata records as dissolved have no current customers and are left out.",
+  "manual_additions": [],
+  "inclusion_rule": "This page lists Coach and the brands that at least two of three AI assistants named as Coach's competitors, if the brand has its own English Wikipedia article. Companies that Wikidata records as dissolved are left out.",
   "exclude_dissolved": true,
   "exclude": {},
-  "full_category_description": "every Wikidata item whose products include handbags or leather goods, or whose industry is leather goods, and that has an English Wikipedia article",
+  "full_category_description": "Coach and the brands AI names as its competitors",
   "intro_title": "BrandTabulator",
   "intro": [
     "When customers ask AI about a {product} brand or the category, it can lean heavily on Wikipedia and Wikidata. BrandTabulator measures how fully and recently each brand is described on those sites, and how often it is read by people and machines. BrandTabulator refreshes every week, so bookmark this tab.",
@@ -35,7 +98,13 @@
           "Q727697"
         ],
         "reason": "The brand this page was prepared for."
+      },
+      "competitive_set": {
+        "name": "Competitors, per AI",
+        "summary": "data/handbags-leather-goods/competitors/coach/latest.json",
+        "unshown_note": "Some other brands that AI named are not shown: they have no English Wikipedia article of their own."
       }
     }
-  }
+  },
+  "recipient_only": true
 }
