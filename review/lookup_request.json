@@ -3,20 +3,7 @@
  "items": [],
  "sparql": {},
  "urls": {
-  "Citizen_Watch|user": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Citizen_Watch/daily/2026101800/2026110700",
-  "Citizen_Watch|spider": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/spider/Citizen_Watch/daily/2026101800/2026110700",
-  "Citizen_Watch|automated": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/automated/Citizen_Watch/daily/2026101800/2026110700",
-  "Seiko|user": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Seiko/daily/2026101800/2026110700",
-  "Seiko|spider": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/spider/Seiko/daily/2026101800/2026110700",
-  "Seiko|automated": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/automated/Seiko/daily/2026101800/2026110700",
-  "Casio|user": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Casio/daily/2026101800/2026110700",
-  "Casio|spider": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/spider/Casio/daily/2026101800/2026110700",
-  "Casio|automated": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/automated/Casio/daily/2026101800/2026110700",
-  "Bulova|user": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Bulova/daily/2026101800/2026110700",
-  "Bulova|spider": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/spider/Bulova/daily/2026101800/2026110700",
-  "Bulova|automated": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/automated/Bulova/daily/2026101800/2026110700",
-  "Timex|user": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Timex/daily/2026101800/2026110700",
-  "Timex|spider": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/spider/Timex/daily/2026101800/2026110700",
-  "Timex|automated": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/automated/Timex/daily/2026101800/2026110700"
+  "citizen_all": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/all-agents/Citizen_Watch/daily/2026102500/2026110800",
+  "seiko_all": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/all-agents/Seiko/daily/2026102500/2026110800"
  }
 }
