@@ -3,53 +3,362 @@
  "items": {},
  "sparql": {},
  "urls": {
-  "wp": {
+  "Turing AI developer hiring company": {
+   "batchcomplete": "",
+   "continue": {
+    "sroffset": 3,
+    "continue": "-||"
+   },
+   "query": {
+    "searchinfo": {
+     "totalhits": 47
+    },
+    "search": [
+     {
+      "ns": 0,
+      "title": "SpaceXAI",
+      "pageid": 74330685,
+      "size": 68060,
+      "wordcount": 5411,
+      "snippet": "generation tools. On March 28, 2025, Musk announced that x<span class=\"searchmatch\">AI</span> acquired sister <span class=\"searchmatch\">company</span> X Corp., the <span class=\"searchmatch\">developer</span> of social media platform X (formerly Twitter), which",
+      "timestamp": "2026-11-09T17:54:22Z"
+     },
+     {
+      "ns": 0,
+      "title": "OpenAI",
+      "pageid": 48795986,
+      "size": 226615,
+      "wordcount": 18739,
+      "snippet": "CEO Vijaye Raji as Open<span class=\"searchmatch\">AI&#039;s</span> chief technology officer of applications. The <span class=\"searchmatch\">company</span> also announced development of an <span class=\"searchmatch\">AI</span>-driven <span class=\"searchmatch\">hiring</span> service designed to rival",
+      "timestamp": "2026-11-08T10:14:23Z"
+     },
+     {
+      "ns": 0,
+      "title": "AI build-out financing",
+      "pageid": 84046820,
+      "size": 34288,
+      "wordcount": 3584,
+      "snippet": "&quot;frontier labs,&quot; a term used for <span class=\"searchmatch\">AI</span> <span class=\"searchmatch\">developers</span> building the most advanced large language models, principally Open<span class=\"searchmatch\">AI</span> and Anthropic. Because hyperscalers",
+      "timestamp": "2026-11-05T02:45:19Z"
+     }
+    ]
+   }
+  },
+  "Braintrust freelance network": {
+   "batchcomplete": "",
+   "query": {
+    "searchinfo": {
+     "totalhits": 1
+    },
+    "search": [
+     {
+      "ns": 0,
+      "title": "Walt Disney Animation Studios",
+      "pageid": 1303939,
+      "size": 222723,
+      "wordcount": 20634,
+      "snippet": "known as the Disney Story Trust. It was somewhat similar to the Pixar <span class=\"searchmatch\">Braintrust</span>, but its meetings were reportedly &quot;more polite&quot; than those of its Pixar",
+      "timestamp": "2026-11-01T19:26:48Z"
+     }
+    ]
+   }
+  },
+  "Gun.io freelance": {
+   "batchcomplete": "",
+   "continue": {
+    "sroffset": 3,
+    "continue": "-||"
+   },
+   "query": {
+    "searchinfo": {
+     "totalhits": 71,
+     "suggestion": "gubbio freelance",
+     "suggestionsnippet": "<em>gubbio</em> freelance"
+    },
+    "search": [
+     {
+      "ns": 0,
+      "title": "Iyo Sky",
+      "pageid": 34496660,
+      "size": 264653,
+      "wordcount": 21599,
+      "snippet": "where she is the incumbent Queen of the Ring. She competed as <span class=\"searchmatch\">Io</span> Shirai (紫雷 イオ, Shirai <span class=\"searchmatch\">Io</span>) (/ˈiːoʊ/) in WWE&#039;s developmental brand NXT, where she was a",
+      "timestamp": "2026-11-07T20:25:55Z"
+     },
+     {
+      "ns": 0,
+      "title": "Hitman 3",
+      "pageid": 64249568,
+      "size": 124400,
+      "wordcount": 11540,
+      "snippet": "The <span class=\"searchmatch\">Freelancer</span> mode was originally set to be released in 2022, though its release was pushed to January 2023. Alongside <span class=\"searchmatch\">Freelancer&#039;s</span> release, <span class=\"searchmatch\">IO</span> Interactive",
+      "timestamp": "2026-11-08T11:13:33Z"
+     },
+     {
+      "ns": 0,
+      "title": "Hitman: Codename 47",
+      "pageid": 970264,
+      "size": 25365,
+      "wordcount": 2558,
+      "snippet": "Hitman: Codename 47 is a stealth video game developed by <span class=\"searchmatch\">IO</span> Interactive and published by Eidos Interactive exclusively for Microsoft Windows in November",
+      "timestamp": "2026-11-06T12:02:14Z"
+     }
+    ]
+   }
+  },
+  "Lemon.io developers": {
+   "batchcomplete": "",
+   "continue": {
+    "sroffset": 3,
+    "continue": "-||"
+   },
+   "query": {
+    "searchinfo": {
+     "totalhits": 63,
+     "suggestion": "lemonia developer",
+     "suggestionsnippet": "<em>lemonia developer</em>"
+    },
+    "search": [
+     {
+      "ns": 0,
+      "title": "Internet of things",
+      "pageid": 12057519,
+      "size": 228951,
+      "wordcount": 22264,
+      "snippet": "Internet of things (<span class=\"searchmatch\">Io</span>T) describes physical objects that are embedded with sensors, processing ability, software, and other technologies that connect and",
+      "timestamp": "2026-11-06T16:33:53Z"
+     },
+     {
+      "ns": 0,
+      "title": "Qt (software)",
+      "pageid": 25204,
+      "size": 82081,
+      "wordcount": 5841,
+      "snippet": "and the Qt Project under open-source governance, involving individual <span class=\"searchmatch\">developers</span> and organizations working to advance Qt. Qt is available under both commercial",
+      "timestamp": "2026-11-09T12:51:03Z"
+     },
+     {
+      "ns": 0,
+      "title": "Zyrinx",
+      "pageid": 11085918,
+      "size": 2362,
+      "wordcount": 184,
+      "snippet": "multiplayer focused games. MobyGames – Zyrinx Sega 32x demo tape by Zyrinx &amp; <span class=\"searchmatch\">Lemon</span> (game company) Jesper Kyd Online &quot;Hardcore Gaming 101: Zyrinx&quot;. Hardcore",
+      "timestamp": "2026-02-07T21:54:42Z"
+     }
+    ]
+   }
+  },
+  "Revelo developers Latin America": {
+   "batchcomplete": "",
+   "query": {
+    "searchinfo": {
+     "totalhits": 3,
+     "suggestion": "rebels developer latin america",
+     "suggestionsnippet": "<em>rebels developer</em> latin america"
+    },
+    "search": [
+     {
+      "ns": 0,
+      "title": "Eduardo Costantini",
+      "pageid": 8661569,
+      "size": 15502,
+      "wordcount": 1347,
+      "snippet": "1946) is an Argentine real estate <span class=\"searchmatch\">developer</span> and businessman and the founder and chairman of the Museum of <span class=\"searchmatch\">Latin</span> <span class=\"searchmatch\">American</span> Art of Buenos Aires (MALBA). As",
+      "timestamp": "2026-08-31T03:49:33Z"
+     },
+     {
+      "ns": 0,
+      "title": "Battery energy storage system",
+      "pageid": 49336757,
+      "size": 72931,
+      "wordcount": 5987,
+      "snippet": "Malte (5 June 2025). &quot;Cinco segundos, mil millones en juego: el apagón que <span class=\"searchmatch\">reveló</span> el valor estratégico de la red eléctrica&quot;. El Español. Retrieved 1 June",
+      "timestamp": "2026-10-21T08:32:01Z"
+     },
+     {
+      "ns": 0,
+      "title": "Deaths in May 2021",
+      "pageid": 66193660,
+      "size": 293575,
+      "wordcount": 20722,
+      "snippet": "arrest. María Amalia <span class=\"searchmatch\">Revelo</span>, 65, Costa Rican businesswoman, minister of tourism (2018–2020). Lee Ross, 78, Canadian-born <span class=\"searchmatch\">American</span> psychologist. Waltraut",
+      "timestamp": "2026-11-06T08:45:17Z"
+     }
+    ]
+   }
+  },
+  "Codeable WordPress": {
+   "batchcomplete": "",
+   "continue": {
+    "sroffset": 3,
+    "continue": "-||"
+   },
+   "query": {
+    "searchinfo": {
+     "totalhits": 28023
+    },
+    "search": [
+     {
+      "ns": 0,
+      "title": "WordPress",
+      "pageid": 605856,
+      "size": 90850,
+      "wordcount": 6223,
+      "snippet": "NextGEN Gallery Weblog software <span class=\"searchmatch\">WordPress</span>.com Mullenweg, Matt (May 27, 2003). &quot;<span class=\"searchmatch\">WordPress</span> Now Available&quot;. <span class=\"searchmatch\">wordpress</span>.org. <span class=\"searchmatch\">WordPress</span>. Archived from the original",
+      "timestamp": "2026-11-03T07:14:18Z"
+     },
+     {
+      "ns": 0,
+      "title": "WordPress.com",
+      "pageid": 2895712,
+      "size": 11755,
+      "wordcount": 1038,
+      "snippet": "portal Automattic <span class=\"searchmatch\">WordPress</span> WooCommerce Managed hosting Software as a service Content management system &quot;Writing a Plugin&quot;. <span class=\"searchmatch\">Wordpress</span>.org. Archived from",
+      "timestamp": "2026-09-22T03:25:08Z"
+     },
+     {
+      "ns": 0,
+      "title": "Code word (figure of speech)",
+      "pageid": 1654771,
+      "size": 8843,
+      "wordcount": 1049,
+      "snippet": "A <span class=\"searchmatch\">code</span> <span class=\"searchmatch\">word</span> is a <span class=\"searchmatch\">word</span> or a phrase designed to convey a predetermined meaning to an audience who know the phrase, while remaining inconspicuous to the",
+      "timestamp": "2026-07-11T19:25:21Z"
+     }
+    ]
+   }
+  },
+  "t": {
    "batchcomplete": "",
    "query": {
     "pages": {
-     "57770895": {
-      "pageid": 57770895,
+     "-1": {
       "ns": 0,
-      "title": "Toptal",
+      "title": "Gun.io",
+      "missing": ""
+     },
+     "-2": {
+      "ns": 0,
+      "title": "Lemon.io",
+      "missing": ""
+     },
+     "-3": {
+      "ns": 0,
+      "title": "Turing (company)",
+      "missing": ""
+     },
+     "-4": {
+      "ns": 0,
+      "title": "Turing (recruitment company)",
+      "missing": ""
+     },
+     "-5": {
+      "ns": 0,
+      "title": "Braintrust (company)",
+      "missing": ""
+     },
+     "-6": {
+      "ns": 0,
+      "title": "Revelo",
+      "missing": ""
+     },
+     "-7": {
+      "ns": 0,
+      "title": "Wellfound",
+      "missing": ""
+     },
+     "-8": {
+      "ns": 0,
+      "title": "Arc.dev",
+      "missing": ""
+     },
+     "-9": {
+      "ns": 0,
+      "title": "BairesDev",
+      "missing": ""
+     },
+     "-10": {
+      "ns": 0,
+      "title": "Catalant Technologies",
+      "missing": ""
+     },
+     "-11": {
+      "ns": 0,
+      "title": "Codeable",
+      "missing": ""
+     },
+     "-12": {
+      "ns": 0,
+      "title": "Turing Enterprises",
+      "missing": ""
+     },
+     "52237243": {
+      "pageid": 52237243,
+      "ns": 0,
+      "title": "Andela",
       "pageprops": {
-       "wikibase_item": "Q21462713"
-      },
-      "contentmodel": "wikitext",
-      "pagelanguage": "en",
-      "pagelanguagehtmlcode": "en",
-      "pagelanguagedir": "ltr",
-      "touched": "2026-11-08T02:16:43Z",
-      "lastrevid": 1380873877,
-      "length": 6273
-     }
-    }
-   }
-  },
-  "ex": {
-   "batchcomplete": "",
-   "query": {
-    "pages": {
-     "57770895": {
-      "pageid": 57770895,
+       "wikibase_item": "Q28186691"
+      }
+     },
+     "37477387": {
+      "pageid": 37477387,
       "ns": 0,
-      "title": "Toptal",
-      "extract": "Toptal is a global remote company that provides a freelancing platform, connecting businesses with software engineers, designers, finance experts, product managers, and project managers. The company has no headquarters.\n\n\n== History ==\nTaso Du Val and Breanden Beneschott founded the company in 2010. Du Val was previously an engineer at Fotolog and Slide.com while Beneschott was an undergraduate at  Princeton University. The name stands for \"top talent\", and it was started as a virtual company with no dedicated offices.\nToptal had more than $1 million in revenue when Beneschott graduated from Princeton. The co-founders moved to Budapest, Hungary to access software developers with fewer employment options than in the United States.\n\n\n== Talent search and growth ==\nThe firm developed personality, language, and skills testing to remotely screen engineering candidates, and accepted the top 3% of several thousand monthly applicants.\nThe firm matches business engagements with developers from its  network and brokers the terms of each job. In 2015, it expanded to include freelance design. In 2016, it acquired the freelancer platform, Skillbridge, which offered freelance accountants, statisticians, and consultants in market research, financial modeling, and due diligence. In 2017, the company launched a vertical specializing in software engineers and designers for the automotive industry. It also launched a vertical for blockchain engineers in February 2018.\n\n\n== Funding ==\nToptal accepted a $1.4 million seed round of financing from Andreessen Horowitz and angel investors including Quora founder Adam D'Angelo. The company is said not to have raised additional funds since its seed round because it has been profitable. Toptal was valued at $3.6 billion in 2021.\n\n\n== References ==\n\n\n== External links ==\nOfficial website"
+      "title": "AngelList",
+      "pageprops": {
+       "wikibase_item": "Q4762034"
+      }
+     },
+     "73416675": {
+      "pageid": 73416675,
+      "ns": 0,
+      "title": "Braintrust",
+      "pageprops": {
+       "wikibase_item": "Q141164091"
+      }
+     },
+     "51171340": {
+      "pageid": 51171340,
+      "ns": 0,
+      "title": "Catalant",
+      "pageprops": {
+       "wikibase_item": "Q28401895"
+      }
+     },
+     "31452088": {
+      "pageid": 31452088,
+      "ns": 0,
+      "title": "Fiverr",
+      "pageprops": {
+       "wikibase_item": "Q5410132"
+      }
+     },
+     "27245692": {
+      "pageid": 27245692,
+      "ns": 0,
+      "title": "Freelancer.com",
+      "pageprops": {
+       "wikibase_item": "Q5500950"
+      }
+     },
+     "47695892": {
+      "pageid": 47695892,
+      "ns": 0,
+      "title": "Gigster",
+      "pageprops": {
+       "wikibase_item": "Q21070780"
+      }
+     },
+     "10002787": {
+      "pageid": 10002787,
+      "ns": 0,
+      "title": "Upwork",
+      "pageprops": {
+       "wikibase_item": "Q3344170"
+      }
      }
     }
    }
-  },
-  "pv": {
-   "items": [
-    {
-     "project": "en.wikipedia",
-     "article": "Toptal",
-     "granularity": "monthly",
-     "timestamp": "2026100100",
-     "access": "all-access",
-     "agent": "user",
-     "views": 1276
-    }
-   ]
   }
  }
 }
