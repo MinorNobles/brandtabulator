@@ -1,10 +1,20 @@
 {
- "search": [],
+ "search": [
+  "Moen",
+  "Brizo",
+  "Delta Faucet",
+  "Rohl",
+  "Pfister faucets",
+  "Kraus",
+  "Kallista",
+  "Newport Brass",
+  "Waterworks",
+  "Waterstone",
+  "Victoria + Albert"
+ ],
  "items": [],
  "sparql": {},
  "urls": {
-  "pepsi": "https://en.wikipedia.org/w/api.php?action=query&prop=extracts&explaintext=1&format=json&redirects=1&titles=Pepsi",
-  "drpepper": "https://en.wikipedia.org/w/api.php?action=query&prop=extracts&explaintext=1&format=json&redirects=1&titles=Dr%20Pepper",
-  "sprite": "https://en.wikipedia.org/w/api.php?action=query&prop=extracts&explaintext=1&format=json&redirects=1&titles=Sprite%20%28drink%29"
+  "wp": "https://en.wikipedia.org/w/api.php?action=query&redirects=1&prop=pageprops|info&ppprop=wikibase_item|disambiguation&format=json&titles=Moen%7CMoen%20%28company%29%7CHansgrohe%7CGrohe%7CAmerican%20Standard%20Brands%7CBrizo%7CDelta%20Faucet%20Company%7CDelta%20Faucet%7CRohl%7CHouse%20of%20Rohl%7CToto%20Ltd.%7CPfister%7CPrice%20Pfister%7CPfister%20%28company%29%7CKraus%7CKraus%20%28company%29%7CDuravit%7CKallista%7CKallista%20%28company%29%7CNewport%20Brass%7CVilleroy%20%26%20Boch%7CWaterworks%7CWaterworks%20%28company%29%7CWaterstone%7CWaterstone%20Faucets%7CVictoria%20%2B%20Albert%7CVictoria%20and%20Albert%20Baths%7CKohler%20Co."
  }
 }
