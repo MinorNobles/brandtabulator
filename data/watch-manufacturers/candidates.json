@@ -243,6 +243,11 @@
    "sitelinks": 13
   },
   {
+   "qid": "Q670962",
+   "label": "Mondaine",
+   "sitelinks": 12
+  },
+  {
    "qid": "Q1281935",
    "label": "Eck\u014d Unltd.",
    "sitelinks": 12
@@ -255,11 +260,6 @@
   {
    "qid": "Q1725661",
    "label": "Mido",
-   "sitelinks": 12
-  },
-  {
-   "qid": "Q670962",
-   "label": "Mondaine",
    "sitelinks": 12
   },
   {
@@ -338,13 +338,13 @@
    "sitelinks": 8
   },
   {
-   "qid": "Q870335",
-   "label": "Eberhard & Co.",
+   "qid": "Q1379518",
+   "label": "Ronda",
    "sitelinks": 8
   },
   {
-   "qid": "Q1379518",
-   "label": "Ronda",
+   "qid": "Q870335",
+   "label": "Eberhard & Co.",
    "sitelinks": 8
   },
   {
@@ -378,13 +378,13 @@
    "sitelinks": 7
   },
   {
-   "qid": "Q1037713",
-   "label": "Carl F. Bucherer",
+   "qid": "Q747413",
+   "label": "LIP",
    "sitelinks": 7
   },
   {
-   "qid": "Q832811",
-   "label": "Kienzle Uhren",
+   "qid": "Q1037713",
+   "label": "Carl F. Bucherer",
    "sitelinks": 7
   },
   {
@@ -393,8 +393,8 @@
    "sitelinks": 7
   },
   {
-   "qid": "Q747413",
-   "label": "LIP",
+   "qid": "Q832811",
+   "label": "Kienzle Uhren",
    "sitelinks": 7
   },
   {
@@ -528,13 +528,13 @@
    "sitelinks": 4
   },
   {
-   "qid": "Q15790137",
-   "label": "Bucherer Group",
+   "qid": "Q16937375",
+   "label": "Hanowa",
    "sitelinks": 4
   },
   {
-   "qid": "Q16937375",
-   "label": "Hanowa",
+   "qid": "Q15790137",
+   "label": "Bucherer Group",
    "sitelinks": 4
   },
   {
@@ -573,6 +573,11 @@
    "sitelinks": 3
   },
   {
+   "qid": "Q13415716",
+   "label": "Thomas Sabo",
+   "sitelinks": 3
+  },
+  {
    "qid": "Q14523295",
    "label": "88 RUE DU RHONE",
    "sitelinks": 3
@@ -583,28 +588,8 @@
    "sitelinks": 3
   },
   {
-   "qid": "Q17018446",
-   "label": "Dueber-Hampden Watch Company",
-   "sitelinks": 3
-  },
-  {
    "qid": "Q17461916",
    "label": "Louis Erard",
-   "sitelinks": 3
-  },
-  {
-   "qid": "Q22101765",
-   "label": "Damasko",
-   "sitelinks": 3
-  },
-  {
-   "qid": "Q11300325",
-   "label": "Grand Seiko",
-   "sitelinks": 3
-  },
-  {
-   "qid": "Q13415716",
-   "label": "Thomas Sabo",
    "sitelinks": 3
   },
   {
@@ -620,6 +605,21 @@
   {
    "qid": "Q39055583",
    "label": "Schwarz Etienne",
+   "sitelinks": 3
+  },
+  {
+   "qid": "Q17018446",
+   "label": "Dueber-Hampden Watch Company",
+   "sitelinks": 3
+  },
+  {
+   "qid": "Q22101765",
+   "label": "Damasko",
+   "sitelinks": 3
+  },
+  {
+   "qid": "Q11300325",
+   "label": "Grand Seiko",
    "sitelinks": 3
   },
   {
@@ -643,11 +643,6 @@
    "sitelinks": 2
   },
   {
-   "qid": "Q17153839",
-   "label": "WeWOOD",
-   "sitelinks": 2
-  },
-  {
    "qid": "Q129939616",
    "label": "The Kingsman Shop (London)",
    "sitelinks": 2
@@ -655,6 +650,11 @@
   {
    "qid": "Q16832435",
    "label": "Romain Gauthier",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q17153839",
+   "label": "WeWOOD",
    "sitelinks": 2
   },
   {
@@ -670,16 +670,6 @@
   {
    "qid": "Q7923389",
    "label": "Vestal Watches",
-   "sitelinks": 1
-  },
-  {
-   "qid": "Q105070633",
-   "label": "Farer",
-   "sitelinks": 1
-  },
-  {
-   "qid": "Q19520534",
-   "label": "Manufacture Modules Technologies",
    "sitelinks": 1
   },
   {
@@ -715,6 +705,16 @@
   {
    "qid": "Q141256416",
    "label": "Vertex Watches Limited",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q105070633",
+   "label": "Farer",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q19520534",
+   "label": "Manufacture Modules Technologies",
    "sitelinks": 1
   }
  ]
