@@ -1,16 +1,41 @@
 {
  "search": [
-  "fashion house",
-  "luxury goods",
-  "leather goods",
-  "handbag",
-  "fashion accessory",
-  "clothing industry"
+  "Tory Burch LLC",
+  "Michael Kors brand",
+  "Capri Holdings",
+  "Longchamp company",
+  "Marc Jacobs brand",
+  "Cuyana",
+  "DeMellier",
+  "Rebecca Minkoff",
+  "Madewell",
+  "Guess clothing company",
+  "Coccinelle handbags",
+  "Mulberry fashion",
+  "Celine fashion house",
+  "Mansur Gavriel",
+  "Senreve",
+  "Clare V.",
+  "Dagne Dover",
+  "JW Pei",
+  "Loewe",
+  "Staud",
+  "The Row fashion",
+  "Zara retailer",
+  "Mango retailer",
+  "Aldo Group",
+  "Telfar",
+  "Brahmin handbags",
+  "Longchamp",
+  "Stuart Weitzman brand",
+  "Tapestry Inc"
  ],
  "items": [],
  "sparql": {
-  "set_props": "SELECT ?title ?item ?itemLabel (GROUP_CONCAT(DISTINCT ?p31;separator=\"|\") AS ?inst) (GROUP_CONCAT(DISTINCT ?ind;separator=\"|\") AS ?inds) (GROUP_CONCAT(DISTINCT ?prod;separator=\"|\") AS ?prods) (SAMPLE(?dis) AS ?dissolved) WHERE {\n VALUES ?title { \"Tory Burch\"@en \"Michael Kors\"@en \"Kate Spade New York\"@en \"Longchamp\"@en \"Marc Jacobs\"@en \"Dooney & Bourke\"@en \"Polène\"@en \"Cuyana\"@en \"Strathberry\"@en \"Fossil Group\"@en \"Gucci\"@en \"Prada\"@en \"Furla\"@en \"DeMellier\"@en \"Rebecca Minkoff\"@en \"Madewell\"@en \"Guess\"@en \"Coccinelle\"@en \"Louis Vuitton\"@en \"Coach New York\"@en \"Mulberry\"@en \"Mansur Gavriel\"@en \"Brahmin\"@en \"Tumi Inc.\"@en \"Celine\"@en \"Senreve\"@en \"Stuart Weitzman\"@en \"Burberry\"@en \"Chanel\"@en \"Cole Haan\"@en \"Dior\"@en \"Kurt Geiger\"@en \"Telfar\"@en \"Vera Bradley\"@en \"Aldo Group\"@en \"AllSaints\"@en \"Chloé\"@en \"Clare V.\"@en \"Dagne Dover\"@en \"JW Pei\"@en \"Loewe\"@en \"MCM Worldwide\"@en \"Mango\"@en \"Ralph Lauren Corporation\"@en \"Staud\"@en \"Ted Baker\"@en \"The Row\"@en \"Zara\"@en }\n ?article schema:name ?title ; schema:isPartOf <https://en.wikipedia.org/> ; schema:about ?item .\n OPTIONAL { ?item wdt:P31 ?a . ?a rdfs:label ?p31 . FILTER(LANG(?p31)=\"en\") }\n OPTIONAL { ?item wdt:P452 ?b . ?b rdfs:label ?ind . FILTER(LANG(?ind)=\"en\") }\n OPTIONAL { ?item wdt:P1056 ?c . ?c rdfs:label ?prod . FILTER(LANG(?prod)=\"en\") }\n OPTIONAL { ?item wdt:P576 ?dis }\n SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". }\n} GROUP BY ?title ?item ?itemLabel",
-  "rule_try1_count": "SELECT (COUNT(DISTINCT ?item) AS ?n) WHERE { { ?item wdt:P1056/wdt:P279* wd:Q467505 } UNION { ?item wdt:P452 wd:Q96141153 } UNION { ?item wdt:P31 wd:Q3661311 } UNION { ?item wdt:P452 wd:Q1047465 } ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . }"
+  "fashion_house": "SELECT (COUNT(DISTINCT ?item) AS ?n) WHERE { ?item wdt:P31 wd:Q1941779 . ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . FILTER NOT EXISTS { ?item wdt:P576 [] } }",
+  "prod_clothing": "SELECT (COUNT(DISTINCT ?item) AS ?n) WHERE { ?item wdt:P1056 wd:Q11460 . ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . FILTER NOT EXISTS { ?item wdt:P576 [] } }",
+  "prod_accessory_handbag_leather": "SELECT (COUNT(DISTINCT ?item) AS ?n) WHERE { { ?item wdt:P1056 wd:Q1065579 } UNION { ?item wdt:P1056 wd:Q467505 } UNION { ?item wdt:P1056 wd:Q96141153 } UNION { ?item wdt:P452 wd:Q96141153 } UNION { ?item wdt:P1056 wd:Q949715 } ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . FILTER NOT EXISTS { ?item wdt:P576 [] } }",
+  "fh_or_acc": "SELECT (COUNT(DISTINCT ?item) AS ?n) WHERE { { ?item wdt:P31 wd:Q1941779 } UNION { ?item wdt:P1056 wd:Q1065579 } UNION { ?item wdt:P1056 wd:Q467505 } UNION { ?item wdt:P1056 wd:Q96141153 } UNION { ?item wdt:P452 wd:Q96141153 } UNION { ?item wdt:P1056 wd:Q949715 } ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . FILTER NOT EXISTS { ?item wdt:P576 [] } }"
  },
  "urls": {}
 }
