@@ -1,488 +1,430 @@
 {
- "search": {
-  "Michael Kors": [
-   {
-    "qid": "Q19572998",
-    "label": "Capri Holdings",
-    "description": "holdings company that owns several multinational fashion brands"
-   },
-   {
-    "qid": "Q134612138",
-    "label": "Michael Kors",
-    "description": "fashion brand owned by Capri Holdings"
-   },
-   {
-    "qid": "Q717618",
-    "label": "Michael Kors",
-    "description": "American fashion designer (born 1959)"
-   },
-   {
-    "qid": "Q91042355",
-    "label": "Michael Korsch",
-    "description": "researcher (ORCID 0000-0001-8841-2744)"
-   },
-   {
-    "qid": "Q96213261",
-    "label": "Michael Korsmeier",
-    "description": "researcher"
-   },
-   {
-    "qid": "Q1928265",
-    "label": "Michael Korstick",
-    "description": "German pianist"
-   }
-  ],
-  "Marc Jacobs": [
-   {
-    "qid": "Q313108",
-    "label": "Marc Jacobs",
-    "description": "American fashion designer (born 1963)"
-   },
-   {
-    "qid": "Q102403363",
-    "label": "Marc Jacobs",
-    "description": null
-   },
-   {
-    "qid": "Q132717489",
-    "label": "Marc Jacobs",
-    "description": "New Zealand kiteboarder"
-   },
-   {
-    "qid": "Q45789717",
-    "label": "Marc Zimmermann",
-    "description": "German cheminformatician"
-   },
-   {
-    "qid": "Q108190893",
-    "label": "Marc Jacobs",
-    "description": "American fashion house"
-   },
-   {
-    "qid": "Q86962095",
-    "label": "Marc Jacobs",
-    "description": "Jacobs, Marc, 1963 July 15-"
-   }
-  ],
-  "Coccinelle": [
-   {
-    "qid": "Q2737959",
-    "label": "Coccinelle",
-    "description": "French actress and entertainer (1931–2006)"
-   },
-   {
-    "qid": "Q944874",
-    "label": "Coccinelle",
-    "description": "Italian fashion label"
-   },
-   {
-    "qid": "Q1878611",
-    "label": "Coccinelle",
-    "description": "amusement ride in Walibi Belgium"
-   },
-   {
-    "qid": "Q5139163",
-    "label": "Coccinelle",
-    "description": "free software tool"
-   },
-   {
-    "qid": "Q25327",
-    "label": "Coccinellidae",
-    "description": "family of beetles"
-   },
-   {
-    "qid": "Q52934577",
-    "label": "Coccinelle",
-    "description": "kindergarten in Paternò, Catania, Sicily, Italy"
-   }
-  ],
-  "Cuyana": [
-   {
-    "qid": "Q18095964",
-    "label": "Cuyana",
-    "description": "genus of insects"
-   },
-   {
-    "qid": "Q13655205",
-    "label": "Cuyana maurii",
-    "description": "species of insect"
-   },
-   {
-    "qid": "Q23647728",
-    "label": "Cuyanas",
-    "description": "hill in Santiago Metropolitan Region, Chile"
-   },
-   {
-    "qid": "Q5197116",
-    "label": "Cuyunon people",
-    "description": "Visayan ethnic group"
-   }
-  ]
- },
- "items": {
-  "Q6375797": {
-   "label": "Kate Spade New York",
-   "description": "American fashion design house",
-   "enwiki": "Kate Spade New York",
-   "P31": [
-    [
-     "Q4830453",
-     "business"
-    ]
-   ],
-   "P452": [],
-   "P1056": [],
-   "P749": [],
-   "P127": [],
-   "P355": [],
-   "P1830": [],
-   "P17": [
-    [
-     "Q30",
-     "United States"
-    ]
-   ]
-  },
-  "Q753521": {
-   "label": "Kate Spade & Company",
-   "description": "fashion company",
-   "enwiki": "Kate Spade & Company",
-   "P31": [
-    [
-     "Q4830453",
-     "business"
-    ],
-    [
-     "Q6881511",
-     "enterprise"
-    ],
-    [
-     "Q891723",
-     "public company"
-    ]
-   ],
-   "P452": [],
-   "P1056": [
-    [
-     "Q11460",
-     "clothing"
-    ]
-   ],
-   "P749": [
-    [
-     "Q56273715",
-     "Tapestry, Inc."
-    ]
-   ],
-   "P127": [],
-   "P355": [],
-   "P1830": [],
-   "P17": [
-    [
-     "Q30",
-     "United States"
-    ]
-   ]
-  },
-  "Q19572998": {
-   "label": "Capri Holdings",
-   "description": "holdings company that owns several multinational fashion brands",
-   "enwiki": "Capri Holdings",
-   "P31": [
-    [
-     "Q4830453",
-     "business"
-    ],
-    [
-     "Q726870",
-     "brick and mortar"
-    ],
-    [
-     "Q6881511",
-     "enterprise"
-    ],
-    [
-     "Q891723",
-     "public company"
-    ],
-    [
-     "Q1618899",
-     "fashion label"
-    ]
-   ],
-   "P452": [
-    [
-     "Q11828862",
-     "clothing industry"
-    ]
-   ],
-   "P1056": [],
-   "P749": [],
-   "P127": [],
-   "P355": [],
-   "P1830": [
-    [
-     "Q5213855",
-     "Jimmy Choo Ltd"
-    ],
-    [
-     "Q696376",
-     "Versace"
-    ],
-    [
-     "Q134612138",
-     "Michael Kors"
-    ]
-   ],
-   "P17": []
-  },
-  "Q132111641": {
-   "label": null,
-   "description": null,
-   "enwiki": null,
-   "P31": [
-    [
-     "Q43229",
-     "organization"
-    ]
-   ],
-   "P452": [
-    [
-     "Q112165707",
-     "wholesale trade (business-to-business) of other household goods"
-    ]
-   ],
-   "P1056": [],
-   "P749": [],
-   "P127": [],
-   "P355": [],
-   "P1830": [],
-   "P17": [
-    [
-     "Q142",
-     "France"
-    ]
-   ]
-  },
-  "Q138755005": {
-   "label": "Stuart Weitzman",
-   "description": "American luxury footwear brand",
-   "enwiki": "Stuart Weitzman (fashion house)",
-   "P31": [
-    [
-     "Q431289",
-     "brand"
-    ]
-   ],
-   "P452": [],
-   "P1056": [],
-   "P749": [],
-   "P127": [],
-   "P355": [],
-   "P1830": [],
-   "P17": []
-  },
-  "Q1869471": {
-   "label": "Longchamp",
-   "description": "French leathergoods company",
-   "enwiki": "Longchamp (company)",
-   "P31": [
-    [
-     "Q43229",
-     "organization"
-    ]
-   ],
-   "P452": [
-    [
-     "Q112165225",
-     "manufacturing of travel items, leather goods and saddlery"
-    ]
-   ],
-   "P1056": [],
-   "P749": [],
-   "P127": [],
-   "P355": [],
-   "P1830": [],
-   "P17": [
-    [
-     "Q142",
-     "France"
-    ]
-   ]
-  },
-  "Q16933219": {
-   "label": "Strathberry of Scotland",
-   "description": "Scottish fashion accessory company",
-   "enwiki": "Strathberry",
-   "P31": [
-    [
-     "Q783794",
-     "company"
-    ]
-   ],
-   "P452": [
-    [
-     "Q12684",
-     "fashion"
-    ]
-   ],
-   "P1056": [
-    [
-     "Q1065579",
-     "fashion accessory"
-    ]
-   ],
-   "P749": [],
-   "P127": [],
-   "P355": [],
-   "P1830": [],
-   "P17": []
-  },
-  "Q64026213": {
-   "label": "Madewell",
-   "description": "American retail chain operated by J.Crew",
-   "enwiki": null,
-   "P31": [
-    [
-     "Q507619",
-     "retail chain"
-    ]
-   ],
-   "P452": [],
-   "P1056": [],
-   "P749": [
-    [
-     "Q5370765",
-     "J.Crew"
-    ]
-   ],
-   "P127": [],
-   "P355": [],
-   "P1830": [],
-   "P17": []
-  }
- },
+ "search": {},
+ "items": {},
  "sparql": {},
  "urls": {
-  "wp": {
+  "titles": {
    "batchcomplete": "",
    "query": {
     "redirects": [
      {
-      "from": "Marc Jacobs (brand)",
-      "to": "Marc Jacobs",
-      "tofragment": "Stores"
+      "from": "Urban Decay",
+      "to": "Urban decay"
      },
      {
-      "from": "Madewell",
-      "to": "J.Crew"
+      "from": "L'Oréal Paris",
+      "to": "L'Oréal"
      },
      {
-      "from": "Rebecca Minkoff",
-      "to": "Rebecca Minkoff (company)"
+      "from": "NYX Cosmetics",
+      "to": "NYX Professional Makeup"
      },
      {
-      "from": "Michael Kors (brand)",
-      "to": "Capri Holdings"
+      "from": "Maybelline",
+      "to": "Maybelline New York"
+     },
+     {
+      "from": "Yves Saint Laurent Beauté",
+      "to": "Yves Saint Laurent (fashion house)"
      }
     ],
     "pages": {
      "-1": {
       "ns": 0,
-      "title": "Michael Kors (company)",
+      "title": "Garnier (brand)",
       "missing": ""
      },
      "-2": {
       "ns": 0,
-      "title": "Marc Jacobs (company)",
+      "title": "Vichy Laboratoires",
       "missing": ""
      },
      "-3": {
       "ns": 0,
-      "title": "Cuyana",
+      "title": "IT Cosmetics",
       "missing": ""
      },
      "-4": {
       "ns": 0,
-      "title": "Coccinelle (company)",
+      "title": "SkinCeuticals",
       "missing": ""
      },
      "-5": {
       "ns": 0,
-      "title": "Coccinelle (brand)",
+      "title": "Matrix Essentials",
       "missing": ""
      },
      "-6": {
       "ns": 0,
-      "title": "DeMellier",
+      "title": "Mixa",
       "missing": ""
      },
-     "649384": {
-      "pageid": 649384,
+     "-7": {
       "ns": 0,
-      "title": "Fossil Group",
+      "title": "Youth to the People",
+      "missing": ""
+     },
+     "-8": {
+      "ns": 0,
+      "title": "Dermablend",
+      "missing": ""
+     },
+     "36013250": {
+      "pageid": 36013250,
+      "ns": 0,
+      "title": "Aesop (brand)",
       "pageprops": {
-       "wikibase_item": "Q356212"
+       "wikibase_item": "Q4688560"
       }
      },
-     "35298186": {
-      "pageid": 35298186,
+     "80424183": {
+      "pageid": 80424183,
       "ns": 0,
-      "title": "Kate Spade New York",
+      "title": "CeraVe",
       "pageprops": {
-       "wikibase_item": "Q6375797"
+       "wikibase_item": "Q23731275"
       }
      },
-     "74598145": {
-      "pageid": 74598145,
+     "27851092": {
+      "pageid": 27851092,
       "ns": 0,
-      "title": "Polène",
+      "title": "Essie",
       "pageprops": {
-       "wikibase_item": "Q122055705"
+       "wikibase_item": "Q16275726"
       }
      },
-     "41437026": {
-      "pageid": 41437026,
+     "2023944": {
+      "pageid": 2023944,
       "ns": 0,
-      "title": "Strathberry",
+      "title": "Garnier",
       "pageprops": {
-       "wikibase_item": "Q16933219"
+       "wikibase_item": "Q599755"
       }
      },
-     "44942502": {
-      "pageid": 44942502,
+     "7807770": {
+      "pageid": 7807770,
       "ns": 0,
-      "title": "Capri Holdings",
+      "title": "Kiehl's",
       "pageprops": {
-       "wikibase_item": "Q19572998"
+       "wikibase_item": "Q3196447"
       }
      },
-     "2143479": {
-      "pageid": 2143479,
+     "7214882": {
+      "pageid": 7214882,
       "ns": 0,
-      "title": "J.Crew",
+      "title": "Kérastase",
       "pageprops": {
-       "wikibase_item": "Q5370765"
+       "wikibase_item": "Q1999812"
       }
      },
-     "1865085": {
-      "pageid": 1865085,
+     "728579": {
+      "pageid": 728579,
       "ns": 0,
-      "title": "Marc Jacobs",
+      "title": "L'Oréal",
       "pageprops": {
-       "wikibase_item": "Q313108"
+       "wikibase_item": "Q156077"
       }
      },
-     "58410842": {
-      "pageid": 58410842,
+     "15934390": {
+      "pageid": 15934390,
       "ns": 0,
-      "title": "Rebecca Minkoff (company)",
+      "title": "La Roche-Posay",
       "pageprops": {
-       "wikibase_item": "Q50428076"
+       "wikibase_item": "Q391305"
+      }
+     },
+     "1680901": {
+      "pageid": 1680901,
+      "ns": 0,
+      "title": "Lancôme",
+      "pageprops": {
+       "wikibase_item": "Q1541268"
+      }
+     },
+     "52366981": {
+      "pageid": 52366981,
+      "ns": 0,
+      "title": "NYX Professional Makeup",
+      "pageprops": {
+       "wikibase_item": "Q23671513"
+      }
+     },
+     "13796669": {
+      "pageid": 13796669,
+      "ns": 0,
+      "title": "Redken",
+      "pageprops": {
+       "wikibase_item": "Q7305998"
+      }
+     },
+     "92203": {
+      "pageid": 92203,
+      "ns": 0,
+      "title": "Maybelline New York",
+      "pageprops": {
+       "wikibase_item": "Q1351054"
+      }
+     },
+     "1758541": {
+      "pageid": 1758541,
+      "ns": 0,
+      "title": "Urban decay",
+      "pageprops": {
+       "wikibase_item": "Q2039238"
+      }
+     },
+     "13646212": {
+      "pageid": 13646212,
+      "ns": 0,
+      "title": "Yves Saint Laurent (fashion house)",
+      "pageprops": {
+       "wikibase_item": "Q2282172"
       }
      }
     }
    }
+  },
+  "pv:L'Oréal Paris": {
+   "items": [
+    {
+     "project": "en.wikipedia",
+     "article": "L'Oréal_Paris",
+     "granularity": "monthly",
+     "timestamp": "2026100100",
+     "access": "all-access",
+     "agent": "user",
+     "views": 164
+    }
+   ]
+  },
+  "pv:Maybelline": {
+   "items": [
+    {
+     "project": "en.wikipedia",
+     "article": "Maybelline",
+     "granularity": "monthly",
+     "timestamp": "2026100100",
+     "access": "all-access",
+     "agent": "user",
+     "views": 1594
+    }
+   ]
+  },
+  "pv:Garnier (brand)": {
+   "status": 404
+  },
+  "pv:Garnier": {
+   "items": [
+    {
+     "project": "en.wikipedia",
+     "article": "Garnier",
+     "granularity": "monthly",
+     "timestamp": "2026100100",
+     "access": "all-access",
+     "agent": "user",
+     "views": 2739
+    }
+   ]
+  },
+  "pv:Lancôme": {
+   "items": [
+    {
+     "project": "en.wikipedia",
+     "article": "Lancôme",
+     "granularity": "monthly",
+     "timestamp": "2026100100",
+     "access": "all-access",
+     "agent": "user",
+     "views": 3749
+    }
+   ]
+  },
+  "pv:CeraVe": {
+   "items": [
+    {
+     "project": "en.wikipedia",
+     "article": "CeraVe",
+     "granularity": "monthly",
+     "timestamp": "2026100100",
+     "access": "all-access",
+     "agent": "user",
+     "views": 6191
+    }
+   ]
+  },
+  "pv:La Roche-Posay": {
+   "items": [
+    {
+     "project": "en.wikipedia",
+     "article": "La_Roche-Posay",
+     "granularity": "monthly",
+     "timestamp": "2026100100",
+     "access": "all-access",
+     "agent": "user",
+     "views": 1601
+    }
+   ]
+  },
+  "pv:Kiehl's": {
+   "items": [
+    {
+     "project": "en.wikipedia",
+     "article": "Kiehl's",
+     "granularity": "monthly",
+     "timestamp": "2026100100",
+     "access": "all-access",
+     "agent": "user",
+     "views": 2405
+    }
+   ]
+  },
+  "pv:NYX Cosmetics": {
+   "items": [
+    {
+     "project": "en.wikipedia",
+     "article": "NYX_Cosmetics",
+     "granularity": "monthly",
+     "timestamp": "2026100100",
+     "access": "all-access",
+     "agent": "user",
+     "views": 475
+    }
+   ]
+  },
+  "pv:NYX Professional Makeup": {
+   "items": [
+    {
+     "project": "en.wikipedia",
+     "article": "NYX_Professional_Makeup",
+     "granularity": "monthly",
+     "timestamp": "2026100100",
+     "access": "all-access",
+     "agent": "user",
+     "views": 1353
+    }
+   ]
+  },
+  "pv:Kérastase": {
+   "items": [
+    {
+     "project": "en.wikipedia",
+     "article": "Kérastase",
+     "granularity": "monthly",
+     "timestamp": "2026100100",
+     "access": "all-access",
+     "agent": "user",
+     "views": 1751
+    }
+   ]
+  },
+  "pv:Vichy Laboratoires": {
+   "status": 404
+  },
+  "pv:Yves Saint Laurent Beauté": {
+   "items": [
+    {
+     "project": "en.wikipedia",
+     "article": "Yves_Saint_Laurent_Beauté",
+     "granularity": "monthly",
+     "timestamp": "2026100100",
+     "access": "all-access",
+     "agent": "user",
+     "views": 17
+    }
+   ]
+  },
+  "pv:Urban Decay": {
+   "items": [
+    {
+     "project": "en.wikipedia",
+     "article": "Urban_Decay",
+     "granularity": "monthly",
+     "timestamp": "2026100100",
+     "access": "all-access",
+     "agent": "user",
+     "views": 27
+    }
+   ]
+  },
+  "pv:IT Cosmetics": {
+   "status": 404
+  },
+  "pv:Redken": {
+   "items": [
+    {
+     "project": "en.wikipedia",
+     "article": "Redken",
+     "granularity": "monthly",
+     "timestamp": "2026100100",
+     "access": "all-access",
+     "agent": "user",
+     "views": 751
+    }
+   ]
+  },
+  "pv:Essie": {
+   "items": [
+    {
+     "project": "en.wikipedia",
+     "article": "Essie",
+     "granularity": "monthly",
+     "timestamp": "2026100100",
+     "access": "all-access",
+     "agent": "user",
+     "views": 211
+    }
+   ]
+  },
+  "pv:SkinCeuticals": {
+   "items": [
+    {
+     "project": "en.wikipedia",
+     "article": "SkinCeuticals",
+     "granularity": "monthly",
+     "timestamp": "2026100100",
+     "access": "all-access",
+     "agent": "user",
+     "views": 1
+    }
+   ]
+  },
+  "pv:L'Oréal": {
+   "items": [
+    {
+     "project": "en.wikipedia",
+     "article": "L'Oréal",
+     "granularity": "monthly",
+     "timestamp": "2026100100",
+     "access": "all-access",
+     "agent": "user",
+     "views": 23457
+    }
+   ]
+  },
+  "pv:Matrix Essentials": {
+   "status": 404
+  },
+  "pv:Mixa": {
+   "status": 404
+  },
+  "pv:Aesop (brand)": {
+   "items": [
+    {
+     "project": "en.wikipedia",
+     "article": "Aesop_(brand)",
+     "granularity": "monthly",
+     "timestamp": "2026100100",
+     "access": "all-access",
+     "agent": "user",
+     "views": 4624
+    }
+   ]
+  },
+  "pv:Youth to the People": {
+   "status": 404
+  },
+  "pv:Dermablend": {
+   "status": 404
   }
  }
 }
