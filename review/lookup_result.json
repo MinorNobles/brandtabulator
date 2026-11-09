@@ -1,273 +1,569 @@
 {
- "search": {
-  "Tory Burch LLC": [
-   {
-    "qid": "Q19988222",
-    "label": "Tory Burch LLC",
-    "description": "American fashion brand"
-   }
-  ],
-  "Michael Kors brand": [],
-  "Capri Holdings": [
-   {
-    "qid": "Q19572998",
-    "label": "Capri Holdings",
-    "description": "holdings company that owns several multinational fashion brands"
-   }
-  ],
-  "Longchamp company": [],
-  "Marc Jacobs brand": [],
-  "Cuyana": [
-   {
-    "qid": "Q18095964",
-    "label": "Cuyana",
-    "description": "genus of insects"
-   },
-   {
-    "qid": "Q13655205",
-    "label": "Cuyana maurii",
-    "description": "species of insect"
-   },
-   {
-    "qid": "Q23647728",
-    "label": "Cuyanas",
-    "description": "hill in Santiago Metropolitan Region, Chile"
-   },
-   {
-    "qid": "Q5197116",
-    "label": "Cuyunon people",
-    "description": "Visayan ethnic group"
-   }
-  ],
-  "DeMellier": [
-   {
-    "qid": "Q132111641",
-    "label": "Demellier Ltd",
-    "description": null
-   }
-  ],
-  "Rebecca Minkoff": [
-   {
-    "qid": "Q50428076",
-    "label": "Rebecca Minkoff",
-    "description": "Handbag & Clothing Designer"
-   }
-  ],
-  "Madewell": [
-   {
-    "qid": "Q64026213",
-    "label": "Madewell",
-    "description": "American retail chain operated by J.Crew"
-   },
-   {
-    "qid": "Q37046069",
-    "label": "Madewell",
-    "description": "family name"
-   },
-   {
-    "qid": "Q133531896",
-    "label": "Madewell Hollow",
-    "description": null
-   }
-  ],
-  "Guess clothing company": [],
-  "Coccinelle handbags": [],
-  "Mulberry fashion": [],
-  "Celine fashion house": [],
-  "Mansur Gavriel": [],
-  "Senreve": [],
-  "Clare V.": [
-   {
-    "qid": "Q102198108",
-    "label": "Clare V. D'Cruz",
-    "description": "Ph.D. Indian Institute of Technology 1998"
-   },
-   {
-    "qid": "Q74256375",
-    "label": "Clare V. H. Baker",
-    "description": "researcher"
-   },
-   {
-    "qid": "Q64706937",
-    "label": "Clare V. J. Griffiths",
-    "description": "researcher"
-   },
-   {
-    "qid": "Q55607725",
-    "label": "Clare Griffiths",
-    "description": "historian and academic"
-   }
-  ],
-  "Dagne Dover": [],
-  "JW Pei": [],
-  "Loewe": [
-   {
-    "qid": "Q15614889",
-    "label": "Loewe",
-    "description": "family name"
-   },
-   {
-    "qid": "Q37006623",
-    "label": "Loewenthal",
-    "description": "family name"
-   },
-   {
-    "qid": "Q966905",
-    "label": "Loewe",
-    "description": "fashion house specialising in leather goods, clothing, perfumes and other fashion accessories"
-   },
-   {
-    "qid": "Q37237439",
-    "label": "Loewenberg",
-    "description": "family name"
-   },
-   {
-    "qid": "Q101040488",
-    "label": "Loewenheim",
-    "description": "family name"
-   },
-   {
-    "qid": "Q106404119",
-    "label": "Loewenson",
-    "description": "family name"
-   }
-  ],
-  "Staud": [
-   {
-    "qid": "Q67331",
-    "label": "Otto Staudinger",
-    "description": "German lepidopterist and insect dealer (1830-1900)"
-   },
-   {
-    "qid": "Q21511604",
-    "label": "Staudinger",
-    "description": "family name"
-   },
-   {
-    "qid": "Q10374089",
-    "label": "Staudingeria",
-    "description": "genus of insects"
-   },
-   {
-    "qid": "Q37182259",
-    "label": "Staudacher",
-    "description": "family name"
-   },
-   {
-    "qid": "Q37302428",
-    "label": "Stauder",
-    "description": "family name"
-   },
-   {
-    "qid": "Q37247975",
-    "label": "Staude",
-    "description": "family name"
-   }
-  ],
-  "The Row fashion": [],
-  "Zara retailer": [],
-  "Mango retailer": [],
-  "Aldo Group": [
-   {
-    "qid": "Q2832297",
-    "label": "ALDO",
-    "description": "Canadian premium shoe retailer"
-   }
-  ],
-  "Telfar": [
-   {
-    "qid": "Q108416664",
-    "label": "Telfar",
-    "description": "family name"
-   },
-   {
-    "qid": "Q107395194",
-    "label": "Telfar",
-    "description": "Genderless fashion label"
-   },
-   {
-    "qid": "Q96407921",
-    "label": "Telfar Clemens",
-    "description": "American fashion designer (born 1985)"
-   },
-   {
-    "qid": "Q10780441",
-    "label": "Kocatepe",
-    "description": "mahalle (administrative quarter) in Nizip, Gaziantep, south-central Turkey"
-   },
-   {
-    "qid": "Q145005",
-    "label": "Telfairia",
-    "description": "genus of plants"
-   }
-  ],
-  "Brahmin handbags": [],
-  "Longchamp": [
-   {
-    "qid": "Q1339236",
-    "label": "Longchamp",
-    "description": "commune in Haute-Marne, France"
-   },
-   {
-    "qid": "Q47707",
-    "label": "Longchamp",
-    "description": "commune in Côte-d'Or, France"
-   },
-   {
-    "qid": "Q198494",
-    "label": "Longchamp",
-    "description": "commune in Vosges, France"
-   },
-   {
-    "qid": "Q1869471",
-    "label": "Longchamp",
-    "description": "French leathergoods company"
-   },
-   {
-    "qid": "Q1146158",
-    "label": "Longchamp-sur-Aujon",
-    "description": "commune in Aube, France"
-   },
-   {
-    "qid": "Q214658",
-    "label": "Longchamp-sous-Châtenois",
-    "description": "commune in Vosges, France"
-   }
-  ],
-  "Stuart Weitzman brand": [],
-  "Tapestry Inc": []
- },
+ "search": {},
  "items": {},
  "sparql": {
-  "fashion_house": {
-   "count": 1,
+  "by_label": {
+   "count": 70,
    "rows": [
     {
-     "n": "76"
-    }
-   ]
-  },
-  "prod_clothing": {
-   "count": 1,
-   "rows": [
+     "name": "Mulberry",
+     "item": "Q3866987",
+     "title": "Mulberry Group",
+     "inst": "retail chain|brick and mortar|public company|business|fashion merchandising",
+     "prods": "clothing",
+     "inds": "fashion"
+    },
     {
-     "n": "593"
-    }
-   ]
-  },
-  "prod_accessory_handbag_leather": {
-   "count": 1,
-   "rows": [
+     "name": "Mango",
+     "item": "Q136503",
+     "title": "Mango (retailer)",
+     "inst": "brick and mortar|business|clothing store chain",
+     "prods": "watch|infant clothing|eyewear|footwear|fashion accessory|perfume|clothing",
+     "inds": "retail|clothing industry|fast fashion"
+    },
     {
-     "n": "108"
-    }
-   ]
-  },
-  "fh_or_acc": {
-   "count": 1,
-   "rows": [
+     "name": "Guess",
+     "item": "Q2470307",
+     "title": "Guess (company)",
+     "inst": "brick and mortar|enterprise|public company|business",
+     "prods": "clothing",
+     "inds": "retail"
+    },
     {
-     "n": "174"
+     "name": "Tory Burch",
+     "item": "Q19988222",
+     "title": "Tory Burch LLC",
+     "inst": "brick and mortar|fashion house|business",
+     "prods": "fashion accessory|cosmetics|clothing",
+     "inds": "retail|clothing industry"
+    },
+    {
+     "name": "Zara",
+     "item": "Q147662",
+     "title": "Zara (retailer)",
+     "inst": "brick and mortar|clothing store chain|perfume brand",
+     "prods": "perfume|clothing",
+     "inds": "textile industry|clothing industry|perfumes industry|retail industry"
+    },
+    {
+     "name": "Celine",
+     "item": "Q948531",
+     "title": "Celine (brand)",
+     "inst": "fashion house|perfume brand",
+     "prods": "perfume|clothing",
+     "inds": "clothing industry|perfumes industry|wholesale trade (business-to-business) of other household goods"
+    },
+    {
+     "name": "The Row",
+     "item": "Q25351941",
+     "title": "The Row (fashion label)",
+     "inst": "company|fashion label",
+     "prods": "",
+     "inds": "clothing industry"
+    },
+    {
+     "name": "Fossil",
+     "item": "Q356212",
+     "title": "Fossil Group",
+     "inst": "enterprise|public company|business",
+     "prods": "watch",
+     "inds": "bijou"
+    },
+    {
+     "name": "Polène",
+     "item": "Q122055705",
+     "title": "Polène",
+     "inst": "brand",
+     "prods": "",
+     "inds": "leather crafting"
+    },
+    {
+     "name": "Longchamp",
+     "item": "Q1869471",
+     "title": "Longchamp (company)",
+     "inst": "organization",
+     "prods": "",
+     "inds": "manufacturing of travel items, leather goods and saddlery"
+    },
+    {
+     "name": "Mulberry",
+     "item": "Q80179",
+     "title": "Mulberry, Arkansas",
+     "inst": "human settlement|city in the United States",
+     "prods": "",
+     "inds": ""
+    },
+    {
+     "name": "Mango",
+     "item": "Q116595",
+     "title": "Mango (airline)",
+     "inst": "airline",
+     "prods": "",
+     "inds": ""
+    },
+    {
+     "name": "Zara",
+     "item": "Q147630",
+     "title": "Zara, Turkey",
+     "inst": "town",
+     "prods": "",
+     "inds": ""
+    },
+    {
+     "name": "Zara",
+     "item": "Q170415",
+     "title": "Stara Zagora",
+     "inst": "big city|municipality seat|oblast seat|city in Bulgaria",
+     "prods": "",
+     "inds": ""
+    },
+    {
+     "name": "Mulberry",
+     "item": "Q325055",
+     "title": "Praha, Texas",
+     "inst": "ghost town|unincorporated community",
+     "prods": "",
+     "inds": ""
+    },
+    {
+     "name": "Celine",
+     "item": "Q666450",
+     "title": "Celine (concert residency)",
+     "inst": "concert residency",
+     "prods": "",
+     "inds": ""
+    },
+    {
+     "name": "Kate Spade",
+     "item": "Q753521",
+     "title": "Kate Spade & Company",
+     "inst": "public company|business|enterprise",
+     "prods": "clothing",
+     "inds": ""
+    },
+    {
+     "name": "Celine",
+     "item": "Q822782",
+     "title": "Celine, Jastrebarsko",
+     "inst": "settlement in Croatia",
+     "prods": "",
+     "inds": ""
+    },
+    {
+     "name": "Celine",
+     "item": "Q847879",
+     "title": "Celine, Vrbovec",
+     "inst": "settlement in Croatia",
+     "prods": "",
+     "inds": ""
+    },
+    {
+     "name": "Celine",
+     "item": "Q859326",
+     "title": "Celine, Međimurje County",
+     "inst": "settlement in Croatia",
+     "prods": "",
+     "inds": ""
+    },
+    {
+     "name": "Mango",
+     "item": "Q927706",
+     "title": "Mongo people",
+     "inst": "ethnic group",
+     "prods": "",
+     "inds": ""
+    },
+    {
+     "name": "Zara",
+     "item": "Q1088305",
+     "title": "Zara (Milan Metro)",
+     "inst": "metro station|underground station",
+     "prods": "",
+     "inds": ""
+    },
+    {
+     "name": "Mango",
+     "item": "Q1392195",
+     "title": "Mango, Togo",
+     "inst": "city",
+     "prods": "",
+     "inds": ""
+    },
+    {
+     "name": "Fossil",
+     "item": "Q1439431",
+     "title": "Fossil (software)",
+     "inst": "free software|distributed revision control system|forge|repository web interface|wiki software|source code repository|version control system|communication protocol|bug tracking system",
+     "prods": "",
+     "inds": ""
+    },
+    {
+     "name": "Longchamp",
+     "item": "Q1542489",
+     "title": "Longchamp Racecourse",
+     "inst": "horse racing venue",
+     "prods": "",
+     "inds": ""
+    },
+    {
+     "name": "Mango",
+     "item": "Q1637528",
+     "title": "Mango (Jamshedpur)",
+     "inst": "suburb",
+     "prods": "",
+     "inds": ""
+    },
+    {
+     "name": "Mulberry",
+     "item": "Q1952075",
+     "title": "Mulberry (email client)",
+     "inst": "email client|formerly proprietary software",
+     "prods": "",
+     "inds": ""
+    },
+    {
+     "name": "Mango",
+     "item": "Q1992999",
+     "title": "Mango, Florida",
+     "inst": "census-designated place in the United States",
+     "prods": "",
+     "inds": ""
+    },
+    {
+     "name": "Mulberry",
+     "item": "Q2030854",
+     "title": "Mulberry, Wilkes County, North Carolina",
+     "inst": "census-designated place in the United States",
+     "prods": "",
+     "inds": ""
+    },
+    {
+     "name": "Mulberry",
+     "item": "Q2153870",
+     "title": "Mulberry, Florida",
+     "inst": "city in the United States",
+     "prods": "",
+     "inds": ""
+    },
+    {
+     "name": "Mulberry",
+     "item": "Q2271930",
+     "title": "Mulberry, Kansas",
+     "inst": "city in the United States",
+     "prods": "",
+     "inds": ""
+    },
+    {
+     "name": "Fossil",
+     "item": "Q2293692",
+     "title": "Fossil, Oregon",
+     "inst": "city of Oregon|county seat",
+     "prods": "",
+     "inds": ""
+    },
+    {
+     "name": "Zara",
+     "item": "Q2294530",
+     "title": "Italian cruiser Zara",
+     "inst": "heavy cruiser",
+     "prods": "",
+     "inds": ""
+    },
+    {
+     "name": "Zara",
+     "item": "Q2302191",
+     "title": "Zarra, Spain",
+     "inst": "municipality of Spain|municipality of the Valencian Community",
+     "prods": "",
+     "inds": ""
+    },
+    {
+     "name": "Mango",
+     "item": "Q2426245",
+     "title": "Mango (software)",
+     "inst": "software|XMPP client",
+     "prods": "",
+     "inds": ""
+    },
+    {
+     "name": "Celine",
+     "item": "Q2491538",
+     "title": "Celine, Krško",
+     "inst": "human settlement",
+     "prods": "",
+     "inds": ""
+    },
+    {
+     "name": "Mulberry",
+     "item": "Q2542498",
+     "title": "Mulberry, South Carolina",
+     "inst": "census-designated place in the United States",
+     "prods": "",
+     "inds": ""
+    },
+    {
+     "name": "Mulberry",
+     "item": "Q2606595",
+     "title": "Mulberry, Ohio",
+     "inst": "census-designated place in the United States",
+     "prods": "",
+     "inds": ""
+    },
+    {
+     "name": "Mulberry",
+     "item": "Q2641162",
+     "title": "Mulberry, Indiana",
+     "inst": "town in the United States",
+     "prods": "",
+     "inds": ""
+    },
+    {
+     "name": "Mulberry",
+     "item": "Q2887113",
+     "title": "Mulberry, Oklahoma",
+     "inst": "census-designated place in the United States",
+     "prods": "",
+     "inds": ""
+    },
+    {
+     "name": "Mango",
+     "item": "Q3844575",
+     "title": "Mango (group)",
+     "inst": "musical group",
+     "prods": "",
+     "inds": ""
+    },
+    {
+     "name": "Zara",
+     "item": "Q4023851",
+     "title": "Zara (game)",
+     "inst": "dice game",
+     "prods": "",
+     "inds": ""
+    },
+    {
+     "name": "Zara",
+     "item": "Q4023853",
+     "title": "Zara (name)",
+     "inst": "female given name",
+     "prods": "",
+     "inds": ""
+    },
+    {
+     "name": "Coccinelle",
+     "item": "Q5139163",
+     "title": "Coccinelle (software)",
+     "inst": "free and open-source software",
+     "prods": "",
+     "inds": ""
+    },
+    {
+     "name": "Fossil",
+     "item": "Q5473449",
+     "title": "Fossil (novel)",
+     "inst": "literary work",
+     "prods": "",
+     "inds": ""
+    },
+    {
+     "name": "Mango",
+     "item": "Q6749077",
+     "title": "Mango (Saturday Night Live)",
+     "inst": "character|fictional human",
+     "prods": "",
+     "inds": ""
+    },
+    {
+     "name": "Mulberry",
+     "item": "Q6933787",
+     "title": "Mulberry, Cornwall",
+     "inst": "hamlet",
+     "prods": "",
+     "inds": ""
+    },
+    {
+     "name": "Mulberry",
+     "item": "Q6933791",
+     "title": "Mulberry (TV series)",
+     "inst": "television series",
+     "prods": "",
+     "inds": ""
+    },
+    {
+     "name": "Mulberry",
+     "item": "Q6933789",
+     "title": "Mulberry, Tennessee",
+     "inst": "unincorporated community",
+     "prods": "",
+     "inds": ""
+    },
+    {
+     "name": "Mulberry",
+     "item": "Q6933792",
+     "title": "Mulberry, Surry County, North Carolina",
+     "inst": "unincorporated community",
+     "prods": "",
+     "inds": ""
+    },
+    {
+     "name": "The Row",
+     "item": "Q7761642",
+     "title": "The Row, Virginia",
+     "inst": "unincorporated community",
+     "prods": "",
+     "inds": ""
+    },
+    {
+     "name": "The Row",
+     "item": "Q7761641",
+     "title": "The Row (Lyme, New York)",
+     "inst": "historic house",
+     "prods": "",
+     "inds": ""
+    },
+    {
+     "name": "Zara",
+     "item": "Q8066526",
+     "title": "Zara (character)",
+     "inst": "comics character",
+     "prods": "",
+     "inds": ""
+    },
+    {
+     "name": "Fossil",
+     "item": "Q11681908",
+     "title": "Fossil (file system)",
+     "inst": "file system",
+     "prods": "",
+     "inds": ""
+    },
+    {
+     "name": "Mulberry",
+     "item": "Q14711089",
+     "title": "Mulberry, Texas",
+     "inst": "unincorporated community",
+     "prods": "",
+     "inds": ""
+    },
+    {
+     "name": "Guess",
+     "item": "Q15156906",
+     "title": "Guess (TV program)",
+     "inst": "television program",
+     "prods": "",
+     "inds": ""
+    },
+    {
+     "name": "Mango",
+     "item": "Q16889925",
+     "title": "Mango language (China)",
+     "inst": "language",
+     "prods": "",
+     "inds": ""
+    },
+    {
+     "name": "Mango",
+     "item": "Q16997298",
+     "title": "Mango (horse)",
+     "inst": "horse",
+     "prods": "",
+     "inds": ""
+    },
+    {
+     "name": "Celine",
+     "item": "Q18338336",
+     "title": "Celine",
+     "inst": "female given name",
+     "prods": "",
+     "inds": ""
+    },
+    {
+     "name": "Mango",
+     "item": "Q20432799",
+     "title": "Mango (Tonga)",
+     "inst": "island",
+     "prods": "",
+     "inds": ""
+    },
+    {
+     "name": "Mulberry",
+     "item": "Q65085721",
+     "title": "Mulberry, Barrow County, Georgia",
+     "inst": "unincorporated community",
+     "prods": "",
+     "inds": ""
+    },
+    {
+     "name": "Mango",
+     "item": "Q83954970",
+     "title": "Mango Records",
+     "inst": "record label",
+     "prods": "",
+     "inds": ""
+    },
+    {
+     "name": "Zara",
+     "item": "Q104858595",
+     "title": "Zara (play)",
+     "inst": "literary work",
+     "prods": "",
+     "inds": ""
+    },
+    {
+     "name": "Celine",
+     "item": "Q108913484",
+     "title": "Celine (2021 concert residency)",
+     "inst": "concert residency",
+     "prods": "",
+     "inds": ""
+    },
+    {
+     "name": "Mulberry",
+     "item": "Q134970817",
+     "title": "Mulberry, Georgia",
+     "inst": "city in the United States",
+     "prods": "",
+     "inds": ""
+    },
+    {
+     "name": "Stuart Weitzman",
+     "item": "Q138755005",
+     "title": "Stuart Weitzman (fashion house)",
+     "inst": "brand",
+     "prods": "",
+     "inds": ""
+    },
+    {
+     "name": "Zara",
+     "item": "Q3370",
+     "title": "Zadar",
+     "inst": "town in Croatia|city",
+     "prods": "",
+     "inds": ""
+    },
+    {
+     "name": "Zara",
+     "item": "Q6583",
+     "title": "Sahara",
+     "inst": "desert",
+     "prods": "",
+     "inds": ""
+    },
+    {
+     "name": "Mango",
+     "item": "Q20130",
+     "title": "Mango, Piedmont",
+     "inst": "comune of Italy",
+     "prods": "",
+     "inds": ""
+    },
+    {
+     "name": "Brahmin",
+     "item": "Q47140",
+     "title": "Brahmin",
+     "inst": "caste",
+     "prods": "",
+     "inds": ""
     }
    ]
   }
