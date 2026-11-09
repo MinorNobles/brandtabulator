@@ -1,249 +1,452 @@
 {
- "search": {},
+ "search": {
+  "fashion house": [
+   {
+    "qid": "Q1941779",
+    "label": "fashion house",
+    "description": "business which designs and sells usually high-end clothing"
+   },
+   {
+    "qid": "Q1969464",
+    "label": "Fashion House",
+    "description": "television series"
+   },
+   {
+    "qid": "Q26336344",
+    "label": "Fashion House",
+    "description": "house in Hinckley and Bosworth, Leicestershire, England, UK"
+   },
+   {
+    "qid": "Q26363685",
+    "label": "Fashion House",
+    "description": "house in Barton-upon-Humber, North Lincolnshire, England, UK"
+   },
+   {
+    "qid": "Q136662967",
+    "label": "Fashion House Agresia",
+    "description": null
+   },
+   {
+    "qid": "Q18540104",
+    "label": "Fashion House Outlet Centre",
+    "description": null
+   }
+  ],
+  "luxury goods": [
+   {
+    "qid": "Q949715",
+    "label": "luxury good",
+    "description": "good for which demand increases more than proportionally as income rises"
+   },
+   {
+    "qid": "Q6706467",
+    "label": "Luxury goods in the People's Republic of China",
+    "description": "market segment of China"
+   },
+   {
+    "qid": "Q59104701",
+    "label": "Luxury Goods in the Ancient Near EastMarian H. Feldman. Diplomacy by Design: Luxury Arts and an ‘International Style’ in the Ancient Near East, 1400-1200 BCE. xviii+278 pages, 77 illustrations, 18 colour plates. 2006. Chicago (IL): University of",
+    "description": null
+   },
+   {
+    "qid": "Q111046209",
+    "label": "Luxury goods and means of politics",
+    "description": "German article from Johannes Wolff, Dresdner Hefte 142"
+   },
+   {
+    "qid": "Q120463859",
+    "label": "Luxury Goods in Luxurious Life——A Romantic Marketing",
+    "description": null
+   },
+   {
+    "qid": "Q130034410",
+    "label": "Luxury Goods and Third-Party Online Platforms: The ECJ’s Judgment in the Coty Case",
+    "description": "scholarly article published in 2018"
+   }
+  ],
+  "leather goods": [
+   {
+    "qid": "Q96141153",
+    "label": "leather goods",
+    "description": "goods made of leather"
+   },
+   {
+    "qid": "Q112703",
+    "label": "leather goods maker",
+    "description": "craftsperson who makes small leather goods (bags, wallets, belts)"
+   },
+   {
+    "qid": "Q47508066",
+    "label": "leather shop",
+    "description": "shop that sells products made out of leather"
+   },
+   {
+    "qid": "Q57262261",
+    "label": "leather goods trade",
+    "description": null
+   },
+   {
+    "qid": "Q123187273",
+    "label": "Leather Goods, Not Elsewhere Classified",
+    "description": "SIC industry classification"
+   },
+   {
+    "qid": "Q141327036",
+    "label": "Leather goods factory",
+    "description": null
+   }
+  ],
+  "handbag": [
+   {
+    "qid": "Q467505",
+    "label": "handbag",
+    "description": "handled medium-to-large bag that is often fashionably designed, typically used by women, to hold personal items"
+   },
+   {
+    "qid": "Q3032212",
+    "label": "diva house",
+    "description": "subgenre of house"
+   },
+   {
+    "qid": "Q87577524",
+    "label": "👜",
+    "description": "Unicode character"
+   },
+   {
+    "qid": "Q93119024",
+    "label": "Handbag",
+    "description": "play written by Mark Ravenhill"
+   },
+   {
+    "qid": "Q64561716",
+    "label": "Handbag",
+    "description": "drawing in the National Gallery of Art (NGA 20197)"
+   },
+   {
+    "qid": "Q64537856",
+    "label": "Handbag",
+    "description": "drawing in the National Gallery of Art (NGA 14395)"
+   }
+  ],
+  "fashion accessory": [
+   {
+    "qid": "Q1065579",
+    "label": "fashion accessory",
+    "description": "item carried or worn which is used to contribute to the wearer's outfit"
+   }
+  ],
+  "clothing industry": [
+   {
+    "qid": "Q11828862",
+    "label": "clothing industry",
+    "description": "industry encompassing the design, manufacturing, wholesaling and retailing of clothes"
+   },
+   {
+    "qid": "Q111973242",
+    "label": "Clothing industry, branches and accessories",
+    "description": "special category of commodities/wares of the 20th Century Press Archives"
+   },
+   {
+    "qid": "Q124656580",
+    "label": "underwear industry",
+    "description": null
+   },
+   {
+    "qid": "Q113432129",
+    "label": "Clothing industry, branches and accessories : United States",
+    "description": "folder of the 20th Century Press Archives"
+   },
+   {
+    "qid": "Q113432126",
+    "label": "Clothing industry, branches and accessories : Japan",
+    "description": "folder of the 20th Century Press Archives"
+   },
+   {
+    "qid": "Q113432127",
+    "label": "Clothing industry, branches and accessories : Poland",
+    "description": "folder of the 20th Century Press Archives"
+   }
+  ]
+ },
  "items": {},
- "sparql": {},
- "urls": {
-  "citizen_all": {
-   "items": [
+ "sparql": {
+  "set_props": {
+   "count": 33,
+   "rows": [
     {
-     "project": "en.wikipedia",
-     "article": "Citizen_Watch",
-     "granularity": "daily",
-     "timestamp": "2026102500",
-     "access": "all-access",
-     "agent": "all-agents",
-     "views": 681
+     "title": "Mango",
+     "item": "Q169",
+     "itemLabel": "mango",
+     "inst": "type of fruit",
+     "inds": "",
+     "prods": ""
     },
     {
-     "project": "en.wikipedia",
-     "article": "Citizen_Watch",
-     "granularity": "daily",
-     "timestamp": "2026102600",
-     "access": "all-access",
-     "agent": "all-agents",
-     "views": 567
+     "title": "Brahmin",
+     "item": "Q47140",
+     "itemLabel": "Brahmin",
+     "inst": "caste",
+     "inds": "",
+     "prods": ""
     },
     {
-     "project": "en.wikipedia",
-     "article": "Citizen_Watch",
-     "granularity": "daily",
-     "timestamp": "2026102700",
-     "access": "all-access",
-     "agent": "all-agents",
-     "views": 445
+     "title": "Zara",
+     "item": "Q147614",
+     "itemLabel": "Zara",
+     "inst": "Wikimedia disambiguation page",
+     "inds": "",
+     "prods": ""
     },
     {
-     "project": "en.wikipedia",
-     "article": "Citizen_Watch",
-     "granularity": "daily",
-     "timestamp": "2026102800",
-     "access": "all-access",
-     "agent": "all-agents",
-     "views": 443
+     "title": "Longchamp",
+     "item": "Q233813",
+     "itemLabel": "Longchamp",
+     "inst": "Wikimedia disambiguation page",
+     "inds": "",
+     "prods": ""
     },
     {
-     "project": "en.wikipedia",
-     "article": "Citizen_Watch",
-     "granularity": "daily",
-     "timestamp": "2026102900",
-     "access": "all-access",
-     "agent": "all-agents",
-     "views": 425
+     "title": "Marc Jacobs",
+     "item": "Q313108",
+     "itemLabel": "Marc Jacobs",
+     "inst": "human",
+     "inds": "",
+     "prods": ""
     },
     {
-     "project": "en.wikipedia",
-     "article": "Citizen_Watch",
-     "granularity": "daily",
-     "timestamp": "2026103000",
-     "access": "all-access",
-     "agent": "all-agents",
-     "views": 426
+     "title": "Michael Kors",
+     "item": "Q717618",
+     "itemLabel": "Michael Kors",
+     "inst": "human",
+     "inds": "",
+     "prods": ""
     },
     {
-     "project": "en.wikipedia",
-     "article": "Citizen_Watch",
-     "granularity": "daily",
-     "timestamp": "2026103100",
-     "access": "all-access",
-     "agent": "all-agents",
-     "views": 436
+     "title": "Coccinelle",
+     "item": "Q2737959",
+     "itemLabel": "Coccinelle",
+     "inst": "human",
+     "inds": "",
+     "prods": ""
     },
     {
-     "project": "en.wikipedia",
-     "article": "Citizen_Watch",
-     "granularity": "daily",
-     "timestamp": "2026110100",
-     "access": "all-access",
-     "agent": "all-agents",
-     "views": 464
+     "title": "Tory Burch",
+     "item": "Q2945547",
+     "itemLabel": "Tory Burch",
+     "inst": "human",
+     "inds": "",
+     "prods": ""
     },
     {
-     "project": "en.wikipedia",
-     "article": "Citizen_Watch",
-     "granularity": "daily",
-     "timestamp": "2026110200",
-     "access": "all-access",
-     "agent": "all-agents",
-     "views": 415
+     "title": "Furla",
+     "item": "Q3073195",
+     "itemLabel": "Furla",
+     "inst": "retail chain|business|enterprise",
+     "inds": "fashion",
+     "prods": ""
     },
     {
-     "project": "en.wikipedia",
-     "article": "Citizen_Watch",
-     "granularity": "daily",
-     "timestamp": "2026110300",
-     "access": "all-access",
-     "agent": "all-agents",
-     "views": 349
+     "title": "Mulberry",
+     "item": "Q3916883",
+     "itemLabel": "mulberry",
+     "inst": "accessory fruit|type of fruit",
+     "inds": "",
+     "prods": ""
     },
     {
-     "project": "en.wikipedia",
-     "article": "Citizen_Watch",
-     "granularity": "daily",
-     "timestamp": "2026110400",
-     "access": "all-access",
-     "agent": "all-agents",
-     "views": 372
+     "title": "AllSaints",
+     "item": "Q4728473",
+     "itemLabel": "AllSaints",
+     "inst": "brick and mortar|business|clothing store chain",
+     "inds": "fashion",
+     "prods": ""
     },
     {
-     "project": "en.wikipedia",
-     "article": "Citizen_Watch",
-     "granularity": "daily",
-     "timestamp": "2026110500",
-     "access": "all-access",
-     "agent": "all-agents",
-     "views": 371
+     "title": "Kate Spade New York",
+     "item": "Q6375797",
+     "itemLabel": "Kate Spade New York",
+     "inst": "business",
+     "inds": "",
+     "prods": ""
     },
     {
-     "project": "en.wikipedia",
-     "article": "Citizen_Watch",
-     "granularity": "daily",
-     "timestamp": "2026110600",
-     "access": "all-access",
-     "agent": "all-agents",
-     "views": 384
+     "title": "Stuart Weitzman",
+     "item": "Q16106134",
+     "itemLabel": "Stuart Weitzman",
+     "inst": "human",
+     "inds": "",
+     "prods": ""
+    },
+    {
+     "title": "Kurt Geiger",
+     "item": "Q17063744",
+     "itemLabel": "Kurt Geiger",
+     "inst": "brick and mortar|business",
+     "inds": "",
+     "prods": ""
+    },
+    {
+     "title": "Celine",
+     "item": "Q18338336",
+     "itemLabel": "Celine",
+     "inst": "female given name",
+     "inds": "",
+     "prods": ""
+    },
+    {
+     "title": "Polène",
+     "item": "Q122055705",
+     "itemLabel": "Polène",
+     "inst": "brand",
+     "inds": "leather crafting",
+     "prods": ""
+    },
+    {
+     "title": "Gucci",
+     "item": "Q178516",
+     "itemLabel": "Gucci",
+     "inst": "fashion house|business|enterprise|perfume brand",
+     "inds": "fashion",
+     "prods": "clothing|luxury good|leather goods"
+    },
+    {
+     "title": "Louis Vuitton",
+     "item": "Q191485",
+     "itemLabel": "Louis Vuitton",
+     "inst": "fashion house|perfume brand",
+     "inds": "perfumes industry|wholesale trade (business-to-business) of other household goods|clothing industry",
+     "prods": "clothing|perfume|trunk|fashion accessory|handbag"
+    },
+    {
+     "title": "Prada",
+     "item": "Q193136",
+     "itemLabel": "Prada",
+     "inst": "fashion house|public company|perfume brand",
+     "inds": "fashion",
+     "prods": "clothing"
+    },
+    {
+     "title": "Chanel",
+     "item": "Q218115",
+     "itemLabel": "Chanel",
+     "inst": "business",
+     "inds": "Wholesale trade (business-to-business) of clothing and footwear",
+     "prods": "clothing|perfume|jewelry|costume jewelry|fashion accessory"
+    },
+    {
+     "title": "Burberry",
+     "item": "Q390107",
+     "itemLabel": "Burberry",
+     "inst": "fashion house|public company|perfume brand",
+     "inds": "textile and clothing industry|clothing industry|manufacture of wearing apparel, except fur apparel",
+     "prods": "clothing"
+    },
+    {
+     "title": "Dior",
+     "item": "Q542767",
+     "itemLabel": "Christian Dior",
+     "inst": "business|perfume brand",
+     "inds": "holding company activities",
+     "prods": "clothing"
+    },
+    {
+     "title": "Coach New York",
+     "item": "Q727697",
+     "itemLabel": "Coach",
+     "inst": "public company|business|enterprise",
+     "inds": "",
+     "prods": "clothing"
+    },
+    {
+     "title": "MCM Worldwide",
+     "item": "Q835487",
+     "itemLabel": "MCM Worldwide",
+     "inst": "business",
+     "inds": "clothing industry",
+     "prods": "clothing|fashion accessory"
+    },
+    {
+     "title": "Ralph Lauren Corporation",
+     "item": "Q1641437",
+     "itemLabel": "Ralph Lauren Corporation",
+     "inst": "public company|business|enterprise",
+     "inds": "clothing industry",
+     "prods": "clothing|perfume|footwear|household goods"
+    },
+    {
+     "title": "Dooney & Bourke",
+     "item": "Q5297166",
+     "itemLabel": "Dooney & Bourke",
+     "inst": "brick and mortar",
+     "inds": "fashion",
+     "prods": "clothing|backpack|wallet|bag|tote bag|satchel|fashion accessory|shoulder bag|crossbody bag|handbag"
+    },
+    {
+     "title": "Vera Bradley",
+     "item": "Q7920749",
+     "itemLabel": "Vera Bradley",
+     "inst": "public company|business",
+     "inds": "",
+     "prods": "clothing"
+    },
+    {
+     "title": "Chloé",
+     "item": "Q1075391",
+     "itemLabel": "Chloé",
+     "inst": "fashion house|perfume brand",
+     "inds": "perfumes industry|wholesale trade (business-to-business) of other household goods|Wholesale trade (business-to-business) of clothing and footwear|clothing industry",
+     "prods": "perfume|jewelry|footwear|women's clothing"
+    },
+    {
+     "title": "Cole Haan",
+     "item": "Q4356504",
+     "itemLabel": "Cole Haan",
+     "inst": "subsidiary company|brick and mortar|business",
+     "inds": "",
+     "prods": "footwear"
+    },
+    {
+     "title": "Tumi Inc.",
+     "item": "Q4465402",
+     "itemLabel": "Tumi Inc.",
+     "inst": "brand|business",
+     "inds": "baggage",
+     "prods": "baggage|handbag"
+    },
+    {
+     "title": "Fossil Group",
+     "item": "Q356212",
+     "itemLabel": "Fossil",
+     "inst": "public company|business|enterprise",
+     "inds": "bijou",
+     "prods": "watch"
+    },
+    {
+     "title": "Ted Baker",
+     "item": "Q2913458",
+     "itemLabel": "Ted Baker Plc",
+     "inst": "public company|brick and mortar|business|enterprise",
+     "inds": "",
+     "prods": "designer clothing"
+    },
+    {
+     "title": "Strathberry",
+     "item": "Q16933219",
+     "itemLabel": "Strathberry of Scotland",
+     "inst": "company",
+     "inds": "fashion",
+     "prods": "fashion accessory"
     }
    ]
   },
-  "seiko_all": {
-   "items": [
+  "rule_try1_count": {
+   "count": 1,
+   "rows": [
     {
-     "project": "en.wikipedia",
-     "article": "Seiko",
-     "granularity": "daily",
-     "timestamp": "2026102500",
-     "access": "all-access",
-     "agent": "all-agents",
-     "views": 706
-    },
-    {
-     "project": "en.wikipedia",
-     "article": "Seiko",
-     "granularity": "daily",
-     "timestamp": "2026102600",
-     "access": "all-access",
-     "agent": "all-agents",
-     "views": 701
-    },
-    {
-     "project": "en.wikipedia",
-     "article": "Seiko",
-     "granularity": "daily",
-     "timestamp": "2026102700",
-     "access": "all-access",
-     "agent": "all-agents",
-     "views": 616
-    },
-    {
-     "project": "en.wikipedia",
-     "article": "Seiko",
-     "granularity": "daily",
-     "timestamp": "2026102800",
-     "access": "all-access",
-     "agent": "all-agents",
-     "views": 580
-    },
-    {
-     "project": "en.wikipedia",
-     "article": "Seiko",
-     "granularity": "daily",
-     "timestamp": "2026102900",
-     "access": "all-access",
-     "agent": "all-agents",
-     "views": 668
-    },
-    {
-     "project": "en.wikipedia",
-     "article": "Seiko",
-     "granularity": "daily",
-     "timestamp": "2026103000",
-     "access": "all-access",
-     "agent": "all-agents",
-     "views": 618
-    },
-    {
-     "project": "en.wikipedia",
-     "article": "Seiko",
-     "granularity": "daily",
-     "timestamp": "2026103100",
-     "access": "all-access",
-     "agent": "all-agents",
-     "views": 585
-    },
-    {
-     "project": "en.wikipedia",
-     "article": "Seiko",
-     "granularity": "daily",
-     "timestamp": "2026110100",
-     "access": "all-access",
-     "agent": "all-agents",
-     "views": 678
-    },
-    {
-     "project": "en.wikipedia",
-     "article": "Seiko",
-     "granularity": "daily",
-     "timestamp": "2026110200",
-     "access": "all-access",
-     "agent": "all-agents",
-     "views": 644
-    },
-    {
-     "project": "en.wikipedia",
-     "article": "Seiko",
-     "granularity": "daily",
-     "timestamp": "2026110300",
-     "access": "all-access",
-     "agent": "all-agents",
-     "views": 658
-    },
-    {
-     "project": "en.wikipedia",
-     "article": "Seiko",
-     "granularity": "daily",
-     "timestamp": "2026110400",
-     "access": "all-access",
-     "agent": "all-agents",
-     "views": 598
-    },
-    {
-     "project": "en.wikipedia",
-     "article": "Seiko",
-     "granularity": "daily",
-     "timestamp": "2026110500",
-     "access": "all-access",
-     "agent": "all-agents",
-     "views": 613
-    },
-    {
-     "project": "en.wikipedia",
-     "article": "Seiko",
-     "granularity": "daily",
-     "timestamp": "2026110600",
-     "access": "all-access",
-     "agent": "all-agents",
-     "views": 644
+     "n": "19"
     }
    ]
   }
- }
+ },
+ "urls": {}
 }
