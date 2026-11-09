@@ -96,7 +96,7 @@ def issue_box(cat, rows):
     d = dt.date.fromisoformat(rows_date(rows)) if rows_date(rows) else dt.date.today()
     s1, e1, s0, e0 = weeks(d)   # uses the week end saved with the data
     span = lambda a, b: (f"{a.day}–{b.day} {b:%B}" if a.month == b.month else f"{a.day} {a:%B} – {b.day} {b:%B}")
-    return (f"<p style='margin:0 0 8px'>{H.escape(tgt['label'])} against its {len(comp)} competitors, per AI. This week is {span(s1, e1)}.</p>"
+    return (f"<p style='margin:0 0 8px'>{H.escape(tgt['label'])} against its {len(comp)} {H.escape((cs.get("name") or "Competitors, per AI").split(",")[0].lower())}, per AI. This week is {span(s1, e1)}.</p>"
             f"<div class='wrap'><table class='issue' style='min-width:0;width:100%'><thead><tr><th></th><th>{H.escape(tgt['label'])}</th><th>Typical competitor</th></tr></thead><tbody>{body}</tbody></table></div>"
             f"<div class='sub' style='margin-top:6px'>Typical competitor is the middle figure among the {len(comp)}. Changes count edits made by people, not by bots or batch tools.</div>")
 
