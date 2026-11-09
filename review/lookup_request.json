@@ -3,14 +3,9 @@
  "items": [],
  "sparql": {},
  "urls": {
-  "Brizo": "https://en.wikipedia.org/w/api.php?action=query&list=search&srlimit=4&format=json&srsearch=Brizo%20faucet",
-  "Rohl": "https://en.wikipedia.org/w/api.php?action=query&list=search&srlimit=4&format=json&srsearch=Rohl%20faucet",
-  "Kraus": "https://en.wikipedia.org/w/api.php?action=query&list=search&srlimit=4&format=json&srsearch=Kraus%20sinks%20faucets",
-  "Kallista": "https://en.wikipedia.org/w/api.php?action=query&list=search&srlimit=4&format=json&srsearch=Kallista%20Kohler%20plumbing",
-  "Newport Brass": "https://en.wikipedia.org/w/api.php?action=query&list=search&srlimit=4&format=json&srsearch=Newport%20Brass",
-  "Waterworks": "https://en.wikipedia.org/w/api.php?action=query&list=search&srlimit=4&format=json&srsearch=Waterworks%20bath%20fixtures%20company",
-  "Waterstone": "https://en.wikipedia.org/w/api.php?action=query&list=search&srlimit=4&format=json&srsearch=Waterstone%20faucets",
-  "Victoria + Albert": "https://en.wikipedia.org/w/api.php?action=query&list=search&srlimit=4&format=json&srsearch=Victoria%20%2B%20Albert%20baths",
-  "titles": "https://en.wikipedia.org/w/api.php?action=query&redirects=1&prop=pageprops&format=json&titles=Brizo%20%28company%29%7CRohl%20%28company%29%7CKraus%20USA%7CKallista%20%28brand%29%7CWaterworks%20%28retailer%29%7CWaterworks%20%28company%29%7CVictoria%20%2B%20Albert%20Baths%7CNewport%20Brass%20%28company%29"
+  "info": "https://en.wikipedia.org/w/api.php?action=query&redirects=1&prop=pageprops|info|revisions&rvprop=timestamp&rvlimit=1&rvdir=newer&format=json&titles=Kohler%20Kitchen%20%26%20Bath%7CKohler%20Co.",
+  "pv_kb": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Kohler_Kitchen_%26_Bath/monthly/2026100100/2026103100",
+  "pv_co": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Kohler_Co./monthly/2026100100/2026103100",
+  "intro": "https://en.wikipedia.org/w/api.php?action=query&prop=extracts&exintro=1&explaintext=1&format=json&titles=Kohler%20Kitchen%20%26%20Bath%7CKohler%20Co."
  }
 }
