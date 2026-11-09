@@ -1,0 +1,110 @@
+{
+ "target": "Toptal",
+ "target_qid": "Q21462713",
+ "category_slug": "talent-networks",
+ "date": "2026-11-09",
+ "engines": {
+  "Claude": "claude-opus-4-7",
+  "Gemini": "gemini-2.5-pro",
+  "ChatGPT": "gpt-6.1-sol"
+ },
+ "web_search": true,
+ "runs_per_question": 3,
+ "questions": [
+  "Who are the main competitors of Toptal?",
+  "What freelance talent networks are similar to Toptal?",
+  "I'm thinking about hiring a developer through Toptal. What other platforms should I consider?"
+ ],
+ "answers_total": 27,
+ "answers_counted": 27,
+ "readers": {
+  "first": "claude-opus-4-7",
+  "second": "gemini-2.5-pro"
+ },
+ "reading_rule": "A brand counts as named in an answer only if both readers list it.",
+ "rule": "In the competitive set if named by at least 2 of the 3 engines.",
+ "brands": [
+  {
+   "brand": "Upwork",
+   "qid": "Q3344170",
+   "in_category": true,
+   "engines": [
+    "ChatGPT",
+    "Claude",
+    "Gemini"
+   ],
+   "answers": 24,
+   "status": "in set, on page"
+  },
+  {
+   "brand": "Fiverr",
+   "qid": "Q5410132",
+   "in_category": true,
+   "engines": [
+    "ChatGPT",
+    "Claude",
+    "Gemini"
+   ],
+   "answers": 19,
+   "status": "in set, on page"
+  },
+  {
+   "brand": "Andela",
+   "qid": "Q28186691",
+   "in_category": true,
+   "engines": [
+    "ChatGPT",
+    "Claude",
+    "Gemini"
+   ],
+   "answers": 18,
+   "status": "in set, on page"
+  },
+  {
+   "brand": "Freelancer.com",
+   "qid": "Q5500950",
+   "in_category": true,
+   "engines": [
+    "Claude",
+    "Gemini"
+   ],
+   "answers": 9,
+   "status": "in set, on page"
+  },
+  {
+   "brand": "Gigster",
+   "qid": "Q21070780",
+   "in_category": true,
+   "engines": [
+    "Claude",
+    "Gemini"
+   ],
+   "answers": 6,
+   "status": "in set, on page"
+  },
+  {
+   "brand": "Catalant",
+   "qid": "Q28401895",
+   "in_category": true,
+   "engines": [
+    "ChatGPT",
+    "Gemini"
+   ],
+   "answers": 4,
+   "status": "in set, on page"
+  }
+ ],
+ "note": "Only brands in the competitive set and in this BrandTabulator category are listed.",
+ "open_questions": {
+  "questions": [
+   "I need to hire a top freelance software developer quickly. Which talent networks should I consider?"
+  ],
+  "answers": 9,
+  "target_named_in": 9,
+  "by_engine": {
+   "Claude": "3 of 3",
+   "Gemini": "3 of 3",
+   "ChatGPT": "3 of 3"
+  }
+ }
+}
