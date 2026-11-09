@@ -1,11 +1,9 @@
 {
- "search": [
-  "Robin Hood Foundation"
- ],
+ "search": [],
  "items": [],
  "sparql": {},
  "urls": {
-  "wp": "https://en.wikipedia.org/w/api.php?action=query&redirects=1&prop=pageprops|info&format=json&titles=Robin%20Hood%20Foundation%7CRobin%20Hood%20%28charity%29",
-  "pv": "https://wikimedia.org/api/rest_v1/metrics/pageviews/per-article/en.wikipedia/all-access/user/Robin_Hood_Foundation/monthly/2026100100/2026103100"
+  "t0": "https://en.wikipedia.org/w/api.php?action=query&redirects=1&prop=pageprops&ppprop=wikibase_item|disambiguation&format=json&titles=GiveDirectly%7CCity%20Harvest%7CThe%20New%20York%20Community%20Trust%7CNew%20York%20Community%20Trust%7CTipping%20Point%20Community%7CAltman%20Foundation%7CCoalition%20for%20the%20Homeless%7CFord%20Foundation%7CCARE%20%28relief%20agency%29%7CCARE%20International%7COxfam%20America%7CNew%20York%20Foundation%7CThe%20Salvation%20Army%7CPinkerton%20Foundation%7CTiger%20Foundation%7CUnited%20Way%20of%20New%20York%20City%7CNew%20York%20Cares%7CRockefeller%20Foundation%7CStarr%20Foundation%7CAgainst%20Malaria%20Foundation%7CFeeding%20America%7CNew%20Profit%7CFood%20Bank%20for%20New%20York%20City%7CHabitat%20for%20Humanity%7CMother%20Cabrini%20Health%20Foundation",
+  "t25": "https://en.wikipedia.org/w/api.php?action=query&redirects=1&prop=pageprops&ppprop=wikibase_item|disambiguation&format=json&titles=United%20Way%20Worldwide%7CBlue%20Meridian%20Partners%7CCenter%20on%20Budget%20and%20Policy%20Priorities%7CHenry%20Street%20Settlement%7CNational%20Low%20Income%20Housing%20Coalition%7CThe%20HOPE%20Program%7CCharity%20Navigator"
  }
 }
