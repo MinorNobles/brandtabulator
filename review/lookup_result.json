@@ -1,60 +1,60 @@
 {
- "search": {},
+ "search": {
+  "Robin Hood Foundation": [
+   {
+    "qid": "Q174896",
+    "label": "Robin Hood Foundation",
+    "description": "foundation"
+   }
+  ]
+ },
  "items": {},
  "sparql": {},
  "urls": {
-  "info": {
-   "error": {
-    "code": "invalidparammix",
-    "info": "\"titles\", \"pageids\" or a generator was used to supply multiple pages, but the \"rvlimit\", \"rvstartid\", \"rvendid\", \"rvdir=newer\", \"rvuser\", \"rvexcludeuser\", \"rvstart\", and \"rvend\" parameters may only be used on a single page.",
-    "*": "See https://en.wikipedia.org/w/api.php for API usage. Subscribe to the mediawiki-api-announce mailing list at &lt;https://lists.wikimedia.org/postorius/lists/mediawiki-api-announce.lists.wikimedia.org/&gt; for notice of API deprecations and breaking changes."
-   },
-   "servedby": "mw-api-ext.codfw.main-8675c7d46b-52s4x"
-  },
-  "pv_kb": {
-   "items": [
-    {
-     "project": "en.wikipedia",
-     "article": "Kohler_Kitchen_&_Bath",
-     "granularity": "monthly",
-     "timestamp": "2026100100",
-     "access": "all-access",
-     "agent": "user",
-     "views": 265
-    }
-   ]
-  },
-  "pv_co": {
-   "items": [
-    {
-     "project": "en.wikipedia",
-     "article": "Kohler_Co.",
-     "granularity": "monthly",
-     "timestamp": "2026100100",
-     "access": "all-access",
-     "agent": "user",
-     "views": 4763
-    }
-   ]
-  },
-  "intro": {
+  "wp": {
    "batchcomplete": "",
    "query": {
     "pages": {
-     "625919": {
-      "pageid": 625919,
+     "-1": {
       "ns": 0,
-      "title": "Kohler Co.",
-      "extract": "Kohler Co., is an American manufacturing company founded in 1873 by John Michael Kohler, based in Kohler, Wisconsin. Kohler is best known for its plumbing products, but the company also manufactures furniture, cabinetry, tile, engines, and generators. Destination Kohler also owns various hospitality establishments in the United States and Scotland. In February 2017, Kohler Co. acquired UK-based Clarke Energy from the management team and ECI Partners, a multinational specialist in the engineering, construction, installation, and maintenance of engine-based power plants and an authorized distributor of GE's reciprocating engines in 19 countries worldwide. In November 2023, it was announced that Kohler is establishing the Energy group independently and would be bought in a complex partnership with private equity group Platinum Equity; the deal is slated to close in Q1 2024 and rebranded as Rehlko, an anagram of Kohler.\n\n"
+      "title": "Robin Hood (charity)",
+      "missing": "",
+      "contentmodel": "wikitext",
+      "pagelanguage": "en",
+      "pagelanguagehtmlcode": "en",
+      "pagelanguagedir": "ltr"
      },
-     "48635101": {
-      "pageid": 48635101,
+     "11061413": {
+      "pageid": 11061413,
       "ns": 0,
-      "title": "Kohler Kitchen & Bath",
-      "extract": "Kohler Kitchen & Bath, a division of the Kohler Company, manufactures kitchen and bath plumbing fixtures. The Kohler Kitchen & Bath Group has locations in Wisconsin, Pennsylvania, Oregon, Canada, and France."
+      "title": "Robin Hood Foundation",
+      "pageprops": {
+       "wikibase-shortdesc": "Charitable organization in New York City",
+       "wikibase_item": "Q174896"
+      },
+      "contentmodel": "wikitext",
+      "pagelanguage": "en",
+      "pagelanguagehtmlcode": "en",
+      "pagelanguagedir": "ltr",
+      "touched": "2026-11-08T01:48:25Z",
+      "lastrevid": 1383665210,
+      "length": 14822
      }
     }
    }
+  },
+  "pv": {
+   "items": [
+    {
+     "project": "en.wikipedia",
+     "article": "Robin_Hood_Foundation",
+     "granularity": "monthly",
+     "timestamp": "2026100100",
+     "access": "all-access",
+     "agent": "user",
+     "views": 3264
+    }
+   ]
   }
  }
 }
