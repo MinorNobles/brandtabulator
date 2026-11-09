@@ -1,449 +1,273 @@
 {
  "search": {
-  "fashion house": [
+  "Tory Burch LLC": [
    {
-    "qid": "Q1941779",
-    "label": "fashion house",
-    "description": "business which designs and sells usually high-end clothing"
+    "qid": "Q19988222",
+    "label": "Tory Burch LLC",
+    "description": "American fashion brand"
+   }
+  ],
+  "Michael Kors brand": [],
+  "Capri Holdings": [
+   {
+    "qid": "Q19572998",
+    "label": "Capri Holdings",
+    "description": "holdings company that owns several multinational fashion brands"
+   }
+  ],
+  "Longchamp company": [],
+  "Marc Jacobs brand": [],
+  "Cuyana": [
+   {
+    "qid": "Q18095964",
+    "label": "Cuyana",
+    "description": "genus of insects"
    },
    {
-    "qid": "Q1969464",
-    "label": "Fashion House",
-    "description": "television series"
+    "qid": "Q13655205",
+    "label": "Cuyana maurii",
+    "description": "species of insect"
    },
    {
-    "qid": "Q26336344",
-    "label": "Fashion House",
-    "description": "house in Hinckley and Bosworth, Leicestershire, England, UK"
+    "qid": "Q23647728",
+    "label": "Cuyanas",
+    "description": "hill in Santiago Metropolitan Region, Chile"
    },
    {
-    "qid": "Q26363685",
-    "label": "Fashion House",
-    "description": "house in Barton-upon-Humber, North Lincolnshire, England, UK"
-   },
+    "qid": "Q5197116",
+    "label": "Cuyunon people",
+    "description": "Visayan ethnic group"
+   }
+  ],
+  "DeMellier": [
    {
-    "qid": "Q136662967",
-    "label": "Fashion House Agresia",
-    "description": null
-   },
-   {
-    "qid": "Q18540104",
-    "label": "Fashion House Outlet Centre",
+    "qid": "Q132111641",
+    "label": "Demellier Ltd",
     "description": null
    }
   ],
-  "luxury goods": [
+  "Rebecca Minkoff": [
    {
-    "qid": "Q949715",
-    "label": "luxury good",
-    "description": "good for which demand increases more than proportionally as income rises"
-   },
-   {
-    "qid": "Q6706467",
-    "label": "Luxury goods in the People's Republic of China",
-    "description": "market segment of China"
-   },
-   {
-    "qid": "Q59104701",
-    "label": "Luxury Goods in the Ancient Near EastMarian H. Feldman. Diplomacy by Design: Luxury Arts and an ‘International Style’ in the Ancient Near East, 1400-1200 BCE. xviii+278 pages, 77 illustrations, 18 colour plates. 2006. Chicago (IL): University of",
-    "description": null
-   },
-   {
-    "qid": "Q111046209",
-    "label": "Luxury goods and means of politics",
-    "description": "German article from Johannes Wolff, Dresdner Hefte 142"
-   },
-   {
-    "qid": "Q120463859",
-    "label": "Luxury Goods in Luxurious Life——A Romantic Marketing",
-    "description": null
-   },
-   {
-    "qid": "Q130034410",
-    "label": "Luxury Goods and Third-Party Online Platforms: The ECJ’s Judgment in the Coty Case",
-    "description": "scholarly article published in 2018"
+    "qid": "Q50428076",
+    "label": "Rebecca Minkoff",
+    "description": "Handbag & Clothing Designer"
    }
   ],
-  "leather goods": [
+  "Madewell": [
    {
-    "qid": "Q96141153",
-    "label": "leather goods",
-    "description": "goods made of leather"
+    "qid": "Q64026213",
+    "label": "Madewell",
+    "description": "American retail chain operated by J.Crew"
    },
    {
-    "qid": "Q112703",
-    "label": "leather goods maker",
-    "description": "craftsperson who makes small leather goods (bags, wallets, belts)"
+    "qid": "Q37046069",
+    "label": "Madewell",
+    "description": "family name"
    },
    {
-    "qid": "Q47508066",
-    "label": "leather shop",
-    "description": "shop that sells products made out of leather"
-   },
-   {
-    "qid": "Q57262261",
-    "label": "leather goods trade",
-    "description": null
-   },
-   {
-    "qid": "Q123187273",
-    "label": "Leather Goods, Not Elsewhere Classified",
-    "description": "SIC industry classification"
-   },
-   {
-    "qid": "Q141327036",
-    "label": "Leather goods factory",
+    "qid": "Q133531896",
+    "label": "Madewell Hollow",
     "description": null
    }
   ],
-  "handbag": [
+  "Guess clothing company": [],
+  "Coccinelle handbags": [],
+  "Mulberry fashion": [],
+  "Celine fashion house": [],
+  "Mansur Gavriel": [],
+  "Senreve": [],
+  "Clare V.": [
    {
-    "qid": "Q467505",
-    "label": "handbag",
-    "description": "handled medium-to-large bag that is often fashionably designed, typically used by women, to hold personal items"
+    "qid": "Q102198108",
+    "label": "Clare V. D'Cruz",
+    "description": "Ph.D. Indian Institute of Technology 1998"
    },
    {
-    "qid": "Q3032212",
-    "label": "diva house",
-    "description": "subgenre of house"
+    "qid": "Q74256375",
+    "label": "Clare V. H. Baker",
+    "description": "researcher"
    },
    {
-    "qid": "Q87577524",
-    "label": "👜",
-    "description": "Unicode character"
+    "qid": "Q64706937",
+    "label": "Clare V. J. Griffiths",
+    "description": "researcher"
    },
    {
-    "qid": "Q93119024",
-    "label": "Handbag",
-    "description": "play written by Mark Ravenhill"
-   },
-   {
-    "qid": "Q64561716",
-    "label": "Handbag",
-    "description": "drawing in the National Gallery of Art (NGA 20197)"
-   },
-   {
-    "qid": "Q64537856",
-    "label": "Handbag",
-    "description": "drawing in the National Gallery of Art (NGA 14395)"
+    "qid": "Q55607725",
+    "label": "Clare Griffiths",
+    "description": "historian and academic"
    }
   ],
-  "fashion accessory": [
+  "Dagne Dover": [],
+  "JW Pei": [],
+  "Loewe": [
    {
-    "qid": "Q1065579",
-    "label": "fashion accessory",
-    "description": "item carried or worn which is used to contribute to the wearer's outfit"
+    "qid": "Q15614889",
+    "label": "Loewe",
+    "description": "family name"
+   },
+   {
+    "qid": "Q37006623",
+    "label": "Loewenthal",
+    "description": "family name"
+   },
+   {
+    "qid": "Q966905",
+    "label": "Loewe",
+    "description": "fashion house specialising in leather goods, clothing, perfumes and other fashion accessories"
+   },
+   {
+    "qid": "Q37237439",
+    "label": "Loewenberg",
+    "description": "family name"
+   },
+   {
+    "qid": "Q101040488",
+    "label": "Loewenheim",
+    "description": "family name"
+   },
+   {
+    "qid": "Q106404119",
+    "label": "Loewenson",
+    "description": "family name"
    }
   ],
-  "clothing industry": [
+  "Staud": [
    {
-    "qid": "Q11828862",
-    "label": "clothing industry",
-    "description": "industry encompassing the design, manufacturing, wholesaling and retailing of clothes"
+    "qid": "Q67331",
+    "label": "Otto Staudinger",
+    "description": "German lepidopterist and insect dealer (1830-1900)"
    },
    {
-    "qid": "Q111973242",
-    "label": "Clothing industry, branches and accessories",
-    "description": "special category of commodities/wares of the 20th Century Press Archives"
+    "qid": "Q21511604",
+    "label": "Staudinger",
+    "description": "family name"
    },
    {
-    "qid": "Q124656580",
-    "label": "underwear industry",
-    "description": null
+    "qid": "Q10374089",
+    "label": "Staudingeria",
+    "description": "genus of insects"
    },
    {
-    "qid": "Q113432129",
-    "label": "Clothing industry, branches and accessories : United States",
-    "description": "folder of the 20th Century Press Archives"
+    "qid": "Q37182259",
+    "label": "Staudacher",
+    "description": "family name"
    },
    {
-    "qid": "Q113432126",
-    "label": "Clothing industry, branches and accessories : Japan",
-    "description": "folder of the 20th Century Press Archives"
+    "qid": "Q37302428",
+    "label": "Stauder",
+    "description": "family name"
    },
    {
-    "qid": "Q113432127",
-    "label": "Clothing industry, branches and accessories : Poland",
-    "description": "folder of the 20th Century Press Archives"
+    "qid": "Q37247975",
+    "label": "Staude",
+    "description": "family name"
    }
-  ]
+  ],
+  "The Row fashion": [],
+  "Zara retailer": [],
+  "Mango retailer": [],
+  "Aldo Group": [
+   {
+    "qid": "Q2832297",
+    "label": "ALDO",
+    "description": "Canadian premium shoe retailer"
+   }
+  ],
+  "Telfar": [
+   {
+    "qid": "Q108416664",
+    "label": "Telfar",
+    "description": "family name"
+   },
+   {
+    "qid": "Q107395194",
+    "label": "Telfar",
+    "description": "Genderless fashion label"
+   },
+   {
+    "qid": "Q96407921",
+    "label": "Telfar Clemens",
+    "description": "American fashion designer (born 1985)"
+   },
+   {
+    "qid": "Q10780441",
+    "label": "Kocatepe",
+    "description": "mahalle (administrative quarter) in Nizip, Gaziantep, south-central Turkey"
+   },
+   {
+    "qid": "Q145005",
+    "label": "Telfairia",
+    "description": "genus of plants"
+   }
+  ],
+  "Brahmin handbags": [],
+  "Longchamp": [
+   {
+    "qid": "Q1339236",
+    "label": "Longchamp",
+    "description": "commune in Haute-Marne, France"
+   },
+   {
+    "qid": "Q47707",
+    "label": "Longchamp",
+    "description": "commune in Côte-d'Or, France"
+   },
+   {
+    "qid": "Q198494",
+    "label": "Longchamp",
+    "description": "commune in Vosges, France"
+   },
+   {
+    "qid": "Q1869471",
+    "label": "Longchamp",
+    "description": "French leathergoods company"
+   },
+   {
+    "qid": "Q1146158",
+    "label": "Longchamp-sur-Aujon",
+    "description": "commune in Aube, France"
+   },
+   {
+    "qid": "Q214658",
+    "label": "Longchamp-sous-Châtenois",
+    "description": "commune in Vosges, France"
+   }
+  ],
+  "Stuart Weitzman brand": [],
+  "Tapestry Inc": []
  },
  "items": {},
  "sparql": {
-  "set_props": {
-   "count": 33,
-   "rows": [
-    {
-     "title": "Mango",
-     "item": "Q169",
-     "itemLabel": "mango",
-     "inst": "type of fruit",
-     "inds": "",
-     "prods": ""
-    },
-    {
-     "title": "Brahmin",
-     "item": "Q47140",
-     "itemLabel": "Brahmin",
-     "inst": "caste",
-     "inds": "",
-     "prods": ""
-    },
-    {
-     "title": "Zara",
-     "item": "Q147614",
-     "itemLabel": "Zara",
-     "inst": "Wikimedia disambiguation page",
-     "inds": "",
-     "prods": ""
-    },
-    {
-     "title": "Longchamp",
-     "item": "Q233813",
-     "itemLabel": "Longchamp",
-     "inst": "Wikimedia disambiguation page",
-     "inds": "",
-     "prods": ""
-    },
-    {
-     "title": "Marc Jacobs",
-     "item": "Q313108",
-     "itemLabel": "Marc Jacobs",
-     "inst": "human",
-     "inds": "",
-     "prods": ""
-    },
-    {
-     "title": "Michael Kors",
-     "item": "Q717618",
-     "itemLabel": "Michael Kors",
-     "inst": "human",
-     "inds": "",
-     "prods": ""
-    },
-    {
-     "title": "Coccinelle",
-     "item": "Q2737959",
-     "itemLabel": "Coccinelle",
-     "inst": "human",
-     "inds": "",
-     "prods": ""
-    },
-    {
-     "title": "Tory Burch",
-     "item": "Q2945547",
-     "itemLabel": "Tory Burch",
-     "inst": "human",
-     "inds": "",
-     "prods": ""
-    },
-    {
-     "title": "Furla",
-     "item": "Q3073195",
-     "itemLabel": "Furla",
-     "inst": "retail chain|business|enterprise",
-     "inds": "fashion",
-     "prods": ""
-    },
-    {
-     "title": "Mulberry",
-     "item": "Q3916883",
-     "itemLabel": "mulberry",
-     "inst": "accessory fruit|type of fruit",
-     "inds": "",
-     "prods": ""
-    },
-    {
-     "title": "AllSaints",
-     "item": "Q4728473",
-     "itemLabel": "AllSaints",
-     "inst": "brick and mortar|business|clothing store chain",
-     "inds": "fashion",
-     "prods": ""
-    },
-    {
-     "title": "Kate Spade New York",
-     "item": "Q6375797",
-     "itemLabel": "Kate Spade New York",
-     "inst": "business",
-     "inds": "",
-     "prods": ""
-    },
-    {
-     "title": "Stuart Weitzman",
-     "item": "Q16106134",
-     "itemLabel": "Stuart Weitzman",
-     "inst": "human",
-     "inds": "",
-     "prods": ""
-    },
-    {
-     "title": "Kurt Geiger",
-     "item": "Q17063744",
-     "itemLabel": "Kurt Geiger",
-     "inst": "brick and mortar|business",
-     "inds": "",
-     "prods": ""
-    },
-    {
-     "title": "Celine",
-     "item": "Q18338336",
-     "itemLabel": "Celine",
-     "inst": "female given name",
-     "inds": "",
-     "prods": ""
-    },
-    {
-     "title": "Polène",
-     "item": "Q122055705",
-     "itemLabel": "Polène",
-     "inst": "brand",
-     "inds": "leather crafting",
-     "prods": ""
-    },
-    {
-     "title": "Gucci",
-     "item": "Q178516",
-     "itemLabel": "Gucci",
-     "inst": "fashion house|business|enterprise|perfume brand",
-     "inds": "fashion",
-     "prods": "clothing|luxury good|leather goods"
-    },
-    {
-     "title": "Louis Vuitton",
-     "item": "Q191485",
-     "itemLabel": "Louis Vuitton",
-     "inst": "fashion house|perfume brand",
-     "inds": "perfumes industry|wholesale trade (business-to-business) of other household goods|clothing industry",
-     "prods": "clothing|perfume|trunk|fashion accessory|handbag"
-    },
-    {
-     "title": "Prada",
-     "item": "Q193136",
-     "itemLabel": "Prada",
-     "inst": "fashion house|public company|perfume brand",
-     "inds": "fashion",
-     "prods": "clothing"
-    },
-    {
-     "title": "Chanel",
-     "item": "Q218115",
-     "itemLabel": "Chanel",
-     "inst": "business",
-     "inds": "Wholesale trade (business-to-business) of clothing and footwear",
-     "prods": "clothing|perfume|jewelry|costume jewelry|fashion accessory"
-    },
-    {
-     "title": "Burberry",
-     "item": "Q390107",
-     "itemLabel": "Burberry",
-     "inst": "fashion house|public company|perfume brand",
-     "inds": "textile and clothing industry|clothing industry|manufacture of wearing apparel, except fur apparel",
-     "prods": "clothing"
-    },
-    {
-     "title": "Dior",
-     "item": "Q542767",
-     "itemLabel": "Christian Dior",
-     "inst": "business|perfume brand",
-     "inds": "holding company activities",
-     "prods": "clothing"
-    },
-    {
-     "title": "Coach New York",
-     "item": "Q727697",
-     "itemLabel": "Coach",
-     "inst": "public company|business|enterprise",
-     "inds": "",
-     "prods": "clothing"
-    },
-    {
-     "title": "MCM Worldwide",
-     "item": "Q835487",
-     "itemLabel": "MCM Worldwide",
-     "inst": "business",
-     "inds": "clothing industry",
-     "prods": "clothing|fashion accessory"
-    },
-    {
-     "title": "Ralph Lauren Corporation",
-     "item": "Q1641437",
-     "itemLabel": "Ralph Lauren Corporation",
-     "inst": "public company|business|enterprise",
-     "inds": "clothing industry",
-     "prods": "clothing|perfume|footwear|household goods"
-    },
-    {
-     "title": "Dooney & Bourke",
-     "item": "Q5297166",
-     "itemLabel": "Dooney & Bourke",
-     "inst": "brick and mortar",
-     "inds": "fashion",
-     "prods": "clothing|backpack|wallet|bag|tote bag|satchel|fashion accessory|shoulder bag|crossbody bag|handbag"
-    },
-    {
-     "title": "Vera Bradley",
-     "item": "Q7920749",
-     "itemLabel": "Vera Bradley",
-     "inst": "public company|business",
-     "inds": "",
-     "prods": "clothing"
-    },
-    {
-     "title": "Chloé",
-     "item": "Q1075391",
-     "itemLabel": "Chloé",
-     "inst": "fashion house|perfume brand",
-     "inds": "perfumes industry|wholesale trade (business-to-business) of other household goods|Wholesale trade (business-to-business) of clothing and footwear|clothing industry",
-     "prods": "perfume|jewelry|footwear|women's clothing"
-    },
-    {
-     "title": "Cole Haan",
-     "item": "Q4356504",
-     "itemLabel": "Cole Haan",
-     "inst": "subsidiary company|brick and mortar|business",
-     "inds": "",
-     "prods": "footwear"
-    },
-    {
-     "title": "Tumi Inc.",
-     "item": "Q4465402",
-     "itemLabel": "Tumi Inc.",
-     "inst": "brand|business",
-     "inds": "baggage",
-     "prods": "baggage|handbag"
-    },
-    {
-     "title": "Fossil Group",
-     "item": "Q356212",
-     "itemLabel": "Fossil",
-     "inst": "public company|business|enterprise",
-     "inds": "bijou",
-     "prods": "watch"
-    },
-    {
-     "title": "Ted Baker",
-     "item": "Q2913458",
-     "itemLabel": "Ted Baker Plc",
-     "inst": "public company|brick and mortar|business|enterprise",
-     "inds": "",
-     "prods": "designer clothing"
-    },
-    {
-     "title": "Strathberry",
-     "item": "Q16933219",
-     "itemLabel": "Strathberry of Scotland",
-     "inst": "company",
-     "inds": "fashion",
-     "prods": "fashion accessory"
-    }
-   ]
-  },
-  "rule_try1_count": {
+  "fashion_house": {
    "count": 1,
    "rows": [
     {
-     "n": "19"
+     "n": "76"
+    }
+   ]
+  },
+  "prod_clothing": {
+   "count": 1,
+   "rows": [
+    {
+     "n": "593"
+    }
+   ]
+  },
+  "prod_accessory_handbag_leather": {
+   "count": 1,
+   "rows": [
+    {
+     "n": "108"
+    }
+   ]
+  },
+  "fh_or_acc": {
+   "count": 1,
+   "rows": [
+    {
+     "n": "174"
     }
    ]
   }
