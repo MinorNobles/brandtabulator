@@ -102,7 +102,7 @@
       "competitive_set": {
         "name": "Competitors, per AI",
         "summary": "data/handbags-leather-goods/competitors/coach/latest.json",
-        "unshown_note": "Some other brands that AI named are not shown: they have no English Wikipedia article of their own."
+        "unshown_note": "Also named by AI but not shown, because they have no English Wikipedia article of their own: Michael Kors, Marc Jacobs, Madewell, Coccinelle, DeMellier and Cuyana."
       }
     }
   },
