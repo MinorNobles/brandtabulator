@@ -263,21 +263,21 @@ def md_table(rows, cat):
     return h
 
 COLDEFS = [
-    ("#", "rank_days_since_50byte", "num", "Rank by staleness within this category. 1 = longest without a substantive edit."),
-    ("Brand", "label", "str", "English Wikipedia article and Wikidata item (Q-id). Click either to see the source."),
-    ("Last substantive edit", "wp_last_50byte", "date", "Most recent English Wikipedia edit of 50 bytes or more by a non-bot account that was not later reverted."),
-    ("90d edits / editors", "wp_edits_90d", "num", "Edits to the English article in the 90 days to the issue date, and how many distinct accounts made them."),
-    ("Reverted", "wp_reverted_90d", "num", "Of those 90-day edits, how many were reverted. A measure of contestation."),
-    ("Statements (referenced)", "wd_statements", "num", "Number of statements on the Wikidata item, and how many carry at least one reference."),
-    ("Ballast", "ballast_pct", "num", "Share of Wikidata statements that carry a reference. Sourced, complete Wikidata is what lets the record hold up."),
+    ("#", "rank_days_since_50byte", "num", "Rank in this category. 1 = the brand whose Wikipedia article has gone longest without a real update."),
+    ("Brand", "label", "str", "Links to the brand's Wikipedia article and its Wikidata entry."),
+    ("Last substantive edit", "wp_last_50byte", "date", "The last real change to the brand's English Wikipedia article: not a tiny fix, not a bot, and not undone later. Click the date to see it."),
+    ("90d edits / editors", "wp_edits_90d", "num", "Changes to the English article in the last 90 days, and how many different people made them."),
+    ("Reverted", "wp_reverted_90d", "num", "How many of those changes were undone. A sign the article is being argued over."),
+    ("Statements (referenced)", "wd_statements", "num", "Facts recorded in the brand's Wikidata entry, and how many of them cite a source."),
+    ("Ballast", "ballast_pct", "num", "Share of the brand's Wikidata facts that cite a source. Sourced facts are harder to dispute."),
     ("Identity links out", "identity_links_out", "num", "How many facts in the brand's Wikidata entry connect it to its own products, brands, companies it owns, founders, home country, slogan, awards or leaders. This is what Wikidata says the brand is."),
-    ("Key props", "key_props_present", "num", "Of six properties a brand item should carry: industry, product, parent, subsidiaries, owner-of, Google Knowledge Graph id."),
-    ("Editions", "wd_sitelinks", "num", "Language Wikipedias (and sister projects) with a page linked to this item. Sail area."),
-    ("Refs", "wp_refs", "num", "Reference tags in the English article."),
-    ("Words", "wp_words", "num", "Approximate word count of the English article."),
-    ("Reader views", "pv_user", "num", "English Wikipedia views in the stated month from Wikimedia's \"user\" agent class: traffic that presents as a browser. Not a guarantee of a human."),
-    ("Spider", "pv_spider", "num", "Views from declared crawlers such as Googlebot."),
-    ("Automated", "pv_automated", "num", "Views from undeclared traffic that Wikimedia's heuristics flag as bot-like. The scraper signal."),
+    ("Key props", "key_props_present", "num", "How many of six basic facts the Wikidata entry has: industry, products, parent company, subsidiaries, companies owned, and Google's ID for the brand."),
+    ("Editions", "wd_sitelinks", "num", "How many language versions of Wikipedia, and related sites, have a page on the brand."),
+    ("Refs", "wp_refs", "num", "Sources cited in the English article."),
+    ("Words", "wp_words", "num", "Length of the English article, in words."),
+    ("Reader views", "pv_user", "num", "Visits to the English article last month that looked like people using a browser. Some may still be machines."),
+    ("Spider", "pv_spider", "num", "Visits from search engines and other crawlers that identify themselves, such as Googlebot."),
+    ("Automated", "pv_automated", "num", "Visits from machines that don't identify themselves, which Wikimedia flags as automated. Often data scrapers."),
 ]
 
 def html_page(cat, rows, date, pv_month):
