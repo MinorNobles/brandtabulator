@@ -1,41 +1,8 @@
 {
- "search": [
-  "Tory Burch LLC",
-  "Michael Kors brand",
-  "Capri Holdings",
-  "Longchamp company",
-  "Marc Jacobs brand",
-  "Cuyana",
-  "DeMellier",
-  "Rebecca Minkoff",
-  "Madewell",
-  "Guess clothing company",
-  "Coccinelle handbags",
-  "Mulberry fashion",
-  "Celine fashion house",
-  "Mansur Gavriel",
-  "Senreve",
-  "Clare V.",
-  "Dagne Dover",
-  "JW Pei",
-  "Loewe",
-  "Staud",
-  "The Row fashion",
-  "Zara retailer",
-  "Mango retailer",
-  "Aldo Group",
-  "Telfar",
-  "Brahmin handbags",
-  "Longchamp",
-  "Stuart Weitzman brand",
-  "Tapestry Inc"
- ],
+ "search": [],
  "items": [],
  "sparql": {
-  "fashion_house": "SELECT (COUNT(DISTINCT ?item) AS ?n) WHERE { ?item wdt:P31 wd:Q1941779 . ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . FILTER NOT EXISTS { ?item wdt:P576 [] } }",
-  "prod_clothing": "SELECT (COUNT(DISTINCT ?item) AS ?n) WHERE { ?item wdt:P1056 wd:Q11460 . ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . FILTER NOT EXISTS { ?item wdt:P576 [] } }",
-  "prod_accessory_handbag_leather": "SELECT (COUNT(DISTINCT ?item) AS ?n) WHERE { { ?item wdt:P1056 wd:Q1065579 } UNION { ?item wdt:P1056 wd:Q467505 } UNION { ?item wdt:P1056 wd:Q96141153 } UNION { ?item wdt:P452 wd:Q96141153 } UNION { ?item wdt:P1056 wd:Q949715 } ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . FILTER NOT EXISTS { ?item wdt:P576 [] } }",
-  "fh_or_acc": "SELECT (COUNT(DISTINCT ?item) AS ?n) WHERE { { ?item wdt:P31 wd:Q1941779 } UNION { ?item wdt:P1056 wd:Q1065579 } UNION { ?item wdt:P1056 wd:Q467505 } UNION { ?item wdt:P1056 wd:Q96141153 } UNION { ?item wdt:P452 wd:Q96141153 } UNION { ?item wdt:P1056 wd:Q949715 } ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . FILTER NOT EXISTS { ?item wdt:P576 [] } }"
+  "by_label": "SELECT ?name ?item ?title (GROUP_CONCAT(DISTINCT ?tl;separator=\"|\") AS ?inst) (GROUP_CONCAT(DISTINCT ?pl;separator=\"|\") AS ?prods) (GROUP_CONCAT(DISTINCT ?il;separator=\"|\") AS ?inds) WHERE {\n VALUES ?name { \"Michael Kors\"@en \"Longchamp\"@en \"Marc Jacobs\"@en \"Cuyana\"@en \"Guess\"@en \"Coccinelle\"@en \"Mulberry\"@en \"Celine\"@en \"Tory Burch\"@en \"Stuart Weitzman\"@en \"Mansur Gavriel\"@en \"Kate Spade\"@en \"Brahmin\"@en \"Zara\"@en \"Mango\"@en \"The Row\"@en \"Staud\"@en \"Senreve\"@en \"JW Pei\"@en \"Dagne Dover\"@en \"Clare V.\"@en \"Pol\u00e8ne\"@en \"DeMellier\"@en \"Strathberry\"@en \"Fossil\"@en }\n { ?item rdfs:label ?name } UNION { ?item skos:altLabel ?name }\n ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> ; schema:name ?title .\n ?item wdt:P31 ?t . FILTER(?t NOT IN (wd:Q5, wd:Q4167410, wd:Q101352, wd:Q202444, wd:Q484170, wd:Q16521, wd:Q11424, wd:Q482994, wd:Q7366, wd:Q134556, wd:Q105543609))\n ?t rdfs:label ?tl . FILTER(LANG(?tl)=\"en\")\n OPTIONAL { ?item wdt:P1056 ?p . ?p rdfs:label ?pl . FILTER(LANG(?pl)=\"en\") }\n OPTIONAL { ?item wdt:P452 ?i . ?i rdfs:label ?il . FILTER(LANG(?il)=\"en\") }\n} GROUP BY ?name ?item ?title"
  },
  "urls": {}
 }
