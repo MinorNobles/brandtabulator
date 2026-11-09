@@ -1,8 +1,22 @@
 {
- "search": [],
- "items": [],
- "sparql": {
-  "by_label": "SELECT ?name ?item ?title (GROUP_CONCAT(DISTINCT ?tl;separator=\"|\") AS ?inst) (GROUP_CONCAT(DISTINCT ?pl;separator=\"|\") AS ?prods) (GROUP_CONCAT(DISTINCT ?il;separator=\"|\") AS ?inds) WHERE {\n VALUES ?name { \"Michael Kors\"@en \"Longchamp\"@en \"Marc Jacobs\"@en \"Cuyana\"@en \"Guess\"@en \"Coccinelle\"@en \"Mulberry\"@en \"Celine\"@en \"Tory Burch\"@en \"Stuart Weitzman\"@en \"Mansur Gavriel\"@en \"Kate Spade\"@en \"Brahmin\"@en \"Zara\"@en \"Mango\"@en \"The Row\"@en \"Staud\"@en \"Senreve\"@en \"JW Pei\"@en \"Dagne Dover\"@en \"Clare V.\"@en \"Pol\u00e8ne\"@en \"DeMellier\"@en \"Strathberry\"@en \"Fossil\"@en }\n { ?item rdfs:label ?name } UNION { ?item skos:altLabel ?name }\n ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> ; schema:name ?title .\n ?item wdt:P31 ?t . FILTER(?t NOT IN (wd:Q5, wd:Q4167410, wd:Q101352, wd:Q202444, wd:Q484170, wd:Q16521, wd:Q11424, wd:Q482994, wd:Q7366, wd:Q134556, wd:Q105543609))\n ?t rdfs:label ?tl . FILTER(LANG(?tl)=\"en\")\n OPTIONAL { ?item wdt:P1056 ?p . ?p rdfs:label ?pl . FILTER(LANG(?pl)=\"en\") }\n OPTIONAL { ?item wdt:P452 ?i . ?i rdfs:label ?il . FILTER(LANG(?il)=\"en\") }\n} GROUP BY ?name ?item ?title"
- },
- "urls": {}
+ "search": [
+  "Michael Kors",
+  "Marc Jacobs",
+  "Coccinelle",
+  "Cuyana"
+ ],
+ "items": [
+  "Q6375797",
+  "Q753521",
+  "Q19572998",
+  "Q132111641",
+  "Q138755005",
+  "Q1869471",
+  "Q16933219",
+  "Q64026213"
+ ],
+ "sparql": {},
+ "urls": {
+  "wp": "https://en.wikipedia.org/w/api.php?action=query&redirects=1&prop=pageprops&ppprop=wikibase_item&format=json&titles=Michael%20Kors%20%28brand%29%7CMichael%20Kors%20%28company%29%7CMarc%20Jacobs%20%28brand%29%7CMarc%20Jacobs%20%28company%29%7CCuyana%7CCoccinelle%20%28company%29%7CCoccinelle%20%28brand%29%7CDeMellier%7CKate%20Spade%20New%20York%7CRebecca%20Minkoff%7CStrathberry%7CPol%C3%A8ne%7CMadewell%7CFossil%20Group"
+ }
 }
