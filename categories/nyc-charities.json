@@ -1,0 +1,40 @@
+{
+  "slug": "nyc-charities",
+  "name": "New York charities",
+  "draft": true,
+  "recipient_only": true,
+  "path": "charities",
+  "product_noun": "charity",
+  "products_noun": "charities",
+  "note": "Set up 9 Nov 2026 at Michael Quinn's request. Same rule as Coach: Robin Hood Foundation plus the organizations at least 2 of 3 AI assistants name as its peers that have their own English Wikipedia article.",
+  "members_from_discovery": false,
+  "members": [
+    {
+      "qid": "Q174896",
+      "label": "Robin Hood Foundation",
+      "enwiki": "Robin Hood Foundation"
+    }
+  ],
+  "manual_additions": [],
+  "exclude": {},
+  "inclusion_rule": "This page lists the Robin Hood Foundation and the organizations that at least two of three AI assistants named as its peers, if the organization has its own English Wikipedia article. Organizations that Wikidata records as dissolved are left out.",
+  "exclude_dissolved": true,
+  "full_category_description": "The Robin Hood Foundation and the organizations AI names as its peers",
+  "intro_title": "BrandTabulator",
+  "intro": [
+    "When donors ask AI about a {product} or about where to give, it can lean heavily on Wikipedia and Wikidata. BrandTabulator measures how fully and recently each organization is described on those sites, and how often it is read by people and machines. BrandTabulator refreshes every week, so bookmark this tab.",
+    "Of course, there are many sources that AI relies on. My work is to Diagnose the responses, Investigate the sources they credit, and Prescribe what can be done to improve the visibility and accuracy of a brand's descriptions in AI (DIP).",
+    "I'm available for workshops, speaking engagements and consultations for brands in AI. Contact Michael@MichaelQuinn.ai"
+  ],
+  "recipients": {
+    "robinhood": {
+      "recipient": "Robin Hood Foundation",
+      "highlight": {
+        "members": [
+          "Q174896"
+        ],
+        "reason": "The organization this page was prepared for."
+      }
+    }
+  }
+}
