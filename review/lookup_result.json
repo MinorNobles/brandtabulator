@@ -1,43 +1,636 @@
 {
- "search": {},
+ "search": {
+  "Moen": [
+   {
+    "qid": "Q16934183",
+    "label": "Moen",
+    "description": "family name"
+   },
+   {
+    "qid": "Q6890213",
+    "label": "Moen",
+    "description": "village in Risør, Norway"
+   },
+   {
+    "qid": "Q140873",
+    "label": "Moenkhausia",
+    "description": "genus of tetra fish"
+   },
+   {
+    "qid": "Q135032713",
+    "label": "Moen",
+    "description": "2024 video game developed by Atlas Interactive"
+   },
+   {
+    "qid": "Q377429",
+    "label": "Moen",
+    "description": "section of Zwevegem, Belgium"
+   },
+   {
+    "qid": "Q60948",
+    "label": "Conrad Moench",
+    "description": "German botanist (1744–1805)"
+   }
+  ],
+  "Brizo": [
+   {
+    "qid": "Q135061381",
+    "label": "Brizo",
+    "description": "video game"
+   },
+   {
+    "qid": "Q848691",
+    "label": "Brizon",
+    "description": "commune in Haute-Savoie, France"
+   },
+   {
+    "qid": "Q10435845",
+    "label": "Brizoides",
+    "description": "genus of insects"
+   },
+   {
+    "qid": "Q921527",
+    "label": "Brizo",
+    "description": "ancient Greek goddess"
+   },
+   {
+    "qid": "Q34401937",
+    "label": "Brizo (Pauly-Wissowa)",
+    "description": "encyclopedic article in Paulys Realencyclopädie der classischen Altertumswissenschaft (RE)"
+   },
+   {
+    "qid": "Q45510632",
+    "label": "Břízova",
+    "description": "street in Prague, Czech Republic"
+   }
+  ],
+  "Delta Faucet": [
+   {
+    "qid": "Q30272285",
+    "label": "Delta Faucet (United States)",
+    "description": "company in Delta, United States"
+   },
+   {
+    "qid": "Q104840769",
+    "label": "Delta Faucet Company",
+    "description": "plumbing fixtures company"
+   }
+  ],
+  "Rohl": [
+   {
+    "qid": "Q37553699",
+    "label": "Rohl",
+    "description": "family name"
+   },
+   {
+    "qid": "Q37439711",
+    "label": "Rohleder",
+    "description": "family name"
+   },
+   {
+    "qid": "Q112118368",
+    "label": "Brittany Rohl",
+    "description": "researcher"
+   },
+   {
+    "qid": "Q37077049",
+    "label": "Rohlfs",
+    "description": "family name"
+   },
+   {
+    "qid": "Q105538997",
+    "label": "Röhling",
+    "description": "family name"
+   },
+   {
+    "qid": "Q21493720",
+    "label": "Röhl",
+    "description": "family name"
+   }
+  ],
+  "Pfister faucets": [],
+  "Kraus": [
+   {
+    "qid": "Q931355",
+    "label": "Kraus",
+    "description": "family name"
+   },
+   {
+    "qid": "Q107639437",
+    "label": "Kraus",
+    "description": "American musical artist"
+   },
+   {
+    "qid": "Q21449125",
+    "label": "Krause",
+    "description": "family name"
+   },
+   {
+    "qid": "Q105991680",
+    "label": "Krausová",
+    "description": "family name"
+   },
+   {
+    "qid": "Q502675",
+    "label": "Krauschwitz",
+    "description": "municipality of Germany"
+   },
+   {
+    "qid": "Q37458083",
+    "label": "Krausz",
+    "description": "family name"
+   }
+  ],
+  "Kallista": [
+   {
+    "qid": "Q131994270",
+    "label": "Kallista",
+    "description": "female given name"
+   },
+   {
+    "qid": "Q6353868",
+    "label": "Kallista",
+    "description": "locality in Victoria, Australia"
+   },
+   {
+    "qid": "Q65264484",
+    "label": "Kallista Kann",
+    "description": "Estonian linguist (1895–1983)"
+   },
+   {
+    "qid": "Q93510413",
+    "label": "Kallista Field",
+    "description": "New Zealand equestrian (born 1978)"
+   },
+   {
+    "qid": "Q108495897",
+    "label": "Kallistaios (Pauly-Wissowa)",
+    "description": "cross-reference in Paulys Realencyclopädie der classischen Altertumswissenschaft (RE)"
+   },
+   {
+    "qid": "Q108495894",
+    "label": "Kallistatas (Pauly-Wissowa)",
+    "description": "cross-reference in Paulys Realencyclopädie der classischen Altertumswissenschaft (RE)"
+   }
+  ],
+  "Newport Brass": [],
+  "Waterworks": [
+   {
+    "qid": "Q15911738",
+    "label": "hydroelectric power station",
+    "description": "facility generating electric power using hydroelectricity"
+   },
+   {
+    "qid": "Q1061108",
+    "label": "water supply",
+    "description": "provision of water by public utilities, commercial organisations, community endeavors or by individuals"
+   },
+   {
+    "qid": "Q10373565",
+    "label": "waterworks",
+    "description": "facility for water treatment"
+   },
+   {
+    "qid": "Q9341055",
+    "label": "water treatment plant",
+    "description": "facility where water is treated"
+   },
+   {
+    "qid": "Q113484281",
+    "label": "Waterworks",
+    "description": "episode of Better Call Saul (S6 E12)"
+   },
+   {
+    "qid": "Q1130265",
+    "label": "hydraulic engineering",
+    "description": "sub-discipline of civil engineering concerned with the flow and conveyance of fluids, principally water and sewage"
+   }
+  ],
+  "Waterstone": [
+   {
+    "qid": "Q113402414",
+    "label": "waterstone",
+    "description": "whetstone that uses water to sharpen steel tools"
+   },
+   {
+    "qid": "Q21291396",
+    "label": "Waterstonellidea",
+    "description": "order of arthropods"
+   },
+   {
+    "qid": "Q21291393",
+    "label": "Waterstonellidae",
+    "description": "family of arthropods"
+   },
+   {
+    "qid": "Q117078624",
+    "label": "Waterstone",
+    "description": "family name"
+   },
+   {
+    "qid": "Q151779",
+    "label": "Waterstones",
+    "description": "British bookstore chain"
+   },
+   {
+    "qid": "Q7974461",
+    "label": "Waterstonella",
+    "description": "genus of arthropods"
+   }
+  ],
+  "Victoria + Albert": []
+ },
  "items": {},
  "sparql": {},
  "urls": {
-  "pepsi": {
+  "wp": {
    "batchcomplete": "",
    "query": {
-    "pages": {
-     "24573": {
-      "pageid": 24573,
-      "ns": 0,
-      "title": "Pepsi",
-      "extract": "Pepsi is a carbonated soft drink with a cola flavor, the flagship product of PepsiCo. In 2023, Pepsi was the second most valuable soft drink brand worldwide behind Coca-Cola; the two share a long-standing rivalry in what has been called the \"cola wars\".\nPepsi, originally created in 1893 by Caleb Bradham and named \"Brad's Drink,\" was first sold in his drugstore in New Bern, North Carolina. Renamed \"Pepsi-Cola\" in 1898 due to its supposed digestive benefits, its name was shortened in marketing to \"Pepsi\" as early as 1951. Early on, Pepsi struggled with financial stability, going bankrupt in 1923 but was subsequently purchased and revived by Charles Guth, who reformulated the syrup. Pepsi gained popularity with the introduction of a 12-ounce bottle during the Great Depression and marketing strategies like the \"Nickel, Nickel\" jingle, doubling sales by emphasizing its value.\nThe mid-20th century saw Pepsi targeting the African American market, a then-untapped demographic, with positive portrayals and endorsements from prominent figures, boosting its market share. Pepsi's rivalry with Coca-Cola, highlighted by the \"cola wars\", led to significant cultural and market competition, including the \"Pepsi Challenge\" taste tests and the introduction of New Coke in response. Pepsi's expansion into international markets has seen varied success, with notable ventures into the Soviet Union via a landmark barter deal and enduring popularity in certain regions over Coca-Cola.\nDespite occasional controversies, such as an aborted Madonna advertisement and the \"Pepsi Number Fever\" fiasco in the Philippines, Pepsi has remained a prominent global brand, partly thanks to innovative marketing campaigns and sponsorships in sports and entertainment. PepsiCo have also launched other drinks under the Pepsi brand, such as Diet Pepsi and Pepsi Max, that make up the brand portfolio today on top of the original Pepsi cola.\n\n\n== History ==\n\nPepsi was invented in 1893 as \"Brad's Drink\" by Caleb Bradham, who sold the drink at his drugstore in New Bern, North Carolina. Bradham sought to create a fountain drink that was appealing and would aid in digestion and boost energy.\nIt was renamed \"Pepsi-Cola\" in 1898 due to its formula's inclusion of essence of pepsin. This was a then-common medicinal preparation made from the digestive enzyme pepsin, with glycerin and a mild alcohol added. It was often used as an additive to make bitter medicines palatable, as well as for curdling milk. Although this point is seemingly disputed by modern writers, the earliest print advertisements for the beverage carried the subtitle \"The Pepsin Drink\", and boasted its presence for the sake of relieving indigestion (dyspepsia), as well as alleviating headaches and drowsiness. A key selling point in a 1902 advertisement claimed that a glass of Pepsi-Cola contained a teaspoon's worth of the concoction. The original recipe also included sugar and vanilla.\n\nBradham incorporated the Pepsi-Cola Company on December 24, 1902, and moved the bottling of Pepsi from his drugstore to a rented warehouse in 1903. That year, Bradham sold 7,968 gallons of syrup. The next year, Pepsi introduced in six-ounce bottles, and sales increased to 19,848 gallons. In 1909, automobile race pioneer Barney Oldfield was the first celebrity to endorse Pepsi, describing it as \"A bully drink...refreshing, invigorating, a fine bracer before a race.\" The advertising theme \"Delicious and Healthful\" was then used over the next two decades.\nIn 1923, the Pepsi-Cola Company entered bankruptcy—in large part due to financial losses incurred by speculating on the wildly fluctuating sugar prices as a result of World War I. Assets were sold and Roy C. Megargel bought the Pepsi trademark. Megargel was unsuccessful in efforts to find funding to revive the brand and soon Pepsi-Cola's assets were purchased by Charles Guth, the president of Loft, Inc..\nLoft was a candy manufacturer with retail stores that contained soda fountains. He sought to replace Coca-Cola at his stores' fountains after The Coca-Cola Company refused to give him additional discounts on syrup. Guth then had Loft's chemists reformulate the Pepsi-Cola syrup formula.\nOn three occasions between 1922 and 1933, the Coca-Cola Company was offered the opportunity to purchase the Pepsi-Cola Company, which it declined on each occasion.\n\n\n=== Growth in popularity ===\n\nDuring the Great Depression, Pepsi gained popularity following the introduction in 1934 of a 12-ounce (355 mL) bottle. Prior to that, Pepsi and Coca-Cola sold their drinks in 6.5-ounce (192 mL) servings for about $0.05 a bottle. With a radio advertising campaign featuring the popular jingle \"Nickel, Nickel\" – first recorded by the Tune Twisters in 1940 – Pepsi encouraged price-conscious consumers to double the volume their nickels could purchase. The jingle is arranged in a way that loops, creating a never-ending tune:\"Pepsi-Cola hits the spot / Twelve full ounces, that's a lot / Twice as much for a nickel, too / Pepsi-Cola is the drink for you.\"Coming at a time of economic crisis, the campaign succeeded in boosting Pepsi's status. From 1936 to 1938, Pepsi-Cola's profits doubled.\nPepsi's success under Charles Guth came while the Loft Candy business was faltering. Since he had initially used Loft's finances and facilities to establish the new Pepsi success, the near-bankrupt Loft Company sued Guth for possession of the Pepsi-Cola company. A long legal battle, Guth v. Loft Inc., then ensued, with the case reaching the Delaware Supreme Court and ultimately ending in a loss for Guth.\nThe Pepsi-Cola name was shortened to simply \"Pepsi\" as early as 1945, when their bottles transitioned from standard paper labels to the applied color label (ACL) process, which involved screen-printing enamel paint graphics directly onto the bottle at a high temperature. The neck of the new bottle design displayed a small ovoid Pepsi-Cola logo in color on the front, and a truncated version of the script reading \"Pepsi\" on the opposite side. This motif was carried over when a new bottle design and logo were introduced in mid-1951. When the drink was rebranded in 1962, two versions of the same logo with either name were used interchangeably. By 1969, the drink was almost exclusively referred to as \"Pepsi\", with the full name retained for secondary uses.\n\n\n=== Second half of the 20th century ===\n\nPepsi-Cola began a continuous rise in popularity and sales growth starting in the 1950s under the leadership of Alfred Steele and later Donald M. Kendall. With Pepsi having been seen as a \"poor man's Coca-Cola\" that was \"popular in the kitchen but it rarely arrived in the parlor\", Steele gravitated production from economy to quality. The sugar content in Pepsi-Cola syrup was also lowered slightly to desweeten the taste. Combined with company and production changes, Pepsi sales boomed by 1956 and gradually narrowed the gap to its large competitor.\nBy the mid 1950s, amid a time when cola products were booming all over the world, the drink was being bottled in over 700 plants across seventy countries. These helped make Pepsi-Cola a popular product in many markets, including in the Middle East following the opening of a plant in Cairo, and the Beirut Daily Star referred to the \"Pepsi-Cola culture\" when distribution began in Lebanon in 1952. Notably, in 1974 Pepsi became the first American consumer product to be produced, marketed and sold in the Soviet Union.\nIn 1958, the \"swirl\" design bottle began to be used for distributing Pepsi. In 1963, Pepsi began to be distributed in America in larger 16-ounce (473 mL) bottles, and 12-ounce cans were introduced. In 1964, Diet Pepsi was launched, the first extension of the brand.\nBeginning in the mid 1960s, aggressive and effective marketing of the product, see Pepsi Generation and Pepsi Challenge, mostly aimed at the younger generation, drastically increased the drink's popularity to become a formidable competitor to long-time market leader Coca-Cola. In 1969, Pepsi machines were installed in the White House cafeteria when Richard Nixon, who already had a close relationship with Pepsi, assumed the American presidency. Although total Pepsi sales never overtook Coca-Cola, Coca-Cola's lead in the American market was narrowed to 1½-to-1 in 1980, from 5-to-1 in 1950, and Pepsi was outselling its rival in the \"take-home\" market, which includes supermarkets.\nIn November 1984, PepsiCo announced that it would, at least in the US, exclusively use high-fructose corn syrup (HFCS) to sweeten its canned, bottled and fountain Pepsi-Cola, replacing cane sugar. The Coca-Cola Company did the same around the same time. \n\n\n== Ingredients ==\n\nPepsi may have small formula differences depending on where it is produced and the target market. In the United States, Pepsi cola is made with carbonated water, high fructose corn syrup, caramel color, sugar, phosphoric acid, caffeine, citric acid, and natural flavors. A 12 fl oz (355 mL) can of Pepsi has 41 grams of carbohydrates (all from sugars), 30 mg of sodium, 0 grams of fat, 0 grams of protein, 38 mg of caffeine, and 150 calories. The Canadian equivalent can has mostly the same except 42 grams of carbohydrates (of which 41 g is sugar) and 35 mg of sodium. \nCaffeine-Free Pepsi contains the same ingredients but without the caffeine.\nIn many countries since the 2020s, a new Pepsi formulation has been distributed in bottles and cans with the reduction of sugar content and the addition of artificial sweeteners Acesulfame K and Sucralose. It replaced the original formulation in many regions including Argentina and across Europe since at least 2021, with sugar being reduced by over one third from approximately 10.7 g to 7.0 g (per 100 mL) in some countries. In Western Europe, sugar was cut by more than half, to 4.6 g per 100 mL. \nThe new formulation also came into effect in Australia in 2025, with sugar reduced by one-third. The change was done as part of PepsiCo's pro-health commitment across all its brands, and the increasing sugar taxes and regulations all around the world.\n\n\n== Variants and portfolio ==\n\nToday the Pepsi portfolio consists of three main major brands: the regular Pepsi (since 1893), Diet Pepsi/Pepsi Light (since 1964) and Pepsi Max (since 1993, intertwines with Pepsi Zero Sugar). The latter are low-calorie products. Caffeine-Free Pepsi has been produced since 1982. A retro-themed drink made of cane sugar is sold exclusively in North America, called Pepsi Throwback.\nSince the 1970s, Pepsi have distributed a large variety of flavors blended with the cola, such as Pepsi Wild Cherry (cherry flavored) and Pepsi Twist (lemon flavored), and has  experimented with special limited editions and country-exclusive Pepsi colas.\n\n\n=== Fictional drinks ===\nA vitamin-enriched Pepsi variation called \"Pepsi Perfect\" in a special bottle was shown in the 1989 movie Back to the Future Part II in scenes set in the future year 2015. This was in 2015 released as a limited-edition drink. Only 6,500 bottles were available for $20.15, they have since been sold for hundreds of dollars on eBay.\n\n\n== Marketing ==\n\nFrom the 1930s to the late 1950s, \"Pepsi-Cola Hits The Spot\" was the most commonly used slogan in the days of old-time radio, classic motion pictures and early days of television. Its jingle, conceived in the days when Pepsi cost only five cents, was used in many different forms with different lyrics. With the rise of radio, Pepsi-Cola utilized the services of a young, up-and-coming actress named Polly Bergen to promote products, oftentimes, lending her singing talents to the classic \"...Hits The Spot\" jingle.\nFilm actress Joan Crawford, after marrying Pepsi-Cola president Alfred N. Steele became a spokesperson for Pepsi, appearing in commercials, television specials, and televised beauty pageants on behalf of the company. Crawford also had images of the soft drink placed prominently in several of her later films. When Steele died in 1959, Crawford was appointed to the Board of Directors of Pepsi-Cola, a position she held until 1973, although she was not a board member of the larger PepsiCo, created in 1965.\nPepsi has been featured in several films, including Back to the Future Part II (1989), Home Alone (1990), Wayne's World (1992), Fight Club (1999), World War Z (2013), and in films directed by Spike Lee.\n\nPepsi marketing has also been marred in controversy. In 1989, Pepsi commissioned a $5 million marketing campaign to coincide with the release of Madonna's song \"Like a Prayer\", but was cancelled following strong backlash regarding the religious themes in the song's music video. In 1992, the Pepsi Number Fever marketing campaign in the Philippines accidentally distributed 800,000 winning bottle caps for a 1 million peso grand prize, leading to riots and the deaths of five people.\nIn 1996, PepsiCo launched the highly successful Pepsi Stuff marketing strategy. \"Project Blue\" was launched in several international markets outside the United States in April. The launch included extravagant publicity stunts, such as a Concorde airplane painted in blue colors, which was owned by Air France, and a banner on the Mir space station. The Project Blue design was first tested in the United States in June 1997, and was released that December in preparation for Pepsi's 100th anniversary. It was at this point, the logo began to be referred to as the Pepsi Globe.\nFrom 1986 to 2003, the Pepsi wordmark was typeset in a custom treatment of Handel Gothic. This logo was also used for Pepsi Throwback until 2014. In October 2008, Pepsi announced that it would redesign its logo and re-brand many of its products by early 2009. In 2009, Pepsi, Diet Pepsi, and Pepsi Max began using all lower-case fonts for name brands. The brand's blue and red globe trademark became a series of \"smiles,\" with the central white band initially arcing at different angles depending on the product. \nIn March 2023, Pepsi unveiled a new logo expected to launch in North America in late-2023, and internationally in 2024, including 2025 in Colombia. The logo is a modernization of the \"vintage\" Pepsi logo. Accompanying branding elements will shift from blue to black as their primary color.\n\n\n=== Niche marketing ===\nWalter Mack was named the new president of Pepsi-Cola and guided the company through the 1940s. Mack, who supported progressive causes, noticed that the company's strategy of using advertising for a general audience either ignored African Americans or used ethnic stereotypes in portraying Blacks. Up until the 1940s, the full revenue potential of what was called \"the Negro market\" was largely ignored by white-owned manufacturers in the U.S. \nMack realized that Black people were an untapped niche market and that Pepsi stood to gain market share by targeting its advertising directly towards them. To this end, he hired Hennan Smith, an advertising executive \"from the Negro newspaper field\" to lead an all-black sales team, which had to be cut due to the onset of World War II.\n\nIn 1947, Walter Mack resumed his efforts, hiring Edward F. Boyd to lead a twelve-man team. They came up with advertising portraying black Americans in a positive light, such as one with a smiling mother holding a six pack of Pepsi while her son (a young Ron Brown, who grew up to be Secretary of Commerce) reaches up for one. Another ad campaign, titled \"Leaders in Their Fields\", profiled twenty prominent African Americans such as Nobel Peace Prize winner Ralph Bunche and photographer Gordon Parks.\nBoyd also led a sales team composed entirely of blacks around the country to promote Pepsi. Racial segregation and Jim Crow laws were still in place throughout much of the U.S.; Boyd's team faced a great deal of discrimination as a result, from insults by Pepsi co-workers to threats by the Ku Klux Klan. On the other hand, it was able to use its anti-racism stance as a selling point, attacking Coke's reluctance to hire blacks and support by the chairman of The Coca-Cola Company for segregationist governor of Georgia Herman Talmadge. As a result, Pepsi's market share as compared to Coca-Cola's shot up dramatically in the 1950s with African American soft-drink consumers three times more likely to purchase Pepsi over Coke. After the sales team visited Chicago, Pepsi's share in the city overtook that of Coke for the first time.\nJournalist Stephanie Capparell interviewed six men who were on the team in the late 1940s. The team members had a grueling schedule, working seven days a week, morning and night, for weeks on end. They visited bottlers, churches, ladies groups, schools, college campuses, YMCAs, community centers, insurance conventions, teacher and doctor conferences, and various civic organizations. They got famous jazzmen such as Duke Ellington and Lionel Hampton to promote Pepsi from the stage. No group was too small or too large to target for a promotion.\nPepsi advertisements avoided the stereotypical images common in the major media that depicted Aunt Jemimas and Uncle Bens, whose role was to draw a smile from white customers. Instead, it portrayed black customers as self-confident middle-class citizens who showed very good taste in their soft drinks. They were economical too, as Pepsi bottles were twice the size.\nThis focus on the market for black people caused some consternation within the company and among its affiliates. It did not want to seem focused on black customers for fear white customers would be pushed away. In a national meeting, Mack tried to assuage the 500 bottlers in attendance by pandering to them, saying \"We don't want it to become known as a nigger drink.\" After Mack left the company in 1950, support for the black sales team faded and it was cut.\nBoyd was replaced in 1952 by Harvey C. Russell Jr., who was notable for his marketing campaigns towards black youth in New Orleans. These campaigns, held at locales attended largely by black children, would encourage children to collect Pepsi bottle caps, which they could then exchange for rewards. One example is Pepsi's 1954 \"Pepsi Day at the Beach\" event, where New Orleans children could ride rides at an amusement park in exchange for Pepsi bottle caps. By the end of the event, 125,000 bottle caps been collected. According to The Pepsi Cola World, the New Orleans campaign was a success; once people's supply of bottle caps ran out, the only way they could get more was to buy more Pepsi.\n\n\n=== Rivalry with Coca-Cola ===\n\nAccording to Consumer Reports, in the 1970s, the rivalry continued to heat up the market. Pepsi conducted blind taste tests in stores, in what was called the \"Pepsi Challenge\". These tests suggested that more consumers preferred the taste of Pepsi to Coca-Cola. The sales of Pepsi started to climb, and Pepsi kicked off the \"Challenge\" across the nation. This became known as the \"cola wars\".\nIn 1985, The Coca-Cola Company, amid much publicity, changed its formula. The theory has been advanced that New Coke, as the reformulated drink came to be known, was invented specifically in response to the Pepsi Challenge. However, a consumer backlash led to Coca-Cola quickly reintroducing the original formula as \"Coca-Cola Classic\".\nIn 1989, Billy Joel mentioned the rivalry between the two companies in the song \"We Didn't Start the Fire\". The line \"Rock & Roller Cola Wars\" refers to Pepsi and Coke's usage of various musicians in advertising campaigns. Coke used Paula Abdul, while Pepsi used Michael Jackson. Both companies then competed to get other musicians to advertise its beverages.\nAccording to Beverage Digest's 2008 report on carbonated soft drinks, PepsiCo's U.S. market share is 30.8 percent, while The Coca-Cola Company's is 42.7 percent (this includes all their respective brands). Coca-Cola outsells Pepsi in most parts of the U.S., notable exceptions being central Appalachia, Montana, North Dakota, and Utah. In the city of Buffalo, New York, Pepsi outsells Coca-Cola by a two-to-one margin. As of 2024, Pepsi had fallen behind Coca-Cola and Dr Pepper as the third most popular soft drink in the United States, losing its second place spot to the aforementioned Dr Pepper, a position it had held since 1985.\nWhile total American Pepsi sales figures never overtook that of Coca-Cola (with the special exception of 1985 when Coca-Cola sales were fractured between New Coke and Coca-Cola Classic), in corporate terms, the PepsiCo company had overtaken the Coca-Cola Company in total corporate sales in 1979, partly driven by PepsiCo's wide range of non-beverage products (after its merger with Frito-Lay in 1965).\n\n\n==== Around the world ====\nOverall, Coca-Cola continues to outsell Pepsi in almost all areas of the world, except for Oman, India, Saudi Arabia, Pakistan, Egypt,, Peru, Myanmar, the Dominican Republic, Guatemala, and the Canadian provinces of Quebec, Newfoundland and Labrador, Prince Edward Island, Nova Scotia and New Brunswick.. Pepsi is not sold in Russia, Cuba and North Korea. Pepsi had long been the drink of French-Canadians, and it continues to hold its dominance by relying on local Québécois celebrities (especially Claude Meunier, of La Petite Vie fame) to sell its product. PepsiCo introduced the Quebec slogan \"here, it's Pepsi\" (Ici, c'est Pepsi) in response to Coca-Cola ads proclaiming \"Around the world, it's Coke\" (Partout dans le monde, c'est Coke).\nIn India, by most accounts, Coca-Cola was India's leading soft drink until 1977, when it left India because of the new foreign exchange laws which mandated majority shareholding in companies to be held by Indian shareholders; Coca-Cola was unwilling to dilute its stake in its Indian unit as required by the Foreign Exchange Regulation Act, which would have forced them to share their formula with an entity in which it did not have majority shareholding. In 1988, PepsiCo entered the Indian market by creating a joint venture with the government of Punjab-owned Punjab Agro Industrial Corporation and Voltas India Limited. This joint venture marketed and sold Lehar Pepsi until 1991, when the use of foreign brands was allowed; PepsiCo promptly bought out its partners and ended the joint venture in 1994. In 1993, Coca-Cola returned to the Indian market in pursuance of India's liberalization policy. As of 2012, Pepsi is the third most popular carbonated drink in India, with a 15% market share, behind Sprite and Thums Up. In comparison, Coca-Cola is the fourth most popular carbonated drink, occupying a mere 8.8% of the Indian market share.\n\nIn Russia, Pepsi initially had a larger market share than Coke, but it was undercut once the Cold War ended. In 1972, PepsiCo struck a barter agreement with the government of the Soviet Union, in which PepsiCo was granted exportation and Western marketing rights to Stolichnaya vodka in exchange for importation and Soviet marketing of Pepsi. This exchange led to Pepsi being the first foreign product sanctioned for sale in the Soviet Union. Reminiscent of the way that Coca-Cola became a cultural icon and its global spread spawned words like \"cocacolonization\", Pepsi and its relation to the Soviet system turned it into an icon. In the early 1990s, the term \"Pepsi-stroika\" began appearing as a pun on \"perestroika\", the reform policy of the Soviet Union under Mikhail Gorbachev. Critics viewed the policy as an attempt to usher in Western products in deals there with the old elites; Pepsi, as one of the first American products in the Soviet Union, became a symbol of that relationship and the Soviet policy, reflected in Russian author Victor Pelevin's book Generation P. In 1992, following the dissolution of the Soviet Union, Coca-Cola was introduced to the Russian market and rapidly captured a significant market share due to public perceptions of Coca-Cola as representative of the new post-Soviet system (as opposed to Pepsi being exemplary of the old Soviet era), a market growth that might otherwise have required years to achieve. By July 2005, Coca-Cola enjoyed a market share of 19.4 percent, followed by Pepsi with 13 percent.\nPepsi was introduced in Romania in 1966, during the early liberalization policies of Nicolae Ceaușescu, opening a factory at Constanța in 1967. This was done as a barter agreement similar to the one in the USSR, with Romanian wine serving as their bartered drink sold in the West. Pepsi quickly became popular in Romania, especially among young people, but due to the austerity measures imposed in the 1980s, it became scarce and difficult to find. After the fall of Soviet communism in 1991, PepsiCo entered the new Romanian market economy, and still maintains a bigger popularity than Coca-Cola, which was introduced in Romania in 1992, despite heavy competition during the 1990s (sometime between 2000 and 2005, Pepsi overtook Coca-Cola in sales in Romania).\nIn 1984, Venezuela was cited as the only country where Pepsi cola sales were higher than Coca-Cola.\nPepsi did not sell soft drinks in Israel until 1991. Many Israelis and some American Jewish organizations attributed Pepsi's previous reluctance to expand operations in Israel to fears of an Arab boycott. Pepsi, which has a large and lucrative business in the Arab world, denied the claims, stating that economic, rather than political, reasons kept it out of Israel.\nPepsi entered the market in Vietnam in 1994 after the end of an American trade embargo against the country. Both Pepsi and Coca-Cola immediately launched following the end of the embargo, starting a 'cola war' in Vietnam.\n\n\n=== Pepsiman ===\nPepsiman is an official Pepsi mascot from Pepsi's Japanese corporate branch, which debuted in March 1996. Pepsiman took on three different outfits, each one representing the current style of the Pepsi can in distribution. Twelve commercials were created featuring the character. His role in the advertisements is to appear with Pepsi to thirsty people or people craving soda. \nPepsiman happens to appear at just the right time with the product. After delivering the beverage, sometimes Pepsiman would encounter a difficult and action-oriented situation which would result in injury. Pepsiman is mostly silent, and he has no face except for a hole that opens up whenever he delivers a Pepsi. Another more minor mascot, Pepsiwoman, also featured in a few of her own commercials for Pepsi Twist; her appearance is basically a female Pepsiman wearing a lemon-shaped balaclava.\nIn 1996, Sega-AM2 released the Sega Saturn version of its arcade fighting game Fighting Vipers. In this game, Pepsiman was included as a special character, with his specialty listed as being the ability to \"quench one's thirst.\" He does not appear in any other version or sequel. \nIn 1999, KID developed a video game for the PlayStation entitled Pepsiman. As the titular character, the player runs \"on rails\" (forced motion on a scrolling linear path), skateboards, rolls, and stumbles through various areas, avoiding dangers and collecting cans of Pepsi, all while trying to reach a thirsty person as in the commercials. Despite largely being considered a financial failure, Pepsiman has developed a cult following due to its over the top and nonsensical premise.\n\n\n== Sports sponsorships ==\nPepsi has official sponsorship deals with the National Football League, National Hockey League, and National Basketball Association. In 2007, and from 2013 to 2022, Pepsi sponsored the NFL's Super Bowl Halftime Shows. It was the sponsor of Major League Soccer until December 2015 and Major League Baseball until April 2017, both leagues signing deals with Coca-Cola. From 1999 to 2020, Pepsi also had the naming rights to the Pepsi Center, an indoor sports and entertainment facility in Denver, Colorado, until the venue's new naming rights were announced on October 22, 2020. \nIn 1997, after his sponsorship with Coca-Cola ended, retired NASCAR Cup Series driver Jeff Gordon signed a long-term contract with Pepsi, and he drove with the Pepsi logos on his car with various paint schemes for about 2 races each year, usually a darker paint scheme during nighttime races. Pepsi has remained as one of his sponsors ever since. Pepsi has also sponsored the NFL Rookie of the Year award since 2002.\nPepsi has the first global sponsorship deals with the UEFA Champions League and the UEFA Women's Champions League starting in the 2015–16 season along with the sister brand, Pepsi Max and became the global sponsor of the competition.\nPepsi also has sponsorship deals in international cricket teams. The Pakistani national cricket team is one of the teams that the brand sponsors. The team wears the Pepsi logo on the front of their test and ODI test match clothing.\nThe Buffalo Bisons, an American Hockey League team, was sponsored by Pepsi-Cola in its later years; the team adopted the beverage's red, white, and blue color scheme along with a modification of the Pepsi logo (with the word \"Buffalo\" in place of the Pepsi-Cola wordmark). The Bisons ceased operations in 1970, making way for the Buffalo Sabres of the NHL.\nPepsi also has been a sponsor of the Carolina Hurricanes of the National Hockey League since the team moved to North Carolina in 1997.\nIn 2017, Pepsi was the jersey sponsor of the Papua New Guinea national basketball team.\n\n\n== See also ==\n\n\n== References ==\nNotes\n\nBibliography\n\nBeverage World Magazine, January 1998, \"Celebrating a Century of Refreshment: Pepsi — The First 100 Years\"\nStoddard, Bob. Pepsi-Cola – 100 Years (1997), General Publishing Group, Los Angeles, California\n\"History & Milestones\" (1996), Pepsi packet\nLouis, J.C. & Yazijian, Harvey Z. \"The Cola Wars\" (1980), Everest House, Publishers, New York\n\n\n== External links ==\n\nOfficial website \nPepsi Gallery – Pepsi Promotional site at the Wayback Machine (archived January 15, 2007)\nOfficial Pepsi page on PepsiCo UK & Ireland at the Wayback Machine (archived January 7, 2009)"
+    "redirects": [
+     {
+      "from": "Waterworks",
+      "to": "Water supply"
+     },
+     {
+      "from": "Waterstone",
+      "to": "Sharpening stone"
+     },
+     {
+      "from": "Delta Faucet",
+      "to": "Delta Faucet Company"
+     },
+     {
+      "from": "Price Pfister",
+      "to": "Pfister (firm)"
+     },
+     {
+      "from": "Moen (company)",
+      "to": "Moen Incorporated"
+     },
+     {
+      "from": "House of Rohl",
+      "to": "Fortune Brands Innovations"
      }
-    }
-   }
-  },
-  "drpepper": {
-   "batchcomplete": "",
-   "query": {
+    ],
     "pages": {
-     "7438610": {
-      "pageid": 7438610,
+     "-1": {
       "ns": 0,
-      "title": "Dr Pepper",
-      "extract": "Dr Pepper is a carbonated soft drink created in the 1880s by American pharmacist Charles Alderton in Waco, Texas. It was first marketed nationally in the United States in 1904. The beverage is manufactured and distributed by different companies depending on the country: Keurig Dr Pepper produces it in the United States, Canada, and Mexico; The Coca-Cola Company in the United Kingdom, Ireland, and Japan; and Suntory in most European territories. Variants include a diet version and, beginning in the 2000s, a range of additional flavors. \nAlthough it shares some similarities with cola, in 1966, the U.S. Food and Drug Administration determined that Dr Pepper is not classified as a cola, root beer, or fruit-flavored soft drink. Instead, it is generally described as belonging to a distinct category often referred to  as \"pepper soda\", named after the brand itself. Other beverages in this category, such as Dublin Original and Mr. Pibb, have a comparable flavor profile.\nAs of 2024, Dr Pepper is the second best-selling carbonated soft drink in the US.\n\n\n== History ==\n\nThe name \"Dr. Pepper\" was first used commercially in 1885. It preceded the introduction of Coca-Cola by one year. Dr Pepper was introduced nationally at the 1904 Louisiana Purchase Exposition.\nIt was formulated by Brooklyn-born pharmacist Charles Alderton in Morrison's Old Corner Drug Store in Waco, Texas. To test his new drink, he first offered it to store owner Wade Morrison, who also found it to his liking. Patrons at Morrison's soda fountain soon learned of Alderton's new drink and began ordering a \"Waco\". Alderton gave the formula to Morrison, who named it Dr. Pepper's Iron Phosphate (later \"Dr. Pepper's Phos-Ferrates\", and even later simply \"Dr Pepper\").\nEarly advertisements for this soft drink made medical claims, stating that it \"aids digestion and restores vim, vigor, and vitality.\"\nAs with the formula for Coca-Cola, the formula for Dr Pepper is a trade secret; the recipe is allegedly kept as two halves in safe deposit boxes in two separate Dallas banks.  A persistent rumor since the 1930s is that the drink contains prune juice. However, the official Dr Pepper FAQ refutes this with \"Dr Pepper is a unique blend of natural and artificial flavors; it does not contain prune juice.\"  The origin of the rumor is unknown, and some believe it was started by a deliveryman for a competitor trying to cast aspersions based on prune juice's laxative effects.\nIn 2009, an old ledger book filled with formulas and recipes was discovered by Bill Waters while shopping at antiques stores in the Texas Panhandle. Several sheets and letterheads hinted it had come from the W.B. Morrison & Co. Old Corner Drug Store (the same store where Dr Pepper was first served in 1885) and faded letters on the book's cover spelled out \"Castles Formulas\". John Castles was a partner of Morrison's for a time and worked at that location as early as 1880. One recipe in the book titled \"Dr Peppers Pepsin Bitters\" was of particular interest, and some speculated it could be an early recipe for Dr Pepper. However, Keurig Dr Pepper insists it is not the formula for Dr Pepper, but is instead a medicinal recipe for a digestive aid. The book was put up for auction in May 2009, but no one purchased it.\n\n\n=== Name ===\nTheories about the origins of the soft drink's name abound. One possible reason that the name was chosen was the practice, common at the time of the drink's creation, of including Dr. in the names of products to convey the impression that they were healthful.\nA theory often cited is that the drink was named after an actual doctor, one Charles T. Pepper of Rural Retreat, Virginia. Morrison may have named the drink after the doctor in gratitude for Pepper having given Morrison his first job. However, Milly Walker, Collections Manager / Curator for the Dublin (Texas) Dr Pepper Bottling Co. Museum, has stated that US Census records show that a young Morrison lived in Christiansburg, Virginia, 40 miles (64 km) away from Rural Retreat, and that \"there is not one piece of evidence that Morrison ever worked for Charles T. Pepper in Rural Retreat\". A romanticized origin story posits that Morrison named the soft drink after Charles T. Pepper to win approval to marry his daughter. Historians and archivists, however, have dismissed this claim, noting that the girl was just eight years old when Morrison settled in Waco.\n\nThe period (full stop) after Dr was used intermittently in Dr Pepper logos until 1950, when, after some debate, it was discarded permanently, for stylistic and legibility reasons.\n\n\n=== Legal and trade history ===\nIn 1951, Dr Pepper sued the Coca-Cola company for $750,000 (equivalent to $7.95 million in 2025), asserting that 6.5-oz. Cokes were sold below cost and were a restraint of trade.\n\n\"In 1966, the Food and Drug Administration formally declared Dr. Pepper not to be a cola, allowing Dr. Pepper to use cola bottling franchises off limits to other colas, because of licensing arrangements which provide for exclusive cola territorial assignments.\" (February 1973) Texas Monthly\nIn 1969, owing to Dr Pepper's legal success as being determined a \"non-cola\" soft drink, then President & CEO W. W. \"Foots\" Clements was successful in persuading the Coca-Cola Bottling Company of New York, the largest bottler and distributor of Coca-Cola in the world, to bottle and distribute Dr Pepper in the New York metropolitan area.\n\nIn 1972, Dr Pepper sued the Coca-Cola company for trademark infringement based on a soft drink marketed by Coca-Cola called \"Peppo\". Coca-Cola renamed their beverage Mr. Pibb.\nDr Pepper became insolvent in the early 1980s, prompting an investment group to take the company private. Several years later, Coca-Cola attempted to acquire Dr Pepper, but was blocked from doing so by the Federal Trade Commission (FTC). Around the same time, Seven Up was acquired from Phillip Morris by Hicks & Haas, the same investment company that had purchased Dr Pepper. Upon the failure of the Coca-Cola merger, Dr Pepper and Seven Up merged (creating Dr Pepper/Seven Up, Inc., or DPSU), giving up international branding rights in the process. After the DPSU merger, Coca-Cola obtained most non-US rights to the Dr Pepper name (with PepsiCo taking the Seven Up rights).\nDr Pepper was a frequent player in the 1990s antitrust history of the United States. As part of these activities, economists and the courts have weighed in with the opinion that Dr Pepper is a \"pepper\" flavored drink and not a \"cola\". In 1995, the FTC blocked a merger between The Coca-Cola Company and Dr Pepper on grounds that included concerns about a monopoly of the \"pepper\" flavor category of soft drinks. In 1996, Dr Pepper was involved in an antitrust case involving Jerry Jones, the Dallas Cowboys, NFL Properties, Nike, and other commercial interests active at Texas Stadium in Irving, Texas. Jones had made deals with Dr Pepper and the other companies that, the league said, violated their exclusive marketing contracts with Coca-Cola and other businesses. The NFL agreed to allow Jones and other teams to pursue their own agreements.\nIn 1995, Cadbury Schweppes acquired Dr Pepper/Seven Up. In May 2008, Cadbury Schweppes spun off Cadbury Schweppes Americas Beverages into an independent company called the Dr Pepper Snapple Group, and renamed itself to Cadbury plc.  On July 9, 2018, Keurig acquired the Dr Pepper Snapple Group in an $18.7 billion deal. The combined company was renamed \"Keurig Dr Pepper\".\n\n\n== Varieties ==\n\n\n=== North America ===\n\n\n==== Regular ====\n\n\n==== Diet ====\n\n\n==== Zero Sugar ====\n\n\n=== Other Regions ===\n\n\n== Distribution ==\nIn the US, fully national distribution was not achieved until 1960. As late as 1959, national advertising referenced this: \"folks lucky enough to live where it can be bought.\"\nPresently, Keurig Dr Pepper relies on its own bottling group to bottle and distribute its products in more than 30 US states, as well as in Canada and Mexico; in Mexico, this is carried out through its subsidiary Grupo Peñafiel. Coca-Cola and Pepsi have essentially stopped bottling and distributing Cadbury-Schweppes products in favor of in-house alternatives, although regional exceptions can be found.\nIn the United Kingdom, the drink is produced and distributed by Coca-Cola Europacific Partners. Coca-Cola also handles the distribution of the product in Japan.\nIn Germany, brewery Krombacher Brauerei acquired distribution rights in 2006.\nIn most European territories, such as Sweden, the Netherlands, Slovakia, Austria, the Czech Republic, Belgium and Norway, Cadbury-Schweppes originally released Dr Pepper in-house until the 2008 split, of which the international drinks division was renamed Orangina-Schweppes. Suntory acquired the company in late 2009, and currently holds distribution in these territories.\nIn Finland, Dr Pepper is bottled by Sinebrychoff, which also bottles Coca-Cola Company's products.\nDr Pepper is available in Russia (though imported, generally from Poland – there's no local bottling), South Korea and Ukraine. Although no longer locally bottled in Australia or New Zealand, Dr Pepper is imported and sold by United States Foods, and many other small retailers in Australia, with the UK (sugar) version sold in the British sections of Coles and Woolworths supermarkets. Dr Pepper and Dr Pepper Cherry are available in Serbia only at selected NIS petrol and Gazprom petrol gas stations in 0.33L cans. Dr Pepper is not available in Thailand and North Korea. It is sold in Indonesia, where it is imported by PT Citra Gourmand Prima (formerly PT Armasco Prima) with its office in Sunter, North Jakarta.\n\n\n== Other products ==\nDr Pepper has a line of jelly beans made by the Jelly Belly company.\nHubba Bubba bubblegum produces a Dr Pepper-flavored edition. The gum is the same color as the soda.\nDr Pepper collaborated with Vita Food Products to produce Dr Pepper Sweet & Kickin' BBQ Sauce and Dr Pepper \"More than Mesquite\" Marinade.\nCosmetics company Bonne Bell includes Dr Pepper among its licensed soft drink-flavored \"Lip Smackers\" lip balms.\nBrach's has a line of hard candy that features Dr Pepper, Orange Crush, A&W Root Beer and 7 Up flavored hard candies in Brach's Soda Poppers.\nDr Pepper has an ice cream topping syrup also manufactured by Vita Food Products in 2009 called \"Dr Pepper cherry dessert topping\".\nDr Pepper also created an iPod skin cover, but it was discontinued.\nDr Pepper Slurpee is sold by retailer 7-Eleven.\nDr Pepper Flavored Freezies are available with Grape Crush and Hires Root Beer flavors.\nThe Serious Bean Company makes a variety of baked beans using Dr Pepper in the sauce.\nDr Pepper collaborated with Tic-tac Mints in the fall of 2025 to produce Dr Pepper Tic Tacs.\n\n\n== Marketing ==\n\n\"Dr Pepper Time\", according to one promotion, was at 10, 2 and 4 o'clock. During World War II, a syndicated radio program, The 10–2–4 Ranch (later titled 10–2–4 Time), aired in the Southern United States and other areas where Dr Pepper was distributed. The show featured the Sons of the Pioneers and Dick Foran. In the 1960s, the tune of the chorus of \"The Glow-Worm\" was used in ads, with lyrics which ended, \"It's Dr Pepper Time!\"\nIn the early 1960s, Dr Pepper promoted the idea of serving the drink hot with lemon slices in winter. This idea appeared in the film Blast from the Past initially set in the early 1960s. Also from around this same time period the phrase 'not a cola, not a root beer' was used in an advertising jingle for Dr Pepper.\nAround 1967, Dr Pepper released the \"Charge\" ad:\n\nIn 1977, Jake Holmes wrote the lyrics to \"Be a Pepper\". Earlier in the 1970s, Holmes and Randy Newman wrote another jingle entitled \"The Most Original Soft Drink Ever\". Barry Manilow performed Holmes's jingle in concerts and on albums under the inclusion of \"VSM – Very Strange Medley\". A TV commercial was also created using the jingle and ran from 1977 to 1985. The song noted \"It's not a cola, it's something much much more. It's not a root beer, you get root beer by the score.\" The \"Be a Pepper\" series referred to fans of Dr Pepper as \"Peppers\" and often featured large crowd dance scenes, intricately choreographed by Tony Stevens and led onscreen by actor David Naughton. The chorus of the jingle as written by Holmes was:\n\nThis became grist for a number of pop culture references and parodies. One of the first was a July 1981 sketch on the program SCTV, in which an overly-excited injured man (Eugene Levy) extols the work of a \"Dr Shekter\" (Rick Moranis) who has been treating him. Levy and a group of patients wearing casts and crutches engage in their own elaborate dancing and singing (\"Wouldn't you like to see my doctor, too?\"), which Shekter first uses as an opportunity to explain his work, and then grows alarmed (\"These people should not be dancing!\"). In the 1982 film The Beach Girls, the slogan became \"I'm a popper, he's a popper...\"\nW.W. Clements, former CEO and president of the Dr Pepper/7-Up Company, described the taste of Dr Pepper as one-of-a-kind, saying, \"I've always maintained you cannot tell anyone what Dr Pepper tastes like because it's so different. It's not an apple, it's not an orange, it's not a strawberry, it's not a root beer, it's not even a cola. It's a different kind of drink with a unique taste all its own.\"\nThe 1980s \"Out of the Ordinary\" advertising campaign involved a series of post-apocalyptic commercials featuring a space cowboy and an alien sidekick seeking \"something different\" from a simple generic cola. The campaign also produced commercials featuring the movie creature Godzilla, where citizens of a Japanese town offered Dr Pepper as a libation. The commercials were prominently featured during the 1986 syndication of The Canned Film Festival, which was sponsored by the Dr Pepper Company.\n\nAs of 2009, the slogan of the product was \"Drink it slow. Doctor's orders\". Advertising supporting the slogan has celebrities with famous relations to the word \"doctor\" (Dr. Dre, Julius \"Dr. J\" Erving, Gene Simmons (writer of the Kiss song \"Calling Dr. Love\"), et al.) or who played fictional doctors (such as Neil Patrick Harris or Kelsey Grammer) endorsing the beverage. The ads culminate with the celebrity stating, \"Trust me. I'm a doctor\", followed by the new slogan appearing onscreen with a glass of Dr Pepper.\nThe introduction of Dr Pepper Ten in 2011 featured a marketing campaign targeting men, citing market research suggesting that most diet soft drinks had been perceived as appealing primarily to women. The campaign featured overtly masculine imagery, including an action movie-themed television commercial denouncing other diet beverages as \"lady drinks\", a Facebook page featuring \"Man'Ments\", and the slogan \"It's Not for Women\". Some critics considered the campaign to be sexist.\n\n\n=== Dr Pepper Girl ===\n\nIn 1963, singer Donna Loren became a spokesperson for the company when she was selected in a nationwide search to be the \"Dr Pepper Girl\". National exposure followed for Loren as she promoted the drink via radio, print, television, calendars, billboards, and personal appearances. One of her first appearances for the company was as co-host with Dick Clark (whom she worked with regularly) of an ABC television special, Dr Pepper Celebrity Party. \nDonna Loren subsequently made hundreds of singing and personal appearances for Dr Pepper. In Dr Pepper—King of Beverages, Dr Pepper historian Harry E. Ellis wrote, \"Sparkly, vivacious and gifted with a wonderful voice, Donna was an immediate success. She became widely known in a short period as \"The Dr Pepper Girl\", appearing at special events and on programs sponsored by the company. Miss Loren would figure prominently in Dr Pepper's plans for some five years, not only as an entertainer but doing commercials for radio and TV and appearing in many forms of advertising. She appeared on 24-sheet poster boards, point-of-sale and on Dr Pepper calendars.\"\nLoren's role as Dr Pepper spokesperson led to her first appearance in the American International Pictures' Beach Party film Muscle Beach Party. Loren later explained: \"Dr Pepper was involved in that [the Beach Party movies] and actually placed me as product placement. And because I could sing, they gave me a duet with Dick Dale, and then it just went on from there.\" From this, she went on to appear in three more Beach Party films. Away from the company, Loren was a familiar presence in the 1960s due to her many performances on television, films, and her records for Capitol, Reprise and other labels. She represented Dr Pepper until 1968.\nFrom 1961 until 1981, Dr Pepper was also the sponsor of the Miss Teenage America beauty pageant.\n\n\n=== Free Dr Pepper for everyone in America ===\nOn March 26, 2008, various media outlets reported that Dr Pepper would offer \"a free can of Dr Pepper to everyone in America\" – excluding former Guns N' Roses guitarists Buckethead and Slash – if the band released the long-awaited Chinese Democracy in 2008. Later in the day, lead vocalist Axl Rose replied to Dr Pepper on Guns N' Roses' official website and spoke of his surprise at Dr Pepper's support. Rose also said he would share his Dr Pepper with Buckethead as \"some of Buckethead's performances are on Chinese Democracy\". After it was announced that the album would be released in 2008, Dr Pepper stated that it would uphold its pledge.\nDr Pepper's online distribution of free coupons upon the album's release November 23, 2008, proved inadequate. Lawyers for the band threatened Dr Pepper's parent company with a lawsuit two days after the album's release. In a letter to Dr Pepper, Rose's lawyer Alan Gutman said, \"The redemption scheme your company clumsily implemented for this offer was an unmitigated disaster which defrauded consumers and, in the eyes of vocal fans, ruined Chinese Democracy's release.\" Rose's lawyer also demanded that the company make a full-page apology that would appear in The Wall Street Journal, USA Today, The New York Times and The Los Angeles Times. In a later interview, Rose claimed he told his lawyers it was a non-issue and was surprised by their actions.\n\n\n=== \"Dr Pepper Capital of the World\" ===\nJohn William \"Bill\" Davis opened Virginia's first Dr. Pepper plant east of the Mississippi in Roanoke in 1936. The city has been named the \"Dr Pepper Capital of the World\" and broke world records for its consumption of Dr Pepper in the late 1950s. As of 2006 the company sells more Dr Pepper in the Roanoke Valley area of Virginia than any other metropolitan area east of the Mississippi River. In October 2015, the city of Roanoke celebrated October 24 as \"Dr Pepper Day\".\n\n\n=== Museum ===\n\nThe Dr Pepper Museum, located in the Artesian Manufacturing and Bottling Company building in Waco, Texas, opened to the public in 1989. The building, completed in 1906, was the first to be built specifically to bottle Dr Pepper, with production continuing until 1965.\n\n\n=== 2026 viral commercial ===\nIn December 2025, TikToker Romeo Bingham (@romeosshow) posted a short, catchy jingle she created for Dr Pepper. The 11-second video featured her singing: \"Dr Pepper, baby, it's good and nice. Doo doo doo.\" She tagged Dr Pepper and asked them to \"get back to me with a proposition we can make thousands together\". The video went viral and they replied to her in the comments. Dr Pepper licensed the jingle and featured it in a 15-second official commercial that aired during the College Football Playoff National Championship game on January 19, 2026.\n\n\n== References ==\n\n\n== Further reading ==\nRodengen, Jeffrey L. (1995). The Legend of Dr Pepper/Seven-Up. Write Stuff Syndicate, Inc. ISBN 0-945903-49-9.\n\n\n== External links ==\n\nDr Pepper official website\nThe Dr Pepper Museum\nDr Pepper Company at Handbook of Texas Online\nFTC Statement on Coca-Cola Dr Pepper Merger\nTemple Bottling Company, in Temple, Texas Archived March 2, 2021, at the Wayback Machine\nBootlegging Dr Pepper, June 5, 2008, by Robb Walsh, Houston Press\nOriginal Formula Found at Drug Store\n\"Bill Waters finds Dr Pepper original formula in notebook in antique store in Texas\". Associated Press in the New York Daily News. May 4, 2009. Archived from the original on March 7, 2016.\nCaffeine Content for Dr Pepper flavors compared to some other beverages, Good Housekeeping"
-     }
-    }
-   }
-  },
-  "sprite": {
-   "batchcomplete": "",
-   "query": {
-    "pages": {
-     "30871134": {
-      "pageid": 30871134,
+      "title": "Pfister (company)",
+      "missing": "",
+      "contentmodel": "wikitext",
+      "pagelanguage": "en",
+      "pagelanguagehtmlcode": "en",
+      "pagelanguagedir": "ltr"
+     },
+     "-2": {
       "ns": 0,
-      "title": "Sprite (drink)",
-      "extract": "Sprite is a clear, lemon-lime flavored soft drink created by the Coca-Cola Company. Sprite comes in additional flavors, including cranberry, cherry, grape, orange, tropical, ginger, pineapple, and vanilla. Ice, peach, Berryclear remix, Citrus and mint, and newer versions of the drinks are artificially sweetened. Sprite was created primarily to compete against Keurig Dr Pepper's 7 Up.\n\n\n== History ==\nThe Sprite brand name was created in about 1955 for a line of drinks with flavors such as strawberry and orange, by T. C. \"Bud\" Evans, a Houston-based bottler who also distributed Coca-Cola products. The rights to the name were acquired by the Coca-Cola Company in 1960.\nThe lemon-lime drink known today as Sprite was developed in West Germany in 1959 as Fanta Klare Zitrone (\"Fanta Clear Lemon\" in English) and was introduced in the United States under the Sprite name in 1961 as a competitor to 7 Up.\n\n\n== Marketing ==\n\nSprite advertisements often make use of the portmanteau word \"lymon\", a combination of the words lemon and lime. Additionally, the bottle of the beverage has several concave spots, an attempt to emulate the bubbles caused by the soda's carbonation.\nBy the 1980s, Sprite had developed a large following among teenagers. In response, Sprite began to cater to this demographic in its advertisements in 1987. \"I Like the Sprite In You\" was the brand's first long-running slogan, and many jingles were produced around it before its discontinuation in 1994.\n\nIn 1993, marketing agency Lowe and Partners created a new slogan, \"Control your thirst\" with commission from the Coca-Cola Company. The new, more vibrant logo stood out more on packaging and featured a blue-to-green gradient with silver \"splashes\" and subtle white \"bubbles\" in the background. The product name, \"Sprite\" had a logo with a blue backdrop shadow. The words; \"Great Lymon Taste!\" which had been present on the previous logo, were removed. This logo was used in the United States until 2006, and similar variants were used in other countries until this year as well.\nThe brand's slogan was changed to \"Obey Your Thirst\", and jingles containing it featured a hip-hop theme. One of the first lyrics for the new slogan was, \"never forget yourself 'cause first things first, grab a cold, cold can, and obey your thirst.\" Under the new slogan, Sprite tapped into hip-hop culture by leveraging up and coming, as well as underground rap artists including; LL Cool J, A Tribe Called Quest, KRS-One, Missy Elliott, Grand Puba, Common, Fat Joe, Nas and others in television commercials. Sprite expanded its urban connections in the late 1990s by featuring both amateur and accomplished basketball players in their advertisements.\nIn the 1990s, one of Sprite's longest-running ad campaigns was \"Grant Hill Drinks Sprite\" (overlapping its \"Obey Your Thirst\" campaign), in which the well-liked basketball player's abilities, and Sprite's importance in giving him his abilities, were humorously exaggerated.\nIn 2000, Sprite commissioned graffiti artist Temper to design limited edition art, which appeared on 100 million cans across Europe.\nIn 2004, Coke created Miles Thirst, a vinyl doll voiced by Reno Wilson, used in advertising to exploit the hip-hop market for soft drinks.\nIn 2006, a new Sprite logo, consisting of two yellow and green \"halves\" forming an \"S\" lemon/lime design, made its debut on Sprite bottles and cans. The slogan was changed from its long-running \"Obey Your Thirst\" to just \"Obey\" in the United States and was outright replaced with \"Freedom From Thirst\" in many countries. This was the decade's first major shift in advertising themes.\nThe \"Sublymonal\" campaign was also used as part of the alternate reality game the Lost Experience. This also resurrected the \"lymon\" word.\nSprite redesigned its label in 2009, removing the \"S\" logo.\nIn the mid-2010s, famous NBA players and hip-hop artists such as LeBron James, Trae Young, Vince Staples, and Lil Yachty appeared in Sprite ads.\nIn July 2022, the Coca-Cola Company announced that Sprite would discontinue its green bottles on August 1 and switch to clear plastic bottles. The green plastic contains green polyethylene terephthalate (PET), an additive that cannot be recycled into new bottles.\nIn 2022, Australia released lemon flavoured variants Sprite Lemon+ and Sprite Lemon+ Zero Sugar.\nIn 2024, Sprite-mint was made available in some select Asian markets. In 2026 the Coca-Cola company started a new campaign called \"It's That Fresh\" where they brought back the \"Lymon\" as a nostalgia push in hopes to boost sales.\n\n\n=== Formula changes ===\nIn France in 2012, the drink was reformulated removing 30% of the sugar and replacing it with the sweetener stevia, leading to the drink containing fewer calories. This soon spread to Ireland, the UK, the Netherlands and Poland in 2013.\nA further formula change happened in the UK in 2018. This formula change, done to coincide with the sugary drinks tax in the country, reduces the sugar amount and replaces stevia with aspartame and acesulfame K. This formula was later extended to other regions across the world to coincide with similar sugar tax rules.\nIn the Netherlands in March 2017, Coca-Cola announced that Sprite would be relaunched exclusively as a sugar-free drink, with the standard variety being discontinued and Sprite Zero being renamed as simply Sprite. This change was expanded to Ireland in 2018.\nIn Australia, Sprite was relaunched with a new recipe containing 40% less sugar (compared with old Sprite) in August 2019. Unlike most of the reformulations this version does not use aspartame, instead using sucralose in addition to acesulfame K.\nIn March 2023, Coca-Cola announced another further formula change for Sprite and Sprite Zero Sugar in the United Kingdom, produced to differentiate the two varieties. The new formula has slightly increased sugar content but still contains aspartame and acesulfame K. Some territories including France, Poland and Germany use a similar lower-sugar formula but do not utilize any artificial sweeteners.\nWanna Sprite Cranberry?\nIn mid-November 2017, Sprite released an ad for the Sprite Cranberry variation, featuring LeBron James and rapper DRAM. The ad is animated in a style reminiscent of Rankin-Bass holiday specials such as Rudolph the Red-Nosed Reindeer, and features a rambunctious family gathering during the holidays as LeBron enters saying \"Wanna Sprite Cranberry?\".\nThe commercial gained popularity on various sites for its meme potential, in particular the \"Wanna Sprite Cranberry\" line delivery and LeBron as he is portrayed in the ad were commonly associated with meme culture around the holidays as the commercial aired and re-aired yearly. The commercial was even edited by The Coca-Cola Company to feature Winter Spice Cranberry, the replacement for Sprite Cranberry, once Sprite Cranberry was phased out.\n\n\n== Variations ==\n\n\n== References ==\n\n\n== External links ==\n\nOfficial website"
+      "title": "Kraus (company)",
+      "missing": "",
+      "contentmodel": "wikitext",
+      "pagelanguage": "en",
+      "pagelanguagehtmlcode": "en",
+      "pagelanguagedir": "ltr"
+     },
+     "-3": {
+      "ns": 0,
+      "title": "Kallista (company)",
+      "missing": "",
+      "contentmodel": "wikitext",
+      "pagelanguage": "en",
+      "pagelanguagehtmlcode": "en",
+      "pagelanguagedir": "ltr"
+     },
+     "-4": {
+      "ns": 0,
+      "title": "Newport Brass",
+      "missing": "",
+      "contentmodel": "wikitext",
+      "pagelanguage": "en",
+      "pagelanguagehtmlcode": "en",
+      "pagelanguagedir": "ltr"
+     },
+     "-5": {
+      "ns": 0,
+      "title": "Waterworks (company)",
+      "missing": "",
+      "contentmodel": "wikitext",
+      "pagelanguage": "en",
+      "pagelanguagehtmlcode": "en",
+      "pagelanguagedir": "ltr"
+     },
+     "-6": {
+      "ns": 0,
+      "title": "Waterstone Faucets",
+      "missing": "",
+      "contentmodel": "wikitext",
+      "pagelanguage": "en",
+      "pagelanguagehtmlcode": "en",
+      "pagelanguagedir": "ltr"
+     },
+     "-7": {
+      "ns": 0,
+      "title": "Victoria + Albert",
+      "missing": "",
+      "contentmodel": "wikitext",
+      "pagelanguage": "en",
+      "pagelanguagehtmlcode": "en",
+      "pagelanguagedir": "ltr"
+     },
+     "-8": {
+      "ns": 0,
+      "title": "Victoria and Albert Baths",
+      "missing": "",
+      "contentmodel": "wikitext",
+      "pagelanguage": "en",
+      "pagelanguagehtmlcode": "en",
+      "pagelanguagedir": "ltr"
+     },
+     "16922366": {
+      "pageid": 16922366,
+      "ns": 0,
+      "title": "American Standard Brands",
+      "pageprops": {
+       "wikibase_item": "Q4745165"
+      },
+      "contentmodel": "wikitext",
+      "pagelanguage": "en",
+      "pagelanguagehtmlcode": "en",
+      "pagelanguagedir": "ltr",
+      "touched": "2026-11-08T01:52:48Z",
+      "lastrevid": 1379222665,
+      "length": 14557
+     },
+     "79356": {
+      "pageid": 79356,
+      "ns": 0,
+      "title": "Brizo",
+      "pageprops": {
+       "wikibase_item": "Q921527"
+      },
+      "contentmodel": "wikitext",
+      "pagelanguage": "en",
+      "pagelanguagehtmlcode": "en",
+      "pagelanguagedir": "ltr",
+      "touched": "2026-11-08T21:17:29Z",
+      "lastrevid": 1372223406,
+      "length": 4657
+     },
+     "4527287": {
+      "pageid": 4527287,
+      "ns": 0,
+      "title": "Delta Faucet Company",
+      "pageprops": {
+       "wikibase_item": "Q104840769"
+      },
+      "contentmodel": "wikitext",
+      "pagelanguage": "en",
+      "pagelanguagehtmlcode": "en",
+      "pagelanguagedir": "ltr",
+      "touched": "2026-11-08T21:20:51Z",
+      "lastrevid": 1382265945,
+      "length": 5635
+     },
+     "21872094": {
+      "pageid": 21872094,
+      "ns": 0,
+      "title": "Duravit",
+      "pageprops": {
+       "wikibase_item": "Q1266808"
+      },
+      "contentmodel": "wikitext",
+      "pagelanguage": "en",
+      "pagelanguagehtmlcode": "en",
+      "pagelanguagedir": "ltr",
+      "touched": "2026-11-08T21:25:09Z",
+      "lastrevid": 1368867435,
+      "length": 3864
+     },
+     "34973758": {
+      "pageid": 34973758,
+      "ns": 0,
+      "title": "Grohe",
+      "pageprops": {
+       "wikibase_item": "Q316477"
+      },
+      "contentmodel": "wikitext",
+      "pagelanguage": "en",
+      "pagelanguagehtmlcode": "en",
+      "pagelanguagedir": "ltr",
+      "touched": "2026-11-08T16:04:30Z",
+      "lastrevid": 1384508963,
+      "length": 20298
+     },
+     "4024998": {
+      "pageid": 4024998,
+      "ns": 0,
+      "title": "Hansgrohe",
+      "pageprops": {
+       "wikibase_item": "Q741499"
+      },
+      "contentmodel": "wikitext",
+      "pagelanguage": "en",
+      "pagelanguagehtmlcode": "en",
+      "pagelanguagedir": "ltr",
+      "touched": "2026-11-08T01:42:24Z",
+      "lastrevid": 1359523779,
+      "length": 10639
+     },
+     "609299": {
+      "pageid": 609299,
+      "ns": 0,
+      "title": "Kallista",
+      "pageprops": {
+       "wikibase_item": "Q6353868"
+      },
+      "contentmodel": "wikitext",
+      "pagelanguage": "en",
+      "pagelanguagehtmlcode": "en",
+      "pagelanguagedir": "ltr",
+      "touched": "2026-11-08T21:18:04Z",
+      "lastrevid": 1384046496,
+      "length": 10802
+     },
+     "625919": {
+      "pageid": 625919,
+      "ns": 0,
+      "title": "Kohler Co.",
+      "pageprops": {
+       "wikibase_item": "Q6426036"
+      },
+      "contentmodel": "wikitext",
+      "pagelanguage": "en",
+      "pagelanguagehtmlcode": "en",
+      "pagelanguagedir": "ltr",
+      "touched": "2026-11-08T21:18:05Z",
+      "lastrevid": 1381650827,
+      "length": 23664
+     },
+     "1351705": {
+      "pageid": 1351705,
+      "ns": 0,
+      "title": "Kraus",
+      "pageprops": {
+       "wikibase_item": "Q931355"
+      },
+      "contentmodel": "wikitext",
+      "pagelanguage": "en",
+      "pagelanguagehtmlcode": "en",
+      "pagelanguagedir": "ltr",
+      "touched": "2026-11-07T19:48:13Z",
+      "lastrevid": 1369566229,
+      "length": 7319
+     },
+     "3637739": {
+      "pageid": 3637739,
+      "ns": 0,
+      "title": "Moen",
+      "pageprops": {
+       "disambiguation": "",
+       "wikibase_item": "Q1942387"
+      },
+      "contentmodel": "wikitext",
+      "pagelanguage": "en",
+      "pagelanguagehtmlcode": "en",
+      "pagelanguagedir": "ltr",
+      "touched": "2026-11-07T19:49:33Z",
+      "lastrevid": 1366333521,
+      "length": 858
+     },
+     "79468842": {
+      "pageid": 79468842,
+      "ns": 0,
+      "title": "Pfister",
+      "pageprops": {
+       "disambiguation": "",
+       "wikibase_item": "Q2083867"
+      },
+      "contentmodel": "wikitext",
+      "pagelanguage": "en",
+      "pagelanguagehtmlcode": "en",
+      "pagelanguagedir": "ltr",
+      "touched": "2026-10-24T11:32:14Z",
+      "lastrevid": 1322012569,
+      "length": 543
+     },
+     "12049094": {
+      "pageid": 12049094,
+      "ns": 0,
+      "title": "Rohl",
+      "pageprops": {
+       "wikibase_item": "Q37553699"
+      },
+      "contentmodel": "wikitext",
+      "pagelanguage": "en",
+      "pagelanguagehtmlcode": "en",
+      "pagelanguagedir": "ltr",
+      "touched": "2026-10-26T19:32:01Z",
+      "lastrevid": 1295386766,
+      "length": 530
+     },
+     "1349076": {
+      "pageid": 1349076,
+      "ns": 0,
+      "title": "Toto Ltd.",
+      "pageprops": {
+       "wikibase_item": "Q1751566"
+      },
+      "contentmodel": "wikitext",
+      "pagelanguage": "en",
+      "pagelanguagehtmlcode": "en",
+      "pagelanguagedir": "ltr",
+      "touched": "2026-11-08T01:36:54Z",
+      "lastrevid": 1381714465,
+      "length": 8530
+     },
+     "6227038": {
+      "pageid": 6227038,
+      "ns": 0,
+      "title": "Villeroy & Boch",
+      "pageprops": {
+       "wikibase_item": "Q705042"
+      },
+      "contentmodel": "wikitext",
+      "pagelanguage": "en",
+      "pagelanguagehtmlcode": "en",
+      "pagelanguagedir": "ltr",
+      "touched": "2026-11-08T01:45:01Z",
+      "lastrevid": 1378857926,
+      "length": 32048
+     },
+     "33318775": {
+      "pageid": 33318775,
+      "ns": 0,
+      "title": "Fortune Brands Innovations",
+      "pageprops": {
+       "wikibase_item": "Q5472859"
+      },
+      "contentmodel": "wikitext",
+      "pagelanguage": "en",
+      "pagelanguagehtmlcode": "en",
+      "pagelanguagedir": "ltr",
+      "touched": "2026-11-08T21:27:54Z",
+      "lastrevid": 1369129827,
+      "length": 22228
+     },
+     "4315614": {
+      "pageid": 4315614,
+      "ns": 0,
+      "title": "Moen Incorporated",
+      "pageprops": {
+       "wikibase_item": "Q6890215"
+      },
+      "contentmodel": "wikitext",
+      "pagelanguage": "en",
+      "pagelanguagehtmlcode": "en",
+      "pagelanguagedir": "ltr",
+      "touched": "2026-11-08T21:20:46Z",
+      "lastrevid": 1361480157,
+      "length": 7397
+     },
+     "1015405": {
+      "pageid": 1015405,
+      "ns": 0,
+      "title": "Pfister (firm)",
+      "pageprops": {
+       "wikibase_item": "Q7179796"
+      },
+      "contentmodel": "wikitext",
+      "pagelanguage": "en",
+      "pagelanguagehtmlcode": "en",
+      "pagelanguagedir": "ltr",
+      "touched": "2026-11-08T01:35:59Z",
+      "lastrevid": 1359653175,
+      "length": 11291
+     },
+     "2642022": {
+      "pageid": 2642022,
+      "ns": 0,
+      "title": "Sharpening stone",
+      "pageprops": {
+       "wikibase_item": "Q507559"
+      },
+      "contentmodel": "wikitext",
+      "pagelanguage": "en",
+      "pagelanguagehtmlcode": "en",
+      "pagelanguagedir": "ltr",
+      "touched": "2026-11-08T21:20:05Z",
+      "lastrevid": 1384410491,
+      "length": 20692
+     },
+     "684928": {
+      "pageid": 684928,
+      "ns": 0,
+      "title": "Water supply",
+      "pageprops": {
+       "wikibase_item": "Q1061108"
+      },
+      "contentmodel": "wikitext",
+      "pagelanguage": "en",
+      "pagelanguagehtmlcode": "en",
+      "pagelanguagedir": "ltr",
+      "touched": "2026-11-08T21:18:09Z",
+      "lastrevid": 1358699047,
+      "length": 40992
      }
     }
    }
