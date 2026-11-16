@@ -1,5 +1,5 @@
 {
- "computed_at": "2026-11-09",
+ "computed_at": "2026-11-16",
  "query": "SELECT DISTINCT ?item ?itemLabel ?sitelinks WHERE { { ?item wdt:P452 wd:Q41767 . } UNION { ?item wdt:P452 wd:Q63346664 . } UNION { ?item wdt:P1056 wd:Q178794 . } UNION { ?item wdt:P31 wd:Q136094627 . } ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". } } ORDER BY DESC(?sitelinks) LIMIT 400",
  "candidates": [
   {
@@ -328,13 +328,13 @@
    "sitelinks": 9
   },
   {
-   "qid": "Q87043",
-   "label": "Stowa",
+   "qid": "Q15733690",
+   "label": "Vostok Europe",
    "sitelinks": 8
   },
   {
-   "qid": "Q15733690",
-   "label": "Vostok Europe",
+   "qid": "Q87043",
+   "label": "Stowa",
    "sitelinks": 8
   },
   {
@@ -600,6 +600,11 @@
   {
    "qid": "Q11300325",
    "label": "Grand Seiko",
+   "sitelinks": 3
+  },
+  {
+   "qid": "Q126362732",
+   "label": "Nomination",
    "sitelinks": 3
   },
   {

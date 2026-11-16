@@ -1,5 +1,5 @@
 {
- "computed_at": "2026-11-09",
+ "computed_at": "2026-11-16",
  "query": "SELECT DISTINCT ?item ?itemLabel ?sitelinks WHERE { { ?item wdt:P31 wd:Q3390477 . } UNION { ?item wdt:P452 wd:Q3390477 . } ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". } } ORDER BY DESC(?sitelinks) LIMIT 1000",
  "candidates": [
   {
@@ -118,13 +118,13 @@
    "sitelinks": 7
   },
   {
-   "qid": "Q12476649",
-   "label": "Blibli",
+   "qid": "Q4537982",
+   "label": "Yandex Market",
    "sitelinks": 7
   },
   {
-   "qid": "Q4537982",
-   "label": "Yandex Market",
+   "qid": "Q12476649",
+   "label": "Blibli",
    "sitelinks": 7
   },
   {
@@ -173,18 +173,13 @@
    "sitelinks": 4
   },
   {
-   "qid": "Q1068745",
-   "label": "Check24",
+   "qid": "Q4051696",
+   "label": "Tradera",
    "sitelinks": 4
   },
   {
    "qid": "Q125981507",
    "label": "TikTok Shop",
-   "sitelinks": 4
-  },
-  {
-   "qid": "Q4051696",
-   "label": "Tradera",
    "sitelinks": 4
   },
   {
@@ -215,6 +210,11 @@
   {
    "qid": "Q7546910",
    "label": "SnagAJob.com",
+   "sitelinks": 3
+  },
+  {
+   "qid": "Q136653949",
+   "label": "Spotahome",
    "sitelinks": 3
   },
   {
@@ -285,11 +285,6 @@
   {
    "qid": "Q97371372",
    "label": "Maremagnum",
-   "sitelinks": 2
-  },
-  {
-   "qid": "Q97961181",
-   "label": "Bookimed",
    "sitelinks": 2
   },
   {
