@@ -1,5 +1,5 @@
 {
- "computed_at": "2026-11-16",
+ "computed_at": "2026-11-23",
  "query": "SELECT DISTINCT ?item ?itemLabel ?sitelinks WHERE { { ?item wdt:P31 wd:Q3390477 . } UNION { ?item wdt:P452 wd:Q3390477 . } ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". } } ORDER BY DESC(?sitelinks) LIMIT 1000",
  "candidates": [
   {
@@ -118,13 +118,13 @@
    "sitelinks": 7
   },
   {
-   "qid": "Q4537982",
-   "label": "Yandex Market",
+   "qid": "Q12476649",
+   "label": "Blibli",
    "sitelinks": 7
   },
   {
-   "qid": "Q12476649",
-   "label": "Blibli",
+   "qid": "Q4537982",
+   "label": "Yandex Market",
    "sitelinks": 7
   },
   {
@@ -168,28 +168,18 @@
    "sitelinks": 5
   },
   {
-   "qid": "Q97658635",
-   "label": "Lamoda",
-   "sitelinks": 4
-  },
-  {
    "qid": "Q4051696",
    "label": "Tradera",
    "sitelinks": 4
   },
   {
+   "qid": "Q97658635",
+   "label": "Lamoda",
+   "sitelinks": 4
+  },
+  {
    "qid": "Q125981507",
    "label": "TikTok Shop",
-   "sitelinks": 4
-  },
-  {
-   "qid": "Q28127117",
-   "label": "CGTrader",
-   "sitelinks": 4
-  },
-  {
-   "qid": "Q18168341",
-   "label": "rover.com",
    "sitelinks": 4
   },
   {
@@ -203,6 +193,16 @@
    "sitelinks": 4
   },
   {
+   "qid": "Q28127117",
+   "label": "CGTrader",
+   "sitelinks": 4
+  },
+  {
+   "qid": "Q18168341",
+   "label": "rover.com",
+   "sitelinks": 4
+  },
+  {
    "qid": "Q21172222",
    "label": "Fever",
    "sitelinks": 3
@@ -213,11 +213,6 @@
    "sitelinks": 3
   },
   {
-   "qid": "Q136653949",
-   "label": "Spotahome",
-   "sitelinks": 3
-  },
-  {
    "qid": "Q5036903",
    "label": "Capterra",
    "sitelinks": 3
@@ -225,6 +220,16 @@
   {
    "qid": "Q7831908",
    "label": "TradeMe",
+   "sitelinks": 3
+  },
+  {
+   "qid": "Q6670523",
+   "label": "London International Vintners Exchange",
+   "sitelinks": 3
+  },
+  {
+   "qid": "Q138791818",
+   "label": "GuruWalk",
    "sitelinks": 3
   },
   {
@@ -258,9 +263,14 @@
    "sitelinks": 3
   },
   {
-   "qid": "Q138791818",
-   "label": "GuruWalk",
-   "sitelinks": 3
+   "qid": "Q113371997",
+   "label": "24S",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q97371372",
+   "label": "Maremagnum",
+   "sitelinks": 2
   },
   {
    "qid": "Q20715684",
@@ -278,21 +288,6 @@
    "sitelinks": 2
   },
   {
-   "qid": "Q113371997",
-   "label": "24S",
-   "sitelinks": 2
-  },
-  {
-   "qid": "Q97371372",
-   "label": "Maremagnum",
-   "sitelinks": 2
-  },
-  {
-   "qid": "Q124304528",
-   "label": "Clicktrans",
-   "sitelinks": 2
-  },
-  {
    "qid": "Q11863880",
    "label": "huuto.net",
    "sitelinks": 2
@@ -303,8 +298,23 @@
    "sitelinks": 2
   },
   {
+   "qid": "Q6051194",
+   "label": "OpenAd",
+   "sitelinks": 2
+  },
+  {
    "qid": "Q6084252",
    "label": "\u00c7i\u00e7eksepeti",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q124304528",
+   "label": "Clicktrans",
+   "sitelinks": 2
+  },
+  {
+   "qid": "Q140287877",
+   "label": "Lazada Philippines",
    "sitelinks": 2
   },
   {
@@ -348,9 +358,34 @@
    "sitelinks": 2
   },
   {
-   "qid": "Q140287877",
-   "label": "Lazada Philippines",
-   "sitelinks": 2
+   "qid": "Q104846548",
+   "label": "Swimply",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q104856323",
+   "label": "Teachers Pay Teachers",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q111938393",
+   "label": "WabiSabiLabi",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q112724464",
+   "label": "SSNDOB",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q96373794",
+   "label": "Bookshop.org",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q108600562",
+   "label": "Minecraft Marketplace",
+   "sitelinks": 1
   },
   {
    "qid": "Q27889316",
@@ -383,33 +418,8 @@
    "sitelinks": 1
   },
   {
-   "qid": "Q104856323",
-   "label": "Teachers Pay Teachers",
-   "sitelinks": 1
-  },
-  {
-   "qid": "Q108600562",
-   "label": "Minecraft Marketplace",
-   "sitelinks": 1
-  },
-  {
-   "qid": "Q117767926",
-   "label": "TakeLessons",
-   "sitelinks": 1
-  },
-  {
-   "qid": "Q131553572",
-   "label": "Daft.ie",
-   "sitelinks": 1
-  },
-  {
-   "qid": "Q128265812",
-   "label": "Propstore",
-   "sitelinks": 1
-  },
-  {
-   "qid": "Q138545698",
-   "label": "POIZON",
+   "qid": "Q5602236",
+   "label": "GreenXchange",
    "sitelinks": 1
   },
   {
@@ -435,6 +445,41 @@
   {
    "qid": "Q8029787",
    "label": "Wolf & Badger",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q117767926",
+   "label": "TakeLessons",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q131553572",
+   "label": "Daft.ie",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q128265812",
+   "label": "Propstore",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q65090792",
+   "label": "The RealReal",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q138545698",
+   "label": "POIZON",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q16937349",
+   "label": "West Midlands Collaborative Commerce Marketplace",
+   "sitelinks": 1
+  },
+  {
+   "qid": "Q18352790",
+   "label": "Appear Here",
    "sitelinks": 1
   },
   {
@@ -480,16 +525,6 @@
   {
    "qid": "Q54958366",
    "label": "Tradesy",
-   "sitelinks": 1
-  },
-  {
-   "qid": "Q65090792",
-   "label": "The RealReal",
-   "sitelinks": 1
-  },
-  {
-   "qid": "Q96373794",
-   "label": "Bookshop.org",
    "sitelinks": 1
   }
  ]

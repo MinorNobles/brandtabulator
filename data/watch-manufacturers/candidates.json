@@ -1,5 +1,5 @@
 {
- "computed_at": "2026-11-16",
+ "computed_at": "2026-11-23",
  "query": "SELECT DISTINCT ?item ?itemLabel ?sitelinks WHERE { { ?item wdt:P452 wd:Q41767 . } UNION { ?item wdt:P452 wd:Q63346664 . } UNION { ?item wdt:P1056 wd:Q178794 . } UNION { ?item wdt:P31 wd:Q136094627 . } ?article schema:about ?item ; schema:isPartOf <https://en.wikipedia.org/> . ?item wikibase:sitelinks ?sitelinks . SERVICE wikibase:label { bd:serviceParam wikibase:language \"en\". } } ORDER BY DESC(?sitelinks) LIMIT 400",
  "candidates": [
   {
@@ -213,13 +213,13 @@
    "sitelinks": 14
   },
   {
-   "qid": "Q2708181",
-   "label": "Van Cleef & Arpels",
+   "qid": "Q1758680",
+   "label": "Poljot",
    "sitelinks": 14
   },
   {
-   "qid": "Q1758680",
-   "label": "Poljot",
+   "qid": "Q2708181",
+   "label": "Van Cleef & Arpels",
    "sitelinks": 14
   },
   {
@@ -338,13 +338,13 @@
    "sitelinks": 8
   },
   {
-   "qid": "Q1379518",
-   "label": "Ronda",
+   "qid": "Q870335",
+   "label": "Eberhard & Co.",
    "sitelinks": 8
   },
   {
-   "qid": "Q870335",
-   "label": "Eberhard & Co.",
+   "qid": "Q1379518",
+   "label": "Ronda",
    "sitelinks": 8
   },
   {
@@ -388,13 +388,13 @@
    "sitelinks": 7
   },
   {
-   "qid": "Q869734",
-   "label": "Ebel",
+   "qid": "Q832811",
+   "label": "Kienzle Uhren",
    "sitelinks": 7
   },
   {
-   "qid": "Q832811",
-   "label": "Kienzle Uhren",
+   "qid": "Q869734",
+   "label": "Ebel",
    "sitelinks": 7
   },
   {
@@ -403,13 +403,13 @@
    "sitelinks": 7
   },
   {
-   "qid": "Q1496822",
-   "label": "Geneva seal",
+   "qid": "Q3375046",
+   "label": "Pequignet",
    "sitelinks": 7
   },
   {
-   "qid": "Q3375046",
-   "label": "Pequignet",
+   "qid": "Q1496822",
+   "label": "Geneva seal",
    "sitelinks": 7
   },
   {
